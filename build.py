@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gerador de Site Estático - O ÍMPROBO (Estética New York Times & Papel Creme)
+Gerador de Site Estático - IMPRÓBO (Estética New York Times & Papel Creme)
 Fundo papel creme (#F4F1EA), container do artigo em branco puro (#FFFFFF), 
 linhas editoriais clássicas com borda dupla (#121212), divisores em #D1CEC7
 e caixas factuais em #EBE7DE com borda grossa.
@@ -11,10 +11,10 @@ import json
 import glob
 from datetime import datetime
 
-PORTAL_NAME = "O ÍMPROBO"
+PORTAL_NAME = "IMPRÓBO"
 PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
 INSTAGRAM_URL = "https://instagram.com"
-INSTAGRAM_HANDLE = "@oimprobo"
+INSTAGRAM_HANDLE = "@improbo"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
@@ -23,6 +23,7 @@ INDEX_PATH = os.path.join(BASE_DIR, "index.html")
 VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
 
 COMMON_HEAD_STYLES = """
+    <meta name="referrer" content="no-referrer">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -298,6 +299,33 @@ def generate_article_page(art):
     category = art.get("categoria", "Crônica Política")
     read_time = art.get("tempo_leitura", "3 min de leitura")
     author = art.get("autor", "Redação Ácida")
+
+    # Imagem de Capa / Ancoragem Factual
+    imagem_capa = art.get("imagem_capa")
+    legenda_imagem = art.get("legenda_imagem", "")
+    credito_imagem = art.get("credito_imagem", "")
+    
+    image_html = ""
+    if imagem_capa:
+        caption_html = ""
+        if legenda_imagem or credito_imagem:
+            legenda_part = f"<span>{legenda_imagem}</span>" if legenda_imagem else ""
+            credito_part = f"<span class=\"font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0\">{credito_imagem}</span>" if credito_imagem else ""
+            caption_html = f"""
+            <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
+                {legenda_part}
+                {credito_part}
+            </figcaption>
+            """
+        image_html = f"""
+        <!-- Imagem de Capa / Ancoragem Factual (Logo abaixo de Título e Subtítulo) -->
+        <figure class="my-6 sm:my-8 reveal-on-scroll">
+            <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                <img src="{imagem_capa}" alt="{legenda_imagem or title}" class="w-full h-auto max-h-[520px] object-cover block" loading="lazy">
+            </div>
+            {caption_html}
+        </figure>
+        """
     
     # Body paragraphs with fluid responsive drop-cap and reveal animations
     body_html = ""
@@ -398,6 +426,9 @@ def generate_article_page(art):
                     </div>
                 </div>
 
+                <!-- Imagem Principal / Ancoragem Factual (Logo abaixo do Título e Subtítulo) -->
+                {image_html}
+
                 <!-- Body -->
                 <article class="prose max-w-none">
                     {body_html}
@@ -437,6 +468,30 @@ def generate_home_page(articles):
         hero_subtitle = hero["subtitulo"]
         hero_date = hero.get("data", "Outubro de 2026")
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
+        hero_img = hero.get("imagem_capa")
+        hero_legenda = hero.get("legenda_imagem", "")
+        hero_credito = hero.get("credito_imagem", "")
+
+        hero_img_html = ""
+        if hero_img:
+            caption_tag = ""
+            if hero_legenda or hero_credito:
+                leg_p = f"<span>{hero_legenda}</span>" if hero_legenda else ""
+                cred_p = f"<span class=\"font-sans text-[10px] text-stone-500 uppercase font-medium shrink-0\">{hero_credito}</span>" if hero_credito else ""
+                caption_tag = f"""
+                <div class="px-3 py-1.5 text-xs text-stone-600 font-serif italic border-t border-[#D1CEC7]/70 flex flex-col sm:flex-row justify-between gap-1">
+                    {leg_p}
+                    {cred_p}
+                </div>
+                """
+            hero_img_html = f"""
+            <div class="my-4 sm:my-5 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                <a href="artigos/{hero_slug}.html" class="block group/img overflow-hidden">
+                    <img src="{hero_img}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[420px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="lazy">
+                </a>
+                {caption_tag}
+            </div>
+            """
 
         hero_html = f"""
         <!-- Hero: Manchete Principal NYT Style White Container -->
@@ -455,6 +510,7 @@ def generate_home_page(articles):
                     <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
                         {hero_subtitle}
                     </p>
+                    {hero_img_html}
                     <p class="text-[#121212]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
                         {hero_snippet}
                     </p>
@@ -492,9 +548,18 @@ def generate_home_page(articles):
                 a_sub = art.get("subtitulo", "")
                 a_date = art.get("data", "")
                 a_cat = art.get("categoria", "Crônica")
+                a_img = art.get("imagem_capa")
+                img_card_html = ""
+                if a_img:
+                    img_card_html = f"""
+                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                        <img src="{a_img}" alt="{a_title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                    </div>
+                    """
                 cards += f"""
                 <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
                     <div>
+                        {img_card_html}
                         <div class="flex items-center space-x-2 text-xs font-mono mb-2">
                             <span class="text-[#8B0000] font-bold uppercase">{a_cat}</span>
                             <span class="text-[#D1CEC7]">&bull;</span>
