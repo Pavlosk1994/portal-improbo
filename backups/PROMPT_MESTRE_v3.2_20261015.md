@@ -34,3 +34,4 @@ Sempre que receber uma notícia de entrada, você deve gerar o conteúdo estrutu
    - `word-break: break-word; overflow-wrap: break-word; hyphens: auto;`
 4. PIPELINE DE AUTOMAÇÃO DE CÓDIGO:
    - Toda crônica gerada dispara `build.py`, atualizando a Home (`index.html`) e gerando a página do artigo (`artigos/[slug].html`), mantendo o repositório sincronizado e apto para deploy contínuo na Vercel.
+

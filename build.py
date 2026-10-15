@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Gerador de Site Estático - O ÍMPROBO (Design Neo-Clássico)
-Une a nobreza de um jornal clássico à fluidez de uma aplicação web moderna de alto padrão.
-100% estático, compatível com Vercel, ultra-rápido e responsivo.
+Gerador de Site Estático - O ÍMPROBO (Estética New York Times & Papel Creme)
+Fundo papel creme (#F4F1EA), container do artigo em branco puro (#FFFFFF), 
+linhas editoriais clássicas com borda dupla (#121212), divisores em #D1CEC7
+e caixas factuais em #EBE7DE com borda grossa.
 """
 
 import os
@@ -28,13 +29,16 @@ COMMON_HEAD_STYLES = """
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-ivory: #F9F8F3;
-            --text-charcoal: #111111;
+            --bg-nyt: #F4F1EA;
+            --container-white: #FFFFFF;
+            --text-charcoal: #121212;
             --editorial-red: #8B0000;
+            --border-divider: #D1CEC7;
+            --box-cream-dark: #EBE7DE;
         }
 
         body {
-            background-color: var(--bg-ivory);
+            background-color: var(--bg-nyt);
             color: var(--text-charcoal);
             font-family: 'Newsreader', Georgia, serif;
             text-rendering: optimizeLegibility;
@@ -46,11 +50,21 @@ COMMON_HEAD_STYLES = """
             font-family: 'Inter', system-ui, sans-serif;
         }
 
+        /* Linhas Editoriais Clássicas New York Times */
+        .masthead-borders {
+            border-top: 1px solid #121212;
+            border-bottom: 3px double #121212;
+        }
+
+        .editorial-divider {
+            border-color: #D1CEC7;
+        }
+
         /* Tipografia Fluida Responsiva com clamp() */
         .masthead-title {
             font-family: 'Newsreader', Georgia, serif;
-            font-size: clamp(2.2rem, 7.5vw, 4.6rem);
-            line-height: 1.05;
+            font-size: clamp(2.3rem, 7.5vw, 4.8rem);
+            line-height: 1.02;
             letter-spacing: -0.035em;
             word-break: break-word;
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -88,7 +102,7 @@ COMMON_HEAD_STYLES = """
             padding-right: 0.5rem;
             padding-top: 0.15rem;
             font-weight: 800;
-            color: #111111;
+            color: #121212;
         }
 
         /* Micro-interação: Links com Sublinhado Animado Neo-Clássico */
@@ -117,7 +131,7 @@ COMMON_HEAD_STYLES = """
         /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(18px);
             transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
@@ -126,28 +140,30 @@ COMMON_HEAD_STYLES = """
             transform: translateY(0);
         }
 
-        /* Cabeçalho Retrátil Sticky Suave */
+        /* Cabeçalho Retrátil Sticky NYT */
         #site-header {
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
         #site-header.is-scrolled {
-            background-color: rgba(249, 248, 243, 0.95);
+            background-color: rgba(244, 241, 234, 0.96);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
-            box-shadow: 0 4px 12px rgba(17, 17, 17, 0.05);
-            border-bottom-color: rgba(17, 17, 17, 0.15);
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            box-shadow: 0 4px 14px rgba(18, 18, 18, 0.06);
+            border-bottom: 1px solid #D1CEC7;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
         }
         #site-header.is-scrolled .masthead-title {
-            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-size: clamp(1.4rem, 3.8vw, 2.1rem);
         }
         #site-header.is-scrolled .masthead-subline {
             display: none;
         }
-        #site-header.is-scrolled .masthead-border {
-            border-bottom-width: 1px;
-            padding-bottom: 0.25rem;
+        #site-header.is-scrolled .masthead-borders {
+            border-top: none;
+            border-bottom: 1px solid #121212;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
         }
     </style>
 """
@@ -175,15 +191,13 @@ COMMON_SCRIPTS = """
             // Cabeçalho Retrátil (Sticky Shrink Header)
             const header = document.getElementById('site-header');
             if (header) {
-                let lastScroll = 0;
                 window.addEventListener('scroll', () => {
                     const currentScroll = window.scrollY;
-                    if (currentScroll > 50) {
+                    if (currentScroll > 45) {
                         header.classList.add('is-scrolled');
                     } else {
                         header.classList.remove('is-scrolled');
                     }
-                    lastScroll = currentScroll;
                 }, { passive: true });
             }
         });
@@ -203,35 +217,37 @@ def load_articles():
     return articles
 
 def render_header(is_article=False):
-    back_link = '<a href="../index.html" class="neo-link inline-flex items-center text-xs font-mono uppercase tracking-wider text-[#8B0000] font-bold">&larr; Voltar à Capa</a>' if is_article else '<span class="text-xs font-mono uppercase tracking-wider text-stone-500">Edição Digital Contínua</span>'
+    back_link = '<a href="../index.html" class="neo-link inline-flex items-center text-xs font-mono uppercase tracking-wider text-[#8B0000] font-bold">&larr; Voltar à Capa</a>' if is_article else '<span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>'
     home_link = "../index.html" if is_article else "index.html"
     
     return f"""
-    <!-- Top Metadata Bar -->
-    <div class="border-b border-[#111111]/15 py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-600 flex justify-between items-center max-w-6xl mx-auto">
+    <!-- Top Metadata Bar NYT Style -->
+    <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto">
         <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span class="font-bold text-[#111111] shrink-0">BRASÍLIA / BRASIL</span>
-            <span class="hidden sm:inline">&bull;</span>
-            <span class="hidden sm:inline text-stone-500">Previsão: 100% de umidade na cara de pau</span>
+            <span class="font-bold text-[#121212] shrink-0">BRASÍLIA / BRASIL</span>
+            <span class="text-[#D1CEC7]">&bull;</span>
+            <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
+            <span class="text-stone-600">Quinta-feira, 15 de Outubro de 2026</span>
         </div>
         <div class="flex items-center space-x-3 shrink-0">
             {back_link}
         </div>
     </div>
 
-    <!-- Newspaper Masthead with Retractable Sticky Header -->
-    <div class="sticky top-0 z-40 bg-[#F9F8F3] border-b border-transparent transition-all duration-300" id="site-header">
-        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-5 pb-3 text-center">
-            <div class="masthead-border border-b-2 sm:border-b-4 border-[#111111] pb-2 sm:pb-3 transition-all duration-300">
+    <!-- Newspaper Masthead with Classic NYT Double Line -->
+    <div class="sticky top-0 z-40 bg-[#F4F1EA] border-b border-transparent transition-all duration-300" id="site-header">
+        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
+            <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
                 <a href="{home_link}" class="inline-block group">
-                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#111111] group-hover:text-[#8B0000] transition-colors duration-300">
+                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300">
                         {PORTAL_NAME}
                     </h1>
                 </a>
-                <div class="masthead-subline border-t border-b border-[#111111]/80 py-1 sm:py-1.5 mt-2 sm:mt-3 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Ano I &bull; N&ordm; 01</span>
-                    <p class="mx-auto font-medium text-[#111111] tracking-wide text-center px-2">{PORTAL_SLOGAN}</p>
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Preço: Sua Paciência</span>
+                <div class="masthead-subline border-t border-b border-[#121212]/80 py-1 sm:py-1.5 mt-2 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Ano I &bull; N&ordm; 01</span>
+                    <p class="mx-auto font-medium text-[#121212] tracking-wide text-center px-2">{PORTAL_SLOGAN}</p>
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Preço: Sua Paciência</span>
                 </div>
             </div>
         </header>
@@ -241,7 +257,7 @@ def render_header(is_article=False):
 def render_footer(is_article=False):
     home_link = "../index.html" if is_article else "index.html"
     return f"""
-    <footer class="bg-[#111111] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
+    <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
         <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
             <div>
                 <a href="{home_link}" class="inline-block group">
@@ -288,52 +304,52 @@ def generate_article_page(art):
     for idx, p in enumerate(art.get("corpo", [])):
         if idx == 0:
             body_html += f"""
-            <p class="drop-cap-fluid text-lg sm:text-xl text-[#111111] leading-relaxed mb-6 font-serif reveal-on-scroll">
+            <p class="drop-cap-fluid text-lg sm:text-xl text-[#121212] leading-relaxed mb-6 font-serif reveal-on-scroll">
                 {p}
             </p>
             """
         else:
             body_html += f"""
-            <p class="text-base sm:text-lg text-[#111111]/90 leading-relaxed mb-6 font-serif reveal-on-scroll">
+            <p class="text-base sm:text-lg text-[#121212]/90 leading-relaxed mb-6 font-serif reveal-on-scroll">
                 {p}
             </p>
             """
 
-    # Milagres / Pontos-chave
+    # Milagres / Pontos-chave em estilo editorial
     milagres_items = ""
     for m in art.get("milagres", []):
         m_title = m.get("titulo", "")
         m_text = m.get("texto", "")
         milagres_items += f"""
         <li class="pl-2">
-            <span class="font-bold text-[#111111] font-serif text-base block mb-1">&bull; {m_title}</span>
+            <span class="font-bold text-[#121212] font-serif text-base block mb-1">&bull; {m_title}</span>
             <span class="text-stone-700 text-sm leading-relaxed font-sans">{m_text}</span>
         </li>
         """
         
     milagres_html = f"""
-    <div class="my-8 sm:my-10 border-2 border-[#111111] bg-[#FAF9F5] p-5 sm:p-7 md:p-8 rounded-sm shadow-sm relative reveal-on-scroll">
+    <div class="my-8 sm:my-10 border-2 border-[#121212] bg-[#FAF9F5] p-5 sm:p-7 md:p-8 rounded-sm shadow-sm relative reveal-on-scroll">
         <div class="absolute -top-3 left-4 sm:left-6 bg-[#8B0000] text-white font-mono text-xs uppercase px-2.5 sm:px-3 py-0.5 tracking-widest font-bold">
             OS MILAGRES &bull; PONTOS-CHAVE
         </div>
-        <h4 class="font-serif font-black text-lg sm:text-xl text-[#111111] mt-1 mb-4">O Balanço Sarcástico da Medida</h4>
+        <h4 class="font-serif font-black text-lg sm:text-xl text-[#121212] mt-1 mb-4">O Balanço Sarcástico da Medida</h4>
         <ul class="space-y-4">
             {milagres_items}
         </ul>
     </div>
     """
 
-    # Contexto Real
+    # Contexto Real / Bloco Editorial Clássico (#EBE7DE com borda grossa à esquerda em #121212)
     contexto_real = art.get("contexto_real", "")
     contexto_html = f"""
-    <div class="my-8 sm:my-10 border-l-4 border-stone-600 bg-[#F2EFE9] p-4 sm:p-6 rounded-r-sm reveal-on-scroll">
-        <div class="flex items-center space-x-2 text-stone-700 font-mono text-xs font-bold uppercase tracking-wider mb-2">
-            <svg class="w-4 h-4 text-stone-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="my-8 sm:my-10 border-l-4 border-[#121212] bg-[#EBE7DE] p-5 sm:p-6 rounded-r-sm shadow-sm reveal-on-scroll">
+        <div class="flex items-center space-x-2 text-[#121212] font-mono text-xs font-bold uppercase tracking-wider mb-2">
+            <svg class="w-4 h-4 text-[#121212] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <span>O Contexto Real &bull; Rodapé Factual</span>
         </div>
-        <p class="text-[#111111]/90 text-sm leading-relaxed font-sans">
+        <p class="text-[#121212]/95 text-sm leading-relaxed font-sans">
             {contexto_real}
         </p>
     </div>
@@ -352,51 +368,53 @@ def generate_article_page(art):
     <div>
         {render_header(is_article=True)}
 
-        <!-- Article Container with Neo-Clássico padding and breathing room -->
-        <main class="w-full max-w-3xl mx-auto px-[1.2rem] sm:px-6 md:px-8 py-6 sm:py-10">
-            <!-- Article Header -->
-            <div class="mb-6 sm:mb-8 border-b border-[#111111]/20 pb-5 sm:pb-6 reveal-on-scroll">
-                <div class="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 font-mono text-xs">
-                    <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">{category}</span>
-                    <span class="text-stone-600">{date_str}</span>
-                    <span class="text-stone-400">&bull;</span>
-                    <span class="text-stone-600">{read_time}</span>
+        <!-- NYT Style: Crisp White Article Sheet (#FFFFFF) over Newsprint Cream Canvas (#F4F1EA) -->
+        <main class="w-full max-w-4xl mx-auto px-[1.2rem] sm:px-6 my-6 sm:my-10">
+            <div class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-10 md:p-14">
+                <!-- Article Header -->
+                <div class="mb-6 sm:mb-8 border-b border-[#D1CEC7] pb-5 sm:pb-6 reveal-on-scroll">
+                    <div class="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 font-mono text-xs">
+                        <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">{category}</span>
+                        <span class="text-stone-600">{date_str}</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">{read_time}</span>
+                    </div>
+
+                    <h1 class="article-title font-black text-[#121212] font-serif mb-4">
+                        {title}
+                    </h1>
+
+                    <p class="article-subtitle text-stone-700 font-serif italic mb-6">
+                        {subtitle}
+                    </p>
+
+                    <div class="flex items-center justify-between border-t border-[#D1CEC7] pt-3 text-xs font-mono text-stone-600">
+                        <div>
+                            Texto: <span class="font-bold text-[#121212]">{author}</span>
+                        </div>
+                        <div>
+                            Lente Cínica: <span class="text-[#8B0000] font-bold">100% Calibrada</span>
+                        </div>
+                    </div>
                 </div>
 
-                <h1 class="article-title font-black text-[#111111] font-serif mb-4">
-                    {title}
-                </h1>
+                <!-- Body -->
+                <article class="prose max-w-none">
+                    {body_html}
+                    {milagres_html}
+                    {contexto_html}
+                </article>
 
-                <p class="article-subtitle text-stone-700 font-serif italic mb-6">
-                    {subtitle}
-                </p>
-
-                <div class="flex items-center justify-between border-t border-[#111111]/15 pt-3 text-xs font-mono text-stone-600">
-                    <div>
-                        Texto: <span class="font-bold text-[#111111]">{author}</span>
-                    </div>
-                    <div>
-                        Lente Cínica: <span class="text-[#8B0000] font-bold">100% Calibrada</span>
-                    </div>
+                <!-- Bottom Share / Nav -->
+                <div class="mt-10 sm:mt-12 pt-6 border-t border-[#D1CEC7] flex flex-col sm:flex-row gap-4 justify-between items-center reveal-on-scroll">
+                    <a href="../index.html" class="neo-link inline-flex items-center text-sm font-mono uppercase tracking-wider text-[#8B0000] font-bold">
+                        &larr; Voltar para a Capa
+                    </a>
+                    <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="neo-link text-xs font-mono text-stone-600 hover:text-[#121212] flex items-center space-x-1">
+                        <span>Comente no Instagram</span>
+                        <span>&rarr;</span>
+                    </a>
                 </div>
-            </div>
-
-            <!-- Body -->
-            <article class="prose max-w-none">
-                {body_html}
-                {milagres_html}
-                {contexto_html}
-            </article>
-
-            <!-- Bottom Share / Nav -->
-            <div class="mt-10 sm:mt-12 pt-6 border-t border-[#111111]/20 flex flex-col sm:flex-row gap-4 justify-between items-center reveal-on-scroll">
-                <a href="../index.html" class="neo-link inline-flex items-center text-sm font-mono uppercase tracking-wider text-[#8B0000] font-bold">
-                    &larr; Voltar para a Capa
-                </a>
-                <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="neo-link text-xs font-mono text-stone-600 hover:text-[#111111] flex items-center space-x-1">
-                    <span>Comente no Instagram</span>
-                    <span>&rarr;</span>
-                </a>
             </div>
         </main>
     </div>
@@ -421,23 +439,23 @@ def generate_home_page(articles):
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
 
         hero_html = f"""
-        <!-- Hero: Manchete Principal -->
-        <section class="mb-10 sm:mb-14 border-b-2 border-[#111111] pb-8 sm:pb-12 reveal-on-scroll">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+        <!-- Hero: Manchete Principal NYT Style White Container -->
+        <section class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 reveal-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                 <div class="lg:col-span-8">
-                    <div class="flex items-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
+                    <div class="flex items-center space-x-2 sm:space-x-3 mb-3">
                         <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
                         <span class="text-xs font-mono text-stone-600">{hero_date}</span>
                     </div>
                     <a href="artigos/{hero_slug}.html" class="group block">
-                        <h2 class="hero-title font-black font-serif text-[#111111] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
+                        <h2 class="hero-title font-black font-serif text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
                             {hero_title}
                         </h2>
                     </a>
                     <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
                         {hero_subtitle}
                     </p>
-                    <p class="text-[#111111]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
+                    <p class="text-[#121212]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
                         {hero_snippet}
                     </p>
                     <a href="artigos/{hero_slug}.html" class="neo-link inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">
@@ -446,16 +464,16 @@ def generate_home_page(articles):
                     </a>
                 </div>
 
-                <!-- Editorial Aside -->
-                <div class="lg:col-span-4 bg-[#F2EFE9] p-5 sm:p-6 border-l-2 border-[#111111] font-serif rounded-sm shadow-sm">
-                    <div class="font-mono text-xs uppercase tracking-widest text-stone-600 font-bold mb-2">Frase do Dia na Redação</div>
-                    <blockquote class="italic text-[#111111] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
+                <!-- Editorial Aside Card (#EBE7DE com borda clássica) -->
+                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm">
+                    <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
+                    <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
                         &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
                     </blockquote>
-                    <p class="text-xs font-mono text-stone-500 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
-                    <div class="mt-5 pt-3 border-t border-[#111111]/15">
-                        <span class="text-xs font-mono uppercase font-bold text-[#111111] block mb-1">Aviso ao Leitor</span>
-                        <p class="text-xs text-stone-600 leading-relaxed font-sans">
+                    <p class="text-xs font-mono text-stone-600 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
+                    <div class="mt-5 pt-3 border-t border-[#D1CEC7]">
+                        <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
+                        <p class="text-xs text-stone-700 leading-relaxed font-sans">
                             Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
                         </p>
                     </div>
@@ -475,15 +493,15 @@ def generate_home_page(articles):
                 a_date = art.get("data", "")
                 a_cat = art.get("categoria", "Crônica")
                 cards += f"""
-                <article class="reveal-on-scroll border border-[#111111]/20 p-5 bg-[#FAF9F5] hover:shadow-lg hover:border-[#111111]/40 transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
                     <div>
                         <div class="flex items-center space-x-2 text-xs font-mono mb-2">
                             <span class="text-[#8B0000] font-bold uppercase">{a_cat}</span>
-                            <span class="text-stone-400">&bull;</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
                             <span class="text-stone-600">{a_date}</span>
                         </div>
                         <a href="artigos/{a_slug}.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#111111] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
                                 {a_title}
                             </h3>
                         </a>
@@ -499,8 +517,8 @@ def generate_home_page(articles):
                 """
             grid_html = f"""
             <section class="reveal-on-scroll">
-                <div class="border-b border-[#111111] pb-2 mb-6 flex items-center justify-between">
-                    <h2 class="font-serif text-xl sm:text-2xl font-black text-[#111111] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
+                <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
+                    <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
                     <span class="font-mono text-xs text-stone-600 uppercase">{len(other_articles)} crônica(s)</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -510,8 +528,8 @@ def generate_home_page(articles):
             """
         else:
             grid_html = f"""
-            <section class="py-6 sm:py-8 text-center border-t border-[#111111]/15 reveal-on-scroll">
-                <span class="font-mono text-xs uppercase tracking-widest text-stone-500">Mais escândalos e gafes em apuração na gráfica...</span>
+            <section class="py-6 sm:py-8 text-center border-t border-[#D1CEC7] reveal-on-scroll">
+                <span class="font-mono text-xs uppercase tracking-widest text-stone-600">Mais escândalos e gafes em apuração na gráfica...</span>
             </section>
             """
 
@@ -528,7 +546,7 @@ def generate_home_page(articles):
     <div>
         {render_header(is_article=False)}
 
-        <!-- Main Content with responsive Neo-Clássico padding -->
+        <!-- Main Content with NYT Style spacing -->
         <main class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-6 sm:py-8">
             {hero_html}
             {grid_html}
@@ -592,7 +610,7 @@ def build_all():
 
     # Generate vercel.json
     create_vercel_config()
-    print("Build Neo-Clássico finalizado com sucesso!")
+    print("Build NYT Papel Creme finalizado com sucesso!")
 
 if __name__ == "__main__":
     build_all()

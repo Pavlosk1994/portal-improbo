@@ -12,13 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-ivory: #F9F8F3;
-            --text-charcoal: #111111;
+            --bg-nyt: #F4F1EA;
+            --container-white: #FFFFFF;
+            --text-charcoal: #121212;
             --editorial-red: #8B0000;
+            --border-divider: #D1CEC7;
+            --box-cream-dark: #EBE7DE;
         }
 
         body {
-            background-color: var(--bg-ivory);
+            background-color: var(--bg-nyt);
             color: var(--text-charcoal);
             font-family: 'Newsreader', Georgia, serif;
             text-rendering: optimizeLegibility;
@@ -30,11 +33,21 @@
             font-family: 'Inter', system-ui, sans-serif;
         }
 
+        /* Linhas Editoriais Clássicas New York Times */
+        .masthead-borders {
+            border-top: 1px solid #121212;
+            border-bottom: 3px double #121212;
+        }
+
+        .editorial-divider {
+            border-color: #D1CEC7;
+        }
+
         /* Tipografia Fluida Responsiva com clamp() */
         .masthead-title {
             font-family: 'Newsreader', Georgia, serif;
-            font-size: clamp(2.2rem, 7.5vw, 4.6rem);
-            line-height: 1.05;
+            font-size: clamp(2.3rem, 7.5vw, 4.8rem);
+            line-height: 1.02;
             letter-spacing: -0.035em;
             word-break: break-word;
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -72,7 +85,7 @@
             padding-right: 0.5rem;
             padding-top: 0.15rem;
             font-weight: 800;
-            color: #111111;
+            color: #121212;
         }
 
         /* Micro-interação: Links com Sublinhado Animado Neo-Clássico */
@@ -101,7 +114,7 @@
         /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(18px);
             transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
@@ -110,28 +123,30 @@
             transform: translateY(0);
         }
 
-        /* Cabeçalho Retrátil Sticky Suave */
+        /* Cabeçalho Retrátil Sticky NYT */
         #site-header {
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
         #site-header.is-scrolled {
-            background-color: rgba(249, 248, 243, 0.95);
+            background-color: rgba(244, 241, 234, 0.96);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
-            box-shadow: 0 4px 12px rgba(17, 17, 17, 0.05);
-            border-bottom-color: rgba(17, 17, 17, 0.15);
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            box-shadow: 0 4px 14px rgba(18, 18, 18, 0.06);
+            border-bottom: 1px solid #D1CEC7;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
         }
         #site-header.is-scrolled .masthead-title {
-            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-size: clamp(1.4rem, 3.8vw, 2.1rem);
         }
         #site-header.is-scrolled .masthead-subline {
             display: none;
         }
-        #site-header.is-scrolled .masthead-border {
-            border-bottom-width: 1px;
-            padding-bottom: 0.25rem;
+        #site-header.is-scrolled .masthead-borders {
+            border-top: none;
+            border-bottom: 1px solid #121212;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
         }
     </style>
 
@@ -139,57 +154,59 @@
 <body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
     <div>
         
-    <!-- Top Metadata Bar -->
-    <div class="border-b border-[#111111]/15 py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-600 flex justify-between items-center max-w-6xl mx-auto">
+    <!-- Top Metadata Bar NYT Style -->
+    <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto">
         <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span class="font-bold text-[#111111] shrink-0">BRASÍLIA / BRASIL</span>
-            <span class="hidden sm:inline">&bull;</span>
-            <span class="hidden sm:inline text-stone-500">Previsão: 100% de umidade na cara de pau</span>
+            <span class="font-bold text-[#121212] shrink-0">BRASÍLIA / BRASIL</span>
+            <span class="text-[#D1CEC7]">&bull;</span>
+            <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
+            <span class="text-stone-600">Quinta-feira, 15 de Outubro de 2026</span>
         </div>
         <div class="flex items-center space-x-3 shrink-0">
-            <span class="text-xs font-mono uppercase tracking-wider text-stone-500">Edição Digital Contínua</span>
+            <span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>
         </div>
     </div>
 
-    <!-- Newspaper Masthead with Retractable Sticky Header -->
-    <div class="sticky top-0 z-40 bg-[#F9F8F3] border-b border-transparent transition-all duration-300" id="site-header">
-        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-5 pb-3 text-center">
-            <div class="masthead-border border-b-2 sm:border-b-4 border-[#111111] pb-2 sm:pb-3 transition-all duration-300">
+    <!-- Newspaper Masthead with Classic NYT Double Line -->
+    <div class="sticky top-0 z-40 bg-[#F4F1EA] border-b border-transparent transition-all duration-300" id="site-header">
+        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
+            <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
                 <a href="index.html" class="inline-block group">
-                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#111111] group-hover:text-[#8B0000] transition-colors duration-300">
+                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300">
                         O ÍMPROBO
                     </h1>
                 </a>
-                <div class="masthead-subline border-t border-b border-[#111111]/80 py-1 sm:py-1.5 mt-2 sm:mt-3 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Ano I &bull; N&ordm; 01</span>
-                    <p class="mx-auto font-medium text-[#111111] tracking-wide text-center px-2">A crônica semanal da falta de decoro e do absurdo nacional.</p>
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Preço: Sua Paciência</span>
+                <div class="masthead-subline border-t border-b border-[#121212]/80 py-1 sm:py-1.5 mt-2 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Ano I &bull; N&ordm; 01</span>
+                    <p class="mx-auto font-medium text-[#121212] tracking-wide text-center px-2">A crônica semanal da falta de decoro e do absurdo nacional.</p>
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Preço: Sua Paciência</span>
                 </div>
             </div>
         </header>
     </div>
     
 
-        <!-- Main Content with responsive Neo-Clássico padding -->
+        <!-- Main Content with NYT Style spacing -->
         <main class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-6 sm:py-8">
             
-        <!-- Hero: Manchete Principal -->
-        <section class="mb-10 sm:mb-14 border-b-2 border-[#111111] pb-8 sm:pb-12 reveal-on-scroll">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+        <!-- Hero: Manchete Principal NYT Style White Container -->
+        <section class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 reveal-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                 <div class="lg:col-span-8">
-                    <div class="flex items-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
+                    <div class="flex items-center space-x-2 sm:space-x-3 mb-3">
                         <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
                         <span class="text-xs font-mono text-stone-600">15 de Outubro de 2026</span>
                     </div>
                     <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="group block">
-                        <h2 class="hero-title font-black font-serif text-[#111111] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
+                        <h2 class="hero-title font-black font-serif text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
                             SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA
                         </h2>
                     </a>
                     <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
                         Assustado com as pesquisas igual a gato em máquina de lavar, senador ultraliberal veste o macacão de operário imaginário, jura amor à folga no domingo e promete 'home office' até pro frentista do posto.
                     </p>
-                    <p class="text-[#111111]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
+                    <p class="text-[#121212]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
                         A política brasileira tem o poder milagroso de operar conversões mais rápidas que malandro jurando que tomou jeito na missa de Sétimo Dia. Até a semana passada, se alguém pronunciasse as palavras 'fim da escala 6x1' perto da bancada, o sujeito era imediatamente excomungado sob a acusação de querer destruir o PIB, quebrar a padaria da esquina e transformar o Brasil numa rede gigante de descanso coletivo. A ladainha era sempre a mesma: a livre iniciativa ia falir, o patrão ia chorar asfalto e a economia entraria em colapso se o cidadão tivesse dois míseros dias para curar a ressaca da labuta.
                     </p>
                     <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="neo-link inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">
@@ -198,16 +215,16 @@
                     </a>
                 </div>
 
-                <!-- Editorial Aside -->
-                <div class="lg:col-span-4 bg-[#F2EFE9] p-5 sm:p-6 border-l-2 border-[#111111] font-serif rounded-sm shadow-sm">
-                    <div class="font-mono text-xs uppercase tracking-widest text-stone-600 font-bold mb-2">Frase do Dia na Redação</div>
-                    <blockquote class="italic text-[#111111] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
+                <!-- Editorial Aside Card (#EBE7DE com borda clássica) -->
+                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm">
+                    <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
+                    <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
                         &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
                     </blockquote>
-                    <p class="text-xs font-mono text-stone-500 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
-                    <div class="mt-5 pt-3 border-t border-[#111111]/15">
-                        <span class="text-xs font-mono uppercase font-bold text-[#111111] block mb-1">Aviso ao Leitor</span>
-                        <p class="text-xs text-stone-600 leading-relaxed font-sans">
+                    <p class="text-xs font-mono text-stone-600 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
+                    <div class="mt-5 pt-3 border-t border-[#D1CEC7]">
+                        <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
+                        <p class="text-xs text-stone-700 leading-relaxed font-sans">
                             Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
                         </p>
                     </div>
@@ -216,15 +233,15 @@
         </section>
         
             
-            <section class="py-6 sm:py-8 text-center border-t border-[#111111]/15 reveal-on-scroll">
-                <span class="font-mono text-xs uppercase tracking-widest text-stone-500">Mais escândalos e gafes em apuração na gráfica...</span>
+            <section class="py-6 sm:py-8 text-center border-t border-[#D1CEC7] reveal-on-scroll">
+                <span class="font-mono text-xs uppercase tracking-widest text-stone-600">Mais escândalos e gafes em apuração na gráfica...</span>
             </section>
             
         </main>
     </div>
 
     
-    <footer class="bg-[#111111] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
+    <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
         <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
             <div>
                 <a href="index.html" class="inline-block group">
@@ -279,15 +296,13 @@
             // Cabeçalho Retrátil (Sticky Shrink Header)
             const header = document.getElementById('site-header');
             if (header) {
-                let lastScroll = 0;
                 window.addEventListener('scroll', () => {
                     const currentScroll = window.scrollY;
-                    if (currentScroll > 50) {
+                    if (currentScroll > 45) {
                         header.classList.add('is-scrolled');
                     } else {
                         header.classList.remove('is-scrolled');
                     }
-                    lastScroll = currentScroll;
                 }, { passive: true });
             }
         });
