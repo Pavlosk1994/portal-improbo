@@ -294,6 +294,15 @@ def render_footer(is_article=False):
     </footer>
     """
 
+def is_valid_image(url):
+    """Retorna True apenas se for uma URL de imagem válida e não nula/vazia"""
+    if not url:
+        return False
+    u = str(url).strip()
+    if u.lower() in ("none", "null", "", "undefined"):
+        return False
+    return u.startswith("http://") or u.startswith("https://") or u.startswith("/") or u.startswith("./")
+
 def generate_article_page(art):
     slug = art["slug"]
     title = art["titulo"]
@@ -303,13 +312,13 @@ def generate_article_page(art):
     read_time = art.get("tempo_leitura", "3 min de leitura")
     author = art.get("autor", "Redação Ácida")
 
-    # Imagem de Capa / Ancoragem Factual
+    # Imagem de Capa / Ancoragem Factual (Somente renderizada se houver foto real válida)
     imagem_capa = art.get("imagem_capa")
-    legenda_imagem = art.get("legenda_imagem", "")
-    credito_imagem = art.get("credito_imagem", "")
+    legenda_imagem = art.get("legenda_imagem") or ""
+    credito_imagem = art.get("credito_imagem") or ""
     
     image_html = ""
-    if imagem_capa:
+    if is_valid_image(imagem_capa):
         caption_html = ""
         if legenda_imagem or credito_imagem:
             legenda_part = f"<span>{legenda_imagem}</span>" if legenda_imagem else ""
@@ -477,7 +486,7 @@ def generate_home_page(articles):
         hero_credito = hero.get("credito_imagem", "")
 
         hero_img_html = ""
-        if hero_img:
+        if is_valid_image(hero_img):
             caption_tag = ""
             if hero_legenda or hero_credito:
                 leg_p = f"<span>{hero_legenda}</span>" if hero_legenda else ""
@@ -554,7 +563,7 @@ def generate_home_page(articles):
                 a_cat = art.get("categoria", "Crônica")
                 a_img = art.get("imagem_capa")
                 img_card_html = ""
-                if a_img:
+                if is_valid_image(a_img):
                     img_card_html = f"""
                     <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
                         <img src="{a_img}" alt="{a_title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">

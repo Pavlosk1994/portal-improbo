@@ -8,9 +8,9 @@
   "subtitulo": "Após torrarem milhões sem prestar contas, partidos políticos aprovam PEC perdoando suas próprias dívidas e autorizam o uso de dinheiro público para pagar o que sobrou da farra.",
   "autor": "Redação Ácida",
   "destaque": true,
-  "imagem_capa": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80",
-  "legenda_imagem": "O Congresso Nacional em sessão histórica: deputados e senadores descobrem que a melhor maneira de limpar a ficha suja é passando a borracha na própria lei.",
-  "credito_imagem": "Foto: Reprodução / Agência Câmara",
+  "imagem_capa": null,
+  "legenda_imagem": null,
+  "credito_imagem": null,
   "corpo": [
     "Se existe uma lição que o cidadão comum aprende desde o berço na República Federativa do Brasil, é que se você atrasar cinquenta reais na fatura da loja de departamento, o seu nome vai parar no Serasa mais rápido do que político descendo a rampa do Planalto quando avista um oficial de justiça. Mas essa regra de plebeus não se aplica ao Olimpo de Brasília. Numa demonstração de amor-próprio que emocionaria até o mais egocêntrico dos terapeutas, os nobres deputados e senadores acabam de aprovar a gloriosa 'PEC do Auto-Perdão': uma emenda constitucional em que os próprios partidos políticos se reuniram em plenário, olharam no espelho, deram um tapinha nas próprias costas e disseram: 'Estão perdoados, seus lindos!'.",
     "O crime original era uma bobagem quase lírica: os diretórios partidários torraram centenas de milhões do Fundo Eleitoral, esqueceram convenientemente de cumprir as cotas obrigatórias de mulheres e negros nas eleições passadas e foram multados pela Justiça Eleitoral com valores astronômicos. Qualquer mortal com o CPF negativado teria que vender o almoço pra pagar a janta ou ver o carro velho ser leiloado no pátio do Detran. Os políticos, porém, operam em outra dimensão da física quântica: em vez de tirar a mão do bolso para pagar a conta, eles simplesmente mudaram o texto da Constituição para decretar que errar é humano, insistir no erro é estratégia de campanha, e perdoar a si mesmo é o ápice da maturidade republicana.",
@@ -38,3 +38,4 @@
   ],
   "contexto_real": "O Congresso Nacional promulgou a Emenda Constitucional nº 133/2024 (a chamada 'PEC da Anistia'), perdoando multas e sanções financeiras aplicadas a partidos políticos que descumpriram cotas mínimas de repasse de verbas públicas para candidaturas de mulheres e pessoas negras em eleições anteriores. O texto também instituiu um programa de parcelamento especial de dívidas (Refis) e autorizou formalmente o uso de recursos do próprio Fundo Partidário para o pagamento de multas e débitos cíveis ou tributários das legendas. A medida foi contestada no STF pela PGR, mas o Supremo formou maioria para validar a emenda, sob o argumento de garantir a sustentabilidade financeira das agremiações políticas."
 }
+

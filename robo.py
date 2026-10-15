@@ -203,21 +203,36 @@ def extrair_imagem_capa(url):
             if tw_img and tw_img.get('content'):
                 img_url = tw_img['content'].strip()
 
-        # 2. Extração de Crédito ou Veículo
-        site_name_meta = soup.find('meta', property='og:site_name')
-        if site_name_meta and site_name_meta.get('content'):
-            credito = f"Foto: Reprodução / {site_name_meta['content'].strip()}"
-        else:
-            domain = urllib.parse.urlparse(url).netloc.replace('www.', '')
-            credito = f"Foto: Reprodução / {domain.capitalize()}"
+        # Validação estrita da imagem: deve ser URL absoluta válida e não ícone/logo/pixel
+        if img_url:
+            img_lower = img_url.lower()
+            if not (img_lower.startswith('http://') or img_lower.startswith('https://')):
+                img_url = None
+            elif any(ign in img_lower for ign in ['favicon', 'avatar', 'icon', 'logo-default', '.svg', 'spacer.gif']):
+                img_url = None
 
-        # 3. Tenta encontrar a legenda principal da foto no DOM
-        caption_tag = soup.find('figcaption') or soup.find(class_=re.compile(r'(caption|legenda|foto-credito)', re.I))
-        if caption_tag:
-            legenda = caption_tag.get_text(strip=True)[:180]
+        if img_url:
+            # 2. Extração de Crédito ou Veículo
+            site_name_meta = soup.find('meta', property='og:site_name')
+            if site_name_meta and site_name_meta.get('content'):
+                credito = f"Foto: Reprodução / {site_name_meta['content'].strip()}"
+            else:
+                domain = urllib.parse.urlparse(url).netloc.replace('www.', '')
+                credito = f"Foto: Reprodução / {domain.capitalize()}"
+
+            # 3. Tenta encontrar a legenda principal da foto no DOM
+            caption_tag = soup.find('figcaption') or soup.find(class_=re.compile(r'(caption|legenda|foto-credito)', re.I))
+            if caption_tag:
+                legenda = caption_tag.get_text(strip=True)[:180]
+        else:
+            credito = None
+            legenda = None
 
     except Exception as e:
         print(f"[!] Aviso ao extrair imagem de {url}: {e}")
+        img_url = None
+        credito = None
+        legenda = None
 
     return {
         "imagem_url": img_url,
@@ -239,8 +254,9 @@ Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar mentiras).
 2. Acidez Máxima e Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico. Proibido tom acadêmico ou morno. Use metáforas populares ácidas (o agiota de calçada, o garçom do rodízio, o malandro na missa). Desmonte a pose e a liturgia dos políticos.
 3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (40 a 65 caracteres no máximo), em caixa alta, contendo uma piada ou contradição sarcástica imediata (ex: 'SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE'). Proibido títulos longos ou que pareçam sinopses. O detalhamento do contexto vai no subtítulo.
-4. Sem Viés Partidário: O alvo é sempre o poder, a burocracia estatal, a incoerência eleitoral e o teatro político.
-5. Estrutura de Retorno: Você DEVE responder OBRIGATORIAMENTE com um único objeto JSON válido (sem tags markdown ```json), contendo:
+4. Regra Estrita da Imagem Real ou Nada: Apenas incluir imagem se for a foto real da matéria original. Caso não haja foto real, defina 'imagem_capa': null, 'legenda_imagem': null e 'credito_imagem': null. NUNCA invente fotos ou use bancos de imagens genéricos.
+5. Sem Viés Partidário: O alvo é sempre o poder, a burocracia estatal, a incoerência eleitoral e o teatro político.
+6. Estrutura de Retorno: Você DEVE responder OBRIGATORIAMENTE com um único objeto JSON válido (sem tags markdown ```json), contendo:
 {
   "titulo": "MANCHETE CURTA COM PIADA OU CONTRADIÇÃO (MÁX 60 CARACTERES)",
   "subtitulo": "Subtítulo cínico e explicativo detalhando o absurdo da situação",
@@ -324,9 +340,9 @@ def criar_artigo_demo(noticia, dados_imagem):
         "subtitulo": f"Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.",
         "autor": "Redação Ácida",
         "destaque": True,
-        "imagem_capa": dados_imagem.get("imagem_url") or "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80",
-        "legenda_imagem": dados_imagem.get("legenda_sugerida") or "A encenação oficial: bastidores da alta política em Brasília sob a lente cínica do IMPRÓBO.",
-        "credito_imagem": dados_imagem.get("credito") or f"Foto: Reprodução / {noticia['fonte']}",
+        "imagem_capa": dados_imagem.get("imagem_url") if dados_imagem else None,
+        "legenda_imagem": dados_imagem.get("legenda_sugerida") if (dados_imagem and dados_imagem.get("imagem_url")) else None,
+        "credito_imagem": dados_imagem.get("credito") if (dados_imagem and dados_imagem.get("imagem_url")) else None,
         "corpo": [
             f"Brasília é uma usina inesgotável de assombros. Em mais um episódio da novela cotidiana do poder, a notícia de que '{noticia['titulo']}' caiu sobre os corredores com o impacto de um cafezinho frio servido em copo de plástico.",
             f"O fato cru é que, segundo apuração do {noticia['fonte']}, {noticia['resumo']}. No entanto, na tradução para o dialeto do botequim nacional, o que se vê é a clássica coreografia de quem precisa parecer ocupadíssimo enquanto calcula os dividendos da próxima rodada de negociações.",
@@ -446,10 +462,10 @@ def executar_rodada(modo_demo=False):
     print("\n[*] Capturando metadados e imagem de capa (og:image)...")
     dados_imagem = extrair_imagem_capa(melhor_noticia["link"])
     if dados_imagem.get("imagem_url"):
-        print(f"    [✓] Imagem capturada: {dados_imagem['imagem_url'][:70]}...")
+        print(f"    [✓] Imagem real capturada: {dados_imagem['imagem_url'][:70]}...")
         print(f"    [✓] Crédito: {dados_imagem['credito']}")
     else:
-        print("    [!] Nenhuma foto og:image extraída; utilizando imagem institucional.")
+        print("    [!] Nenhuma foto og:image autêntica encontrada; omitindo imagem (layout puramente tipográfico).")
 
     # 4. Redação Satírica com Gemini ou Modo Demo
     api_key = obter_api_key()
@@ -461,8 +477,10 @@ def executar_rodada(modo_demo=False):
         if resultado_ia:
             dados_artigo = resultado_ia
             dados_artigo["slug"] = slugify(dados_artigo.get("titulo", melhor_noticia["titulo"]))
-            dados_artigo["imagem_capa"] = dados_imagem.get("imagem_url") or "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
-            dados_artigo["credito_imagem"] = dados_imagem.get("credito") or f"Foto: Reprodução / {melhor_noticia['fonte']}"
+            img_url = dados_imagem.get("imagem_url")
+            dados_artigo["imagem_capa"] = img_url
+            dados_artigo["credito_imagem"] = dados_imagem.get("credito") if img_url else None
+            dados_artigo["legenda_imagem"] = (resultado_ia.get("legenda_imagem") or dados_imagem.get("legenda_sugerida")) if img_url else None
             if "data" not in dados_artigo:
                 dados_artigo["data"] = datetime.now().strftime("%d de %B de %Y").replace("October", "Outubro")
 
