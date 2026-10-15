@@ -208,13 +208,16 @@ COMMON_SCRIPTS = """
 def load_articles():
     files = glob.glob(os.path.join(CONTENT_DIR, "*.json"))
     articles = []
-    for f in sorted(files, reverse=True):
+    for f in files:
         try:
             with open(f, "r", encoding="utf-8") as fp:
                 data = json.load(fp)
+                data["_mtime"] = os.path.getmtime(f)
                 articles.append(data)
         except Exception as e:
             print(f"Erro ao carregar {f}: {e}")
+    # Ordena pelo timestamp mais recente (a última notícia é sempre a Manchete Principal)
+    articles.sort(key=lambda a: (a.get("timestamp") or a.get("data_iso") or a.get("_mtime", 0)), reverse=True)
     return articles
 
 def render_header(is_article=False):
