@@ -1,0 +1,40 @@
+{
+  "slug": "sao-paulo-apagao-enel-guerra-da-vela",
+  "timestamp": "2026-10-15T18:30:00",
+  "data": "15 de Outubro de 2026",
+  "categoria": "Folclore Paulistano",
+  "tempo_leitura": "3 min de leitura",
+  "titulo": "SÃO PAULO NO ESCURO: A GUERRA SANTA DA VELA",
+  "subtitulo": "Com milhões sem luz e o bife apodrecendo no freezer, Tarcísio culpa o Planalto, Lula culpa a privatização e a Enel descobre que o vento venta.",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "imagem_capa": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+  "legenda_imagem": "São Paulo em modo pré-revolução industrial: a maior metrópole da América Latina descobre os encantos medievais do banho frio de canequinha.",
+  "credito_imagem": "Foto: Reprodução / Folhapress",
+  "corpo": [
+    "Se existe um milagre moderno que a gestão pública brasileira conseguiu operar em São Paulo, é a ressurreição triunfal da Idade Média em plena avenida Faria Lima. Basta uma brisa um pouco mais entusiasmada sacudir as folhas de uma sibipiruna para que a maior metrópole da América Latina seja subitamente transportada para o século XIV. Semáforos piscam em agonia, o elevador vira armadilha para claustrofóbicos e o cidadão de classe média descobre o refinado prazer de jantar sardinha em lata à luz de uma vela aromática de baunilha que custou cinquenta reais no shopping.",
+    "Mas o verdadeiro espetáculo de luzes — ou melhor, de sombras — acontece no palco político. Enquanto a carne moída no congelador atinge o estado gasoso e o banho frio de canequinha vira rotina no Morumbi e em São Mateus, tem início a tradicional 'Guerra Santa da Culpa'. O governador Tarcísio de Freitas, apóstolo fervoroso das privatizações que até ontem vendia a desestatização como a oitava maravilha do mundo moderno, surge indignadíssimo com cara de delegado de filme policial jurando que a culpa é toda de Brasília. Afinal de contas, segundo a lógica dos gabinetes paulistas, o cabo que arrebentou na esquina de Perdizes é uma concessão federal, logo a responsabilidade moral pela escuridão é do Palácio do Planalto.",
+    "Do outro lado da trincheira, o governo federal não perde o embalo da demagogia. Em vez de resolver o contrato que está sob o seu próprio carimbo regulatório na Aneel, Lula e seus ministros sobem no palanque digital soltando rojão com a desgraça alheia: 'Viu no que dá privatizar?'. É a clássica vingança da caneta: ninguém restabelece a força na tomada, mas todo mundo aproveita o blecaute para faturar voto de eleitor com o celular descarregado a 2% de bateria. Se a luz demorar mais três dias para voltar, o Planalto é capaz de pedir a beatificação da lamparina de querosene.",
+    "No meio desse fogo cruzado de cinismo, a Enel continua oferecendo o seu habitual serviço de telepatia corporativa. A diretoria da concessionária soltou uma nota comovente explicando, com ares científicos de quem fez doutorado em desculpas esfarrapadas, que o problema foi a intensidade inédita da atmosfera terrestre. Aparentemente, a empresa de energia elétrica comprou uma rede de fios que só funciona em ambiente de vácuo ou sob o clima desértico do Saara. Chover no mês de outubro em São Paulo é, de fato, uma surpresa geológica que ninguém poderia prever.",
+    "No fim das contas, a fatura de luz continuará chegando com pontualidade suíça e bandeira tarifária vermelha, devidamente inflacionada pelo consumo de ar estagnado. Resta ao paulistano abraçar o romantismo forçado da escuridão e escolher em quem votar: no candidato que promete resolver a luz estatizando a chuva, ou no que promete consertar a rede vendendo até o vento."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Bico de Bunsen Doméstico",
+      "texto": "A transformação mágica da boca do fogão a gás no único aquecedor de água e carregador de esperança da família paulistana."
+    },
+    {
+      "titulo": "A Brisa Devastadora",
+      "texto": "A teoria física da Enel que prova que um vendaval de 45 km/h é mais potente e destrutivo que três furacões de categoria cinco no Golfo do México."
+    },
+    {
+      "titulo": "O Federalismo da Tomada",
+      "texto": "O prodígio jurídico pelo qual um poste que cai em Moema é de responsabilidade de Brasília, mas a tarifa que cai na conta bancária é gerida por Milão."
+    },
+    {
+      "titulo": "A Vela de R$ 50",
+      "texto": "A descoberta tardia de que, na hora do colapso urbano, o produto financeiro com maior liquidez e valor de mercado em São Paulo é o fósforo de caixinha."
+    }
+  ],
+  "contexto_real": "Temporais recorrentes e rajadas de vento na Região Metropolitana de São Paulo provocaram sucessivos apagões de grande escala, deixando milhões de clientes da distribuidora Enel sem energia elétrica por dias consecutivos. A crise deflagrou uma intensa troca de acusações políticas em plena disputa eleitoral: o governador Tarcísio de Freitas (Republicanos) cobrou a cassação da concessão e responsabilizou o governo federal e a Aneel pela fiscalização ineficaz, enquanto o governo do presidente Lula (PT) usou o episódio para atacar o modelo de privatizações de serviços essenciais, deixando a população no centro de uma disputa jurídica e regulatória sem solução imediata."
+}
