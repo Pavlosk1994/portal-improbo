@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gerador de Site Estático - O Pasquim Moderno
+Gerador de Site Estático - O ÍMPROBO
 Compila as crônicas estruturadas (em content/*.json) para páginas HTML estáticas (artigos/*.html e index.html)
 Totalmente compatível com deploy na Vercel (zero build steps necessários no servidor, arquivos 100% estáticos).
 """
@@ -10,16 +10,70 @@ import json
 import glob
 from datetime import datetime
 
-PORTAL_NAME = "O PASQUIM MODERNO"
-PORTAL_SLOGAN = "O único jornalismo que a realidade brasileira não permite ser sério."
+PORTAL_NAME = "O ÍMPROBO"
+PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
 INSTAGRAM_URL = "https://instagram.com"
-INSTAGRAM_HANDLE = "@opasquimmoderno"
+INSTAGRAM_HANDLE = "@oimprobo"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
 ARTIGOS_DIR = os.path.join(BASE_DIR, "artigos")
 INDEX_PATH = os.path.join(BASE_DIR, "index.html")
 VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
+
+COMMON_HEAD_STYLES = """
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Newsreader', Georgia, serif;
+            color: #1c1917;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-sans {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        /* Tipografia Fluida Responsiva (Mobile & Desktop) */
+        .masthead-title {
+            font-size: clamp(2.2rem, 7.5vw, 4.6rem);
+            line-height: 1.05;
+            letter-spacing: -0.035em;
+            word-break: break-word;
+        }
+        .article-title {
+            font-size: clamp(1.4rem, 4.2vw, 2.75rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        .hero-title {
+            font-size: clamp(1.45rem, 4.5vw, 2.85rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        .article-subtitle {
+            font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+            line-height: 1.45;
+        }
+        .drop-cap-fluid:first-letter {
+            float: left;
+            font-size: clamp(3.2rem, 8vw, 4.2rem);
+            line-height: 0.85;
+            padding-right: 0.5rem;
+            padding-top: 0.1rem;
+            font-weight: 800;
+            color: #0c0a09;
+        }
+    </style>
+"""
 
 def load_articles():
     files = glob.glob(os.path.join(CONTENT_DIR, "*.json"))
@@ -39,28 +93,28 @@ def render_header(is_article=False):
     
     return f"""
     <!-- Top Metadata Bar -->
-    <div class="border-b border-stone-300 py-1.5 px-4 text-xs font-mono text-stone-600 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="flex items-center space-x-3">
-            <span class="font-bold text-stone-900">BRASÍLIA / BRASIL</span>
+    <div class="border-b border-stone-300 py-1.5 px-3 sm:px-4 text-xs font-mono text-stone-600 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span class="font-bold text-stone-900 shrink-0">BRASÍLIA / BRASIL</span>
             <span class="hidden sm:inline">&bull;</span>
-            <span class="hidden sm:inline">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-stone-500">Previsão: 100% de umidade na cara de pau</span>
         </div>
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-3 shrink-0">
             {back_link}
         </div>
     </div>
 
     <!-- Newspaper Masthead -->
-    <header class="max-w-6xl mx-auto px-4 pt-6 pb-4 text-center">
-        <div class="border-b-4 border-stone-950 pb-3">
+    <header class="max-w-6xl mx-auto px-3 sm:px-4 pt-4 sm:pt-6 pb-4 text-center">
+        <div class="border-b-4 border-stone-950 pb-2 sm:pb-3">
             <a href="{home_link}" class="inline-block group">
-                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-stone-950 group-hover:text-red-800 transition duration-150">
+                <h1 class="masthead-title font-serif font-black tracking-tight text-stone-950 group-hover:text-red-800 transition duration-150">
                     {PORTAL_NAME}
                 </h1>
             </a>
-            <div class="border-t border-b border-stone-900 py-1.5 mt-3 flex justify-between items-center text-xs md:text-sm font-serif italic text-stone-700">
+            <div class="border-t border-b border-stone-900 py-1 sm:py-1.5 mt-2 sm:mt-3 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-700 gap-1">
                 <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Ano I &bull; N&ordm; 01</span>
-                <p class="mx-auto font-medium text-stone-900 tracking-wide">{PORTAL_SLOGAN}</p>
+                <p class="mx-auto font-medium text-stone-900 tracking-wide text-center px-2">{PORTAL_SLOGAN}</p>
                 <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-500">Preço: Sua Paciência</span>
             </div>
         </div>
@@ -70,8 +124,8 @@ def render_header(is_article=False):
 def render_footer(is_article=False):
     home_link = "../index.html" if is_article else "index.html"
     return f"""
-    <footer class="bg-stone-950 text-stone-300 border-t-4 border-red-700 mt-20 pt-12 pb-10">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
+    <footer class="bg-stone-950 text-stone-300 border-t-4 border-red-700 mt-16 sm:mt-20 pt-10 sm:pt-12 pb-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
             <div>
                 <a href="{home_link}">
                     <h3 class="font-serif text-2xl font-black text-stone-100 tracking-tight">{PORTAL_NAME}</h3>
@@ -112,18 +166,18 @@ def generate_article_page(art):
     read_time = art.get("tempo_leitura", "3 min de leitura")
     author = art.get("autor", "Redação Ácida")
     
-    # Body paragraphs
+    # Body paragraphs with fluid responsive drop-cap
     body_html = ""
     for idx, p in enumerate(art.get("corpo", [])):
         if idx == 0:
             body_html += f"""
-            <p class="text-lg md:text-xl text-stone-800 leading-relaxed mb-6 font-serif first-letter:float-left first-letter:text-6xl first-letter:pr-3 first-letter:font-serif first-letter:font-bold first-letter:text-stone-950 first-letter:leading-none">
+            <p class="drop-cap-fluid text-lg sm:text-xl text-stone-800 leading-relaxed mb-6 font-serif">
                 {p}
             </p>
             """
         else:
             body_html += f"""
-            <p class="text-lg text-stone-800 leading-relaxed mb-6 font-serif">
+            <p class="text-base sm:text-lg text-stone-800 leading-relaxed mb-6 font-serif">
                 {p}
             </p>
             """
@@ -136,16 +190,16 @@ def generate_article_page(art):
         milagres_items += f"""
         <li class="pl-2">
             <span class="font-bold text-stone-950 font-serif text-base block mb-1">&bull; {m_title}</span>
-            <span class="text-stone-700 text-sm leading-relaxed">{m_text}</span>
+            <span class="text-stone-700 text-sm leading-relaxed font-sans">{m_text}</span>
         </li>
         """
         
     milagres_html = f"""
-    <div class="my-10 border-2 border-stone-800 bg-[#fdfbf7] p-6 md:p-8 rounded-sm shadow-sm relative">
-        <div class="absolute -top-3 left-6 bg-red-700 text-white font-mono text-xs uppercase px-3 py-0.5 tracking-widest font-bold">
+    <div class="my-8 sm:my-10 border-2 border-stone-800 bg-[#fdfbf7] p-5 sm:p-7 md:p-8 rounded-sm shadow-sm relative">
+        <div class="absolute -top-3 left-4 sm:left-6 bg-red-700 text-white font-mono text-xs uppercase px-2.5 sm:px-3 py-0.5 tracking-widest font-bold">
             OS MILAGRES &bull; PONTOS-CHAVE
         </div>
-        <h4 class="font-serif font-black text-xl text-stone-950 mt-1 mb-4">O Balanço Sarcástico da Medida</h4>
+        <h4 class="font-serif font-black text-lg sm:text-xl text-stone-950 mt-1 mb-4">O Balanço Sarcástico da Medida</h4>
         <ul class="space-y-4">
             {milagres_items}
         </ul>
@@ -155,9 +209,9 @@ def generate_article_page(art):
     # Contexto Real
     contexto_real = art.get("contexto_real", "")
     contexto_html = f"""
-    <div class="my-10 border-l-4 border-stone-600 bg-stone-100 p-6 rounded-r-sm">
-        <div class="flex items-center space-x-2 text-stone-600 font-mono text-xs font-bold uppercase tracking-wider mb-2">
-            <svg class="w-4 h-4 text-stone-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="my-8 sm:my-10 border-l-4 border-stone-600 bg-stone-100 p-4 sm:p-6 rounded-r-sm">
+        <div class="flex items-center space-x-2 text-stone-700 font-mono text-xs font-bold uppercase tracking-wider mb-2">
+            <svg class="w-4 h-4 text-stone-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <span>O Contexto Real &bull; Rodapé Factual</span>
@@ -175,44 +229,32 @@ def generate_article_page(art):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} | {PORTAL_NAME}</title>
     <meta name="description" content="{subtitle}">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {{
-            font-family: 'Newsreader', Georgia, serif;
-            color: #1c1917;
-        }}
-        .font-sans {{
-            font-family: 'Inter', system-ui, sans-serif;
-        }}
-    </style>
+    {COMMON_HEAD_STYLES}
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-red-700 selection:text-white">
     <div>
         {render_header(is_article=True)}
 
-        <!-- Article Container -->
-        <main class="max-w-3xl mx-auto px-4 py-8">
+        <!-- Article Container with generous responsive padding -->
+        <main class="w-full max-w-3xl mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10">
             <!-- Article Header -->
-            <div class="mb-8 border-b border-stone-300 pb-6">
-                <div class="flex items-center space-x-3 mb-4 font-mono text-xs">
-                    <span class="bg-red-700 text-white font-bold px-2.5 py-1 tracking-wider uppercase">{category}</span>
+            <div class="mb-6 sm:mb-8 border-b border-stone-300 pb-5 sm:pb-6">
+                <div class="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 font-mono text-xs">
+                    <span class="bg-red-700 text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">{category}</span>
                     <span class="text-stone-500">{date_str}</span>
                     <span class="text-stone-400">&bull;</span>
                     <span class="text-stone-500">{read_time}</span>
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-stone-950 font-serif tracking-tight leading-tight mb-4">
+                <h1 class="article-title font-black text-stone-950 font-serif mb-4">
                     {title}
                 </h1>
 
-                <p class="text-lg md:text-xl text-stone-600 font-serif italic leading-snug">
+                <p class="article-subtitle text-stone-600 font-serif italic mb-6">
                     {subtitle}
                 </p>
 
-                <div class="mt-6 flex items-center justify-between border-t border-stone-200 pt-4 text-xs font-mono text-stone-500">
+                <div class="flex items-center justify-between border-t border-stone-200 pt-3 text-xs font-mono text-stone-500">
                     <div>
                         Texto: <span class="font-bold text-stone-800">{author}</span>
                     </div>
@@ -230,7 +272,7 @@ def generate_article_page(art):
             </article>
 
             <!-- Bottom Share / Nav -->
-            <div class="mt-12 pt-6 border-t border-stone-300 flex justify-between items-center">
+            <div class="mt-10 sm:mt-12 pt-6 border-t border-stone-300 flex flex-col sm:flex-row gap-4 justify-between items-center">
                 <a href="../index.html" class="inline-flex items-center text-sm font-mono uppercase tracking-wider text-red-700 hover:text-red-950 font-bold transition">
                     &larr; Voltar para a Capa
                 </a>
@@ -258,27 +300,26 @@ def generate_home_page(articles):
         hero_title = hero["titulo"]
         hero_subtitle = hero["subtitulo"]
         hero_date = hero.get("data", "Outubro de 2026")
-        hero_cat = hero.get("categoria", "Comédia de Costumes")
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
 
         hero_html = f"""
         <!-- Hero: Manchete Principal -->
-        <section class="mb-14 border-b-2 border-stone-900 pb-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <section class="mb-10 sm:mb-14 border-b-2 border-stone-900 pb-8 sm:pb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
                 <div class="lg:col-span-8">
-                    <div class="flex items-center space-x-3 mb-3">
+                    <div class="flex items-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
                         <span class="bg-red-700 text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
                         <span class="text-xs font-mono text-stone-500">{hero_date}</span>
                     </div>
                     <a href="artigos/{hero_slug}.html" class="group block">
-                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-serif text-stone-950 group-hover:text-red-800 transition leading-tight mb-4">
+                        <h2 class="hero-title font-black font-serif text-stone-950 group-hover:text-red-800 transition mb-3 sm:mb-4">
                             {hero_title}
                         </h2>
                     </a>
-                    <p class="text-lg md:text-xl font-serif italic text-stone-700 mb-5 leading-snug">
+                    <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
                         {hero_subtitle}
                     </p>
-                    <p class="text-stone-700 font-serif text-base leading-relaxed line-clamp-3 mb-6">
+                    <p class="text-stone-700 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
                         {hero_snippet}
                     </p>
                     <a href="artigos/{hero_slug}.html" class="inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-red-700 group hover:text-red-950 transition">
@@ -288,13 +329,13 @@ def generate_home_page(articles):
                 </div>
 
                 <!-- Editorial Aside -->
-                <div class="lg:col-span-4 bg-stone-100 p-6 border-l-2 border-stone-300 font-serif">
+                <div class="lg:col-span-4 bg-stone-100 p-5 sm:p-6 border-l-2 border-stone-300 font-serif rounded-sm">
                     <div class="font-mono text-xs uppercase tracking-widest text-stone-500 font-bold mb-2">Frase do Dia na Redação</div>
-                    <blockquote class="italic text-stone-800 text-sm md:text-base border-l-2 border-red-700 pl-3 my-3">
+                    <blockquote class="italic text-stone-800 text-sm md:text-base border-l-2 border-red-700 pl-3 my-2 sm:my-3">
                         &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
                     </blockquote>
-                    <p class="text-xs font-mono text-stone-500 mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
-                    <div class="mt-6 pt-4 border-t border-stone-200">
+                    <p class="text-xs font-mono text-stone-500 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
+                    <div class="mt-5 pt-3 border-t border-stone-200">
                         <span class="text-xs font-mono uppercase font-bold text-stone-700 block mb-1">Aviso ao Leitor</span>
                         <p class="text-xs text-stone-600 leading-relaxed font-sans">
                             Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
@@ -324,7 +365,7 @@ def generate_home_page(articles):
                             <span class="text-stone-500">{a_date}</span>
                         </div>
                         <a href="artigos/{a_slug}.html" class="block group">
-                            <h3 class="font-serif font-bold text-xl text-stone-950 group-hover:text-red-800 transition leading-snug mb-2">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-stone-950 group-hover:text-red-800 transition leading-snug mb-2">
                                 {a_title}
                             </h3>
                         </a>
@@ -341,7 +382,7 @@ def generate_home_page(articles):
             grid_html = f"""
             <section>
                 <div class="border-b border-stone-800 pb-2 mb-6 flex items-center justify-between">
-                    <h2 class="font-serif text-2xl font-black text-stone-950 tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
+                    <h2 class="font-serif text-xl sm:text-2xl font-black text-stone-950 tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
                     <span class="font-mono text-xs text-stone-500 uppercase">{len(other_articles)} crônica(s)</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -351,7 +392,7 @@ def generate_home_page(articles):
             """
         else:
             grid_html = f"""
-            <section class="py-8 text-center border-t border-stone-300">
+            <section class="py-6 sm:py-8 text-center border-t border-stone-300">
                 <span class="font-mono text-xs uppercase tracking-widest text-stone-500">Mais escândalos e gafes em apuração na gráfica...</span>
             </section>
             """
@@ -363,26 +404,14 @@ def generate_home_page(articles):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{PORTAL_NAME} | {PORTAL_SLOGAN}</title>
     <meta name="description" content="Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre a realidade brasileira.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {{
-            font-family: 'Newsreader', Georgia, serif;
-            color: #1c1917;
-        }}
-        .font-sans {{
-            font-family: 'Inter', system-ui, sans-serif;
-        }}
-    </style>
+    {COMMON_HEAD_STYLES}
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-red-700 selection:text-white">
     <div>
         {render_header(is_article=False)}
 
-        <!-- Main Content -->
-        <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Main Content with responsive padding -->
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
             {hero_html}
             {grid_html}
         </main>
