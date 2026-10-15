@@ -39,3 +39,4 @@ Sempre que receber uma notícia de entrada, você deve gerar o conteúdo estrutu
    - Caixa neutra em tom cinza sóbrio para o "Contexto Real (Rodapé Factual)".
 5. REGRA DE AUTOMATIZAÇÃO DE CÓDIGO:
    - Toda nova crônica gerada dispara a atualização automática de `index.html` e a compilação do respectivo HTML da notícia em `artigos/`, mantendo o repositório 100% pronto para deploy na Vercel a qualquer momento.
+
