@@ -16,3 +16,4 @@ Sempre que receber uma notícia de entrada, você deve gerar o conteúdo estrutu
 2. O CORPO DA CRÔNICA: Um texto fluido dividindo a notícia em parágrafos dinâmicos, usando metáforas cotidianas.
 3. OS "MILAGRES" OU PONTOS-CHAVE (Bullet points): Uma lista rápida detalhando os pontos principais da medida com explicações sarcásticas e analíticas.
 4. O CONTEXTO REAL (O Rodapé Factual): Um breve parágrafo final transparente explicando os fatos crus e diretos que motivaram a sátira.
+

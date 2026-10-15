@@ -1,0 +1,34 @@
+# TÍTULO PRINCIPAL
+### **SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA**
+*Subtítulo: Assustado com as pesquisas igual a gato em máquina de lavar, senador ultraliberal veste o macacão de operário imaginário, jura amor à folga no domingo e promete "home office" até pro frentista do posto.*
+
+---
+
+# O CORPO DA CRÔNICA
+
+A política brasileira tem o poder milagroso de operar conversões mais rápidas que malandro jurando que tomou jeito na missa de Sétimo Dia. Até a semana passada, se alguém pronunciasse as palavras "fim da escala 6x1" perto da bancada, o sujeito era imediatamente excomungado sob a acusação de querer destruir o PIB, quebrar a padaria da esquina e transformar o Brasil numa rede gigante de descanso coletivo. A ladainha era sempre a mesma: a livre iniciativa ia falir, o patrão ia chorar asfalto e a economia entraria em colapso se o cidadão tivesse dois míseros dias para curar a ressaca da labuta.
+
+Aí o segundo turno aperta, as pesquisas internas de intenção de voto chegam no comitê com a sutileza de uma marretada na canela e — aleluia, irmãos! — o senador Flávio Bolsonaro é subitamente atingido por uma labareda de consciência de classe.
+
+O homem, cuja rotina espartana no Senado se resume a uma suadoura hercúlea que vai da terça-feira depois do almoço até a quinta-feira antes do cafezinho com ar-condicionado no 18°C, de repente descobriu que pegar dois ônibus caindo aos pedaços às 5h da manhã de segunda a sábado é uma humilhação que dói nos ossos. Olhou pro horizonte com a cara lavada do sobrinho folgado que aparece na ceia de Natal se oferecendo pra ajudar a cortar o peru e cravou: vai votar a favor da PEC porque "a maioria dos trabalhadores quer o fim da 6x1". Ora, veja que perspicácia! Descobriu o cansaço alheio com a velocidade de quem viu a água batendo na própria bunda eleitoral!
+
+É a comédia de costumes em seu estado mais puro. O candidato que até outro dia chamava a pauta de “oportunismo eleitoreiro” da oposição agora pula no vagão lotado do trem de Belford Roxo tentando roubar o megafone do condutor. Para não deixar o adversário faturar sozinho a glória do descanso remunerado, o senador finge que sempre foi fã de carteirinha de um fim de semana digno. É o equivalente político ao sujeito que, vendo o blindado da polícia descer a ladeira, engole o cigarro e começa a cantar o hino da bandeira com a mão no peito.
+
+Mas como bom malandro de palanque não dá ponto sem nó, o senador já soltou aquele "apoio, porém todavia contudo". Prometeu votar a favor, mas exigindo “aperfeiçoamentos”, incluindo compensações patronais e regras para *home office*. A imagem é de chorar de rir: o país agora sonha com o frentista de posto abastecendo Santana 98 pelo Wi-Fi, o gari varrendo a sarjeta via Teams e o chapeiro da rodoviária virando bife à distância por videoconferência.
+
+No fundo, a regra é clara: não há convicção liberal que resista ao pavor de uma urna eletrônica apitando contra. Se o segundo turno durar mais duas semanas com a corda no pescoço, o filho do homem aparece no plenário de botina suja de barro, marmita de alumínio embaixo do braço e pedindo a canonização imediata do feriado nacional.
+
+---
+
+# OS "MILAGRES" OU PONTOS-CHAVE
+
+* **O Santo da Urna Apertada:** A milagrosa transfiguração de uma proposta tachada de "bomba fiscal e delírio esquerdista" em "anseio justíssimo do trabalhador brasileiro", com efeito retroativo imediato após a leitura do primeiro gráfico de rejeição eleitoral.
+* **O Teletrabalho da Betoneira:** A pérola legislativa de empurrar a lorota do *home office* como compensação numa PEC que atende, justamente, o peão que se não estiver presente de corpo e alma descarregando saco de cimento ou passando compra no código de barras, a loja não abre.
+* **O Abraço do Afogado:** O desespero acrobático de quem precisa atravessar a rua para chutar a santa do concorrente e, no meio do caminho, resolve rezar uma ave-maria para o mesmo santo só para não perder o fiel.
+* **A Matemática do Boteco:** A ficha que finalmente caiu na cabeça da assessoria: empresário de camisa polo de marca dá dinheiro pra campanha, mas na hora do "confirma" o voto dele pesa exatamente o mesmo quilo que o do cidadão que passa o domingo estirado na cama esperando a coluna desinflamar.
+
+---
+
+# O CONTEXTO REAL (O Rodapé Factual)
+
+O senador e candidato à Presidência da República em 2026, Flávio Bolsonaro (PL), declarou publicamente que votará a favor da Proposta de Emenda à Constituição (PEC) que estabelece o fim da escala de trabalho 6x1 quando o texto for apreciado no Senado. A posição representa uma guinada formal em relação ao histórico de resistência e às críticas severas feitas anteriormente por ele e por sua base aliada, que classificavam o projeto encabeçado pelo Movimento Vida Além do Trabalho (VAT) e apresentado pela oposição como uma medida oportunista com potencial de desorganizar a economia. Pressionado pela ampla adesão popular à pauta durante a disputa acirrada de segundo turno contra a chapa do presidente Luiz Inácio Lula da Silva, Flávio recuou para conter danos eleitorais, condicionando, no entanto, seu apoio a discussões sobre compensações econômicas para os setores produtivos e regras de flexibilização.
