@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPRÓBO | A crônica semanal da falta de decoro e do absurdo nacional.</title>
+    <meta name="description" content="Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre a realidade brasileira.">
+    
+    <meta name="referrer" content="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-nyt: #F4F1EA;
+            --container-white: #FFFFFF;
+            --text-charcoal: #121212;
+            --editorial-red: #8B0000;
+            --border-divider: #D1CEC7;
+            --box-cream-dark: #EBE7DE;
+        }
+
+        body {
+            background-color: var(--bg-nyt);
+            color: var(--text-charcoal);
+            font-family: 'Newsreader', Georgia, serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .font-sans {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        /* Linhas Editoriais Clássicas New York Times */
+        .masthead-borders {
+            border-top: 1px solid #121212;
+            border-bottom: 3px double #121212;
+        }
+
+        .editorial-divider {
+            border-color: #D1CEC7;
+        }
+
+        /* Tipografia Fluida Responsiva com clamp() */
+        .masthead-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(2.3rem, 7.5vw, 4.8rem);
+            line-height: 1.02;
+            letter-spacing: -0.035em;
+            word-break: break-word;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .article-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(1.4rem, 4.2vw, 2.75rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .hero-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(1.45rem, 4.5vw, 2.85rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .article-subtitle {
+            font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+            line-height: 1.45;
+        }
+
+        .drop-cap-fluid:first-letter {
+            float: left;
+            font-size: clamp(3.2rem, 8vw, 4.2rem);
+            line-height: 0.85;
+            padding-right: 0.5rem;
+            padding-top: 0.15rem;
+            font-weight: 800;
+            color: #121212;
+        }
+
+        /* Micro-interação: Links com Sublinhado Animado Neo-Clássico */
+        .neo-link {
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .neo-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--editorial-red);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .neo-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Cabeçalho Retrátil Sticky NYT */
+        #site-header {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #site-header.is-scrolled {
+            background-color: rgba(244, 241, 234, 0.96);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 4px 14px rgba(18, 18, 18, 0.06);
+            border-bottom: 1px solid #D1CEC7;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+        }
+        #site-header.is-scrolled .masthead-title {
+            font-size: clamp(1.4rem, 3.8vw, 2.1rem);
+        }
+        #site-header.is-scrolled .masthead-subline {
+            display: none;
+        }
+        #site-header.is-scrolled .masthead-borders {
+            border-top: none;
+            border-bottom: 1px solid #121212;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
+        }
+    </style>
+
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
+    <div>
+        
+    <!-- Top Metadata Bar NYT Style -->
+    <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span class="font-bold text-[#121212] shrink-0">BRASÍLIA / BRASIL</span>
+            <span class="text-[#D1CEC7]">&bull;</span>
+            <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
+            <span class="text-stone-600">Quinta-feira, 15 de Outubro de 2026</span>
+        </div>
+        <div class="flex items-center space-x-3 shrink-0">
+            <span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>
+        </div>
+    </div>
+
+    <!-- Newspaper Masthead with Classic NYT Double Line -->
+    <div class="sticky top-0 z-40 bg-[#F4F1EA] border-b border-transparent transition-all duration-300" id="site-header">
+        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
+            <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
+                <a href="index.html" class="inline-block group">
+                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300">
+                        IMPRÓBO
+                    </h1>
+                </a>
+                <div class="masthead-subline border-t border-b border-[#121212]/80 py-1 sm:py-1.5 mt-2 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Ano I &bull; N&ordm; 01</span>
+                    <p class="mx-auto font-medium text-[#121212] tracking-wide text-center px-2">A crônica semanal da falta de decoro e do absurdo nacional.</p>
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Preço: Sua Paciência</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+
+        <!-- Main Content with NYT Style spacing -->
+        <main class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-6 sm:py-8">
+            
+        <!-- Hero: Manchete Principal NYT Style White Container -->
+        <section class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 reveal-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+                <div class="lg:col-span-8">
+                    <div class="flex items-center space-x-2 sm:space-x-3 mb-3">
+                        <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
+                        <span class="text-xs font-mono text-stone-600">15 de Outubro de 2026</span>
+                    </div>
+                    <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="group block">
+                        <h2 class="hero-title font-black font-serif text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
+                            DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'
+                        </h2>
+                    </a>
+                    <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
+                        Após torrarem milhões sem prestar contas, partidos políticos aprovam PEC perdoando suas próprias dívidas e autorizam o uso de dinheiro público para pagar o que sobrou da farra.
+                    </p>
+                    
+            <div class="my-4 sm:my-5 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="block group/img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="O Congresso Nacional em sessão histórica: deputados e senadores descobrem que a melhor maneira de limpar a ficha suja é passando a borracha na própria lei." class="w-full h-auto max-h-[420px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="lazy">
+                </a>
+                
+                <div class="px-3 py-1.5 text-xs text-stone-600 font-serif italic border-t border-[#D1CEC7]/70 flex flex-col sm:flex-row justify-between gap-1">
+                    <span>O Congresso Nacional em sessão histórica: deputados e senadores descobrem que a melhor maneira de limpar a ficha suja é passando a borracha na própria lei.</span>
+                    <span class="font-sans text-[10px] text-stone-500 uppercase font-medium shrink-0">Foto: Reprodução / Agência Câmara</span>
+                </div>
+                
+            </div>
+            
+                    <p class="text-[#121212]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
+                        Se existe uma lição que o cidadão comum aprende desde o berço na República Federativa do Brasil, é que se você atrasar cinquenta reais na fatura da loja de departamento, o seu nome vai parar no Serasa mais rápido do que político descendo a rampa do Planalto quando avista um oficial de justiça. Mas essa regra de plebeus não se aplica ao Olimpo de Brasília. Numa demonstração de amor-próprio que emocionaria até o mais egocêntrico dos terapeutas, os nobres deputados e senadores acabam de aprovar a gloriosa 'PEC do Auto-Perdão': uma emenda constitucional em que os próprios partidos políticos se reuniram em plenário, olharam no espelho, deram um tapinha nas próprias costas e disseram: 'Estão perdoados, seus lindos!'.
+                    </p>
+                    <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="neo-link inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">
+                        <span>Ler crônica completa</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Editorial Aside Card (#EBE7DE com borda clássica) -->
+                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm">
+                    <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
+                    <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
+                        &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
+                    </blockquote>
+                    <p class="text-xs font-mono text-stone-600 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
+                    <div class="mt-5 pt-3 border-t border-[#D1CEC7]">
+                        <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
+                        <p class="text-xs text-stone-700 leading-relaxed font-sans">
+                            Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            
+            <section class="reveal-on-scroll">
+                <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
+                    <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
+                    <span class="font-mono text-xs text-stone-600 uppercase">4 crônica(s)</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                    <div>
+                        
+                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80" alt="ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                    </div>
+                    
+                        <div class="flex items-center space-x-2 text-xs font-mono mb-2">
+                            <span class="text-[#8B0000] font-bold uppercase">Folclore Paulistano</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">15 de Outubro de 2026</span>
+                        </div>
+                        <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="block group">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                                ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'
+                            </h3>
+                        </a>
+                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                            Com a carne no congelador criando vida própria e o paulistano tomando banho de caneco aos berros, Tarcísio culpa o Planalto, Lula culpa a privatização e a concessionária jura que poste foi feito pra ficar em sala com ar-condicionado.
+                        </p>
+                    </div>
+                    <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                        <span>Ler mais</span>
+                        <span>&rarr;</span>
+                    </a>
+                </article>
+                
+                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                    <div>
+                        
+                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                        <img src="https://ichef.bbci.co.uk/news/1200/branded_portuguese/686a/live/e2786310-9ca8-11ee-8656-b3aa77fa9ef9.jpg" alt="SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                    </div>
+                    
+                        <div class="flex items-center space-x-2 text-xs font-mono mb-2">
+                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">15 de Outubro de 2026</span>
+                        </div>
+                        <a href="artigos/lula-malabarismo-planalto-centrao.html" class="block group">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                                SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE
+                            </h3>
+                        </a>
+                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                            Lula promete a folga sagrada do peão no palanque e fecha a fatura do 2º turno fatiando a chave do cofre com Alcolumbre e Hugo Motta.
+                        </p>
+                    </div>
+                    <a href="artigos/lula-malabarismo-planalto-centrao.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                        <span>Ler mais</span>
+                        <span>&rarr;</span>
+                    </a>
+                </article>
+                
+                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                    <div>
+                        
+                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                        <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                    </div>
+                    
+                        <div class="flex items-center space-x-2 text-xs font-mono mb-2">
+                            <span class="text-[#8B0000] font-bold uppercase">Crônica Política</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">15 de Outubro de 2026</span>
+                        </div>
+                        <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="block group">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                                O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO
+                            </h3>
+                        </a>
+                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                            Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.
+                        </p>
+                    </div>
+                    <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                        <span>Ler mais</span>
+                        <span>&rarr;</span>
+                    </a>
+                </article>
+                
+                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                    <div>
+                        
+                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                        <img src="https://ichef.bbci.co.uk/news/1200/branded_portuguese/e4fd/live/14bd8750-c737-11f1-9085-f95bdc648acc.jpg" alt="SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                    </div>
+                    
+                        <div class="flex items-center space-x-2 text-xs font-mono mb-2">
+                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">15 de Outubro de 2026</span>
+                        </div>
+                        <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="block group">
+                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                                SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA
+                            </h3>
+                        </a>
+                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                            Assustado com as pesquisas igual a gato em máquina de lavar, senador ultraliberal veste o macacão de operário imaginário, jura amor à folga no domingo e promete 'home office' até pro frentista do posto.
+                        </p>
+                    </div>
+                    <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                        <span>Ler mais</span>
+                        <span>&rarr;</span>
+                    </a>
+                </article>
+                
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+    
+    <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
+            <div>
+                <a href="index.html" class="inline-block group">
+                    <h3 class="font-serif text-2xl font-black text-stone-100 group-hover:text-amber-100 tracking-tight transition-colors">IMPRÓBO</h3>
+                </a>
+                <p class="mt-3 text-stone-400 text-sm leading-relaxed font-sans">
+                    Crônica política ácida, deboche com base factual e comédia de costumes do teatro estatal. Se há pompa e incoerência, há matéria-prima.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial</h4>
+                <p class="text-stone-400 text-sm leading-relaxed font-sans">
+                    Nenhum político foi poupado durante a redação destas matérias. O alvo é o poder, o carimbo e a liturgia vazia.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes</h4>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-4 py-2.5 rounded text-sm transition-all duration-300">
+                    <svg class="w-5 h-5 fill-current text-pink-500" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span class="font-medium">Siga no Instagram</span>
+                    <span class="text-xs text-stone-400 font-mono">(@improbo)</span>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500">
+            &copy; 2026 IMPRÓBO. Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica.
+        </div>
+    </footer>
+    
+    
+    <script>
+        // Micro-interações de rolagem suave (Intersection Observer)
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Cabeçalho Retrátil (Sticky Shrink Header)
+            const header = document.getElementById('site-header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    const currentScroll = window.scrollY;
+                    if (currentScroll > 45) {
+                        header.classList.add('is-scrolled');
+                    } else {
+                        header.classList.remove('is-scrolled');
+                    }
+                }, { passive: true });
+            }
+        });
+    </script>
+
+</body>
+</html>

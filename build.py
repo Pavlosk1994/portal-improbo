@@ -346,26 +346,27 @@ def generate_article_page(art):
             </p>
             """
 
-    # Milagres / Pontos-chave em estilo editorial
-    milagres_items = ""
-    for m in art.get("milagres", []):
-        m_title = m.get("titulo", "")
-        m_text = m.get("texto", "")
-        milagres_items += f"""
+    # Manual de Emergência / Guia de Sobrevivência do Otário
+    guia_raw = art.get("guia_sobrevivencia") or art.get("milagres", [])
+    guia_items = ""
+    for g in guia_raw:
+        g_title = g.get("titulo", "")
+        g_text = g.get("texto", "")
+        guia_items += f"""
         <li class="pl-2">
-            <span class="font-bold text-[#121212] font-serif text-base block mb-1">&bull; {m_title}</span>
-            <span class="text-stone-700 text-sm leading-relaxed font-sans">{m_text}</span>
+            <span class="font-bold text-[#121212] font-serif text-base block mb-1">&bull; {g_title}</span>
+            <span class="text-stone-700 text-sm leading-relaxed font-sans">{g_text}</span>
         </li>
         """
         
-    milagres_html = f"""
+    guia_html = f"""
     <div class="my-8 sm:my-10 border-2 border-[#121212] bg-[#FAF9F5] p-5 sm:p-7 md:p-8 rounded-sm shadow-sm relative reveal-on-scroll">
         <div class="absolute -top-3 left-4 sm:left-6 bg-[#8B0000] text-white font-mono text-xs uppercase px-2.5 sm:px-3 py-0.5 tracking-widest font-bold">
-            OS MILAGRES &bull; PONTOS-CHAVE
+            MANUAL DE EMERGÊNCIA &bull; GUIA DE SOBREVIVÊNCIA DO OTÁRIO
         </div>
-        <h4 class="font-serif font-black text-lg sm:text-xl text-[#121212] mt-1 mb-4">O Balanço Sarcástico da Medida</h4>
+        <h4 class="font-serif font-black text-lg sm:text-xl text-[#121212] mt-1 mb-4">Dicas Práticas Para Não Enlouquecer com a Notícia</h4>
         <ul class="space-y-4">
-            {milagres_items}
+            {guia_items}
         </ul>
     </div>
     """
@@ -435,7 +436,7 @@ def generate_article_page(art):
                 <!-- Body -->
                 <article class="prose max-w-none">
                     {body_html}
-                    {milagres_html}
+                    {guia_html}
                     {contexto_html}
                 </article>
 
