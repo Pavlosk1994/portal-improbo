@@ -237,27 +237,29 @@ def redigir_cronica_gemini(noticia, dados_imagem, api_key):
 Você é o Redator-Chefe e Cronista Ácido de **IMPRÓBO**, portal brasileiro de jornalismo satírico, crônica política e comédia de costumes.
 Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar mentiras).
-2. Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico. Proibido tom acadêmico ou solene. Use metáforas do cotidiano brasileiro (o malandro na missa, o guarda com apito contra blindado).
-3. Sem Viés Partidário: O alvo é o poder, o carimbo, a incoerência eleitoral e a liturgia vazia.
-4. Estrutura de Retorno: Você DEVE responder OBRIGATORIAMENTE com um único objeto JSON válido (sem tags markdown ```json), contendo:
+2. Acidez Máxima e Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico. Proibido tom acadêmico ou morno. Use metáforas populares ácidas (o agiota de calçada, o garçom do rodízio, o malandro na missa). Desmonte a pose e a liturgia dos políticos.
+3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (40 a 65 caracteres no máximo), em caixa alta, contendo uma piada ou contradição sarcástica imediata (ex: 'SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE'). Proibido títulos longos ou que pareçam sinopses. O detalhamento do contexto vai no subtítulo.
+4. Sem Viés Partidário: O alvo é sempre o poder, a burocracia estatal, a incoerência eleitoral e o teatro político.
+5. Estrutura de Retorno: Você DEVE responder OBRIGATORIAMENTE com um único objeto JSON válido (sem tags markdown ```json), contendo:
 {
-  "titulo": "MANCHETE EM CAIXA ALTA ÁCIDA E CHAMATIVA",
-  "subtitulo": "Subtítulo cínico e explicativo em estilo editorial",
+  "titulo": "MANCHETE CURTA COM PIADA OU CONTRADIÇÃO (MÁX 60 CARACTERES)",
+  "subtitulo": "Subtítulo cínico e explicativo detalhando o absurdo da situação",
   "categoria": "Comédia de Costumes" (ou Crônica Política / Folclore de Brasília),
   "tempo_leitura": "3 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
   "legenda_imagem": "Legenda editorial satírica para a foto de capa",
   "corpo": [
-    "Primeiro parágrafo fluido...",
-    "Segundo parágrafo desenvolvendo a contradição...",
-    "Terceiro parágrafo com metáforas cotidianas...",
-    "Quarto parágrafo de fechamento..."
+    "Primeiro parágrafo fluido com metáfora de botequim...",
+    "Segundo parágrafo desconstruindo a pose do político...",
+    "Terceiro parágrafo com deboche sobre a conveniência eleitoral...",
+    "Quarto parágrafo fechando com sabedoria popular ácida..."
   ],
   "milagres": [
     {"titulo": "Nome Sarcástico do Ponto 1", "texto": "Explicação analítica e irônica."},
     {"titulo": "Nome Sarcástico do Ponto 2", "texto": "Explicação analítica e irônica."},
-    {"titulo": "Nome Sarcástico do Ponto 3", "texto": "Explicação analítica e irônica."}
+    {"titulo": "Nome Sarcástico do Ponto 3", "texto": "Explicação analítica e irônica."},
+    {"titulo": "Nome Sarcástico do Ponto 4", "texto": "Explicação analítica e irônica."}
   ],
   "contexto_real": "Parágrafo factual sóbrio e transparente explicando os fatos crus e exatos da notícia que motivaram a sátira."
 }
@@ -310,12 +312,15 @@ def criar_artigo_demo(noticia, dados_imagem):
     slug = slugify(noticia["titulo"])
     hoje = datetime.now().strftime("%d de %B de %Y").replace("October", "Outubro").replace("November", "Novembro")
     
+    # Título curto e sarcástico (máximo 60 caracteres)
+    titulo_curto = f"O BALCÃO DO PLANALTO: {noticia['titulo'][:30].upper().strip()}..." if len(noticia['titulo']) > 32 else f"O BALCÃO DO PLANALTO: {noticia['titulo'].upper()}"
+    
     return {
         "slug": slug,
         "data": hoje,
         "categoria": "Crônica Política",
         "tempo_leitura": "3 min de leitura",
-        "titulo": f"O GRANDE TEATRO DO PLANALTO: {noticia['titulo'].upper()}",
+        "titulo": titulo_curto,
         "subtitulo": f"Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.",
         "autor": "Redação Ácida",
         "destaque": True,
