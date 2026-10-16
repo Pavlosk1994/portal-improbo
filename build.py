@@ -302,7 +302,41 @@ def is_valid_image(url):
     u = str(url).strip()
     if u.lower() in ("none", "null", "", "undefined"):
         return False
-    return u.startswith("http://") or u.startswith("https://") or u.startswith("/") or u.startswith("./")
+    return u.startswith("http://") or u.startswith("https://") or u.startswith("/") or u.startswith("./") or u.startswith("imagens/") or u.startswith("../imagens/")
+
+def resolver_imagem_artigo(art, is_article=False):
+    """
+    Resolve a imagem da matéria priorizando a caricatura editorial IA no estilo clássico da Revista MAD Brasil.
+    Garante o caminho relativo correto para a Home (imagens/...) ou para os Artigos (../imagens/...).
+    """
+    slug = art.get("slug", "")
+    
+    # 1. Verifica se existe caricatura local em imagens/{slug}.*
+    for ext in (".jpg", ".png", ".jpeg", ".webp"):
+        local_rel = f"imagens/{slug}{ext}"
+        local_abs = os.path.join(BASE_DIR, local_rel)
+        if os.path.exists(local_abs):
+            src = f"../{local_rel}" if is_article else local_rel
+            legenda = art.get("legenda_imagem") or f"Caricatura editorial no estilo clássico da Revista MAD Brasil: {art.get('titulo')}"
+            credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Revista MAD Brasil"
+            return src, legenda, credito
+
+    # 2. Se imagem_capa estiver definida
+    capa = art.get("imagem_capa")
+    if is_valid_image(capa):
+        c = str(capa).strip()
+        if c.startswith("http://") or c.startswith("https://"):
+            src = c
+        elif is_article and not c.startswith("../") and not c.startswith("/"):
+            src = f"../{c}"
+        else:
+            src = c
+        legenda = art.get("legenda_imagem") or f"Caricatura editorial no estilo clássico da Revista MAD Brasil: {art.get('titulo')}"
+        credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Revista MAD Brasil"
+        return src, legenda, credito
+
+    return None, None, None
+
 
 def render_audio_player(slug, title, audio_src):
     return f"""
@@ -524,17 +558,14 @@ def generate_article_page(art):
         audio_player_html = render_audio_player(slug, title, audio_src)
         audio_script = render_audio_script()
 
-    # Imagem de Capa / Ancoragem Factual (Somente renderizada se houver foto real válida)
-    imagem_capa = art.get("imagem_capa")
-    legenda_imagem = art.get("legenda_imagem") or ""
-    credito_imagem = art.get("credito_imagem") or ""
-    
+    # Caricatura Editorial IA no Estilo Revista MAD Brasil
+    img_src, img_legenda, img_credito = resolver_imagem_artigo(art, is_article=True)
     image_html = ""
-    if is_valid_image(imagem_capa):
+    if img_src:
         caption_html = ""
-        if legenda_imagem or credito_imagem:
-            legenda_part = f"<span>{legenda_imagem}</span>" if legenda_imagem else ""
-            credito_part = f"<span class=\"font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0\">{credito_imagem}</span>" if credito_imagem else ""
+        if img_legenda or img_credito:
+            legenda_part = f"<span>{img_legenda}</span>" if img_legenda else ""
+            credito_part = f"<span class=\"font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0\">{img_credito}</span>" if img_credito else ""
             caption_html = f"""
             <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
                 {legenda_part}
@@ -542,10 +573,10 @@ def generate_article_page(art):
             </figcaption>
             """
         image_html = f"""
-        <!-- Imagem de Capa / Ancoragem Factual (Logo abaixo de Título e Subtítulo) -->
+        <!-- Caricatura Editorial IA no Estilo Revista MAD Brasil -->
         <figure class="my-6 sm:my-8 reveal-on-scroll">
             <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                <img src="{imagem_capa}" alt="{legenda_imagem or title}" class="w-full h-auto max-h-[520px] object-cover block" loading="lazy">
+                <img src="{img_src}" alt="{img_legenda or title}" class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
             </div>
             {caption_html}
         </figure>
@@ -697,9 +728,7 @@ def generate_home_page(articles):
         hero_subtitle = hero["subtitulo"]
         hero_date = hero.get("data", "Outubro de 2026")
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
-        hero_img = hero.get("imagem_capa")
-        hero_legenda = hero.get("legenda_imagem", "")
-        hero_credito = hero.get("credito_imagem", "")
+        hero_img_src, hero_legenda, hero_credito = resolver_imagem_artigo(hero, is_article=False)
 
         hero_audio_file = os.path.join(AUDIO_DIR, f"{hero_slug}.mp3")
         hero_has_audio = os.path.exists(hero_audio_file) or bool(hero.get("audio_url"))
@@ -715,7 +744,7 @@ def generate_home_page(articles):
             """
 
         hero_img_html = ""
-        if is_valid_image(hero_img):
+        if hero_img_src:
             caption_tag = ""
             if hero_legenda or hero_credito:
                 leg_p = f"<span>{hero_legenda}</span>" if hero_legenda else ""
@@ -729,7 +758,7 @@ def generate_home_page(articles):
             hero_img_html = f"""
             <div class="my-4 sm:my-5 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
                 <a href="artigos/{hero_slug}.html" class="block group/img overflow-hidden">
-                    <img src="{hero_img}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[420px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="lazy">
+                    <img src="{hero_img_src}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[460px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="lazy">
                 </a>
                 {caption_tag}
             </div>
@@ -791,7 +820,7 @@ def generate_home_page(articles):
                 a_sub = art.get("subtitulo", "")
                 a_date = art.get("data", "")
                 a_cat = art.get("categoria", "Crônica")
-                a_img = art.get("imagem_capa")
+                card_img_src, card_legenda, card_credito = resolver_imagem_artigo(art, is_article=False)
                 
                 card_audio_file = os.path.join(AUDIO_DIR, f"{a_slug}.mp3")
                 card_has_audio = os.path.exists(card_audio_file) or bool(art.get("audio_url"))
@@ -808,10 +837,10 @@ def generate_home_page(articles):
                     """
 
                 img_card_html = ""
-                if is_valid_image(a_img):
+                if card_img_src:
                     img_card_html = f"""
                     <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="{a_img}" alt="{a_title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                        <img src="{card_img_src}" alt="{a_title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
                     </div>
                     """
                 cards += f"""
