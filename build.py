@@ -317,8 +317,8 @@ def resolver_imagem_artigo(art, is_article=False):
         local_abs = os.path.join(BASE_DIR, local_rel)
         if os.path.exists(local_abs):
             src = f"../{local_rel}" if is_article else local_rel
-            legenda = art.get("legenda_imagem") or f"Caricatura editorial no estilo clássico da Revista MAD Brasil: {art.get('titulo')}"
-            credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Revista MAD Brasil"
+            legenda = art.get("legenda_imagem") or f"Caricatura editorial satírica: {art.get('titulo')}"
+            credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Ilustração Satírica"
             return src, legenda, credito
 
     # 2. Se imagem_capa estiver definida
@@ -331,8 +331,8 @@ def resolver_imagem_artigo(art, is_article=False):
             src = f"../{c}"
         else:
             src = c
-        legenda = art.get("legenda_imagem") or f"Caricatura editorial no estilo clássico da Revista MAD Brasil: {art.get('titulo')}"
-        credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Revista MAD Brasil"
+        legenda = art.get("legenda_imagem") or f"Caricatura editorial satírica: {art.get('titulo')}"
+        credito = art.get("credito_imagem") or "Arte: Caricatura Editorial IA / Ilustração Satírica"
         return src, legenda, credito
 
     return None, None, None
@@ -573,7 +573,7 @@ def generate_article_page(art):
             </figcaption>
             """
         image_html = f"""
-        <!-- Caricatura Editorial IA no Estilo Revista MAD Brasil -->
+        <!-- Caricatura Editorial IA / Ilustração Satírica -->
         <figure class="my-6 sm:my-8 reveal-on-scroll">
             <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
                 <img src="{img_src}" alt="{img_legenda or title}" class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
