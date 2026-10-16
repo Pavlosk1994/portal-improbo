@@ -389,12 +389,18 @@ def salvar_artigo_no_site(dados_artigo, noticia_url):
         "titulo": dados_artigo["titulo"],
         "data_processamento": datetime.now().isoformat()
     })
-    salvar_db(db)
+    # Gera narração neural em MP3 se disponível
+    try:
+        from gerar_audio import processar_artigo
+        print("[*] Gerando narração neural em MP3 para a crônica...")
+        processar_artigo(arquivo_json)
+    except Exception as e:
+        print(f"[!] Aviso: narração neural não gerada neste momento: {e}")
 
     # Recompila todas as páginas HTML do IMPRÓBO
     print("[*] Recompilando o portal IMPRÓBO (Home e Artigos)...")
     build_all()
-    print("[✓] Portal atualizado com a nova matéria!")
+    print("[✓] Portal atualizado com a nova matéria e reprodutor de áudio!")
 
 def executar_rodada(modo_demo=False):
     """Executa o ciclo completo do robô: varre, filtra, gera e publica"""
