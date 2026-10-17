@@ -13,7 +13,8 @@ import re
 import time
 import argparse
 import unicodedata
-from datetime import datetime
+from datetime import datetime, timezone
+import email.utils
 import xml.etree.ElementTree as ET
 import urllib.request
 import urllib.parse
@@ -63,16 +64,20 @@ TERMOS_RELEVANCIA = {
 
     # Figuras Centrais & Presidência (Peso 5)
     "lula": 5, "bolsonaro": 5, "flávio": 5, "moraes": 5, "alcolumbre": 4, 
-    "hugo motta": 4, "pacheco": 4, "haddad": 4, "ministro": 4,
+    "hugo motta": 4, "pacheco": 4, "haddad": 5, "dino": 5, "ministro": 4,
 
-    # Pautas de Alto Impacto / Eleições (Peso 4)
+    # Pautas de Alto Impacto, Bolso do Povo e Eleições (Peso 5)
+    "corte de gastos": 5, "corte": 4, "gastos": 4, "inflação": 5, "dólar": 5,
+    "bandeira vermelha": 5, "conta de luz": 5, "energia": 4, "apagão": 5, "enel": 5,
+    "bet": 5, "bets": 5, "tigrinho": 5, "bolsa família": 5, "picanha": 5, "carne": 4,
+    "emenda pix": 5, "emendas pix": 5, "emenda": 4, "emendas": 4,
+    "imposto": 5, "taxa": 4, "aumento": 4, "combustível": 4, "gasolina": 4,
     "eleição": 5, "eleições": 5, "2º turno": 5, "segundo turno": 5, "pesquisa": 4,
-    "pec": 4, "6x1": 5, "votação": 4, "reforma": 4, "orçamento": 4, 
-    "emenda": 4, "salário": 3, "imposto": 4,
+    "pec": 4, "6x1": 5, "votação": 4, "reforma": 4, "orçamento": 4, "salário": 4,
 
-    # Gatilhos de Contradição e Absurdo / Comédia de Costumes (Peso 3)
-    "recuo": 3, "volta atrás": 4, "gafe": 4, "escândalo": 4, "aliança": 3,
-    "acordo": 3, "promessa": 3, "surto": 4, "farra": 4, "privilégio": 4
+    # Gatilhos de Contradição e Absurdo / Comédia de Costumes (Peso 4)
+    "recuo": 4, "volta atrás": 4, "gafe": 4, "escândalo": 5, "aliança": 3,
+    "acordo": 4, "promessa": 4, "surto": 4, "farra": 5, "privilégio": 5, "penduricalho": 5
 }
 
 def carregar_env():
@@ -157,20 +162,78 @@ def varrer_feed_rss(feed_info):
 
     return noticias
 
+def extrair_data_publicacao(pub_str):
+    """Converte strings de datas de RSS para datetime em UTC de forma resiliente"""
+    if not pub_str:
+        return None
+    try:
+        dt = email.utils.parsedate_to_datetime(pub_str)
+        if dt:
+            return dt.astimezone(timezone.utc) if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        pass
+    
+    # Tentativa ISO
+    try:
+        clean = pub_str.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(clean)
+        return dt.astimezone(timezone.utc) if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        pass
+
+    # Tentativa formatos comuns brasileiros
+    for fmt in ("%d/%m/%Y %H:%M:%S", "%d/%m/%Y %H:%M", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(pub_str, fmt).replace(tzinfo=timezone.utc)
+        except Exception:
+            continue
+    return None
+
 def calcular_relevancia(noticia, db_urls):
-    """Atribui nota de relevância com base nos termos de poder e novidade"""
+    """
+    Atribui nota de relevância com prioridade estrita para NOTÍCIAS RECENTES E QUENTES:
+    1. Novidade Absoluta / Recência (últimas horas ganham bônus máximo, notícias velhas sofrem penalidade pesada)
+    2. Termos de poder, contradições e apelo popular (bolso do cidadão, hipocrisia, comédia de costumes)
+    3. Peso da fonte jornalística
+    """
     if noticia["link"] in db_urls:
         return -100  # Já processada anteriormente
 
     texto_busca = f"{noticia['titulo']} {noticia['resumo']}".lower()
-    score = 0.0
+    score_termos = 0.0
 
     for termo, peso in TERMOS_RELEVANCIA.items():
         if re.search(r'\b' + re.escape(termo) + r'\b', texto_busca):
-            score += peso
+            score_termos += peso
 
-    score *= noticia.get("peso_fonte", 1.0)
-    return round(score, 2)
+    score_base = score_termos * noticia.get("peso_fonte", 1.0)
+
+    # 4. Cálculo do Fator Quente (Recência Cronológica)
+    dt_pub = extrair_data_publicacao(noticia.get("data_pub", ""))
+    bonus_recencia = 0.0
+    if dt_pub:
+        try:
+            agora = datetime.now(timezone.utc)
+            horas_atras = max(0.0, (agora - dt_pub).total_seconds() / 3600.0)
+            
+            if horas_atras <= 6:
+                bonus_recencia = 25.0   # Fervendo / Breaking News (últimas 6 horas)
+            elif horas_atras <= 24:
+                bonus_recencia = 18.0   # Notícia Quente do dia (últimas 24 horas)
+            elif horas_atras <= 48:
+                bonus_recencia = 8.0    # Recente (últimos 2 dias)
+            elif horas_atras <= 72:
+                bonus_recencia = 0.0    # No limite (até 3 dias)
+            else:
+                bonus_recencia = -30.0  # Notícia velha de gaveta: penalizada para nunca passar na frente
+        except Exception:
+            bonus_recencia = 0.0
+    else:
+        # Se não há data no feed, assume recência neutra
+        bonus_recencia = 2.0
+
+    score_final = score_base + bonus_recencia
+    return round(score_final, 2)
 
 def extrair_imagem_capa(url):
     """
