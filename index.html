@@ -306,6 +306,91 @@
         html.dark #site-header.is-scrolled .masthead-borders {
             border-bottom: 1px solid #52525b !important;
         }
+
+        /* Dark Mode Overrides para os Novos Recursos */
+        html.dark #share-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: var(--border-divider) !important;
+            border-left-color: #25D366 !important;
+        }
+
+        html.dark #btn-copy-link {
+            background-color: #27272c !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #btn-copy-link:hover {
+            border-color: #71717a !important;
+            background-color: #323238 !important;
+        }
+
+        html.dark #sticky-audio-bar {
+            background-color: #1a1a1e !important;
+            border-top-color: var(--editorial-red) !important;
+            box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        html.dark #sticky-play-btn {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #sticky-play-btn:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark #sticky-progress-container {
+            background-color: #2e2e34 !important;
+        }
+
+        html.dark #termometro-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: #52525b !important;
+        }
+
+        html.dark .termometro-opcao-btn {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark .termometro-opcao-btn:hover {
+            border-color: #71717a !important;
+            background-color: #2c2c33 !important;
+        }
+
+        html.dark .termometro-opcao-voted {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #desculpa-box {
+            background-color: #1e1e22 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #btn-nova-desculpa {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #btn-nova-desculpa:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark .filtro-btn:not(.active) {
+            background-color: #26262b !important;
+            border: 1px solid #3f3f46 !important;
+            color: #d4d4d8 !important;
+        }
+
+        html.dark .filtro-btn:not(.active):hover {
+            background-color: #323238 !important;
+            color: #ffffff !important;
+        }
     </style>
 
 </head>
@@ -362,12 +447,16 @@
         <main class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-6 sm:py-8">
             
         <!-- Hero: Manchete Principal NYT Style White Container -->
-        <section class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 reveal-on-scroll">
+        <section id="hero-article-section" data-alvo="bets" class="article-item bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-10 reveal-on-scroll">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                 <div class="lg:col-span-8">
                     <div class="flex flex-wrap items-center gap-2 mb-3">
                         <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
                         <span class="text-xs font-mono text-stone-600">16 de Outubro de 2026</span>
+                        <span class="inline-flex items-center space-x-1 text-xs font-mono bg-[#EBE7DE] text-stone-700 px-2 py-0.5 rounded font-medium">
+                            <span>🎰</span>
+                            <span>Bets & Tigrinho</span>
+                        </span>
                         
             <a href="artigos/bolsa-familia-bets-jogo-do-tigrinho.html#article-audio-box" class="inline-flex items-center space-x-1.5 text-xs font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-2.5 py-0.5 rounded transition-colors" title="Ouvir crônica narrada">
                 <svg class="w-3.5 h-3.5 fill-current text-[#8B0000]" viewBox="0 0 24 24">
@@ -407,17 +496,46 @@
                     </a>
                 </div>
 
-                <!-- Editorial Aside Card (#EBE7DE com borda clássica) -->
-                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm">
-                    <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
-                    <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
-                        &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
-                    </blockquote>
-                    <p class="text-xs font-mono text-stone-600 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
-                    <div class="mt-5 pt-3 border-t border-[#D1CEC7]">
-                        <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
-                        <p class="text-xs text-stone-700 leading-relaxed font-sans">
-                            Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
+                <!-- Editorial Aside Card (#EBE7DE com borda clássica e Gerador de Desculpas) -->
+                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
+                        <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
+                            &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
+                        </blockquote>
+                        <p class="text-xs font-mono text-stone-600 mt-2 sm:mt-3">&mdash; Provérbio de Botequim Parlamentar</p>
+                        
+                        <div class="mt-4 pt-3 border-t border-[#D1CEC7]">
+                            <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
+                            <p class="text-xs text-stone-700 leading-relaxed font-sans">
+                                Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Gerador de Desculpas Oficiais de Brasília -->
+                    <div class="mt-5 pt-4 border-t border-[#D1CEC7]" id="desculpa-widget">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold flex items-center space-x-1">
+                                <span>🏛️ GERADOR DE DESCULPAS</span>
+                            </span>
+                            <span class="font-mono text-[10px] text-stone-500 uppercase">Gabinete 24h</span>
+                        </div>
+                        
+                        <div id="desculpa-box" class="bg-white border border-[#D1CEC7] p-3 rounded-sm my-2 shadow-2xs min-h-[76px] flex items-center justify-center transition-all duration-300">
+                            <p id="desculpa-texto" class="font-serif italic text-xs text-[#121212] text-center leading-snug">
+                                &ldquo;A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.&rdquo;
+                            </p>
+                        </div>
+
+                        <button id="btn-nova-desculpa" type="button" class="w-full inline-flex items-center justify-center space-x-1.5 py-1.5 px-3 bg-[#121212] hover:bg-[#8B0000] text-white font-mono text-xs font-bold rounded transition-colors cursor-pointer select-none">
+                            <svg id="desculpa-spin-icon" class="w-3.5 h-3.5 fill-current transition-transform duration-300" viewBox="0 0 24 24">
+                                <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+                            </svg>
+                            <span>Sortear Nova Desculpa</span>
+                        </button>
+                        <p class="font-mono text-[10px] text-stone-500 text-center mt-1.5" id="desculpa-protocolo">
+                            Válida perante o STF, CPIs e almoços de domingo.
                         </p>
                     </div>
                 </div>
@@ -425,232 +543,283 @@
         </section>
         
             
-            <section class="reveal-on-scroll">
-                <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
-                    <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
-                    <span class="font-mono text-xs text-stone-600 uppercase">6 crônica(s)</span>
+        <!-- Filtro Rápido por Alvo da Sátira -->
+        <div class="mb-8 p-4 sm:p-5 bg-white border border-[#D1CEC7] rounded-sm shadow-xs reveal-on-scroll">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">FILTRAR POR ALVO DA SÁTIRA</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#8B0000]"></span>
+                    <span class="font-serif italic text-xs text-stone-600">Escolha quem você quer ver passar vergonha hoje:</span>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/flavio-bolsonaro-pec-privatizacao-praias.jpg" alt="FLÁVIO E AS PRAIAS: 'A ONDA É GRÁTIS, A AREIA TEM PEDÁGIO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                FLÁVIO E AS PRAIAS: 'A ONDA É GRÁTIS, A AREIA TEM PEDÁGIO'
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Relator da PEC que transfere terrenos do litoral para o setor privado, senador jura que quer apenas 'atrair investimentos', enquanto o farofeiro nacional já calcula o IPTU da canga estendida na areia.
-                        </p>
-                    </div>
-                    <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/congresso-anistia-partidos-dividas-fundo-eleitoral.jpg" alt="DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Após torrarem milhões sem prestar contas, partidos políticos aprovam PEC perdoando suas próprias dívidas e autorizam o uso de dinheiro público para pagar o que sobrou da farra.
-                        </p>
-                    </div>
-                    <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/sao-paulo-apagao-enel-guerra-da-vela.jpg" alt="ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Folclore Paulistano</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Com a carne no congelador criando vida própria e o paulistano tomando banho de caneco aos berros, Tarcísio culpa o Planalto, Lula culpa a privatização e a concessionária jura que poste foi feito pra ficar em sala com ar-condicionado.
-                        </p>
-                    </div>
-                    <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/lula-malabarismo-planalto-centrao.jpg" alt="SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/lula-malabarismo-planalto-centrao.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/lula-malabarismo-planalto-centrao.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Lula promete a folga sagrada do peão no palanque e fecha a fatura do 2º turno fatiando a chave do cofre com Alcolumbre e Hugo Motta.
-                        </p>
-                    </div>
-                    <a href="artigos/lula-malabarismo-planalto-centrao.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/articulacao-no-congresso-e-stf-avanca-para-indicar.jpg" alt="O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Crônica Política</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.
-                        </p>
-                    </div>
-                    <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="imagens/flavio-bolsonaro-escala-6x1.jpg" alt="SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">15 de Outubro de 2026</span>
-                            
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/flavio-bolsonaro-escala-6x1.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    
-                        </div>
-                        <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            Assustado com as pesquisas igual a gato em máquina de lavar, senador ultraliberal veste o macacão de operário imaginário, jura amor à folga no domingo e promete 'home office' até pro frentista do posto.
-                        </p>
-                    </div>
-                    <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
-                
-                </div>
-            </section>
+                <span id="filtro-contador" class="font-mono text-xs text-stone-500 font-medium">Exibindo todas as 7 crônicas</span>
+            </div>
+            <div class="flex flex-wrap gap-2" id="filtro-alvos-container">
+                <button type="button" data-filter="all" class="filtro-btn active px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-bold bg-[#8B0000] text-white shadow-xs">
+                    Todos (7)
+                </button>
+                <button type="button" data-filter="bets" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🎰 Bets &amp; Tigrinho (1)
+                </button>
+                <button type="button" data-filter="flavio-bolsonaro" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🏖️ Flávio Bolsonaro (2)
+                </button>
+                <button type="button" data-filter="lula" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🎪 Lula &amp; Planalto (1)
+                </button>
+                <button type="button" data-filter="stf" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    ⚖️ STF &amp; Togas (1)
+                </button>
+                <button type="button" data-filter="faria-lima" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🕯️ Faria Lima &amp; SP (1)
+                </button>
+                <button type="button" data-filter="congresso" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🏛️ Congresso &amp; Partidos (1)
+                </button>
+            </div>
+            <div id="filtro-sem-resultados" class="hidden mt-4 pt-3 border-t border-[#D1CEC7] text-center font-serif italic text-stone-500 text-sm">
+                Nenhuma crônica encontrada para este alvo no momento. A assessoria parlamentar deve ter conseguido abafar por enquanto.
+            </div>
+        </div>
+        
             
+        <section id="grid-articles-section" class="reveal-on-scroll">
+            <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
+                <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
+                <span class="font-mono text-xs text-stone-600 uppercase">6 crônica(s)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="grid-cards-container">
+                
+            <article data-alvo="flavio-bolsonaro" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/flavio-bolsonaro-pec-privatizacao-praias.jpg" alt="FLÁVIO E AS PRAIAS: 'A ONDA É GRÁTIS, A AREIA TEM PEDÁGIO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">🏖️ Flávio Bolsonaro</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            FLÁVIO E AS PRAIAS: 'A ONDA É GRÁTIS, A AREIA TEM PEDÁGIO'
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Relator da PEC que transfere terrenos do litoral para o setor privado, senador jura que quer apenas 'atrair investimentos', enquanto o farofeiro nacional já calcula o IPTU da canga estendida na areia.
+                    </p>
+                </div>
+                <a href="artigos/flavio-bolsonaro-pec-privatizacao-praias.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            <article data-alvo="congresso" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/congresso-anistia-partidos-dividas-fundo-eleitoral.jpg" alt="DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">🏛️ Congresso & Partidos</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Após torrarem milhões sem prestar contas, partidos políticos aprovam PEC perdoando suas próprias dívidas e autorizam o uso de dinheiro público para pagar o que sobrou da farra.
+                    </p>
+                </div>
+                <a href="artigos/congresso-anistia-partidos-dividas-fundo-eleitoral.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            <article data-alvo="faria-lima" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/sao-paulo-apagao-enel-guerra-da-vela.jpg" alt="ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Folclore Paulistano</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">🕯️ Faria Lima & SP</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Com a carne no congelador criando vida própria e o paulistano tomando banho de caneco aos berros, Tarcísio culpa o Planalto, Lula culpa a privatização e a concessionária jura que poste foi feito pra ficar em sala com ar-condicionado.
+                    </p>
+                </div>
+                <a href="artigos/sao-paulo-apagao-enel-guerra-da-vela.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            <article data-alvo="lula" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/lula-malabarismo-planalto-centrao.jpg" alt="SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">🎪 Lula & Planalto</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/lula-malabarismo-planalto-centrao.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/lula-malabarismo-planalto-centrao.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Lula promete a folga sagrada do peão no palanque e fecha a fatura do 2º turno fatiando a chave do cofre com Alcolumbre e Hugo Motta.
+                    </p>
+                </div>
+                <a href="artigos/lula-malabarismo-planalto-centrao.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            <article data-alvo="stf" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/articulacao-no-congresso-e-stf-avanca-para-indicar.jpg" alt="O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Crônica Política</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">⚖️ STF & Togas</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.
+                    </p>
+                </div>
+                <a href="artigos/articulacao-no-congresso-e-stf-avanca-para-indicar.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            <article data-alvo="flavio-bolsonaro" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="imagens/flavio-bolsonaro-escala-6x1.jpg" alt="SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+                </div>
+                
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">Comédia de Costumes</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">15 de Outubro de 2026</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">🏖️ Flávio Bolsonaro</span>
+                        
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/flavio-bolsonaro-escala-6x1.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
+                
+                    </div>
+                    <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        Assustado com as pesquisas igual a gato em máquina de lavar, senador ultraliberal veste o macacão de operário imaginário, jura amor à folga no domingo e promete 'home office' até pro frentista do posto.
+                    </p>
+                </div>
+                <a href="artigos/flavio-bolsonaro-escala-6x1.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
+            
+            </div>
+        </section>
+        
         </main>
     </div>
 
@@ -757,6 +926,121 @@
                         try { localStorage.setItem('improbo_theme', 'light'); } catch(e) {}
                     }
                     syncUI(nextDark);
+                });
+            }
+
+            // Gerador de Desculpas Oficiais de Brasília
+            const btnDesculpa = document.getElementById('btn-nova-desculpa');
+            if (btnDesculpa) {
+                const desculpas = [
+                    "A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.",
+                    "Não houve dolo, apenas uma interpretação excessivamente literal da Constituição Federal.",
+                    "O dinheiro encontrado na cueca/mala era estritamente para pagamento emergencial de panfletagem.",
+                    "Fui hackeado às 3h da manhã por um hacker patriota com residência fiscal na Letônia.",
+                    "Trata-se de uma fake news plantada pelo consórcio midiático para abalar os mercados financeiros.",
+                    "Estou sendo perseguido unicamente por defender o direito inalienável do povo de pagar mais taxas.",
+                    "Houve um equívoco de comunicação da assessoria júnior que já foi devidamente transferida de gabinete.",
+                    "O imóvel/praia/sítio não é meu, apenas guardo minhas pedaladas e caixas de isopor lá por cortesia.",
+                    "Votei a favor do perdão das dívidas partidárias para garantir a austeridade fiscal e a democracia.",
+                    "A catraca na praia é apenas para aferir a qualidade da areia e a brisa marítima sustentável.",
+                    "O beneficiário do Bolsa Família estava apenas realizando um investimento em renda variável no Tigrinho.",
+                    "A concessionária esclarece que o apagão é um convite poético ao consumo consciente à luz de velas.",
+                    "O ministro foi ao camarim do STF apenas para pedir uma receita de pão de queijo constitucional.",
+                    "Minha folga no domingo não anula meu compromisso espiritual de trabalhar pelos trabalhadores.",
+                    "Tudo foi executado estritamente dentro das quatro linhas da conveniência orçamentária."
+                ];
+                let lastIdx = 0;
+                const textoEl = document.getElementById('desculpa-texto');
+                const spinIcon = document.getElementById('desculpa-spin-icon');
+                const protoEl = document.getElementById('desculpa-protocolo');
+                let degrees = 0;
+
+                btnDesculpa.addEventListener('click', () => {
+                    degrees += 360;
+                    if (spinIcon) spinIcon.style.transform = `rotate(${degrees}deg)`;
+                    
+                    let nextIdx;
+                    do {
+                        nextIdx = Math.floor(Math.random() * desculpas.length);
+                    } while (nextIdx === lastIdx && desculpas.length > 1);
+                    lastIdx = nextIdx;
+
+                    if (textoEl) {
+                        textoEl.style.opacity = '0';
+                        setTimeout(() => {
+                            textoEl.innerHTML = `&ldquo;${desculpas[nextIdx]}&rdquo;`;
+                            textoEl.style.opacity = '1';
+                        }, 180);
+                    }
+
+                    if (protoEl) {
+                        protoEl.textContent = `Protocolo nº ${Math.floor(1000 + Math.random() * 9000)}/2026 arquivado com sucesso.`;
+                    }
+                });
+            }
+
+            // Filtro Rápido por Alvo da Sátira na Capa
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            if (filterBtns.length > 0) {
+                const heroSection = document.getElementById('hero-article-section');
+                const gridCards = document.querySelectorAll('.article-card-item');
+                const contador = document.getElementById('filtro-contador');
+                const semResultados = document.getElementById('filtro-sem-resultados');
+
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const filter = btn.getAttribute('data-filter');
+
+                        // Atualizar botões
+                        filterBtns.forEach(b => {
+                            b.classList.remove('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                            b.classList.add('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+                        });
+                        btn.classList.add('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                        btn.classList.remove('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+
+                        let visibleCount = 0;
+
+                        // Filtrar Manchete Hero
+                        if (heroSection) {
+                            const heroAlvo = heroSection.getAttribute('data-alvo');
+                            if (filter === 'all' || heroAlvo === filter) {
+                                heroSection.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                heroSection.classList.add('hidden');
+                            }
+                        }
+
+                        // Filtrar Cards do Grid
+                        gridCards.forEach(card => {
+                            const cardAlvo = card.getAttribute('data-alvo');
+                            if (filter === 'all' || cardAlvo === filter) {
+                                card.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        });
+
+                        // Atualizar contador e mensagem
+                        if (contador) {
+                            if (filter === 'all') {
+                                contador.textContent = `Exibindo todas as ${visibleCount} crônicas`;
+                            } else {
+                                const btnText = btn.textContent.replace(/\(\d+\)/, '').trim();
+                                contador.textContent = `Exibindo ${visibleCount} crônica(s) sobre: ${btnText}`;
+                            }
+                        }
+
+                        if (semResultados) {
+                            if (visibleCount === 0) {
+                                semResultados.classList.remove('hidden');
+                            } else {
+                                semResultados.classList.add('hidden');
+                            }
+                        }
+                    });
                 });
             }
         });

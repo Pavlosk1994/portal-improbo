@@ -324,6 +324,91 @@ COMMON_HEAD_STYLES = r"""
         html.dark #site-header.is-scrolled .masthead-borders {
             border-bottom: 1px solid #52525b !important;
         }
+
+        /* Dark Mode Overrides para os Novos Recursos */
+        html.dark #share-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: var(--border-divider) !important;
+            border-left-color: #25D366 !important;
+        }
+
+        html.dark #btn-copy-link {
+            background-color: #27272c !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #btn-copy-link:hover {
+            border-color: #71717a !important;
+            background-color: #323238 !important;
+        }
+
+        html.dark #sticky-audio-bar {
+            background-color: #1a1a1e !important;
+            border-top-color: var(--editorial-red) !important;
+            box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        html.dark #sticky-play-btn {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #sticky-play-btn:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark #sticky-progress-container {
+            background-color: #2e2e34 !important;
+        }
+
+        html.dark #termometro-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: #52525b !important;
+        }
+
+        html.dark .termometro-opcao-btn {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark .termometro-opcao-btn:hover {
+            border-color: #71717a !important;
+            background-color: #2c2c33 !important;
+        }
+
+        html.dark .termometro-opcao-voted {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #desculpa-box {
+            background-color: #1e1e22 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #btn-nova-desculpa {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #btn-nova-desculpa:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark .filtro-btn:not(.active) {
+            background-color: #26262b !important;
+            border: 1px solid #3f3f46 !important;
+            color: #d4d4d8 !important;
+        }
+
+        html.dark .filtro-btn:not(.active):hover {
+            background-color: #323238 !important;
+            color: #ffffff !important;
+        }
     </style>
 """
 
@@ -397,6 +482,121 @@ COMMON_SCRIPTS = """
                         try { localStorage.setItem('improbo_theme', 'light'); } catch(e) {}
                     }
                     syncUI(nextDark);
+                });
+            }
+
+            // Gerador de Desculpas Oficiais de Brasília
+            const btnDesculpa = document.getElementById('btn-nova-desculpa');
+            if (btnDesculpa) {
+                const desculpas = [
+                    "A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.",
+                    "Não houve dolo, apenas uma interpretação excessivamente literal da Constituição Federal.",
+                    "O dinheiro encontrado na cueca/mala era estritamente para pagamento emergencial de panfletagem.",
+                    "Fui hackeado às 3h da manhã por um hacker patriota com residência fiscal na Letônia.",
+                    "Trata-se de uma fake news plantada pelo consórcio midiático para abalar os mercados financeiros.",
+                    "Estou sendo perseguido unicamente por defender o direito inalienável do povo de pagar mais taxas.",
+                    "Houve um equívoco de comunicação da assessoria júnior que já foi devidamente transferida de gabinete.",
+                    "O imóvel/praia/sítio não é meu, apenas guardo minhas pedaladas e caixas de isopor lá por cortesia.",
+                    "Votei a favor do perdão das dívidas partidárias para garantir a austeridade fiscal e a democracia.",
+                    "A catraca na praia é apenas para aferir a qualidade da areia e a brisa marítima sustentável.",
+                    "O beneficiário do Bolsa Família estava apenas realizando um investimento em renda variável no Tigrinho.",
+                    "A concessionária esclarece que o apagão é um convite poético ao consumo consciente à luz de velas.",
+                    "O ministro foi ao camarim do STF apenas para pedir uma receita de pão de queijo constitucional.",
+                    "Minha folga no domingo não anula meu compromisso espiritual de trabalhar pelos trabalhadores.",
+                    "Tudo foi executado estritamente dentro das quatro linhas da conveniência orçamentária."
+                ];
+                let lastIdx = 0;
+                const textoEl = document.getElementById('desculpa-texto');
+                const spinIcon = document.getElementById('desculpa-spin-icon');
+                const protoEl = document.getElementById('desculpa-protocolo');
+                let degrees = 0;
+
+                btnDesculpa.addEventListener('click', () => {
+                    degrees += 360;
+                    if (spinIcon) spinIcon.style.transform = `rotate(${degrees}deg)`;
+                    
+                    let nextIdx;
+                    do {
+                        nextIdx = Math.floor(Math.random() * desculpas.length);
+                    } while (nextIdx === lastIdx && desculpas.length > 1);
+                    lastIdx = nextIdx;
+
+                    if (textoEl) {
+                        textoEl.style.opacity = '0';
+                        setTimeout(() => {
+                            textoEl.innerHTML = `&ldquo;${desculpas[nextIdx]}&rdquo;`;
+                            textoEl.style.opacity = '1';
+                        }, 180);
+                    }
+
+                    if (protoEl) {
+                        protoEl.textContent = `Protocolo nº ${Math.floor(1000 + Math.random() * 9000)}/2026 arquivado com sucesso.`;
+                    }
+                });
+            }
+
+            // Filtro Rápido por Alvo da Sátira na Capa
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            if (filterBtns.length > 0) {
+                const heroSection = document.getElementById('hero-article-section');
+                const gridCards = document.querySelectorAll('.article-card-item');
+                const contador = document.getElementById('filtro-contador');
+                const semResultados = document.getElementById('filtro-sem-resultados');
+
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const filter = btn.getAttribute('data-filter');
+
+                        // Atualizar botões
+                        filterBtns.forEach(b => {
+                            b.classList.remove('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                            b.classList.add('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+                        });
+                        btn.classList.add('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                        btn.classList.remove('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+
+                        let visibleCount = 0;
+
+                        // Filtrar Manchete Hero
+                        if (heroSection) {
+                            const heroAlvo = heroSection.getAttribute('data-alvo');
+                            if (filter === 'all' || heroAlvo === filter) {
+                                heroSection.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                heroSection.classList.add('hidden');
+                            }
+                        }
+
+                        // Filtrar Cards do Grid
+                        gridCards.forEach(card => {
+                            const cardAlvo = card.getAttribute('data-alvo');
+                            if (filter === 'all' || cardAlvo === filter) {
+                                card.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        });
+
+                        // Atualizar contador e mensagem
+                        if (contador) {
+                            if (filter === 'all') {
+                                contador.textContent = `Exibindo todas as ${visibleCount} crônicas`;
+                            } else {
+                                const btnText = btn.textContent.replace(/\\(\\d+\\)/, '').trim();
+                                contador.textContent = `Exibindo ${visibleCount} crônica(s) sobre: ${btnText}`;
+                            }
+                        }
+
+                        if (semResultados) {
+                            if (visibleCount === 0) {
+                                semResultados.classList.remove('hidden');
+                            } else {
+                                semResultados.classList.add('hidden');
+                            }
+                        }
+                    });
                 });
             }
         });
@@ -745,7 +945,335 @@ def render_audio_script():
                 muteIcon.classList.add('hidden');
             }
         });
+
+        // Integração do Mini-Player Sticky Flutuante
+        const stickyBar = document.getElementById('sticky-audio-bar');
+        if (stickyBar) {
+            const stickyPlayBtn = document.getElementById('sticky-play-btn');
+            const stickyPlayIcon = document.getElementById('sticky-play-icon');
+            const stickyPauseIcon = document.getElementById('sticky-pause-icon');
+            const stickyTime = document.getElementById('sticky-time');
+            const stickyProgressBar = document.getElementById('sticky-progress-bar');
+            const stickyProgressContainer = document.getElementById('sticky-progress-container');
+            const stickyCloseBtn = document.getElementById('sticky-close-btn');
+
+            let stickyDismissed = false;
+
+            function syncStickyUI() {
+                if (!stickyBar) return;
+                if (audio.paused) {
+                    stickyPlayIcon.classList.remove('hidden');
+                    stickyPauseIcon.classList.add('hidden');
+                } else {
+                    stickyPlayIcon.classList.add('hidden');
+                    stickyPauseIcon.classList.remove('hidden');
+                }
+                if (stickyTime) {
+                    stickyTime.textContent = formatTime(audio.currentTime);
+                }
+                if (stickyProgressBar && audio.duration) {
+                    const pct = (audio.currentTime / audio.duration) * 100;
+                    stickyProgressBar.style.width = `${pct}%`;
+                }
+            }
+
+            audio.addEventListener('timeupdate', syncStickyUI);
+            audio.addEventListener('play', syncStickyUI);
+            audio.addEventListener('pause', syncStickyUI);
+
+            stickyPlayBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(e => console.error(e));
+                } else {
+                    audio.pause();
+                }
+            });
+
+            if (stickyProgressContainer) {
+                stickyProgressContainer.addEventListener('click', (e) => {
+                    if (!audio.duration || isNaN(audio.duration)) return;
+                    const rect = stickyProgressContainer.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    const pct = Math.max(0, Math.min(1, clickX / rect.width));
+                    audio.currentTime = pct * audio.duration;
+                    syncStickyUI();
+                });
+            }
+
+            if (stickyCloseBtn) {
+                stickyCloseBtn.addEventListener('click', () => {
+                    stickyBar.classList.add('translate-y-full');
+                    stickyDismissed = true;
+                });
+            }
+
+            const mainAudioBox = document.getElementById('article-audio-box');
+            if (mainAudioBox && 'IntersectionObserver' in window) {
+                const audioObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (stickyDismissed) return;
+                        if (!entry.isIntersecting && audio.currentTime > 0) {
+                            stickyBar.classList.remove('translate-y-full');
+                        } else if (entry.isIntersecting) {
+                            stickyBar.classList.add('translate-y-full');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                audioObserver.observe(mainAudioBox);
+
+                audio.addEventListener('play', () => {
+                    if (stickyDismissed) return;
+                    const rect = mainAudioBox.getBoundingClientRect();
+                    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                        stickyBar.classList.remove('translate-y-full');
+                    }
+                });
+            }
+        }
     });
+    </script>
+    """
+
+def get_article_target(slug, title=""):
+    slug_lower = (slug + " " + title).lower()
+    if "tigrinho" in slug_lower or "bets" in slug_lower:
+        return "bets", "Bets & Tigrinho", "🎰"
+    elif "flavio" in slug_lower or "bolsonaro" in slug_lower:
+        return "flavio-bolsonaro", "Flávio Bolsonaro", "🏖️"
+    elif "stf" in slug_lower or "pacheco" in slug_lower or "toga" in slug_lower:
+        return "stf", "STF & Togas", "⚖️"
+    elif "lula" in slug_lower or "planalto" in slug_lower or "centrao" in slug_lower:
+        return "lula", "Lula & Planalto", "🎪"
+    elif "apagao" in slug_lower or "enel" in slug_lower or "sao-paulo" in slug_lower or "faria-lima" in slug_lower:
+        return "faria-lima", "Faria Lima & SP", "🕯️"
+    elif "congresso" in slug_lower or "partidos" in slug_lower or "anistia" in slug_lower or "eleitoral" in slug_lower:
+        return "congresso", "Congresso & Partidos", "🏛️"
+    return "outros", "Geral", "📰"
+
+def render_sticky_audio_bar(title):
+    safe_title = title.replace('"', '&quot;')
+    return f"""
+    <!-- Mini-Player de Áudio Sticky Flutuante (Estilo NYT Listen Bar) -->
+    <div id="sticky-audio-bar" class="fixed bottom-0 left-0 right-0 z-50 bg-[#FAF9F5] border-t-2 border-t-[#8B0000] shadow-2xl transform translate-y-full transition-transform duration-300 ease-in-out">
+        <div class="max-w-4xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3 overflow-hidden">
+                <button id="sticky-play-btn" type="button" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#121212] hover:bg-[#8B0000] text-white flex items-center justify-center shrink-0 transition-colors cursor-pointer" aria-label="Play/Pause">
+                    <svg id="sticky-play-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg id="sticky-pause-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current hidden" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                <div class="overflow-hidden">
+                    <div class="flex items-center space-x-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO IMPRÓBO</span>
+                    </div>
+                    <div class="font-serif font-bold text-xs sm:text-sm text-[#121212] truncate max-w-[180px] sm:max-w-md md:max-w-lg">
+                        {safe_title}
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3 shrink-0">
+                <!-- Barra de progresso compacta -->
+                <div class="hidden sm:block w-28 md:w-44 h-2 bg-[#EBE7DE] rounded-full overflow-hidden cursor-pointer" id="sticky-progress-container" title="Clique para navegar">
+                    <div id="sticky-progress-bar" class="h-full bg-[#8B0000] w-0 transition-all duration-75"></div>
+                </div>
+                <span id="sticky-time" class="font-mono text-xs text-stone-600 min-w-[45px] text-right font-medium">00:00</span>
+                <!-- Botão Fechar -->
+                <button id="sticky-close-btn" type="button" class="text-stone-500 hover:text-[#121212] p-1 rounded transition-colors cursor-pointer" title="Ocultar mini-player">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    """
+
+def render_share_widget(title, subtitle, slug):
+    safe_title = title.replace('"', '\\"').replace("'", "\\'")
+    safe_subtitle = subtitle.replace('"', '\\"').replace("'", "\\'")
+    return f"""
+    <!-- Propague o Deboche: Botão Disparar no Zap da Família & Copiar Link -->
+    <div id="share-box" class="my-8 sm:my-10 p-5 sm:p-6 bg-[#FAF9F5] border border-[#D1CEC7] border-l-4 border-l-[#25D366] rounded-sm shadow-xs reveal-on-scroll">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+                <div class="flex items-center space-x-2">
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#128C7E]">PROPAGUE O DEBOCHE</span>
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#EBE7DE] text-stone-700 font-semibold">1-Click Viral</span>
+                </div>
+                <h4 class="font-serif font-black text-base sm:text-lg text-[#121212] mt-0.5">Disparar no Zap da Família &amp; Redes</h4>
+                <p class="font-serif italic text-xs text-stone-600 mt-0.5">
+                    Porque nada une mais os parentes num domingo do que passar raiva juntos com a classe política.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                <!-- Botão WhatsApp -->
+                <button id="btn-share-zap" type="button" class="inline-flex items-center space-x-2 px-3.5 py-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-mono text-xs font-bold rounded shadow-xs transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.1-.476-.15-.676.15-.2.301-.776.979-.952 1.18-.175.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.131-.614.136-.135.301-.351.451-.527.151-.175.201-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.587-.492-.507-.676-.516l-.576-.01c-.2 0-.526.075-.802.376-.276.301-1.052 1.028-1.052 2.508 0 1.48 1.077 2.909 1.228 3.109.15.2 2.12 3.237 5.136 4.54.717.31 1.277.496 1.713.634.72.229 1.375.196 1.893.119.578-.086 1.78-.727 2.03-1.43.251-.702.251-1.304.176-1.43-.076-.126-.276-.201-.577-.351z"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                    </svg>
+                    <span>Zap da Família</span>
+                </button>
+                <!-- Botão Copiar Link -->
+                <button id="btn-copy-link" type="button" class="inline-flex items-center space-x-1.5 px-3 py-2 bg-white border border-[#D1CEC7] hover:border-[#121212] text-stone-800 font-mono text-xs font-bold rounded shadow-xs transition-colors cursor-pointer">
+                    <svg id="copy-icon" class="w-4 h-4 fill-current text-stone-600" viewBox="0 0 24 24">
+                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                    </svg>
+                    <span id="copy-text">Copiar Link</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function() {{
+        const btnZap = document.getElementById('btn-share-zap');
+        if (btnZap) {{
+            btnZap.addEventListener('click', () => {{
+                const pageUrl = window.location.href;
+                const zapText = `🚨 *URGENTE NO IMPRÓBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
+                const zapUrl = `https://api.whatsapp.com/send?text=${{encodeURIComponent(zapText)}}`;
+                window.open(zapUrl, '_blank');
+            }});
+        }}
+        const btnCopy = document.getElementById('btn-copy-link');
+        if (btnCopy) {{
+            btnCopy.addEventListener('click', () => {{
+                navigator.clipboard.writeText(window.location.href).then(() => {{
+                    const copyText = document.getElementById('copy-text');
+                    const original = copyText.textContent;
+                    copyText.textContent = '✓ Link Copiado!';
+                    btnCopy.classList.add('border-emerald-600', 'text-emerald-700');
+                    setTimeout(() => {{
+                        copyText.textContent = original;
+                        btnCopy.classList.remove('border-emerald-600', 'text-emerald-700');
+                    }}, 2500);
+                }}).catch(() => {{
+                    const copyText = document.getElementById('copy-text');
+                    copyText.textContent = 'Erro ao copiar';
+                }});
+            }});
+        }}
+    }})();
+    </script>
+    """
+
+def render_termometro_widget(slug):
+    return f"""
+    <!-- Termômetro da Cara de Pau (Enquete Interativa de Cinismo) -->
+    <div id="termometro-box" class="my-8 sm:my-10 p-5 sm:p-7 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm reveal-on-scroll">
+        <div class="flex items-center justify-between border-b border-[#D1CEC7] pb-3 mb-4">
+            <div>
+                <span class="font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">ENQUETE DE OPINIÃO POPULAR</span>
+                <h3 class="font-serif font-black text-lg sm:text-xl text-[#121212] mt-0.5">Termômetro da Cara de Pau</h3>
+            </div>
+            <span class="text-2xl" title="Medidor Oficial de Óleo de Peroba">🪵</span>
+        </div>
+        <p class="font-serif italic text-sm text-stone-700 mb-5">
+            Na sua sincera avaliação como contribuinte lesado, qual é o nível exato de descaramento deste episódio?
+        </p>
+
+        <!-- Opções de Voto -->
+        <div id="termometro-opcoes" class="space-y-3">
+            <!-- Injetado dinamicamente via JavaScript com persistência em localStorage -->
+        </div>
+
+        <div id="termometro-feedback" class="mt-4 pt-3 border-t border-[#D1CEC7] text-xs font-mono text-stone-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <span id="termometro-status">Selecione uma opção para registrar seu voto no cartório cínico.</span>
+            <span id="termometro-total-votos" class="font-bold text-[#8B0000]"></span>
+        </div>
+    </div>
+    <script>
+    (function() {{
+        const slug = "{slug}";
+        const storageKey = 'improbo_poll_' + slug;
+
+        const OPCOES = [
+            {{ id: 1, label: "Nível Bronze", descricao: "Dá pra fingir que não viu se tomar um café bem forte.", baseVotes: 142, emoji: "🥉" }},
+            {{ id: 2, label: "Nível Prata", descricao: "É escárnio explícito, mas já virou rotina no Diário Oficial.", baseVotes: 388, emoji: "🥈" }},
+            {{ id: 3, label: "Nível Ouro", descricao: "O estoque nacional de óleo de peroba foi zerado em Brasília.", baseVotes: 894, emoji: "🥇" }},
+            {{ id: 4, label: "Nível Lendário", descricao: "Nem Maquiavel tendo um pesadelo ousaria tanto cinismo.", baseVotes: 615, emoji: "🔥" }}
+        ];
+
+        function renderPoll() {{
+            const savedVote = localStorage.getItem(storageKey);
+            const container = document.getElementById('termometro-opcoes');
+            const statusText = document.getElementById('termometro-status');
+            const totalText = document.getElementById('termometro-total-votos');
+            if (!container) return;
+
+            let total = OPCOES.reduce((acc, o) => acc + o.baseVotes, 0);
+            if (savedVote) {{
+                total += 1;
+            }}
+
+            if (totalText) {{
+                totalText.textContent = total.toLocaleString('pt-BR') + ' votos apurados';
+            }}
+
+            if (savedVote) {{
+                if (statusText) {{
+                    statusText.innerHTML = '✓ <strong>Voto registrado no cartório cínico!</strong> Obrigado por cumprir seu dever cívico.';
+                }}
+                container.innerHTML = OPCOES.map(op => {{
+                    let votes = op.baseVotes + (savedVote == op.id ? 1 : 0);
+                    let pct = Math.round((votes / total) * 100);
+                    let isUserVote = (savedVote == op.id);
+                    return `
+                    <div class="p-3 bg-white border ${{isUserVote ? 'border-[#8B0000] ring-1 ring-[#8B0000]' : 'border-[#D1CEC7]'}} rounded-sm relative overflow-hidden termometro-opcao-voted">
+                        <div class="absolute top-0 left-0 bottom-0 ${{isUserVote ? 'bg-[#8B0000]/15' : 'bg-[#EBE7DE]/70'}} transition-all duration-700 ease-out" style="width: ${{pct}}%"></div>
+                        <div class="relative z-10 flex items-center justify-between gap-3 text-xs sm:text-sm">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-base">${{op.emoji}}</span>
+                                <span class="font-bold text-[#121212] font-serif">${{op.label}}:</span>
+                                <span class="text-stone-700 font-serif italic hidden sm:inline">${{op.descricao}}</span>
+                                ${{isUserVote ? '<span class="inline-block px-1.5 py-0.2 bg-[#8B0000] text-white text-[10px] font-mono font-bold rounded">SEU VOTO</span>' : ''}}
+                            </div>
+                            <span class="font-mono font-bold text-stone-800 shrink-0">${{pct}}% (${{votes.toLocaleString('pt-BR')}})</span>
+                        </div>
+                        <div class="sm:hidden text-[11px] text-stone-600 font-serif italic mt-1 relative z-10">
+                            ${{op.descricao}}
+                        </div>
+                    </div>
+                    `;
+                }}).join('');
+            }} else {{
+                if (statusText) {{
+                    statusText.textContent = 'Clique em uma das alternativas para registrar sua indignação:';
+                }}
+                container.innerHTML = OPCOES.map(op => `
+                <button type="button" data-poll-id="${{op.id}}" class="termometro-btn termometro-opcao-btn w-full text-left p-3 sm:p-3.5 bg-white border border-[#D1CEC7] hover:border-[#8B0000] hover:shadow-xs rounded-sm transition-all duration-200 cursor-pointer group flex items-start sm:items-center space-x-3">
+                    <span class="text-xl group-hover:scale-110 transition-transform shrink-0">${{op.emoji}}</span>
+                    <div class="flex-1">
+                        <div class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#8B0000] transition-colors">
+                            ${{op.label}}
+                        </div>
+                        <div class="text-xs text-stone-600 font-serif italic">
+                            ${{op.descricao}}
+                        </div>
+                    </div>
+                    <span class="hidden sm:inline-block font-mono text-[11px] uppercase tracking-wider text-stone-400 group-hover:text-[#8B0000] font-bold shrink-0">VOTAR &rarr;</span>
+                </button>
+                `).join('');
+
+                container.querySelectorAll('.termometro-btn').forEach(btn => {{
+                    btn.addEventListener('click', () => {{
+                        const pollId = btn.getAttribute('data-poll-id');
+                        try {{
+                            localStorage.setItem(storageKey, pollId);
+                        }} catch(e) {{}}
+                        renderPoll();
+                    }});
+                }});
+            }}
+        }}
+
+        renderPoll();
+    }})();
     </script>
     """
 
@@ -762,11 +1290,19 @@ def generate_article_page(art):
     audio_file_abs = os.path.join(AUDIO_DIR, f"{slug}.mp3")
     has_audio = os.path.exists(audio_file_abs) or bool(art.get("audio_url"))
     audio_player_html = ""
+    sticky_audio_html = ""
     audio_script = ""
     if has_audio:
         audio_src = f"../audio/{slug}.mp3"
         audio_player_html = render_audio_player(slug, title, audio_src)
+        sticky_audio_html = render_sticky_audio_bar(title)
         audio_script = render_audio_script()
+
+    # Widget de Compartilhamento Viral (Zap da Família & Copiar Link)
+    share_widget_html = render_share_widget(title, subtitle, slug)
+
+    # Termômetro da Cara de Pau (Enquete Interativa)
+    termometro_widget_html = render_termometro_widget(slug)
 
     # Caricatura Editorial IA no Estilo Revista MAD Brasil
     img_src, img_legenda, img_credito = resolver_imagem_artigo(art, is_article=True)
@@ -905,6 +1441,12 @@ def generate_article_page(art):
                     {contexto_html}
                 </article>
 
+                <!-- Propague o Deboche: Botão Zap da Família & Copiar Link -->
+                {share_widget_html}
+
+                <!-- Termômetro da Cara de Pau (Enquete Interativa) -->
+                {termometro_widget_html}
+
                 <!-- Bottom Share / Nav -->
                 <div class="mt-10 sm:mt-12 pt-6 border-t border-[#D1CEC7] flex flex-col sm:flex-row gap-4 justify-between items-center reveal-on-scroll">
                     <a href="../index.html" class="neo-link inline-flex items-center text-sm font-mono uppercase tracking-wider text-[#8B0000] font-bold">
@@ -919,6 +1461,7 @@ def generate_article_page(art):
         </main>
     </div>
 
+    {sticky_audio_html}
     {render_footer(is_article=True)}
     {COMMON_SCRIPTS}
     {audio_script}
@@ -930,6 +1473,7 @@ def generate_article_page(art):
 def generate_home_page(articles):
     if not articles:
         hero_html = "<div class='py-12 text-center text-stone-500 font-serif'>Nenhuma crônica cadastrada no momento.</div>"
+        filtro_html = ""
         grid_html = ""
     else:
         hero = articles[0]
@@ -939,6 +1483,7 @@ def generate_home_page(articles):
         hero_date = hero.get("data", "Outubro de 2026")
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
         hero_img_src, hero_legenda, hero_credito = resolver_imagem_artigo(hero, is_article=False)
+        hero_target_id, hero_target_name, hero_icon = get_article_target(hero_slug, hero_title)
 
         hero_audio_file = os.path.join(AUDIO_DIR, f"{hero_slug}.mp3")
         hero_has_audio = os.path.exists(hero_audio_file) or bool(hero.get("audio_url"))
@@ -976,12 +1521,16 @@ def generate_home_page(articles):
 
         hero_html = f"""
         <!-- Hero: Manchete Principal NYT Style White Container -->
-        <section class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 reveal-on-scroll">
+        <section id="hero-article-section" data-alvo="{hero_target_id}" class="article-item bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-10 reveal-on-scroll">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                 <div class="lg:col-span-8">
                     <div class="flex flex-wrap items-center gap-2 mb-3">
                         <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
                         <span class="text-xs font-mono text-stone-600">{hero_date}</span>
+                        <span class="inline-flex items-center space-x-1 text-xs font-mono bg-[#EBE7DE] text-stone-700 px-2 py-0.5 rounded font-medium">
+                            <span>{hero_icon}</span>
+                            <span>{hero_target_name}</span>
+                        </span>
                         {hero_audio_badge}
                     </div>
                     <a href="artigos/{hero_slug}.html" class="group block">
@@ -1002,17 +1551,46 @@ def generate_home_page(articles):
                     </a>
                 </div>
 
-                <!-- Editorial Aside Card (#EBE7DE com borda clássica) -->
-                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm">
-                    <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
-                    <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
-                        &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
-                    </blockquote>
-                    <p class="text-xs font-mono text-stone-600 mt-3 sm:mt-4">&mdash; Provérbio de Botequim Parlamentar</p>
-                    <div class="mt-5 pt-3 border-t border-[#D1CEC7]">
-                        <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
-                        <p class="text-xs text-stone-700 leading-relaxed font-sans">
-                            Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
+                <!-- Editorial Aside Card (#EBE7DE com borda clássica e Gerador de Desculpas) -->
+                <div class="lg:col-span-4 bg-[#EBE7DE] p-5 sm:p-6 border-l-4 border-[#121212] font-serif rounded-r-sm shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="font-mono text-xs uppercase tracking-widest text-[#121212] font-bold mb-2">Frase do Dia na Redação</div>
+                        <blockquote class="italic text-[#121212] text-sm md:text-base border-l-2 border-[#8B0000] pl-3 my-2 sm:my-3">
+                            &ldquo;A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.&rdquo;
+                        </blockquote>
+                        <p class="text-xs font-mono text-stone-600 mt-2 sm:mt-3">&mdash; Provérbio de Botequim Parlamentar</p>
+                        
+                        <div class="mt-4 pt-3 border-t border-[#D1CEC7]">
+                            <span class="text-xs font-mono uppercase font-bold text-[#121212] block mb-1">Aviso ao Leitor</span>
+                            <p class="text-xs text-stone-700 leading-relaxed font-sans">
+                                Se você sentir raiva lendo os fatos, respire fundo. A culpa não é do redator; é do cartório eleitoral que registrou as candidaturas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Gerador de Desculpas Oficiais de Brasília -->
+                    <div class="mt-5 pt-4 border-t border-[#D1CEC7]" id="desculpa-widget">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold flex items-center space-x-1">
+                                <span>🏛️ GERADOR DE DESCULPAS</span>
+                            </span>
+                            <span class="font-mono text-[10px] text-stone-500 uppercase">Gabinete 24h</span>
+                        </div>
+                        
+                        <div id="desculpa-box" class="bg-white border border-[#D1CEC7] p-3 rounded-sm my-2 shadow-2xs min-h-[76px] flex items-center justify-center transition-all duration-300">
+                            <p id="desculpa-texto" class="font-serif italic text-xs text-[#121212] text-center leading-snug">
+                                &ldquo;A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.&rdquo;
+                            </p>
+                        </div>
+
+                        <button id="btn-nova-desculpa" type="button" class="w-full inline-flex items-center justify-center space-x-1.5 py-1.5 px-3 bg-[#121212] hover:bg-[#8B0000] text-white font-mono text-xs font-bold rounded transition-colors cursor-pointer select-none">
+                            <svg id="desculpa-spin-icon" class="w-3.5 h-3.5 fill-current transition-transform duration-300" viewBox="0 0 24 24">
+                                <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+                            </svg>
+                            <span>Sortear Nova Desculpa</span>
+                        </button>
+                        <p class="font-mono text-[10px] text-stone-500 text-center mt-1.5" id="desculpa-protocolo">
+                            Válida perante o STF, CPIs e almoços de domingo.
                         </p>
                     </div>
                 </div>
@@ -1020,81 +1598,130 @@ def generate_home_page(articles):
         </section>
         """
 
-        # Other articles grid
-        other_articles = articles[1:]
-        if other_articles:
-            cards = ""
-            for art in other_articles:
-                a_slug = art["slug"]
-                a_title = art["titulo"]
-                a_sub = art.get("subtitulo", "")
-                a_date = art.get("data", "")
-                a_cat = art.get("categoria", "Crônica")
-                card_img_src, card_legenda, card_credito = resolver_imagem_artigo(art, is_article=False)
-                
-                card_audio_file = os.path.join(AUDIO_DIR, f"{a_slug}.mp3")
-                card_has_audio = os.path.exists(card_audio_file) or bool(art.get("audio_url"))
-                card_audio_badge = ""
-                if card_has_audio:
-                    card_audio_badge = f"""
-                    <span class="text-[#D1CEC7]">&bull;</span>
-                    <a href="artigos/{a_slug}.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
-                        <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
-                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                        </svg>
-                        <span>Áudio</span>
-                    </a>
-                    """
+    # Contagem para os botões de filtro rápido
+    target_counts = {}
+    for a in articles:
+        t_id, _, _ = get_article_target(a["slug"], a.get("titulo", ""))
+        target_counts[t_id] = target_counts.get(t_id, 0) + 1
 
-                img_card_html = ""
-                if card_img_src:
-                    img_card_html = f"""
-                    <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                        <img src="{card_img_src}" alt="{a_title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
-                    </div>
-                    """
-                cards += f"""
-                <article class="reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
-                    <div>
-                        {img_card_html}
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                            <span class="text-[#8B0000] font-bold uppercase">{a_cat}</span>
-                            <span class="text-[#D1CEC7]">&bull;</span>
-                            <span class="text-stone-600">{a_date}</span>
-                            {card_audio_badge}
-                        </div>
-                        <a href="artigos/{a_slug}.html" class="block group">
-                            <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
-                                {a_title}
-                            </h3>
-                        </a>
-                        <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
-                            {a_sub}
-                        </p>
-                    </div>
-                    <a href="artigos/{a_slug}.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                        <span>Ler mais</span>
-                        <span>&rarr;</span>
-                    </a>
-                </article>
+    filtro_html = f"""
+        <!-- Filtro Rápido por Alvo da Sátira -->
+        <div class="mb-8 p-4 sm:p-5 bg-white border border-[#D1CEC7] rounded-sm shadow-xs reveal-on-scroll">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">FILTRAR POR ALVO DA SÁTIRA</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#8B0000]"></span>
+                    <span class="font-serif italic text-xs text-stone-600">Escolha quem você quer ver passar vergonha hoje:</span>
+                </div>
+                <span id="filtro-contador" class="font-mono text-xs text-stone-500 font-medium">Exibindo todas as {len(articles)} crônicas</span>
+            </div>
+            <div class="flex flex-wrap gap-2" id="filtro-alvos-container">
+                <button type="button" data-filter="all" class="filtro-btn active px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-bold bg-[#8B0000] text-white shadow-xs">
+                    Todos ({len(articles)})
+                </button>
+                <button type="button" data-filter="bets" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🎰 Bets &amp; Tigrinho ({target_counts.get('bets', 0)})
+                </button>
+                <button type="button" data-filter="flavio-bolsonaro" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🏖️ Flávio Bolsonaro ({target_counts.get('flavio-bolsonaro', 0)})
+                </button>
+                <button type="button" data-filter="lula" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🎪 Lula &amp; Planalto ({target_counts.get('lula', 0)})
+                </button>
+                <button type="button" data-filter="stf" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    ⚖️ STF &amp; Togas ({target_counts.get('stf', 0)})
+                </button>
+                <button type="button" data-filter="faria-lima" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🕯️ Faria Lima &amp; SP ({target_counts.get('faria-lima', 0)})
+                </button>
+                <button type="button" data-filter="congresso" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🏛️ Congresso &amp; Partidos ({target_counts.get('congresso', 0)})
+                </button>
+            </div>
+            <div id="filtro-sem-resultados" class="hidden mt-4 pt-3 border-t border-[#D1CEC7] text-center font-serif italic text-stone-500 text-sm">
+                Nenhuma crônica encontrada para este alvo no momento. A assessoria parlamentar deve ter conseguido abafar por enquanto.
+            </div>
+        </div>
+        """
+
+    # Other articles grid
+    other_articles = articles[1:]
+    if other_articles:
+        cards = ""
+        for art in other_articles:
+            a_slug = art["slug"]
+            a_title = art["titulo"]
+            a_sub = art.get("subtitulo", "")
+            a_date = art.get("data", "")
+            a_cat = art.get("categoria", "Crônica")
+            card_img_src, card_legenda, card_credito = resolver_imagem_artigo(art, is_article=False)
+            c_target_id, c_target_name, c_icon = get_article_target(a_slug, a_title)
+            
+            card_audio_file = os.path.join(AUDIO_DIR, f"{a_slug}.mp3")
+            card_has_audio = os.path.exists(card_audio_file) or bool(art.get("audio_url"))
+            card_audio_badge = ""
+            if card_has_audio:
+                card_audio_badge = f"""
+                <span class="text-[#D1CEC7]">&bull;</span>
+                <a href="artigos/{a_slug}.html#article-audio-box" class="inline-flex items-center space-x-1 text-[11px] font-mono text-stone-700 hover:text-[#8B0000] bg-[#EBE7DE] hover:bg-[#D1CEC7] px-1.5 py-0.5 rounded transition-colors" title="Ouvir versão narrada">
+                    <svg class="w-3 h-3 fill-current text-[#8B0000]" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span>Áudio</span>
+                </a>
                 """
-            grid_html = f"""
-            <section class="reveal-on-scroll">
-                <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
-                    <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
-                    <span class="font-mono text-xs text-stone-600 uppercase">{len(other_articles)} crônica(s)</span>
+
+            img_card_html = ""
+            if card_img_src:
+                img_card_html = f"""
+                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
+                    <img src="{card_img_src}" alt="{a_title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {cards}
+                """
+            cards += f"""
+            <article data-alvo="{c_target_id}" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+                <div>
+                    {img_card_html}
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
+                        <span class="text-[#8B0000] font-bold uppercase">{a_cat}</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="text-stone-600">{a_date}</span>
+                        <span class="text-[#D1CEC7]">&bull;</span>
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">{c_icon} {c_target_name}</span>
+                        {card_audio_badge}
+                    </div>
+                    <a href="artigos/{a_slug}.html" class="block group">
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+                            {a_title}
+                        </h3>
+                    </a>
+                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+                        {a_sub}
+                    </p>
                 </div>
-            </section>
+                <a href="artigos/{a_slug}.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
+                    <span>Ler mais</span>
+                    <span>&rarr;</span>
+                </a>
+            </article>
             """
-        else:
-            grid_html = f"""
-            <section class="py-6 sm:py-8 text-center border-t border-[#D1CEC7] reveal-on-scroll">
-                <span class="font-mono text-xs uppercase tracking-widest text-stone-600">Mais escândalos e gafes em apuração na gráfica...</span>
-            </section>
-            """
+        grid_html = f"""
+        <section id="grid-articles-section" class="reveal-on-scroll">
+            <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
+                <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
+                <span class="font-mono text-xs text-stone-600 uppercase">{len(other_articles)} crônica(s)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="grid-cards-container">
+                {cards}
+            </div>
+        </section>
+        """
+    else:
+        grid_html = f"""
+        <section class="py-6 sm:py-8 text-center border-t border-[#D1CEC7] reveal-on-scroll">
+            <span class="font-mono text-xs uppercase tracking-widest text-stone-600">Mais escândalos e gafes em apuração na gráfica...</span>
+        </section>
+        """
 
     page_html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -1112,6 +1739,7 @@ def generate_home_page(articles):
         <!-- Main Content with NYT Style spacing -->
         <main class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-6 sm:py-8">
             {hero_html}
+            {filtro_html}
             {grid_html}
         </main>
     </div>

@@ -306,6 +306,91 @@
         html.dark #site-header.is-scrolled .masthead-borders {
             border-bottom: 1px solid #52525b !important;
         }
+
+        /* Dark Mode Overrides para os Novos Recursos */
+        html.dark #share-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: var(--border-divider) !important;
+            border-left-color: #25D366 !important;
+        }
+
+        html.dark #btn-copy-link {
+            background-color: #27272c !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #btn-copy-link:hover {
+            border-color: #71717a !important;
+            background-color: #323238 !important;
+        }
+
+        html.dark #sticky-audio-bar {
+            background-color: #1a1a1e !important;
+            border-top-color: var(--editorial-red) !important;
+            box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        html.dark #sticky-play-btn {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #sticky-play-btn:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark #sticky-progress-container {
+            background-color: #2e2e34 !important;
+        }
+
+        html.dark #termometro-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: #52525b !important;
+        }
+
+        html.dark .termometro-opcao-btn {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark .termometro-opcao-btn:hover {
+            border-color: #71717a !important;
+            background-color: #2c2c33 !important;
+        }
+
+        html.dark .termometro-opcao-voted {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #desculpa-box {
+            background-color: #1e1e22 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #btn-nova-desculpa {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #btn-nova-desculpa:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark .filtro-btn:not(.active) {
+            background-color: #26262b !important;
+            border: 1px solid #3f3f46 !important;
+            color: #d4d4d8 !important;
+        }
+
+        html.dark .filtro-btn:not(.active):hover {
+            background-color: #323238 !important;
+            color: #ffffff !important;
+        }
     </style>
 
 </head>
@@ -531,6 +616,188 @@
     
                 </article>
 
+                <!-- Propague o Deboche: Botão Zap da Família & Copiar Link -->
+                
+    <!-- Propague o Deboche: Botão Disparar no Zap da Família & Copiar Link -->
+    <div id="share-box" class="my-8 sm:my-10 p-5 sm:p-6 bg-[#FAF9F5] border border-[#D1CEC7] border-l-4 border-l-[#25D366] rounded-sm shadow-xs reveal-on-scroll">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+                <div class="flex items-center space-x-2">
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#128C7E]">PROPAGUE O DEBOCHE</span>
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#EBE7DE] text-stone-700 font-semibold">1-Click Viral</span>
+                </div>
+                <h4 class="font-serif font-black text-base sm:text-lg text-[#121212] mt-0.5">Disparar no Zap da Família &amp; Redes</h4>
+                <p class="font-serif italic text-xs text-stone-600 mt-0.5">
+                    Porque nada une mais os parentes num domingo do que passar raiva juntos com a classe política.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                <!-- Botão WhatsApp -->
+                <button id="btn-share-zap" type="button" class="inline-flex items-center space-x-2 px-3.5 py-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-mono text-xs font-bold rounded shadow-xs transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.1-.476-.15-.676.15-.2.301-.776.979-.952 1.18-.175.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.131-.614.136-.135.301-.351.451-.527.151-.175.201-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.587-.492-.507-.676-.516l-.576-.01c-.2 0-.526.075-.802.376-.276.301-1.052 1.028-1.052 2.508 0 1.48 1.077 2.909 1.228 3.109.15.2 2.12 3.237 5.136 4.54.717.31 1.277.496 1.713.634.72.229 1.375.196 1.893.119.578-.086 1.78-.727 2.03-1.43.251-.702.251-1.304.176-1.43-.076-.126-.276-.201-.577-.351z"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                    </svg>
+                    <span>Zap da Família</span>
+                </button>
+                <!-- Botão Copiar Link -->
+                <button id="btn-copy-link" type="button" class="inline-flex items-center space-x-1.5 px-3 py-2 bg-white border border-[#D1CEC7] hover:border-[#121212] text-stone-800 font-mono text-xs font-bold rounded shadow-xs transition-colors cursor-pointer">
+                    <svg id="copy-icon" class="w-4 h-4 fill-current text-stone-600" viewBox="0 0 24 24">
+                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                    </svg>
+                    <span id="copy-text">Copiar Link</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function() {
+        const btnZap = document.getElementById('btn-share-zap');
+        if (btnZap) {
+            btnZap.addEventListener('click', () => {
+                const pageUrl = window.location.href;
+                const zapText = `🚨 *URGENTE NO IMPRÓBO:* ENEL PEDE DESCULPAS: \'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO\'\n\n"Com a carne no congelador criando vida própria e o paulistano tomando banho de caneco aos berros, Tarcísio culpa o Planalto, Lula culpa a privatização e a concessionária jura que poste foi feito pra ficar em sala com ar-condicionado."\n\n👉 Leia a crônica completa antes que Brasília censure: ${pageUrl}`;
+                const zapUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(zapText)}`;
+                window.open(zapUrl, '_blank');
+            });
+        }
+        const btnCopy = document.getElementById('btn-copy-link');
+        if (btnCopy) {
+            btnCopy.addEventListener('click', () => {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    const copyText = document.getElementById('copy-text');
+                    const original = copyText.textContent;
+                    copyText.textContent = '✓ Link Copiado!';
+                    btnCopy.classList.add('border-emerald-600', 'text-emerald-700');
+                    setTimeout(() => {
+                        copyText.textContent = original;
+                        btnCopy.classList.remove('border-emerald-600', 'text-emerald-700');
+                    }, 2500);
+                }).catch(() => {
+                    const copyText = document.getElementById('copy-text');
+                    copyText.textContent = 'Erro ao copiar';
+                });
+            });
+        }
+    })();
+    </script>
+    
+
+                <!-- Termômetro da Cara de Pau (Enquete Interativa) -->
+                
+    <!-- Termômetro da Cara de Pau (Enquete Interativa de Cinismo) -->
+    <div id="termometro-box" class="my-8 sm:my-10 p-5 sm:p-7 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm reveal-on-scroll">
+        <div class="flex items-center justify-between border-b border-[#D1CEC7] pb-3 mb-4">
+            <div>
+                <span class="font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">ENQUETE DE OPINIÃO POPULAR</span>
+                <h3 class="font-serif font-black text-lg sm:text-xl text-[#121212] mt-0.5">Termômetro da Cara de Pau</h3>
+            </div>
+            <span class="text-2xl" title="Medidor Oficial de Óleo de Peroba">🪵</span>
+        </div>
+        <p class="font-serif italic text-sm text-stone-700 mb-5">
+            Na sua sincera avaliação como contribuinte lesado, qual é o nível exato de descaramento deste episódio?
+        </p>
+
+        <!-- Opções de Voto -->
+        <div id="termometro-opcoes" class="space-y-3">
+            <!-- Injetado dinamicamente via JavaScript com persistência em localStorage -->
+        </div>
+
+        <div id="termometro-feedback" class="mt-4 pt-3 border-t border-[#D1CEC7] text-xs font-mono text-stone-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <span id="termometro-status">Selecione uma opção para registrar seu voto no cartório cínico.</span>
+            <span id="termometro-total-votos" class="font-bold text-[#8B0000]"></span>
+        </div>
+    </div>
+    <script>
+    (function() {
+        const slug = "sao-paulo-apagao-enel-guerra-da-vela";
+        const storageKey = 'improbo_poll_' + slug;
+
+        const OPCOES = [
+            { id: 1, label: "Nível Bronze", descricao: "Dá pra fingir que não viu se tomar um café bem forte.", baseVotes: 142, emoji: "🥉" },
+            { id: 2, label: "Nível Prata", descricao: "É escárnio explícito, mas já virou rotina no Diário Oficial.", baseVotes: 388, emoji: "🥈" },
+            { id: 3, label: "Nível Ouro", descricao: "O estoque nacional de óleo de peroba foi zerado em Brasília.", baseVotes: 894, emoji: "🥇" },
+            { id: 4, label: "Nível Lendário", descricao: "Nem Maquiavel tendo um pesadelo ousaria tanto cinismo.", baseVotes: 615, emoji: "🔥" }
+        ];
+
+        function renderPoll() {
+            const savedVote = localStorage.getItem(storageKey);
+            const container = document.getElementById('termometro-opcoes');
+            const statusText = document.getElementById('termometro-status');
+            const totalText = document.getElementById('termometro-total-votos');
+            if (!container) return;
+
+            let total = OPCOES.reduce((acc, o) => acc + o.baseVotes, 0);
+            if (savedVote) {
+                total += 1;
+            }
+
+            if (totalText) {
+                totalText.textContent = total.toLocaleString('pt-BR') + ' votos apurados';
+            }
+
+            if (savedVote) {
+                if (statusText) {
+                    statusText.innerHTML = '✓ <strong>Voto registrado no cartório cínico!</strong> Obrigado por cumprir seu dever cívico.';
+                }
+                container.innerHTML = OPCOES.map(op => {
+                    let votes = op.baseVotes + (savedVote == op.id ? 1 : 0);
+                    let pct = Math.round((votes / total) * 100);
+                    let isUserVote = (savedVote == op.id);
+                    return `
+                    <div class="p-3 bg-white border ${isUserVote ? 'border-[#8B0000] ring-1 ring-[#8B0000]' : 'border-[#D1CEC7]'} rounded-sm relative overflow-hidden termometro-opcao-voted">
+                        <div class="absolute top-0 left-0 bottom-0 ${isUserVote ? 'bg-[#8B0000]/15' : 'bg-[#EBE7DE]/70'} transition-all duration-700 ease-out" style="width: ${pct}%"></div>
+                        <div class="relative z-10 flex items-center justify-between gap-3 text-xs sm:text-sm">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-base">${op.emoji}</span>
+                                <span class="font-bold text-[#121212] font-serif">${op.label}:</span>
+                                <span class="text-stone-700 font-serif italic hidden sm:inline">${op.descricao}</span>
+                                ${isUserVote ? '<span class="inline-block px-1.5 py-0.2 bg-[#8B0000] text-white text-[10px] font-mono font-bold rounded">SEU VOTO</span>' : ''}
+                            </div>
+                            <span class="font-mono font-bold text-stone-800 shrink-0">${pct}% (${votes.toLocaleString('pt-BR')})</span>
+                        </div>
+                        <div class="sm:hidden text-[11px] text-stone-600 font-serif italic mt-1 relative z-10">
+                            ${op.descricao}
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            } else {
+                if (statusText) {
+                    statusText.textContent = 'Clique em uma das alternativas para registrar sua indignação:';
+                }
+                container.innerHTML = OPCOES.map(op => `
+                <button type="button" data-poll-id="${op.id}" class="termometro-btn termometro-opcao-btn w-full text-left p-3 sm:p-3.5 bg-white border border-[#D1CEC7] hover:border-[#8B0000] hover:shadow-xs rounded-sm transition-all duration-200 cursor-pointer group flex items-start sm:items-center space-x-3">
+                    <span class="text-xl group-hover:scale-110 transition-transform shrink-0">${op.emoji}</span>
+                    <div class="flex-1">
+                        <div class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#8B0000] transition-colors">
+                            ${op.label}
+                        </div>
+                        <div class="text-xs text-stone-600 font-serif italic">
+                            ${op.descricao}
+                        </div>
+                    </div>
+                    <span class="hidden sm:inline-block font-mono text-[11px] uppercase tracking-wider text-stone-400 group-hover:text-[#8B0000] font-bold shrink-0">VOTAR &rarr;</span>
+                </button>
+                `).join('');
+
+                container.querySelectorAll('.termometro-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const pollId = btn.getAttribute('data-poll-id');
+                        try {
+                            localStorage.setItem(storageKey, pollId);
+                        } catch(e) {}
+                        renderPoll();
+                    });
+                });
+            }
+        }
+
+        renderPoll();
+    })();
+    </script>
+    
+
                 <!-- Bottom Share / Nav -->
                 <div class="mt-10 sm:mt-12 pt-6 border-t border-[#D1CEC7] flex flex-col sm:flex-row gap-4 justify-between items-center reveal-on-scroll">
                     <a href="../index.html" class="neo-link inline-flex items-center text-sm font-mono uppercase tracking-wider text-[#8B0000] font-bold">
@@ -545,6 +812,46 @@
         </main>
     </div>
 
+    
+    <!-- Mini-Player de Áudio Sticky Flutuante (Estilo NYT Listen Bar) -->
+    <div id="sticky-audio-bar" class="fixed bottom-0 left-0 right-0 z-50 bg-[#FAF9F5] border-t-2 border-t-[#8B0000] shadow-2xl transform translate-y-full transition-transform duration-300 ease-in-out">
+        <div class="max-w-4xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3 overflow-hidden">
+                <button id="sticky-play-btn" type="button" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#121212] hover:bg-[#8B0000] text-white flex items-center justify-center shrink-0 transition-colors cursor-pointer" aria-label="Play/Pause">
+                    <svg id="sticky-play-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg id="sticky-pause-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current hidden" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                <div class="overflow-hidden">
+                    <div class="flex items-center space-x-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO IMPRÓBO</span>
+                    </div>
+                    <div class="font-serif font-bold text-xs sm:text-sm text-[#121212] truncate max-w-[180px] sm:max-w-md md:max-w-lg">
+                        ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3 shrink-0">
+                <!-- Barra de progresso compacta -->
+                <div class="hidden sm:block w-28 md:w-44 h-2 bg-[#EBE7DE] rounded-full overflow-hidden cursor-pointer" id="sticky-progress-container" title="Clique para navegar">
+                    <div id="sticky-progress-bar" class="h-full bg-[#8B0000] w-0 transition-all duration-75"></div>
+                </div>
+                <span id="sticky-time" class="font-mono text-xs text-stone-600 min-w-[45px] text-right font-medium">00:00</span>
+                <!-- Botão Fechar -->
+                <button id="sticky-close-btn" type="button" class="text-stone-500 hover:text-[#121212] p-1 rounded transition-colors cursor-pointer" title="Ocultar mini-player">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
     
     <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
         <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
@@ -648,6 +955,121 @@
                         try { localStorage.setItem('improbo_theme', 'light'); } catch(e) {}
                     }
                     syncUI(nextDark);
+                });
+            }
+
+            // Gerador de Desculpas Oficiais de Brasília
+            const btnDesculpa = document.getElementById('btn-nova-desculpa');
+            if (btnDesculpa) {
+                const desculpas = [
+                    "A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.",
+                    "Não houve dolo, apenas uma interpretação excessivamente literal da Constituição Federal.",
+                    "O dinheiro encontrado na cueca/mala era estritamente para pagamento emergencial de panfletagem.",
+                    "Fui hackeado às 3h da manhã por um hacker patriota com residência fiscal na Letônia.",
+                    "Trata-se de uma fake news plantada pelo consórcio midiático para abalar os mercados financeiros.",
+                    "Estou sendo perseguido unicamente por defender o direito inalienável do povo de pagar mais taxas.",
+                    "Houve um equívoco de comunicação da assessoria júnior que já foi devidamente transferida de gabinete.",
+                    "O imóvel/praia/sítio não é meu, apenas guardo minhas pedaladas e caixas de isopor lá por cortesia.",
+                    "Votei a favor do perdão das dívidas partidárias para garantir a austeridade fiscal e a democracia.",
+                    "A catraca na praia é apenas para aferir a qualidade da areia e a brisa marítima sustentável.",
+                    "O beneficiário do Bolsa Família estava apenas realizando um investimento em renda variável no Tigrinho.",
+                    "A concessionária esclarece que o apagão é um convite poético ao consumo consciente à luz de velas.",
+                    "O ministro foi ao camarim do STF apenas para pedir uma receita de pão de queijo constitucional.",
+                    "Minha folga no domingo não anula meu compromisso espiritual de trabalhar pelos trabalhadores.",
+                    "Tudo foi executado estritamente dentro das quatro linhas da conveniência orçamentária."
+                ];
+                let lastIdx = 0;
+                const textoEl = document.getElementById('desculpa-texto');
+                const spinIcon = document.getElementById('desculpa-spin-icon');
+                const protoEl = document.getElementById('desculpa-protocolo');
+                let degrees = 0;
+
+                btnDesculpa.addEventListener('click', () => {
+                    degrees += 360;
+                    if (spinIcon) spinIcon.style.transform = `rotate(${degrees}deg)`;
+                    
+                    let nextIdx;
+                    do {
+                        nextIdx = Math.floor(Math.random() * desculpas.length);
+                    } while (nextIdx === lastIdx && desculpas.length > 1);
+                    lastIdx = nextIdx;
+
+                    if (textoEl) {
+                        textoEl.style.opacity = '0';
+                        setTimeout(() => {
+                            textoEl.innerHTML = `&ldquo;${desculpas[nextIdx]}&rdquo;`;
+                            textoEl.style.opacity = '1';
+                        }, 180);
+                    }
+
+                    if (protoEl) {
+                        protoEl.textContent = `Protocolo nº ${Math.floor(1000 + Math.random() * 9000)}/2026 arquivado com sucesso.`;
+                    }
+                });
+            }
+
+            // Filtro Rápido por Alvo da Sátira na Capa
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            if (filterBtns.length > 0) {
+                const heroSection = document.getElementById('hero-article-section');
+                const gridCards = document.querySelectorAll('.article-card-item');
+                const contador = document.getElementById('filtro-contador');
+                const semResultados = document.getElementById('filtro-sem-resultados');
+
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const filter = btn.getAttribute('data-filter');
+
+                        // Atualizar botões
+                        filterBtns.forEach(b => {
+                            b.classList.remove('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                            b.classList.add('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+                        });
+                        btn.classList.add('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                        btn.classList.remove('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+
+                        let visibleCount = 0;
+
+                        // Filtrar Manchete Hero
+                        if (heroSection) {
+                            const heroAlvo = heroSection.getAttribute('data-alvo');
+                            if (filter === 'all' || heroAlvo === filter) {
+                                heroSection.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                heroSection.classList.add('hidden');
+                            }
+                        }
+
+                        // Filtrar Cards do Grid
+                        gridCards.forEach(card => {
+                            const cardAlvo = card.getAttribute('data-alvo');
+                            if (filter === 'all' || cardAlvo === filter) {
+                                card.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        });
+
+                        // Atualizar contador e mensagem
+                        if (contador) {
+                            if (filter === 'all') {
+                                contador.textContent = `Exibindo todas as ${visibleCount} crônicas`;
+                            } else {
+                                const btnText = btn.textContent.replace(/\(\d+\)/, '').trim();
+                                contador.textContent = `Exibindo ${visibleCount} crônica(s) sobre: ${btnText}`;
+                            }
+                        }
+
+                        if (semResultados) {
+                            if (visibleCount === 0) {
+                                semResultados.classList.remove('hidden');
+                            } else {
+                                semResultados.classList.add('hidden');
+                            }
+                        }
+                    });
                 });
             }
         });
@@ -791,6 +1213,91 @@
                 muteIcon.classList.add('hidden');
             }
         });
+
+        // Integração do Mini-Player Sticky Flutuante
+        const stickyBar = document.getElementById('sticky-audio-bar');
+        if (stickyBar) {
+            const stickyPlayBtn = document.getElementById('sticky-play-btn');
+            const stickyPlayIcon = document.getElementById('sticky-play-icon');
+            const stickyPauseIcon = document.getElementById('sticky-pause-icon');
+            const stickyTime = document.getElementById('sticky-time');
+            const stickyProgressBar = document.getElementById('sticky-progress-bar');
+            const stickyProgressContainer = document.getElementById('sticky-progress-container');
+            const stickyCloseBtn = document.getElementById('sticky-close-btn');
+
+            let stickyDismissed = false;
+
+            function syncStickyUI() {
+                if (!stickyBar) return;
+                if (audio.paused) {
+                    stickyPlayIcon.classList.remove('hidden');
+                    stickyPauseIcon.classList.add('hidden');
+                } else {
+                    stickyPlayIcon.classList.add('hidden');
+                    stickyPauseIcon.classList.remove('hidden');
+                }
+                if (stickyTime) {
+                    stickyTime.textContent = formatTime(audio.currentTime);
+                }
+                if (stickyProgressBar && audio.duration) {
+                    const pct = (audio.currentTime / audio.duration) * 100;
+                    stickyProgressBar.style.width = `${pct}%`;
+                }
+            }
+
+            audio.addEventListener('timeupdate', syncStickyUI);
+            audio.addEventListener('play', syncStickyUI);
+            audio.addEventListener('pause', syncStickyUI);
+
+            stickyPlayBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(e => console.error(e));
+                } else {
+                    audio.pause();
+                }
+            });
+
+            if (stickyProgressContainer) {
+                stickyProgressContainer.addEventListener('click', (e) => {
+                    if (!audio.duration || isNaN(audio.duration)) return;
+                    const rect = stickyProgressContainer.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    const pct = Math.max(0, Math.min(1, clickX / rect.width));
+                    audio.currentTime = pct * audio.duration;
+                    syncStickyUI();
+                });
+            }
+
+            if (stickyCloseBtn) {
+                stickyCloseBtn.addEventListener('click', () => {
+                    stickyBar.classList.add('translate-y-full');
+                    stickyDismissed = true;
+                });
+            }
+
+            const mainAudioBox = document.getElementById('article-audio-box');
+            if (mainAudioBox && 'IntersectionObserver' in window) {
+                const audioObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (stickyDismissed) return;
+                        if (!entry.isIntersecting && audio.currentTime > 0) {
+                            stickyBar.classList.remove('translate-y-full');
+                        } else if (entry.isIntersecting) {
+                            stickyBar.classList.add('translate-y-full');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                audioObserver.observe(mainAudioBox);
+
+                audio.addEventListener('play', () => {
+                    if (stickyDismissed) return;
+                    const rect = mainAudioBox.getBoundingClientRect();
+                    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                        stickyBar.classList.remove('translate-y-full');
+                    }
+                });
+            }
+        }
     });
     </script>
     
