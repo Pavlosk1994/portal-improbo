@@ -52,3 +52,7 @@ Sempre que receber uma notícia de entrada, você deve gerar o conteúdo estrutu
    - `word-break: break-word; overflow-wrap: break-word; hyphens: auto;`
 6. PIPELINE DE AUTOMAÇÃO DE CÓDIGO & ÁUDIO:
    - Toda crônica gerada dispara a geração de áudio neural (`gerar_audio.py`) e `build.py`, atualizando a Home (`index.html`), o catálogo de MP3s (`audio/`) e as páginas dos artigos (`artigos/[slug].html`), mantendo o repositório sincronizado e apto para deploy contínuo na Vercel.
+7. MODO ESCURO / TEMA NOTURNO EDITORIAL:
+   - Alternador discreto e elegante posicionado no topo à direita da barra de metadados (`#theme-toggle-btn`), com ícones dinâmicos de Lua (`🌙`) e Sol (`☀️`) e suporte mobile compacto.
+   - Paleta noturna de jornal impresso de alto conforto de leitura (`#141416` de fundo geral, cartões e folhas em `#1e1e22`, tipografia em `#f3f3f5` e caixas factuais em `#26262b`).
+   - Persistência instantânea no `localStorage` (`improbo_theme`) e script inline anti-FOUC no `<head>` para carregamento sem flashes claros indesejados.
