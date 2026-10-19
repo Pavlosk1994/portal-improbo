@@ -61,7 +61,7 @@ jobs:
             echo "[i] Nenhuma matéria nova ou alteração para publicar nesta rodada."
           else
             git commit -m "chore(auto): nova crônica satírica e caricatura IA publicadas pelo robô [skip ci]"
-            git push origin master
+            git push origin HEAD
             echo "[✓] Atualização enviada com sucesso! O deploy na Vercel será disparado automaticamente."
           fi
 
