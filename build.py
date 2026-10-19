@@ -2303,6 +2303,7 @@ Sitemap: {PORTAL_URL}/sitemap.xml
 
 def create_vercel_config():
     config = {
+        "framework": None,
         "cleanUrls": True,
         "trailingSlash": False,
         "headers": [

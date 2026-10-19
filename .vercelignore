@@ -1,0 +1,8 @@
+requirements.txt
+*.py
+backups/
+content/
+noticias_db.json
+PROMPT_MESTRE*.md
+.env*
+.git*
