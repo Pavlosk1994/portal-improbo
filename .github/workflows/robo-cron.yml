@@ -1,10 +1,10 @@
 name: Robô Autônomo Ímprobo (Varredura, Caricaturas IA & Deploy Contínuo)
 
 on:
+  workflow_dispatch:
   schedule:
     # Dispara a cada 4 horas todos os dias (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
     - cron: '0 0,4,8,12,16,20 * * *'
-  workflow_dispatch: # Permite disparo manual com 1 clique na interface do GitHub Actions
 
 concurrency:
   group: robo-improbo
