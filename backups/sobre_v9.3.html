@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto &amp; Aviso Legal | ÍMPROBO</title>
+    <meta name="description" content="O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF.">
+    <link rel="canonical" href="https://improbo.vercel.app/sobre.html">
+
+    <!-- Metatags Sociais Dinâmicas / Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="ÍMPROBO">
+    <meta property="og:title" content="Manifesto &amp; Aviso Legal | ÍMPROBO">
+    <meta property="og:description" content="O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF.">
+    <meta property="og:url" content="https://improbo.vercel.app/sobre.html">
+    <meta property="og:image" content="https://improbo.vercel.app/imagens/lula-malabarismo-planalto-centrao.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Manifesto &amp; Aviso Legal | ÍMPROBO">
+    <meta name="twitter:description" content="O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF.">
+    <meta name="twitter:image" content="https://improbo.vercel.app/imagens/lula-malabarismo-planalto-centrao.jpg">
+
+    
+    <meta name="referrer" content="no-referrer">
+    <script>
+        // Prevenção imediata de flash branco (FOUC)
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('improbo_theme');
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-nyt: #F4F1EA;
+            --container-white: #FFFFFF;
+            --text-charcoal: #121212;
+            --editorial-red: #8B0000;
+            --border-divider: #D1CEC7;
+            --box-cream-dark: #EBE7DE;
+            --audio-box-bg: #FAF9F5;
+            --text-secondary: #57534e;
+        }
+
+        html.dark {
+            --bg-nyt: #141416;
+            --container-white: #1e1e22;
+            --text-charcoal: #f3f3f5;
+            --editorial-red: #e03131;
+            --border-divider: #333338;
+            --box-cream-dark: #26262b;
+            --audio-box-bg: #222227;
+            --text-secondary: #a1a1aa;
+        }
+
+        body {
+            background-color: var(--bg-nyt);
+            color: var(--text-charcoal);
+            font-family: 'Newsreader', Georgia, serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .font-sans {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        /* Linhas Editoriais Clássicas New York Times */
+        .masthead-borders {
+            border-top: 1px solid #121212;
+            border-bottom: 3px double #121212;
+        }
+
+        .editorial-divider {
+            border-color: #D1CEC7;
+        }
+
+        /* Tipografia Fluida Responsiva com clamp() */
+        .masthead-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(2.3rem, 7.5vw, 4.8rem);
+            line-height: 1.02;
+            letter-spacing: -0.035em;
+            word-break: break-word;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .article-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(1.4rem, 4.2vw, 2.75rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .hero-title {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(1.45rem, 4.5vw, 2.85rem);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .article-subtitle {
+            font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+            line-height: 1.45;
+        }
+
+        .drop-cap-fluid:first-letter {
+            float: left;
+            font-size: clamp(3.2rem, 8vw, 4.2rem);
+            line-height: 0.85;
+            padding-right: 0.5rem;
+            padding-top: 0.15rem;
+            font-weight: 800;
+            color: #121212;
+        }
+
+        /* Micro-interação: Links com Sublinhado Animado Neo-Clássico */
+        .neo-link {
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .neo-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--editorial-red);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .neo-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Cabeçalho Retrátil Sticky NYT */
+        #site-header {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #site-header.is-scrolled {
+            background-color: rgba(244, 241, 234, 0.96);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 4px 14px rgba(18, 18, 18, 0.06);
+            border-bottom: 1px solid #D1CEC7;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+        }
+        #site-header.is-scrolled .masthead-title {
+            font-size: clamp(1.4rem, 3.8vw, 2.1rem);
+        }
+        #site-header.is-scrolled .masthead-subline {
+            display: none;
+        }
+        #site-header.is-scrolled .masthead-borders {
+            border-top: none;
+            border-bottom: 1px solid #121212;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
+        }
+
+        /* Transição Suave de Tema */
+        body {
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        /* Dark Mode Theme Overrides Gerais */
+        html.dark .masthead-borders {
+            border-top: 1px solid #52525b;
+            border-bottom: 3px double #52525b;
+        }
+
+        html.dark .masthead-subline {
+            border-color: #52525b !important;
+            color: #d4d4d8 !important;
+        }
+
+        html.dark .editorial-divider {
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark .bg-white {
+            background-color: var(--container-white) !important;
+            border-color: var(--border-divider) !important;
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark .bg-\[\#F4F1EA\] {
+            background-color: var(--bg-nyt) !important;
+        }
+
+        html.dark .bg-\[\#FAF9F5\] {
+            background-color: var(--audio-box-bg) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark .bg-\[\#EBE7DE\] {
+            background-color: var(--box-cream-dark) !important;
+            border-color: var(--border-divider) !important;
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark .text-\[\#121212\] {
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark .text-\[\#121212\]\/90,
+        html.dark .text-\[\#121212\]\/85,
+        html.dark .text-\[\#121212\]\/95 {
+            color: rgba(243, 243, 245, 0.92) !important;
+        }
+
+        html.dark .text-stone-700,
+        html.dark .text-stone-600 {
+            color: var(--text-secondary) !important;
+        }
+
+        html.dark .text-stone-800 {
+            color: #e4e4e7 !important;
+        }
+
+        html.dark .text-stone-500 {
+            color: #71717a !important;
+        }
+
+        html.dark .border-\[\#D1CEC7\] {
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark .border-\[\#121212\] {
+            border-color: #52525b !important;
+        }
+
+        html.dark .drop-cap-fluid:first-letter {
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark blockquote {
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark #article-audio-box {
+            background-color: var(--audio-box-bg) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark #audio-progress-container {
+            background-color: #2e2e34 !important;
+        }
+
+        html.dark #audio-speed-btn {
+            background-color: #27272c !important;
+            border-color: #3f3f46 !important;
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark #audio-play-btn {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #audio-play-btn:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark #theme-toggle-btn {
+            background-color: #26262b !important;
+            border-color: #3f3f46 !important;
+            color: #f4f4f5 !important;
+        }
+
+        html.dark #theme-toggle-btn:hover {
+            border-color: #71717a !important;
+            background-color: #323238 !important;
+        }
+
+        html.dark #site-header.is-scrolled {
+            background-color: rgba(20, 20, 22, 0.96) !important;
+            border-bottom: 1px solid var(--border-divider) !important;
+        }
+
+        html.dark #site-header.is-scrolled .masthead-borders {
+            border-bottom: 1px solid #52525b !important;
+        }
+
+        /* Dark Mode Overrides para os Novos Recursos */
+        html.dark #share-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: var(--border-divider) !important;
+            border-left-color: #25D366 !important;
+        }
+
+        html.dark #btn-copy-link {
+            background-color: #27272c !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #btn-copy-link:hover {
+            border-color: #71717a !important;
+            background-color: #323238 !important;
+        }
+
+        html.dark #sticky-audio-bar {
+            background-color: #1a1a1e !important;
+            border-top-color: var(--editorial-red) !important;
+            box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        html.dark #sticky-play-btn {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #sticky-play-btn:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark #sticky-progress-container {
+            background-color: #2e2e34 !important;
+        }
+
+        html.dark #termometro-box {
+            background-color: var(--box-cream-dark) !important;
+            border-color: #52525b !important;
+        }
+
+        html.dark .termometro-opcao-btn {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark .termometro-opcao-btn:hover {
+            border-color: #71717a !important;
+            background-color: #2c2c33 !important;
+        }
+
+        html.dark .termometro-opcao-voted {
+            background-color: #222227 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #desculpa-box {
+            background-color: #1e1e22 !important;
+            border-color: #3f3f46 !important;
+        }
+
+        html.dark #btn-nova-desculpa {
+            background-color: #f4f4f5 !important;
+            color: #141416 !important;
+        }
+
+        html.dark #btn-nova-desculpa:hover {
+            background-color: var(--editorial-red) !important;
+            color: #ffffff !important;
+        }
+
+        html.dark .filtro-btn:not(.active) {
+            background-color: #26262b !important;
+            border: 1px solid #3f3f46 !important;
+            color: #d4d4d8 !important;
+        }
+
+        html.dark .filtro-btn:not(.active):hover {
+            background-color: #323238 !important;
+            color: #ffffff !important;
+        }
+
+        /* Dark Mode Overrides para Newsletter & Canais de Transmissão */
+        html.dark #newsletter-box {
+            background-color: var(--container-white) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark #newsletter-email-home,
+        html.dark #newsletter-email-art,
+        html.dark #newsletter-email-sobre {
+            background-color: #26262b !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #newsletter-email-home::placeholder,
+        html.dark #newsletter-email-art::placeholder,
+        html.dark #newsletter-email-sobre::placeholder {
+            color: #71717a !important;
+        }
+
+        /* Dark Mode Overrides para Author Bio (Pavi) */
+        html.dark .author-bio-card-sobre {
+            background-color: var(--container-white) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark .author-bio-card-sobre h3 {
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark .author-bio-card-sobre p {
+            color: var(--text-secondary) !important;
+        }
+    </style>
+
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
+    <div>
+        
+    <!-- Top Metadata Bar NYT Style -->
+    <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto transition-colors">
+        <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span class="font-bold text-[#121212] shrink-0">BRASÍLIA / BRASIL</span>
+            <span class="text-[#D1CEC7]">&bull;</span>
+            <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
+            <span class="text-stone-600">Quinta-feira, 15 de Outubro de 2026</span>
+        </div>
+        <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
+            <span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>
+            <span class="text-[#D1CEC7]">&bull;</span>
+            <!-- Botão Alternador Modo Escuro (Dark Mode) -->
+            <button id="theme-toggle-btn" type="button" aria-label="Alternar modo escuro" title="Alternar entre modo claro e escuro" class="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded text-[11px] sm:text-xs font-mono font-medium transition-all duration-200 border border-[#D1CEC7] hover:border-[#121212] bg-white text-stone-700 hover:text-[#121212] cursor-pointer shadow-2xs">
+                <!-- Moon Icon (visível no modo claro) -->
+                <svg id="theme-moon-icon" class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.3 2a10 10 0 0 0-.19 14 10 10 0 0 0 11.89 4 1 1 0 0 0 .62-1.28 1 1 0 0 0-.91-.72 8 8 0 0 1-7.1-7.1 1 1 0 0 0-.72-.91A1 1 0 0 0 15 10a8.07 8.07 0 0 1-2.7-8 1 1 0 0 0-1.28-.62A1 1 0 0 0 10.3 2z"/>
+                </svg>
+                <!-- Sun Icon (visível no modo escuro) -->
+                <svg id="theme-sun-icon" class="w-3.5 h-3.5 fill-current text-amber-400 hidden" viewBox="0 0 24 24">
+                    <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.29-1.29zm-13.78 1.41l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29a.996.996 0 0 0 0 1.41c.39.38 1.03.38 1.41 0zm12.37-12.37l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0z"/>
+                </svg>
+                <span id="theme-toggle-text" class="hidden sm:inline">Modo Escuro</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Newspaper Masthead with Classic NYT Double Line -->
+    <div class="sticky top-0 z-40 bg-[#F4F1EA] border-b border-transparent transition-all duration-300" id="site-header">
+        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
+            <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
+                <a href="index.html" class="inline-block group">
+                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300">
+                        ÍMPROBO
+                    </h1>
+                </a>
+                <div class="masthead-subline border-t border-b border-[#121212]/80 py-1 sm:py-1.5 mt-2 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Ano I &bull; N&ordm; 01</span>
+                    <p class="mx-auto font-medium text-[#121212] tracking-wide text-center px-2">A crônica semanal da falta de decoro e do absurdo nacional.</p>
+                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Preço: Sua Paciência</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+
+        <!-- Main Content Sheet -->
+        <main class="w-full max-w-4xl mx-auto px-[1.2rem] sm:px-6 my-6 sm:my-10">
+            <div class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-10 md:p-14">
+                <!-- Header -->
+                <div class="mb-8 border-b border-[#D1CEC7] pb-6 reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="bg-[#8B0000] text-white font-mono text-xs font-bold uppercase tracking-wider px-2.5 py-1">AVISO LEGAL &bull; LINHA EDITORIAL</span>
+                        <span class="text-stone-500 font-mono text-xs">Brasília / Brasil</span>
+                    </div>
+                    <h1 class="article-title font-black text-[#121212] font-serif mb-4">
+                        Manifesto Ímprobo: O Direito Constitucional ao Riso e à Paródia Política
+                    </h1>
+                    <p class="article-subtitle text-stone-700 font-serif italic text-lg leading-relaxed">
+                        Por que rir do poder não é apenas um alívio cômico para o cidadão, mas um dever cívico, um remédio contra o autoritarismo e uma garantia democrática inegociável.
+                    </p>
+                </div>
+
+                <!-- Section 1: Fundamentação Constitucional -->
+                <section class="mb-10 reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">01 &bull; NATUREZA JURÍDICA</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Fundamentação na Constituição da República de 1988
+                    </h2>
+                    <p class="font-serif text-base sm:text-lg text-[#121212]/90 leading-relaxed mb-4">
+                        O portal <strong>Ímprobo</strong> exerce sua atividade estritamente respaldado pelos pilares basilares do Estado Democrático de Direito, consagrados na Carta Magna Brasileira de 1988:
+                    </p>
+
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 5º, Inciso IV &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;É livre a manifestação do pensamento, sendo vedado o anonimato.&rdquo;
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 5º, Inciso IX &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;É livre a expressão da atividade intelectual, artística, científica e de comunicação, independentemente de censura ou licença.&rdquo;
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 220, caput &amp; &sect; 2º &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;A manifestação do pensamento, a criação, a expressão e a informação, sob qualquer forma, processo ou veículo não sofrerão qualquer restrição [...]. É vedada toda e qualquer censura de natureza política, ideológica e artística.&rdquo;
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif font-bold text-lg text-[#121212] mt-6 mb-3">
+                        Jurisprudência Pacífica do Supremo Tribunal Federal (STF)
+                    </h3>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-3">
+                        A jurisprudência da Suprema Corte brasileira é uníssona em garantir que o humor e a sátira política não constituem ilícito, mas sim instrumento vital de escrutínio popular dos governantes:
+                    </p>
+                    <ul class="space-y-3 font-sans text-sm text-stone-700 list-disc pl-5">
+                        <li>
+                            <strong class="text-[#121212]">ADPF 130/DF (Rel. Min. Ayres Britto):</strong> Decisão histórica que revogou em definitivo a Lei de Imprensa da ditadura e consagrou que <em>&ldquo;o humor, a sátira e a caricatura são formas lícitas e salutares de manifestação do pensamento, indispensáveis ao arejamento da vida pública e à desmistificação das liturgias do poder&rdquo;</em>.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">ADI 4.451/DF (Rel. Min. Alexandre de Moraes):</strong> Julgamento que declarou inconstitucionais normas que tentavam proibir paródias, charges e piadas sobre políticos, estabelecendo que <em>&ldquo;a liberdade de expressão não resguarda apenas o discurso comedido, elogioso ou dócil, mas tutela igualmente a crítica ácida, mordaz e o escárnio aos agentes públicos no exercício de suas funções&rdquo;</em>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section 2: Declaração de Paródia e Ficção -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">02 &bull; ESCOPO EDITORIAL</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Declaração Explícita de Paródia e Ficção Literária
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        O <strong>Ímprobo</strong> é um veículo de <strong>crônica satírica, humor político e comédia de costumes</strong>. Todas as nossas matérias operam sob a clássica fórmula dos grandes pasquins brasileiros (como <em>O Pasquim</em>, <em>Sensacionalista</em> e o histórico baronato da imprensa livre):
+                    </p>
+                    <div class="bg-[#EBE7DE] border-l-4 border-[#121212] p-5 rounded-r-sm my-5 text-sm font-sans leading-relaxed text-[#121212]">
+                        <strong>A ANCORAGEM FACTUAL É REAL:</strong> Os temas abordados, projetos de lei, apagões, decisões de cortes, emendas e escândalos políticos noticiados são acontecimentos reais apurados na imprensa pública (G1, Folha de S.Paulo, BBC, Poder360, Agência Brasil). Toda crônica possui um rodapé transparente rotulado <em>&ldquo;O Contexto Real &bull; Rodapé Factual&rdquo;</em> com os fatos crus da apuração jornalística.
+                    </div>
+                    <div class="bg-[#FAF9F5] border-l-4 border-[#8B0000] p-5 rounded-r-sm my-5 text-sm font-sans leading-relaxed text-[#121212]">
+                        <strong>A NARRATIVA É PARÓDIA:</strong> Os diálogos ficcionais, falas atribuídas a personagens, manuais cômicos do otário, deliberações de bastidor e reações hiperbólicas são puras criações de sátira. Nenhuma informação de nossas crônicas deve ser lida como relato jornalístico literal, mas sim como exercício de paródia e ficção humorística.
+                    </div>
+                </section>
+
+                <!-- Section 3: Caricaturas Editoriais e IA -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">03 &bull; ILUSTRAÇÃO &amp; CHARGES</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Caricaturas Digitais por IA no Estilo Clássico
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        Para preservar a integridade jornalística e homenagear a era de ouro dos quadrinhos e charges editoriais brasileiras, o Ímprobo adota diretrizes estritas de imagem:
+                    </p>
+                    <ul class="space-y-3 font-sans text-sm text-stone-700 list-disc pl-5">
+                        <li>
+                            <strong class="text-[#121212]">Zero fotos de agências jornalísticas:</strong> Não utilizamos retratos reais ou fotografias captadas de agências de notícias para fins difamatórios.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">Caricaturas autorais geradas por IA:</strong> Nossas charges são geradas por modelos de Inteligência Artificial no estilo de charge editorial dos anos 70/80 (nanquim expressivo, aquarela e guache vibrante), satirizando comportamentos e situações públicas em tom de pastelão cômico.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">Zero marcas ou logotipos de terceiros:</strong> Não incluímos marcas registradas, títulos ou logotipos comerciais de revistas externas. Nossas ilustrações trazem o crédito formal: <em>&ldquo;Arte: Caricatura Editorial IA / Ilustração Satírica&rdquo;</em>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section 4: Acessibilidade e Voz Neural -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">04 &bull; ACESSIBILIDADE</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Jornalismo Acessível &bull; Narração Neural em Áudio
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        Todas as crônicas do portal contam com versão narrada em áudio neural em português brasileiro (Edge-TTS), garantindo acesso irrestrito para pessoas com deficiência visual, pessoas em trânsito e leitores que preferem acompanhar o noticiário cínico em formato de podcast.
+                    </p>
+                </section>
+
+                <!-- Section 5: Expediente e Contato -->
+                <section class="mb-8 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">05 &bull; EXPEDIENTE &amp; REDAÇÃO</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Quem Faz o Ímprobo
+                    </h2>
+
+                    <!-- Author Bio Card em Sobre -->
+                    <div class="author-bio-card-sobre mb-8 p-5 sm:p-6 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                        <div class="relative shrink-0">
+                            <img src="imagens/autor.png" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-center border-2 border-[#8B0000] shadow-md bg-[#EBE7DE]" loading="lazy">
+                            <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5">
+                                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                                    <h3 class="font-serif font-black text-xl text-[#121212] tracking-tight">Pavi</h3>
+                                    <span class="text-stone-400 hidden sm:inline">&bull;</span>
+                                    <span class="font-mono text-xs text-[#8B0000] font-bold uppercase tracking-wider">Diretor Editorial &amp; Fundador</span>
+                                </div>
+                                <span class="text-[11px] font-mono text-stone-500 uppercase">Brasília / Brasil</span>
+                            </div>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;Entusiasta de jornalismo independente, tecnologia e crônica política. Acredita que a sátira não é apenas diversão, mas o único escudo democrático contra a arrogância de quem manda. Escreve e programa para lembrar aos governantes que o rei está sempre nu.&rdquo;
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif font-bold text-lg text-[#121212] mb-3">
+                        Contato com a Redação Ácida
+                    </h3>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-6">
+                        Dúvidas, pedidos de retificação factual, sugestões de descalabros a investigar ou denúncias de políticos agindo com excesso de decoro podem ser encaminhados aos nossos canais:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#8B0000] block mb-1">Instagram</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#8B0000]">@improbo</span>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Vb3improbo" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#25D366] block mb-1">WhatsApp</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#25D366]">Canal Oficial</span>
+                        </a>
+                        <a href="https://t.me/portalimprobo" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#229ED9] block mb-1">Telegram</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#229ED9]">Canal Oficial</span>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter no Sobre -->
+                    
+    <!-- Newsletter & Canais de Transmissão (Gazeta Semanal do Ímprobo) -->
+    <section id="newsletter-box" class="my-8 sm:my-12 p-6 sm:p-8 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm reveal-on-scroll">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-7">
+                <div class="flex items-center space-x-2 mb-1.5">
+                    <span class="bg-[#8B0000] text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest px-2 py-0.5">GAZETA SEMANAL</span>
+                    <span class="font-mono text-xs text-stone-600 uppercase font-semibold">Boletim do Descalabro</span>
+                </div>
+                <h3 class="font-serif font-black text-xl sm:text-2xl text-[#121212] tracking-tight">
+                    Receba as crônicas antes do arquivamento
+                </h3>
+                <p class="font-serif italic text-sm text-stone-700 mt-1 max-w-xl">
+                    Toda semana, um compilado dos maiores absurdos de Brasília mastigados com a ironia que o Diário Oficial esconde. Sem spam, só cinismo de primeira qualidade.
+                </p>
+                <!-- Formulário de Inscrição -->
+                <form id="newsletter-form-sobre" class="mt-4 flex flex-col sm:flex-row gap-2 max-w-lg" onsubmit="return false;">
+                    <input id="newsletter-email-sobre" type="email" required placeholder="Seu melhor e-mail para passar raiva..." class="flex-1 px-3.5 py-2.5 bg-white border border-[#D1CEC7] rounded-sm text-sm text-[#121212] font-sans focus:outline-none focus:border-[#8B0000] transition-colors">
+                    <button id="newsletter-btn-sobre" type="button" class="px-5 py-2.5 bg-[#121212] hover:bg-[#8B0000] text-white font-mono text-xs uppercase font-bold tracking-wider rounded-sm transition-all duration-200 cursor-pointer shrink-0">
+                        Assinar De Graça
+                    </button>
+                </form>
+                <div id="newsletter-msg-sobre" class="text-xs font-mono mt-2 hidden"></div>
+            </div>
+
+            <!-- Canais Diretos: WhatsApp & Telegram -->
+            <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-[#D1CEC7] pt-5 lg:pt-0 lg:pl-8 flex flex-col justify-center">
+                <span class="font-mono text-xs uppercase tracking-wider text-stone-600 font-bold mb-2.5 block">
+                    Ou siga nossos canais oficiais:
+                </span>
+                <div class="flex flex-col sm:flex-row lg:flex-col gap-2.5">
+                    <a href="https://whatsapp.com/channel/0029Vb3improbo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between px-3.5 py-2.5 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/40 text-[#128C7E] rounded-sm text-xs font-mono font-bold transition-all duration-200 group">
+                        <div class="flex items-center space-x-2.5">
+                            <svg class="w-4 h-4 fill-current text-[#25D366] shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                            </svg>
+                            <span>Canal no WhatsApp</span>
+                        </div>
+                        <span class="text-stone-400 group-hover:text-[#128C7E] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                    </a>
+                    <a href="https://t.me/portalimprobo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between px-3.5 py-2.5 bg-[#229ED9]/10 hover:bg-[#229ED9]/20 border border-[#229ED9]/40 text-[#1d82b3] rounded-sm text-xs font-mono font-bold transition-all duration-200 group">
+                        <div class="flex items-center space-x-2.5">
+                            <svg class="w-4 h-4 fill-current text-[#229ED9] shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
+                            </svg>
+                            <span>Canal no Telegram</span>
+                        </div>
+                        <span class="text-stone-400 group-hover:text-[#1d82b3] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    (function() {
+        const btn = document.getElementById('newsletter-btn-sobre');
+        const input = document.getElementById('newsletter-email-sobre');
+        const msg = document.getElementById('newsletter-msg-sobre');
+        const storageKey = 'improbo_newsletter_subscribed';
+
+        if (localStorage.getItem(storageKey)) {
+            if (msg) {
+                msg.classList.remove('hidden', 'text-red-600');
+                msg.classList.add('text-emerald-700', 'font-bold');
+                msg.textContent = '✓ Você já é assinante oficial do Cartório de Ilusões!';
+            }
+            if (btn) {
+                btn.textContent = 'Inscrito';
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+            }
+        }
+
+        if (btn && input) {
+            btn.addEventListener('click', () => {
+                const email = (input.value || '').trim();
+                if (!email || !email.includes('@') || !email.includes('.')) {
+                    msg.classList.remove('hidden', 'text-emerald-700');
+                    msg.classList.add('text-red-600', 'font-bold');
+                    msg.textContent = 'Por favor, informe um endereço de e-mail válido.';
+                    input.focus();
+                    return;
+                }
+
+                try {
+                    localStorage.setItem(storageKey, email);
+                } catch(e) {}
+
+                msg.classList.remove('hidden', 'text-red-600');
+                msg.classList.add('text-emerald-700', 'font-bold');
+                msg.textContent = '✓ Inscrição confirmada no Cartório de Ilusões! Em breve você receberá nossos relatórios de descalabro.';
+                btn.textContent = 'Inscrito';
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+                input.disabled = true;
+            });
+        }
+    })();
+    </script>
+    
+
+                    <div class="mt-8 pt-6 border-t border-[#D1CEC7] flex justify-between items-center">
+                        <a href="index.html" class="neo-link font-mono text-xs uppercase tracking-wider text-[#8B0000] font-bold inline-flex items-center space-x-1">
+                            <span>&larr;</span>
+                            <span>Voltar à Capa Principal</span>
+                        </a>
+                        <span class="font-mono text-xs text-stone-500">Brasília &bull; 2026</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    
+    <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6">
+            <!-- Author Bio Card: Pavi -->
+            <div class="mb-10 sm:mb-12 p-5 sm:p-7 bg-[#1c1c20] border border-stone-800 rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6 reveal-on-scroll">
+                <div class="relative shrink-0">
+                    <img src="imagens/autor.png" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-center border-2 border-[#8B0000] shadow-md bg-stone-900" loading="lazy">
+                    <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
+                </div>
+                <div class="flex-1 text-center sm:text-left">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                            <h4 class="font-serif font-black text-xl text-stone-100 tracking-tight">Pavi</h4>
+                            <span class="text-stone-600 hidden sm:inline">&bull;</span>
+                            <span class="font-mono text-xs text-[#8B0000] font-bold uppercase tracking-wider">Diretor Editorial &amp; Fundador</span>
+                        </div>
+                        <span class="text-[11px] font-mono text-stone-500 uppercase">Brasília / Brasil</span>
+                    </div>
+                    <p class="font-serif italic text-stone-300 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        &ldquo;Entusiasta de jornalismo independente, tecnologia e crônica política. Acredita que a sátira não é apenas diversão, mas o único escudo democrático contra a arrogância de quem manda. Escreve e programa para lembrar aos governantes que o rei está sempre nu.&rdquo;
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colunas do Rodapé -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
+                <div>
+                    <a href="index.html" class="inline-block group">
+                        <h3 class="font-serif text-2xl font-black text-stone-100 group-hover:text-amber-100 tracking-tight transition-colors">ÍMPROBO</h3>
+                    </a>
+                    <p class="mt-3 text-stone-400 text-sm leading-relaxed font-sans">
+                        Crônica política ácida, deboche com base factual e comédia de costumes do teatro estatal. Se há pompa e incoerência, há matéria-prima.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial &amp; Legal</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed font-sans mb-3">
+                        Nenhum político foi poupado durante a redação destas matérias. O alvo é o poder, o carimbo e a liturgia vazia.
+                    </p>
+                    <a href="sobre.html" class="inline-flex items-center space-x-1.5 text-xs font-mono font-bold uppercase tracking-wider text-amber-200 hover:text-white transition-colors">
+                        <span>Aviso Legal &amp; Manifesto</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes &amp; Canais</h4>
+                    <div class="flex flex-col space-y-2">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-pink-500 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span class="font-medium">Instagram (@improbo)</span>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Vb3improbo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                            </svg>
+                            <span class="font-medium">Canal WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/portalimprobo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-sky-400 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
+                            </svg>
+                            <span class="font-medium">Canal Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <span>&copy; 2026 ÍMPROBO. Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica.</span>
+            <div class="flex items-center space-x-3">
+                <a href="sobre.html" class="hover:text-stone-300 underline">Aviso Legal (Art. 5º CF/88)</a>
+                <span>&bull;</span>
+                <a href="sitemap.xml" class="hover:text-stone-300 underline">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+        // Micro-interações de rolagem suave (Intersection Observer)
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Cabeçalho Retrátil (Sticky Shrink Header)
+            const header = document.getElementById('site-header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    const currentScroll = window.scrollY;
+                    if (currentScroll > 45) {
+                        header.classList.add('is-scrolled');
+                    } else {
+                        header.classList.remove('is-scrolled');
+                    }
+                }, { passive: true });
+            }
+
+            // Alternador de Modo Escuro / Noturno (Dark Theme)
+            const toggleBtn = document.getElementById('theme-toggle-btn');
+            if (toggleBtn) {
+                const moonIcon = document.getElementById('theme-moon-icon');
+                const sunIcon = document.getElementById('theme-sun-icon');
+                const toggleText = document.getElementById('theme-toggle-text');
+
+                function syncUI(isDark) {
+                    if (isDark) {
+                        if (moonIcon) moonIcon.classList.add('hidden');
+                        if (sunIcon) sunIcon.classList.remove('hidden');
+                        if (toggleText) toggleText.textContent = 'Modo Claro';
+                        toggleBtn.setAttribute('title', 'Alternar para o modo claro');
+                        toggleBtn.setAttribute('aria-label', 'Ativar modo claro');
+                    } else {
+                        if (moonIcon) moonIcon.classList.remove('hidden');
+                        if (sunIcon) sunIcon.classList.add('hidden');
+                        if (toggleText) toggleText.textContent = 'Modo Escuro';
+                        toggleBtn.setAttribute('title', 'Alternar para o modo escuro');
+                        toggleBtn.setAttribute('aria-label', 'Ativar modo escuro');
+                    }
+                }
+
+                syncUI(document.documentElement.classList.contains('dark'));
+
+                toggleBtn.addEventListener('click', () => {
+                    const isCurrentlyDark = document.documentElement.classList.contains('dark');
+                    const nextDark = !isCurrentlyDark;
+                    
+                    if (nextDark) {
+                        document.documentElement.classList.add('dark');
+                        try { localStorage.setItem('improbo_theme', 'dark'); } catch(e) {}
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                        try { localStorage.setItem('improbo_theme', 'light'); } catch(e) {}
+                    }
+                    syncUI(nextDark);
+                });
+            }
+
+            // Gerador de Desculpas Oficiais de Brasília
+            const btnDesculpa = document.getElementById('btn-nova-desculpa');
+            if (btnDesculpa) {
+                const desculpas = [
+                    "A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.",
+                    "Não houve dolo, apenas uma interpretação excessivamente literal da Constituição Federal.",
+                    "O dinheiro encontrado na cueca/mala era estritamente para pagamento emergencial de panfletagem.",
+                    "Fui hackeado às 3h da manhã por um hacker patriota com residência fiscal na Letônia.",
+                    "Trata-se de uma fake news plantada pelo consórcio midiático para abalar os mercados financeiros.",
+                    "Estou sendo perseguido unicamente por defender o direito inalienável do povo de pagar mais taxas.",
+                    "Houve um equívoco de comunicação da assessoria júnior que já foi devidamente transferida de gabinete.",
+                    "O imóvel/praia/sítio não é meu, apenas guardo minhas pedaladas e caixas de isopor lá por cortesia.",
+                    "Votei a favor do perdão das dívidas partidárias para garantir a austeridade fiscal e a democracia.",
+                    "A catraca na praia é apenas para aferir a qualidade da areia e a brisa marítima sustentável.",
+                    "O beneficiário do Bolsa Família estava apenas realizando um investimento em renda variável no Tigrinho.",
+                    "A concessionária esclarece que o apagão é um convite poético ao consumo consciente à luz de velas.",
+                    "O ministro foi ao camarim do STF apenas para pedir uma receita de pão de queijo constitucional.",
+                    "Minha folga no domingo não anula meu compromisso espiritual de trabalhar pelos trabalhadores.",
+                    "Tudo foi executado estritamente dentro das quatro linhas da conveniência orçamentária."
+                ];
+                let lastIdx = 0;
+                const textoEl = document.getElementById('desculpa-texto');
+                const spinIcon = document.getElementById('desculpa-spin-icon');
+                const protoEl = document.getElementById('desculpa-protocolo');
+                let degrees = 0;
+
+                btnDesculpa.addEventListener('click', () => {
+                    degrees += 360;
+                    if (spinIcon) spinIcon.style.transform = `rotate(${degrees}deg)`;
+                    
+                    let nextIdx;
+                    do {
+                        nextIdx = Math.floor(Math.random() * desculpas.length);
+                    } while (nextIdx === lastIdx && desculpas.length > 1);
+                    lastIdx = nextIdx;
+
+                    if (textoEl) {
+                        textoEl.style.opacity = '0';
+                        setTimeout(() => {
+                            textoEl.innerHTML = `&ldquo;${desculpas[nextIdx]}&rdquo;`;
+                            textoEl.style.opacity = '1';
+                        }, 180);
+                    }
+
+                    if (protoEl) {
+                        protoEl.textContent = `Protocolo nº ${Math.floor(1000 + Math.random() * 9000)}/2026 arquivado com sucesso.`;
+                    }
+                });
+            }
+
+            // Filtro Rápido por Alvo da Sátira na Capa
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            if (filterBtns.length > 0) {
+                const heroSection = document.getElementById('hero-article-section');
+                const gridCards = document.querySelectorAll('.article-card-item');
+                const contador = document.getElementById('filtro-contador');
+                const semResultados = document.getElementById('filtro-sem-resultados');
+
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const filter = btn.getAttribute('data-filter');
+
+                        // Atualizar botões
+                        filterBtns.forEach(b => {
+                            b.classList.remove('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                            b.classList.add('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+                        });
+                        btn.classList.add('active', 'bg-[#8B0000]', 'text-white', 'shadow-xs', 'font-bold');
+                        btn.classList.remove('bg-[#EBE7DE]', 'text-stone-800', 'font-medium');
+
+                        let visibleCount = 0;
+
+                        // Filtrar Manchete Hero
+                        if (heroSection) {
+                            const heroAlvo = heroSection.getAttribute('data-alvo');
+                            if (filter === 'all' || heroAlvo === filter) {
+                                heroSection.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                heroSection.classList.add('hidden');
+                            }
+                        }
+
+                        // Filtrar Cards do Grid
+                        gridCards.forEach(card => {
+                            const cardAlvo = card.getAttribute('data-alvo');
+                            if (filter === 'all' || cardAlvo === filter) {
+                                card.classList.remove('hidden');
+                                visibleCount++;
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        });
+
+                        // Atualizar contador e mensagem
+                        if (contador) {
+                            if (filter === 'all') {
+                                contador.textContent = `Exibindo todas as ${visibleCount} crônicas`;
+                            } else {
+                                const btnText = btn.textContent.replace(/\(\d+\)/, '').trim();
+                                contador.textContent = `Exibindo ${visibleCount} crônica(s) sobre: ${btnText}`;
+                            }
+                        }
+
+                        if (semResultados) {
+                            if (visibleCount === 0) {
+                                semResultados.classList.remove('hidden');
+                            } else {
+                                semResultados.classList.add('hidden');
+                            }
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

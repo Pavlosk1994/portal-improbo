@@ -722,7 +722,7 @@ def render_footer(is_article=False):
             <!-- Author Bio Card: Pavi -->
             <div class="mb-10 sm:mb-12 p-5 sm:p-7 bg-[#1c1c20] border border-stone-800 rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6 reveal-on-scroll">
                 <div class="relative shrink-0">
-                    <img src="{autor_img_src}" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border-2 border-[#8B0000] shadow-md bg-stone-900" loading="lazy">
+                    <img src="{autor_img_src}" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-center border-2 border-[#8B0000] shadow-md bg-stone-900" loading="lazy">
                     <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
                 </div>
                 <div class="flex-1 text-center sm:text-left">
@@ -2190,7 +2190,7 @@ def generate_sobre_page():
                     <!-- Author Bio Card em Sobre -->
                     <div class="author-bio-card-sobre mb-8 p-5 sm:p-6 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5">
                         <div class="relative shrink-0">
-                            <img src="imagens/autor.png" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border-2 border-[#8B0000] shadow-md bg-[#EBE7DE]" loading="lazy">
+                            <img src="imagens/autor.png" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-center border-2 border-[#8B0000] shadow-md bg-[#EBE7DE]" loading="lazy">
                             <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
                         </div>
                         <div class="flex-1 text-center sm:text-left">
