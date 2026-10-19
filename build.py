@@ -9,18 +9,26 @@ e caixas factuais em #EBE7DE com borda grossa.
 import os
 import json
 import glob
+import html
 from datetime import datetime
 
 PORTAL_NAME = "ÍMPROBO"
 PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
+PORTAL_URL = os.environ.get("PORTAL_URL", "https://improbo.vercel.app").rstrip("/")
 INSTAGRAM_URL = "https://instagram.com"
 INSTAGRAM_HANDLE = "@improbo"
+WHATSAPP_CHANNEL_URL = os.environ.get("WHATSAPP_CHANNEL_URL", "https://whatsapp.com/channel/0029Vb3improbo").rstrip("/")
+TELEGRAM_CHANNEL_URL = os.environ.get("TELEGRAM_CHANNEL_URL", "https://t.me/portalimprobo").rstrip("/")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
 ARTIGOS_DIR = os.path.join(BASE_DIR, "artigos")
 AUDIO_DIR = os.path.join(BASE_DIR, "audio")
+IMAGENS_DIR = os.path.join(BASE_DIR, "imagens")
 INDEX_PATH = os.path.join(BASE_DIR, "index.html")
+SOBRE_PATH = os.path.join(BASE_DIR, "sobre.html")
+SITEMAP_PATH = os.path.join(BASE_DIR, "sitemap.xml")
+ROBOTS_PATH = os.path.join(BASE_DIR, "robots.txt")
 VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
 
 COMMON_HEAD_STYLES = r"""
@@ -409,6 +417,26 @@ COMMON_HEAD_STYLES = r"""
             background-color: #323238 !important;
             color: #ffffff !important;
         }
+
+        /* Dark Mode Overrides para Newsletter & Canais de Transmissão */
+        html.dark #newsletter-box {
+            background-color: var(--container-white) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark #newsletter-email-home,
+        html.dark #newsletter-email-art,
+        html.dark #newsletter-email-sobre {
+            background-color: #26262b !important;
+            border-color: #3f3f46 !important;
+            color: #f3f3f5 !important;
+        }
+
+        html.dark #newsletter-email-home::placeholder,
+        html.dark #newsletter-email-art::placeholder,
+        html.dark #newsletter-email-sobre::placeholder {
+            color: #71717a !important;
+        }
     </style>
 """
 
@@ -671,6 +699,8 @@ def render_header(is_article=False):
 
 def render_footer(is_article=False):
     home_link = "../index.html" if is_article else "index.html"
+    sobre_link = "../sobre.html" if is_article else "sobre.html"
+    sitemap_link = "../sitemap.xml" if is_article else "sitemap.xml"
     return f"""
     <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
         <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
@@ -683,24 +713,46 @@ def render_footer(is_article=False):
                 </p>
             </div>
             <div>
-                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial</h4>
-                <p class="text-stone-400 text-sm leading-relaxed font-sans">
+                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial &amp; Legal</h4>
+                <p class="text-stone-400 text-sm leading-relaxed font-sans mb-3">
                     Nenhum político foi poupado durante a redação destas matérias. O alvo é o poder, o carimbo e a liturgia vazia.
                 </p>
-            </div>
-            <div>
-                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes</h4>
-                <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-4 py-2.5 rounded text-sm transition-all duration-300">
-                    <svg class="w-5 h-5 fill-current text-pink-500" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span class="font-medium">Siga no Instagram</span>
-                    <span class="text-xs text-stone-400 font-mono">({INSTAGRAM_HANDLE})</span>
+                <a href="{sobre_link}" class="inline-flex items-center space-x-1.5 text-xs font-mono font-bold uppercase tracking-wider text-amber-200 hover:text-white transition-colors">
+                    <span>Aviso Legal &amp; Manifesto</span>
+                    <span>&rarr;</span>
                 </a>
             </div>
+            <div>
+                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes &amp; Canais</h4>
+                <div class="flex flex-col space-y-2">
+                    <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                        <svg class="w-4 h-4 fill-current text-pink-500 shrink-0" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <span class="font-medium">Instagram ({INSTAGRAM_HANDLE})</span>
+                    </a>
+                    <a href="{WHATSAPP_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                        <svg class="w-4 h-4 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                        </svg>
+                        <span class="font-medium">Canal WhatsApp</span>
+                    </a>
+                    <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                        <svg class="w-4 h-4 fill-current text-sky-400 shrink-0" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
+                        </svg>
+                        <span class="font-medium">Canal Telegram</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500">
-            &copy; 2026 {PORTAL_NAME}. Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica.
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <span>&copy; 2026 {PORTAL_NAME}. Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica.</span>
+            <div class="flex items-center space-x-3">
+                <a href="{sobre_link}" class="hover:text-stone-300 underline">Aviso Legal (Art. 5º CF/88)</a>
+                <span>&bull;</span>
+                <a href="{sitemap_link}" class="hover:text-stone-300 underline">Sitemap</a>
+            </div>
         </div>
     </footer>
     """
@@ -1277,6 +1329,114 @@ def render_termometro_widget(slug):
     </script>
     """
 
+def render_newsletter_box(is_article=False, is_sobre=False):
+    if is_sobre:
+        prefix = "sobre"
+    elif is_article:
+        prefix = "art"
+    else:
+        prefix = "home"
+    return f"""
+    <!-- Newsletter & Canais de Transmissão (Gazeta Semanal do Ímprobo) -->
+    <section id="newsletter-box" class="my-8 sm:my-12 p-6 sm:p-8 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm reveal-on-scroll">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-7">
+                <div class="flex items-center space-x-2 mb-1.5">
+                    <span class="bg-[#8B0000] text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest px-2 py-0.5">GAZETA SEMANAL</span>
+                    <span class="font-mono text-xs text-stone-600 uppercase font-semibold">Boletim do Descalabro</span>
+                </div>
+                <h3 class="font-serif font-black text-xl sm:text-2xl text-[#121212] tracking-tight">
+                    Receba as crônicas antes do arquivamento
+                </h3>
+                <p class="font-serif italic text-sm text-stone-700 mt-1 max-w-xl">
+                    Toda semana, um compilado dos maiores absurdos de Brasília mastigados com a ironia que o Diário Oficial esconde. Sem spam, só cinismo de primeira qualidade.
+                </p>
+                <!-- Formulário de Inscrição -->
+                <form id="newsletter-form-{prefix}" class="mt-4 flex flex-col sm:flex-row gap-2 max-w-lg" onsubmit="return false;">
+                    <input id="newsletter-email-{prefix}" type="email" required placeholder="Seu melhor e-mail para passar raiva..." class="flex-1 px-3.5 py-2.5 bg-white border border-[#D1CEC7] rounded-sm text-sm text-[#121212] font-sans focus:outline-none focus:border-[#8B0000] transition-colors">
+                    <button id="newsletter-btn-{prefix}" type="button" class="px-5 py-2.5 bg-[#121212] hover:bg-[#8B0000] text-white font-mono text-xs uppercase font-bold tracking-wider rounded-sm transition-all duration-200 cursor-pointer shrink-0">
+                        Assinar De Graça
+                    </button>
+                </form>
+                <div id="newsletter-msg-{prefix}" class="text-xs font-mono mt-2 hidden"></div>
+            </div>
+
+            <!-- Canais Diretos: WhatsApp & Telegram -->
+            <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-[#D1CEC7] pt-5 lg:pt-0 lg:pl-8 flex flex-col justify-center">
+                <span class="font-mono text-xs uppercase tracking-wider text-stone-600 font-bold mb-2.5 block">
+                    Ou siga nossos canais oficiais:
+                </span>
+                <div class="flex flex-col sm:flex-row lg:flex-col gap-2.5">
+                    <a href="{WHATSAPP_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between px-3.5 py-2.5 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/40 text-[#128C7E] rounded-sm text-xs font-mono font-bold transition-all duration-200 group">
+                        <div class="flex items-center space-x-2.5">
+                            <svg class="w-4 h-4 fill-current text-[#25D366] shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                            </svg>
+                            <span>Canal no WhatsApp</span>
+                        </div>
+                        <span class="text-stone-400 group-hover:text-[#128C7E] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                    </a>
+                    <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between px-3.5 py-2.5 bg-[#229ED9]/10 hover:bg-[#229ED9]/20 border border-[#229ED9]/40 text-[#1d82b3] rounded-sm text-xs font-mono font-bold transition-all duration-200 group">
+                        <div class="flex items-center space-x-2.5">
+                            <svg class="w-4 h-4 fill-current text-[#229ED9] shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
+                            </svg>
+                            <span>Canal no Telegram</span>
+                        </div>
+                        <span class="text-stone-400 group-hover:text-[#1d82b3] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    (function() {{
+        const btn = document.getElementById('newsletter-btn-{prefix}');
+        const input = document.getElementById('newsletter-email-{prefix}');
+        const msg = document.getElementById('newsletter-msg-{prefix}');
+        const storageKey = 'improbo_newsletter_subscribed';
+
+        if (localStorage.getItem(storageKey)) {{
+            if (msg) {{
+                msg.classList.remove('hidden', 'text-red-600');
+                msg.classList.add('text-emerald-700', 'font-bold');
+                msg.textContent = '✓ Você já é assinante oficial do Cartório de Ilusões!';
+            }}
+            if (btn) {{
+                btn.textContent = 'Inscrito';
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+            }}
+        }}
+
+        if (btn && input) {{
+            btn.addEventListener('click', () => {{
+                const email = (input.value || '').trim();
+                if (!email || !email.includes('@') || !email.includes('.')) {{
+                    msg.classList.remove('hidden', 'text-emerald-700');
+                    msg.classList.add('text-red-600', 'font-bold');
+                    msg.textContent = 'Por favor, informe um endereço de e-mail válido.';
+                    input.focus();
+                    return;
+                }}
+
+                try {{
+                    localStorage.setItem(storageKey, email);
+                }} catch(e) {{}}
+
+                msg.classList.remove('hidden', 'text-red-600');
+                msg.classList.add('text-emerald-700', 'font-bold');
+                msg.textContent = '✓ Inscrição confirmada no Cartório de Ilusões! Em breve você receberá nossos relatórios de descalabro.';
+                btn.textContent = 'Inscrito';
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+                input.disabled = true;
+            }});
+        }}
+    }})();
+    </script>
+    """
+
 def generate_article_page(art):
     slug = art["slug"]
     title = art["titulo"]
@@ -1385,13 +1545,46 @@ def generate_article_page(art):
     </div>
     """
 
+    safe_title = html.escape(title, quote=True)
+    safe_subtitle = html.escape(subtitle, quote=True)
+    art_url = f"{PORTAL_URL}/artigos/{slug}.html"
+    
+    # Resolve absolute image for OG / Twitter Card
+    img_abs = f"{PORTAL_URL}/imagens/{slug}.jpg"
+    local_img_path = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
+    if not os.path.exists(local_img_path):
+        capa = art.get("imagem_capa")
+        if capa and (capa.startswith("http://") or capa.startswith("https://")):
+            img_abs = capa
+        else:
+            img_abs = f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
+
     page_html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | {PORTAL_NAME}</title>
-    <meta name="description" content="{subtitle}">
+    <title>{safe_title} | {PORTAL_NAME}</title>
+    <meta name="description" content="{safe_subtitle}">
+    <link rel="canonical" href="{art_url}">
+
+    <!-- Metatags Sociais Dinâmicas / Open Graph (WhatsApp, Telegram, Facebook) -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="{PORTAL_NAME}">
+    <meta property="og:title" content="{safe_title} | {PORTAL_NAME}">
+    <meta property="og:description" content="{safe_subtitle}">
+    <meta property="og:url" content="{art_url}">
+    <meta property="og:image" content="{img_abs}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+
+    <!-- Twitter / X Cards (Large Image Preview) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{safe_title} | {PORTAL_NAME}">
+    <meta name="twitter:description" content="{safe_subtitle}">
+    <meta name="twitter:image" content="{img_abs}">
+
     {COMMON_HEAD_STYLES}
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
@@ -1446,6 +1639,9 @@ def generate_article_page(art):
 
                 <!-- Termômetro da Cara de Pau (Enquete Interativa) -->
                 {termometro_widget_html}
+
+                <!-- Newsletter & Canais de Transmissão -->
+                {render_newsletter_box(is_article=True)}
 
                 <!-- Bottom Share / Nav -->
                 <div class="mt-10 sm:mt-12 pt-6 border-t border-[#D1CEC7] flex flex-col sm:flex-row gap-4 justify-between items-center reveal-on-scroll">
@@ -1723,13 +1919,39 @@ def generate_home_page(articles):
         </section>
         """
 
+    hero_slug = articles[0]["slug"] if articles else ""
+    hero_img_abs = f"{PORTAL_URL}/imagens/{hero_slug}.jpg" if hero_slug else f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
+    safe_portal_name = html.escape(PORTAL_NAME, quote=True)
+    safe_portal_slogan = html.escape(PORTAL_SLOGAN, quote=True)
+    home_desc = "O único jornal que fala a verdade rindo. Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre o circo de Brasília."
+    safe_home_desc = html.escape(home_desc, quote=True)
+
     page_html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{PORTAL_NAME} | {PORTAL_SLOGAN}</title>
-    <meta name="description" content="Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre a realidade brasileira.">
+    <title>{safe_portal_name} | {safe_portal_slogan}</title>
+    <meta name="description" content="{safe_home_desc}">
+    <link rel="canonical" href="{PORTAL_URL}/">
+
+    <!-- Metatags Sociais Dinâmicas / Open Graph (WhatsApp, Telegram, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="{safe_portal_name}">
+    <meta property="og:title" content="{safe_portal_name} | {safe_portal_slogan}">
+    <meta property="og:description" content="{safe_home_desc}">
+    <meta property="og:url" content="{PORTAL_URL}/">
+    <meta property="og:image" content="{hero_img_abs}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+
+    <!-- Twitter / X Cards (Large Image Preview) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{safe_portal_name} | {safe_portal_slogan}">
+    <meta name="twitter:description" content="{safe_home_desc}">
+    <meta name="twitter:image" content="{hero_img_abs}">
+
     {COMMON_HEAD_STYLES}
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
@@ -1741,6 +1963,7 @@ def generate_home_page(articles):
             {hero_html}
             {filtro_html}
             {grid_html}
+            {render_newsletter_box(is_article=False)}
         </main>
     </div>
 
@@ -1750,6 +1973,269 @@ def generate_home_page(articles):
 </html>
 """
     return page_html
+
+def generate_sobre_page():
+    sobre_url = f"{PORTAL_URL}/sobre.html"
+    sobre_img = f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
+    safe_portal_name = html.escape(PORTAL_NAME, quote=True)
+    safe_desc = "O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF."
+
+    return f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto &amp; Aviso Legal | {safe_portal_name}</title>
+    <meta name="description" content="{safe_desc}">
+    <link rel="canonical" href="{sobre_url}">
+
+    <!-- Metatags Sociais Dinâmicas / Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="{safe_portal_name}">
+    <meta property="og:title" content="Manifesto &amp; Aviso Legal | {safe_portal_name}">
+    <meta property="og:description" content="{safe_desc}">
+    <meta property="og:url" content="{sobre_url}">
+    <meta property="og:image" content="{sobre_img}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Manifesto &amp; Aviso Legal | {safe_portal_name}">
+    <meta name="twitter:description" content="{safe_desc}">
+    <meta name="twitter:image" content="{sobre_img}">
+
+    {COMMON_HEAD_STYLES}
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
+    <div>
+        {render_header(is_article=False)}
+
+        <!-- Main Content Sheet -->
+        <main class="w-full max-w-4xl mx-auto px-[1.2rem] sm:px-6 my-6 sm:my-10">
+            <div class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-10 md:p-14">
+                <!-- Header -->
+                <div class="mb-8 border-b border-[#D1CEC7] pb-6 reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="bg-[#8B0000] text-white font-mono text-xs font-bold uppercase tracking-wider px-2.5 py-1">AVISO LEGAL &bull; LINHA EDITORIAL</span>
+                        <span class="text-stone-500 font-mono text-xs">Brasília / Brasil</span>
+                    </div>
+                    <h1 class="article-title font-black text-[#121212] font-serif mb-4">
+                        Manifesto Ímprobo: O Direito Constitucional ao Riso e à Paródia Política
+                    </h1>
+                    <p class="article-subtitle text-stone-700 font-serif italic text-lg leading-relaxed">
+                        Por que rir do poder não é apenas um alívio cômico para o cidadão, mas um dever cívico, um remédio contra o autoritarismo e uma garantia democrática inegociável.
+                    </p>
+                </div>
+
+                <!-- Section 1: Fundamentação Constitucional -->
+                <section class="mb-10 reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">01 &bull; NATUREZA JURÍDICA</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Fundamentação na Constituição da República de 1988
+                    </h2>
+                    <p class="font-serif text-base sm:text-lg text-[#121212]/90 leading-relaxed mb-4">
+                        O portal <strong>Ímprobo</strong> exerce sua atividade estritamente respaldado pelos pilares basilares do Estado Democrático de Direito, consagrados na Carta Magna Brasileira de 1988:
+                    </p>
+
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 5º, Inciso IV &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;É livre a manifestação do pensamento, sendo vedado o anonimato.&rdquo;
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 5º, Inciso IX &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;É livre a expressão da atividade intelectual, artística, científica e de comunicação, independentemente de censura ou licença.&rdquo;
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#8B0000] bg-[#FAF9F5] p-4 sm:p-5 rounded-r-sm">
+                            <span class="font-mono text-xs font-bold text-[#8B0000] uppercase block mb-1">Art. 220, caput &amp; &sect; 2º &bull; CF/88</span>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;A manifestação do pensamento, a criação, a expressão e a informação, sob qualquer forma, processo ou veículo não sofrerão qualquer restrição [...]. É vedada toda e qualquer censura de natureza política, ideológica e artística.&rdquo;
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif font-bold text-lg text-[#121212] mt-6 mb-3">
+                        Jurisprudência Pacífica do Supremo Tribunal Federal (STF)
+                    </h3>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-3">
+                        A jurisprudência da Suprema Corte brasileira é uníssona em garantir que o humor e a sátira política não constituem ilícito, mas sim instrumento vital de escrutínio popular dos governantes:
+                    </p>
+                    <ul class="space-y-3 font-sans text-sm text-stone-700 list-disc pl-5">
+                        <li>
+                            <strong class="text-[#121212]">ADPF 130/DF (Rel. Min. Ayres Britto):</strong> Decisão histórica que revogou em definitivo a Lei de Imprensa da ditadura e consagrou que <em>&ldquo;o humor, a sátira e a caricatura são formas lícitas e salutares de manifestação do pensamento, indispensáveis ao arejamento da vida pública e à desmistificação das liturgias do poder&rdquo;</em>.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">ADI 4.451/DF (Rel. Min. Alexandre de Moraes):</strong> Julgamento que declarou inconstitucionais normas que tentavam proibir paródias, charges e piadas sobre políticos, estabelecendo que <em>&ldquo;a liberdade de expressão não resguarda apenas o discurso comedido, elogioso ou dócil, mas tutela igualmente a crítica ácida, mordaz e o escárnio aos agentes públicos no exercício de suas funções&rdquo;</em>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section 2: Declaração de Paródia e Ficção -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">02 &bull; ESCOPO EDITORIAL</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Declaração Explícita de Paródia e Ficção Literária
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        O <strong>Ímprobo</strong> é um veículo de <strong>crônica satírica, humor político e comédia de costumes</strong>. Todas as nossas matérias operam sob a clássica fórmula dos grandes pasquins brasileiros (como <em>O Pasquim</em>, <em>Sensacionalista</em> e o histórico baronato da imprensa livre):
+                    </p>
+                    <div class="bg-[#EBE7DE] border-l-4 border-[#121212] p-5 rounded-r-sm my-5 text-sm font-sans leading-relaxed text-[#121212]">
+                        <strong>A ANCORAGEM FACTUAL É REAL:</strong> Os temas abordados, projetos de lei, apagões, decisões de cortes, emendas e escândalos políticos noticiados são acontecimentos reais apurados na imprensa pública (G1, Folha de S.Paulo, BBC, Poder360, Agência Brasil). Toda crônica possui um rodapé transparente rotulado <em>&ldquo;O Contexto Real &bull; Rodapé Factual&rdquo;</em> com os fatos crus da apuração jornalística.
+                    </div>
+                    <div class="bg-[#FAF9F5] border-l-4 border-[#8B0000] p-5 rounded-r-sm my-5 text-sm font-sans leading-relaxed text-[#121212]">
+                        <strong>A NARRATIVA É PARÓDIA:</strong> Os diálogos ficcionais, falas atribuídas a personagens, manuais cômicos do otário, deliberações de bastidor e reações hiperbólicas são puras criações de sátira. Nenhuma informação de nossas crônicas deve ser lida como relato jornalístico literal, mas sim como exercício de paródia e ficção humorística.
+                    </div>
+                </section>
+
+                <!-- Section 3: Caricaturas Editoriais e IA -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">03 &bull; ILUSTRAÇÃO &amp; CHARGES</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Caricaturas Digitais por IA no Estilo Clássico
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        Para preservar a integridade jornalística e homenagear a era de ouro dos quadrinhos e charges editoriais brasileiras, o Ímprobo adota diretrizes estritas de imagem:
+                    </p>
+                    <ul class="space-y-3 font-sans text-sm text-stone-700 list-disc pl-5">
+                        <li>
+                            <strong class="text-[#121212]">Zero fotos de agências jornalísticas:</strong> Não utilizamos retratos reais ou fotografias captadas de agências de notícias para fins difamatórios.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">Caricaturas autorais geradas por IA:</strong> Nossas charges são geradas por modelos de Inteligência Artificial no estilo de charge editorial dos anos 70/80 (nanquim expressivo, aquarela e guache vibrante), satirizando comportamentos e situações públicas em tom de pastelão cômico.
+                        </li>
+                        <li>
+                            <strong class="text-[#121212]">Zero marcas ou logotipos de terceiros:</strong> Não incluímos marcas registradas, títulos ou logotipos comerciais de revistas externas. Nossas ilustrações trazem o crédito formal: <em>&ldquo;Arte: Caricatura Editorial IA / Ilustração Satírica&rdquo;</em>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section 4: Acessibilidade e Voz Neural -->
+                <section class="mb-10 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">04 &bull; ACESSIBILIDADE</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Jornalismo Acessível &bull; Narração Neural em Áudio
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-4">
+                        Todas as crônicas do portal contam com versão narrada em áudio neural em português brasileiro (Edge-TTS), garantindo acesso irrestrito para pessoas com deficiência visual, pessoas em trânsito e leitores que preferem acompanhar o noticiário cínico em formato de podcast.
+                    </p>
+                </section>
+
+                <!-- Section 5: Expediente e Contato -->
+                <section class="mb-8 pt-8 border-t border-[#D1CEC7] reveal-on-scroll">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">05 &bull; EXPEDIENTE &amp; REDAÇÃO</span>
+                        <span class="w-8 h-px bg-[#8B0000]"></span>
+                    </div>
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-3">
+                        Contato com a Redação Ácida
+                    </h2>
+                    <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-6">
+                        Dúvidas, pedidos de retificação factual, sugestões de descalabros a investigar ou denúncias de políticos agindo com excesso de decoro podem ser encaminhados aos nossos canais:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#8B0000] block mb-1">Instagram</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#8B0000]">{INSTAGRAM_HANDLE}</span>
+                        </a>
+                        <a href="{WHATSAPP_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#25D366] block mb-1">WhatsApp</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#25D366]">Canal Oficial</span>
+                        </a>
+                        <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="p-4 bg-[#FAF9F5] border border-[#D1CEC7] hover:border-[#121212] rounded-sm text-center transition-all group">
+                            <span class="font-mono text-xs uppercase font-bold text-[#229ED9] block mb-1">Telegram</span>
+                            <span class="font-serif font-bold text-sm text-[#121212] group-hover:text-[#229ED9]">Canal Oficial</span>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter no Sobre -->
+                    {render_newsletter_box(is_article=False, is_sobre=True)}
+
+                    <div class="mt-8 pt-6 border-t border-[#D1CEC7] flex justify-between items-center">
+                        <a href="index.html" class="neo-link font-mono text-xs uppercase tracking-wider text-[#8B0000] font-bold inline-flex items-center space-x-1">
+                            <span>&larr;</span>
+                            <span>Voltar à Capa Principal</span>
+                        </a>
+                        <span class="font-mono text-xs text-stone-500">Brasília &bull; 2026</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    {render_footer(is_article=False)}
+    {COMMON_SCRIPTS}
+</body>
+</html>
+"""
+
+def generate_sitemap(articles):
+    today = datetime.now().strftime("%Y-%m-%d")
+    xml_entries = [
+        f"""  <url>
+    <loc>{PORTAL_URL}/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>""",
+        f"""  <url>
+    <loc>{PORTAL_URL}/sobre.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>"""
+    ]
+
+    for art in articles:
+        slug = art.get("slug", "")
+        ts = art.get("timestamp") or art.get("data_iso")
+        if ts and "T" in str(ts):
+            mod_date = str(ts).split("T")[0]
+        else:
+            mod_date = today
+        xml_entries.append(f"""  <url>
+    <loc>{PORTAL_URL}/artigos/{slug}.html</loc>
+    <lastmod>{mod_date}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(xml_entries)}
+</urlset>
+"""
+    with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
+        f.write(sitemap_content)
+    print(f"Sitemap gerado: {SITEMAP_PATH}")
+
+def generate_robots():
+    robots_content = f"""User-agent: *
+Allow: /
+
+Sitemap: {PORTAL_URL}/sitemap.xml
+"""
+    with open(ROBOTS_PATH, "w", encoding="utf-8") as f:
+        f.write(robots_content)
+    print(f"Robots gerado: {ROBOTS_PATH}")
 
 def create_vercel_config():
     config = {
@@ -1781,6 +2267,7 @@ def create_vercel_config():
 
 def build_all():
     os.makedirs(ARTIGOS_DIR, exist_ok=True)
+    os.makedirs(IMAGENS_DIR, exist_ok=True)
     articles = load_articles()
     print(f"Encontrados {len(articles)} artigos em {CONTENT_DIR}")
 
@@ -1788,9 +2275,9 @@ def build_all():
     for art in articles:
         slug = art["slug"]
         out_path = os.path.join(ARTIGOS_DIR, f"{slug}.html")
-        html = generate_article_page(art)
+        html_content = generate_article_page(art)
         with open(out_path, "w", encoding="utf-8") as f:
-            f.write(html)
+            f.write(html_content)
         print(f"Artigo gerado: {out_path}")
 
     # Generate index.html
@@ -1799,9 +2286,20 @@ def build_all():
         f.write(home_html)
     print(f"Home gerada: {INDEX_PATH}")
 
+    # Generate sobre.html
+    sobre_html = generate_sobre_page()
+    with open(SOBRE_PATH, "w", encoding="utf-8") as f:
+        f.write(sobre_html)
+    print(f"Página Sobre gerada: {SOBRE_PATH}")
+
+    # Generate sitemap.xml & robots.txt
+    generate_sitemap(articles)
+    generate_robots()
+
     # Generate vercel.json
     create_vercel_config()
-    print("Build NYT Papel Creme finalizado com sucesso!")
+    print("Build Ímprobo Produção finalizado com sucesso!")
 
 if __name__ == "__main__":
     build_all()
+

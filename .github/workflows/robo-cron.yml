@@ -1,0 +1,66 @@
+name: Robô Autônomo Ímprobo (Varredura, Caricaturas IA & Deploy Contínuo)
+
+on:
+  schedule:
+    # Dispara a cada 4 horas todos os dias (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: '0 0,4,8,12,16,20 * * *'
+  workflow_dispatch: # Permite disparo manual com 1 clique na interface do GitHub Actions
+
+concurrency:
+  group: robo-improbo
+  cancel-in-progress: false
+
+jobs:
+  executar-robo-editorial:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Concede permissão para git commit e git push
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Ambiente Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar Dependências do Robô e Áudio Neural
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 edge-tts
+
+      - name: Executar Varredura, Redação Satírica e Geração de Caricatura IA
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PORTAL_URL: ${{ secrets.PORTAL_URL || 'https://improbo.vercel.app' }}
+          WHATSAPP_CHANNEL_URL: ${{ secrets.WHATSAPP_CHANNEL_URL || 'https://whatsapp.com/channel/0029Vb3improbo' }}
+          TELEGRAM_CHANNEL_URL: ${{ secrets.TELEGRAM_CHANNEL_URL || 'https://t.me/portalimprobo' }}
+        run: |
+          echo "[*] Iniciando ciclo autônomo do Robô Ímprobo..."
+          python3 robo.py --executar
+
+      - name: Recompilar Portal Estático (Home, Artigos, Manifesto, Sitemap e Robots)
+        env:
+          PORTAL_URL: ${{ secrets.PORTAL_URL || 'https://improbo.vercel.app' }}
+          WHATSAPP_CHANNEL_URL: ${{ secrets.WHATSAPP_CHANNEL_URL || 'https://whatsapp.com/channel/0029Vb3improbo' }}
+          TELEGRAM_CHANNEL_URL: ${{ secrets.TELEGRAM_CHANNEL_URL || 'https://t.me/portalimprobo' }}
+        run: |
+          echo "[*] Garantindo compilação estática de produção..."
+          python3 build.py
+
+      - name: Commit e Push das Novas Crônicas e Caricaturas para o GitHub
+        run: |
+          git config --global user.name "Robô Autônomo Ímprobo"
+          git config --global user.email "robo@improbo.vercel.app"
+          git add content/ artigos/ audio/ imagens/ index.html sobre.html sitemap.xml robots.txt noticias_db.json
+          if git diff --staged --quiet; then
+            echo "[i] Nenhuma matéria nova ou alteração para publicar nesta rodada."
+          else
+            git commit -m "chore(auto): nova crônica satírica e caricatura IA publicadas pelo robô [skip ci]"
+            git push origin master
+            echo "[✓] Atualização enviada com sucesso! O deploy na Vercel será disparado automaticamente."
+          fi

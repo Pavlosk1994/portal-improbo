@@ -13,6 +13,7 @@ import re
 import time
 import argparse
 import unicodedata
+import base64
 from datetime import datetime, timezone
 import email.utils
 import xml.etree.ElementTree as ET
@@ -26,6 +27,7 @@ from build import build_all, CONTENT_DIR, BASE_DIR
 DB_PATH = os.path.join(BASE_DIR, "noticias_db.json")
 ENV_PATH = os.path.join(BASE_DIR, ".env")
 PROMPT_MESTRE_PATH = os.path.join(BASE_DIR, "PROMPT_MESTRE.md")
+IMAGENS_DIR = os.path.join(BASE_DIR, "imagens")
 
 # Feeds RSS oficiais dos maiores portais de notícias do Brasil
 RSS_FEEDS = [
@@ -317,7 +319,7 @@ Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar mentiras).
 2. Acidez Máxima e Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico. Proibido tom acadêmico ou morno. Use metáforas populares ácidas (o agiota de calçada, o garçom do rodízio, o malandro na missa). Desmonte a pose e a liturgia dos políticos.
 3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (40 a 65 caracteres no máximo), em caixa alta, contendo uma piada ou contradição sarcástica imediata (ex: 'SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE'). Proibido títulos longos ou que pareçam sinopses. O detalhamento do contexto vai no subtítulo.
-4. Regra Estrita da Imagem Real ou Nada: Apenas incluir imagem se for a foto real da matéria original. Caso não haja foto real, defina 'imagem_capa': null, 'legenda_imagem': null e 'credito_imagem': null. NUNCA invente fotos ou use bancos de imagens genéricos.
+4. Regra da Caricatura Editorial IA no Estilo Clássico (Anos 70/80): Crie uma descrição visual detalhada da cena para gerar uma charge editorial satírica. A cena deve ser cômica, escrachada, retratando os personagens em situação absurda (pastelão, nanquim expressivo, aquarela e guache vibrante). REGRA MANDATÓRIA: É terminantemente proibido qualquer texto 'MAD', logotipos ou marcas registradas.
 5. Sem Viés Partidário: O alvo é sempre o poder, a burocracia estatal, a incoerência eleitoral e o teatro político.
 6. Estrutura de Retorno: Você DEVE responder OBRIGATORIAMENTE com um único objeto JSON válido (sem tags markdown ```json), contendo:
 {
@@ -327,7 +329,8 @@ Sua missão:
   "tempo_leitura": "3 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
-  "legenda_imagem": "Legenda editorial satírica para a foto de capa",
+  "legenda_imagem": "Legenda editorial satírica para a charge/caricatura",
+  "prompt_caricatura": "Descrição visual cômica e detalhada da charge satírica (personagens, cenário absurdo, nanquim e guache, sem textos ou logos comerciais)",
   "corpo": [
     "Primeiro parágrafo fluido com metáfora de botequim...",
     "Segundo parágrafo desconstruindo a pose do político...",
@@ -428,6 +431,96 @@ def criar_artigo_demo(noticia, dados_imagem):
         ],
         "contexto_real": f"{noticia['resumo']} Noticiado originalmente por {noticia['fonte']} com repercussão nos principais círculos institucionais da capital."
     }
+
+def gerar_caricatura_ia(dados_artigo, api_key):
+    """
+    Gera automaticamente a caricatura editorial satírica utilizando a API do Google Imagen 3
+    (imagen-3.0-generate-002:predict) e salva diretamente em imagens/{slug}.jpg.
+    Totalmente autônomo e sem intervenção manual.
+    """
+    if not api_key:
+        print("[!] Aviso: Nenhuma GEMINI_API_KEY configurada. Pulando geração de imagem por IA.")
+        return False
+
+    slug = dados_artigo.get("slug")
+    if not slug:
+        return False
+
+    os.makedirs(IMAGENS_DIR, exist_ok=True)
+    caminho_final = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
+
+    # Se já existir uma caricatura local para esse slug, preserva
+    if os.path.exists(caminho_final):
+        print(f"[*] Caricatura local já existente encontrada: {caminho_final}")
+        dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+        dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+        return True
+
+    # Monta o prompt estilístico com guardrails estritos
+    prompt_base = dados_artigo.get("prompt_caricatura")
+    if not prompt_base:
+        titulo = dados_artigo.get("titulo", "")
+        subtitulo = dados_artigo.get("subtitulo", "")
+        prompt_base = f"Sátira política brasileira: {titulo}. {subtitulo}."
+
+    prompt_completo = (
+        f"A vintage 1970s-1980s editorial political cartoon caricature in expressive ink with detailed cross-hatching "
+        f"and vibrant gouache watercolor wash, satirical Brazilian political press style. "
+        f"Exaggerated humorous facial expressions, slapstick political farce and comic scene: {prompt_base}. "
+        f"Strictly NO text 'MAD', NO logos, NO watermark, NO real photographs, pure satirical illustration."
+    )
+
+    url_imagen = f"https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key={api_key}"
+
+    payload = {
+        "instances": [
+            {
+                "prompt": prompt_completo
+            }
+        ],
+        "parameters": {
+            "sampleCount": 1,
+            "aspectRatio": "16:9",
+            "outputMimeType": "image/jpeg"
+        }
+    }
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    print(f"[*] Solicitando geração de caricatura editorial ao Google Imagen 3...")
+    try:
+        req = urllib.request.Request(
+            url_imagen,
+            data=json.dumps(payload).encode("utf-8"),
+            headers=headers,
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            predictions = data.get("predictions", [])
+            if predictions and "bytesBase64Encoded" in predictions[0]:
+                b64_data = predictions[0]["bytesBase64Encoded"]
+                img_bytes = base64.b64decode(b64_data)
+                with open(caminho_final, "wb") as f_img:
+                    f_img.write(img_bytes)
+                print(f"[✓] Caricatura gerada e salva com sucesso: {caminho_final} ({len(img_bytes)} bytes)")
+                dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+                dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+                if not dados_artigo.get("legenda_imagem"):
+                    dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
+                return True
+            else:
+                print(f"[!] Resposta inesperada do Imagen 3: {data.get('error', 'Sem predições')}")
+                return False
+    except urllib.error.HTTPError as e:
+        err_msg = e.read().decode('utf-8', errors='ignore')
+        print(f"[!] Erro na API Imagen 3 ({e.code}): {err_msg[:200]}")
+        return False
+    except Exception as e:
+        print(f"[!] Falha na conexão com Imagen 3: {e}")
+        return False
 
 def salvar_artigo_no_site(dados_artigo, noticia_url):
     """Salva o JSON em content/ e recompila o site imediatamente"""
@@ -546,10 +639,6 @@ def executar_rodada(modo_demo=False):
         if resultado_ia:
             dados_artigo = resultado_ia
             dados_artigo["slug"] = slugify(dados_artigo.get("titulo", melhor_noticia["titulo"]))
-            img_url = dados_imagem.get("imagem_url")
-            dados_artigo["imagem_capa"] = img_url
-            dados_artigo["credito_imagem"] = dados_imagem.get("credito") if img_url else None
-            dados_artigo["legenda_imagem"] = (resultado_ia.get("legenda_imagem") or dados_imagem.get("legenda_sugerida")) if img_url else None
             if "data" not in dados_artigo:
                 dados_artigo["data"] = datetime.now().strftime("%d de %B de %Y").replace("October", "Outubro")
 
@@ -558,6 +647,23 @@ def executar_rodada(modo_demo=False):
             print("\n[!] GEMINI_API_KEY não encontrada no ambiente.")
             print("[*] Gerando crônica através do motor editorial estruturado (Modo Laboratório)...")
         dados_artigo = criar_artigo_demo(melhor_noticia, dados_imagem)
+
+    # 4.1. Geração de Imagem 100% Automática via Google Imagen 3
+    slug = dados_artigo.get("slug")
+    if api_key:
+        print("\n[*] Disparando geração autônoma de caricatura editorial IA...")
+        gerou = gerar_caricatura_ia(dados_artigo, api_key)
+        if not gerou:
+            print("[i] Prosseguindo com o pipeline editorial.")
+    else:
+        # Se não há API key, verifica se já existe imagem local com esse slug
+        if slug and os.path.exists(os.path.join(IMAGENS_DIR, f"{slug}.jpg")):
+            dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+            dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+        else:
+            dados_artigo["imagem_capa"] = None
+            dados_artigo["credito_imagem"] = None
+            dados_artigo["legenda_imagem"] = None
 
     # 5. Salvamento e Compilação
     salvar_artigo_no_site(dados_artigo, melhor_noticia["link"])
