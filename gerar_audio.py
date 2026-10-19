@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gerador de Áudio Neural - IMPRÓBO
+Gerador de Áudio Neural - ÍMPROBO
 Utiliza Edge-TTS com a voz neural brasileira 'pt-BR-AntonioNeural'
 para narrar as crônicas satíricas completas em arquivos MP3 de alta fidelidade.
 """
@@ -36,7 +36,7 @@ def montar_roteiro_narracao(artigo):
     blocos = []
     
     # Vinheta de Abertura
-    blocos.append(f"IMPRÓBO apresenta.")
+    blocos.append(f"ÍMPROBO apresenta.")
     blocos.append(f"{artigo.get('titulo')}.")
     
     sub = artigo.get('subtitulo', '').strip()
@@ -59,7 +59,7 @@ def montar_roteiro_narracao(artigo):
             blocos.append(f"Dica {idx}: {t}. {txt}")
             
     # Encerramento Editorial
-    blocos.append("Esta foi mais uma crônica ácida do IMPRÓBO. Nenhum fato foi distorcido: o absurdo da realidade brasileira já veio pronto de fábrica.")
+    blocos.append("Esta foi mais uma crônica ácida do ÍMPROBO. Nenhum fato foi distorcido: o absurdo da realidade brasileira já veio pronto de fábrica.")
     
     return "\n\n".join(blocos)
 
@@ -122,7 +122,7 @@ def gerar_todos(forcar=False):
     print(f"\n[✓] Processamento concluído: {sucessos}/{len(arquivos)} áudios disponíveis em {AUDIO_DIR}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Gerador de Áudio Neural das Crônicas do IMPRÓBO")
+    parser = argparse.ArgumentParser(description="Gerador de Áudio Neural das Crônicas do ÍMPROBO")
     parser.add_argument("--slug", help="Gera áudio apenas para o artigo com o slug especificado")
     parser.add_argument("--forcar", action="store_true", help="Regera áudio mesmo se o arquivo já existir")
     args = parser.parse_args()

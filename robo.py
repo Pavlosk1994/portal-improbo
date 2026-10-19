@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Robô Autônomo de Varredura e Redação Satírica - IMPRÓBO
+Robô Autônomo de Varredura e Redação Satírica - ÍMPROBO
 Monitora os principais jornais do Brasil (RSS Feeds & Scraping),
 seleciona a manchete de maior relevância política, extrai a foto original (og:image),
 redige a crônica satírica com base no PROMPT_MESTRE.md (Gemini) e compila o site.
@@ -312,7 +312,7 @@ def redigir_cronica_gemini(noticia, dados_imagem, api_key):
     
     # Prompt de Instrução baseado no PROMPT_MESTRE.md
     instrucao_sistema = """
-Você é o Redator-Chefe e Cronista Ácido de **IMPRÓBO**, portal brasileiro de jornalismo satírico, crônica política e comédia de costumes.
+Você é o Redator-Chefe e Cronista Ácido de **ÍMPROBO**, portal brasileiro de jornalismo satírico, crônica política e comédia de costumes.
 Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar mentiras).
 2. Acidez Máxima e Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico. Proibido tom acadêmico ou morno. Use metáforas populares ácidas (o agiota de calçada, o garçom do rodízio, o malandro na missa). Desmonte a pose e a liturgia dos políticos.
@@ -352,7 +352,7 @@ NOTÍCIA REAL SELECIONADA:
 - Link da Notícia: {noticia['link']}
 - Legenda original da foto: {dados_imagem.get('legenda_sugerida', '')}
 
-Gere agora a crônica satírica completa no formato JSON exigido, com rigor factual e ironia máxima para o IMPRÓBO.
+Gere agora a crônica satírica completa no formato JSON exigido, com rigor factual e ironia máxima para o ÍMPROBO.
 """
 
     payload = {
@@ -460,15 +460,15 @@ def salvar_artigo_no_site(dados_artigo, noticia_url):
     except Exception as e:
         print(f"[!] Aviso: narração neural não gerada neste momento: {e}")
 
-    # Recompila todas as páginas HTML do IMPRÓBO
-    print("[*] Recompilando o portal IMPRÓBO (Home e Artigos)...")
+    # Recompila todas as páginas HTML do ÍMPROBO
+    print("[*] Recompilando o portal ÍMPROBO (Home e Artigos)...")
     build_all()
     print("[✓] Portal atualizado com a nova matéria e reprodutor de áudio!")
 
 def executar_rodada(modo_demo=False):
     """Executa o ciclo completo do robô: varre, filtra, gera e publica"""
     print("=" * 65)
-    print("  ROBÔ AUTÔNOMO IMPRÓBO - VARREDURA E PUBLICAÇÃO SATÍRICA")
+    print("  ROBÔ AUTÔNOMO ÍMPROBO - VARREDURA E PUBLICAÇÃO SATÍRICA")
     print("=" * 65)
 
     db = carregar_db()
@@ -590,7 +590,7 @@ def listar_manchetes():
         print(f"    Link: {n['link']}\n")
 
 def main():
-    parser = argparse.ArgumentParser(description="Robô de Varredura e Publicação Autônoma do IMPRÓBO")
+    parser = argparse.ArgumentParser(description="Robô de Varredura e Publicação Autônoma do ÍMPROBO")
     parser.add_argument("--executar", action="store_true", help="Executa uma rodada completa de varredura e publicação")
     parser.add_argument("--listar", action="store_true", help="Apenas lista as manchetes mais relevantes sem publicar")
     parser.add_argument("--demo", action="store_true", help="Executa rodada no modo demonstração/laboratório")

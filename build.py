@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gerador de Site Estático - IMPRÓBO (Estética New York Times & Papel Creme)
+Gerador de Site Estático - ÍMPROBO (Estética New York Times & Papel Creme)
 Fundo papel creme (#F4F1EA), container do artigo em branco puro (#FFFFFF), 
 linhas editoriais clássicas com borda dupla (#121212), divisores em #D1CEC7
 e caixas factuais em #EBE7DE com borda grossa.
@@ -11,7 +11,7 @@ import json
 import glob
 from datetime import datetime
 
-PORTAL_NAME = "IMPRÓBO"
+PORTAL_NAME = "ÍMPROBO"
 PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
 INSTAGRAM_URL = "https://instagram.com"
 INSTAGRAM_HANDLE = "@improbo"
@@ -771,7 +771,7 @@ def render_audio_player(slug, title, audio_src):
                         <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse hidden" id="audio-live-dot" title="Reproduzindo"></span>
                     </div>
                     <div class="font-serif italic text-xs text-stone-600 mt-0.5">
-                        Narração satírica com voz neural brasileira &bull; Redação IMPRÓBO
+                        Narração satírica com voz neural brasileira &bull; Redação ÍMPROBO
                     </div>
                 </div>
             </div>
@@ -1068,7 +1068,7 @@ def render_sticky_audio_bar(title):
                 <div class="overflow-hidden">
                     <div class="flex items-center space-x-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO IMPRÓBO</span>
+                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO ÍMPROBO</span>
                     </div>
                     <div class="font-serif font-bold text-xs sm:text-sm text-[#121212] truncate max-w-[180px] sm:max-w-md md:max-w-lg">
                         {safe_title}
@@ -1135,7 +1135,7 @@ def render_share_widget(title, subtitle, slug):
         if (btnZap) {{
             btnZap.addEventListener('click', () => {{
                 const pageUrl = window.location.href;
-                const zapText = `🚨 *URGENTE NO IMPRÓBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
+                const zapText = `🚨 *URGENTE NO ÍMPROBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
                 const zapUrl = `https://api.whatsapp.com/send?text=${{encodeURIComponent(zapText)}}`;
                 window.open(zapUrl, '_blank');
             }});
