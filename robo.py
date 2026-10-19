@@ -384,6 +384,8 @@ NOTÍCIA REAL SELECIONADA:
 Gere agora a crônica satírica completa no formato JSON exigido, com rigor factual e ironia máxima para o ÍMPROBO.
 """
 
+    modelos = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"]
+    
     payload = {
         "contents": [
             {
@@ -396,66 +398,103 @@ Gere agora a crônica satírica completa no formato JSON exigido, com rigor fact
         }
     }
 
-    req = urllib.request.Request(
-        url_api,
-        data=json.dumps(payload).encode('utf-8'),
-        headers={'Content-Type': 'application/json'},
-        method='POST'
-    )
+    for modelo in modelos:
+        url_api = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent?key={api_key}"
+        req = urllib.request.Request(
+            url_api,
+            data=json.dumps(payload).encode('utf-8'),
+            headers={'Content-Type': 'application/json'},
+            method='POST'
+        )
 
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-            texto_resposta = data['candidates'][0]['content']['parts'][0]['text']
-            # Remove blocos markdown caso a API inclua
-            texto_limpo = re.sub(r'^```json\s*', '', texto_resposta.strip())
-            texto_limpo = re.sub(r'\s*```$', '', texto_limpo)
-            return json.loads(texto_limpo)
-    except Exception as e:
-        print(f"[!] Erro ao chamar API Gemini: {e}")
-        return None
+        try:
+            print(f"[*] Tentando geração com {modelo}...")
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                texto_resposta = data['candidates'][0]['content']['parts'][0]['text']
+                texto_limpo = re.sub(r'^```json\s*', '', texto_resposta.strip())
+                texto_limpo = re.sub(r'\s*```$', '', texto_limpo)
+                parsed = json.loads(texto_limpo)
+                print(f"[✓] Crônica satírica redigida com sucesso via {modelo}!")
+                return parsed
+        except urllib.error.HTTPError as e:
+            err_b = e.read().decode('utf-8', errors='ignore')
+            print(f"[!] Modelo {modelo} indisponível ({e.code}): {err_b[:120]}. Tentando próximo...")
+            continue
+        except Exception as e:
+            print(f"[!] Erro no modelo {modelo}: {e}. Tentando próximo...")
+            continue
+
+    print("[!] Todos os modelos Gemini retornaram erro. Verifique a GEMINI_API_KEY no GitHub Secrets.")
+    return None
 
 def criar_artigo_demo(noticia, dados_imagem):
-    """Gera uma crônica satírica exemplar com base na notícia para validação do pipeline"""
+    """
+    Gera uma crônica satírica ácida de alto calibre no estilo Pasquim e O Pasquim,
+    caso a API de IA não esteja acessível ou esteja em modo laboratório.
+    """
     slug = slugify(noticia["titulo"])
     hoje = datetime.now().strftime("%d de %B de %Y").replace("October", "Outubro").replace("November", "Novembro")
     
-    # Título curto e sarcástico (máximo 60 caracteres)
-    titulo_curto = f"O BALCÃO DO PLANALTO: {noticia['titulo'][:30].upper().strip()}..." if len(noticia['titulo']) > 32 else f"O BALCÃO DO PLANALTO: {noticia['titulo'].upper()}"
-    
+    # Gerador de manchetes punchy e sarcásticas
+    titulo_limpo = noticia['titulo'].strip().upper()
+    if len(titulo_limpo) > 55:
+        # Pega as primeiras palavras chave
+        palavras = [p for p in titulo_limpo.split() if len(p) > 2 and p not in ["PARA", "COM", "QUE", "SOBRE", "PELO", "PELA", "MAIS"]]
+        core = " ".join(palavras[:4])
+        titulo_curto = f"O GRANDE TEATRO: {core}"[:58]
+    else:
+        titulo_curto = titulo_limpo
+
+    # Variações de títulos escrachados
+    prefixos_satiricos = [
+        "A FARRA DO CARIMBO: ",
+        "O MILAGRE DA CARA DE PAU: ",
+        "CIRCO DE BRASÍLIA: ",
+        "O BANQUETE DO ERÁRIO: "
+    ]
+    import random
+    titulo_punchy = f"{random.choice(prefixos_satiricos)}{titulo_limpo[:36]}..." if len(titulo_limpo) > 38 else f"{random.choice(prefixos_satiricos)}{titulo_limpo}"
+    if len(titulo_punchy) > 60:
+        titulo_punchy = titulo_punchy[:57] + "..."
+
     return {
         "slug": slug,
         "data": hoje,
-        "categoria": "Crônica Política",
+        "categoria": "Comédia de Costumes",
         "tempo_leitura": "3 min de leitura",
-        "titulo": titulo_curto,
-        "subtitulo": f"Com a solenidade de quem descobriu a pólvora na antevéspera da votação, Brasília encena mais um capítulo do milagre institucional.",
+        "titulo": titulo_punchy,
+        "subtitulo": f"Com a solenidade de quem rouba no jogo de purrinha jurando inocência de mão no peito, Brasília encena mais um capítulo da sua secular ópera bufa.",
         "autor": "Redação Ácida",
         "destaque": True,
         "imagem_capa": dados_imagem.get("imagem_url") if dados_imagem else None,
         "legenda_imagem": dados_imagem.get("legenda_sugerida") if (dados_imagem and dados_imagem.get("imagem_url")) else None,
         "credito_imagem": dados_imagem.get("credito") if (dados_imagem and dados_imagem.get("imagem_url")) else None,
         "corpo": [
-            f"Brasília é uma usina inesgotável de assombros. Em mais um episódio da novela cotidiana do poder, a notícia de que '{noticia['titulo']}' caiu sobre os corredores com o impacto de um cafezinho frio servido em copo de plástico.",
-            f"O fato cru é que, segundo apuração do {noticia['fonte']}, {noticia['resumo']}. No entanto, na tradução para o dialeto do botequim nacional, o que se vê é a clássica coreografia de quem precisa parecer ocupadíssimo enquanto calcula os dividendos da próxima rodada de negociações.",
-            "Quando a conveniência política aperta, até os mais austeros ocupantes de gabinete descobrem uma pressa comovente para aprovar o que até ontem era jurado de morte. É a eterna dança das cadeiras, onde o cidadão paga a conta do banquete e assiste ao espetáculo de pé na fila do ônibus.",
-            "Resta ao leitor respirar fundo e contemplar a beleza quase poética da cara de pau coletiva: enquanto houver quórum e liturgia, a matéria-prima do absurdo nacional está plenamente assegurada."
+            f"Se a hipocrisia pagasse imposto de renda retido na fonte, os cofres da República estariam com superávit primário suficiente para calçar a Esplanada dos Ministérios com mármore de Carrara. A última pérola do anedotário oficial dá conta de que '{noticia['titulo']}'. Nos bastidores refrigerados do poder, a notícia circulou com a naturalidade de um garçom empurrando rodízio vencido em cliente distraído.",
+            f"Segundo apurou o {noticia['fonte']}, {noticia['resumo']}. No entanto, quando decodificamos a fala polida das excelências para o dialeto do boteco da esquina, a tradução é cristalina: enquanto os donos da caneta desfilam de terno importado e discursam com a gravidade de um padre de interior, o cidadão comum calcula se o salário ainda dá para pagar o gás e a fatura da luz sem precisar recorrer a agiota de aplicativo.",
+            "A beleza quase poética da malandragem institucional brasileira reside na liturgia da cara de pau. Quando o interesse aperta, adversários mortais que se xingavam de ladrão e fascista na véspera descobrem uma súbita comunhão espiritual diante do rateio das emendas e da partilha dos gabinetes. É a fraternidade do carimbo: ninguém larga a mão do privilégio alheio.",
+            "Resta ao bravo contribuinte, estupefato na catraca do ônibus lotado, rir para não chorar. Pois em Brasília, governos sobem, ministros caem, siglas mudam de fantasia, mas a certeza permanece inabalável: a orquestra estatal segue tocando desafinada, e quem paga o couvert artístico mais caro do planeta é sempre o mesmo otário de carteira assinada."
         ],
         "milagres": [
             {
-                "titulo": "A Urgência de Última Hora",
-                "texto": "A velocidade espantosa com que matérias engavetadas por meses ganham prioridade absoluta assim que o calendário aperta."
+                "titulo": "A Velocidade da Urgência",
+                "texto": "Projetos engavetados há duas décadas ganham tramitação em regime de 'urgência urgentíssima' assim que ameaçam o bolso da patota ou a conveniência eleitoral da semana."
             },
             {
-                "titulo": "A Liturgia do Discurso",
-                "texto": "A arte de transformar um arranjo de bastidor em uma proclamação solene de amor devotado ao interesse público."
+                "titulo": "O Sacrifício dos Outros",
+                "texto": "A solene proclamação de que 'o país precisa apertar os cintos' — desde que o cinto seja o do trabalhador e o suspensório da elite burocrática permaneça com folga de alfaiate."
             },
             {
-                "titulo": "A Fatura Compartilhada",
-                "texto": "A certeza imutável de que, qualquer que seja o desfecho do acordo, o custo fiscal será debitado com juros na conta do contribuinte."
+                "titulo": "A Aliança da Sobrevivência",
+                "texto": "O comovente espetáculo em que esquerda, direita e o insaciável Centrão dão as mãos no plenário para aprovar qualquer emenda que blinde o fundão partidário."
+            },
+            {
+                "titulo": "A Liturgia do Cinismo",
+                "texto": "A arte de olhar nos olhos da câmera com semblante compungido e jurar que o loteamento de cargos foi um 'gesto cívico em defesa da estabilidade republicana'."
             }
         ],
-        "contexto_real": f"{noticia['resumo']} Noticiado originalmente por {noticia['fonte']} com repercussão nos principais círculos institucionais da capital."
+        "contexto_real": f"O Contexto Factual: {noticia['resumo']} Noticiado originalmente por {noticia['fonte']} com base nos desdobramentos oficiais apurados na capital federal."
     }
 
 def gerar_caricatura_ia(dados_artigo, api_key):
@@ -710,20 +749,36 @@ def executar_rodada(modo_demo=False):
 
     # 4.1. Geração de Imagem 100% Automática via Google Imagen 3
     slug = dados_artigo.get("slug")
+    gerou_imagem = False
     if api_key:
         print("\n[*] Disparando geração autônoma de caricatura editorial IA...")
-        gerou = gerar_caricatura_ia(dados_artigo, api_key)
-        if not gerou:
-            print("[i] Prosseguindo com o pipeline editorial.")
-    else:
-        # Se não há API key, verifica se já existe imagem local com esse slug
+        gerou_imagem = gerar_caricatura_ia(dados_artigo, api_key)
+
+    # Blindagem visual: se não gerou caricatura por IA (ou API indisponível), NUNCA deixa a matéria sem arte!
+    if not dados_artigo.get("imagem_capa") or not gerou_imagem:
         if slug and os.path.exists(os.path.join(IMAGENS_DIR, f"{slug}.jpg")):
             dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
             dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+        elif dados_imagem and dados_imagem.get("imagem_url"):
+            print("[*] Aplicando foto jornalística autêntica da matéria com crédito editorial...")
+            dados_artigo["imagem_capa"] = dados_imagem["imagem_url"]
+            dados_artigo["credito_imagem"] = dados_imagem.get("credito") or f"Foto: Agência / {melhor_noticia['fonte']}"
+            if not dados_artigo.get("legenda_imagem"):
+                dados_artigo["legenda_imagem"] = dados_imagem.get("legenda_sugerida") or melhor_noticia["titulo"]
         else:
-            dados_artigo["imagem_capa"] = None
-            dados_artigo["credito_imagem"] = None
-            dados_artigo["legenda_imagem"] = None
+            print("[*] Aplicando charge satírica clássica do acervo editorial do Ímprobo...")
+            import random
+            acervo_editorial = [
+                ("imagens/lula-malabarismo-planalto-centrao.jpg", "Charge Editorial: O Picadeiro de Brasília e a Arte das Emendas"),
+                ("imagens/flavio-bolsonaro-pec-privatizacao-praias.jpg", "Charge Editorial: A Catraca do Poder na Praia do Erário"),
+                ("imagens/congresso-anistia-partidos-dividas-fundo-eleitoral.jpg", "Charge Editorial: O Auto-Perdão e a Festa dos Boletos"),
+                ("imagens/sao-paulo-apagao-enel-guerra-da-vela.jpg", "Charge Editorial: A Escuridão Oficial e a Tragicomédia Nacional")
+            ]
+            img_escolhida, leg_escolhida = random.choice(acervo_editorial)
+            dados_artigo["imagem_capa"] = img_escolhida
+            dados_artigo["credito_imagem"] = "Arte: Acervo Editorial Ímprobo / Charge Política"
+            if not dados_artigo.get("legenda_imagem"):
+                dados_artigo["legenda_imagem"] = leg_escolhida
 
     # 5. Salvamento e Compilação
     salvar_artigo_no_site(dados_artigo, melhor_noticia["link"])
