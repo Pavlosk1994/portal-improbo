@@ -437,6 +437,20 @@ COMMON_HEAD_STYLES = r"""
         html.dark #newsletter-email-sobre::placeholder {
             color: #71717a !important;
         }
+
+        /* Dark Mode Overrides para Author Bio (Pavi) */
+        html.dark .author-bio-card-sobre {
+            background-color: var(--container-white) !important;
+            border-color: var(--border-divider) !important;
+        }
+
+        html.dark .author-bio-card-sobre h3 {
+            color: var(--text-charcoal) !important;
+        }
+
+        html.dark .author-bio-card-sobre p {
+            color: var(--text-secondary) !important;
+        }
     </style>
 """
 
@@ -701,48 +715,73 @@ def render_footer(is_article=False):
     home_link = "../index.html" if is_article else "index.html"
     sobre_link = "../sobre.html" if is_article else "sobre.html"
     sitemap_link = "../sitemap.xml" if is_article else "sitemap.xml"
+    autor_img_src = "../imagens/autor.png" if is_article else "imagens/autor.png"
     return f"""
     <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
-        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
-            <div>
-                <a href="{home_link}" class="inline-block group">
-                    <h3 class="font-serif text-2xl font-black text-stone-100 group-hover:text-amber-100 tracking-tight transition-colors">{PORTAL_NAME}</h3>
-                </a>
-                <p class="mt-3 text-stone-400 text-sm leading-relaxed font-sans">
-                    Crônica política ácida, deboche com base factual e comédia de costumes do teatro estatal. Se há pompa e incoerência, há matéria-prima.
-                </p>
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6">
+            <!-- Author Bio Card: Pavi -->
+            <div class="mb-10 sm:mb-12 p-5 sm:p-7 bg-[#1c1c20] border border-stone-800 rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6 reveal-on-scroll">
+                <div class="relative shrink-0">
+                    <img src="{autor_img_src}" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border-2 border-[#8B0000] shadow-md bg-stone-900" loading="lazy">
+                    <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
+                </div>
+                <div class="flex-1 text-center sm:text-left">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                            <h4 class="font-serif font-black text-xl text-stone-100 tracking-tight">Pavi</h4>
+                            <span class="text-stone-600 hidden sm:inline">&bull;</span>
+                            <span class="font-mono text-xs text-[#8B0000] font-bold uppercase tracking-wider">Diretor Editorial &amp; Fundador</span>
+                        </div>
+                        <span class="text-[11px] font-mono text-stone-500 uppercase">Brasília / Brasil</span>
+                    </div>
+                    <p class="font-serif italic text-stone-300 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        &ldquo;Entusiasta de jornalismo independente, tecnologia e crônica política. Acredita que a sátira não é apenas diversão, mas o único escudo democrático contra a arrogância de quem manda. Escreve e programa para lembrar aos governantes que o rei está sempre nu.&rdquo;
+                    </p>
+                </div>
             </div>
-            <div>
-                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial &amp; Legal</h4>
-                <p class="text-stone-400 text-sm leading-relaxed font-sans mb-3">
-                    Nenhum político foi poupado durante a redação destas matérias. O alvo é o poder, o carimbo e a liturgia vazia.
-                </p>
-                <a href="{sobre_link}" class="inline-flex items-center space-x-1.5 text-xs font-mono font-bold uppercase tracking-wider text-amber-200 hover:text-white transition-colors">
-                    <span>Aviso Legal &amp; Manifesto</span>
-                    <span>&rarr;</span>
-                </a>
-            </div>
-            <div>
-                <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes &amp; Canais</h4>
-                <div class="flex flex-col space-y-2">
-                    <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
-                        <svg class="w-4 h-4 fill-current text-pink-500 shrink-0" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                        <span class="font-medium">Instagram ({INSTAGRAM_HANDLE})</span>
+
+            <!-- Colunas do Rodapé -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-800">
+                <div>
+                    <a href="{home_link}" class="inline-block group">
+                        <h3 class="font-serif text-2xl font-black text-stone-100 group-hover:text-amber-100 tracking-tight transition-colors">{PORTAL_NAME}</h3>
                     </a>
-                    <a href="{WHATSAPP_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
-                        <svg class="w-4 h-4 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24">
-                            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
-                        </svg>
-                        <span class="font-medium">Canal WhatsApp</span>
+                    <p class="mt-3 text-stone-400 text-sm leading-relaxed font-sans">
+                        Crônica política ácida, deboche com base factual e comédia de costumes do teatro estatal. Se há pompa e incoerência, há matéria-prima.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Linha Editorial &amp; Legal</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed font-sans mb-3">
+                        Nenhum político foi poupado durante a redação destas matérias. O alvo é o poder, o carimbo e a liturgia vazia.
+                    </p>
+                    <a href="{sobre_link}" class="inline-flex items-center space-x-1.5 text-xs font-mono font-bold uppercase tracking-wider text-amber-200 hover:text-white transition-colors">
+                        <span>Aviso Legal &amp; Manifesto</span>
+                        <span>&rarr;</span>
                     </a>
-                    <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
-                        <svg class="w-4 h-4 fill-current text-sky-400 shrink-0" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
-                        </svg>
-                        <span class="font-medium">Canal Telegram</span>
-                    </a>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] font-bold mb-3">Acompanhe nas Redes &amp; Canais</h4>
+                    <div class="flex flex-col space-y-2">
+                        <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-pink-500 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span class="font-medium">Instagram ({INSTAGRAM_HANDLE})</span>
+                        </a>
+                        <a href="{WHATSAPP_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
+                            </svg>
+                            <span class="font-medium">Canal WhatsApp</span>
+                        </a>
+                        <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-stone-200 hover:text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 hover:border-stone-500 px-3.5 py-2 rounded text-xs transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current text-sky-400 shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4.01-1.75 6.69-2.9 8.04-3.47 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.19-.04.32z"/>
+                            </svg>
+                            <span class="font-medium">Canal Telegram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2144,9 +2183,34 @@ def generate_sobre_page():
                         <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#8B0000]">05 &bull; EXPEDIENTE &amp; REDAÇÃO</span>
                         <span class="w-8 h-px bg-[#8B0000]"></span>
                     </div>
-                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-3">
-                        Contato com a Redação Ácida
+                    <h2 class="font-serif font-black text-xl sm:text-2xl text-[#121212] mb-4">
+                        Quem Faz o Ímprobo
                     </h2>
+
+                    <!-- Author Bio Card em Sobre -->
+                    <div class="author-bio-card-sobre mb-8 p-5 sm:p-6 bg-[#FAF9F5] border-2 border-[#121212] rounded-sm shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                        <div class="relative shrink-0">
+                            <img src="imagens/autor.png" alt="Caricatura de Pavi - Diretor Editorial &amp; Fundador" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border-2 border-[#8B0000] shadow-md bg-[#EBE7DE]" loading="lazy">
+                            <span class="absolute -bottom-1 -right-1 bg-[#8B0000] text-white text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shadow-xs">AUTOR</span>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5">
+                                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                                    <h3 class="font-serif font-black text-xl text-[#121212] tracking-tight">Pavi</h3>
+                                    <span class="text-stone-400 hidden sm:inline">&bull;</span>
+                                    <span class="font-mono text-xs text-[#8B0000] font-bold uppercase tracking-wider">Diretor Editorial &amp; Fundador</span>
+                                </div>
+                                <span class="text-[11px] font-mono text-stone-500 uppercase">Brasília / Brasil</span>
+                            </div>
+                            <p class="font-serif italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                                &ldquo;Entusiasta de jornalismo independente, tecnologia e crônica política. Acredita que a sátira não é apenas diversão, mas o único escudo democrático contra a arrogância de quem manda. Escreve e programa para lembrar aos governantes que o rei está sempre nu.&rdquo;
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif font-bold text-lg text-[#121212] mb-3">
+                        Contato com a Redação Ácida
+                    </h3>
                     <p class="font-serif text-base text-[#121212]/90 leading-relaxed mb-6">
                         Dúvidas, pedidos de retificação factual, sugestões de descalabros a investigar ou denúncias de políticos agindo com excesso de decoro podem ser encaminhados aos nossos canais:
                     </p>

@@ -64,3 +64,4 @@ jobs:
             git push origin master
             echo "[✓] Atualização enviada com sucesso! O deploy na Vercel será disparado automaticamente."
           fi
+
