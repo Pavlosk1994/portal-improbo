@@ -1,0 +1,39 @@
+{
+  "titulo": "LULA E FLÁVIO BOLSONARO TROCAM TAPA NA BAND",
+  "subtitulo": "O primeiro debate de 2026 teve mais lavagem de roupa suja que tanque de periferia no sábado.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "Lula e Flávio Bolsonaro discutem fervorosamente em estúdio de TV enquanto o telespectador busca o controle remoto.",
+  "prompt_caricatura": "Caricatura em estilo nanquim e guache retratando Lula e Flávio Bolsonaro gritando um com o outro em um estúdio de TV da Band, com microfones voando faíscas e telões ao fundo mostrando gráficos que despencam. Sem textos ou marcas.",
+  "corpo": [
+    "Começou o segundo turno de 2026. A Band virou ringue de vale-tudo político neste domingo.",
+    "Lula e Flávio Bolsonaro trocaram mais acusações que vizinho fofoqueiro na janela do prédio.",
+    "Falaram de economia, segurança e corrupção. O telespectador só queria trocar de canal para ver futebol.",
+    "No fim, a carne continua cara no mercado. E a conta dessa briga de auditório sobra para o otário do eleitor."
+  ],
+  "milagres": [
+    {
+      "titulo": "Teatro armado",
+      "texto": "Debate político no Brasil parece briga de foice no escuro promovida por marqueteiro caro."
+    },
+    {
+      "titulo": "Promessa de campanha",
+      "texto": "Prometem resolver o país mas não conseguem nem manter o microfone ligado sem chiado."
+    },
+    {
+      "titulo": "Bolsa família e grana",
+      "texto": "A disputa é para ver quem gasta mais o dinheiro que o trabalhador suou para pagar."
+    },
+    {
+      "titulo": "Futuro incerto",
+      "texto": "Eleição passa, o boleto chega e o brasileiro continua rezando para o mês ter menos dias."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva e o senador Flávio Bolsonaro participaram do primeiro debate do segundo turno das eleições presidenciais de 2026, promovido pelo Grupo Bandeirantes na noite de domingo (18). Durante o confronto, os candidatos discutiram temas como segurança pública, economia, saúde e trocaram acusações sobre investigações e corrupção, a uma semana da votação marcada para 25 de outubro.",
+  "slug": "lula-e-flavio-bolsonaro-trocam-tapa-na-band",
+  "data": "21 de Outubro de 2026",
+  "timestamp": "2026-10-21T08:08:09.745654",
+  "audio_url": "audio/lula-e-flavio-bolsonaro-trocam-tapa-na-band.mp3"
+}
