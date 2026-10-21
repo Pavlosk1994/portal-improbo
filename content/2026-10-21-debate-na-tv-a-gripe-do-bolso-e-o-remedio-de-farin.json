@@ -1,0 +1,41 @@
+{
+  "titulo": "DEBATE NA TV: A GRIPE DO BOLSO E O REMÉDIO DE FARINHA",
+  "subtitulo": "Edinho Silva e Rogério Marinho trocam carícias televisivas na reta final enquanto o eleitor paga a conta do popcorn gourmet.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "Edinho Silva e Rogério Marinho medindo forças num ringue de sabão em pó sob o olhar atento de Julia Duailibi.",
+  "prompt_caricatura": "Estilo de charge de jornal nanquim e guache. Dois políticos brasileiros de terno amarrotado trocando tortas na cara um do outro em um estúdio de televisão chique, enquanto uma mediadora de braços cruzados assiste entediada. Cores vibrantes, caricatura acentuada, sem textos ou marcas.",
+  "corpo": [
+    "A reta final da eleição presidencial ganhou contornos de programa de auditório raiz, daqueles com direito a torta na cara e cuspe no ventilador. No picadeiro da GloboNews, os coordenadores Edinho Silva, representando o petismo de paletó, e Rogério Marinho, empunhando a bandeira do bolsonarismo de shopping, sentaram-se para trocar amenidades que fariam qualquer agiota de aplicativo corar de vergonha. É o bom e velho teatro das tesouras, onde a única certeza é que o boleto do cidadão continua vencendo rigorosamente no quinto dia útil, chova ou faça sol.",
+    "Do lado vermelho, Edinho veio armado até os dentes com a velha máxima de que herdou um cofre mais vazio que alma de pão-duro, prometendo cavar abismos intransponíveis entre os projetos de país. Já do lado fardado-liberal, Marinho garantiu que a estratégia é lembrar o brasileiro de como era bom viver na base da promessa e da carestia controlada a base de grito. É a disputa para ver quem consegue convencer o Zé Povinho de que o seu remédio para a inflação é o único que não tem gosto de óleo de rícino, embora ambos venham na mesma caixinha de papelão amassado.",
+    "Entre cutucadas sobre tentativa de golpe de Estado, direitos trabalhistas e quem gastou mais o dinheiro do tostão furado do contribuinte, o debate fluiu como aquela conversa de botequim às três da manhã. Todo mundo acusa o colega de mesa de ter afanado o troco da caipirinha, mas na hora de fechar a conta do estabelecimento, a estratégia mágica é sempre a mesma: fingir que foi ao banheiro e deixar o garçom cobrando o pato da vez, que somos todos nós, trabalhadores da iniciativa privada e da fila do SUS.",
+    "Enquanto os estrategistas discutem se o Bolsa Família vai salvar o mundo ou se o gasto público vai implodir o universo, o eleitor assiste a tudo isso com a mesma cara de quem comprou pastel de vento esperando carne moída. No fim das contas, a eleição virou um concurso de quem faz a melhor careta no espelho antes de pedir o voto do povão. Passada a eleição, o vencedor assume o trono, a oposição chora no cantinho e o brasileiro continua fazendo malabarismo com o carnê das Casas Bahia."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promessas de primeiro mundo entregues via motoboy sem GPS."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O cofre público está sempre vazio para o povo e entupido para os amigos do rei."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte milenar de transformar déficit em superávit de ilusões."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "Única entidade que governa o Brasil de fato, faça chuva ou faça sol."
+    }
+  ],
+  "contexto_real": "Em 19 de outubro de 2026, o GloboNews Debate reuniu Edinho Silva, coordenador da campanha de Lula (PT), e Rogério Marinho, coordenador da campanha de Flávio Bolsonaro (PL), para discutir estratégias na reta final das eleições presidenciais. Mediado por Julia Duailibi, o programa foi marcado por trocas de críticas sobre economia, gastos públicos, Bolsa Família, segurança e direitos trabalhistas.",
+  "slug": "debate-na-tv-a-gripe-do-bolso-e-o-remedio-de-farin",
+  "data": "21 de Outubro de 2026",
+  "imagem_capa": "imagens/debate-na-tv-a-gripe-do-bolso-e-o-remedio-de-farin.jpg",
+  "credito_imagem": "Arte: Capa Editorial Exclusiva / Ímprobo",
+  "timestamp": "2026-10-21T13:47:33.947552",
+  "audio_url": "audio/debate-na-tv-a-gripe-do-bolso-e-o-remedio-de-farin.mp3"
+}
