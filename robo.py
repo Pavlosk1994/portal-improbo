@@ -345,6 +345,29 @@ def selecionar_charge_editorial_fallback(titulo, resumo=""):
         "Charge Editorial: O Grande Circo de Brasília e a Ópera Bufa do Poder"
     )
 
+def descobrir_modelo_disponivel(api_key):
+    """Consulta dinamicamente os modelos disponíveis para esta chave de API"""
+    try:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
+        req = urllib.request.Request(url, headers={'Content-Type': 'application/json'})
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            modelos_validos = []
+            for m in data.get("models", []):
+                metodos = m.get("supportedGenerationMethods", [])
+                if "generateContent" in metodos:
+                    nome = m["name"].replace("models/", "")
+                    modelos_validos.append(nome)
+            print(f"[*] Modelos disponíveis para esta chave na API Google: {modelos_validos[:8]}")
+            return modelos_validos
+    except urllib.error.HTTPError as e:
+        err = e.read().decode('utf-8', errors='ignore')
+        print(f"[!] Falha ao listar modelos ({e.code}): {err[:150]}")
+        return []
+    except Exception as e:
+        print(f"[!] Erro ao listar modelos: {e}")
+        return []
+
 def redigir_cronica_gemini(noticia, api_key):
     """
     Chama a API REST do Gemini para gerar a crônica satírica com estrito
@@ -395,14 +418,20 @@ Sua missão:
 
 Gere a crônica satírica completa no formato JSON exigido, com rigor factual, tom de pasquim raiz e título curto em caixa alta."""
 
-    modelos = [
-        ("gemini-1.5-flash", "v1beta"),
-        ("gemini-1.5-flash", "v1"),
-        ("gemini-1.5-pro", "v1beta"),
-        ("gemini-1.5-pro", "v1"),
-        ("gemini-2.0-flash-exp", "v1beta"),
-        ("gemini-2.0-flash", "v1beta")
-    ]
+    modelos_api = descobrir_modelo_disponivel(api_key)
+    if modelos_api:
+        flash_models = [m for m in modelos_api if "flash" in m.lower()]
+        pro_models = [m for m in modelos_api if "pro" in m.lower() and "flash" not in m.lower()]
+        outros = [m for m in modelos_api if m not in flash_models and m not in pro_models]
+        modelos = flash_models + pro_models + outros
+    else:
+        modelos = [
+            "gemini-1.5-flash",
+            "gemini-1.5-flash-latest",
+            "gemini-1.5-pro",
+            "gemini-2.0-flash-exp",
+            "gemini-2.0-flash"
+        ]
 
     payload = {
         "contents": [
@@ -416,39 +445,40 @@ Gere a crônica satírica completa no formato JSON exigido, com rigor factual, t
         }
     }
 
-    for modelo, api_version in modelos:
-        url_api = f"https://generativelanguage.googleapis.com/{api_version}/models/{modelo}:generateContent?key={api_key}"
-        req = urllib.request.Request(
-            url_api,
-            data=json.dumps(payload).encode('utf-8'),
-            headers={'Content-Type': 'application/json'},
-            method='POST'
-        )
+    for modelo in modelos:
+        for api_version in ("v1beta", "v1"):
+            url_api = f"https://generativelanguage.googleapis.com/{api_version}/models/{modelo}:generateContent?key={api_key}"
+            req = urllib.request.Request(
+                url_api,
+                data=json.dumps(payload).encode('utf-8'),
+                headers={'Content-Type': 'application/json'},
+                method='POST'
+            )
 
-        try:
-            print(f"[*] Tentando geração com {modelo} ({api_version})...")
-            with urllib.request.urlopen(req, timeout=35) as resp:
-                data = json.loads(resp.read().decode('utf-8'))
-                texto_resposta = data['candidates'][0]['content']['parts'][0]['text']
-                texto_limpo = re.sub(r'^```json\s*', '', texto_resposta.strip())
-                texto_limpo = re.sub(r'\s*```$', '', texto_limpo)
-                parsed = json.loads(texto_limpo)
-                
-                # Validação estrita de tamanho do título
-                if parsed.get("titulo"):
-                    parsed["titulo"] = parsed["titulo"].strip().upper()
-                    if len(parsed["titulo"]) > 65:
-                        parsed["titulo"] = parsed["titulo"][:62] + "..."
-                        
-                print(f"[✓] Crônica satírica redigida com sucesso via {modelo} ({api_version})!")
-                return parsed
-        except urllib.error.HTTPError as e:
-            err_b = e.read().decode('utf-8', errors='ignore')
-            print(f"[!] {modelo} ({api_version}) indisponível ({e.code}): {err_b[:120]}. Tentando próximo...")
-            continue
-        except Exception as e:
-            print(f"[!] Erro no modelo {modelo} ({api_version}): {e}. Tentando próximo...")
-            continue
+            try:
+                print(f"[*] Tentando geração com {modelo} ({api_version})...")
+                with urllib.request.urlopen(req, timeout=35) as resp:
+                    data = json.loads(resp.read().decode('utf-8'))
+                    texto_resposta = data['candidates'][0]['content']['parts'][0]['text']
+                    texto_limpo = re.sub(r'^```json\s*', '', texto_resposta.strip())
+                    texto_limpo = re.sub(r'\s*```$', '', texto_limpo)
+                    parsed = json.loads(texto_limpo)
+                    
+                    # Validação estrita de tamanho do título
+                    if parsed.get("titulo"):
+                        parsed["titulo"] = parsed["titulo"].strip().upper()
+                        if len(parsed["titulo"]) > 65:
+                            parsed["titulo"] = parsed["titulo"][:62] + "..."
+                            
+                    print(f"[✓] Crônica satírica redigida com sucesso via {modelo} ({api_version})!")
+                    return parsed
+            except urllib.error.HTTPError as e:
+                err_b = e.read().decode('utf-8', errors='ignore')
+                print(f"[!] {modelo} ({api_version}) indisponível ({e.code}): {err_b[:120]}. Tentando próximo...")
+                continue
+            except Exception as e:
+                print(f"[!] Erro no modelo {modelo} ({api_version}): {e}. Tentando próximo...")
+                continue
 
     print("[!] Todos os modelos Gemini retornaram erro. Verifique a GEMINI_API_KEY no GitHub Secrets.")
     return None
