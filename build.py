@@ -458,6 +458,22 @@ COMMON_SCRIPTS = """
     <script>
         // Micro-interações de rolagem suave (Intersection Observer)
         document.addEventListener('DOMContentLoaded', () => {
+            // Atualização Dinâmica da Data de Hoje no Topo
+            const headerDateEl = document.getElementById('live-header-date');
+            if (headerDateEl) {
+                try {
+                    const agora = new Date();
+                    const formatador = new Intl.DateTimeFormat('pt-BR', {
+                        weekday: 'long',
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+                    const partes = formatador.format(agora);
+                    headerDateEl.textContent = partes.charAt(0).toUpperCase() + partes.slice(1);
+                } catch (e) {}
+            }
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -660,9 +676,22 @@ def load_articles():
     articles.sort(key=lambda a: (a.get("timestamp") or a.get("data_iso") or a.get("_mtime", 0)), reverse=True)
     return articles
 
+def obter_data_formatada_pt():
+    """Gera a data de hoje formatada em português brasileiro (ex: Quarta-feira, 21 de Outubro de 2026)"""
+    agora = datetime.now()
+    dias_semana = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
+    meses_ano = [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ]
+    dia_nome = dias_semana[agora.weekday()]
+    mes_nome = meses_ano[agora.month - 1]
+    return f"{dia_nome}, {agora.day} de {mes_nome} de {agora.year}"
+
 def render_header(is_article=False):
     back_link = '<a href="../index.html" class="neo-link inline-flex items-center text-xs font-mono uppercase tracking-wider text-[#8B0000] font-bold">&larr; Voltar à Capa</a>' if is_article else '<span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>'
     home_link = "../index.html" if is_article else "index.html"
+    data_hoje = obter_data_formatada_pt()
     
     return f"""
     <!-- Top Metadata Bar NYT Style -->
@@ -672,7 +701,7 @@ def render_header(is_article=False):
             <span class="text-[#D1CEC7]">&bull;</span>
             <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
             <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
-            <span class="text-stone-600">Quinta-feira, 15 de Outubro de 2026</span>
+            <span id="live-header-date" class="text-stone-600">{data_hoje}</span>
         </div>
         <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
             {back_link}
