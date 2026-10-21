@@ -1,0 +1,41 @@
+{
+  "titulo": "BONDADE DE TAUBATÉ: O AMOR CÍVICO DO BOLETO",
+  "subtitulo": "Sessenta por cento dos brasileiros sacaram que a generosidade do governo vem com o selo 'pague em 2026'.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "O Papai Noel de terno distribuindo promessas na fila do Instituto Nacional do Seguro Ansiedade.",
+  "prompt_caricatura": "Estilo charge de pasquim com nanquim e aquarela. Um político sorridente com faixa presidencial distribui notas de dinheiro falso de um saco escrito 'Pacote Bondade' enquanto olha disfarçadamente para o calendário de 2026. Ao fundo, eleitores na fila do ônibus observam com cara de tédio segurando contas vencidas.",
+  "corpo": [
+    "Há quem acredite em duende, em papagaio que fala latim e em político que rasga o próprio bolso por puro amor à humanidade. Mas o brasileiro, esse bicho calejado que toma café requentado e sobrevive ao carnê das Casas Bahia, já conhece o cheiro de bondade requentada de perto. Quando o governo resolve abrir o cofre e soltar um pacotão de benesses justamente na bacia das almas eleitoral, até o periquito da praça sabe que o Papai Noel de Brasília tá querendo garantir é o emprego dele, e não o seu frango de domingo.",
+    "Segundo o instituto Quaest, que não é de ser profeta mas costuma acertar a feira, sessenta por cento da patuleia olhou para as medidas recentes do Planalto e deu de ombros com um sorriso amarelo: é puro oportunismo eleitoral, meu caro. É a velha história do agiota que te empresta o guarda-chuva no dia de sol e cobra o aluguel na primeira chuva forte. O governante jura que é altruísmo puro, que acordou chorando de dó do pobre trabalhador, mas a única coisa que chora mesmo é o orçamento público sangrando para virar palanque ambulante.",
+    "Do outro lado do balcão, a oposição assiste a tudo babando de inveja e rezando para o povo continuar com a memória curta de peixe betta. Afinal, criticar a boiada comendo grama alheia é moleza, o difícil é explicar para o eleitor o que eles mesmos fariam se estivessem sentados na cadeira estofada do poder — spoiler: exatamente a mesma coisa, mas com outro jingle na propaganda de TV. É um revezamento eterno de salvadores da pátria que entram salvando o país e saem salvos pelo foro privilegiado.",
+    "No fim das contas, a fatura dessa festa com o chapéu dos outros chega sempre no mesmo endereço: na sua mesa, junto com a conta de luz superfaturada e o extrato do cartão de crédito estourado. Enquanto o marqueteiro calcula os votos e o político ensaia a lágrima de crocodilo no espelho, o povão segue fazendo malabarismo financeiro para pagar o quilo do tomate. É o famoso teatro das sombras, onde o povo aplaude de pé, paga o ingresso caríssimo e ainda sai achando que ganhou brinde."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Amor ao povo que coincide milagrosamente com a abertura das urnas eletrônicas."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Cabeleira pintada, terno alinhado e um caminhão de promessas que derrete na primeira garoa."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte milenar de tirar dinheiro de onde não tem para botar onde dá voto."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A única certeza na vida, além da morte e da mordida do leão na sua folha de pagamento."
+    }
+  ],
+  "contexto_real": "Pesquisa Quaest divulgada em outubro de 2026 mostrou que 60% dos brasileiros que tomaram conhecimento das medidas recentes do governo Lula consideram as iniciativas com motivação eleitoral para ajudar na reeleição, enquanto 32% as veem como necessárias independentemente do calendário.",
+  "slug": "bondade-de-taubate-o-amor-civico-do-boleto",
+  "data": "21 de Outubro de 2026",
+  "imagem_capa": "imagens/bondade-de-taubate-o-amor-civico-do-boleto.jpg",
+  "credito_imagem": "Arte: Capa Editorial Exclusiva / Ímprobo",
+  "timestamp": "2026-10-21T23:15:57.129904",
+  "audio_url": "audio/bondade-de-taubate-o-amor-civico-do-boleto.mp3"
+}
