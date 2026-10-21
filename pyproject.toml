@@ -1,0 +1,8 @@
+[tool.vercel]
+entrypoint = "app.py"
+
+[project]
+name = "portal-improbo"
+version = "1.0.0"
+description = "Portal de Crônica Satírica e Política ÍMPROBO"
+requires-python = ">=3.10"
