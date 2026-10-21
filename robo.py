@@ -289,61 +289,87 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
     score_final = score_base + bonus_recencia
     return round(score_final, 2)
 
-def selecionar_charge_editorial_fallback(titulo, resumo=""):
+def gerar_arte_editorial_exclusiva(dados_artigo):
     """
-    Seleciona a melhor charge editorial clássica do acervo do ÍMPROBO
-    com base nas palavras-chave temáticas da matéria.
-    GARANTIA PROMPT_MESTRE: 100% charges/caricaturas satíricas, ZERO fotos reais.
+    Garante que cada matéria tenha uma imagem 100% EXCLUSIVA e fiel ao seu teor.
+    REGRA ABSOLUTA: ZERO reaproveitamento de imagens de outras notícias.
+    Se não houver caricatura local prévia em imagens/{slug}.jpg, gera uma capa
+    editorial gráfica satírica exclusiva em alta resolução para este artigo.
     """
-    texto = f"{titulo} {resumo}".lower()
-    
-    # 1. Flávio Bolsonaro / 6x1 / Trabalho
-    if any(k in texto for k in ["6x1", "escala", "trabalhador", "clt", "jornada"]):
-        return (
-            "imagens/flavio-bolsonaro-escala-6x1.jpg",
-            "Charge Editorial: A Fadiga Parlamentar e o Dilema da Escala 6x1"
-        )
-    # 2. Flávio Bolsonaro / Praias / Terrenos de Marinha
-    if any(k in texto for k in ["flávio", "flavio", "praia", "praias", "marinha", "privatização"]):
-        return (
-            "imagens/flavio-bolsonaro-pec-privatizacao-praias.jpg",
-            "Charge Editorial: A Catraca do Poder na Praia do Erário"
-        )
-    # 3. Lula / Planalto / Centrão / Ministérios / Alianças
-    if any(k in texto for k in ["lula", "planalto", "centrão", "centrao", "ministro", "governo"]):
-        return (
-            "imagens/lula-malabarismo-planalto-centrao.jpg",
-            "Charge Editorial: O Picadeiro de Brasília e a Arte do Malabarismo Político"
-        )
-    # 4. Bets / Tigrinho / Cassino / Fazenda / Arrecadação / Economia
-    if any(k in texto for k in ["bet", "bets", "tigrinho", "aposta", "apostas", "cassino", "haddad", "imposto", "arrecadação"]):
-        return (
-            "imagens/bolsa-familia-bets-jogo-do-tigrinho.jpg",
-            "Charge Editorial: O Tigrinho do Erário e a Farra da Fé Pública"
-        )
-    # 5. Apagão / Enel / Energia / Conta de Luz / São Paulo
-    if any(k in texto for k in ["apagão", "apagao", "enel", "energia", "luz", "são paulo", "sao paulo", "tarcísio"]):
-        return (
-            "imagens/sao-paulo-apagao-enel-guerra-da-vela.jpg",
-            "Charge Editorial: A Escuridão Oficial e a Tragicomédia da Enel"
-        )
-    # 6. STF / Supremo / Pacheco / Judiciário / Moraes / Vaga
-    if any(k in texto for k in ["stf", "supremo", "pacheco", "moraes", "tribunal", "ministro da corte", "toga"]):
-        return (
-            "imagens/articulacao-no-congresso-e-stf-avanca-para-indicar.jpg",
-            "Charge Editorial: A Dança das Cadeiras e o Besouro na Toga"
-        )
-    # 7. Congresso / Câmara / Senado / Anistia / Emendas / Fundão
-    if any(k in texto for k in ["congresso", "senado", "câmara", "camara", "anistia", "emenda", "emendas", "partido", "fundão", "fundo eleitoral", "dívida"]):
-        return (
-            "imagens/congresso-anistia-partidos-dividas-fundo-eleitoral.jpg",
-            "Charge Editorial: O Auto-Perdão e o Banquete das Emendas"
-        )
-    # 8. Coringa Universal: Circo de Brasília
-    return (
-        "imagens/circo-de-brasilia.jpg",
-        "Charge Editorial: O Grande Circo de Brasília e a Ópera Bufa do Poder"
-    )
+    slug = dados_artigo.get("slug")
+    if not slug:
+        return False
+
+    os.makedirs(IMAGENS_DIR, exist_ok=True)
+    caminho_final = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
+
+    # Se já existir uma arte exclusiva exatamente para este slug, mantém
+    if os.path.exists(caminho_final):
+        dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+        dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+        return True
+
+    try:
+        from PIL import Image, ImageDraw
+        width, height = 1200, 675
+        # Papel Creme Nobre / Estética Editorial NYT
+        img = Image.new("RGB", (width, height), color=(244, 241, 234))
+        draw = ImageDraw.Draw(img)
+
+        # Moldura Dupla Clássica de Imprensa
+        draw.rectangle([(16, 16), (width - 16, height - 16)], outline=(18, 18, 18), width=3)
+        draw.rectangle([(24, 24), (width - 24, height - 24)], outline=(139, 0, 0), width=2)
+        draw.rectangle([(30, 30), (width - 30, height - 30)], outline=(18, 18, 18), width=1)
+
+        # Cabeçalho da Gazeta Satírica
+        draw.rectangle([(38, 38), (width - 38, 102)], fill=(18, 18, 18))
+        draw.text((width // 2, 70), "ÍMPROBO  ★  EDIÇÃO EXTRAORDINÁRIA  ★  SÁTIRA POLÍTICA", fill=(244, 241, 234), anchor="mm")
+
+        # Categoria
+        cat = dados_artigo.get("categoria", "COMÉDIA DE COSTUMES").upper()
+        draw.text((width // 2, 140), f"◆ {cat} ◆", fill=(139, 0, 0), anchor="mm")
+
+        # Título principal em caixa alta, direto ao ponto
+        titulo = dados_artigo.get("titulo", "").upper()
+        palavras = titulo.split()
+        linhas = []
+        linha_atual = []
+        for p in palavras:
+            linha_atual.append(p)
+            if len(" ".join(linha_atual)) > 30:
+                linhas.append(" ".join(linha_atual))
+                linha_atual = []
+        if linha_atual:
+            linhas.append(" ".join(linha_atual))
+
+        y_text = 240
+        for l in linhas[:3]:
+            draw.text((width // 2, y_text), l, fill=(18, 18, 18), anchor="mm")
+            y_text += 65
+
+        # Linha divisória ornamental
+        draw.line([(width // 4, y_text + 15), (3 * width // 4, y_text + 15)], fill=(139, 0, 0), width=3)
+
+        # Subtítulo cômico
+        subtitulo = dados_artigo.get("subtitulo", "")
+        if len(subtitulo) > 115:
+            subtitulo = subtitulo[:112] + "..."
+        draw.text((width // 2, y_text + 65), subtitulo, fill=(60, 60, 60), anchor="mm")
+
+        # Tarja de Rodapé Exclusiva desta Notícia
+        draw.rectangle([(38, height - 88), (width - 38, height - 38)], fill=(235, 231, 222), outline=(18, 18, 18), width=1)
+        draw.text((width // 2, height - 63), f"ARTE EXCLUSIVA: SÁTIRA OFICIAL ÍMPROBO", fill=(139, 0, 0), anchor="mm")
+
+        img.save(caminho_final, "JPEG", quality=92)
+        print(f"[✓] Arte editorial exclusiva gerada para esta notícia: {caminho_final}")
+        dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+        dados_artigo["credito_imagem"] = "Arte: Capa Editorial Exclusiva / Ímprobo"
+        if not dados_artigo.get("legenda_imagem"):
+            dados_artigo["legenda_imagem"] = f"Charge editorial exclusiva: {dados_artigo.get('titulo')}"
+        return True
+    except Exception as e:
+        print(f"[!] Erro ao desenhar arte editorial exclusiva: {e}")
+        return False
 
 def descobrir_modelo_disponivel(api_key):
     """Consulta dinamicamente os modelos disponíveis para esta chave de API"""
@@ -378,34 +404,38 @@ def redigir_cronica_gemini(noticia, api_key):
     if len(resumo_sanitizado) > 800:
         resumo_sanitizado = resumo_sanitizado[:800] + "..."
 
-    instrucao_sistema = """Você é o Redator-Chefe e Cronista Ácido de **ÍMPROBO**, portal brasileiro de jornalismo satírico, crônica política e comédia de costumes.
+    instrucao_sistema = """Você é o Redator-Chefe e Humorista Escrachado de **ÍMPROBO**, portal brasileiro de jornalismo satírico, zoeira política e comédia de costumes.
 Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar fatos ou pessoas inexistentes).
-2. Acidez Máxima e Humor de Pasquim Raiz: Cínico, visceral, analítico e irônico no estilo O Pasquim, Stanislaw Ponte Preta e Millôr Fernandes. Use metáforas populares ácidas (o agiota de calçada, o garçom do rodízio, o malandro na missa). Desmonte a pose e a liturgia dos poderosos.
-3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (máximo 60 caracteres), em CAIXA ALTA, contendo uma piada, contradição sarcástica ou frase de impacto imediata (ex: 'SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE'). Proibido títulos longos ou descritivos de jornal padrão.
-4. Regra da Caricatura Editorial IA no Estilo Clássico (Anos 70/80): Crie uma descrição visual detalhada da cena para gerar uma charge editorial satírica em nanquim expressivo e guache aquarelado. Cena cômica e escrachada retratando os personagens na situação absurda descrita na notícia. Proibido textos ou logotipos.
-5. Sem Viés Partidário: O alvo é sempre o poder instituído, a burocracia estatal, a incoerência política e o teatro das elites.
+2. MORTE À ENROLAÇÃO (FRASES CURTAS E CORTANTES):
+   - PROIBIDO enrolar, encher linguiça ou usar frases longas de 5 linhas.
+   - Escreva com FRASES CURTAS, SECAS E DIRETAS (máximo 12 a 15 palavras por frase).
+   - O ritmo deve ser rápido e afiado: o leitor bate o olho, entende a piada na hora, dá risada e absorve a informação sem precisar de mapa.
+   - Use linguagem popular de boteco, conversa de calçada e comédia escrachada (estilo Sensacionalista, deboche popular da quebrada). Use metáforas populares do dia a dia (o pastel de vento, a carne de segunda, o carnê atrasado, o agiota de aplicativo, o tio do Zap).
+3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (máximo 60 caracteres), em CAIXA ALTA, contendo uma piada ou contradição sarcástica escancarada e imediata (ex: 'DIREITA FAZ O L, ESQUERDA BOTA A ALGEMINHA').
+4. Regra da Imagem Exclusiva e Fiel: Crie um prompt visual satírico 100% FIEL e estritamente focado no contexto, personagens e na piada exata DA NOTÍCIA ATUAL que está sendo publicada. Proibido misturar assuntos ou reaproveitar ideias de outras notícias.
+5. Sem Viés Partidário: O alvo é sempre quem está no poder, a hipocrisia das eleições, o teatro partidário e a conta paga pelo trabalhador.
 6. Estrutura de Retorno: Responda APENAS com um objeto JSON válido (sem delimitadores markdown extras):
 {
   "titulo": "MANCHETE CURTA E ÁCIDA EM CAIXA ALTA (MÁX 60 CARACTERES)",
-  "subtitulo": "Subtítulo cínico e explicativo detalhando a contradição da situação",
+  "subtitulo": "Duas linhas curtas, cínicas e escrachadas entregando o absurdo",
   "categoria": "Comédia de Costumes",
-  "tempo_leitura": "3 min de leitura",
+  "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
   "legenda_imagem": "Legenda editorial satírica para a charge",
-  "prompt_caricatura": "Descrição visual cômica e detalhada da charge satírica (personagens, cenário absurdo, nanquim e guache vibrante)",
+  "prompt_caricatura": "Descrição visual cômica e detalhada da charge satírica retratando fielmente a piada da matéria atual (nanquim e guache, sem textos ou marcas)",
   "corpo": [
-    "Primeiro parágrafo fluido com metáfora de botequim introduzindo a hipocrisia...",
-    "Segundo parágrafo desconstruindo a pose solene da autoridade...",
-    "Terceiro parágrafo ironizando a conveniência eleitoral ou a partilha do erário...",
-    "Quarto parágrafo fechando com sabedoria popular ácida sobre a fatura paga pelo povo."
+    "Primeiro parágrafo com frases curtas e secas abrindo a zoeira e expondo o ridículo da situação...",
+    "Segundo parágrafo desossando a cara de pau do primeiro envolvido com piada popular direta...",
+    "Terceiro parágrafo mostrando a contradição do outro lado sem dó nem piedade...",
+    "Quarto parágrafo fechando com voadora cômica sobre como a conta dessa palhaçada cai no colo do trabalhador."
   ],
   "milagres": [
-    {"titulo": "A Velocidade do Intere$$e", "texto": "Explicação irônica sobre a pressa dos bastidores."},
-    {"titulo": "A Liturgia da Cara de Pau", "texto": "Explicação irônica sobre a pose oficial."},
-    {"titulo": "O Sacrifício do Contribuinte", "texto": "Explicação irônica sobre quem paga a conta."},
-    {"titulo": "A Aliança da Sobrevivência", "texto": "Explicação irônica sobre o teatro partidário."}
+    {"titulo": "Piada Curta 1", "texto": "Uma ou duas linhas diretas e ácidas como limão no olho."},
+    {"titulo": "Piada Curta 2", "texto": "Uma ou duas linhas diretas e ácidas como limão no olho."},
+    {"titulo": "Piada Curta 3", "texto": "Uma ou duas linhas diretas e ácidas como limão no olho."},
+    {"titulo": "Piada Curta 4", "texto": "Uma ou duas linhas diretas e ácidas como limão no olho."}
   ],
   "contexto_real": "Parágrafo factual sóbrio e transparente explicando os fatos crus e exatos da notícia que motivaram a sátira."
 }"""
@@ -485,9 +515,9 @@ Gere a crônica satírica completa no formato JSON exigido, com rigor factual, t
 
 def criar_artigo_demo(noticia):
     """
-    Gera uma crônica satírica ácida de alto calibre no estilo Pasquim e O Pasquim,
+    Gera uma crônica satírica ácida de alto calibre no estilo escrachado, direto e zueiro,
     caso a API de IA não esteja acessível ou esteja em modo laboratório.
-    Garante texto curto, bem humorado, sem despejo bruto de transcrições.
+    Garante frases curtas, ritmo rápido e arte 100% exclusiva vinculada à notícia.
     """
     slug = slugify(noticia["titulo"])
     hoje = datetime.now().strftime("%d de %B de %Y").replace("October", "Outubro").replace("November", "Novembro")
@@ -507,46 +537,43 @@ def criar_artigo_demo(noticia):
     if len(noticia.get("resumo", "")) > 280:
         resumo_curto += "..."
 
-    charge_path, charge_legenda = selecionar_charge_editorial_fallback(noticia["titulo"], resumo_curto)
-
-    return {
+    dados = {
         "slug": slug,
         "data": hoje,
         "categoria": "Comédia de Costumes",
-        "tempo_leitura": "3 min de leitura",
+        "tempo_leitura": "2 min de leitura",
         "titulo": titulo_curto,
-        "subtitulo": "Com a solenidade de quem rouba no jogo de purrinha jurando inocência de mão no peito, Brasília encena mais um capítulo da sua secular ópera bufa.",
+        "subtitulo": "Com a cara de pau de quem rouba no truco jurando inocência, Brasília encena mais um capítulo do teatro oficial.",
         "autor": "Redação Ácida",
         "destaque": True,
-        "imagem_capa": charge_path,
-        "legenda_imagem": charge_legenda,
-        "credito_imagem": "Arte: Acervo Editorial Ímprobo / Charge Política",
         "corpo": [
-            f"Se a hipocrisia pagasse imposto de renda retido na fonte, os cofres da República estariam com superávit primário suficiente para calçar a Esplanada dos Ministérios com mármore de Carrara. A última pérola do anedotário oficial dá conta de que '{noticia['titulo']}'. Nos bastidores refrigerados do poder, a notícia circulou com a naturalidade de um garçom empurrando rodízio vencido em cliente distraído.",
-            f"Segundo apurou o {noticia['fonte']}, {resumo_curto}. No entanto, quando decodificamos a fala polida das excelências para o dialeto do boteco da esquina, a tradução é cristalina: enquanto os donos da caneta desfilam de terno importado e discursam com a gravidade de um padre de interior, o cidadão comum calcula se o salário ainda dá para pagar o gás e a fatura da luz sem precisar recorrer a agiota de aplicativo.",
-            "A beleza quase poética da malandragem institucional brasileira reside na liturgia da cara de pau. Quando o interesse aperta, adversários mortais que se xingavam de ladrão e fascista na véspera descobrem uma súbita comunhão espiritual diante do rateio das emendas e da partilha dos gabinetes. É a fraternidade do carimbo: ninguém larga a mão do privilégio alheio.",
-            "Resta ao bravo contribuinte, estupefato na catraca do ônibus lotado, rir para não chorar. Pois em Brasília, governos sobem, ministros caem, siglas mudam de fantasia, mas a certeza permanece inabalável: a orquestra estatal segue tocando desafinada, e quem paga o couvert artístico mais caro do planeta é sempre o mesmo otário de carteira assinada."
+            f"Brasília não tem vergonha na cara. Tem assessoria de imprensa. A última do anedotário oficial: '{noticia['titulo']}'. No boteco do poder, a notícia desceu suave igual cachaça com torresmo.",
+            f"Segundo o {noticia['fonte']}, {resumo_curto}. Traduzindo pro dialeto da calçada: o governo finge que trabalha, a oposição finge que fiscaliza e o povo finge que aguenta. Tudo ensaiado, sem erro de roteiro.",
+            "A beleza da malandragem em Brasília é o ritmo da farsa. Quando aperta o calo eleitoral, inimigo de morte vira compadre de infância. Dão as mãos no plenário pra aprovar emenda secreta e fundão milionário. Ninguém solta o privilégio de ninguém.",
+            "Resta ao cidadão esmagado no ônibus rir pra não surtar. Eles prometem picanha na campanha e entregam boleto com juros no dia seguinte. O circo pega fogo e quem paga o pato é sempre você, de carteira assinada."
         ],
         "milagres": [
             {
-                "titulo": "A Velocidade da Urgência",
-                "texto": "Projetos engavetados há duas décadas ganham tramitação em regime de 'urgência urgentíssima' assim que ameaçam o bolso da patota ou a conveniência eleitoral da semana."
+                "titulo": "A Velocidade da Boquinha",
+                "texto": "Aumento de verba própria passa em cinco minutos. Projeto de saúde do povo dorme vinte anos na gaveta."
             },
             {
                 "titulo": "O Sacrifício dos Outros",
-                "texto": "A solene proclamação de que 'o país precisa apertar os cintos' — desde que o cinto seja o do trabalhador e o suspensório da elite burocrática permaneça com folga de alfaiate."
+                "texto": "O governo manda o trabalhador apertar o cinto enquanto compra camarão e lagosta com o erário."
             },
             {
-                "titulo": "A Aliança da Sobrevivência",
-                "texto": "O comovente espetáculo em que esquerda, direita e o insaciável Centrão dão as mãos no plenário para aprovar qualquer emenda que blinde o fundão partidário."
+                "titulo": "A Amizade do Fundão",
+                "texto": "Briga de foice no microfone da TV, abraço fraterno e divisão de verba nos bastidores."
             },
             {
-                "titulo": "A Liturgia do Cinismo",
-                "texto": "A arte de olhar nos olhos da câmera com semblante compungido e jurar que o loteamento de cargos foi um 'gesto cívico em defesa da estabilidade republicana'."
+                "titulo": "A Fatura do Otário",
+                "texto": "Eles fazem o show, garantem a mamata vitalícia e o desconto vem pontual no seu contracheque."
             }
         ],
-        "contexto_real": f"O Contexto Factual: {resumo_curto} Noticiado originalmente por {noticia['fonte']} com base nos desdobramentos oficiais apurados na capital federal."
+        "contexto_real": f"O Contexto Factual: {resumo_curto} Noticiado originalmente por {noticia['fonte']} com base nos desdobramentos apurados na capital federal."
     }
+    gerar_arte_editorial_exclusiva(dados)
+    return dados
 
 def gerar_caricatura_ia(dados_artigo, api_key):
     """
@@ -792,15 +819,8 @@ def executar_rodada(modo_demo=False):
             dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
             dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
         else:
-            print("[*] Aplicando charge satírica clássica do acervo editorial do Ímprobo com afinidade temática...")
-            charge_path, charge_legenda = selecionar_charge_editorial_fallback(
-                dados_artigo.get("titulo", melhor_noticia["titulo"]),
-                dados_artigo.get("subtitulo", melhor_noticia.get("resumo", ""))
-            )
-            dados_artigo["imagem_capa"] = charge_path
-            dados_artigo["credito_imagem"] = "Arte: Acervo Editorial Ímprobo / Charge Política"
-            if not dados_artigo.get("legenda_imagem"):
-                dados_artigo["legenda_imagem"] = charge_legenda
+            print("[*] Gerando arte editorial 100% exclusiva e fiel à matéria atual (zero reaproveitamento cruzado)...")
+            gerar_arte_editorial_exclusiva(dados_artigo)
 
     # 5. Salvamento e Compilação
     salvar_artigo_no_site(dados_artigo, melhor_noticia["link"])

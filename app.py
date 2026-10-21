@@ -73,3 +73,4 @@ if __name__ == '__main__':
     print(f"Servidor Ímprobo ativo em http://localhost:{port}")
     httpd = make_server('', port, app)
     httpd.serve_forever()
+
