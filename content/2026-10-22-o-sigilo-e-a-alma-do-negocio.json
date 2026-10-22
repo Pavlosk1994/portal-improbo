@@ -1,0 +1,41 @@
+{
+  "titulo": "O SIGILO É A ALMA DO NEGÓCIO...",
+  "subtitulo": "Alckmin cobra transparência alheia enquanto o cofre nacional continua trancado a sete chaves.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "Geraldo Alckmin com um estetoscópio tentando ouvir os segredos bancários de Flávio Bolsonaro na Santa Casa de São Carlos.",
+  "prompt_caricatura": "Charge política em estilo nanquim e aquarela mostrando o vice-presidente Geraldo Alckmin de avental de médico, com um estetoscópio gigante encostado no bolso cheio de cadeados do paletó de Flávio Bolsonaro, que foge correndo com uma caixa registradora embaixo do braço. Sem textos na imagem.",
+  "corpo": [
+    "A República dos Pássaros Pretos e das Contas Ocultas ganhou mais um capítulo digno de novela mexicana rodada em repartição pública. Pelas bandas de São Carlos, o nosso eterno picolé de chuchu, o vice-presidente Geraldo Alckmin, resolveu vestir o avental de paladino da transparência alheia para diagnosticar o oponente. Segundo o Doutor Geraldo, o senador Flávio Bolsonaro apresentou mais exigências que cliente caloteiro na hora de abrir o carnê da prestação de contas, recusando-se a escancarar os sigilos bancário, fiscal e telefônico. É aquela velha história: o cidadão adora que o raio caia na horta do vizinho, desde que a própria plantação de capim continue intocada.",
+    "Ocorre que cobrar transparência do adversário político no Brasil é igual pedir honestidade em mesa de poker jogada na calçada: todo mundo sabe que a carta debaixo da manga é o artigo de primeira necessidade. Alckmin, com aquela serenidade de quem já viu passar por cima de si mais orçamentos secretos do que padre na quermesse, repetiu o mantra governista de que quem não deve não teme. Uma gracinha retórica que funcionaria muito bem se a gente estivesse em Copenhague, e não na terra onde o extrato bancário do poder público parece segredo de Estado guardado pelo Vaticano.",
+    "Do outro lado do ringue, o Zero Quatro da família real dos pampas e afins prefere manter a contabilidade mais trancada que cofre de agiota de aplicativo. Afinal, abrir sigilo no Brasil de hoje é o equivalente a convidar o leão da Receita Federal para tomar um café da manhã reforçado com pão com mortadela na sua casa: raramente termina bem para o contribuinte. As exigências colocadas na mesa para aceitar o debate funcionam como aquela cláusula miúda de contrato de operadora de celular que ninguém lê, mas que garante que você vai sair perdendo no final do mês.",
+    "Enquanto essa dupla de comedyantes da alta roda troca acusação de quem tem mais telhado de vidro, o pobre do eleitor assiste ao espetáculo com a cara de quem comprou pastel de vento na feira e descobriu que o recheio era só vapor. No fim das contas, a liturgia do cargo serve apenas para garantir que o sigilo deles continue firme e forte, enquanto o boleto do imposto sobre o vento que a gente respira chega implacável no capacho da nossa porta."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Transparência só é bonita quando o extrato é do vizinho."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O debate de ideias que virou disputa de quem esconde mais."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Sigilo bancário virou patrimônio cultural tombado pelo Congresso."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "Enquanto eles trancam os cofres, o trabalhador paga a fatura."
+    }
+  ],
+  "contexto_real": "Durante visita à Santa Casa de São Carlos (SP) nesta quinta-feira (22), o vice-presidente Geraldo Alckmin afirmou que o senador e candidato à Presidência Flávio Bolsonaro apresentou exigências para evitar a abertura de seus sigilos bancário, fiscal e telefônico nos debates eleitorais, reforçando a defesa da transparência feita pelo presidente Lula.",
+  "slug": "o-sigilo-e-a-alma-do-negocio",
+  "data": "22 de Outubro de 2026",
+  "imagem_capa": "imagens/o-sigilo-e-a-alma-do-negocio.jpg",
+  "credito_imagem": "Arte: Capa Editorial Exclusiva / Ímprobo",
+  "timestamp": "2026-10-22T21:31:18.038191",
+  "audio_url": "audio/o-sigilo-e-a-alma-do-negocio.mp3"
+}
