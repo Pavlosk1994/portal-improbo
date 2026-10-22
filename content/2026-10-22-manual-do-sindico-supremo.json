@@ -1,0 +1,41 @@
+{
+  "titulo": "MANUAL DO SÍNDICO SUPREMO",
+  "subtitulo": "Descubra como ganhar bem para mandar em tudo, não resolver nada e ainda culpar a herança maldita",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "O aspirante a síndico nacional olhando fixamente para o carnê de promessas enquanto afaga a faixa presidencial.",
+  "prompt_caricatura": "Estilo nanquim e guache, charge satírica de um político brasileiro de terno amassado segurando um manual gigante escrito 'Como Mandar em Tudo sem Saber Nada', sentado em uma poltrona dourada no Palácio do Planalto, com sacos de dinheiro aos pés e um povo na fila do ônibus olhando pela janela.",
+  "corpo": [
+    "O brasileiro adora um concurso de beleza com crachá de poder, e o cargo de Presidente da República é o topo dessa pirâmide de ilusões. Pela bagatela de quatro anos de mordomia, jatinho à Disposição e café fresco bancado pelo contribuinte, o felizardo ganha o direito de acumular duas funções que ninguém em sã consciência conseguiria gerir nem uma vendinha de pastel na feira: chefe de Estado, para posar com gringo em summit internacional, e chefe de Governo, para explicar por que a carne de segunda virou artigo de luxo enquanto o congresso cobra pedágio para votar até bom dia.",
+    "Para ocupar essa cadeira que esquenta mais que frigideira de acarajé, o manual exige apenas que o cidadão tenha mais de 35 anos e muita cara de pau. Afinal, a promessa de campanha sempre promete o paraíso na terra com direito a picanha e loft na beira da praia, mas a realidade logo cobra o carnê atrasado da inflação. O presidente nomeia ministro como quem escala peladeiro de condomínio: entra amigo, sai compadre, e se der escândalo, a culpa é da oposição, do clima ou do alinhamento dos planetas.",
+    "Enquanto a liturgia do cargo exige pompa, tapete vermelho e discursos ensaiados na ONU sobre o futuro do planeta, a rotina real no Planalto é um verdadeiro balé de compadrismo onde o orçamento público vira a verba secreta da festa de aniversário do bairro. A oposição chora pitangas quando está fora, mas faz fila no balcão de emendas assim que morde uma fatia do bolo. No fim das contas, a grande arte presidencial não é governar, mas sim convencer o otário que paga imposto na fila do SUS de que a culpa do boleto vencido é do antecessor.",
+    "Portanto, se você tem o dom da oratória vazia, não ruboriza ao prometer o impossível e gosta de viajar com a comitiva do tamanho de uma escola de samba, o cargo de chefe da nação é o seu bilhete premiado. Só não se esqueça do detalhe principal: quando a conta dessa farra fiscal chegar com juros de agiota de aplicativo, o único que não tem foro privilegiado para fugir do calote é o Zé Povinho."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promete o céu no palanque e entrega o boleto na alfândega."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Picanha para todos no papel, farinha d'água no prato real."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Gasta como bilionário e arrecada como agiota de feira livre."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A conta da festa sempre sobra para o lombo do contribuinte."
+    }
+  ],
+  "contexto_real": "O portal G1 publicou um guia explicativo sobre as funções, requisitos, remuneração e responsabilidades do cargo de Presidente da República do Brasil, detalhando o papel de chefe de Estado e de Governo exercido pelo ocupante do Palácio do Planalto.",
+  "slug": "manual-do-sindico-supremo",
+  "data": "22 de Outubro de 2026",
+  "imagem_capa": "imagens/manual-do-sindico-supremo.jpg",
+  "credito_imagem": "Arte: Capa Editorial Exclusiva / Ímprobo",
+  "timestamp": "2026-10-22T04:36:24.081688",
+  "audio_url": "audio/manual-do-sindico-supremo.mp3"
+}
