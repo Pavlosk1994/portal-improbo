@@ -1253,7 +1253,7 @@ def get_article_target(slug, title=""):
     elif "anistia" in slug_lower or "fundo-eleitoral" in slug_lower or "centrao" in slug_lower or "orcamento" in slug_lower or "emenda" in slug_lower or "corte-gastos" in slug_lower:
         return "ralo-orcamento", "O Ralo do Orçamento", "💸"
     # 4. O Ringue Eleitoral (Disputa 2026, debates na TV, Lula x Flávio, marqueteiros, pesquisas, 2º turno)
-    elif "debate" in slug_lower or "eleic" in slug_lower or "lula" in slug_lower or "flavio" in slug_lower or "bolsonaro" in slug_lower or "concurseiro" in slug_lower or "pendulo" in slug_lower or "sigilo" in slug_lower or "bondade" in slug_lower or "pe-de-meia" in slug_lower or "renan" in slug_lower or "missao" in slug_lower or "6x1" in slug_lower or "salario" in slug_lower or "clt" in slug_lower:
+    elif "debate" in slug_lower or "eleic" in slug_lower or "lula" in slug_lower or "flavio" in slug_lower or "bolsonaro" in slug_lower or "marcal" in slug_lower or "concurseiro" in slug_lower or "pendulo" in slug_lower or "sigilo" in slug_lower or "bondade" in slug_lower or "pe-de-meia" in slug_lower or "renan" in slug_lower or "missao" in slug_lower or "6x1" in slug_lower or "salario" in slug_lower or "clt" in slug_lower:
         return "ringue-eleitoral", "O Ringue Eleitoral", "🥊"
     return "comedia-costumes", "Comédia de Costumes", "🎪"
 
