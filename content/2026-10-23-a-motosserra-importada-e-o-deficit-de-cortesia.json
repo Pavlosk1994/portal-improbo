@@ -1,0 +1,43 @@
+{
+  "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
+  "subtitulo": "Enquanto Flávio sonha em serrar até o cafezinho da repartição à la Milei, Lula prefere explicar que o ajuste fiscal pode ser feito com carinho, amor e mais trezentos cargos em comissão.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Flávio quer importar a motosserra argentina e Lula quer continuar fatiando o orçamento na base do abraço fraterno.",
+  "legenda_imagem": "Charge satírica mostrando os presidenciáveis disputando quem aperta mais o cinto do contribuinte.",
+  "prompt_caricatura": "Caricatura política em estilo O Pasquim dos anos 70, nanquim e aquarela gouache: Flávio Bolsonaro tentando ligar uma motosserra barulhenta enfeitada com fitas patrióticas, enquanto Lula observa sentado em cima de uma pilha gigantesca de pastas ministeriais carimbadas, rindo com um lenço de bolso. Estilo editorial brasileiro clássico, traço expressivo e irônico, sem textos, sem logotipos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian presidential candidates Luiz Inacio Lula da Silva and Flavio Bolsonaro in physical comic farce, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A reta final da corrida presidencial de 2026 encontrou seu talismã definitivo além da fronteira: a famosa motosserra de Javier Milei. O debate econômico brasileiro foi reduzido ao dilema existencial entre serrar tudo até sobrar apenas o pó da alfândega ou continuar distribuindo benesses com a magnanimidade de quem assina cheques com a conta alheia.",
+    "Do lado da direita empolgada, Flávio Bolsonaro descobriu na motosserra argentina o fetiche burocrático perfeito para prometer a extinção de qualquer órgão público que não sirva para postar vídeo fofo no Instagram. A promessa é de um enxugamento cirúrgico, onde o Estado diminui tanto que cabe confortavelmente no bolso de um terno grifado, restando ao cidadão apenas a liberdade heroica de se virar sozinho na selva do mercado.",
+    "Em contrapartida, a tropa petista liderada por Lula prefere a retórica da cautela humanitária, alertando para os riscos sociais da lâmina vizinha, enquanto manobra com delicizadeza cirúrgica para manter intocáveis as emendas parlamentares, os fundos partidários bilionários e a sanha por novos impostos criados para salvar o superávit primário da imaginação dos tecnocratas da Esplanada.",
+    "No fim das contas, o eleitor assiste a esse duelo de marqueteiros sabendo que, independentemente de quem vença o segundo turno, a única ferramenta que continuará funcionando com precisão suíça e sem direito a reajuste é o bom e velho extrato do imposto retido na fonte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promessas de campanha afiadas para cortar na carne dos outros."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O plano econômico milagroso que dura até a apuração das urnas."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte de equilibrar rombos bilionários com discursos inspiradores."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura final entregue pontualmente na residência do contribuinte."
+    }
+  ],
+  "contexto_real": "A influência do modelo econômico do presidente argentino Javier Milei e seu 'Plano Motosserra' entrou no centro do debate eleitoral brasileiro do segundo turno de 2026. Enquanto a campanha de Flávio Bolsonaro tenta colar a imagem de liberal radical e adepto do corte drástico de gastos públicos, a aliança governista liderada por Lula aposta na defesa do papel indutor do Estado e aponta para o custo social das reformas profundas realizadas no país vizinho.",
+  "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
+  "data": "23 de Outubro de 2026",
+  "imagem_capa": "imagens/a-motosserra-importada-e-o-deficit-de-cortesia.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-23T09:24:56.623079",
+  "audio_url": "audio/a-motosserra-importada-e-o-deficit-de-cortesia.mp3"
+}
