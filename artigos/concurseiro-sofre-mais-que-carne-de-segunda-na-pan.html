@@ -594,7 +594,7 @@
             
             <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
                 <span>O concurseiro mediano meditando diante de uma pilha de livros de direito administrativo enquanto reza para um boleto.</span>
-                <span class="font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0">Arte: Capa Editorial Exclusiva / Ímprobo</span>
+                <span class="font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0">Arte: Caricatura Editorial IA / Ilustração Satírica</span>
             </figcaption>
             
         </figure>
@@ -1100,6 +1100,47 @@
                     const partes = formatador.format(agora);
                     headerDateEl.textContent = partes.charAt(0).toUpperCase() + partes.slice(1);
                 } catch (e) {}
+            }
+
+            // Atualização Diária da Frase do Dia (Provérbios de Botequim Parlamentar)
+            const fraseDiaEl = document.getElementById('frase-do-dia-texto');
+            if (fraseDiaEl) {
+                const proverbiosBotequim = [
+                    "A pressa é inimiga da perfeição, mas é mãe adotiva da folga eleitoral de segundo turno.",
+                    "Em terra de emenda parlamentar, quem tem nota fiscal fria é rei do orçamento secreto.",
+                    "Deus ajuda quem cedo madruga, mas o Centrão fatura alto dormindo até o meio-dia.",
+                    "Para bom entendedor, meio milhão em dinheiro vivo na cueca basta.",
+                    "Água mole em pedra dura tanto bate até que vira licitação emergencial sem concorrência.",
+                    "Quem não tem cão caça com gato; quem não tem voto, arruma cargo vitalício no tribunal.",
+                    "Diga-me com quem andas no plenário e te direi quanto custou o teu ministério.",
+                    "Cavalo dado não se olha os dentes, mas fundo partidário se audita com lupa e algema.",
+                    "A esperança é a última que morre, mas o salário mínimo falece no dia dez de cada mês.",
+                    "Mais vale um passarinho na mão do que dois ministérios prometidos pelo Planalto.",
+                    "Quem com ferro fere, com foro privilegiado será salvo pela jurisprudência.",
+                    "Macaco velho não pula em galho seco sem antes garantir a cota de combustíveis do gabinete.",
+                    "O pior cego é aquele que não quer ver o reajuste salarial aprovado de madrugada.",
+                    "Casa de ferreiro, espeto de pau; casa de político, churrasco com verba indenizatória.",
+                    "Em rio de piranha, jacaré nada de braçada se estiver filiado ao partido do presidente.",
+                    "Santo de casa não faz milagre, mas marqueteiro de campanha faz até poste virar estadista.",
+                    "Cada macaco no seu galho, e cada assessor com trinta por cento devolvido na rachadinha.",
+                    "O seguro morreu de velho, e o deputado se reelegeu prometendo o que nunca vai entregar.",
+                    "Papagaio come milho, periquito leva a fama e o contribuinte financia o banquete da corte.",
+                    "Antes só do que mal assessorado por sobrinho em comissão parlamentar fantasma.",
+                    "Não há bem que sempre dure, nem rombo fiscal que o aumento de tributo não tente cobrir.",
+                    "Filho feio não tem pai, mas déficit público sempre é culpa do governo anterior.",
+                    "A caridade começa em casa, preferencialmente na conta bancária do primeiro suplente.",
+                    "Gato escaldado tem medo de água fria; político investigado tem pânico de operação da PF às 6h.",
+                    "De grão em grão a galinha enche o papo; de diária em diária o senador compra o iate.",
+                    "Quem ri por último ri melhor, mas quem votou no vencedor já está chorando no caixa do mercado.",
+                    "Cão que ladra não morde no plenário, mas abocanha fatias generosas na comissão mista.",
+                    "Depois da tempestade vem a bonança, e logo depois vem o aumento da alíquota do ICMS.",
+                    "Devagar se vai ao longe, especialmente na fila de espera do SUS bancada pelo erário.",
+                    "Onde há fumaça, há fogo; e onde há relator especial, há jabuti embutido na medida provisória.",
+                    "O combinado não sai caro, mas a conta do banquete oficial sempre sai parcelada pro povo."
+                ];
+                const diaAtual = new Date().getDate();
+                const proverbioHoje = proverbiosBotequim[(diaAtual - 1) % proverbiosBotequim.length];
+                fraseDiaEl.innerHTML = `&ldquo;${proverbioHoje}&rdquo;`;
             }
 
             const observer = new IntersectionObserver((entries) => {
