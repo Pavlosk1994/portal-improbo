@@ -173,13 +173,13 @@ COMMON_HEAD_STYLES = r"""
         /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(18px);
-            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(14px);
+            transition: opacity 0.45s ease-out, transform 0.45s ease-out;
             will-change: opacity, transform;
         }
         .reveal-on-scroll.in-view {
-            opacity: 1;
-            transform: translateY(0);
+            opacity: 1 !important;
+            transform: translateY(0) !important;
         }
 
         /* Cabeçalho Retrátil Sticky NYT */
@@ -482,13 +482,25 @@ COMMON_SCRIPTS = """
                     }
                 });
             }, {
-                threshold: 0.08,
-                rootMargin: '0px 0px -30px 0px'
+                threshold: 0,
+                rootMargin: '120px 0px 80px 0px'
             });
 
             document.querySelectorAll('.reveal-on-scroll').forEach(el => {
-                observer.observe(el);
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 150) {
+                    el.classList.add('in-view');
+                } else {
+                    observer.observe(el);
+                }
             });
+
+            // Blindagem contra espaços em branco: garante visibilidade de todos os elementos
+            setTimeout(() => {
+                document.querySelectorAll('.reveal-on-scroll:not(.in-view)').forEach(el => {
+                    el.classList.add('in-view');
+                });
+            }, 1000);
 
             // Cabeçalho Retrátil (Sticky Shrink Header)
             const header = document.getElementById('site-header');
@@ -1970,7 +1982,7 @@ def generate_home_page(articles):
             </article>
             """
         grid_html = f"""
-        <section id="grid-articles-section" class="reveal-on-scroll">
+        <section id="grid-articles-section">
             <div class="border-b border-[#121212] pb-2 mb-6 flex items-center justify-between">
                 <h2 class="font-serif text-xl sm:text-2xl font-black text-[#121212] tracking-tight">ARQUIVO DA INFÂMIA &bull; OUTRAS CRÔNICAS</h2>
                 <span class="font-mono text-xs text-stone-600 uppercase">{len(other_articles)} crônica(s)</span>

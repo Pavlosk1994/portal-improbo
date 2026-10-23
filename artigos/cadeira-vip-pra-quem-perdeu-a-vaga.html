@@ -166,13 +166,13 @@
         /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(18px);
-            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(14px);
+            transition: opacity 0.45s ease-out, transform 0.45s ease-out;
             will-change: opacity, transform;
         }
         .reveal-on-scroll.in-view {
-            opacity: 1;
-            transform: translateY(0);
+            opacity: 1 !important;
+            transform: translateY(0) !important;
         }
 
         /* Cabeçalho Retrátil Sticky NYT */
@@ -589,12 +589,12 @@
         <!-- Caricatura Editorial IA / Ilustração Satírica -->
         <figure class="my-6 sm:my-8 reveal-on-scroll">
             <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                <img src="../imagens/cadeira-vip-pra-quem-perdeu-a-vaga.jpg" alt="Políticos disputando a tapa uma boquinha vitalícia enquanto o contribuinte paga a conta." class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
+                <img src="../imagens/cadeira-vip-pra-quem-perdeu-a-vaga.jpg" alt="Rodrigo Pacheco e Davi Alcolumbre disputam a 'Dança das Cadeiras VIP' entre o STF e o TCU enquanto o contribuinte banca a conta." class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
             </div>
             
             <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
-                <span>Políticos disputando a tapa uma boquinha vitalícia enquanto o contribuinte paga a conta.</span>
-                <span class="font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0">Arte: Capa Editorial Exclusiva / Ímprobo</span>
+                <span>Rodrigo Pacheco e Davi Alcolumbre disputam a 'Dança das Cadeiras VIP' entre o STF e o TCU enquanto o contribuinte banca a conta.</span>
+                <span class="font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0">Arte: Caricatura Editorial IA / Ilustração Satírica</span>
             </figcaption>
             
         </figure>
@@ -1110,13 +1110,25 @@
                     }
                 });
             }, {
-                threshold: 0.08,
-                rootMargin: '0px 0px -30px 0px'
+                threshold: 0,
+                rootMargin: '120px 0px 80px 0px'
             });
 
             document.querySelectorAll('.reveal-on-scroll').forEach(el => {
-                observer.observe(el);
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 150) {
+                    el.classList.add('in-view');
+                } else {
+                    observer.observe(el);
+                }
             });
+
+            // Blindagem contra espaços em branco: garante visibilidade de todos os elementos
+            setTimeout(() => {
+                document.querySelectorAll('.reveal-on-scroll:not(.in-view)').forEach(el => {
+                    el.classList.add('in-view');
+                });
+            }, 1000);
 
             // Cabeçalho Retrátil (Sticky Shrink Header)
             const header = document.getElementById('site-header');

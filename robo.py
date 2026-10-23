@@ -576,13 +576,12 @@ def criar_artigo_demo(noticia):
 
 def gerar_caricatura_ia(dados_artigo, api_key):
     """
-    Gera automaticamente a caricatura editorial satírica utilizando a API do Google Imagen 3
-    e salva diretamente em imagens/{slug}.jpg.
-    Totalmente autônomo e sem intervenção manual.
+    Gera automaticamente a caricatura editorial satírica utilizando:
+    1. Google Imagen 3 (se a chave API tiver acesso ao modelo predict)
+    2. Fallback autônomo via motor de difusão de arte satírica (Pollinations AI)
+    Salva diretamente em imagens/{slug}.jpg com alta resolução.
+    Totalmente autônomo e sem custos.
     """
-    if not api_key:
-        return False
-
     slug = dados_artigo.get("slug")
     if not slug:
         return False
@@ -590,8 +589,8 @@ def gerar_caricatura_ia(dados_artigo, api_key):
     os.makedirs(IMAGENS_DIR, exist_ok=True)
     caminho_final = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
 
-    # Se já existir uma caricatura local para esse slug, preserva
-    if os.path.exists(caminho_final):
+    # Se já existir uma caricatura local para esse slug (com mais de 100KB, indicando ilustração real), preserva
+    if os.path.exists(caminho_final) and os.path.getsize(caminho_final) > 100000:
         print(f"[*] Caricatura local já existente encontrada: {caminho_final}")
         dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
         dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
@@ -610,59 +609,91 @@ def gerar_caricatura_ia(dados_artigo, api_key):
         f"Strictly NO text 'MAD', NO logos, NO watermark, NO real photographs, pure satirical illustration."
     )
 
-    modelos_imagen = [
-        "imagen-3.0-generate-002",
-        "imagen-3.0-generate-001"
-    ]
+    # 1. Tentativa via Google Imagen 3 (caso a chave API tenha cota/permissão)
+    if api_key:
+        modelos_imagen = [
+            "imagen-3.0-generate-002",
+            "imagen-3.0-generate-001"
+        ]
 
-    payload = {
-        "instances": [
-            {
-                "prompt": prompt_completo
+        payload = {
+            "instances": [
+                {
+                    "prompt": prompt_completo
+                }
+            ],
+            "parameters": {
+                "sampleCount": 1,
+                "aspectRatio": "16:9",
+                "outputMimeType": "image/jpeg"
             }
-        ],
-        "parameters": {
-            "sampleCount": 1,
-            "aspectRatio": "16:9",
-            "outputMimeType": "image/jpeg"
         }
-    }
 
-    headers = {
-        "Content-Type": "application/json"
-    }
+        headers = {
+            "Content-Type": "application/json"
+        }
 
-    print("[*] Solicitando geração de caricatura editorial ao Google Imagen 3...")
-    for modelo in modelos_imagen:
-        url_imagen = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:predict?key={api_key}"
-        try:
-            req = urllib.request.Request(
-                url_imagen,
-                data=json.dumps(payload).encode("utf-8"),
-                headers=headers,
-                method="POST"
-            )
-            with urllib.request.urlopen(req, timeout=45) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                predictions = data.get("predictions", [])
-                if predictions and "bytesBase64Encoded" in predictions[0]:
-                    b64_data = predictions[0]["bytesBase64Encoded"]
-                    img_bytes = base64.b64decode(b64_data)
-                    with open(caminho_final, "wb") as f_img:
-                        f_img.write(img_bytes)
-                    print(f"[✓] Caricatura gerada e salva com sucesso via {modelo}: {caminho_final} ({len(img_bytes)} bytes)")
-                    dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
-                    dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
-                    if not dados_artigo.get("legenda_imagem"):
-                        dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
-                    return True
-        except urllib.error.HTTPError as e:
-            err_msg = e.read().decode('utf-8', errors='ignore')
-            print(f"[!] Imagen {modelo} indisponível ({e.code}): {err_msg[:120]}")
-            continue
-        except Exception as e:
-            print(f"[!] Falha no Imagen {modelo}: {e}")
-            continue
+        print("[*] Solicitando geração de caricatura editorial ao Google Imagen 3...")
+        for modelo in modelos_imagen:
+            url_imagen = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:predict?key={api_key}"
+            try:
+                req = urllib.request.Request(
+                    url_imagen,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers=headers,
+                    method="POST"
+                )
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    predictions = data.get("predictions", [])
+                    if predictions and "bytesBase64Encoded" in predictions[0]:
+                        b64_data = predictions[0]["bytesBase64Encoded"]
+                        img_bytes = base64.b64decode(b64_data)
+                        with open(caminho_final, "wb") as f_img:
+                            f_img.write(img_bytes)
+                        print(f"[✓] Caricatura gerada e salva com sucesso via Google Imagen: {caminho_final} ({len(img_bytes)} bytes)")
+                        dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+                        dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+                        if not dados_artigo.get("legenda_imagem"):
+                            dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
+                        return True
+            except urllib.error.HTTPError as e:
+                err_msg = e.read().decode('utf-8', errors='ignore')
+                print(f"[!] Google Imagen {modelo} indisponível ({e.code}): {err_msg[:120]}")
+                continue
+            except Exception as e:
+                print(f"[!] Falha no Google Imagen {modelo}: {e}")
+                continue
+
+    # 2. Fallback Autônomo e Imediato: Motor de Arte Editorial Satírica (Pollinations AI)
+    try:
+        print("[*] Acionando motor autônomo de geração de arte satírica (Pollinations AI)...")
+        prompt_polli = f"Vintage Brazilian editorial political cartoon caricature, expressive ink cross-hatching, watercolor wash: {prompt_base[:220]}. Political farce, humorous caricature, satirical newspaper style, no watermark, no logos"
+        encoded_prompt = urllib.parse.quote(prompt_polli)
+        url_polli = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=675&nologo=true&seed={abs(hash(slug)) % 100000}"
+        
+        req_polli = urllib.request.Request(
+            url_polli,
+            headers={
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+        )
+        with urllib.request.urlopen(req_polli, timeout=40) as resp:
+            content_type = resp.headers.get("Content-Type", "")
+            img_data = resp.read()
+            if len(img_data) > 15000 and ("image" in content_type or img_data[:2] == b'\xff\xd8' or img_data[:8] == b'\x89PNG\r\n\x1a\n'):
+                with open(caminho_final, "wb") as f_img:
+                    f_img.write(img_data)
+                print(f"[✓] Caricatura editorial gerada e salva com sucesso via motor autônomo: {caminho_final} ({len(img_data)} bytes)")
+                dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+                dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+                if not dados_artigo.get("legenda_imagem"):
+                    dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
+                return True
+            else:
+                print(f"[!] Resposta inválida do motor de arte ({len(img_data)} bytes, tipo: {content_type})")
+    except Exception as e:
+        print(f"[!] Falha no motor autônomo de arte satírica: {e}")
 
     return False
 
