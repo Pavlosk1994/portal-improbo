@@ -5,30 +5,31 @@
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
+  "frase_disparo_zap": "Ser presidente no Brasil é o único cargo do mundo onde você ganha jatinho e terno novo para terceirizar a culpa do desastre para o antecessor.",
   "legenda_imagem": "O aspirante a síndico nacional olhando fixamente para o carnê de promessas enquanto afaga a faixa presidencial.",
   "prompt_caricatura": "Estilo nanquim e guache, charge satírica de um político brasileiro de terno amassado segurando um manual gigante escrito 'Como Mandar em Tudo sem Saber Nada', sentado em uma poltrona dourada no Palácio do Planalto, com sacos de dinheiro aos pés e um povo na fila do ônibus olhando pela janela.",
   "corpo": [
-    "O brasileiro adora um concurso de beleza com crachá de poder, e o cargo de Presidente da República é o topo dessa pirâmide de ilusões. Pela bagatela de quatro anos de mordomia, jatinho à Disposição e café fresco bancado pelo contribuinte, o felizardo ganha o direito de acumular duas funções que ninguém em sã consciência conseguiria gerir nem uma vendinha de pastel na feira: chefe de Estado, para posar com gringo em summit internacional, e chefe de Governo, para explicar por que a carne de segunda virou artigo de luxo enquanto o congresso cobra pedágio para votar até bom dia.",
-    "Para ocupar essa cadeira que esquenta mais que frigideira de acarajé, o manual exige apenas que o cidadão tenha mais de 35 anos e muita cara de pau. Afinal, a promessa de campanha sempre promete o paraíso na terra com direito a picanha e loft na beira da praia, mas a realidade logo cobra o carnê atrasado da inflação. O presidente nomeia ministro como quem escala peladeiro de condomínio: entra amigo, sai compadre, e se der escândalo, a culpa é da oposição, do clima ou do alinhamento dos planetas.",
-    "Enquanto a liturgia do cargo exige pompa, tapete vermelho e discursos ensaiados na ONU sobre o futuro do planeta, a rotina real no Planalto é um verdadeiro balé de compadrismo onde o orçamento público vira a verba secreta da festa de aniversário do bairro. A oposição chora pitangas quando está fora, mas faz fila no balcão de emendas assim que morde uma fatia do bolo. No fim das contas, a grande arte presidencial não é governar, mas sim convencer o otário que paga imposto na fila do SUS de que a culpa do boleto vencido é do antecessor.",
-    "Portanto, se você tem o dom da oratória vazia, não ruboriza ao prometer o impossível e gosta de viajar com a comitiva do tamanho de uma escola de samba, o cargo de chefe da nação é o seu bilhete premiado. Só não se esqueça do detalhe principal: quando a conta dessa farra fiscal chegar com juros de agiota de aplicativo, o único que não tem foro privilegiado para fugir do calote é o Zé Povinho."
+    "O brasileiro adora um concurso de popularidade com crachá de poder, e o cargo de Presidente da República é o topo dessa pirâmide de ilusões. Pela bagatela de quatro anos de mordomia, jatinho à disposição e café fresco bancado pelo contribuinte, o felizardo ganha o direito de acumular duas funções que ninguém em sã consciência conseguiria conciliar: chefe de Estado, para posar ao lado de chanceleres em cúpula internacional, e chefe de Governo, para negociar ministérios e explicar por que o preço dos alimentos disparou enquanto o Congresso cobra pedágio orçamentário para votar até pauta prioritária.",
+    "Para ocupar essa cadeira que esquenta mais que frigideira em dia de festa, o manual exige apenas que o postulante tenha mais de 35 anos e muita desfaçatez institucional. Afinal, o discurso de campanha sempre promete o paraíso fiscal na terra com crescimento de primeiro mundo, mas a realidade logo cobra a conta do endividamento público. O governante nomeia ministros como quem escala peladeiro de fim de semana: entra o aliado de ocasião, sai o compadre desajeitado, e se houver crise, a justificativa padrão é culpar o cenário externo ou a herança dos antecessores.",
+    "Enquanto a liturgia do cargo exige tapete vermelho e declarações solenes sobre o futuro sustentável da nação, a rotina real no Planalto é um balé permanente de concessões onde o orçamento da União vira a moeda de troca da sobrevivência política. A oposição faz discursos indignados da tribuna, mas corre para o balcão de liberação de emendas assim que surge a oportunidade de um acordo. No fim das contas, a grande arte presidencial não é governar com eficiência, mas sim convencer a sociedade de que a ineficiência do Estado é fruto de um complô invisível.",
+    "Portanto, se você tem o dom da oratória vazia, não ruboriza ao prometer metas inalcançáveis e aprecia viajar com uma comitiva imperial, o cargo de chefe da nação é a sua coroação definitiva. Só não se esqueça da regra fundamental da República: quando o rombo das contas bater na porta com juros compostos, o único que não possui foro especial para se proteger do impacto é o cidadão comum."
   ],
   "milagres": [
     {
       "titulo": "A Liturgia da Rasteira",
-      "texto": "Promete o céu no palanque e entrega o boleto na alfândega."
+      "texto": "Promete o céu no palanque e entrega alíquota suplementar no Diário Oficial."
     },
     {
       "titulo": "A Promessa de Papelão",
-      "texto": "Picanha para todos no papel, farinha d'água no prato real."
+      "texto": "Metas ambiciosas no papel, frustração de receitas na contabilidade real."
     },
     {
       "titulo": "O Malabarismo Fiscal",
-      "texto": "Gasta como bilionário e arrecada como agiota de feira livre."
+      "texto": "Gasta com a pompa de um monarca e cobra a conta com o rigor de um oficial de justiça."
     },
     {
-      "titulo": "O Boleto Soberano",
-      "texto": "A conta da festa sempre sobra para o lombo do contribuinte."
+      "titulo": "A Fatura Soberana",
+      "texto": "A conta da farra orçamentária é sempre debitada no contracheque de quem trabalha."
     }
   ],
   "contexto_real": "O portal G1 publicou um guia explicativo sobre as funções, requisitos, remuneração e responsabilidades do cargo de Presidente da República do Brasil, detalhando o papel de chefe de Estado e de Governo exercido pelo ocupante do Palácio do Planalto.",

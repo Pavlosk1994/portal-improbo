@@ -1,17 +1,18 @@
 {
   "titulo": "CADEIRA VIP PRA QUEM PERDEU A VAGA",
-  "subtitulo": "Brasília já vende o bilhete premiado antes mesmo da urna esfriar.",
+  "subtitulo": "Brasília já vende o bilhete premiado vitalício antes mesmo da urna do segundo turno esfriar.",
   "categoria": "Comédia de Costumes",
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
+  "frase_disparo_zap": "Em Brasília, quem toma sacode na eleição não vai pro olho da rua: ganha gabinete com teto constitucional no STF ou no TCU para fiscalizar os outros.",
   "legenda_imagem": "Rodrigo Pacheco e Davi Alcolumbre disputam a 'Dança das Cadeiras VIP' entre o STF e o TCU enquanto o contribuinte banca a conta.",
   "prompt_caricatura": "Charge satírica em estilo nanquim e guache mostrando Davi Alcolumbre e Rodrigo Pacheco jogando uma partida de musical das cadeiras em cima de sacos de dinheiro em Brasília, com cartazes escritos TCU e STF, traços caricatos e expressões cínicas, sem textos na imagem.",
   "corpo": [
-    "No hospício a céu aberto que chamamos carinhosamente de Distrito Federal, o planejamento de carreira não tem nada a ver com o seu cursinho técnico ou com a fila do Sine. Lá, a regra de ouro é simples: quanto mais a coisa desanda para o seu lado nas urnas, mais a República se mexe para te arrumar um tacho vitalício, com direito a gabinete refrigerado e café gourmet. Enquanto o Zé Povinho se matando no busão tenta adivinhar se vai sobrar para o gás de cozinha no fim do mês, a nobreza brasiliense já joga o famoso 'jogo da sobrevivência institucional', que traduzido para o bom português significa: a dança das cadeiras dos salvadores da pátria.",
-    "Nesse tabuleiro de xadrez onde o peão sempre paga o pato, a grande cartada da vez envolve o exímio malabarista Rodrigo Pacheco e o intocável Davi Alcolumbre. Conta a lenda dos bastidores que, se o barco do governo afundar na eleição, o bom Pacheco pode acabar aterrissando diretamente na poltrona peluda do Supremo Tribunal Federal, numa manobra que faria qualquer mágico de circo mambembe pedir aposentadoria por inveja. É a velha história do 'perdeu, ganha': o cara toma um banho de sal grosso do eleitor, mas a recompensa por ter gesticulado bonito com a toga é uma vaga eterna na mais alta corte da nação. Quem não queria um RH desses na vida?",
-    "Do outro lado do balcão de negócios, o sempre precavido Alcolumbre já olha para o Tribunal de Contas da União como quem avalia um chalé na serra para passar a velhice. Afinal, com o fantasma de uma virada de mesa política rondando o Senado, a solução é garantir uma tômbola onde fiscalizar os outros vira profissão de fé e garantia de foro privilegiado até o fim dos tempos. É a engenharia reversa da democracia: o eleitor vai votar achando que está demitindo o fulano, mas na verdade está apenas promovendo o sujeito para um cargo onde ele vai fiscalizar o vento e receber em dólar de luxo, metaforicamente falando.",
-    "No fim das contas, essa ciranda de luxo nos lembra que a única coisa infinita no Brasil não é o universo, mas a criatividade da classe política para se manter mamando nas tetas do Estado. Não importa quem vença ou quem perca no domingo eleitoral, o resultado final é sempre o mesmo: a conta do táxi vai direto para o lombo do trabalhador, enquanto os donos do poder trocam de crachá VIP e celebram mais um acordo de cavalheiros regado a champanhe e verba de gabinete."
+    "No hospício a céu aberto que chamamos carinhosamente de Distrito Federal, o planejamento de carreira não tem nada a ver com o seu cursinho técnico ou com a fila do Sine. Lá, a regra de ouro é simples: quanto mais a coisa desanda para o seu lado nas urnas, mais a República se mexe para te arrumar um tacho vitalício, com direito a gabinete refrigerado e café gourmet. Enquanto o cidadão tenta adivinhar se vai sobrar para o gás de cozinha no fim do mês, a nobreza brasiliense já joga o famoso 'jogo da sobrevivência institucional', que traduzido para o bom português significa: a dança das cadeiras dos salvadores da pátria.",
+    "Nesse tabuleiro de xadrez onde o peão sempre paga o pato, a grande cartada da vez envolve o exímio malabarista Rodrigo Pacheco e o intocável Davi Alcolumbre. Conta a lenda dos bastidores que, se o barco do governo afundar na eleição, o bom Pacheco pode acabar aterrissando diretamente na poltrona peluda do Supremo Tribunal Federal, numa manobra que faria qualquer mágico de circo mambembe pedir aposentadoria por inveja. É a velha história do 'perdeu, ganha': o sujeito toma um banho de sal grosso do eleitor, mas a recompensa por ter gesticulado bonito com a toga é uma vaga eterna na mais alta corte da nação. Quem não queria um RH desses na vida?",
+    "Do outro lado do balcão de negócios, o sempre precavido Alcolumbre já olha para o Tribunal de Contas da União como quem avalia um chalé na serra para passar a velhice. Afinal, com o fantasma de uma virada de mesa política rondando o Senado, a solução é garantir uma tômbola onde fiscalizar os outros vira profissão de fé e garantia de foro privilegiado até o fim dos tempos. É a engenharia reversa da democracia: o eleitor vai votar achando que está demitindo o fulano, mas na verdade está apenas promovendo o sujeito para um cargo onde ele vai fiscalizar o vento e receber em moeda nobre.",
+    "No fim das contas, essa ciranda de luxo nos lembra que a única coisa infinita no Brasil não é o universo, mas a criatividade da classe política para se manter mamando nas tetas do Estado. Não importa quem vença ou quem perca no domingo eleitoral, o resultado final é sempre o mesmo: a despesa da carruagem oficial é debitada direto no contracheque de quem acorda antes das seis, enquanto os donos do poder trocam de crachá VIP e celebram mais um acordo de cavalheiros regado a champanhe e verba de gabinete."
   ],
   "milagres": [
     {
@@ -27,8 +28,8 @@
       "texto": "Trocar de cargo público é a única ginástica que esse pessoal pratica com gosto."
     },
     {
-      "titulo": "O Boleto Soberano",
-      "texto": "Quem paga o salário do juiz e do senador é o trouxa que acorda às 5h para pegar o trem."
+      "titulo": "A Fatura Garantida",
+      "texto": "Quem custeia o salário do juiz e do senador é o cidadão que financia a máquina sem ter direito à vaga."
     }
   ],
   "contexto_real": "Nos bastidores de Brasília, aliados políticos discutem cenários para o pós-eleição de domingo (25). Entre as hipóteses levantadas estão a indicação do ex-senador Rodrigo Pacheco para o STF em caso de derrota do governo, e a possível ida do presidente do Senado, Davi Alcolumbre, para o TCU, diante de um cenário eleitoral mais complexo.",

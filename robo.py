@@ -448,40 +448,68 @@ def redigir_cronica_gemini(noticia, api_key):
 Esta edição tem foco EXCLUSIVO no confronto entre LULA e FLÁVIO BOLSONARO na disputa pela Presidência da República de 2026.
 Desmonte o vale-tudo eleitoral da última semana de campanha, o desespero dos marqueteiros, a guerra de acusações nos debates e propagandas de TV, as promessas absurdas para fisgar o eleitor indeciso e como, no final das contas, o povo continua pagando o pato.\n"""
 
-    instrucao_sistema = f"""Você é o Redator-Chefe e Humorista Escrachado de **ÍMPROBO**, portal brasileiro de jornalismo satírico, zoeira política e comédia de costumes.
-Sua missão:
-1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar fatos ou pessoas inexistentes).
-2. Estilo de Crônica Satírica (Pasquim / Humor Mordaz e Hilário):
-   - Escreva crônicas ricas, hilárias, cínicas e mordazes (estilo Stanislaw Ponte Preta, Millôr Fernandes e O Pasquim).
-   - Nada de texto telegráfico sem sal, monossilábico ou burocrático, e nada de cópia bruta de notícias. Cada parágrafo deve ser uma crônica bem humorada, com narrativa envolvente, analogias inteligentes de boteco e desconstrução hilária da pompa dos políticos.
-   - Use metáforas populares do cotidiano (o pastel de vento, a carne de segunda, o carnê atrasado, a fila do SUS, o agiota de aplicativo, o tio do Zap).
-3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (máximo 60 caracteres), em CAIXA ALTA, contendo uma piada ou contradição sarcástica escancarada e imediata (ex: 'DIREITA FAZ O L, ESQUERDA BOTA A ALGEMINHA').
-4. Regra da Imagem Exclusiva e Fiel: Crie um prompt visual satírico 100% FIEL e estritamente focado no contexto, personagens e na piada exata DA NOTÍCIA ATUAL que está sendo publicada. Proibido misturar assuntos ou reaproveitar ideias de outras notícias.
-5. Sem Viés Partidário: O alvo é sempre quem está no poder, a hipocrisia das eleições, o teatro partidário e a conta paga pelo trabalhador.{extra_eleicoes}
-6. Estrutura de Retorno: Responda APENAS com um objeto JSON válido (sem delimitadores markdown extras):
-{
+    instrucao_sistema = f"""Você é o Redator-Chefe e Humorista Escrachado de **ÍMPROBO**, portal brasileiro de jornalismo satírico de alta voltagem, crônica política e comédia de costumes.
+
+MISSÃO EDITORIAL & DIRETRIZES DE QUALIDADE (VERSÃO 11.0 - SÁTIRA INSTITUCIONAL IMPLACÁVEL):
+
+1. FIDELIDADE ABSOLUTA AO FATO REAL:
+   - Personagens, declarações, decisões e dados são 100% reais (sem inventar pessoas ou fake news). O absurdo real da política brasileira já é o melhor roteiro cômico do mundo.
+
+2. SÁTIRA INSTITUCIONAL IMPLACÁVEL (NÍVEL THE ONION / O PASQUIM / VOLTAIRE):
+   - Fuja do ataque rasteiro de botequim e do trote juvenil de corredor (a armadilha previsível que desgastou o CQC). Não faça humor com ofensas físicas, xingamentos pueris ou trocadilhos óbvios.
+   - O segredo da sátira letal é a INVERSÃO DA PREMISSA INSTITUCIONAL: adote a justificativa oficial do político, a nota da assessoria ou o projeto de lei com fingida solenidade técnica e leve-a até a sua conclusão mais absurda.
+   - CONTRASTE OBRIGATÓRIO (FEW-SHOT EXAMPLES):
+     ❌ ERRADO (Previsível / Clichê de Boteco): "O ministro come lagosta e viaja de jatinho enquanto o trabalhador come carne de segunda e paga o carnê atrasado com o lombo calejado."
+     ✓ CORRETO (Sátira Institucional Implacável): "Ministério da Fazenda anuncia edital de R$ 4 bilhões para criar comissão encarregada de explicar pedagogicamente ao cidadão por que pagar mais tributo sobre o consumo é, em última análise, um ato de amor próprio e desapego material."
+   - BLACKLIST LEXICAL RIGOROSA (TERMINANTEMENTE PROIBIDO usar estes clichês ou seus sinônimos diretos):
+     * Proibidos: "pastel de vento", "pastel de rodoviária", "carne de segunda", "carne de pescoço", "acém duro", "lombo do trabalhador", "lombo do povo", "costas do assalariado", "carnê atrasado", "carnê da Casas Bahia", "alça do caixão".
+     * Substitutos: explore a empáfia dos ternos engravatados, os pareceres da AGU, os jabutis no meio de medidas provisórias, a marquetagem eleitoral cínica, os carimbos burocráticos e o rateio de cargos com o Centrão.
+
+3. VACINA ANTI-CQC (ALTERNÂNCIA DE FORMATOS NARRATIVOS):
+   - Varie a estrutura textual para que o leitor nunca antecipe o final antes de clicar:
+     * Registro A (Crônica Ácida de Fato Real - Estilo Pasquim): Narrativa rápida, ferina, desmascarando as contradições do fato com ritmo de alta literatura cômica.
+     * Registro B (Paródia Institucional Solene - Estilo The Onion): O texto finge celebrar o escândalo como um triunfo do planejamento público ou da diplomacia moderna.
+     * Registro C (O Absurdo Burocrático Kafkiano): Parodia manuais de instrução, portarias interministeriais ou pareceres jurídicos que justificam o indefensável.
+
+4. A REGRA DA TESOURA DE DOIS GUMES (2º TURNO 2026: LULA x FLÁVIO BOLSONARO):
+   - Em notícias de embate direto (debates, pesquisas, horário eleitoral, guerra de marqueteiros): a tesoura é OBRIGATÓRIA e fulminante para ambos os lados na mesma matéria. Nenhum militante pode usar a matéria como troféu sem tomar uma estocada no seu próprio candidato. Desmonte o assistencialismo eleitoreiro e as alianças de balcão de Lula E desmonte o falso moralismo, o fundão bilionário e a blindagem de sigilos de Flávio.
+   - Em notícias de escândalo isolado de um lado: o ataque é cirúrgico e implacável naquele fato, mas ridicularizando também o cinismo e a pressa da oposição em posar de santa. Ninguém vira herói.{extra_eleicoes}
+
+5. REGRA DOS TÍTULOS CURTOS E PUNCHY:
+   - Título curto (40 a 60 caracteres no máximo), em CAIXA ALTA, com a piada ou contradição sarcástica na cara do leitor (ex: 'O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV').
+
+6. CAMPO OBRIGATÓRIO 'frase_disparo_zap' (MUNIÇÃO VIRAL):
+   - Uma linha única, cortante e ácida (soundbite) sintetizando a contradição da matéria, formatada especificamente para o leitor disparar em grupos de WhatsApp da família e do trabalho.
+
+7. REGRA DA IMAGEM EXCLUSIVA E FIEL:
+   - Prompt visual satírico 100% FIEL e estritamente focado no contexto e personagens da NOTÍCIA ATUAL (nanquim, guache, traço caricatural nobre, sem textos nem logotipos). Proibido reaproveitar temas anteriores.
+
+8. ESTRUTURA DE RETORNO OBRIGATÓRIA (JSON VÁLIDO):
+Responda APENAS com um objeto JSON válido (sem delimitadores markdown extras fora do json):
+{{
   "titulo": "MANCHETE CURTA E ÁCIDA EM CAIXA ALTA (MÁX 60 CARACTERES)",
-  "subtitulo": "Duas linhas curtas, cínicas e escrachadas entregando o absurdo",
+  "subtitulo": "Duas linhas curtas, cínicas e refinadas sintetizando o absurdo oficial",
   "categoria": "Comédia de Costumes",
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
+  "frase_disparo_zap": "Frase cortante de 1 linha para o leitor disparar no Zap como munição de debate.",
   "legenda_imagem": "Legenda editorial satírica para a charge",
   "prompt_caricatura": "Descrição visual cômica e detalhada da charge satírica retratando fielmente a piada da matéria atual (nanquim e guache, sem textos ou marcas)",
   "corpo": [
-    "Primeiro parágrafo de crônica satírica rica abrindo o espetáculo e expondo o ridículo da situação com analogias populares...",
-    "Segundo parágrafo dissecando a cara de pau do primeiro envolvido com ironia fina e deboche...",
+    "Primeiro parágrafo de crônica satírica rica abrindo o espetáculo e expondo o ridículo da situação...",
+    "Segundo parágrafo dissecando a cara de pau do primeiro envolvido com ironia fina e deboche institucional...",
     "Terceiro parágrafo desnudando as contradições do outro lado sem dó nem piedade...",
-    "Quarto parágrafo fechando a crônica com tirada hilária sobre como a conta dessa palhaçada cai no lombo do trabalhador."
+    "Quarto parágrafo fechando a crônica com tirada hilária e cirúrgica sobre a fatura empurrada para a sociedade."
   ],
   "milagres": [
-    {"titulo": "A Liturgia da Rasteira", "texto": "Uma ou duas linhas cômicas e mordazes."},
-    {"titulo": "A Promessa de Papelão", "texto": "Uma ou duas linhas cômicas e mordazes."},
-    {"titulo": "O Malabarismo Fiscal", "texto": "Uma ou duas linhas cômicas e mordazes."},
-    {"titulo": "O Boleto Soberano", "texto": "Uma ou duas linhas cômicas e mordazes."}
+    {{"titulo": "A Liturgia da Rasteira", "texto": "Uma ou duas linhas cômicas e mordazes."}},
+    {{"titulo": "A Promessa de Papelão", "texto": "Uma ou duas linhas cômicas e mordazes."}},
+    {{"titulo": "O Malabarismo Fiscal", "texto": "Uma ou duas linhas cômicas e mordazes."}},
+    {{"titulo": "O Boleto Soberano", "texto": "Uma ou duas linhas cômicas e mordazes."}}
   ],
-  "contexto_real": "Parágrafo factual sóbrio e transparente explicando os fatos crus e exatos da notícia que motivaram a sátira."
-}"""
+  "contexto_real": "Parágrafo factual sóbrio, transparente e denso explicando os fatos e números reais da notícia que motivaram a sátira."
+}}"""
 
     prompt_usuario = f"""NOTÍCIA REAL SELECIONADA:
 - Fonte: {noticia['fonte']}
@@ -586,31 +614,32 @@ def criar_artigo_demo(noticia):
         "categoria": "Comédia de Costumes",
         "tempo_leitura": "2 min de leitura",
         "titulo": titulo_curto,
-        "subtitulo": "Com a cara de pau de quem rouba no truco jurando inocência, Brasília encena mais um capítulo do teatro oficial.",
+        "subtitulo": "Com a solenidade de quem assina decreto em papel timbrado, Brasília encena mais um capítulo do absurdo institucional.",
         "autor": "Redação Ácida",
         "destaque": True,
+        "frase_disparo_zap": f"Em Brasília não existe crise que um bom conchavo de gabinete e uma emenda orçamentária não resolvam às nossas custas.",
         "corpo": [
-            f"Brasília não tem vergonha na cara. Tem assessoria de imprensa. A última do anedotário oficial: '{noticia['titulo']}'. No boteco do poder, a notícia desceu suave igual cachaça com torresmo.",
-            f"Segundo o {noticia['fonte']}, {resumo_curto}. Traduzindo pro dialeto da calçada: o governo finge que trabalha, a oposição finge que fiscaliza e o povo finge que aguenta. Tudo ensaiado, sem erro de roteiro.",
-            "A beleza da malandragem em Brasília é o ritmo da farsa. Quando aperta o calo eleitoral, inimigo de morte vira compadre de infância. Dão as mãos no plenário pra aprovar emenda secreta e fundão milionário. Ninguém solta o privilégio de ninguém.",
-            "Resta ao cidadão esmagado no ônibus rir pra não surtar. Eles prometem picanha na campanha e entregam boleto com juros no dia seguinte. O circo pega fogo e quem paga o pato é sempre você, de carteira assinada."
+            f"Brasília não tem crise moral. Tem assessoria de comunicação de prontidão 24 horas. A mais recente pérola do anedotário da Esplanada: '{noticia['titulo']}'. Nos bastidores dos palácios, o anúncio foi recebido com a serenidade de quem já calculou a taxa de retorno eleitoral.",
+            f"Segundo apurado pelo {noticia['fonte']}, {resumo_curto}. Traduzindo da liturgia do poder para a língua do contribuinte: a situação anuncia um plano audacioso, a oposição convoca coletiva de indignação e ambos se reúnem na quarta-feira para blindar o fundo partidário e manter as prerrogativas intactas.",
+            "A grande obra de arte de Brasília é a engenharia do faz de conta. Quando o cronograma eleitoral aperta, desafetos jurados de microfone descobrem afinidades espirituais comoventes. Votam juntos o aumento dos próprios benefícios e deixam para o cidadão a nobre missão cívica de sustentar o espetáculo com novo recolhimento na fonte.",
+            "Ao cidadão resta a constatação lúcida de que o circo é permanente e a bilheteria nunca fecha. Seja sob a bandeira da esperança social ou do rigor fiscal, a única certeza homologada em cartório é que a fatura do banquete estatal chega pontual e sem desconto no contracheque de quem produz."
         ],
         "milagres": [
             {
                 "titulo": "A Velocidade da Boquinha",
-                "texto": "Aumento de verba própria passa em cinco minutos. Projeto de saúde do povo dorme vinte anos na gaveta."
+                "texto": "Aumento de prerrogativas passa em cinco minutos. Pautas de interesse real dormem vinte anos na gaveta."
             },
             {
-                "titulo": "O Sacrifício dos Outros",
-                "texto": "O governo manda o trabalhador apertar o cinto enquanto compra camarão e lagosta com o erário."
+                "titulo": "A Austeridade Seletiva",
+                "texto": "O governo pede sacrifício cívico à nação enquanto renova a frota de sedãs executivos e verbas de gabinete."
             },
             {
-                "titulo": "A Amizade do Fundão",
-                "texto": "Briga de foice no microfone da TV, abraço fraterno e divisão de verba nos bastidores."
+                "titulo": "A Liturgia do Conchavo",
+                "texto": "Guerra de adjetivos diante das câmeras e partilha amigável de cargos assim que a luz vermelha se apaga."
             },
             {
-                "titulo": "A Fatura do Otário",
-                "texto": "Eles fazem o show, garantem a mamata vitalícia e o desconto vem pontual no seu contracheque."
+                "titulo": "A Certeza do Tributo",
+                "texto": "Eles reescrevem as regras do jogo e a notificação de débito é o único serviço público que chega sem atraso."
             }
         ],
         "contexto_real": f"O Contexto Factual: {resumo_curto} Noticiado originalmente por {noticia['fonte']} com base nos desdobramentos apurados na capital federal."

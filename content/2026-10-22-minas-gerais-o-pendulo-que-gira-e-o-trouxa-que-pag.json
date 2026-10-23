@@ -5,13 +5,14 @@
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
+  "frase_disparo_zap": "Em Minas, a eleição oscila pra lá e pra cá, mas a certeza é uma só: quem ganha celebra com fundo partidário e quem perde já articula o ministério da semana seguinte.",
   "legenda_imagem": "O eleitor mineiro segurando um pão de queijo em cada mão, tentando equilibrar o Lula de um lado e o Bolsonaro do outro enquanto o café esfria.",
   "prompt_caricatura": "Estilo charge de nanquim e guache, caricatura exagerada de um mineiro de chapéu de palha sentado em cima de um pêndulo gigante de relógio antigo. De um lado do pêndulo, uma miniatura de Lula com uma picanha; do outro, uma miniatura de Bolsonaro com uma arma em formato de dedo. O mineiro está com expressão de dúvida profunda, ignorando o buraco de estrada que se abre abaixo dele. Cores terrosas e traços rabiscados.",
   "corpo": [
-    "Minas Gerais, terra do pão de queijo e da desconfiança mineira, resolveu ser o espelho do Brasil. E, convenhamos, que espelho mal-assombrado a gente arrumou! É um tal de pêndulo pra lá, pêndulo pra cá, que o eleitor mineiro já está mais zonzo que bêbado em final de festa de peão. Enquanto a política nacional vira um cabo de guerra entre o petismo e o bolsonarismo, o mineiro faz a egípcia e divide as urnas como quem divide a conta do bar no final do mês: ninguém quer pagar, mas todo mundo quer beber do mesmo barril.",
-    "Do lado da direita, o PL e seus agregados prometem mundos, fundos e que o café vai custar um centavo. Do outro, o PT insiste naquela liturgia da esperança que, vira e mexe, acaba em fila de posto de saúde. É uma polarização tão nutritiva quanto um pastel de vento na rodoviária: ocupa o estômago, mas não sustenta a alma de ninguém. O político chega, faz cara de quem ama queijo Canastra, tira foto com a mão no peito e, depois de eleito, só quer saber de emenda parlamentar e caviar em Brasília.",
-    "O problema é que esse 'espelho' mineiro reflete exatamente o que o Brasil tem de mais caricato: a gente adora escolher um capitão do mato ou um maestro da esquerda, mas esquece que o palco é o mesmo e o ator coadjuvante é sempre o mesmo otário: a gente. É impressionante como o cidadão consegue brigar no grupo de família, bloquear o primo que vota no 'outro' e, no final, terminar o dia pagando o mesmo combustível caro e o mesmo IPTU que não volta em asfalto.",
-    "No fim das contas, essa dança das cadeiras mineira é só um teatro de marionetes onde os fios são puxados pelo mesmo agiota de sempre: o sistema. O pêndulo pode até oscilar, mas a corda que segura a gente continua apertada no pescoço. Enquanto Minas discute se o Brasil é vermelho ou azul, a conta chega no lombo do trabalhador, que só queria mesmo era um descanso, uma estrada sem buraco e, quem sabe, um pão de queijo que não custasse um rim."
+    "Minas Gerais, terra do pão de queijo e da desconfiança mineira, resolveu ser o espelho do Brasil. E, convenhamos, que espelho mal-assombrado a gente arrumou! É um tal de pêndulo pra lá, pêndulo pra cá, que o eleitor mineiro já está mais zonzo que participante de gincana em final de ano. Enquanto a política nacional vira um cabo de guerra entre o petismo e o bolsonarismo, o mineiro faz a egípcia e divide as urnas como quem divide a conta do bar no final do mês: ninguém quer pagar, mas todo mundo quer beber do mesmo barril.",
+    "Do lado da direita, o PL e seus agregados prometem mundos, fundos e que o café vai custar um centavo. Do outro, o PT insiste naquela liturgia da redenção que, vira e mexe, acaba em fila de posto de saúde. É uma polarização tão nutritiva quanto discurso de posse em plenário vazio: ocupa o tempo, mas não sustenta a realidade de ninguém. O político chega, faz cara de quem ama queijo Canastra, tira foto com a mão no peito e, depois de eleito, aterrissa em Brasília para ratear ministério e emenda secreta com quem chamou de inimigo na véspera.",
+    "O problema é que esse 'espelho' mineiro reflete exatamente o que o Brasil tem de mais caricato: a gente adora escolher um capitão do mato ou um maestro da esquerda, mas esquece que o palco é o mesmo e o ator coadjuvante é sempre o mesmo cidadão comum. É impressionante como as pessoas conseguem brigar no grupo de família, bloquear o primo que vota no 'outro' e, no final, terminar o dia pagando o mesmo combustível caro e o mesmo IPTU que não volta em asfalto.",
+    "No fim das contas, essa dança das urnas mineira é a consagração do teatro de conveniências. O pêndulo pode até oscilar entre a esquerda e a direita, mas a engrenagem que dita as regras em Brasília continua lubrificada pelo mesmo orçamento bilionário. Enquanto os cabos eleitorais disputam a cor da faixa presidencial, o contribuinte financia o espetáculo sem ter direito sequer à meia-entrada."
   ],
   "milagres": [
     {
@@ -20,15 +21,15 @@
     },
     {
       "titulo": "A Promessa de Papelão",
-      "texto": "Tão consistente quanto nota de três reais e tão duradoura quanto o amor de político por eleitor em véspera de eleição."
+      "texto": "Tão consistente quanto nota de três reais e tão duradoura quanto o amor de candidato em comício."
     },
     {
       "titulo": "O Malabarismo Fiscal",
       "texto": "A arte de enfiar a mão no bolso do contribuinte e chamar de 'ajuste necessário'."
     },
     {
-      "titulo": "O Boleto Soberano",
-      "texto": "A única coisa que não entra em crise, não oscila e sempre chega pontualmente na sua casa."
+      "titulo": "A Certeza da Fatura",
+      "texto": "O pêndulo oscila, os palácios mudam de dono e o imposto descontado na fonte permanece eterno."
     }
   ],
   "contexto_real": "Minas Gerais é historicamente tratada como um 'estado pêndulo' e um 'espelho' do cenário eleitoral nacional brasileiro. O resultado das últimas eleições refletiu a forte polarização entre o campo da direita, liderado pelo PL e Republicanos, e o campo da esquerda, liderado pelo PT, reproduzindo localmente o embate nacional entre as forças políticas que apoiam Jair Bolsonaro e Luiz Inácio Lula da Silva.",

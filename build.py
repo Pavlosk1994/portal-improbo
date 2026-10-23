@@ -634,21 +634,21 @@ COMMON_SCRIPTS = """
             const btnDesculpa = document.getElementById('btn-nova-desculpa');
             if (btnDesculpa) {
                 const desculpas = [
-                    "A declaração foi tirada de contexto por forças ocultas da oposição para desestabilizar o país.",
+                    "A declaração foi distorcida por uma inteligência artificial financiada por interesses escusos da oposição.",
                     "Não houve dolo, apenas uma interpretação excessivamente literal da Constituição Federal.",
-                    "O dinheiro encontrado na cueca/mala era estritamente para pagamento emergencial de panfletagem.",
-                    "Fui hackeado às 3h da manhã por um hacker patriota com residência fiscal na Letônia.",
-                    "Trata-se de uma fake news plantada pelo consórcio midiático para abalar os mercados financeiros.",
-                    "Estou sendo perseguido unicamente por defender o direito inalienável do povo de pagar mais taxas.",
-                    "Houve um equívoco de comunicação da assessoria júnior que já foi devidamente transferida de gabinete.",
-                    "O imóvel/praia/sítio não é meu, apenas guardo minhas pedaladas e caixas de isopor lá por cortesia.",
-                    "Votei a favor do perdão das dívidas partidárias para garantir a austeridade fiscal e a democracia.",
-                    "A catraca na praia é apenas para aferir a qualidade da areia e a brisa marítima sustentável.",
-                    "O beneficiário do Bolsa Família estava apenas realizando um investimento em renda variável no Tigrinho.",
-                    "A concessionária esclarece que o apagão é um convite poético ao consumo consciente à luz de velas.",
-                    "O ministro foi ao camarim do STF apenas para pedir uma receita de pão de queijo constitucional.",
-                    "Minha folga no domingo não anula meu compromisso espiritual de trabalhar pelos trabalhadores.",
-                    "Tudo foi executado estritamente dentro das quatro linhas da conveniência orçamentária."
+                    "O dinheiro na mala era estritamente para custear a liturgia do cargo e despesas cívicas do gabinete.",
+                    "Trata-se de um erro de digitação de R$ 900 milhões no anexo suplementar da Lei de Diretrizes Orçamentárias.",
+                    "Fui hackeado às 3h da manhã por um operador patriota com domicílio fiscal no Paraguai.",
+                    "A indicação de parentes para estatais visa unicamente fortalecer os laços fraternos da República.",
+                    "A catraca na praia é apenas para aferir a sustentabilidade ecológica da brisa marítima privatizada.",
+                    "O diálogo vazado ocorreu em contexto estritamente filosófico e metafórico durante um cafezinho.",
+                    "Votei pelo aumento do fundo partidário de R$ 5 bilhões para salvar a democracia do perigo da austeridade.",
+                    "A concessionária esclarece que o apagão é um convite poético à reflexão coletiva à luz de velas.",
+                    "O apostador do Bolsa Família estava realizando uma operação de hedge cambial de alto risco no Tigrinho.",
+                    "O sigilo de 100 anos é uma homenagem preventiva à posteridade histórica dos nossos descendentes.",
+                    "O ministro estava no camarim VIP apenas prestando consultoria informal sobre a liturgia das togas.",
+                    "Houve um equívoco de redação do estagiário júnior, que já foi transferido para uma embaixada em Paris.",
+                    "Tudo foi executado com rigor absoluto dentro das quatro linhas da conveniência orçamentária."
                 ];
                 let lastIdx = 0;
                 const textoEl = document.getElementById('desculpa-texto');
@@ -1243,19 +1243,19 @@ def render_audio_script():
 
 def get_article_target(slug, title=""):
     slug_lower = (slug + " " + title).lower()
-    if "tigrinho" in slug_lower or "bets" in slug_lower:
-        return "bets", "Bets & Tigrinho", "🎰"
-    elif "flavio" in slug_lower or "bolsonaro" in slug_lower:
-        return "flavio-bolsonaro", "Flávio Bolsonaro", "🏖️"
-    elif "stf" in slug_lower or "pacheco" in slug_lower or "toga" in slug_lower:
-        return "stf", "STF & Togas", "⚖️"
-    elif "lula" in slug_lower or "planalto" in slug_lower or "centrao" in slug_lower:
-        return "lula", "Lula & Planalto", "🎪"
-    elif "apagao" in slug_lower or "enel" in slug_lower or "sao-paulo" in slug_lower or "faria-lima" in slug_lower:
-        return "faria-lima", "Faria Lima & SP", "🕯️"
-    elif "congresso" in slug_lower or "partidos" in slug_lower or "anistia" in slug_lower or "eleitoral" in slug_lower:
-        return "congresso", "Congresso & Partidos", "🏛️"
-    return "outros", "Geral", "📰"
+    # 1. A República dos Lobistas (Bets, Tigrinho, PEC das praias, Enel, apagão, Faria Lima)
+    if "tigrinho" in slug_lower or "bets" in slug_lower or "praias" in slug_lower or "apagao" in slug_lower or "enel" in slug_lower:
+        return "republica-lobistas", "A República dos Lobistas", "🎰"
+    # 2. A Gazeta das Togas (STF, Pacheco, judiciário, prerrogativas, togas)
+    elif "pacheco" in slug_lower or "stf" in slug_lower or "cadeira-vip" in slug_lower or "toga" in slug_lower or "algeminha" in slug_lower or "sindico-supremo" in slug_lower:
+        return "gazeta-togas", "A Gazeta das Togas", "⚖️"
+    # 3. O Ralo do Orçamento (Emendas Pix, fundão eleitoral, anistia a partidos, cortes de gastos, Centrão)
+    elif "anistia" in slug_lower or "fundo-eleitoral" in slug_lower or "centrao" in slug_lower or "orcamento" in slug_lower or "emenda" in slug_lower or "corte-gastos" in slug_lower:
+        return "ralo-orcamento", "O Ralo do Orçamento", "💸"
+    # 4. O Ringue Eleitoral (Disputa 2026, debates na TV, Lula x Flávio, marqueteiros, pesquisas, 2º turno)
+    elif "debate" in slug_lower or "eleic" in slug_lower or "lula" in slug_lower or "flavio" in slug_lower or "bolsonaro" in slug_lower or "concurseiro" in slug_lower or "pendulo" in slug_lower or "sigilo" in slug_lower or "bondade" in slug_lower or "pe-de-meia" in slug_lower or "renan" in slug_lower or "missao" in slug_lower or "6x1" in slug_lower:
+        return "ringue-eleitoral", "O Ringue Eleitoral", "🥊"
+    return "comedia-costumes", "Comédia de Costumes", "🎪"
 
 def render_sticky_audio_bar(title):
     safe_title = title.replace('"', '&quot;')
@@ -1300,9 +1300,10 @@ def render_sticky_audio_bar(title):
     </div>
     """
 
-def render_share_widget(title, subtitle, slug):
+def render_share_widget(title, subtitle, slug, frase_disparo_zap=None):
     safe_title = title.replace('"', '\\"').replace("'", "\\'")
     safe_subtitle = subtitle.replace('"', '\\"').replace("'", "\\'")
+    safe_zap_phrase = (frase_disparo_zap or "").replace('"', '\\"').replace("'", "\\'").strip()
     return f"""
     <!-- Propague o Deboche: Botão Disparar no Zap da Família & Copiar Link -->
     <div id="share-box" class="my-8 sm:my-10 p-5 sm:p-6 bg-[#FAF9F5] border border-[#D1CEC7] border-l-4 border-l-[#25D366] rounded-sm shadow-xs reveal-on-scroll">
@@ -1310,11 +1311,11 @@ def render_share_widget(title, subtitle, slug):
             <div>
                 <div class="flex items-center space-x-2">
                     <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#128C7E]">PROPAGUE O DEBOCHE</span>
-                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#EBE7DE] text-stone-700 font-semibold">1-Click Viral</span>
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#EBE7DE] text-stone-700 font-semibold">Munição de Zap</span>
                 </div>
                 <h4 class="font-serif font-black text-base sm:text-lg text-[#121212] mt-0.5">Disparar no Zap da Família &amp; Redes</h4>
                 <p class="font-serif italic text-xs text-stone-600 mt-0.5">
-                    Porque nada une mais os parentes num domingo do que passar raiva juntos com a classe política.
+                    Munição retórica pronta para colar nos grupos e passar raiva com categoria.
                 </p>
             </div>
             <div class="flex flex-wrap items-center gap-2.5 shrink-0">
@@ -1324,7 +1325,7 @@ def render_share_widget(title, subtitle, slug):
                         <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.1-.476-.15-.676.15-.2.301-.776.979-.952 1.18-.175.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.131-.614.136-.135.301-.351.451-.527.151-.175.201-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.587-.492-.507-.676-.516l-.576-.01c-.2 0-.526.075-.802.376-.276.301-1.052 1.028-1.052 2.508 0 1.48 1.077 2.909 1.228 3.109.15.2 2.12 3.237 5.136 4.54.717.31 1.277.496 1.713.634.72.229 1.375.196 1.893.119.578-.086 1.78-.727 2.03-1.43.251-.702.251-1.304.176-1.43-.076-.126-.276-.201-.577-.351z"/>
                         <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.99-1.408C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.69 0-3.26-.525-4.56-1.423l-.327-.225-2.964.836.84-2.888-.242-.344C3.784 14.805 3.25 13.447 3.25 12c0-4.825 3.925-8.75 8.75-8.75s8.75 3.925 8.75 8.75-3.925 8.75-8.75 8.75z"/>
                     </svg>
-                    <span>Zap da Família</span>
+                    <span>Mandar no Zap</span>
                 </button>
                 <!-- Botão Copiar Link -->
                 <button id="btn-copy-link" type="button" class="inline-flex items-center space-x-1.5 px-3 py-2 bg-white border border-[#D1CEC7] hover:border-[#121212] text-stone-800 font-mono text-xs font-bold rounded shadow-xs transition-colors cursor-pointer">
@@ -1342,7 +1343,13 @@ def render_share_widget(title, subtitle, slug):
         if (btnZap) {{
             btnZap.addEventListener('click', () => {{
                 const pageUrl = window.location.href;
-                const zapText = `🚨 *URGENTE NO ÍMPROBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
+                let zapText;
+                const zapPhrase = "{safe_zap_phrase}";
+                if (zapPhrase && zapPhrase.length > 5) {{
+                    zapText = `🚨 *ÍMPROBO | SÁTIRA POLÍTICA:*\\n\\n"${{zapPhrase}}"\\n\\n👉 Leia a análise completa antes que Brasília censure: ${{pageUrl}}`;
+                }} else {{
+                    zapText = `🚨 *URGENTE NO ÍMPROBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
+                }}
                 const zapUrl = `https://api.whatsapp.com/send?text=${{encodeURIComponent(zapText)}}`;
                 window.open(zapUrl, '_blank');
             }});
@@ -1614,7 +1621,7 @@ def generate_article_page(art):
         audio_script = render_audio_script()
 
     # Widget de Compartilhamento Viral (Zap da Família & Copiar Link)
-    share_widget_html = render_share_widget(title, subtitle, slug)
+    share_widget_html = render_share_widget(title, subtitle, slug, art.get("frase_disparo_zap"))
 
     # Termômetro da Cara de Pau (Enquete Interativa)
     termometro_widget_html = render_termometro_widget(slug)
@@ -1957,41 +1964,35 @@ def generate_home_page(articles):
         target_counts[t_id] = target_counts.get(t_id, 0) + 1
 
     filtro_html = f"""
-        <!-- Filtro Rápido por Alvo da Sátira -->
+        <!-- Filtro Rápido por Editoria Satírica -->
         <div class="mb-8 p-4 sm:p-5 bg-white border border-[#D1CEC7] rounded-sm shadow-xs reveal-on-scroll">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
                 <div class="flex items-center space-x-2">
-                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">FILTRAR POR ALVO DA SÁTIRA</span>
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">EDITORIAS SATÍRICAS DO ÍMPROBO</span>
                     <span class="w-1.5 h-1.5 rounded-full bg-[#8B0000]"></span>
-                    <span class="font-serif italic text-xs text-stone-600">Escolha quem você quer ver passar vergonha hoje:</span>
+                    <span class="font-serif italic text-xs text-stone-600">Escolha onde o cinismo institucional passa mais vergonha hoje:</span>
                 </div>
                 <span id="filtro-contador" class="font-mono text-xs text-stone-500 font-medium">Exibindo todas as {len(articles)} crônicas</span>
             </div>
             <div class="flex flex-wrap gap-2" id="filtro-alvos-container">
                 <button type="button" data-filter="all" class="filtro-btn active px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-bold bg-[#8B0000] text-white shadow-xs">
-                    Todos ({len(articles)})
+                    Todas as Crônicas ({len(articles)})
                 </button>
-                <button type="button" data-filter="bets" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    🎰 Bets &amp; Tigrinho ({target_counts.get('bets', 0)})
+                <button type="button" data-filter="ringue-eleitoral" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🥊 O Ringue Eleitoral ({target_counts.get('ringue-eleitoral', 0)})
                 </button>
-                <button type="button" data-filter="flavio-bolsonaro" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    🏖️ Flávio Bolsonaro ({target_counts.get('flavio-bolsonaro', 0)})
+                <button type="button" data-filter="gazeta-togas" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    ⚖️ A Gazeta das Togas ({target_counts.get('gazeta-togas', 0)})
                 </button>
-                <button type="button" data-filter="lula" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    🎪 Lula &amp; Planalto ({target_counts.get('lula', 0)})
+                <button type="button" data-filter="republica-lobistas" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    🎰 A República dos Lobistas ({target_counts.get('republica-lobistas', 0)})
                 </button>
-                <button type="button" data-filter="stf" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    ⚖️ STF &amp; Togas ({target_counts.get('stf', 0)})
-                </button>
-                <button type="button" data-filter="faria-lima" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    🕯️ Faria Lima &amp; SP ({target_counts.get('faria-lima', 0)})
-                </button>
-                <button type="button" data-filter="congresso" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
-                    🏛️ Congresso &amp; Partidos ({target_counts.get('congresso', 0)})
+                <button type="button" data-filter="ralo-orcamento" class="filtro-btn px-3 py-1 font-mono text-xs rounded transition-all cursor-pointer font-medium bg-[#EBE7DE] text-stone-800 hover:bg-[#D1CEC7]">
+                    💸 O Ralo do Orçamento ({target_counts.get('ralo-orcamento', 0)})
                 </button>
             </div>
             <div id="filtro-sem-resultados" class="hidden mt-4 pt-3 border-t border-[#D1CEC7] text-center font-serif italic text-stone-500 text-sm">
-                Nenhuma crônica encontrada para este alvo no momento. A assessoria parlamentar deve ter conseguido abafar por enquanto.
+                Nenhuma crônica encontrada para esta editoria no momento. A assessoria parlamentar deve ter conseguido abafar temporariamente.
             </div>
         </div>
         """

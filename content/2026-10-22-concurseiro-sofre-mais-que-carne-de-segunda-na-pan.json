@@ -1,17 +1,18 @@
 {
-  "titulo": "CONCURSEIRO SOFRE MAIS QUE CARNE DE SEGUNDA NA PANELA",
-  "subtitulo": "Lula e Flávio Bolsonaro disputam o coração (e o contracheque) do concurseiro brasileiro, que só quer um ar-condicionado e estabilidade.",
+  "titulo": "CONCURSEIRO: A ARTE DE SER MOÍDO PELO EDITAL",
+  "subtitulo": "Lula e Flávio disputam o voto do concurseiro que só quer um ar-condicionado na repartição e estabilidade antes do próximo teto fiscal.",
   "categoria": "Comédia de Costumes",
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
+  "frase_disparo_zap": "Governo e oposição disputam o voto do concurseiro prometendo estabilidade com o caixa zerado. O único concurso que o brasileiro passa com louvor todo mês é o de notificação fiscal.",
   "legenda_imagem": "O concurseiro mediano meditando diante de uma pilha de livros de direito administrativo enquanto reza para um boleto.",
   "prompt_caricatura": "Estilo charge do Pasquim. Um concurseiro magro e olhoso usando óculos fundo de garrafa, equilibrando-se em cima de uma montanha de apostilas rasgadas. Dos lados dele, dois políticos sorridentes oferecem uma caneta bic e uma promessa de vaga fantasma.",
   "corpo": [
     "O esporte nacional não é mais o futebol, é a sanha coletiva por um crachá de repartição pública com ar-condicionado que funcione. Milhões de brasileiros passam a juventude inteira decorando artigo de constituição que muda toda terça-feira, acreditando no conto do vigário da estabilidade eterna. E quem está de olho nesse rebanho de fiéis concurseiros? Ninguém menos que o governo de plantão e a oposição, prontos para transformar o sonho da vaga pública em campanha eleitoral de palanque.",
     "Do lado de cá da trincheira, a gestão atual balança a cenoura do concurso unificado, prometendo oxigenar a máquina estatal com sangue novo e concurseiros que sabem usar o Excel. Claro que no meio do caminho tem o teto de gastos, o déficit fiscal e o bom e velho 'falta verba', mas o que importa é a esperança mantida viva à base de café solúvel e cursinho online parcelado em doze vezes sem juros no cartão do tio.",
     "Já do outro lado, a turma da oposição liderada pelo clã Bolsonaro agita o espantalho do inchaço da máquina pública, prometendo enxugar o Estado até sobrar só o pó da giz e a promessa de patriotismo sem contracheque. É a velha dança da chuva política: um lado promete o emprego dos sonhos na Esplanada dos Ministérios e o outro garante que vai cortar até o cafezinho do protocolo para salvar o PIB do investidor estrangeiro.",
-    "No fim das contas, o concurseiro continua lá na fila da padaria, dividindo o sonho de vestir a toga ou o colete fiscal com a realidade cruel de que o único concurso que ele passa com louvor todos os meses é o de boleto vencido. Seja com a promessa de mais repartições ou com o papo de corte de gastos, o brasileiro com a apostila debaixo do braço segue pagando a conta dessa festa de promessas."
+    "No fim das contas, o concurseiro continua debruçado sobre a mesa da cozinha, dividindo o sonho do crachá funcional com a realidade de que o único processo seletivo homologado sem recurso é o da tributação em cascata. Seja com o discurso de expansão de vagas ou com o mantra de enxugamento do Estado, o estudante com a apostila debaixo do braço segue sustentando a folha de quem já garantiu estabilidade no topo da pirâmide."
   ],
   "milagres": [
     {
@@ -27,8 +28,8 @@
       "texto": "Contratar servidor sem dinheiro no caixa é exercício de fé digno de médium."
     },
     {
-      "titulo": "O Boleto Soberano",
-      "texto": "A única inscrição que é homologada automaticamente todo santo mês."
+      "titulo": "A Taxa de Inscrição Perpétua",
+      "texto": "A única taxa governamental que é homologada automaticamente e sem direito a recurso."
     }
   ],
   "contexto_real": "À medida que o debate eleitoral e as discussões sobre o futuro da administração pública ganham tração, as propostas de Luiz Inácio Lula da Silva e de Flávio Bolsonaro para o serviço federal e a realização de concursos públicos entram no radar dos candidatos e dos milhões de concurseiros que buscam estabilidade no país.",
