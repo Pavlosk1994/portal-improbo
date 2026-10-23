@@ -496,6 +496,7 @@ Responda APENAS com um objeto JSON válido (sem delimitadores markdown extras fo
   "frase_disparo_zap": "Frase cortante de 1 linha para o leitor disparar no Zap como munição de debate.",
   "legenda_imagem": "Legenda editorial satírica para a charge",
   "prompt_caricatura": "Descrição visual cômica e detalhada da charge satírica retratando fielmente a piada da matéria atual (nanquim e guache, sem textos ou marcas)",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians involved (e.g. Luiz Inacio Lula da Silva, Flavio Bolsonaro) in physical comic farce, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
   "corpo": [
     "Primeiro parágrafo de crônica satírica rica abrindo o espetáculo e expondo o ridículo da situação...",
     "Segundo parágrafo dissecando a cara de pau do primeiro envolvido com ironia fina e deboche institucional...",
@@ -670,16 +671,20 @@ def gerar_caricatura_ia(dados_artigo, api_key):
         return True
 
     prompt_base = dados_artigo.get("prompt_caricatura")
+    prompt_en = dados_artigo.get("prompt_caricatura_en")
     if not prompt_base:
         titulo = dados_artigo.get("titulo", "")
         subtitulo = dados_artigo.get("subtitulo", "")
         prompt_base = f"Sátira política brasileira: {titulo}. {subtitulo}."
 
+    if not prompt_en:
+        prompt_en = f"Brazilian editorial political cartoon caricature in expressive ink with detailed cross-hatching, watercolor wash on vintage cream paper: {dados_artigo.get('titulo')}. Humorous caricature of Brazilian politicians in physical farce, satirical newspaper illustration, strictly NO watermark, NO logos, NO text"
+
     prompt_completo = (
         f"A vintage 1970s-1980s editorial political cartoon caricature in expressive ink with detailed cross-hatching "
         f"and vibrant gouache watercolor wash, satirical Brazilian political press style. "
-        f"Exaggerated humorous facial expressions, slapstick political farce and comic scene: {prompt_base}. "
-        f"Strictly NO text 'MAD', NO logos, NO watermark, NO real photographs, pure satirical illustration."
+        f"{prompt_en}. "
+        f"Strictly NO text, NO logos, NO watermark, NO real photographs, pure satirical illustration."
     )
 
     # 1. Tentativa via Google Imagen 3 (caso a chave API tenha cota/permissão)
@@ -741,9 +746,9 @@ def gerar_caricatura_ia(dados_artigo, api_key):
     # 2. Fallback Autônomo e Imediato: Motor de Arte Editorial Satírica (Pollinations AI)
     try:
         print("[*] Acionando motor autônomo de geração de arte satírica (Pollinations AI)...")
-        prompt_polli = f"Vintage Brazilian editorial political cartoon caricature, expressive ink cross-hatching, watercolor wash: {prompt_base[:220]}. Political farce, humorous caricature, satirical newspaper style, no watermark, no logos"
+        prompt_polli = f"Vintage Brazilian editorial political cartoon caricature, expressive ink cross-hatching, watercolor wash on aged newsprint: {prompt_en[:260]}. Satirical press style, humorous political farce, strictly no watermark, no logos"
         encoded_prompt = urllib.parse.quote(prompt_polli)
-        url_polli = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=675&nologo=true&seed={abs(hash(slug)) % 100000}"
+        url_polli = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=675&model=flux&nologo=true&seed={abs(hash(slug)) % 100000}"
         
         req_polli = urllib.request.Request(
             url_polli,
@@ -757,6 +762,19 @@ def gerar_caricatura_ia(dados_artigo, api_key):
             if len(img_data) > 15000 and ("image" in content_type or img_data[:2] == b'\xff\xd8' or img_data[:8] == b'\x89PNG\r\n\x1a\n'):
                 with open(caminho_final, "wb") as f_img:
                     f_img.write(img_data)
+                
+                # Pós-processamento: remove marcas d'água de cantos se existirem
+                try:
+                    from PIL import Image
+                    with Image.open(caminho_final) as im_check:
+                        w, h = im_check.size
+                        # Corta margem inferior onde o motor insere carimbos
+                        crop_box = (0, 0, w, h - 28)
+                        im_clean = im_check.crop(crop_box).resize((1200, 675), Image.LANCZOS)
+                        im_clean.convert("RGB").save(caminho_final, "JPEG", quality=92)
+                except Exception:
+                    pass
+
                 print(f"[✓] Caricatura editorial gerada e salva com sucesso via motor autônomo: {caminho_final} ({len(img_data)} bytes)")
                 dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
                 dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
