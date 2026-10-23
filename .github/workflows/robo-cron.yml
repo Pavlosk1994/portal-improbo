@@ -3,8 +3,8 @@ name: Robô Autônomo Ímprobo (Varredura, Caricaturas IA & Deploy Contínuo)
 on:
   workflow_dispatch:
   schedule:
-    # Dispara a cada 2 horas no minuto 15 para pontualidade máxima sem fila no GitHub
-    - cron: '15 */2 * * *'
+    # Dispara a cada 30 minutos em minutos fora de pico (17 e 47) para evitar filas e atrasos no GitHub Actions
+    - cron: '17,47 * * * *'
 
 concurrency:
   group: robo-improbo

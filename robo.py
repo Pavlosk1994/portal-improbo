@@ -268,18 +268,16 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
 
     texto_busca = f"{noticia['titulo']} {noticia['resumo']}".lower()
 
-    # FILTRO ESTRITO TEMPORÁRIO: Reta Final 2º Turno 2026 (Exclusivo Lula x Flávio Bolsonaro)
-    # Vigente até 27/10/2026 às 23:59:59. Após isso, o robô volta automaticamente à regra ampla.
+    # PRIORIZAÇÃO RETA FINAL: 2º Turno 2026 (Exclusivo Lula x Flávio Bolsonaro)
+    # Dá vantagem esmagadora (+70 pts) para embates entre Lula e Flávio Bolsonaro.
+    # Se não houver matérias novas de Lula x Flávio nesta rodada, permite que as principais
+    # notícias políticas nacionais (STF, Congresso, rombo fiscal, emendas) continuem rodando
+    # com pontuação natural, impedindo que o robô trave ou fique horas sem publicar.
     bonus_eleicoes = 0.0
     if is_regra_eleicoes_ativa():
         tem_lula = bool(re.search(r'\blula\b', texto_busca))
         tem_flavio = bool(re.search(r'\bfl[aá]vio\b|\bbolsonaro\b', texto_busca))
 
-        # Requisito obrigatório 1: deve envolver Lula ou Flávio Bolsonaro
-        if not (tem_lula or tem_flavio):
-            return -100
-
-        # Requisito obrigatório 2: deve ter contexto de eleições presidenciais / 2º turno
         termos_eleitorais = [
             "eleiç", "eleic", "2º turno", "segundo turno", "presidênc", "presidenc",
             "planalto", "pesquisa", "datafolha", "quaest", "atlas", "debate", "urna",
@@ -287,11 +285,16 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
             "marqueteiro", "tse", "horário eleitoral", "horario eleitoral", "disputa",
             "apuração", "apuracao", "votos"
         ]
-        if not any(t in texto_busca for t in termos_eleitorais):
-            return -100
+        tem_contexto_eleitoral = any(t in texto_busca for t in termos_eleitorais)
 
-        # Priorização máxima: confronto direto entre os dois ganha bônus extra
-        bonus_eleicoes = 40.0 if (tem_lula and tem_flavio) else 20.0
+        if tem_lula and tem_flavio and tem_contexto_eleitoral:
+            bonus_eleicoes = 70.0  # Prioridade máxima absoluta: confronto direto
+        elif (tem_lula or tem_flavio) and tem_contexto_eleitoral:
+            bonus_eleicoes = 45.0  # Candidato no 2º turno
+        elif tem_lula or tem_flavio:
+            bonus_eleicoes = 25.0  # Menção a um dos presidenciáveis
+        elif tem_contexto_eleitoral:
+            bonus_eleicoes = 15.0  # Pauta eleitoral geral
 
     score_termos = 0.0
 
@@ -327,12 +330,39 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
     score_final = score_base + bonus_recencia + bonus_eleicoes
     return round(score_final, 2)
 
+def carregar_fonte_editorial(nomes_candidatos, tamanho):
+    """Carrega fontes TrueType de forma resiliente no Linux (Ubuntu/Debian)"""
+    try:
+        from PIL import ImageFont
+        pastas = [
+            "/usr/share/fonts/truetype/liberation",
+            "/usr/share/fonts/truetype/dejavu",
+            "/usr/share/fonts/truetype/ubuntu",
+            "/usr/share/fonts/truetype/freefont",
+            "/usr/share/fonts"
+        ]
+        for nome in nomes_candidatos:
+            for pasta in pastas:
+                caminho = os.path.join(pasta, nome)
+                if os.path.exists(caminho):
+                    try:
+                        return ImageFont.truetype(caminho, tamanho)
+                    except Exception:
+                        pass
+        for nome in nomes_candidatos:
+            try:
+                return ImageFont.truetype(nome, tamanho)
+            except Exception:
+                pass
+        return ImageFont.load_default()
+    except Exception:
+        return None
+
 def gerar_arte_editorial_exclusiva(dados_artigo):
     """
-    Garante que cada matéria tenha uma imagem 100% EXCLUSIVA e fiel ao seu teor.
-    REGRA ABSOLUTA: ZERO reaproveitamento de imagens de outras notícias.
-    Se não houver caricatura local prévia em imagens/{slug}.jpg, gera uma capa
-    editorial gráfica satírica exclusiva em alta resolução para este artigo.
+    Gera uma capa editorial gráfica satírica de altíssimo padrão (estética The New York Times / O Pasquim),
+    100% vetorial, nítida, com tipografia de imprensa clássica e moldura nobre.
+    Garante zero reaproveitamento de imagens, zero marcas d'água de IA e fidelidade ao tom do Ímprobo.
     """
     slug = dados_artigo.get("slug")
     if not slug:
@@ -342,7 +372,7 @@ def gerar_arte_editorial_exclusiva(dados_artigo):
     caminho_final = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
 
     # Se já existir uma arte exclusiva exatamente para este slug, mantém
-    if os.path.exists(caminho_final):
+    if os.path.exists(caminho_final) and os.path.getsize(caminho_final) > 30000:
         dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
         dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
         return True
@@ -350,56 +380,84 @@ def gerar_arte_editorial_exclusiva(dados_artigo):
     try:
         from PIL import Image, ImageDraw
         width, height = 1200, 675
-        # Papel Creme Nobre / Estética Editorial NYT
-        img = Image.new("RGB", (width, height), color=(244, 241, 234))
+        img = Image.new("RGB", (width, height), color=(248, 244, 235))
         draw = ImageDraw.Draw(img)
 
-        # Moldura Dupla Clássica de Imprensa
-        draw.rectangle([(16, 16), (width - 16, height - 16)], outline=(18, 18, 18), width=3)
-        draw.rectangle([(24, 24), (width - 24, height - 24)], outline=(139, 0, 0), width=2)
-        draw.rectangle([(30, 30), (width - 30, height - 30)], outline=(18, 18, 18), width=1)
+        # Carrega fontes clássicas de imprensa
+        font_header = carregar_fonte_editorial(["DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf", "FreeSansBold.ttf"], 20)
+        font_cat = carregar_fonte_editorial(["LiberationSans-Bold.ttf", "DejaVuSans-Bold.ttf"], 22)
+        font_title = carregar_fonte_editorial(["LiberationSerif-Bold.ttf", "DejaVuSerif-Bold.ttf", "FreeSerifBold.ttf"], 44)
+        font_sub = carregar_fonte_editorial(["LiberationSerif-Italic.ttf", "DejaVuSerif-Italic.ttf"], 22)
+        font_foot = carregar_fonte_editorial(["LiberationSans-Bold.ttf", "DejaVuSans-Bold.ttf"], 16)
+
+        # Moldura tripla vintage de imprensa
+        draw.rectangle([(14, 14), (width - 14, height - 14)], outline=(20, 20, 20), width=4)
+        draw.rectangle([(22, 22), (width - 22, height - 22)], outline=(180, 30, 30), width=2)
+        draw.rectangle([(28, 28), (width - 28, height - 28)], outline=(20, 20, 20), width=1)
+
+        # Cantoneiras ornamentais
+        for x, y, dx, dy in [(36, 36, 1, 1), (width - 36, 36, -1, 1), (36, height - 36, 1, -1), (width - 36, height - 36, -1, -1)]:
+            draw.line([(x, y), (x + 24 * dx, y)], fill=(180, 30, 30), width=3)
+            draw.line([(x, y), (x, y + 24 * dy)], fill=(180, 30, 30), width=3)
 
         # Cabeçalho da Gazeta Satírica
-        draw.rectangle([(38, 38), (width - 38, 102)], fill=(18, 18, 18))
-        draw.text((width // 2, 70), "ÍMPROBO  ★  EDIÇÃO EXTRAORDINÁRIA  ★  SÁTIRA POLÍTICA", fill=(244, 241, 234), anchor="mm")
+        draw.rectangle([(38, 38), (width - 38, 95)], fill=(20, 20, 20))
+        draw.text((width // 2, 66), "ÍMPROBO  •  EDIÇÃO EXTRAORDINÁRIA  •  SÁTIRA POLÍTICA", font=font_header, fill=(248, 244, 235), anchor="mm")
 
-        # Categoria
+        # Categoria em tarja vermelha elegante
         cat = dados_artigo.get("categoria", "COMÉDIA DE COSTUMES").upper()
-        draw.text((width // 2, 140), f"◆ {cat} ◆", fill=(139, 0, 0), anchor="mm")
+        draw.rectangle([(width // 2 - 200, 115), (width // 2 + 200, 150)], fill=(180, 30, 30))
+        draw.text((width // 2, 132), f"• {cat} •", font=font_cat, fill=(255, 255, 255), anchor="mm")
 
-        # Título principal em caixa alta, direto ao ponto
+        # Linhas divisórias de jornal
+        draw.line([(60, 170), (width - 60, 170)], fill=(40, 40, 40), width=2)
+        draw.line([(60, 174), (width - 60, 174)], fill=(40, 40, 40), width=1)
+
+        # Título principal em caixa alta com quebra harmoniosa
         titulo = dados_artigo.get("titulo", "").upper()
         palavras = titulo.split()
         linhas = []
         linha_atual = []
         for p in palavras:
             linha_atual.append(p)
-            if len(" ".join(linha_atual)) > 30:
+            if len(" ".join(linha_atual)) > 26:
                 linhas.append(" ".join(linha_atual))
                 linha_atual = []
         if linha_atual:
             linhas.append(" ".join(linha_atual))
 
-        y_text = 240
+        y_text = 245
         for l in linhas[:3]:
-            draw.text((width // 2, y_text), l, fill=(18, 18, 18), anchor="mm")
-            y_text += 65
+            draw.text((width // 2, y_text), l, font=font_title, fill=(20, 20, 20), anchor="mm")
+            y_text += 55
 
-        # Linha divisória ornamental
-        draw.line([(width // 4, y_text + 15), (3 * width // 4, y_text + 15)], fill=(139, 0, 0), width=3)
+        # Linha ornamental divisória
+        draw.line([(width // 3, y_text + 10), (2 * width // 3, y_text + 10)], fill=(180, 30, 30), width=3)
 
         # Subtítulo cômico
         subtitulo = dados_artigo.get("subtitulo", "")
-        if len(subtitulo) > 115:
-            subtitulo = subtitulo[:112] + "..."
-        draw.text((width // 2, y_text + 65), subtitulo, fill=(60, 60, 60), anchor="mm")
+        sub_palavras = subtitulo.split()
+        sub_linhas = []
+        sub_atual = []
+        for p in sub_palavras:
+            sub_atual.append(p)
+            if len(" ".join(sub_atual)) > 60:
+                sub_linhas.append(" ".join(sub_atual))
+                sub_atual = []
+        if sub_atual:
+            sub_linhas.append(" ".join(sub_atual))
 
-        # Tarja de Rodapé Exclusiva desta Notícia
-        draw.rectangle([(38, height - 88), (width - 38, height - 38)], fill=(235, 231, 222), outline=(18, 18, 18), width=1)
-        draw.text((width // 2, height - 63), f"ARTE EXCLUSIVA: SÁTIRA OFICIAL ÍMPROBO", fill=(139, 0, 0), anchor="mm")
+        y_sub = y_text + 50
+        for sl in sub_linhas[:3]:
+            draw.text((width // 2, y_sub), sl, font=font_sub, fill=(60, 60, 60), anchor="mm")
+            y_sub += 32
 
-        img.save(caminho_final, "JPEG", quality=92)
-        print(f"[✓] Arte editorial exclusiva gerada para esta notícia: {caminho_final}")
+        # Rodapé solene
+        draw.rectangle([(38, height - 85), (width - 38, height - 38)], fill=(238, 232, 220), outline=(20, 20, 20), width=1)
+        draw.text((width // 2, height - 61), "GAZETA OFICIAL DE HUMOR E CRÔNICA POLÍTICA  •  DISTRIBUIÇÃO LIVRE", font=font_foot, fill=(180, 30, 30), anchor="mm")
+
+        img.save(caminho_final, "JPEG", quality=95)
+        print(f"[✓] Arte editorial exclusiva de alto padrão gerada: {caminho_final}")
         dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
         dados_artigo["credito_imagem"] = "Arte: Capa Editorial Exclusiva / Ímprobo"
         if not dados_artigo.get("legenda_imagem"):
@@ -743,50 +801,12 @@ def gerar_caricatura_ia(dados_artigo, api_key):
                 print(f"[!] Falha no Google Imagen {modelo}: {e}")
                 continue
 
-    # 2. Fallback Autônomo e Imediato: Motor de Arte Editorial Satírica (Pollinations AI)
-    try:
-        print("[*] Acionando motor autônomo de geração de arte satírica (Pollinations AI)...")
-        prompt_polli = f"Vintage Brazilian editorial political cartoon caricature, expressive ink cross-hatching, watercolor wash on aged newsprint: {prompt_en[:260]}. Satirical press style, humorous political farce, strictly no watermark, no logos"
-        encoded_prompt = urllib.parse.quote(prompt_polli)
-        url_polli = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=675&model=flux&nologo=true&seed={abs(hash(slug)) % 100000}"
-        
-        req_polli = urllib.request.Request(
-            url_polli,
-            headers={
-                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            }
-        )
-        with urllib.request.urlopen(req_polli, timeout=40) as resp:
-            content_type = resp.headers.get("Content-Type", "")
-            img_data = resp.read()
-            if len(img_data) > 15000 and ("image" in content_type or img_data[:2] == b'\xff\xd8' or img_data[:8] == b'\x89PNG\r\n\x1a\n'):
-                with open(caminho_final, "wb") as f_img:
-                    f_img.write(img_data)
-                
-                # Pós-processamento: remove marcas d'água de cantos se existirem
-                try:
-                    from PIL import Image
-                    with Image.open(caminho_final) as im_check:
-                        w, h = im_check.size
-                        # Corta margem inferior onde o motor insere carimbos
-                        crop_box = (0, 0, w, h - 28)
-                        im_clean = im_check.crop(crop_box).resize((1200, 675), Image.LANCZOS)
-                        im_clean.convert("RGB").save(caminho_final, "JPEG", quality=92)
-                except Exception:
-                    pass
-
-                print(f"[✓] Caricatura editorial gerada e salva com sucesso via motor autônomo: {caminho_final} ({len(img_data)} bytes)")
-                dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
-                dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
-                if not dados_artigo.get("legenda_imagem"):
-                    dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
-                return True
-            else:
-                print(f"[!] Resposta inválida do motor de arte ({len(img_data)} bytes, tipo: {content_type})")
-    except Exception as e:
-        print(f"[!] Falha no motor autônomo de arte satírica: {e}")
-
-    return False
+    # 2. Fallback de Segurança Editorial:
+    # Como serviços públicos de difusão gratuita (ex: Pollinations) degradaram a qualidade,
+    # inserem marcas d'água indesejadas e geram figuras genéricas desconectadas da política brasileira,
+    # o robô aciona a Capa Editorial Gráfica Exclusiva ÍMPROBO, garantindo 100% de padrão estético.
+    print("[*] Acionando geração de capa editorial exclusiva de alto padrão Ímprobo...")
+    return gerar_arte_editorial_exclusiva(dados_artigo)
 
 def salvar_artigo_no_site(dados_artigo, noticia_url):
     """Salva o JSON em content/ e recompila o site imediatamente"""
