@@ -1,0 +1,43 @@
+{
+  "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
+  "subtitulo": "Cúpula eclesiástica baixa decreto celeste para o 2º turno enquanto o eleitor tenta descobrir se a absolvição vem com indulgência plenária ou taxa de juros.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Carta de bispo agora vale mais que bula papal e santinho com promessa de asfalto.",
+  "legenda_imagem": "Caricatura de prelados debatendo o apocalipse fiscal e eleitoral.",
+  "prompt_caricatura": "Estilo de charge do Pasquim anos 70, com nanquim expressivo e aquarela guache em tom sépia, retratando bispos católicos de mitra e báculo olhando preocupados para urnas eletrônicas voadoras enquanto políticos disputam um rosário de ouro.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian Catholic bishops holding mitres and staffs while looking skeptically at flying electronic voting urns, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A santíssima trindade da burocracia eleitoral brasileira ganhou um reforço de peso intergaláctico nesta semana. Quarenta e sete bispos católicos decidiram que o Reino dos Céus tem jurisdição direta sobre as planilhas do Tesouro e o segundo turno de 2026, convocando o rebanho para uma epifania cívica com fortes contornos de liberação de dízimo ideológico.",
+    "Do lado petista, a euforia com o manifesto episcopal só não foi maior porque a liturgia oficial exige modéstia litúrgica na hora de celebrar o apoio divino, fingindo que a benção veio puramente por mérito das diretrizes socioeconômicas e não por providência divina. Afinal, contar com a graça dos céus é um ótimo atalho burocrático para dispensar a explicação de onde vai sair o superávit primário.",
+    "Enquanto isso, a ala bolsonarista reagiu com a tradicional serenidade de quem foi escomungado no capricho, preparando uma contraofensiva de orações em redes sociais e decretando jejum obrigatório de coerência para os militantes. No altar da conveniência, vale tudo para colar no candidato a pecha de mártir da cristandade, mesmo que o histórico de reza do pretendente se resuma ao momento de assinar emendas parlamentares.",
+    "No fim das contas, o eleitor brasileiro vai à urna com o manual de instruções numa mão e o rosário na outra, rezando para que o santo eleito não decida canonizar também o imposto de renda e as maracutaias de campanha. Amém e que Deus nos acuda, porque o contador da paróquia já mandou avisar que o boleto da salvação vence no dia útil seguinte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Quando o púlpito vira palanque e a hóstia é servida com viés partidário."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O paraíso fiscal prometido nos comícios tem taxa de administração celeste."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Milagre econômico é fechar as contas sem precisar canonizar o déficit."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A absolvição dos pecados custa caro, mas o contribuinte parcela em doze vezes."
+    }
+  ],
+  "contexto_real": "Um grupo de 47 bispos católicos de 19 estados brasileiros divulgou uma carta aberta sobre o segundo turno das eleições presidenciais de 2026, criticando políticas de devastação associadas ao clã Bolsonaro e elevando o tom moral das discussões entre Lula e Flávio Bolsonaro nesta reta final de campanha.",
+  "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
+  "data": "23 de Outubro de 2026",
+  "imagem_capa": "imagens/bispos-cospe-bencaos-e-o-diabo-chora-na-urna.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-23T13:22:18.168425",
+  "audio_url": "audio/bispos-cospe-bencaos-e-o-diabo-chora-na-urna.mp3"
+}
