@@ -84,6 +84,18 @@ TERMOS_RELEVANCIA = {
     "acordo": 4, "promessa": 4, "surto": 4, "farra": 5, "privilégio": 5, "penduricalho": 5
 }
 
+# Regra Temporária Especial: Reta Final Eleições Presidenciais 2026 (Lula x Flávio Bolsonaro - 2º Turno)
+# Vigência: De 23/10/2026 até terça-feira, 27/10/2026 às 23:59:59.
+DATA_LIMITE_REGRA_ELEICOES = datetime(2026, 10, 27, 23, 59, 59)
+
+def is_regra_eleicoes_ativa():
+    """
+    Verifica se a regra temporária estrita de cobertura exclusiva do Segundo Turno
+    presidencial de 2026 (foco único em Lula e Flávio Bolsonaro) está em vigor.
+    Reverte automaticamente para a regra ampla a partir de 28/10/2026 às 00:00:00.
+    """
+    return datetime.now() <= DATA_LIMITE_REGRA_ELEICOES
+
 def carregar_env():
     """Lê arquivo .env local se existir para obter chaves de API"""
     if os.path.exists(ENV_PATH):
@@ -255,6 +267,32 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
         return -50
 
     texto_busca = f"{noticia['titulo']} {noticia['resumo']}".lower()
+
+    # FILTRO ESTRITO TEMPORÁRIO: Reta Final 2º Turno 2026 (Exclusivo Lula x Flávio Bolsonaro)
+    # Vigente até 27/10/2026 às 23:59:59. Após isso, o robô volta automaticamente à regra ampla.
+    bonus_eleicoes = 0.0
+    if is_regra_eleicoes_ativa():
+        tem_lula = bool(re.search(r'\blula\b', texto_busca))
+        tem_flavio = bool(re.search(r'\bfl[aá]vio\b|\bbolsonaro\b', texto_busca))
+
+        # Requisito obrigatório 1: deve envolver Lula ou Flávio Bolsonaro
+        if not (tem_lula or tem_flavio):
+            return -100
+
+        # Requisito obrigatório 2: deve ter contexto de eleições presidenciais / 2º turno
+        termos_eleitorais = [
+            "eleiç", "eleic", "2º turno", "segundo turno", "presidênc", "presidenc",
+            "planalto", "pesquisa", "datafolha", "quaest", "atlas", "debate", "urna",
+            "voto", "votação", "votacao", "comício", "comicio", "campanha", "candidat",
+            "marqueteiro", "tse", "horário eleitoral", "horario eleitoral", "disputa",
+            "apuração", "apuracao", "votos"
+        ]
+        if not any(t in texto_busca for t in termos_eleitorais):
+            return -100
+
+        # Priorização máxima: confronto direto entre os dois ganha bônus extra
+        bonus_eleicoes = 40.0 if (tem_lula and tem_flavio) else 20.0
+
     score_termos = 0.0
 
     for termo, peso in TERMOS_RELEVANCIA.items():
@@ -286,7 +324,7 @@ def calcular_relevancia(noticia, db_urls, existing_slugs):
     else:
         bonus_recencia = 2.0
 
-    score_final = score_base + bonus_recencia
+    score_final = score_base + bonus_recencia + bonus_eleicoes
     return round(score_final, 2)
 
 def gerar_arte_editorial_exclusiva(dados_artigo):
@@ -404,7 +442,13 @@ def redigir_cronica_gemini(noticia, api_key):
     if len(resumo_sanitizado) > 800:
         resumo_sanitizado = resumo_sanitizado[:800] + "..."
 
-    instrucao_sistema = """Você é o Redator-Chefe e Humorista Escrachado de **ÍMPROBO**, portal brasileiro de jornalismo satírico, zoeira política e comédia de costumes.
+    extra_eleicoes = ""
+    if is_regra_eleicoes_ativa():
+        extra_eleicoes = """\n★ COBERTURA ESPECIAL DE RETA FINAL - 2º TURNO ELEIÇÕES 2026 (LULA x FLÁVIO BOLSONARO):
+Esta edição tem foco EXCLUSIVO no confronto entre LULA e FLÁVIO BOLSONARO na disputa pela Presidência da República de 2026.
+Desmonte o vale-tudo eleitoral da última semana de campanha, o desespero dos marqueteiros, a guerra de acusações nos debates e propagandas de TV, as promessas absurdas para fisgar o eleitor indeciso e como, no final das contas, o povo continua pagando o pato.\n"""
+
+    instrucao_sistema = f"""Você é o Redator-Chefe e Humorista Escrachado de **ÍMPROBO**, portal brasileiro de jornalismo satírico, zoeira política e comédia de costumes.
 Sua missão:
 1. Fidelidade Absoluta ao Fato Real: Os personagens, dados, falas e decisões são 100% reais (sem inventar fatos ou pessoas inexistentes).
 2. Estilo de Crônica Satírica (Pasquim / Humor Mordaz e Hilário):
@@ -413,7 +457,7 @@ Sua missão:
    - Use metáforas populares do cotidiano (o pastel de vento, a carne de segunda, o carnê atrasado, a fila do SUS, o agiota de aplicativo, o tio do Zap).
 3. Regra dos Títulos Curtos e Punchy: O título DEVE ser curto (máximo 60 caracteres), em CAIXA ALTA, contendo uma piada ou contradição sarcástica escancarada e imediata (ex: 'DIREITA FAZ O L, ESQUERDA BOTA A ALGEMINHA').
 4. Regra da Imagem Exclusiva e Fiel: Crie um prompt visual satírico 100% FIEL e estritamente focado no contexto, personagens e na piada exata DA NOTÍCIA ATUAL que está sendo publicada. Proibido misturar assuntos ou reaproveitar ideias de outras notícias.
-5. Sem Viés Partidário: O alvo é sempre quem está no poder, a hipocrisia das eleições, o teatro partidário e a conta paga pelo trabalhador.
+5. Sem Viés Partidário: O alvo é sempre quem está no poder, a hipocrisia das eleições, o teatro partidário e a conta paga pelo trabalhador.{extra_eleicoes}
 6. Estrutura de Retorno: Responda APENAS com um objeto JSON válido (sem delimitadores markdown extras):
 {
   "titulo": "MANCHETE CURTA E ÁCIDA EM CAIXA ALTA (MÁX 60 CARACTERES)",
@@ -754,6 +798,12 @@ def executar_rodada(modo_demo=False):
     existing_slugs = carregar_slugs_existentes()
     print(f"[*] Notícias no histórico registrado: {len(db_urls)}")
     print(f"[*] Artigos publicados em content/: {len(existing_slugs)}")
+
+    if is_regra_eleicoes_ativa():
+        print(f"[*] FILTRO ESPECIAL TEMPORÁRIO ATIVO: Reta Final 2º Turno 2026 (Exclusivo Lula x Flávio Bolsonaro)")
+        print(f"    Válido até: {DATA_LIMITE_REGRA_ELEICOES.strftime('%d/%m/%Y às %H:%M:%S')}")
+    else:
+        print("[*] Modo Editorial Padrão Ativo (Cobertura Satírica Ampla)")
 
     # 1. Coleta dos feeds
     print("[*] Varrendo feeds dos maiores jornais do Brasil...")
