@@ -1,0 +1,42 @@
+{
+  "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
+  "subtitulo": "Lula quer carimbo da CLT até para respirar, enquanto Flávio Bolsonaro propõe que você negocie seu café com o patrão via aplicativo.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Lula quer te salvar com a CLT de 1943 e Flávio quer te dar a liberdade de negociar sua miséria por hora. Escolha o carimbo ou o boleto.",
+  "legenda_imagem": "Caricatura em nanquim e guache mostrando Lula abraçado a um calhamaço da CLT com teias de aranha, enquanto Flávio Bolsonaro sorri oferecendo um contrato de trabalho em formato de cupom fiscal.",
+  "prompt_caricatura": "Estilo de chargeeditorial de O Pasquim, nanquim e guache colorido. De um lado, o presidente Lula, com traços caricatos, tenta abraçar um livro gigante e empoeirado escrito CLT de 1943 rodeado por pombinhos burocráticos. Do outro lado, o candidato Flávio Bolsonaro veste terno alinhado e segura um smartphone brilhante exibindo uma planilha de contratos por hora com cifrões piscando. Ao fundo, um trabalhador exausto observa a briga segurando um crachá vazio. Sem textos ou logotipos.",
+  "corpo": [
+    "A reta final de 2026 nos presenteia com o debate mais edificante da nossa tragédia institucional: decidir se a sua exploração profissional deve ser carimbada em três vias pelo Ministério do Trabalho ou se ela pode ser otimizada por um algoritmo de entrega rápida com contrato por hora e muito espírito empreendedor.",
+    "Do lado do Palácio do Planalto, a estratégia é defender com unhas, dentes e tinta de mimeógrafo a gloriosa CLT de 1943. Afinal, nada mais moderno e adaptado à economia digital do que resolver a inflação do supermercado com um parágrafo escrito por Getúlio Vargas, garantindo que o direito ao vale-refeito venha acompanhado de um carimbo burocrático e três dias de fila na Junta Conciliatória.",
+    "Em contrapartida, a genialidade liberal da oposição sugere que a modernidade exige ousadia: por que engessar o cidadão em leis antiquadas quando podemos institucionalizar a plena liberdade de negociar diretamente com o patrão se você prefere receber em dinheiro, em bônus de produtividade ou em tapinhas nas costas? É a desregulamentação elevada ao status de alta teologia econômica.",
+    "No fim do dia, o eleitor tem diante de si o suprassumo da escolha democrática brasileira: continuar sendo abraçado até a sufocação por um sindicalismo nostálgico de palanque ou ser gentilmente convidado a assinar um contrato intermitente onde o único direito garantido é o direito de achar a própria escala de trabalho um privilégio inestimável."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "O ministério garante que o passado corporativo é o único passaporte seguro para o futuro."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Contratos por hora onde o relógio anda mais rápido para o empregado e mais devagar para o bônus."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Reajustar a jornada sem mexer no boleto é a nova alta costura da Esplanada."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "Não importa se o contrato é moderno ou jurássico: a fatura do supermercado chega igualzinha."
+    }
+  ],
+  "contexto_real": "Em meio à reta final da campanha presidencial de 2026, os candidatos Lula (PT) e Flávio Bolsonaro (PL) apresentam visões divergentes sobre o futuro das relações de trabalho. Enquanto o atual presidente defende a manutenção e o fortalecimento das regras tradicionais da CLT, a oposição aposta na flexibilização contratual, na criação de modelos por hora e na ampliação da autonomia para negociações diretas entre patrões e empregados.",
+  "slug": "o-salario-minimo-de-faz-de-conta",
+  "data": "23 de Outubro de 2026",
+  "imagem_capa": "imagens/o-salario-minimo-de-faz-de-conta.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-23T07:26:18.914979",
+  "audio_url": "audio/o-salario-minimo-de-faz-de-conta.mp3"
+}
