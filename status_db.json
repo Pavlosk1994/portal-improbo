@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-24T18:40:14.942770+00:00",
+  "ultima_atualizacao": "2026-10-24T23:01:07.593124+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-24T23:01:07.593097+00:00",
+      "horario_brt": "24/10/2026 23:01:07",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 14.3,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
     {
       "timestamp": "2026-10-24T18:40:14.942724+00:00",
       "horario_brt": "24/10/2026 18:40:14",
@@ -142,39 +153,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Crise no STF migra para TSE no 2º turno, e corte presidida por Kassio vira foco de atritos",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/crise-no-stf-migra-para-tse-no-2o-turno-e-corte-presidida-por-kassio-vira-foco-de-atritos.shtml",
-      "score": 60.1,
-      "data_pub": "24 Oct 2026 13:00:00 -0300"
+      "titulo": "Ministro da Fazenda fala em ajuste das contas públicas sem 'dar cavalo de pau' ou 'fazer loucuras'; Flávio tem prometido 'tesouraço'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/10/23/ministro-da-fazenda-fala-em-ajuste-das-contas-publicas-sem-dar-cavalo-de-pau-ou-fazer-loucuras-flavio-tem-prometido-tesouraco.ghtml",
+      "score": 99.2,
+      "data_pub": "Fri, 23 Oct 2026 16:09:12 -0000"
     },
     {
-      "titulo": "Sociedade civil manifesta preocupação ao TSE por censura nas redes",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/sociedade-civil-manifesta-preocupacao-ao-tse-por-censura-nas-redes",
-      "score": 57.6,
-      "data_pub": "Fri, 23 Oct 2026 19:03:00 -0300"
+      "titulo": "Eleição 2026: maiores doadores de Flávio Bolsonaro e Lula são do agro; veja propostas e desafios para o setor",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/24/flavio-lula-agronegocio.ghtml",
+      "score": 93.6,
+      "data_pub": "Sat, 24 Oct 2026 08:29:39 -0000"
     },
     {
-      "titulo": "PGR pede que STF derrube exigência de autorização prévia para transporte de indígenas no 2º turno",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/pgr-pede-que-stf-derrube-exigencia-de-autorizacao-previa-para-transporte-de-indigenas-no-2o-turno.shtml",
-      "score": 56.2,
-      "data_pub": "24 Oct 2026 15:12:00 -0300"
+      "titulo": "Debate da Globo: segundo bloco tem discussão sobre políticas sociais, reação de Lula a 'nove dedos' e pedido de desculpas de Flávio Bolsonaro; reveja",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/24/debate-da-globo-segundo-bloco.ghtml",
+      "score": 90.0,
+      "data_pub": "Sat, 24 Oct 2026 06:11:42 -0000"
     },
     {
-      "titulo": "Voto impresso, extinção de municípios e corte de salário: veja propostas de Bolsonaro que Congresso travou",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/voto-impresso-extincao-de-municipios-e-corte-de-salario-veja-propostas-de-bolsonaro-que-congresso-travou.shtml",
-      "score": 54.9,
-      "data_pub": "24 Oct 2026 11:30:00 -0300"
+      "titulo": "Lula faz último ato da campanha na Paulista e destaca mobilização no 2º turno: 'É o povo que está organizando, e não partidos'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/24/ato-pro-lula-avenida-paulista.ghtml",
+      "score": 87.6,
+      "data_pub": "Sat, 24 Oct 2026 16:30:34 -0000"
     },
     {
-      "titulo": "O número que pode definir vitória de Lula ou de Flávio Bolsonaro no 2º turno",
-      "fonte": "BBC News Brasil",
-      "link": "https://www.bbc.com/portuguese/articles/c8wy9k5640xdo?at_medium=RSS&at_campaign=rss",
-      "score": 54.0,
-      "data_pub": "Fri, 23 Oct 2026 22:58:03 GMT"
+      "titulo": "Eduardo Bolsonaro diz em podcast dos EUA que urnas brasileiras podem ser fraudadas e defende que Flávio deixe país se perder eleição",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/23/eduardo-bolsonaro-diz-em-podcast-dos-eua-que-urnas-brasileiras-podem-ser-fraudadas-e-defende-que-flavio-deixe-o-pais-se-perder-eleicao.ghtml",
+      "score": 87.2,
+      "data_pub": "Fri, 23 Oct 2026 19:14:38 -0000"
     }
   ]
 }

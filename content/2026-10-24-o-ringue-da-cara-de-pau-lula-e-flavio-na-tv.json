@@ -1,43 +1,43 @@
 {
   "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
-  "subtitulo": "Debate presidencial atinge o ápice da alta diplomacia nacional com contagem de dígitos e exaltação cívica sob os holofotes da emissora.",
+  "subtitulo": "Enquanto a Fazenda promete equilibrar as contas públicas em marcha lenta, a oposição saca a tesoura imaginária.",
   "categoria": "Comédia de Costumes",
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
-  "frase_disparo_zap": "Quando a alta política se resume a contar dedos na TV, o contribuinte já sabe que quem vai perder os dez é ele.",
-  "legenda_imagem": "Caricatura em nanquim e guache retratando o debate televisivo de alto nível institucional entre candidatos.",
-  "prompt_caricatura": "Caricatura satírica no estilo O Pasquim e Henfil de dois políticos brasileiros engravatados discutindo aos gritos em um estúdio de televisão sob holofotes, traço de nanquim expressivo e aquarela guache em tom sépia, sem textos, sem marcas.",
-  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians Luiz Inacio Lula da Silva and Flavio Bolsonaro in physical comic farce during a TV debate, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "frase_disparo_zap": "Governo promete ajuste fiscal em câmera lenta enquanto a oposição agita a tesoura de mentirinha.",
+  "legenda_imagem": "Ministério da Fazenda e oposição disputam quem gasta mais energia fingindo austeridade fiscal.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 70 mostrando um auxiliar econômico guiando um trator em ponto morto com freio de mão puxado, enquanto um parlamentar acena com uma tesoura gigante de papelão. Nanquim e guache, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian government officials operating a slow-motion economic bulldozer with parking brake engaged, while a senator waves a giant cardboard scissors. Vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
   "corpo": [
-    "A nobre arte do debate político brasileiro alcançou mais um patamar de inegável refinamento civilizatório durante o aguardado confronto televisivo transmitido em rede nacional. Entre propostas mirabolantes de desenvolvimento econômico e projeções orçamentárias que fariam corar qualquer manual de contabilidade criativa, os contendores decidiram elevar o nível do debate para a anatomia comparada e a contabilidade digital de membros superiores.",
-    "O embate ganhou densidade filosófica quando a retórica de alto nível esbarrou na contagem exata de falanges. Da tribuna, a artilharia verbal desferiu estocadas sobre o patrimônio corpóreo alheio, transformando o palanque democrático em um rigoroso inventário de cicatrizes industriais e históricas acumuladas ao longo de décadas de folclore partidário.",
-    "A réplica, naturalmente, veio com a serenidade típica dos estadistas em campanha: um apelo veemente à honra ferida, com direito a exigências solenes de retratação pública transmitida em horário nobre. O telespectador, que esperava diretrizes sobre inflação e carga tributária, foi generosamente contemplado com uma aula magna de medicina do trabalho improvisada ao vivo.",
-    "No fim das contas, enquanto os nobres parlamentares e mandatários disputam centímetro a centímetro a primazia da indignação moral nos estúdios da emissora, a fatura dessa animada contenda de comédia bufônica continua sendo rigorosamente debitada na conta de quem assiste a tudo do sofá."
+    "A República entrou oficialmente na fase dos eufemismos criativos quando a equipe econômica garantiu que qualquer saneamento das contas públicas ocorrerá sem manobras bruscas, cavalo de pau ou sobressaltos à nação.",
+    "Segundo os doutores da Esplanada, o déficit astronômico deve ser emagrecido com a delicadeza de quem descasca um ovo com luvas de boxe, evitando o choque térmico na paciência dos contribuintes e nos humores do mercado.",
+    "Do outro lado do balcão, a bancada rival respondeu com o velho e infalível recurso do tesouraço retórico, prometendo cortes milagrosos capazes de equilibrar o orçamento nacional entre um cafezinho e o intervalo do telejornal.",
+    "No fim das contas, o contribu asistir a mais um duelo coreografado onde o déficit fiscal é tratado como animal de estimação indesejado: todo mundo acha feio, mas ninguém tem coragem de parar de alimentar."
   ],
   "milagres": [
     {
       "titulo": "A Liturgia da Rasteira",
-      "texto": "Quando a alta diplomacia do palanque reduz o debate nacional a um inventário anatômico em horário nobre."
+      "texto": "A arte de prometer o corte de gastos sem tocar em nenhuma boquinha estatal."
     },
     {
-      "titulo": "A Promesa de Papelão",
-      "texto": "Projetos mirabolantes de futuro que somem mais rápido que a paciência do eleitor na fila do banco."
+      "titulo": "A Promessa de Papelão",
+      "texto": "Tesouras gigantes balançadas em palanques para animar a claque sem ferir o orçamento."
     },
     {
       "titulo": "O Malabarismo Fiscal",
-      "texto": "Equilíbrio milagroso entre promessas de campanha e o buraco negro intransponível do erário."
+      "texto": "Equilibrar placas tectônicas de déficit com planilhas otimistas de Excel."
     },
     {
       "titulo": "O Boleto Soberano",
-      "texto": "A única certeza democrática garantida sem distorções para o cidadão no fim de cada mês."
+      "texto": "A fatura inevitável que chega sempre ao endereço do cidadão comum."
     }
   ],
-  "contexto_real": "O debate na TV Globo entre o presidente Luiz Inácio Lula da Silva e o candidato Flávio Bolsonaro foi marcado por momentos de tensão e troca de acusações diretas. Lula reagiu indignado após ser chamado de 'nove dedos' pelo adversário, lembrando que perdeu o dedo mínimo aos 17 anos em um acidente de trabalho e exigindo retratação pública.",
+  "contexto_real": "O secretário-executivo do Ministério da Fazenda, Dario Durigan, afirmou que a campanha à reeleição de Lula descarta ajustes drásticos de R$ 200 bilhões em um ano, defendendo uma transição gradual. Em resposta, o senador Flávio Bolsonaro e aliados têm prometido um corte radical de despesas públicas caso cheguem ao poder.",
   "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
   "data": "24 de Outubro de 2026",
   "imagem_capa": "imagens/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.jpg",
   "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
-  "timestamp": "2026-10-24T14:22:26.311625",
+  "timestamp": "2026-10-24T23:01:07.578084",
   "audio_url": "audio/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.mp3"
 }
