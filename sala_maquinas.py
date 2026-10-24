@@ -232,14 +232,14 @@ def generate_sala_de_maquinas_page(articles, portal_url="https://portal-improbo.
                 SALA DE MÁQUINAS &bull; ÍMPROBO
             </p>
             <div class="mb-3">
-                <input type="password" id="pin-input" maxlength="16" placeholder="PIN (improbo2026)" 
-                    class="w-full bg-[#0a0b0e] border border-stone-700/80 rounded px-3 py-2 text-center font-mono text-sm text-amber-300 focus:outline-hidden focus:border-amber-500 tracking-wider placeholder:text-stone-600 placeholder:text-xs">
+                <input type="password" id="pin-input" maxlength="24" placeholder="••••••••" 
+                    class="w-full bg-[#0a0b0e] border border-stone-700/80 rounded px-3 py-2 text-center font-mono text-sm text-amber-300 focus:outline-hidden focus:border-amber-500 tracking-widest placeholder:text-stone-600 placeholder:text-sm">
             </div>
             <div id="pin-error" class="hidden text-[10px] font-mono text-red-400 mb-3 font-semibold">
                 [!] PIN incorreto.
             </div>
             <button onclick="verificarPIN()" class="w-full bg-amber-600 hover:bg-amber-500 text-stone-950 font-mono font-bold py-2 rounded text-xs uppercase tracking-wider transition-colors cursor-pointer">
-                DESBLOQUEAR
+                ENTRAR
             </button>
         </div>
     </div>
@@ -486,15 +486,23 @@ def generate_sala_de_maquinas_page(articles, portal_url="https://portal-improbo.
 
     <!-- SCRIPT DO DASHBOARD -->
     <script>
-        const PIN_CORRETO = "improbo2026";
+        const PIN_HASH = "21d86c12f5543db81116a6d6e9ac1e5305d4b75ea6226128226d566e1c6ba235";
         const GITHUB_WORKFLOW_URL = "https://github.com/Pavlosk1994/portal-improbo/actions/workflows/robo-cron.yml";
         let modoAtualFuro = "url";
 
+        async function sha256(str) {{
+            const buffer = new TextEncoder().encode(str);
+            const hashBuffer = await crypto.subtle.digest("SHA-256", buffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+        }}
+
         // 1. PIN de Acesso
-        function verificarPIN() {{
+        async function verificarPIN() {{
             const input = document.getElementById("pin-input");
             const err = document.getElementById("pin-error");
-            if (input.value === PIN_CORRETO) {{
+            const dig = await sha256(input.value.trim());
+            if (dig === PIN_HASH) {{
                 sessionStorage.setItem("improbo_sala_auth", "true");
                 document.getElementById("pin-lock-modal").classList.add("hidden");
                 document.getElementById("dashboard-content").classList.remove("hidden");
@@ -502,6 +510,7 @@ def generate_sala_de_maquinas_page(articles, portal_url="https://portal-improbo.
             }} else {{
                 err.classList.remove("hidden");
                 input.classList.add("border-red-500");
+                input.value = "";
                 input.focus();
             }}
         }}
