@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-24T03:29:55.111463+00:00",
+  "ultima_atualizacao": "2026-10-24T14:22:26.332281+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-24T14:22:26.332243+00:00",
+      "horario_brt": "24/10/2026 14:22:26",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 13.2,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
     {
       "timestamp": "2026-10-24T02:01:41.691627",
       "horario_brt": "24 de Outubro de 2026",
@@ -120,25 +131,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "STF mantém bloqueio das emendas Pix e exige rastreabilidade",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/",
-      "score": 42.0,
-      "data_pub": "Hoje"
+      "titulo": "Candidatos trocam acusações e defendem propostas em debate na Globo",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/candidatos-trocam-acusacoes-e-defendem-propostas-em-debate-na-globo",
+      "score": 63.1,
+      "data_pub": "Sat, 24 Oct 2026 02:20:00 -0300"
     },
     {
-      "titulo": "Governo discute meta fiscal e corte de despesas com ministros",
-      "fonte": "Poder360",
-      "link": "https://poder360.com.br/",
-      "score": 38.5,
-      "data_pub": "Hoje"
+      "titulo": "ONS fará operação especial para garantir energia no segundo turno",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ons-fara-operacao-especial-para-garantir-energia-no-segundo-turno",
+      "score": 58.7,
+      "data_pub": "Fri, 23 Oct 2026 11:53:00 -0300"
     },
     {
-      "titulo": "Senado articula votação de projetos prioritários na reta final de ano",
-      "fonte": "Folha de S.Paulo",
-      "link": "https://folha.uol.com.br/",
-      "score": 31.0,
-      "data_pub": "Hoje"
+      "titulo": "Sociedade civil manifesta preocupação ao TSE por censura nas redes",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/sociedade-civil-manifesta-preocupacao-ao-tse-por-censura-nas-redes",
+      "score": 57.6,
+      "data_pub": "Fri, 23 Oct 2026 19:03:00 -0300"
+    },
+    {
+      "titulo": "O número que pode definir vitória de Lula ou de Flávio Bolsonaro no 2º turno",
+      "fonte": "BBC News Brasil",
+      "link": "https://www.bbc.com/portuguese/articles/c8wy9k5640xdo?at_medium=RSS&at_campaign=rss",
+      "score": 54.0,
+      "data_pub": "Fri, 23 Oct 2026 22:58:03 GMT"
+    },
+    {
+      "titulo": "'Nove dedos', 'miliciano, 'dá um Google': veja frases do debate entre Lula e Flávio na Globo",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/nove-dedos-miliciano-da-um-google-veja-frases-do-debate-entre-lula-e-flavio-na-globo.shtml",
+      "score": 50.5,
+      "data_pub": "24 Oct 2026 00:24:00 -0300"
     }
   ]
 }

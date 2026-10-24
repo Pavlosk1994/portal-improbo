@@ -1,43 +1,43 @@
 {
   "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
-  "subtitulo": "Emplacando promessas requentadas e ataques de almanaque, candidatos disputam centímetro a centímetro o troféu de quem menos explica o buraco no Orçamento.",
+  "subtitulo": "Debate presidencial atinge o ápice da alta diplomacia nacional com contagem de dígitos e exaltação cívica sob os holofotes da emissora.",
   "categoria": "Comédia de Costumes",
   "tempo_leitura": "2 min de leitura",
   "autor": "Redação Ácida",
   "destaque": true,
-  "frase_disparo_zap": "Se promessa de campanha desse juros positivo, o Brasil quitava a dívida externa até o final do debate da Globo.",
-  "legenda_imagem": "Caricatura de Lula e Flávio Bolsonaro engatados em um debate televisivo sob o olhar clínico e polido da bancada.",
-  "prompt_caricatura": "Charge satírica estilo O Pasquim retratando Luiz Inácio Lula da Silva e Flávio Bolsonaro frente a frente em um estúdio de televisão, gesticulando exageradamente com expressões teatrais de indignação fingida, microfones vintage, traço a nanquim e lavagem em guache sobre papel creme, sem textos ou logotipos.",
+  "frase_disparo_zap": "Quando a alta política se resume a contar dedos na TV, o contribuinte já sabe que quem vai perder os dez é ele.",
+  "legenda_imagem": "Caricatura em nanquim e guache retratando o debate televisivo de alto nível institucional entre candidatos.",
+  "prompt_caricatura": "Caricatura satírica no estilo O Pasquim e Henfil de dois políticos brasileiros engravatados discutindo aos gritos em um estúdio de televisão sob holofotes, traço de nanquim expressivo e aquarela guache em tom sépia, sem textos, sem marcas.",
   "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians Luiz Inacio Lula da Silva and Flavio Bolsonaro in physical comic farce during a TV debate, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
   "corpo": [
-    "A República chegou ao seu ápice litúrgico nesta sexta-feira com o último debate presidencial nos Estúdios Globo, transformando o horário nobre em um test-drive de oratória defensiva e contorcionismo estatístico. De um lado, a veterana arte de discursar olhando fixamente para a lente com o ar de quem inventou o assistencialismo e patenteou a esperança; do outro, a diplomacia familiar de quem herdou a cruzada antipetista com o garbo de quem nunca precisou justificar uma emenda parlamentar na vida.",
-    "Sob o olhar cirúrgico do mediador, o confronto fluiu com aquela leveza de uma negociação de dívida bancária em véspera de feriado prolongado. Lula repetiu o repertório clássico de conquistas sociais passadas, enquanto gesticulava com a autoridade de quem governa o país desde a Proclamação da República, ignorando olímpico qualquer detalhe menor sobre o déficit fiscal ou o tamanho da fatura que será empurrada para o contribuinte na segunda-feira seguinte.",
-    "Em contrapartida, Flávio Bolsonaro desfilou o figurino do rigor moral e da austeridade de palanque, prometendo cortar privilégios com o mesmo entusiasmo com que seus aliados defendem emendas de relator e fundões bilionários. A estratégia foi cirúrgica: apontar cada tropeço da máquina pública atual sem, contudo, mencionar como a engenharia financeira familiar pretende equilibrar as contas sem recorrer ao velho e infalível balcão de negociações do Centrão.",
-    "No fim das contas, o telespectador foi brindado com mais uma aula magna de prestidigitação política. Promessas mirabolantes cruzavam o estúdio enquanto a única certeza garantida para o cidadão comum era a taxa de juros subindo na curva de juros e a burocracia estatal intacta, firme e forte, pronta para cobrar o imposto do próximo trimestre com juros e correção monetária."
+    "A nobre arte do debate político brasileiro alcançou mais um patamar de inegável refinamento civilizatório durante o aguardado confronto televisivo transmitido em rede nacional. Entre propostas mirabolantes de desenvolvimento econômico e projeções orçamentárias que fariam corar qualquer manual de contabilidade criativa, os contendores decidiram elevar o nível do debate para a anatomia comparada e a contabilidade digital de membros superiores.",
+    "O embate ganhou densidade filosófica quando a retórica de alto nível esbarrou na contagem exata de falanges. Da tribuna, a artilharia verbal desferiu estocadas sobre o patrimônio corpóreo alheio, transformando o palanque democrático em um rigoroso inventário de cicatrizes industriais e históricas acumuladas ao longo de décadas de folclore partidário.",
+    "A réplica, naturalmente, veio com a serenidade típica dos estadistas em campanha: um apelo veemente à honra ferida, com direito a exigências solenes de retratação pública transmitida em horário nobre. O telespectador, que esperava diretrizes sobre inflação e carga tributária, foi generosamente contemplado com uma aula magna de medicina do trabalho improvisada ao vivo.",
+    "No fim das contas, enquanto os nobres parlamentares e mandatários disputam centímetro a centímetro a primazia da indignação moral nos estúdios da emissora, a fatura dessa animada contenda de comédia bufônica continua sendo rigorosamente debitada na conta de quem assiste a tudo do sofá."
   ],
   "milagres": [
     {
       "titulo": "A Liturgia da Rasteira",
-      "texto": "Troca de gentilezas retóricas onde nenhum dos lados lembra de onde veio o dinheiro da campanha."
+      "texto": "Quando a alta diplomacia do palanque reduz o debate nacional a um inventário anatômico em horário nobre."
     },
     {
-      "titulo": "A Promessa de Papelão",
-      "texto": "Propostas mirabolantes desenhadas exclusivamente para durar até o fechamento das urnas."
+      "titulo": "A Promesa de Papelão",
+      "texto": "Projetos mirabolantes de futuro que somem mais rápido que a paciência do eleitor na fila do banco."
     },
     {
       "titulo": "O Malabarismo Fiscal",
-      "texto": "A arte milenar de prometer expansão de gastos sem tocar nas privilégios da República."
+      "texto": "Equilíbrio milagroso entre promessas de campanha e o buraco negro intransponível do erário."
     },
     {
       "titulo": "O Boleto Soberano",
-      "texto": "O único elemento constante do debate, garantido para cair na conta do contribuinte na segunda-feira."
+      "texto": "A única certeza democrática garantida sem distorções para o cidadão no fim de cada mês."
     }
   ],
-  "contexto_real": "O senador Flávio Bolsonaro (PL) e o presidente Luiz Inácio Lula da Silva (PT), que disputa a reeleição, participam na noite desta sexta-feira (23) do debate da TV Globo, o último encontro televisivo do segundo turno das eleições presidenciais de 2026 antes do pleito de domingo (25). A mediação é do jornalista César Tralli, com transmissão simultânea pelos canais do grupo.",
+  "contexto_real": "O debate na TV Globo entre o presidente Luiz Inácio Lula da Silva e o candidato Flávio Bolsonaro foi marcado por momentos de tensão e troca de acusações diretas. Lula reagiu indignado após ser chamado de 'nove dedos' pelo adversário, lembrando que perdeu o dedo mínimo aos 17 anos em um acidente de trabalho e exigindo retratação pública.",
   "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
   "data": "24 de Outubro de 2026",
   "imagem_capa": "imagens/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.jpg",
   "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
-  "timestamp": "2026-10-24T02:01:41.691627",
+  "timestamp": "2026-10-24T14:22:26.311625",
   "audio_url": "audio/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.mp3"
 }
