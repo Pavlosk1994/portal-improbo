@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-24T14:22:26.332281+00:00",
+  "ultima_atualizacao": "2026-10-24T18:40:14.942770+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-24T18:40:14.942724+00:00",
+      "horario_brt": "24/10/2026 18:40:14",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 16.2,
+      "slug": "kassio-nunes-e-o-novo-circo-eleitoral",
+      "titulo": "KASSIO NUNES E O NOVO CIRCO ELEITORAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-24T14:22:26.332243+00:00",
       "horario_brt": "24/10/2026 14:22:26",
@@ -131,18 +142,11 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Candidatos trocam acusações e defendem propostas em debate na Globo",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/candidatos-trocam-acusacoes-e-defendem-propostas-em-debate-na-globo",
-      "score": 63.1,
-      "data_pub": "Sat, 24 Oct 2026 02:20:00 -0300"
-    },
-    {
-      "titulo": "ONS fará operação especial para garantir energia no segundo turno",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ons-fara-operacao-especial-para-garantir-energia-no-segundo-turno",
-      "score": 58.7,
-      "data_pub": "Fri, 23 Oct 2026 11:53:00 -0300"
+      "titulo": "Crise no STF migra para TSE no 2º turno, e corte presidida por Kassio vira foco de atritos",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/crise-no-stf-migra-para-tse-no-2o-turno-e-corte-presidida-por-kassio-vira-foco-de-atritos.shtml",
+      "score": 60.1,
+      "data_pub": "24 Oct 2026 13:00:00 -0300"
     },
     {
       "titulo": "Sociedade civil manifesta preocupação ao TSE por censura nas redes",
@@ -152,18 +156,25 @@
       "data_pub": "Fri, 23 Oct 2026 19:03:00 -0300"
     },
     {
+      "titulo": "PGR pede que STF derrube exigência de autorização prévia para transporte de indígenas no 2º turno",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/pgr-pede-que-stf-derrube-exigencia-de-autorizacao-previa-para-transporte-de-indigenas-no-2o-turno.shtml",
+      "score": 56.2,
+      "data_pub": "24 Oct 2026 15:12:00 -0300"
+    },
+    {
+      "titulo": "Voto impresso, extinção de municípios e corte de salário: veja propostas de Bolsonaro que Congresso travou",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/voto-impresso-extincao-de-municipios-e-corte-de-salario-veja-propostas-de-bolsonaro-que-congresso-travou.shtml",
+      "score": 54.9,
+      "data_pub": "24 Oct 2026 11:30:00 -0300"
+    },
+    {
       "titulo": "O número que pode definir vitória de Lula ou de Flávio Bolsonaro no 2º turno",
       "fonte": "BBC News Brasil",
       "link": "https://www.bbc.com/portuguese/articles/c8wy9k5640xdo?at_medium=RSS&at_campaign=rss",
       "score": 54.0,
       "data_pub": "Fri, 23 Oct 2026 22:58:03 GMT"
-    },
-    {
-      "titulo": "'Nove dedos', 'miliciano, 'dá um Google': veja frases do debate entre Lula e Flávio na Globo",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/nove-dedos-miliciano-da-um-google-veja-frases-do-debate-entre-lula-e-flavio-na-globo.shtml",
-      "score": 50.5,
-      "data_pub": "24 Oct 2026 00:24:00 -0300"
     }
   ]
 }
