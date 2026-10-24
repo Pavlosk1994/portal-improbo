@@ -831,6 +831,7 @@ def render_footer(is_article=False):
     home_link = "../index.html" if is_article else "index.html"
     sobre_link = "../sobre.html" if is_article else "sobre.html"
     sitemap_link = "../sitemap.xml" if is_article else "sitemap.xml"
+    sala_link = "../sala-de-maquinas.html" if is_article else "sala-de-maquinas.html"
     autor_img_src = "../imagens/autor.png" if is_article else "imagens/autor.png"
     return f"""
     <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
@@ -907,6 +908,8 @@ def render_footer(is_article=False):
                 <a href="{sobre_link}" class="hover:text-stone-300 underline">Aviso Legal (Art. 5º CF/88)</a>
                 <span>&bull;</span>
                 <a href="{sitemap_link}" class="hover:text-stone-300 underline">Sitemap</a>
+                <span>&bull;</span>
+                <a href="{sala_link}" class="text-stone-600 hover:text-amber-500/80 transition-colors" title="Sala de Máquinas (Restrito)">⚙️</a>
             </div>
         </div>
     </footer>
@@ -2411,6 +2414,8 @@ def generate_sitemap(articles):
 
 def generate_robots():
     robots_content = f"""User-agent: *
+Disallow: /sala-de-maquinas
+Disallow: /sala-de-maquinas.html
 Allow: /
 
 Sitemap: {PORTAL_URL}/sitemap.xml
@@ -2474,6 +2479,17 @@ def build_all():
     with open(SOBRE_PATH, "w", encoding="utf-8") as f:
         f.write(sobre_html)
     print(f"Página Sobre gerada: {SOBRE_PATH}")
+
+    # Generate sala-de-maquinas.html
+    try:
+        from sala_maquinas import generate_sala_de_maquinas_page
+        sala_html = generate_sala_de_maquinas_page(articles, PORTAL_URL)
+        sala_path = os.path.join(BASE_DIR, "sala-de-maquinas.html")
+        with open(sala_path, "w", encoding="utf-8") as f:
+            f.write(sala_html)
+        print(f"Sala de Máquinas gerada: {sala_path}")
+    except Exception as e:
+        print(f"[!] Erro ao gerar Sala de Máquinas: {e}")
 
     # Generate sitemap.xml & robots.txt
     generate_sitemap(articles)

@@ -2,6 +2,17 @@ name: Robô Autônomo Ímprobo (Varredura, Caricaturas IA & Deploy Contínuo)
 
 on:
   workflow_dispatch:
+    inputs:
+      url_noticia:
+        description: 'URL de notícia externa para Furo de Reportagem (opcional)'
+        required: false
+        type: string
+        default: ''
+      tema_customizado:
+        description: 'Tema ou pauta específica sob demanda (opcional)'
+        required: false
+        type: string
+        default: ''
   schedule:
     # Cadência estável e controlada: 4 edições diárias (08h, 13h, 18h e 22h no horário de Brasília)
     - cron: '0 1,11,16,21 * * *'
@@ -37,14 +48,24 @@ jobs:
       - name: Executar Varredura, Redação Satírica e Geração de Caricatura IA
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PORTAL_URL: ${{ secrets.PORTAL_URL || 'https://improbo.vercel.app' }}
           WHATSAPP_CHANNEL_URL: ${{ secrets.WHATSAPP_CHANNEL_URL || 'https://whatsapp.com/channel/0029Vb3improbo' }}
           TELEGRAM_CHANNEL_URL: ${{ secrets.TELEGRAM_CHANNEL_URL || 'https://t.me/portalimprobo' }}
         run: |
           echo "[*] Iniciando ciclo autônomo do Robô Ímprobo..."
-          python3 robo.py --executar
+          CMD="python3 robo.py --executar"
+          if [ -n "${{ github.event.inputs.url_noticia }}" ]; then
+            CMD="$CMD --url '${{ github.event.inputs.url_noticia }}'"
+          fi
+          if [ -n "${{ github.event.inputs.tema_customizado }}" ]; then
+            CMD="$CMD --tema '${{ github.event.inputs.tema_customizado }}'"
+          fi
+          echo "[*] Executando: $CMD"
+          eval $CMD
 
-      - name: Recompilar Portal Estático (Home, Artigos, Manifesto, Sitemap e Robots)
+      - name: Recompilar Portal Estático (Home, Artigos, Sala de Máquinas, Sitemap e Robots)
         env:
           PORTAL_URL: ${{ secrets.PORTAL_URL || 'https://improbo.vercel.app' }}
           WHATSAPP_CHANNEL_URL: ${{ secrets.WHATSAPP_CHANNEL_URL || 'https://whatsapp.com/channel/0029Vb3improbo' }}
@@ -57,7 +78,7 @@ jobs:
         run: |
           git config --global user.name "Robô Autônomo Ímprobo"
           git config --global user.email "robo@improbo.vercel.app"
-          git add content/ artigos/ audio/ imagens/ index.html sobre.html sitemap.xml robots.txt noticias_db.json
+          git add content/ artigos/ audio/ imagens/ index.html sobre.html sala-de-maquinas.html sitemap.xml robots.txt noticias_db.json status_db.json
           if git diff --staged --quiet; then
             echo "[i] Nenhuma matéria nova ou alteração para publicar nesta rodada."
           else

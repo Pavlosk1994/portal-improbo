@@ -30,6 +30,28 @@ DB_PATH = os.path.join(BASE_DIR, "noticias_db.json")
 ENV_PATH = os.path.join(BASE_DIR, ".env")
 PROMPT_MESTRE_PATH = os.path.join(BASE_DIR, "PROMPT_MESTRE.md")
 IMAGENS_DIR = os.path.join(BASE_DIR, "imagens")
+AUDIO_DIR = os.path.join(BASE_DIR, "audio")
+
+# Inspetor de Qualidade & Telemetria
+try:
+    from inspetor import (
+        validar_artigo_completo,
+        registrar_execucao,
+        atualizar_radar_pautas,
+        carregar_status_db,
+        salvar_status_db
+    )
+except ImportError:
+    validar_artigo_completo = None
+    registrar_execucao = None
+    atualizar_radar_pautas = None
+
+# Notificador Telegram
+try:
+    from notificador_telegram import notificar_sucesso, notificar_alerta
+except ImportError:
+    notificar_sucesso = None
+    notificar_alerta = None
 
 # Feeds RSS oficiais dos maiores portais de notícias do Brasil
 RSS_FEEDS = [
@@ -138,6 +160,67 @@ def slugify(texto):
     texto = unicodedata.normalize('NFKD', texto).encode('ascii', 'ignore').decode('utf-8')
     texto = re.sub(r'[^a-zA-Z0-9\s-]', '', texto).lower()
     return re.sub(r'[-\s]+', '-', texto).strip('-')[:50]
+
+def extrair_noticia_de_url(url):
+    """Extrai título, fonte e resumo de uma URL externa para pauta sob demanda (furo de reportagem)"""
+    try:
+        from urllib.parse import urlparse
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode('utf-8', errors='ignore')
+
+        soup = BeautifulSoup(html, 'html.parser')
+
+        titulo = None
+        for tag in [
+            soup.find("meta", property="og:title"),
+            soup.find("meta", property="twitter:title"),
+            soup.find("h1"),
+            soup.find("title")
+        ]:
+            if tag:
+                val = tag.get("content") if tag.name == "meta" else tag.get_text()
+                if val and len(val.strip()) > 10:
+                    titulo = val.strip()
+                    break
+
+        if not titulo:
+            titulo = "Pauta Exclusiva da Redação Ímprobo"
+
+        resumo = ""
+        for tag in [
+            soup.find("meta", property="og:description"),
+            soup.find("meta", property="twitter:description"),
+            soup.find("meta", attrs={"name": "description"})
+        ]:
+            if tag:
+                val = tag.get("content")
+                if val and len(val.strip()) > 20:
+                    resumo = val.strip()
+                    break
+
+        if not resumo:
+            ps = [p.get_text().strip() for p in soup.find_all("p") if len(p.get_text().strip()) > 50]
+            if ps:
+                resumo = " ".join(ps[:2])[:400]
+
+        dominio = urlparse(url).netloc.replace("www.", "")
+        fonte = f"Furo Externo ({dominio})"
+
+        return {
+            "fonte": fonte,
+            "titulo": titulo,
+            "link": url,
+            "resumo": resumo or titulo,
+            "data_pub": datetime.now().strftime("%d de %B de %Y"),
+            "peso_fonte": 2.5
+        }
+    except Exception as e:
+        print(f"[!] Erro ao extrair notícia de {url}: {e}")
+        return None
 
 def varrer_feed_rss(feed_info):
     """Faz requisição e parsing de um feed RSS com User-Agent de navegador"""
@@ -519,7 +602,6 @@ def criar_artigo_demo(noticia):
         ],
         "contexto_real": f"O Contexto Factual: {resumo_curto} Noticiado originalmente por {noticia['fonte']} com base nos desdobramentos apurados na capital federal."
     }
-    gerar_arte_editorial_exclusiva(dados)
     return dados
 
 def gerar_caricatura_ia(dados_artigo, api_key):
@@ -667,77 +749,118 @@ def salvar_artigo_no_site(dados_artigo, noticia_url):
     build_all()
     print("[✓] Portal atualizado com a nova matéria e reprodutor de áudio!")
 
-def executar_rodada(modo_demo=False):
-    """Executa o ciclo completo do robô: varre, filtra, gera e publica"""
+def executar_rodada(modo_demo=False, url_customizada=None, tema_customizado=None):
+    """Executa o ciclo completo do robô: varre, filtra, gera e publica com auditoria e notificações"""
+    inicio_rodada = time.time()
     print("=" * 65)
     print("  ROBÔ AUTÔNOMO ÍMPROBO - VARREDURA E PUBLICAÇÃO SATÍRICA")
     print("=" * 65)
 
-    db = carregar_db()
-    db_urls = set(item.get("url") for item in db.get("processadas", []) if item.get("url"))
-    existing_slugs = carregar_slugs_existentes()
-    print(f"[*] Notícias no histórico registrado: {len(db_urls)}")
-    print(f"[*] Artigos publicados em content/: {len(existing_slugs)}")
+    melhor_noticia = None
 
-    print("[*] Modo Editorial Padrão Ativo (Cobertura Política Ampla Nacional)")
+    # CASO 1: Pauta Sob Demanda via URL externa
+    if url_customizada:
+        print(f"\n[*] Modo Furo de Reportagem Sob Demanda ativado!")
+        print(f"[*] Raspando conteúdo da URL: {url_customizada}")
+        noticia_extraida = extrair_noticia_de_url(url_customizada)
+        if not noticia_extraida:
+            print(f"[!] Falha ao extrair dados da URL {url_customizada}. Abortando furo.")
+            duracao = time.time() - inicio_rodada
+            if registrar_execucao:
+                registrar_execucao("RETIDO", f"Falha na extração da URL externa: {url_customizada}", duracao_seg=duracao)
+            if notificar_alerta:
+                notificar_alerta("Falha ao extrair notícia de URL externa para furo de reportagem.", url_customizada)
+            return False
+        melhor_noticia = noticia_extraida
 
-    # 1. Coleta dos feeds
-    print("[*] Varrendo feeds dos maiores jornais do Brasil...")
-    todas_noticias = []
-    for feed in RSS_FEEDS:
-        itens = varrer_feed_rss(feed)
-        print(f"    - {feed['fonte']}: {len(itens)} notícias coletadas")
-        todas_noticias.extend(itens)
+    # CASO 2: Pauta Sob Demanda via Tema digitado
+    elif tema_customizado:
+        print(f"\n[*] Modo Furo de Reportagem Sob Demanda ativado!")
+        print(f"[*] Tema fornecido: '{tema_customizado}'")
+        slug_temp = slugify(tema_customizado)
+        melhor_noticia = {
+            "fonte": "Pauta Sob Demanda / Furo Exclusivo",
+            "titulo": tema_customizado,
+            "link": f"https://portal-improbo.vercel.app/furo/{slug_temp}",
+            "resumo": f"Pauta editorial exclusiva sob demanda solicitada pela redação: {tema_customizado}",
+            "data_pub": datetime.now().strftime("%d de %B de %Y"),
+            "peso_fonte": 2.5
+        }
 
-    if not todas_noticias and modo_demo:
-        print("[i] Modo demonstração/offline ativo: carregando manchetes reais do cenário nacional...")
-        todas_noticias = [
-            {
-                "fonte": "Folha de S.Paulo - Poder",
-                "titulo": "Articulação no Congresso e STF avança para indicar Rodrigo Pacheco à vaga aberta no Supremo",
-                "link": "https://www1.folha.uol.com.br/poder/2026/10/articulacao-pacheco-stf-segundo-turno.shtml",
-                "resumo": "Lideranças do Senado e da Câmara articulam com ministros do STF para emplacar o ex-presidente do Senado Rodrigo Pacheco na vaga da Corte em plena reta final do segundo turno.",
-                "data_pub": "15 de Outubro de 2026",
-                "peso_fonte": 1.3
-            }
-        ]
+    # CASO 3: Modo de Varredura Normal (RSS Feeds)
+    else:
+        db = carregar_db()
+        db_urls = set(item.get("url") for item in db.get("processadas", []) if item.get("url"))
+        existing_slugs = carregar_slugs_existentes()
+        print(f"[*] Notícias no histórico registrado: {len(db_urls)}")
+        print(f"[*] Artigos publicados em content/: {len(existing_slugs)}")
+        print("[*] Modo Editorial Padrão Ativo (Cobertura Política Ampla Nacional)")
 
-    if not todas_noticias:
-        print("[!] Feeds externos indisponíveis ou vazios. Ativando manchetes factuais de contingência...")
-        todas_noticias = [
-            {
-                "fonte": "Poder360",
-                "titulo": "Governo Lula finaliza pacote de corte de gastos obrigatórios e prepara envio ao Congresso",
-                "link": "https://www.poder360.com.br/economia/governo-lula-finaliza-pacote-corte-gastos-congresso-2026/",
-                "resumo": "Ministério da Fazenda e Planejamento concluem proposta de contenção de despesas obrigatórias para tentar cumprir meta fiscal diante de resistência de ministros da área social.",
-                "data_pub": datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT"),
-                "peso_fonte": 1.3
-            },
-            {
-                "fonte": "G1 Política",
-                "titulo": "STF mantém bloqueio de emendas Pix até que Congresso apresente regras rígidas de transparência",
-                "link": "https://g1.globo.com/politica/noticia/2026/10/stf-mantem-bloqueio-emendas-pix-transparencia-congresso.ghtml",
-                "resumo": "Plenário do Supremo Tribunal Federal forma maioria para manter suspensão do repasse bilionário das chamadas emendas Pix sem rastreabilidade dos autores.",
-                "data_pub": datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT"),
-                "peso_fonte": 1.2
-            }
-        ]
+        # 1. Coleta dos feeds
+        print("[*] Varrendo feeds dos maiores jornais do Brasil...")
+        todas_noticias = []
+        for feed in RSS_FEEDS:
+            itens = varrer_feed_rss(feed)
+            print(f"    - {feed['fonte']}: {len(itens)} notícias coletadas")
+            todas_noticias.extend(itens)
 
-    # 2. Ranqueamento de Relevância
-    noticias_ranqueadas = []
-    for n in todas_noticias:
-        score = calcular_relevancia(n, db_urls, existing_slugs)
-        if score > 0:
-            noticias_ranqueadas.append((score, n))
+        if not todas_noticias and modo_demo:
+            print("[i] Modo demonstração/offline ativo: carregando manchetes reais do cenário nacional...")
+            todas_noticias = [
+                {
+                    "fonte": "Folha de S.Paulo - Poder",
+                    "titulo": "Articulação no Congresso e STF avança para indicar Rodrigo Pacheco à vaga aberta no Supremo",
+                    "link": "https://www1.folha.uol.com.br/poder/2026/10/articulacao-pacheco-stf-segundo-turno.shtml",
+                    "resumo": "Lideranças do Senado e da Câmara articulam com ministros do STF para emplacar o ex-presidente do Senado Rodrigo Pacheco na vaga da Corte em plena reta final do segundo turno.",
+                    "data_pub": "15 de Outubro de 2026",
+                    "peso_fonte": 1.3
+                }
+            ]
 
-    noticias_ranqueadas.sort(key=lambda x: x[0], reverse=True)
+        if not todas_noticias:
+            print("[!] Feeds externos indisponíveis ou vazios. Ativando manchetes factuais de contingência...")
+            todas_noticias = [
+                {
+                    "fonte": "Poder360",
+                    "titulo": "Governo Lula finaliza pacote de corte de gastos obrigatórios e prepara envio ao Congresso",
+                    "link": "https://www.poder360.com.br/economia/governo-lula-finaliza-pacote-corte-gastos-congresso-2026/",
+                    "resumo": "Ministério da Fazenda e Planejamento concluem proposta de contenção de despesas obrigatórias para tentar cumprir meta fiscal diante de resistência de ministros da área social.",
+                    "data_pub": datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT"),
+                    "peso_fonte": 1.3
+                },
+                {
+                    "fonte": "G1 Política",
+                    "titulo": "STF mantém bloqueio de emendas Pix até que Congresso apresente regras rígidas de transparência",
+                    "link": "https://g1.globo.com/politica/noticia/2026/10/stf-mantem-bloqueio-emendas-pix-transparencia-congresso.ghtml",
+                    "resumo": "Plenário do Supremo Tribunal Federal forma maioria para manter suspensão do repasse bilionário das chamadas emendas Pix sem rastreabilidade dos autores.",
+                    "data_pub": datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT"),
+                    "peso_fonte": 1.2
+                }
+            ]
 
-    if not noticias_ranqueadas:
-        print("[i] Todas as matérias capturadas já foram publicadas anteriormente. O portal está 100% atualizado.")
-        return True
+        # 2. Ranqueamento de Relevância
+        noticias_ranqueadas = []
+        for n in todas_noticias:
+            score = calcular_relevancia(n, db_urls, existing_slugs)
+            if score > 0:
+                noticias_ranqueadas.append((score, n))
 
-    melhor_score, melhor_noticia = noticias_ranqueadas[0]
-    print(f"\n[★] MANCHETE ELEITA COMO A MAIS RELEVANTE DO DIA (Score: {melhor_score}):")
+        noticias_ranqueadas.sort(key=lambda x: x[0], reverse=True)
+
+        # Atualiza Radar de Pautas na telemetria
+        if atualizar_radar_pautas and noticias_ranqueadas:
+            atualizar_radar_pautas(noticias_ranqueadas)
+
+        if not noticias_ranqueadas:
+            print("[i] Todas as matérias capturadas já foram publicadas anteriormente. O portal está 100% atualizado.")
+            duracao = time.time() - inicio_rodada
+            if registrar_execucao:
+                registrar_execucao("SUCESSO", "Portal 100% atualizado (nenhuma pauta inédita pendente)", duracao_seg=duracao)
+            return True
+
+        melhor_score, melhor_noticia = noticias_ranqueadas[0]
+        print(f"\n[★] MANCHETE ELEITA COMO A MAIS RELEVANTE DO DIA (Score: {melhor_score}):")
+
     print(f"    Fonte: {melhor_noticia['fonte']}")
     print(f"    Título: {melhor_noticia['titulo']}")
     print(f"    Link: {melhor_noticia['link']}")
@@ -762,8 +885,6 @@ def executar_rodada(modo_demo=False):
         dados_artigo = criar_artigo_demo(melhor_noticia)
 
     # 4. Geração de Imagem: REGRA DE OURO SAGRADA (CARICATURA OBRIGATÓRIA)
-    # A imagem é 80% da notícia satírica no padrão ÍMPROBO.
-    # NUNCA publicar matéria sem uma caricatura real e autêntica (nanquim/aquarela, MAD/Pasquim).
     slug = dados_artigo.get("slug")
     caminho_imagem = os.path.join(IMAGENS_DIR, f"{slug}.jpg") if slug else None
 
@@ -773,10 +894,16 @@ def executar_rodada(modo_demo=False):
 
     # Verificação estrita MANDATÓRIA: existe uma caricatura real (maior que 50KB)?
     if not caminho_imagem or not os.path.exists(caminho_imagem) or os.path.getsize(caminho_imagem) < 50000:
+        duracao = time.time() - inicio_rodada
+        motivo_retencao = "Caricatura editorial ausente ou inferior a 50KB"
         print("\n" + "!" * 75)
         print("[!] REGRA DE OURO: Matéria sem caricatura editorial válida!")
-        print("[!] A publicação foi ABORTADA. O Ímprobo jamais posta matéria sem caricatura!")
+        print(f"[!] A publicação foi ABORTADA. O Ímprobo jamais posta matéria sem caricatura!")
         print("!" * 75 + "\n")
+        if registrar_execucao:
+            registrar_execucao("RETIDO", motivo_retencao, dados_artigo, duracao)
+        if notificar_alerta:
+            notificar_alerta("Caricatura editorial não aprovada no teste de qualidade.", f"Slug: {slug}")
         return False
 
     dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
@@ -784,8 +911,45 @@ def executar_rodada(modo_demo=False):
     if not dados_artigo.get("legenda_imagem"):
         dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
 
-    # 5. Salvamento e Compilação
+    # 5. Geração de Narração Neural em Áudio
+    try:
+        from gerar_audio import montar_roteiro_narracao, gerar_audio_arquivo
+        import asyncio
+        caminho_mp3 = os.path.join(AUDIO_DIR, f"{slug}.mp3")
+        if not os.path.exists(caminho_mp3):
+            print("\n[*] Gerando narração neural em MP3 para a crônica...")
+            roteiro = montar_roteiro_narracao(dados_artigo)
+            asyncio.run(gerar_audio_arquivo(roteiro, caminho_mp3))
+            dados_artigo["audio_url"] = f"audio/{slug}.mp3"
+            print(f"[✓] Narração neural salva: {caminho_mp3}")
+    except Exception as e:
+        print(f"[!] Aviso: erro na geração do áudio neural: {e}")
+
+    # 6. PORTÃO DE SEGURANÇA MANDATÓRIO: Inspetor de Qualidade
+    if validar_artigo_completo:
+        aprovado, diagnostico = validar_artigo_completo(dados_artigo)
+        if not aprovado:
+            duracao = time.time() - inicio_rodada
+            print("\n" + "!" * 75)
+            print(f"[!] INSPETOR DE QUALIDADE: Publicação RETIDA!")
+            print(f"[!] Diagnóstico: {diagnostico}")
+            print("!" * 75 + "\n")
+            if registrar_execucao:
+                registrar_execucao("RETIDO", diagnostico, dados_artigo, duracao)
+            if notificar_alerta:
+                notificar_alerta("Publicação retida pelo Inspetor de Qualidade.", diagnostico)
+            return False
+
+    # 7. Salvamento e Compilação
     salvar_artigo_no_site(dados_artigo, melhor_noticia["link"])
+
+    # 8. Registro de Sucesso e Notificação Telegram
+    duracao = time.time() - inicio_rodada
+    if registrar_execucao:
+        registrar_execucao("SUCESSO", "Publicação normal validada", dados_artigo, duracao)
+    if notificar_sucesso:
+        notificar_sucesso(dados_artigo)
+
     return True
 
 def listar_manchetes():
@@ -821,8 +985,13 @@ def main():
     parser.add_argument("--listar", action="store_true", help="Apenas lista as manchetes mais relevantes sem publicar")
     parser.add_argument("--demo", action="store_true", help="Executa rodada no modo demonstração/laboratório")
     parser.add_argument("--loop", type=int, metavar="MINUTOS", help="Executa continuamente a cada X minutos")
+    parser.add_argument("--url", type=str, help="URL de notícia externa para furo de reportagem sob demanda")
+    parser.add_argument("--tema", type=str, help="Tema ou pauta personalizada sob demanda")
 
     args = parser.parse_args()
+
+    url_arg = args.url.strip() if args.url else None
+    tema_arg = args.tema.strip() if args.tema else None
 
     if args.listar:
         listar_manchetes()
@@ -831,7 +1000,7 @@ def main():
         print(f"[*] Robô iniciado em modo contínuo. Intervalo: {minutos} minutos.")
         while True:
             try:
-                executar_rodada(modo_demo=args.demo)
+                executar_rodada(modo_demo=args.demo, url_customizada=url_arg, tema_customizado=tema_arg)
                 print(f"\n[*] Aguardando {minutos} minutos para a próxima varredura...\n")
                 time.sleep(minutos * 60)
             except KeyboardInterrupt:
@@ -842,7 +1011,7 @@ def main():
                 time.sleep(60)
     else:
         # Default: executar rodada
-        executar_rodada(modo_demo=args.demo)
+        executar_rodada(modo_demo=args.demo, url_customizada=url_arg, tema_customizado=tema_arg)
 
 if __name__ == "__main__":
     main()

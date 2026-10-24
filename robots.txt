@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /sala-de-maquinas
+Disallow: /sala-de-maquinas.html
 Allow: /
 
 Sitemap: https://improbo.vercel.app/sitemap.xml
