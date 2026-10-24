@@ -8,17 +8,6 @@
   },
   "historico_execucoes": [
     {
-      "timestamp": "2026-10-24T03:29:55.110920+00:00",
-      "horario_brt": "24/10/2026 00:29:55",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 0.0,
-      "slug": "ministro-do-stf-compra-jatinho-com-verba-de-gabine",
-      "titulo": "O BALCÃO DO PODER: MINISTRO DO STF COMPRA JATINHO COM VERB...",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
       "timestamp": "2026-10-24T02:01:41.691627",
       "horario_brt": "24 de Outubro de 2026",
       "status": "SUCESSO",

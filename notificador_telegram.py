@@ -85,3 +85,4 @@ if __name__ == "__main__":
         enviar_mensagem_telegram("🚀 *Ímprobo:* Teste de conexão do Notificador Telegram!")
     else:
         print("[i] Credenciais do Telegram não configuradas no momento (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID).")
+
