@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-25T18:48:58.021059+00:00",
+  "ultima_atualizacao": "2026-10-25T23:06:41.379771+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-25T23:06:41.379723+00:00",
+      "horario_brt": "25/10/2026 23:06:41",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 19.7,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-25T18:48:58.021011+00:00",
       "horario_brt": "25/10/2026 18:48:58",
@@ -214,11 +225,11 @@
       "data_pub": "Sun, 25 Oct 2026 03:00:00 -0000"
     },
     {
-      "titulo": "‘Entregar todo o poder aos Bolsonaro ou dar última vitória a Lula’: imprensa mundial repercute votação no 2º turno",
+      "titulo": "Imprensa internacional repercute prolongamento da votação no Brasil",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/25/repercute-internacional-votacao-2o-turno-eleicoes-lula-flavio-bolsonaro.ghtml",
-      "score": 98.2,
-      "data_pub": "Sun, 25 Oct 2026 13:37:27 -0000"
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/25/imprensa-internacional-repercute-prolongamento-da-votacao-no-brasil.ghtml",
+      "score": 103.0,
+      "data_pub": "Sun, 25 Oct 2026 21:42:44 -0000"
     }
   ]
 }
