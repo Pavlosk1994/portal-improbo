@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-25T14:54:23.812579+00:00",
+  "ultima_atualizacao": "2026-10-25T18:48:58.021059+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-25T18:48:58.021011+00:00",
+      "horario_brt": "25/10/2026 18:48:58",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 12.9,
+      "slug": "a-eterna-reprise-do-planalto-lula-vai-para-o-quart",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: LULA VAI PARA O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-25T14:54:23.812529+00:00",
       "horario_brt": "25/10/2026 14:54:23",
@@ -185,7 +196,7 @@
       "titulo": "'Tenho 50 anos de vida política e nunca vi isso', diz Lula sobre mobilização de apoiadores após votar em SP",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/25/lula-vota-2turno.ghtml",
-      "score": 146.2,
+      "score": 139.2,
       "data_pub": "Sun, 25 Oct 2026 12:12:15 -0000"
     },
     {
