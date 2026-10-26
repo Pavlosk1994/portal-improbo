@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-25T23:06:41.379771+00:00",
+  "ultima_atualizacao": "2026-10-26T05:53:14.675891+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-26T05:53:14.675859+00:00",
+      "horario_brt": "26/10/2026 05:53:14",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 45.0,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
     {
       "timestamp": "2026-10-25T23:06:41.379723+00:00",
       "horario_brt": "25/10/2026 23:06:41",
@@ -197,39 +208,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Da vida sindical ao Planalto, da prisão à volta à Presidência: relembre a trajetória de Lula",
+      "titulo": "Em virada histórica, Lula derrota Flávio Bolsonaro e chega ao quarto mandato como presidente",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/25/da-vida-sindical-ao-planalto-da-prisao-a-volta-a-presidencia-relembre-a-trajetoria-de-lula.ghtml",
-      "score": 158.4,
-      "data_pub": "Sun, 25 Oct 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/em-virada-historica-lula-derrota-flavio-e-chega-ao-quarto-mandato-como-presidente-do-brasil.ghtml",
+      "score": 196.6,
+      "data_pub": "Mon, 26 Oct 2026 00:09:23 -0000"
     },
     {
-      "titulo": "'Tenho 50 anos de vida política e nunca vi isso', diz Lula sobre mobilização de apoiadores após votar em SP",
+      "titulo": "Eleições 2026: de Nossa Senhora aos 'soldados' digitais, veja temas que marcaram a campanha",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/25/lula-vota-2turno.ghtml",
-      "score": 139.2,
-      "data_pub": "Sun, 25 Oct 2026 12:12:15 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/eleicoes-2026-de-nossa-senhora-aos-soldados-digitais-veja-temas-que-marcaram-a-campanha.ghtml",
+      "score": 176.2,
+      "data_pub": "Mon, 26 Oct 2026 00:27:50 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro: trajetória do filho de Bolsonaro, candidato à Presidência e investigado pela PF",
+      "titulo": "Reeleito para quarto mandato, Lula terá Congresso com maioria da oposição e precisará negociar para aprovar projetos",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/flavio-bolsonaro-de-filho-do-ex-presidente-a-candidato-do-pl-a-presidencia-da-republica.ghtml",
-      "score": 122.4,
-      "data_pub": "Sun, 25 Oct 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/reeleito-para-quarto-mandato-lula-tera-congresso-com-maioria-da-oposicao-e-precisara-negociar-para-aprovar-projetos.ghtml",
+      "score": 145.0,
+      "data_pub": "Mon, 26 Oct 2026 00:12:16 -0000"
     },
     {
-      "titulo": "Presidente da República: o que faz, quanto ganha e quais são os requisitos para ocupar o cargo?",
+      "titulo": "Flávio chama resultado do segundo turno de 'sacanagem', diz ser 'impossível' reconhecer derrota e que tentará anulação",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/presidente-da-republica-o-que-faz-quanto-ganha-e-quais-sao-os-requisitos-para-ocupar-o-cargo.ghtml",
-      "score": 114.0,
-      "data_pub": "Sun, 25 Oct 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/flavio-resultado-segundo-turno.ghtml",
+      "score": 131.8,
+      "data_pub": "Mon, 26 Oct 2026 01:41:02 -0000"
     },
     {
-      "titulo": "Imprensa internacional repercute prolongamento da votação no Brasil",
+      "titulo": "TSE desmente Flávio Bolsonaro e diz que fiscais do PL não foram retirados de 'sala-cofre' do tribunal",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/25/imprensa-internacional-repercute-prolongamento-da-votacao-no-brasil.ghtml",
-      "score": 103.0,
-      "data_pub": "Sun, 25 Oct 2026 21:42:44 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/tse-desmente-flavio-bolsonaro-e-diz-que-fiscais-do-pl-nao-foram-retirados-de-sala-cofre-do-tribunal.ghtml",
+      "score": 125.8,
+      "data_pub": "Mon, 26 Oct 2026 04:02:21 -0000"
     }
   ]
 }
