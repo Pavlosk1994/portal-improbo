@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-26T05:53:14.675891+00:00",
+  "ultima_atualizacao": "2026-10-26T17:11:49.810537+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-26T17:11:49.810491+00:00",
+      "horario_brt": "26/10/2026 17:11:49",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 31.6,
+      "slug": "o-algoritmo-e-a-urna-lula-culpa-o-wi-fi-de-fora",
+      "titulo": "O ALGORITMO E A URNA: LULA CULPA O WI-FI DE FORA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-26T05:53:14.675859+00:00",
       "horario_brt": "26/10/2026 05:53:14",
@@ -208,39 +219,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Em virada histórica, Lula derrota Flávio Bolsonaro e chega ao quarto mandato como presidente",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/em-virada-historica-lula-derrota-flavio-e-chega-ao-quarto-mandato-como-presidente-do-brasil.ghtml",
-      "score": 196.6,
-      "data_pub": "Mon, 26 Oct 2026 00:09:23 -0000"
+      "titulo": "Lula agradece votos e diz que teve de vencer intromissão vinda de fora",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-agradece-votos-e-diz-que-teve-de-vencer-intromissao-vinda-de-fora",
+      "score": 99.4,
+      "data_pub": "Sun, 25 Oct 2026 23:49:00 -0300"
     },
     {
-      "titulo": "Eleições 2026: de Nossa Senhora aos 'soldados' digitais, veja temas que marcaram a campanha",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/eleicoes-2026-de-nossa-senhora-aos-soldados-digitais-veja-temas-que-marcaram-a-campanha.ghtml",
-      "score": 176.2,
-      "data_pub": "Mon, 26 Oct 2026 00:27:50 -0000"
+      "titulo": "Flávio não reconhece vitória de Lula e tentará anulação do pleito",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-nao-reconhece-vitoria-de-lula-e-tentara-anulacao-do-pleito",
+      "score": 74.1,
+      "data_pub": "Sun, 25 Oct 2026 23:39:00 -0300"
     },
     {
-      "titulo": "Reeleito para quarto mandato, Lula terá Congresso com maioria da oposição e precisará negociar para aprovar projetos",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/reeleito-para-quarto-mandato-lula-tera-congresso-com-maioria-da-oposicao-e-precisara-negociar-para-aprovar-projetos.ghtml",
-      "score": 145.0,
-      "data_pub": "Mon, 26 Oct 2026 00:12:16 -0000"
+      "titulo": "“Vamos mudar o jeito de governar este país”, diz Lula",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/vamos-mudar-o-jeito-de-governar-este-pais-diz-lula",
+      "score": 73.0,
+      "data_pub": "Sun, 25 Oct 2026 23:35:00 -0300"
     },
     {
-      "titulo": "Flávio chama resultado do segundo turno de 'sacanagem', diz ser 'impossível' reconhecer derrota e que tentará anulação",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/flavio-resultado-segundo-turno.ghtml",
-      "score": 131.8,
-      "data_pub": "Mon, 26 Oct 2026 01:41:02 -0000"
+      "titulo": "Motta e Alcolumbre, líderes do Congresso Nacional, parabenizam Lula",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/motta-e-alcolumbre-lideres-do-congresso-nacional-parabenizam-lula",
+      "score": 69.7,
+      "data_pub": "Sun, 25 Oct 2026 23:31:00 -0300"
     },
     {
-      "titulo": "TSE desmente Flávio Bolsonaro e diz que fiscais do PL não foram retirados de 'sala-cofre' do tribunal",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/tse-desmente-flavio-bolsonaro-e-diz-que-fiscais-do-pl-nao-foram-retirados-de-sala-cofre-do-tribunal.ghtml",
-      "score": 125.8,
-      "data_pub": "Mon, 26 Oct 2026 04:02:21 -0000"
+      "titulo": "Presidente do TSE liga para Lula para parabenizar reeleição",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/presidente-do-tse-liga-para-lula-para-parabenizar-reeleicao",
+      "score": 64.2,
+      "data_pub": "Sun, 25 Oct 2026 22:39:00 -0300"
     }
   ]
 }
