@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-26T17:11:49.810537+00:00",
+  "ultima_atualizacao": "2026-10-27T00:17:16.240734+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T00:17:16.240684+00:00",
+      "horario_brt": "27/10/2026 00:17:16",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 10.8,
+      "slug": "o-ringue-da-cara-de-pau-trump-e-alckmin-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: TRUMP E ALCKMIN NA TV",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-26T17:11:49.810491+00:00",
       "horario_brt": "26/10/2026 17:11:49",
@@ -219,39 +230,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Lula agradece votos e diz que teve de vencer intromissão vinda de fora",
+      "titulo": "Trump questiona eleição brasileira e Alckmin rebate: “equivocado”",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-agradece-votos-e-diz-que-teve-de-vencer-intromissao-vinda-de-fora",
-      "score": 99.4,
-      "data_pub": "Sun, 25 Oct 2026 23:49:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/trump-questiona-eleicao-brasileira-e-alckmin-rebate-equivocado",
+      "score": 105.3,
+      "data_pub": "Mon, 26 Oct 2026 20:18:00 -0300"
     },
     {
-      "titulo": "Flávio não reconhece vitória de Lula e tentará anulação do pleito",
+      "titulo": "Moraes manda Flávio entregar passaporte e o proíbe de deixar o país",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-nao-reconhece-vitoria-de-lula-e-tentara-anulacao-do-pleito",
-      "score": 74.1,
-      "data_pub": "Sun, 25 Oct 2026 23:39:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais",
+      "score": 93.2,
+      "data_pub": "Mon, 26 Oct 2026 17:55:00 -0300"
     },
     {
-      "titulo": "“Vamos mudar o jeito de governar este país”, diz Lula",
+      "titulo": "Posse de Lula será em 5 de janeiro",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/vamos-mudar-o-jeito-de-governar-este-pais-diz-lula",
-      "score": 73.0,
-      "data_pub": "Sun, 25 Oct 2026 23:35:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/posse-de-lula-sera-em-5-de-janeiro",
+      "score": 69.0,
+      "data_pub": "Mon, 26 Oct 2026 17:54:00 -0300"
     },
     {
-      "titulo": "Motta e Alcolumbre, líderes do Congresso Nacional, parabenizam Lula",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/motta-e-alcolumbre-lideres-do-congresso-nacional-parabenizam-lula",
-      "score": 69.7,
-      "data_pub": "Sun, 25 Oct 2026 23:31:00 -0300"
+      "titulo": "Flávio desiste de pedir anulação da eleição e entrará com ação por abuso de poder contra Lula",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-deve-desistir-de-pedir-anulacao-da-eleicao-e-entrar-com-acao-por-abuso-de-poder-contra-lula.shtml",
+      "score": 67.9,
+      "data_pub": "26 Oct 2026 16:46:00 -0300"
     },
     {
-      "titulo": "Presidente do TSE liga para Lula para parabenizar reeleição",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/presidente-do-tse-liga-para-lula-para-parabenizar-reeleicao",
-      "score": 64.2,
-      "data_pub": "Sun, 25 Oct 2026 22:39:00 -0300"
+      "titulo": "Flávio Bolsonaro tem passaportes cancelados por ordem de Moraes e fica proibido de deixar o país",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-diz-que-pf-apreendeu-seu-passaporte-e-que-esta-proibido-de-deixar-o-pais.shtml",
+      "score": 62.7,
+      "data_pub": "26 Oct 2026 16:56:00 -0300"
     }
   ]
 }
