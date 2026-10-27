@@ -72,13 +72,16 @@
             --text-secondary: #a1a1aa;
         }
 
+        html, body {
+            overflow-x: clip;
+        }
+
         body {
             background-color: var(--bg-nyt);
             color: var(--text-charcoal);
             font-family: 'Newsreader', Georgia, serif;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
         }
 
         .font-sans {
@@ -163,11 +166,33 @@
             transform-origin: bottom left;
         }
 
-        /* Efeitos de Transição de Rolagem (Fade-in e Slide-up) */
+        /* Barra Fininha de Progresso de Leitura no Topo da Tela (Reading Progress Bar) */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3.5px;
+            background: transparent;
+            z-index: 9999;
+            pointer-events: none;
+        }
+        #reading-progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: var(--editorial-red);
+            transition: width 0.08s ease-out;
+            box-shadow: 0 0 10px rgba(139, 0, 0, 0.7);
+        }
+        html.dark #reading-progress-bar {
+            box-shadow: 0 0 10px rgba(224, 49, 49, 0.8);
+        }
+
+        /* Efeitos de Transição de Rolagem Suaves (Fade-in Sem Tranco de Layout) */
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(14px);
-            transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+            transform: translateY(8px);
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
             will-change: opacity, transform;
         }
         .reveal-on-scroll.in-view {
@@ -175,30 +200,9 @@
             transform: translateY(0) !important;
         }
 
-        /* Cabeçalho Retrátil Sticky NYT */
+        /* Cabeçalho Editorial Clássico Natural */
         #site-header {
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        #site-header.is-scrolled {
-            background-color: rgba(244, 241, 234, 0.96);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            box-shadow: 0 4px 14px rgba(18, 18, 18, 0.06);
-            border-bottom: 1px solid #D1CEC7;
-            padding-top: 0.4rem;
-            padding-bottom: 0.4rem;
-        }
-        #site-header.is-scrolled .masthead-title {
-            font-size: clamp(1.4rem, 3.8vw, 2.1rem);
-        }
-        #site-header.is-scrolled .masthead-subline {
-            display: none;
-        }
-        #site-header.is-scrolled .masthead-borders {
-            border-top: none;
-            border-bottom: 1px solid #121212;
-            padding-bottom: 0.2rem;
-            padding-top: 0.2rem;
+            position: relative;
         }
 
         /* Transição Suave de Tema */
@@ -317,14 +321,6 @@
             background-color: #323238 !important;
         }
 
-        html.dark #site-header.is-scrolled {
-            background-color: rgba(20, 20, 22, 0.96) !important;
-            border-bottom: 1px solid var(--border-divider) !important;
-        }
-
-        html.dark #site-header.is-scrolled .masthead-borders {
-            border-bottom: 1px solid #52525b !important;
-        }
 
         /* Dark Mode Overrides para os Novos Recursos */
         html.dark #share-box {
@@ -450,6 +446,11 @@
 <body class="min-h-screen flex flex-col justify-between selection:bg-[#8B0000] selection:text-white">
     <div>
         
+    <!-- Barra Fininha de Progresso de Leitura no Topo da Tela (Reading Progress Bar) -->
+    <div id="reading-progress-container" aria-hidden="true">
+        <div id="reading-progress-bar"></div>
+    </div>
+
     <!-- Top Metadata Bar NYT Style -->
     <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto transition-colors">
         <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
@@ -478,7 +479,7 @@
     </div>
 
     <!-- Newspaper Masthead with Classic NYT Double Line -->
-    <div class="sticky top-0 z-40 bg-[#F4F1EA] border-b border-transparent transition-all duration-300" id="site-header">
+    <div class="relative bg-[#F4F1EA] transition-colors duration-200" id="site-header">
         <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
             <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
                 <a href="index.html" class="inline-block group">
@@ -940,12 +941,12 @@
                 });
             }, {
                 threshold: 0,
-                rootMargin: '120px 0px 80px 0px'
+                rootMargin: '250px 0px 250px 0px'
             });
 
             document.querySelectorAll('.reveal-on-scroll').forEach(el => {
                 const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight + 150) {
+                if (rect.top < window.innerHeight + 250) {
                     el.classList.add('in-view');
                 } else {
                     observer.observe(el);
@@ -957,17 +958,22 @@
                 document.querySelectorAll('.reveal-on-scroll:not(.in-view)').forEach(el => {
                     el.classList.add('in-view');
                 });
-            }, 1000);
+            }, 800);
 
-            // Cabeçalho Retrátil (Sticky Shrink Header)
-            const header = document.getElementById('site-header');
-            if (header) {
+            // Barra Fininha de Progresso de Leitura no Topo (Reading Progress Indicator)
+            const readingBar = document.getElementById('reading-progress-bar');
+            if (readingBar) {
+                let ticking = false;
                 window.addEventListener('scroll', () => {
-                    const currentScroll = window.scrollY;
-                    if (currentScroll > 45) {
-                        header.classList.add('is-scrolled');
-                    } else {
-                        header.classList.remove('is-scrolled');
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+                            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                            readingBar.style.width = Math.min(100, Math.max(0, scrolled)) + '%';
+                            ticking = false;
+                        });
+                        ticking = true;
                     }
                 }, { passive: true });
             }
