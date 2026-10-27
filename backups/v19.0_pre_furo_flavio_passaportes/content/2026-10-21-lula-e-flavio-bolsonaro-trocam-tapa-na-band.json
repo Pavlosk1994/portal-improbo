@@ -1,0 +1,41 @@
+{
+  "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NO VALE-TUDO DA TV",
+  "subtitulo": "Com a liturgia de quem disputa o último pastel de rodoviária, presidenciáveis transformam estúdio em lavanderia oficial de escândalos",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "Lula e Flávio Bolsonaro em duelo acalorado no estúdio da Band: faíscas nos microfones, dossiês no ar e o contribuinte pagando a conta.",
+  "prompt_caricatura": "Charge política clássica em nanquim expressivo e aquarela com Lula e Flávio Bolsonaro em caricatura pastelão em pleno debate na TV, com balde de lama, microfones soltando faíscas, cronômetros dos púlpitos em chamas e papéis voando.",
+  "corpo": [
+    "O primeiro debate presidencial do segundo turno na Band parecia uma convenção da alta diplomacia suíça, até que os microfones foram abertos e o verniz de estadista derreteu feito manteiga em frigideira quente. De um lado, Lula com a postura de quem inventou a roda, o churrasco de domingo e a própria democracia; do outro, Flávio Bolsonaro com o ar compenetrado de quem acabou de descobrir que o preço da gasolina não sobe por decreto do destino. O estúdio da emissora no Morumbi, famoso por abrigar programas de culinária e pastelão de auditório, virou o palco definitivo do vale-tudo nacional, onde a liturgia do cargo foi substituída pelo refinado método da trocação franca de ofensas em rede nacional.",
+    "Flávio sacou a metralhadora giratória de números que nenhum cidadão com três boletos atrasados consegue checar no Google antes do comercial. Entre uma acusação de rombo fiscal e outra de aparelhamento ideológico, o senador gesticulava com a solenidade de um síndico de condomínio cobrando cota extra de portaria eletrônica. A cada resposta sobre inflação, o herdeiro do clã puxava um dossiê imaginário do bolso do paletó, jurando fidelidade à livre iniciativa enquanto o eleitor na sala de estar tentava calcular como parcelar o quilo do patinho no açougue em quatro vezes sem juros no carnê.",
+    "Lula, calejado por quatro décadas de palanque e retórica de chão de fábrica, devolvia cada golpe com aquele pigarro professoral que antecede uma aula magna de autocomiseração histórica. Desfilou metáforas que misturavam o preço da picanha, a soberania nacional e a eterna promessa de que o paraíso na terra está a apenas uma reeleição de distância. Quando o assunto resvalou para escândalos e emendas parlamentares, o presidente olhou fixo para a câmera com o olhar inocente de uma criança que jura de pés juntos que o pote de brigadeiro sumiu por combustão espontânea, deixando a bancada de mediadores em absoluto pânico de tela.",
+    "No balanço final do espetáculo, os cronômetros vermelhos da TV quase explodiram de tanto apitar 'Fim do Tempo', mas o tempo do brasileiro médio esse sim já acabou faz tempo. Os marqueteiros de ambos os lados saíram do estúdio cantando vitória nas redes sociais, comemorando cortes de quinze segundos devidamente turbinados com trilha de filme de ação. Do lado de cá da tela, o contribuinte desligou o televisor, conferiu o saldo minguado na conta corrente e concluiu com melancólica clareza: vença quem vencer no ringue do poder, o cinturão da dívida pública e a conta da luz continuarão firmes e fortes no mesmo pescoço."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Dois homens de terno impecável discursando sobre o futuro da nação com a elegância de dois vizinhos disputando a última vaga da garagem."
+    },
+    {
+      "titulo": "A Balança Comercial do Pastel",
+      "texto": "Promessas astronômicas de corte de impostos e picanha na mesa que só fecham a conta na planilha de Excel do comitê de campanha."
+    },
+    {
+      "titulo": "O Cronômetro do Desespero",
+      "texto": "Mediadores de TV tentando impor ordem ao debate com a mesma eficácia de quem tenta apagar incêndio em canavial com copinho de café."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "Candidatos trocam sopapos verbais no horário nobre, mas no dia seguinte o despertador das seis da manhã toca no mesmo tom para todo mundo."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva e o senador Flávio Bolsonaro participaram do primeiro debate do segundo turno das eleições presidenciais de 2026, promovido pelo Grupo Bandeirantes na noite de domingo (18). Durante o confronto direto, transmitido em rede nacional e plataformas digitais, os dois candidatos trocaram acusações sobre investigações, corrupção, políticas de segurança pública e a condução da economia, buscando atrair o eleitorado indeciso a uma semana da votação oficial marcada para o dia 25 de outubro.",
+  "slug": "lula-e-flavio-bolsonaro-trocam-tapa-na-band",
+  "data": "21 de Outubro de 2026",
+  "timestamp": "2026-10-21T08:08:09.745654",
+  "audio_url": "audio/lula-e-flavio-bolsonaro-trocam-tapa-na-band.mp3",
+  "imagem_capa": "imagens/lula-e-flavio-bolsonaro-trocam-tapa-na-band.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica"
+}

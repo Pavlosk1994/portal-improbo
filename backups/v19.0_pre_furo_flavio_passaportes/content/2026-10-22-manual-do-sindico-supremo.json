@@ -1,0 +1,42 @@
+{
+  "titulo": "MANUAL DO SÍNDICO SUPREMO",
+  "subtitulo": "Descubra como ganhar bem para mandar em tudo, não resolver nada e ainda culpar a herança maldita",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Ser presidente no Brasil é o único cargo do mundo onde você ganha jatinho e terno novo para terceirizar a culpa do desastre para o antecessor.",
+  "legenda_imagem": "O aspirante a síndico nacional olhando fixamente para o carnê de promessas enquanto afaga a faixa presidencial.",
+  "prompt_caricatura": "Estilo nanquim e guache, charge satírica de um político brasileiro de terno amassado segurando um manual gigante escrito 'Como Mandar em Tudo sem Saber Nada', sentado em uma poltrona dourada no Palácio do Planalto, com sacos de dinheiro aos pés e um povo na fila do ônibus olhando pela janela.",
+  "corpo": [
+    "O brasileiro adora um concurso de popularidade com crachá de poder, e o cargo de Presidente da República é o topo dessa pirâmide de ilusões. Pela bagatela de quatro anos de mordomia, jatinho à disposição e café fresco bancado pelo contribuinte, o felizardo ganha o direito de acumular duas funções que ninguém em sã consciência conseguiria conciliar: chefe de Estado, para posar ao lado de chanceleres em cúpula internacional, e chefe de Governo, para negociar ministérios e explicar por que o preço dos alimentos disparou enquanto o Congresso cobra pedágio orçamentário para votar até pauta prioritária.",
+    "Para ocupar essa cadeira que esquenta mais que frigideira em dia de festa, o manual exige apenas que o postulante tenha mais de 35 anos e muita desfaçatez institucional. Afinal, o discurso de campanha sempre promete o paraíso fiscal na terra com crescimento de primeiro mundo, mas a realidade logo cobra a conta do endividamento público. O governante nomeia ministros como quem escala peladeiro de fim de semana: entra o aliado de ocasião, sai o compadre desajeitado, e se houver crise, a justificativa padrão é culpar o cenário externo ou a herança dos antecessores.",
+    "Enquanto a liturgia do cargo exige tapete vermelho e declarações solenes sobre o futuro sustentável da nação, a rotina real no Planalto é um balé permanente de concessões onde o orçamento da União vira a moeda de troca da sobrevivência política. A oposição faz discursos indignados da tribuna, mas corre para o balcão de liberação de emendas assim que surge a oportunidade de um acordo. No fim das contas, a grande arte presidencial não é governar com eficiência, mas sim convencer a sociedade de que a ineficiência do Estado é fruto de um complô invisível.",
+    "Portanto, se você tem o dom da oratória vazia, não ruboriza ao prometer metas inalcançáveis e aprecia viajar com uma comitiva imperial, o cargo de chefe da nação é a sua coroação definitiva. Só não se esqueça da regra fundamental da República: quando o rombo das contas bater na porta com juros compostos, o único que não possui foro especial para se proteger do impacto é o cidadão comum."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promete o céu no palanque e entrega alíquota suplementar no Diário Oficial."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Metas ambiciosas no papel, frustração de receitas na contabilidade real."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Gasta com a pompa de um monarca e cobra a conta com o rigor de um oficial de justiça."
+    },
+    {
+      "titulo": "A Fatura Soberana",
+      "texto": "A conta da farra orçamentária é sempre debitada no contracheque de quem trabalha."
+    }
+  ],
+  "contexto_real": "O portal G1 publicou um guia explicativo sobre as funções, requisitos, remuneração e responsabilidades do cargo de Presidente da República do Brasil, detalhando o papel de chefe de Estado e de Governo exercido pelo ocupante do Palácio do Planalto.",
+  "slug": "manual-do-sindico-supremo",
+  "data": "22 de Outubro de 2026",
+  "imagem_capa": "imagens/manual-do-sindico-supremo.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-22T04:36:24.081688",
+  "audio_url": "audio/manual-do-sindico-supremo.mp3"
+}

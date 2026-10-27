@@ -1,0 +1,43 @@
+{
+  "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+  "subtitulo": "Enquanto a Fazenda promete equilibrar as contas públicas em marcha lenta, a oposição saca a tesoura imaginária.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo promete ajuste fiscal em câmera lenta enquanto a oposição agita a tesoura de mentirinha.",
+  "legenda_imagem": "Ministério da Fazenda e oposição disputam quem gasta mais energia fingindo austeridade fiscal.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 70 mostrando um auxiliar econômico guiando um trator em ponto morto com freio de mão puxado, enquanto um parlamentar acena com uma tesoura gigante de papelão. Nanquim e guache, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian government officials operating a slow-motion economic bulldozer with parking brake engaged, while a senator waves a giant cardboard scissors. Vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República entrou oficialmente na fase dos eufemismos criativos quando a equipe econômica garantiu que qualquer saneamento das contas públicas ocorrerá sem manobras bruscas, cavalo de pau ou sobressaltos à nação.",
+    "Segundo os doutores da Esplanada, o déficit astronômico deve ser emagrecido com a delicadeza de quem descasca um ovo com luvas de boxe, evitando o choque térmico na paciência dos contribuintes e nos humores do mercado.",
+    "Do outro lado do balcão, a bancada rival respondeu com o velho e infalível recurso do tesouraço retórico, prometendo cortes milagrosos capazes de equilibrar o orçamento nacional entre um cafezinho e o intervalo do telejornal.",
+    "No fim das contas, o contribu asistir a mais um duelo coreografado onde o déficit fiscal é tratado como animal de estimação indesejado: todo mundo acha feio, mas ninguém tem coragem de parar de alimentar."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A arte de prometer o corte de gastos sem tocar em nenhuma boquinha estatal."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Tesouras gigantes balançadas em palanques para animar a claque sem ferir o orçamento."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Equilibrar placas tectônicas de déficit com planilhas otimistas de Excel."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura inevitável que chega sempre ao endereço do cidadão comum."
+    }
+  ],
+  "contexto_real": "O secretário-executivo do Ministério da Fazenda, Dario Durigan, afirmou que a campanha à reeleição de Lula descarta ajustes drásticos de R$ 200 bilhões em um ano, defendendo uma transição gradual. Em resposta, o senador Flávio Bolsonaro e aliados têm prometido um corte radical de despesas públicas caso cheguem ao poder.",
+  "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+  "data": "24 de Outubro de 2026",
+  "imagem_capa": "imagens/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-24T23:01:07.578084",
+  "audio_url": "audio/o-ringue-da-cara-de-pau-lula-e-flavio-na-tv.mp3"
+}

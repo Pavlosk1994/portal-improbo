@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T03:02:17.695891+00:00",
+  "ultima_atualizacao": "2026-10-27T04:44:55.336738+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T04:44:55.336654+00:00",
+      "horario_brt": "27/10/2026 01:44:55",
+      "status": "SUCESSO",
+      "motivo": "Furo de Reportagem: Flávio Bolsonaro entrega passaportes à PF por ordem do STF",
+      "duracao_segundos": 8.2,
+      "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
+      "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
+      "imagem_tamanho_kb": 988.7,
+      "audio_tamanho_kb": 1003.2
+    },
     {
       "timestamp": "2026-10-27T03:02:17.695806+00:00",
       "horario_brt": "27/10/2026 00:02:17",
@@ -215,17 +226,6 @@
       "titulo": "MANUAL DO SÍNDICO SUPREMO",
       "imagem_tamanho_kb": 1280.2,
       "audio_tamanho_kb": 1015.9
-    },
-    {
-      "timestamp": "2026-10-22T17:07:06.353975",
-      "horario_brt": "22 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "minas-gerais-o-pendulo-que-gira-e-o-trouxa-que-pag",
-      "titulo": "MINAS GERAIS: O PÊNDULO QUE GIRA E O TROUXA QUE PAGA",
-      "imagem_tamanho_kb": 1145.0,
-      "audio_tamanho_kb": 1061.9
     }
   ],
   "radar_pautas": [

@@ -1,0 +1,43 @@
+{
+  "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+  "subtitulo": "Com a solenidade de quem despacha no Diário Oficial e a serenidade de quem já viu esse filme quatro vezes, Brasília prepara a fita cassete para rodar de novo enquanto o contribuinte paga a pipoca.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Brasília prepara a reprise do quarto mandato enquanto a oposição finge surpresa e o contribuinte garante a bilheteria.",
+  "legenda_imagem": "No Palácio do Planalto, a liturgia do poder repete o mesmo roteiro com nós na faixa presidencial e aplausos de gabinete.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD Brasil dos anos 70/80 mostrando Lula no Palácio do Planalto enroscado em uma faixa presidencial repleta de nós e remendos, rodeado por ministros correndo em círculos com carimbos e pastas executivas. Traço expressivo em nanquim, hachuras densas e aquarela sobre papel creme envelhecido, sem nenhum texto ou legenda.",
+  "prompt_caricatura_en": "A vintage 1970s-1980s editorial political cartoon caricature in expressive ink with detailed cross-hatching and vibrant gouache watercolor wash, satirical Brazilian political press style (MAD Magazine / O Pasquim / Mort Drucker). Lula at the Planalto Presidential Palace tangled in an oversized presidential sash full of knots and patches, surrounded by frantic cabinet ministers running in circles with stamps and official dossiers. Strictly NO text, NO logos, NO watermark, pure satirical illustration.",
+  "corpo": [
+    "A República brasileira atingiu aquele estágio superior da maturidade institucional em que as eleições deixam de ser uma disputa de projetos para se transformarem em uma bem-sucedida sessão da tarde: todo mundo já sabe as falas de cor, ninguém se surpreende com a reviravolta do terceiro ato e o vilão e o mocinho tomam cafezinho juntos no intervalo da transmissão.",
+    "Pelos corredores acarpetados de Brasília, a perspectiva de uma nova corrida ao Planalto é tratada com a naturalidade de quem renova a assinatura de um serviço de streaming que ninguém assiste, mas que todo mundo tem preguiça de cancelar. Auxiliares graduados circulam com pastas de couro e semblantes graves, calculando a milimétrica engenharia de acomodar os mesmos caciques nas mesmas secretarias sob novos e pomposos organogramas ministeriais.",
+    "A oposição, por sua vez, ensaia a costumeira indignação de palanque com o vigor de quem lê a bula de um analgésico genérico. Promete tempestades fiscais, ameaça CPIs com nomes de animais silvestres e jura que desta vez a locomotiva estatal será freada na marra — para, logo em seguida, conferir se a sua fatia das emendas de comissão caiu no prazo bancário estabelecido pela liturgia do Congresso.",
+    "Ao final da sessão, descortina-se a única verdade inalterável desde a Proclamação da República: governos passam, coalizões se reinventam, faixas presidenciais ganham novos remendos, mas a máquina de carimbos continua azeitada e a conta da bilheteria segue debitada pontualmente na folha de pagamento do trabalhador brasileiro."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Fita Rebobinada",
+      "texto": "Discursos idênticos aos de vinte anos atrás, lidos com o frescor de quem acabou de inventar a roda da gastança pública."
+    },
+    {
+      "titulo": "O Ministério do Faz-de-Conta",
+      "texto": "Criação de novos departamentos para abrigar aliados desocupados sob a nobre justificativa de pacificação nacional."
+    },
+    {
+      "titulo": "A Fúria de Papelão",
+      "texto": "Discursos inflamados na tribuna do plenário seguidos de abraços fraternais no buffet do restaurante dos senadores."
+    },
+    {
+      "titulo": "O Boleto Vitalício",
+      "texto": "A única política de Estado verdadeiramente perene e imune a crises: o contribuinte trabalhando seis meses por ano para sustentar o circo."
+    }
+  ],
+  "contexto_real": "Com a proximidade do calendário eleitoral e as articulações antecipadas para 2026, o presidente Lula tem sinalizado a interlocutores a disposição de disputar o quarto mandato presidencial, enquanto a base governista e a oposição aceleram os cálculos de coligações e acomodações no Congresso Nacional.",
+  "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+  "data": "26 de Outubro de 2026",
+  "imagem_capa": "imagens/a-eterna-reprise-do-planalto-o-quarto-mandato.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-26T23:50:00.000000",
+  "audio_url": "audio/a-eterna-reprise-do-planalto-o-quarto-mandato.mp3"
+}

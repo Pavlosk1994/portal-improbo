@@ -1,0 +1,41 @@
+{
+  "titulo": "DIREITA FAZ O L, ESQUERDA BOTA A ALGEMINHA",
+  "subtitulo": "Flávio descobre a paixão pelo Bolsa Família e Lula vira xerife durão no festival do vale-tudo por votos",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "Flávio contorcionista com o cartão do Bolsa Família e Lula xerife de algemas: o grande picadeiro eleitoral.",
+  "prompt_caricatura": "Caricatura editorial satírica clássica de jornal. Em picadeiro de circo, Flávio Bolsonaro exibe cartão gigante do Bolsa Família chutando tuítes velhos sob o tapete, e Lula de terno e barba segura algemas de xerife durão, ambos rindo com cumplicidade cínica.",
+  "corpo": [
+    "Brasília não tem vergonha na cara. Tem assessoria de imprensa. Quando o segundo turno aperta, político brasileiro vira contorcionista de circo pobre. Muda de ideia mais rápido que bêbado fugindo de blitz.",
+    "Flávio Bolsonaro passou anos descendo a lenha no Bolsa Família. Chamava de esmola de comunista e fábrica de preguiçoso. Bastou a eleição apertar pro homem virar a Madre Teresa de Calcutá com botox. Apagou os tuítes antigos na velocidade da luz. Agora jura de pé junto que ama o programa desde que usava fralda. É o milagre da urna: a extrema-direita virou mãe dos pobres sem nem corar.",
+    "Do outro lado da mesa, o Lula não deixou por menos. O pai do desarmamento e dos direitos humanos olhou as pesquisas e sentiu o cheiro de queimado. Na mesma hora virou o xerife da quebrada. Esqueceu o papo de sociólogo e agora quer trancar menor infrator em cela de segurança máxima. O garantismo sumiu da cartilha. Sobrou só o Capitão Nascimento de barba branca.",
+    "Resumo da ópera: o filho do capitão virou assistencialista e o barba virou linha-dura. A ideologia em Brasília dura exatamente até a pesquisa de boca de urna sair. Os dois encenam briga de foice na frente das câmeras, mas na hora de aprovar fundão partidário tomam cafezinho juntos no plenário. E quem paga o ingresso desse circo mambembe é sempre o mesmo otário: você, de carteira assinada."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Milagre do Delete",
+      "texto": "Flávio apagando post antigo no Twitter mais rápido que adolescente escondendo boletim da mãe."
+    },
+    {
+      "titulo": "O Xerife de Garanhuns",
+      "texto": "Lula esquecendo 40 anos de discurso pra virar o Batman da periferia atrás de voto evangélico."
+    },
+    {
+      "titulo": "A Dança das Cadeiras",
+      "texto": "A direita descobre que adora distribuir benefício e a esquerda descobre que ama trancar gente."
+    },
+    {
+      "titulo": "A Fatura do Otário",
+      "texto": "Eles mudam de fantasia, dividem o erário e a conta vem descontada direto no seu contracheque."
+    }
+  ],
+  "contexto_real": "Reportagem investigativa apontou que tanto Flávio Bolsonaro (PL) quanto o presidente Luiz Inácio Lula da Silva (PT) operaram guinadas expressivas em discursos históricos ao longo da disputa eleitoral de 2026. Flávio, que no passado publicou ataques severos ao Bolsa Família no Twitter/X (mensagens posteriormente apagadas), passou a defender o benefício social publicamente para ampliar penetração eleitoral. Já Lula, histórico crítico da redução da maioridade penal e defensor de medidas socioeducativas, alterou o posicionamento para apoiar a prisão de adolescentes autores de crimes hediondos, em sintonia com a pressão popular por segurança pública.",
+  "slug": "direita-faz-o-l-esquerda-bota-a-algeminha",
+  "data": "21 de Outubro de 2026",
+  "imagem_capa": "imagens/direita-faz-o-l-esquerda-bota-a-algeminha.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-21T04:40:13.576835",
+  "audio_url": "audio/direita-faz-o-l-esquerda-bota-a-algeminha.mp3"
+}

@@ -1,0 +1,43 @@
+{
+  "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
+  "subtitulo": "Em um domingo histórico, o eleitor decide se prefere entregar a chave do cofre para o mercado ou para o conselho deliberativo dos camaradas.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Em 2026 a dúvida é cruciante: você prefere ser expropriado pelo liberação geral ou pelo ministério dos bilhetes premiados?",
+  "legenda_imagem": "Charge satírica mostrando os candidatos oferecendo à população a mesma fatia de bolo empacotada em papéis de embrulho ideológicos opostos.",
+  "prompt_caricatura": "Caricatura política em estilo O Pasquim dos candidatos presidenciais disputando um balcão de balantas, traço nanquim expressivo, aquarela guache, sem textos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians involved in physical comic farce, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "Chegou o abençoado domingo de segundo turno em 2026, momento sublime em que o distinto eleitor brasileiro é convocado a exercer sua soberania entre duas visões de mundo igualmente apaixonantes: vender até as maçanetas do Palácio do Planalto para o primeiro fundo abutre que passar na praça, ou criar mais trezentas superintendências autônomas para garantir que a burocracia estatal respire com a ajuda de aparelhos ortopédicos.",
+    "De um lado do ringue, a cartilha liberal-nostálgica promete passar a régua em qualquer CNPJ público que oabrigar um bebedouro funcionando, sob a solene promessa de que a iniciativa privada vai gerir aeroportos, estatais e esquinas com a eficiência cirúrgica de um camelódromo clandestino. É a volta triunfal do 'Estado mínimo', desde que o mínimo em questão inclua isenções bilionárias e subsídios generosos para os campeões nacionais do andar de cima.",
+    "Do outro lado, a trincheira desenvolvimentista jura de pés juntos que o segredo da prosperidade universal reside em inflar o organograma oficial com diretorias técnicas, conselhos de paridade de gênero na siderurgia e injeções maciças de recursos em estatais estratégicas, provando que a salvação da pátria cabe sempre a um diretor nomeado por indicação partidária com salário de marajá e estabilidade intergaláctica.",
+    "No fim das contas, a polarização atinge o seu ápice estético: o cidadão é convidado a escolher se prefere pagar a sua conta de luz para um consórcio internacional com sede nas Ilhas Cayman ou para uma autarquia federal administrada por indicações do Centrão. Qualquer que seja o vencedor das urnas, a única certeza é que o boleto continuará com endereço certo e débito automático imediato na folha de pagamento do contribuinte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "O debate político reduzido a quem consegue prometer mais fantasias orçamentárias por minuto na televisão."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Planos de governo encadernados que servem perfeitamente para forrar a gaiola do periquito após a apuração das urnas."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A admirável arte de fingir que o déficit público desaparece se a gente trocar o nome da rubrica contábil."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "O único imposto que nunca sofre reajuste para baixo, independentemente de quem ocupe a cadeira presidencial."
+    }
+  ],
+  "contexto_real": "Os eleitores brasileiros decidem neste domingo (25) o segundo turno da eleição presidencial de 2026, em uma disputa que opõe o programa de privatizações e enxugamento da máquina pública defendido por Flávio Bolsonaro à proposta de fortalecimento de empresas estatais e ampliação da atuação do Estado defendida por Luiz Inácio Lula da Silva.",
+  "slug": "estatal-ou-leilao-escolha-seu-boleto",
+  "data": "23 de Outubro de 2026",
+  "imagem_capa": "imagens/estatal-ou-leilao-escolha-seu-boleto.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-23T20:41:44.149369",
+  "audio_url": "audio/estatal-ou-leilao-escolha-seu-boleto.mp3"
+}

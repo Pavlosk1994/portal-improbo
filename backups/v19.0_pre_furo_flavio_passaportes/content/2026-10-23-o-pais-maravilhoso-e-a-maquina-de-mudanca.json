@@ -1,0 +1,43 @@
+{
+  "titulo": "O PAÍS MARAVILHOSO E A MÁQUINA DE MUDANÇA",
+  "subtitulo": "Na reta final da TV, Lula descobriu o Éden fiscal e Flávio Bolsonaro descobriu o perigo do passado.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Em 2026, o Brasil está salvo pela propaganda na TV ou condenado a pagar a conta da marquetagem?",
+  "legenda_imagem": "Charge satírica retratando Lula e Flávio Bolsonaro disputando a última migalha de atenção no horário eleitoral da TV",
+  "prompt_caricatura": "Caricatura estilo O Pasquim/Henfil de Luiz Inácio Lula da Silva e Flávio Bolsonaro dividindo uma tela de televisão antiga com antenas de coelho, ambos gesticulando em desespero teatral, traço em nanquim expressivo e aquarela guache, fundo bege papel envelhecido, sem textos ou logotipos",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians Luiz Inacio Lula da Silva and Flavio Bolsonaro inside an old television set with rabbit ear antennas, gesturing in theatrical despair, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A liturgia democrática do último dia de propaganda eleitoral na televisão transformou-se em um concurso de ficção científica de alta voltagem, onde os telespectadores foram convidados a escolher entre a Suécia imaginária do Palácio do Planalto e o apocalipse iminente anunciado pela oposição.",
+    "Do lado governista, o presidente Luiz Inácio Lula da Silva subiu ao palanque eletrônico para atestar, com a serenidade de quem não paga boleto no fim do mês, que o país vive um momento de esplendor institucional e fartura contábil, bastando ao cidadão ignorar a fatura do supermercado para desfrutar plenamente dessa epifania estatística.",
+    "Em contrapartida, o senador Flávio Bolsonaro vestiu o figurino do inconformismo metódico, prometendo uma mudança radical que, curiosamente, exige apenas que o eleitor confie cegamente na promessa de que o passado recente nunca aconteceu e que o fundo partidário bilionário é apenas um detalhe estético na luta contra o sistema.",
+    "No fim das contas, entre a continuidade triunfalista de um lado e a renovação garantida por velhas fórmulas do outro, restou ao eleitor brasileiro a certeza reconfortante de que, independentemente da urna, a única coisa que continuará rigorosamente inalterada é a taxa de juros e a criatividade dos marqueteiros."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promessas de palanque que evaporam antes mesmo da apuração das urnas."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O milagre econômico narrado no horário nobre que nunca chega à feira."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte de gastar o dinheiro público explicando que o sacrifício é para o seu bem."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A única certeza constitucional que sobrevive a qualquer governo eleito."
+    }
+  ],
+  "contexto_real": "Nesta sexta-feira (23), Lula e Flávio Bolsonaro protagonizaram o último dia de propaganda eleitoral gratuita na TV para o segundo turno da eleição presidencial de 2026. Lula defendeu a continuidade de seu governo alegando melhora econômica, enquanto Flávio apostou no discurso de mudança e mobilização de eleitores. A campanha petista também mirou o histórico do adversário e apontou riscos de cortes em programas sociais.",
+  "slug": "o-pais-maravilhoso-e-a-maquina-de-mudanca",
+  "data": "23 de Outubro de 2026",
+  "imagem_capa": "imagens/o-pais-maravilhoso-e-a-maquina-de-mudanca.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-23T23:35:22.489962",
+  "audio_url": "audio/o-pais-maravilhoso-e-a-maquina-de-mudanca.mp3"
+}

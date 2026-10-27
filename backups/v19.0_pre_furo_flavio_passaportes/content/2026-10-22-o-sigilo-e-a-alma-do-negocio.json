@@ -1,0 +1,42 @@
+{
+  "titulo": "O SIGILO É A ALMA DO NEGÓCIO...",
+  "subtitulo": "Alckmin cobra transparência alheia enquanto o cofre nacional continua trancado a sete chaves.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Em Brasília, transparência é igual luz do sol: todo mundo jura que ama, mas na hora de abrir as contas corre pra fechar a cortina com sigilo de cem anos.",
+  "legenda_imagem": "Geraldo Alckmin com um estetoscópio tentando ouvir os segredos bancários de Flávio Bolsonaro na Santa Casa de São Carlos.",
+  "prompt_caricatura": "Charge política em estilo nanquim e aquarela mostrando o vice-presidente Geraldo Alckmin de avental de médico, com um estetoscópio gigante encostado no bolso cheio de cadeados do paletó de Flávio Bolsonaro, que foge correndo com uma caixa registradora embaixo do braço. Sem textos na imagem.",
+  "corpo": [
+    "A República dos Pássaros Pretos e das Contas Ocultas ganhou mais um capítulo digno de comédia de costumes rodada em repartição pública. Pelas bandas de São Carlos, o nosso eterno picolé de chuchu, o vice-presidente Geraldo Alckmin, resolveu vestir o jaleco de paladino da transparência alheia para diagnosticar o oponente. Segundo o Doutor Geraldo, o senador Flávio Bolsonaro apresentou mais exigências que cliente inadimplente na hora de abrir a prestação de contas, recusando-se a escancarar os sigilos bancário, fiscal e telefônico. É aquela velha história: a autoridade adora que a auditoria caia no quintal do vizinho, desde que a própria contabilidade permaneça sob segredo de Estado.",
+    "Ocorre que cobrar transparência do adversário político no Brasil é igual pedir honestidade em mesa de carteado clandestino: todo mundo sabe que a carta debaixo da manga é o artigo de primeira necessidade. Alckmin, com aquela serenidade de quem já viu passar por cima de si mais emendas secretas do que padre em dia de quermesse, repetiu o mantra governista de que quem não deve não teme. Uma gracinha retórica que funcionaria muito bem se estivéssemos em Zurique, e não na terra onde o extrato bancário do poder público parece manuscrito trancado a sete chaves na biblioteca do Vaticano.",
+    "Do outro lado do ringue, a bancada dos Bolsonaro prefere manter a contabilidade mais protegida que cofre de paraíso fiscal. Afinal, abrir sigilo no Brasil de hoje é o equivalente a convidar a Receita Federal para uma auditoria ao vivo na hora do almoço: raramente termina com final feliz. As exigências colocadas na mesa para aceitar o debate funcionam como aquela cláusula de rodapé que ninguém lê, mas que garante que a conveniência de gabinete saia invicta.",
+    "Enquanto essa dupla de comediantes da alta roda troca acusações sobre quem possui o prontuário mais blindado, o eleitor assiste ao espetáculo sabendo que a única transparência garantida por lei é a da própria conta bancária no quinto dia útil. No fim das contas, a liturgia do cargo serve unicamente para decretar sigilo de cem anos sobre os segredos dos reis, enquanto a notificação de débito do contribuinte chega antes mesmo do café esfriar."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Transparência só é bonita quando o extrato exposto é o do vizinho."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O debate de ideias que virou campeonato de quem esconde mais papéis."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Sigilo bancário virou patrimônio imaterial tombado pelo Congresso."
+    },
+    {
+      "titulo": "A Blindagem Perpétua",
+      "texto": "Cem anos de sigilo para as decisões do poder, zero dias de prazo para o cidadão recolher o tributo."
+    }
+  ],
+  "contexto_real": "Durante visita à Santa Casa de São Carlos (SP) nesta quinta-feira (22), o vice-presidente Geraldo Alckmin afirmou que o senador e candidato à Presidência Flávio Bolsonaro apresentou exigências para evitar a abertura de seus sigilos bancário, fiscal e telefônico nos debates eleitorais, reforçando a defesa da transparência feita pelo presidente Lula.",
+  "slug": "o-sigilo-e-a-alma-do-negocio",
+  "data": "22 de Outubro de 2026",
+  "imagem_capa": "imagens/o-sigilo-e-a-alma-do-negocio.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-22T21:31:18.038191",
+  "audio_url": "audio/o-sigilo-e-a-alma-do-negocio.mp3"
+}

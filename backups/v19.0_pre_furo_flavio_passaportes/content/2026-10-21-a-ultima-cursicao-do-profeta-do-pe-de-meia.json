@@ -1,0 +1,41 @@
+{
+  "titulo": "A ÚLTIMA CURSIÇÃO DO PROFETA DO PÉ-DE-MEIA",
+  "subtitulo": "Prometendo a aposentadoria política e mais um milagre por metro quadrado, o dono da bola avisa que agora vai.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "legenda_imagem": "O patriarca da política nacional estende o dedo indicador e jura de pés juntos que é a saideira, enquanto o garçom traz mais um mandato na bandeja.",
+  "prompt_caricatura": "Estilo charge satírica em aquarela e nanquim. O presidente Lula gesticulando no palanque no Maranhão, erguendo o dedo indicador e fazendo promessas com um sorriso maroto, cercado por papéis de 'Pé-de-Meia' voando como confete. Ao fundo, eleitores com carnês de prestações na cabeça assistem com expressão de 'já vi esse filme'. Sem textos ou marcas.",
+  "corpo": [
+    "Não há nada mais comovente no folclore nacional do que a promessa de despedida do bom vivant da política. É o equivalente àquele tio do pavê que anuncia, pela décima vez na ceia de Natal, que vai parar de beber e fechar a matraca, logo antes de pedir mais uma dose de cachaça e puxar o coro do 'já que tá todo mundo aqui'. Do alto dos palanques maranhenses, o nosso eterno candidato olhou nos olhos do povo com aquela sinceridade de vendedor de carro usado e decretou o inusitado: esta é, juro por Deus, a derradeira vez que ele cata os votos da nação. Um verdadeiro 'adeus, mas não me leve a mal', digno de novela das oito.",
+    "A promessa veio acompanhada daquele cardápio de dar água na boca e dor de cabeça no ministro da Fazenda. Tem Pé-de-Meia para universitário, tem indústria verde, criativa, digital e até o papagaio do vizinho diplomado em robótica. É a velha arte de governar no gogó, onde o futuro é sempre cor de rosa-choque e a conta chega em suaves prestações no lombo do contribuinte. O distinto cavalheiro jura que o próximo mandato será 'histórico', como se os anteriores tivessem sido apenas uma esquete humorística ensaiada antes da estreia oficial no teatro dos sonhos da Esplanada.",
+    "O grande segredo dessa longevidade artística é que a oposição, quando tenta cobrar fatura, parece mais um coral de igreja desafinando na procrição. Enquanto o governo distribui promessas de bolsas e cafunés institucionais, o andar de cima do poder assiste a tudo com aquela cara de quem já garantiu a boquinha no conselho de administração de estatal. No fim das contas, a política virou um eterno casamento de fachada: todo mundo sabe que a relação faliu, mas ninguém tem coragem de assinar o divórcio porque a pensão alimentícia paga pelo Tesouro Nacional é boa demais para ser largada.",
+    "Assim, o brasileiro vai levando a vida na base da fé e do boleto vencido, aplaudindo o artista que nunca sai de cartaz. Dizer que é a última campanha é apenas uma estratégia de marketing digna de turnê de despedida de banda de rock dos anos 80 — aquela que faz cinco 'últimos shows' por ano em cidades diferentes. O camarada sai do palanque prometendo a lua, o eleitor finge que acredita na bondade do Papai Noel do agreste, e a fatura do buffet, obviamente, fica pendurada na caderneta da Dona Maria, que trabalha trinta dias para pagar imposto até sobre o vento que respira."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Prometer a aposentadoria política enquanto afia o paletó para mais quatro anos de palanque."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Inventar bolsa para tudo quanto é canto, transformando o orçamento público em piñata de festa infantil."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Garantir que a indústria verde vai pagar o café da manhã de duzentos milhões de brasileiros."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A conta do mandato histórico que sempre aterra, pontual e implacável, na folha de pagamento do otário."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva afirmou, durante evento de campanha no Maranhão, que esta será sua última disputa pela Presidência da República e prometeu um mandato 'histórico' focado em expansão de programas sociais como o Pé-de-Meia para universitários e investimentos em tecnologia e energias verdes.",
+  "slug": "a-ultima-cursicao-do-profeta-do-pe-de-meia",
+  "data": "21 de Outubro de 2026",
+  "imagem_capa": "imagens/a-ultima-cursicao-do-profeta-do-pe-de-meia.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-21T18:35:03.546481",
+  "audio_url": "audio/a-ultima-cursicao-do-profeta-do-pe-de-meia.mp3"
+}

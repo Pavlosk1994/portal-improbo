@@ -1,0 +1,43 @@
+{
+  "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
+  "subtitulo": "Por ordem do STF, Polícia Federal recolhe cadernetas do senador e o condena à pior das penas da República: ser obrigado a passar as férias no país que governa.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "A Polícia Federal recolheu os passaportes de Flávio Bolsonaro. Pela primeira vez na história, um parlamentar foi condenado a passar o réveillon no Brasil.",
+  "legenda_imagem": "Em Brasília, a liturgia da retenção de passaportes ensina que o dever cívico de ficar no país é o castigo mais temido da Esplanada.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD Brasil mostrando o senador Flávio Bolsonaro suando frio com malas de viagem e protetor solar enquanto um agente da Polícia Federal recolhe gentilmente seus passaportes sob a sombra das colunas do STF. Traço expressivo em nanquim, hachuras densas e aquarela sobre papel envelhecido, estritamente sem texto ou marcas.",
+  "prompt_caricatura_en": "Brazilian political editorial caricature in classic 1970s-1980s MAD Magazine Brasil / O Pasquim style by Mort Drucker and Henfil. Senator Flávio Bolsonaro sweating nervously in an oversized business suit with packed vacation luggage, as a polite Federal Police officer gently confiscates his regular and diplomatic passports under the imposing shadow of Supreme Court columns and a giant gavel. Expressive ink cross-hatching, watercolor wash on vintage cream paper, strictly NO text, NO logos, NO watermark, pure satirical illustration.",
+  "corpo": [
+    "A história do direito penal brasileiro é pródiga em medidas cautelares criativas, mas nenhuma alcança o requinte de crueldade psicológica da decisão assinada pelo Supremo Tribunal Federal nesta segunda-feira: retirar de um parlamentar o direito sagrado de fugir do Brasil no momento em que as urnas e os tribunais fecham a conta.",
+    "Ao ser abordado pelos agentes da Polícia Federal logo nas primeiras horas da manhã, com a delicadeza litúrgica de quem recolhe ingressos na entrada de um cinema falido, o senador descobriu a dura realidade da geopolítica de gabinete. Não bastava entregar o passaporte comum; a ordem expressa mandava recolher também o diplomático, aquele livrinho azul-marinho que costuma transformar qualquer fila de alfândega internacional em tapete vermelho estendido com dinheiro público.",
+    "Nos bastidores da oposição, o clima é de consternação turística. Parlamentares habituados a pregar o amor patriótico nos microfones do plenário entraram em pânico ao perceber que o patriotismo compulsório pode obrigá-los a passar o verão em Cabo Frio, Caldas Novas ou na rodoviária de Goiânia. A ideia de que um nobre representante do povo tenha de circular pelas mesmas estradas esburacadas e pagar as mesmas tarifas aeroportuárias que o cidadão comum foi recebida nos gabinetes como uma grave quebra do decoro parlamentar.",
+    "Resta ao nobre senador a resignada tarefa de desempacotar o filtro solar importado e contemplar a paisagem de Brasília pela janela do apartamento funcional. No grande teatro institucional da República, nada amedronta mais uma autoridade do que ser condenada a viver sob as mesmas leis, a mesma moeda e as mesmas fronteiras que ela própria ajudou a legislar."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Patriotismo de Rodoviária",
+      "texto": "Defender as cores da bandeira nas redes sociais é sublime; ter que passar as férias no território nacional é considerado violação dos direitos humanos da casta."
+    },
+    {
+      "titulo": "O Efeito Livrinho Azul",
+      "texto": "A perda do passaporte diplomático causa mais taquicardia em Brasília do que qualquer ameaça de CPI ou bloqueio de bens."
+    },
+    {
+      "titulo": "A Conexão Cancelada",
+      "texto": "Conselhos fraternos para sair do país têm o dom milagroso de acelerar as impressoras de mandados no Supremo Tribunal Federal."
+    },
+    {
+      "titulo": "O Brasil Real Obrigatório",
+      "texto": "A única penitência que realmente assusta um congressista é ser obrigado a conviver com o país que ele desenha no Diário Oficial."
+    }
+  ],
+  "contexto_real": "Nesta segunda-feira (26 de outubro de 2026), a Polícia Federal intimou o senador Flávio Bolsonaro a entregar seus passaportes comum e diplomático, proibindo-o de deixar o país por determinação do ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF). A medida cautelar foi tomada no âmbito de investigações em andamento no tribunal sobre movimentações financeiras atípicas e ocorreu após declarações públicas de aliados sobre eventual saída do parlamentar do país.",
+  "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
+  "data": "27 de Outubro de 2026",
+  "imagem_capa": "imagens/turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-27T01:40:00.000000",
+  "audio_url": "audio/turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf.mp3"
+}
