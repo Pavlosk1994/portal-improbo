@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gerador de Site Estático - ÍMPROBO (Estética New York Times & Papel Creme)
+Gerador de Site Estático - IMPRÓBO (Estética New York Times & Papel Creme)
 Fundo papel creme (#F4F1EA), container do artigo em branco puro (#FFFFFF), 
 linhas editoriais clássicas com borda dupla (#121212), divisores em #D1CEC7
 e caixas factuais em #EBE7DE com borda grossa.
@@ -12,7 +12,7 @@ import glob
 import html
 from datetime import datetime
 
-PORTAL_NAME = "ÍMPROBO"
+PORTAL_NAME = "IMPRÓBO"
 PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
 PORTAL_URL = os.environ.get("PORTAL_URL", "https://improbo.vercel.app").rstrip("/")
 INSTAGRAM_URL = "https://instagram.com"
@@ -1001,7 +1001,7 @@ def render_audio_player(slug, title, audio_src):
                         <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse hidden" id="audio-live-dot" title="Reproduzindo"></span>
                     </div>
                     <div class="font-serif italic text-xs text-stone-600 mt-0.5">
-                        Narração satírica com voz neural brasileira &bull; Redação ÍMPROBO
+                        Narração satírica com voz neural brasileira &bull; Redação IMPRÓBO
                     </div>
                 </div>
             </div>
@@ -1298,7 +1298,7 @@ def render_sticky_audio_bar(title):
                 <div class="overflow-hidden">
                     <div class="flex items-center space-x-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO ÍMPROBO</span>
+                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO IMPRÓBO</span>
                     </div>
                     <div class="font-serif font-bold text-xs sm:text-sm text-[#121212] truncate max-w-[180px] sm:max-w-md md:max-w-lg">
                         {safe_title}
@@ -1369,9 +1369,9 @@ def render_share_widget(title, subtitle, slug, frase_disparo_zap=None):
                 let zapText;
                 const zapPhrase = "{safe_zap_phrase}";
                 if (zapPhrase && zapPhrase.length > 5) {{
-                    zapText = `🚨 *ÍMPROBO | SÁTIRA POLÍTICA:*\\n\\n"${{zapPhrase}}"\\n\\n👉 Leia a análise completa antes que Brasília censure: ${{pageUrl}}`;
+                    zapText = `🚨 *IMPRÓBO | SÁTIRA POLÍTICA:*\\n\\n"${{zapPhrase}}"\\n\\n👉 Leia a análise completa antes que Brasília censure: ${{pageUrl}}`;
                 }} else {{
-                    zapText = `🚨 *URGENTE NO ÍMPROBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
+                    zapText = `🚨 *URGENTE NO IMPRÓBO:* {safe_title}\\n\\n"{safe_subtitle}"\\n\\n👉 Leia a crônica completa antes que Brasília censure: ${{pageUrl}}`;
                 }}
                 const zapUrl = `https://api.whatsapp.com/send?text=${{encodeURIComponent(zapText)}}`;
                 window.open(zapUrl, '_blank');
@@ -1991,7 +1991,7 @@ def generate_home_page(articles):
         <div class="mb-8 p-4 sm:p-5 bg-white border border-[#D1CEC7] rounded-sm shadow-xs reveal-on-scroll">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
                 <div class="flex items-center space-x-2">
-                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">EDITORIAS SATÍRICAS DO ÍMPROBO</span>
+                    <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">EDITORIAS SATÍRICAS DO IMPRÓBO</span>
                     <span class="w-1.5 h-1.5 rounded-full bg-[#8B0000]"></span>
                     <span class="font-serif italic text-xs text-stone-600">Escolha onde o cinismo institucional passa mais vergonha hoje:</span>
                 </div>
