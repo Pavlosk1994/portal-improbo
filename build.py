@@ -142,11 +142,10 @@ COMMON_HEAD_STYLES = r"""
         /* Tipografia Fluida Responsiva com clamp() */
         .masthead-title {
             font-family: 'Newsreader', Georgia, serif;
-            font-size: clamp(2.3rem, 7.5vw, 4.8rem);
-            line-height: 1.02;
+            font-size: clamp(1.8rem, 5.2vw, 3.6rem);
+            line-height: 1.05;
             letter-spacing: -0.035em;
             word-break: break-word;
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .article-title {
@@ -207,16 +206,17 @@ COMMON_HEAD_STYLES = r"""
             transform-origin: bottom left;
         }
 
-        /* Barra Fininha de Progresso de Leitura no Topo da Tela (Reading Progress Bar) */
+        /* Barra Fininha de Progresso de Leitura Diretamente Abaixo do Nome do Jornal */
         #reading-progress-container {
-            position: fixed;
-            top: 0;
+            position: absolute;
+            bottom: -1px;
             left: 0;
             width: 100%;
             height: 3.5px;
             background: transparent;
-            z-index: 9999;
+            z-index: 50;
             pointer-events: none;
+            overflow: hidden;
         }
         #reading-progress-bar {
             height: 100%;
@@ -241,9 +241,13 @@ COMMON_HEAD_STYLES = r"""
             transform: translateY(0) !important;
         }
 
-        /* Cabeçalho Editorial Clássico Natural */
+        /* Cabeçalho Sticky Estável: O Nome Fica Fixo no Topo com Altura Constante */
         #site-header {
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background-color: var(--bg-nyt);
+            transition: background-color 0.25s ease, border-color 0.25s ease;
         }
 
         /* Transição Suave de Tema */
@@ -777,59 +781,69 @@ def obter_data_formatada_pt():
     return f"{dia_nome}, {agora.day} de {mes_nome} de {agora.year}"
 
 def render_header(is_article=False):
-    back_link = '<a href="../index.html" class="neo-link inline-flex items-center text-xs font-mono uppercase tracking-wider text-[#8B0000] font-bold">&larr; Voltar à Capa</a>' if is_article else '<span class="text-xs font-mono uppercase tracking-wider text-stone-600">Edição Digital Contínua</span>'
+    back_link = '<a href="../index.html" class="neo-link inline-flex items-center text-xs font-mono uppercase tracking-wider text-[#8B0000] font-bold">&larr; Voltar à Capa</a>' if is_article else '<span class="text-xs font-mono uppercase tracking-wider text-stone-600 dark:text-stone-400 font-medium">Edição Digital Contínua</span>'
     home_link = "../index.html" if is_article else "index.html"
     data_hoje = obter_data_formatada_pt()
     
     return f"""
-    <!-- Barra Fininha de Progresso de Leitura no Topo da Tela (Reading Progress Bar) -->
-    <div id="reading-progress-container" aria-hidden="true">
-        <div id="reading-progress-bar"></div>
-    </div>
-
     <!-- Top Metadata Bar NYT Style -->
-    <div class="border-b border-[#D1CEC7] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 flex justify-between items-center max-w-6xl mx-auto transition-colors">
+    <div class="border-b border-[#D1CEC7] dark:border-[#333338] py-1.5 px-[1.2rem] sm:px-6 text-xs font-mono text-stone-700 dark:text-stone-300 flex justify-between items-center max-w-6xl mx-auto transition-colors">
         <div class="flex items-center space-x-2 sm:space-x-3 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span class="font-bold text-[#121212] shrink-0">BRASÍLIA / BRASIL</span>
-            <span class="text-[#D1CEC7]">&bull;</span>
-            <span class="hidden sm:inline text-stone-600">Previsão: 100% de umidade na cara de pau</span>
-            <span class="hidden sm:inline text-[#D1CEC7]">&bull;</span>
-            <span id="live-header-date" class="text-stone-600">{data_hoje}</span>
+            <span class="font-bold text-[#121212] dark:text-stone-100 shrink-0">BRASÍLIA / BRASIL</span>
+            <span class="text-[#D1CEC7] dark:text-stone-600">&bull;</span>
+            <span class="hidden sm:inline text-stone-600 dark:text-stone-400">Previsão: 100% de umidade na cara de pau</span>
+            <span class="hidden sm:inline text-[#D1CEC7] dark:text-stone-600">&bull;</span>
+            <span id="live-header-date" class="text-stone-600 dark:text-stone-400">{data_hoje}</span>
         </div>
-        <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
-            {back_link}
-            <span class="text-[#D1CEC7]">&bull;</span>
-            <!-- Botão Alternador Modo Escuro (Dark Mode) -->
-            <button id="theme-toggle-btn" type="button" aria-label="Alternar modo escuro" title="Alternar entre modo claro e escuro" class="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded text-[11px] sm:text-xs font-mono font-medium transition-all duration-200 border border-[#D1CEC7] hover:border-[#121212] bg-white text-stone-700 hover:text-[#121212] cursor-pointer shadow-2xs">
-                <!-- Moon Icon (visível no modo claro) -->
-                <svg id="theme-moon-icon" class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                    <path d="M12.3 2a10 10 0 0 0-.19 14 10 10 0 0 0 11.89 4 1 1 0 0 0 .62-1.28 1 1 0 0 0-.91-.72 8 8 0 0 1-7.1-7.1 1 1 0 0 0-.72-.91A1 1 0 0 0 15 10a8.07 8.07 0 0 1-2.7-8 1 1 0 0 0-1.28-.62A1 1 0 0 0 10.3 2z"/>
-                </svg>
-                <!-- Sun Icon (visível no modo escuro) -->
-                <svg id="theme-sun-icon" class="w-3.5 h-3.5 fill-current text-amber-400 hidden" viewBox="0 0 24 24">
-                    <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.29-1.29zm-13.78 1.41l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29a.996.996 0 0 0 0 1.41c.39.38 1.03.38 1.41 0zm12.37-12.37l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0z"/>
-                </svg>
-                <span id="theme-toggle-text" class="hidden sm:inline">Modo Escuro</span>
-            </button>
+        <div class="text-xs font-mono uppercase text-stone-500 dark:text-stone-400 hidden sm:block">
+            Jornalismo Satírico Sem Decoro
         </div>
     </div>
 
-    <!-- Newspaper Masthead with Classic NYT Double Line -->
-    <div class="relative bg-[#F4F1EA] transition-colors duration-200" id="site-header">
-        <header class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-3 sm:pt-4 pb-2 sm:pb-3 text-center">
-            <div class="masthead-borders py-2 sm:py-3 transition-all duration-300">
-                <a href="{home_link}" class="inline-block group">
-                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300">
+    <!-- Newspaper Masthead Sticky Bar (Permanece Pinned no Topo ao Rolar com a Linha Abaixo do Nome) -->
+    <div class="sticky top-0 z-40 bg-[#F4F1EA] dark:bg-[#141416] border-b border-[#D1CEC7] dark:border-[#333338] transition-colors shadow-2xs" id="site-header">
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-2 sm:py-2.5 flex items-center justify-between relative">
+            <!-- Left: Voltar à Capa / Edição -->
+            <div class="w-1/4 flex items-center justify-start">
+                {back_link}
+            </div>
+
+            <!-- Center: O NOME DO JORNAL (Permanece no topo ao rolar a página) -->
+            <div class="w-2/4 text-center">
+                <a href="{home_link}" class="inline-block group" title="Ir para a página inicial do Ímprobo">
+                    <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] dark:text-[#f3f3f5] group-hover:text-[#8B0000] transition-colors leading-none inline-block">
                         {PORTAL_NAME}
                     </h1>
                 </a>
-                <div class="masthead-subline border-t border-b border-[#121212]/80 py-1 sm:py-1.5 mt-2 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 gap-1 transition-all duration-300">
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Ano I &bull; N&ordm; 01</span>
-                    <p class="mx-auto font-medium text-[#121212] tracking-wide text-center px-2">{PORTAL_SLOGAN}</p>
-                    <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600">Preço: Sua Paciência</span>
-                </div>
             </div>
-        </header>
+
+            <!-- Right: Botão Modo Escuro -->
+            <div class="w-1/4 flex items-center justify-end">
+                <button id="theme-toggle-btn" type="button" aria-label="Alternar modo escuro" title="Alternar entre modo claro e escuro" class="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded text-[11px] sm:text-xs font-mono font-medium transition-all duration-200 border border-[#D1CEC7] dark:border-[#3f3f46] hover:border-[#121212] bg-white dark:bg-[#26262b] text-stone-700 dark:text-stone-200 hover:text-[#121212] cursor-pointer shadow-2xs">
+                    <!-- Moon Icon (visível no modo claro) -->
+                    <svg id="theme-moon-icon" class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.3 2a10 10 0 0 0-.19 14 10 10 0 0 0 11.89 4 1 1 0 0 0 .62-1.28 1 1 0 0 0-.91-.72 8 8 0 0 1-7.1-7.1 1 1 0 0 0-.72-.91A1 1 0 0 0 15 10a8.07 8.07 0 0 1-2.7-8 1 1 0 0 0-1.28-.62A1 1 0 0 0 10.3 2z"/>
+                    </svg>
+                    <!-- Sun Icon (visível no modo escuro) -->
+                    <svg id="theme-sun-icon" class="w-3.5 h-3.5 fill-current text-amber-400 hidden" viewBox="0 0 24 24">
+                        <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.29-1.29zm-13.78 1.41l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29a.996.996 0 0 0 0 1.41c.39.38 1.03.38 1.41 0zm12.37-12.37l1.29-1.29c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.29 1.29c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0z"/>
+                    </svg>
+                    <span id="theme-toggle-text" class="hidden sm:inline">Modo Escuro</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- A LINHA ABAIXO DO NOME DO JORNAL (Barra de Progresso de Leitura) -->
+        <div id="reading-progress-container" class="absolute bottom-0 left-0 w-full h-[3.5px] bg-transparent pointer-events-none" aria-hidden="true">
+            <div id="reading-progress-bar" class="h-full bg-[#8B0000] dark:bg-[#e03131] w-0 transition-all duration-75 ease-out shadow-xs"></div>
+        </div>
+    </div>
+
+    <!-- Masthead Classic Subline (Rola suavemente com o fluxo da página) -->
+    <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 py-1.5 sm:py-2 border-b-2 border-[#121212]/80 dark:border-[#52525b] flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm font-serif italic text-stone-800 dark:text-stone-300 gap-1 transition-colors">
+        <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600 dark:text-stone-400">Ano I &bull; N&ordm; 01</span>
+        <p class="mx-auto font-medium text-[#121212] dark:text-stone-100 tracking-wide text-center px-2">{PORTAL_SLOGAN}</p>
+        <span class="hidden md:inline font-mono text-xs uppercase font-normal text-stone-600 dark:text-stone-400">Preço: Sua Paciência</span>
     </div>
     """
 
