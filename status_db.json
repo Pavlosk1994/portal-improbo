@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T04:44:55.336738+00:00",
+  "ultima_atualizacao": "2026-10-27T06:05:42.915797+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T06:05:42.915755+00:00",
+      "horario_brt": "27/10/2026 06:05:42",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 41.6,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
     {
       "timestamp": "2026-10-27T04:44:55.336654+00:00",
       "horario_brt": "27/10/2026 01:44:55",
@@ -215,17 +226,6 @@
       "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
       "imagem_tamanho_kb": 1273.0,
       "audio_tamanho_kb": 856.1
-    },
-    {
-      "timestamp": "2026-10-22T04:36:24.081688",
-      "horario_brt": "22 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "manual-do-sindico-supremo",
-      "titulo": "MANUAL DO SÍNDICO SUPREMO",
-      "imagem_tamanho_kb": 1280.2,
-      "audio_tamanho_kb": 1015.9
     }
   ],
   "radar_pautas": [
@@ -233,36 +233,36 @@
       "titulo": "Trump questiona eleição brasileira e Alckmin rebate: “equivocado”",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/trump-questiona-eleicao-brasileira-e-alckmin-rebate-equivocado",
-      "score": 105.3,
+      "score": 98.3,
       "data_pub": "Mon, 26 Oct 2026 20:18:00 -0300"
+    },
+    {
+      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
+      "score": 86.6,
+      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
     },
     {
       "titulo": "Moraes manda Flávio entregar passaporte e o proíbe de deixar o país",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais",
-      "score": 93.2,
+      "score": 86.2,
       "data_pub": "Mon, 26 Oct 2026 17:55:00 -0300"
     },
     {
       "titulo": "Posse de Lula será em 5 de janeiro",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/posse-de-lula-sera-em-5-de-janeiro",
-      "score": 69.0,
+      "score": 62.0,
       "data_pub": "Mon, 26 Oct 2026 17:54:00 -0300"
     },
     {
       "titulo": "Flávio desiste de pedir anulação da eleição e entrará com ação por abuso de poder contra Lula",
       "fonte": "Folha de S.Paulo - Poder",
       "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-deve-desistir-de-pedir-anulacao-da-eleicao-e-entrar-com-acao-por-abuso-de-poder-contra-lula.shtml",
-      "score": 67.9,
+      "score": 60.9,
       "data_pub": "26 Oct 2026 16:46:00 -0300"
-    },
-    {
-      "titulo": "Flávio Bolsonaro tem passaportes cancelados por ordem de Moraes e fica proibido de deixar o país",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-diz-que-pf-apreendeu-seu-passaporte-e-que-esta-proibido-de-deixar-o-pais.shtml",
-      "score": 62.7,
-      "data_pub": "26 Oct 2026 16:56:00 -0300"
     }
   ]
 }
