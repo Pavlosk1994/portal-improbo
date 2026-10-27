@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T00:17:16.240734+00:00",
+  "ultima_atualizacao": "2026-10-27T03:02:17.695891+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T03:02:17.695806+00:00",
+      "horario_brt": "27/10/2026 00:02:17",
+      "status": "SUCESSO",
+      "motivo": "Publicação validada com Caricatura Editorial Ouro e Áudio Neural",
+      "duracao_segundos": 12.4,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 1303.3,
+      "audio_tamanho_kb": 952.5
+    },
     {
       "timestamp": "2026-10-27T00:17:16.240684+00:00",
       "horario_brt": "27/10/2026 00:17:16",
@@ -215,17 +226,6 @@
       "titulo": "MINAS GERAIS: O PÊNDULO QUE GIRA E O TROUXA QUE PAGA",
       "imagem_tamanho_kb": 1145.0,
       "audio_tamanho_kb": 1061.9
-    },
-    {
-      "timestamp": "2026-10-22T21:31:18.038191",
-      "horario_brt": "22 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "o-sigilo-e-a-alma-do-negocio",
-      "titulo": "O SIGILO É A ALMA DO NEGÓCIO...",
-      "imagem_tamanho_kb": 919.5,
-      "audio_tamanho_kb": 1083.9
     }
   ],
   "radar_pautas": [

@@ -607,10 +607,10 @@ def criar_artigo_demo(noticia):
 def gerar_caricatura_ia(dados_artigo, api_key):
     """
     Gera automaticamente a caricatura editorial satírica utilizando:
-    1. Google Imagen 3 (se a chave API tiver acesso ao modelo predict)
-    2. Fallback autônomo via motor de difusão de arte satírica (Pollinations AI)
+    1. Google Gemini Multimodal Nativo (gemini-2.5-flash-image, gemini-2.0-flash, gemini-2.0-flash-exp)
+    2. Google Imagen 3 (caso a chave API tenha cota/permissão de predict)
     Salva diretamente em imagens/{slug}.jpg com alta resolução.
-    Totalmente autônomo e sem custos.
+    Garante o cumprimento estrito da Regra de Ouro de Caricatura Editorial (> 50KB, estilo Pasquim/MAD).
     """
     slug = dados_artigo.get("slug")
     if not slug:
@@ -619,11 +619,13 @@ def gerar_caricatura_ia(dados_artigo, api_key):
     os.makedirs(IMAGENS_DIR, exist_ok=True)
     caminho_final = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
 
-    # Se já existir uma caricatura local para esse slug (com mais de 100KB, indicando ilustração real), preserva
-    if os.path.exists(caminho_final) and os.path.getsize(caminho_final) > 100000:
-        print(f"[*] Caricatura local já existente encontrada: {caminho_final}")
+    # Se já existir uma caricatura local válida para esse slug (> 50KB), preserva
+    if os.path.exists(caminho_final) and os.path.getsize(caminho_final) >= 50000:
+        print(f"[*] Caricatura local já existente encontrada: {caminho_final} ({os.path.getsize(caminho_final)} bytes)")
         dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
         dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+        if not dados_artigo.get("legenda_imagem"):
+            dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
         return True
 
     prompt_base = dados_artigo.get("prompt_caricatura")
@@ -643,14 +645,93 @@ def gerar_caricatura_ia(dados_artigo, api_key):
         f"Strictly NO text, NO logos, NO watermark, NO real photographs, pure satirical illustration."
     )
 
-    # 1. Tentativa via Google Imagen 3 (caso a chave API tenha cota/permissão)
     if api_key:
+        # 1. Tentativa via Google Gemini Multimodal Nativo (generateContent com responseModalities IMAGE)
+        modelos_multimodais = [
+            "gemini-2.5-flash-image",
+            "gemini-2.0-flash",
+            "gemini-2.0-flash-exp"
+        ]
+
+        payload_gemini = {
+            "contents": [
+                {
+                    "parts": [
+                        {"text": prompt_completo}
+                    ]
+                }
+            ],
+            "generationConfig": {
+                "responseModalities": ["TEXT", "IMAGE"]
+            }
+        }
+
+        headers_gemini = {
+            "Content-Type": "application/json"
+        }
+
+        print("[*] Solicitando caricatura editorial via Gemini Multimodal Nativo...")
+        for modelo in modelos_multimodais:
+            url_gemini = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent?key={api_key}"
+            try:
+                req = urllib.request.Request(
+                    url_gemini,
+                    data=json.dumps(payload_gemini).encode("utf-8"),
+                    headers=headers_gemini,
+                    method="POST"
+                )
+                with urllib.request.urlopen(req, timeout=45) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    candidates = data.get("candidates", [])
+                    if candidates:
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        for part in parts:
+                            inline = part.get("inlineData") or part.get("inline_data")
+                            if inline and inline.get("data"):
+                                b64_data = inline["data"]
+                                img_bytes = base64.b64decode(b64_data)
+
+                                # Formata e salva como JPEG
+                                try:
+                                    from PIL import Image
+                                    import io
+                                    im = Image.open(io.BytesIO(img_bytes))
+                                    if im.mode in ("RGBA", "P"):
+                                        im = im.convert("RGB")
+                                    im.save(caminho_final, "JPEG", quality=92)
+                                except Exception as e_pil:
+                                    with open(caminho_final, "wb") as f_img:
+                                        f_img.write(img_bytes)
+
+                                # Validação estrita da Regra de Ouro (> 50KB)
+                                if os.path.exists(caminho_final) and os.path.getsize(caminho_final) >= 50000:
+                                    tam = os.path.getsize(caminho_final)
+                                    print(f"[✓] Caricatura gerada e aprovada via Gemini Multimodal ({modelo}): {caminho_final} ({tam} bytes)")
+                                    dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+                                    dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+                                    if not dados_artigo.get("legenda_imagem"):
+                                        dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
+                                    return True
+                                else:
+                                    tam = os.path.getsize(caminho_final) if os.path.exists(caminho_final) else 0
+                                    print(f"[!] Imagem gerada por {modelo} abaixo de 50KB ({tam} bytes). Descartando.")
+                                    if os.path.exists(caminho_final):
+                                        os.remove(caminho_final)
+            except urllib.error.HTTPError as e:
+                err_msg = e.read().decode('utf-8', errors='ignore')
+                print(f"[!] Gemini Multimodal {modelo} indisponível ({e.code}): {err_msg[:120]}")
+                continue
+            except Exception as e:
+                print(f"[!] Falha no Gemini Multimodal {modelo}: {e}")
+                continue
+
+        # 2. Tentativa via Google Imagen 3 (caso a chave API tenha cota/permissão de predict)
         modelos_imagen = [
             "imagen-3.0-generate-002",
             "imagen-3.0-generate-001"
         ]
 
-        payload = {
+        payload_imagen = {
             "instances": [
                 {
                     "prompt": prompt_completo
@@ -663,7 +744,7 @@ def gerar_caricatura_ia(dados_artigo, api_key):
             }
         }
 
-        headers = {
+        headers_imagen = {
             "Content-Type": "application/json"
         }
 
@@ -673,8 +754,8 @@ def gerar_caricatura_ia(dados_artigo, api_key):
             try:
                 req = urllib.request.Request(
                     url_imagen,
-                    data=json.dumps(payload).encode("utf-8"),
-                    headers=headers,
+                    data=json.dumps(payload_imagen).encode("utf-8"),
+                    headers=headers_imagen,
                     method="POST"
                 )
                 with urllib.request.urlopen(req, timeout=30) as resp:
@@ -685,12 +766,18 @@ def gerar_caricatura_ia(dados_artigo, api_key):
                         img_bytes = base64.b64decode(b64_data)
                         with open(caminho_final, "wb") as f_img:
                             f_img.write(img_bytes)
-                        print(f"[✓] Caricatura gerada e salva com sucesso via Google Imagen: {caminho_final} ({len(img_bytes)} bytes)")
-                        dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
-                        dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
-                        if not dados_artigo.get("legenda_imagem"):
-                            dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
-                        return True
+
+                        # Validação de integridade e tamanho
+                        if os.path.exists(caminho_final) and os.path.getsize(caminho_final) >= 50000:
+                            print(f"[✓] Caricatura gerada e salva com sucesso via Google Imagen: {caminho_final} ({len(img_bytes)} bytes)")
+                            dados_artigo["imagem_capa"] = f"imagens/{slug}.jpg"
+                            dados_artigo["credito_imagem"] = "Arte: Caricatura Editorial IA / Ilustração Satírica"
+                            if not dados_artigo.get("legenda_imagem"):
+                                dados_artigo["legenda_imagem"] = f"Caricatura editorial satírica: {dados_artigo.get('titulo')}"
+                            return True
+                        else:
+                            if os.path.exists(caminho_final):
+                                os.remove(caminho_final)
             except urllib.error.HTTPError as e:
                 err_msg = e.read().decode('utf-8', errors='ignore')
                 print(f"[!] Google Imagen {modelo} indisponível ({e.code}): {err_msg[:120]}")
@@ -699,7 +786,7 @@ def gerar_caricatura_ia(dados_artigo, api_key):
                 print(f"[!] Falha no Google Imagen {modelo}: {e}")
                 continue
 
-    # 2. Fallback de Segurança Editorial:
+    # 3. Fallback de Segurança Editorial:
     print("[!] Geração de caricatura não retornou imagem válida e fontes degradadas externas são proibidas.")
     return False
 

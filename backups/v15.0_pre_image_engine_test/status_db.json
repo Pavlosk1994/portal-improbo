@@ -1,0 +1,144 @@
+{
+  "ultima_atualizacao": "2026-10-24T03:29:55.111463+00:00",
+  "status_apis": {
+    "gemini": "online",
+    "feeds": "online",
+    "audio": "online",
+    "vercel": "online"
+  },
+  "historico_execucoes": [
+    {
+      "timestamp": "2026-10-24T02:01:41.691627",
+      "horario_brt": "24 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-23T23:35:22.489962",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-pais-maravilhoso-e-a-maquina-de-mudanca",
+      "titulo": "O PAÍS MARAVILHOSO E A MÁQUINA DE MUDANÇA",
+      "imagem_tamanho_kb": 999.7,
+      "audio_tamanho_kb": 762.8
+    },
+    {
+      "timestamp": "2026-10-23T20:41:44.149369",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "estatal-ou-leilao-escolha-seu-boleto",
+      "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
+      "imagem_tamanho_kb": 1009.2,
+      "audio_tamanho_kb": 967.5
+    },
+    {
+      "timestamp": "2026-10-23T13:22:18.168425",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
+      "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
+      "imagem_tamanho_kb": 1267.4,
+      "audio_tamanho_kb": 886.1
+    },
+    {
+      "timestamp": "2026-10-23T09:35:00.000000",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "marcal-e-ejetado-do-coaching-de-flavio",
+      "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
+      "imagem_tamanho_kb": 1147.7,
+      "audio_tamanho_kb": 1203.3
+    },
+    {
+      "timestamp": "2026-10-23T09:24:56.623079",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
+      "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
+      "imagem_tamanho_kb": 1073.4,
+      "audio_tamanho_kb": 838.7
+    },
+    {
+      "timestamp": "2026-10-23T07:26:18.914979",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-salario-minimo-de-faz-de-conta",
+      "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
+      "imagem_tamanho_kb": 1273.0,
+      "audio_tamanho_kb": 856.1
+    },
+    {
+      "timestamp": "2026-10-22T04:36:24.081688",
+      "horario_brt": "22 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "manual-do-sindico-supremo",
+      "titulo": "MANUAL DO SÍNDICO SUPREMO",
+      "imagem_tamanho_kb": 1280.2,
+      "audio_tamanho_kb": 1015.9
+    },
+    {
+      "timestamp": "2026-10-22T17:07:06.353975",
+      "horario_brt": "22 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "minas-gerais-o-pendulo-que-gira-e-o-trouxa-que-pag",
+      "titulo": "MINAS GERAIS: O PÊNDULO QUE GIRA E O TROUXA QUE PAGA",
+      "imagem_tamanho_kb": 1145.0,
+      "audio_tamanho_kb": 1061.9
+    },
+    {
+      "timestamp": "2026-10-22T21:31:18.038191",
+      "horario_brt": "22 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-sigilo-e-a-alma-do-negocio",
+      "titulo": "O SIGILO É A ALMA DO NEGÓCIO...",
+      "imagem_tamanho_kb": 919.5,
+      "audio_tamanho_kb": 1083.9
+    }
+  ],
+  "radar_pautas": [
+    {
+      "titulo": "STF mantém bloqueio das emendas Pix e exige rastreabilidade",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/",
+      "score": 42.0,
+      "data_pub": "Hoje"
+    },
+    {
+      "titulo": "Governo discute meta fiscal e corte de despesas com ministros",
+      "fonte": "Poder360",
+      "link": "https://poder360.com.br/",
+      "score": 38.5,
+      "data_pub": "Hoje"
+    },
+    {
+      "titulo": "Senado articula votação de projetos prioritários na reta final de ano",
+      "fonte": "Folha de S.Paulo",
+      "link": "https://folha.uol.com.br/",
+      "score": 31.0,
+      "data_pub": "Hoje"
+    }
+  ]
+}
