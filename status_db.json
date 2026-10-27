@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T06:05:42.915797+00:00",
+  "ultima_atualizacao": "2026-10-27T16:17:57.049633+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T16:17:57.049579+00:00",
+      "horario_brt": "27/10/2026 16:17:57",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 12.9,
+      "slug": "o-quarto-mandato-e-a-arte-de-contar-ate-tres",
+      "titulo": "O QUARTO MANDATO E A ARTE DE CONTAR ATÉ TRÊS",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-27T06:05:42.915755+00:00",
       "horario_brt": "27/10/2026 06:05:42",
@@ -215,54 +226,43 @@
       "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
       "imagem_tamanho_kb": 1073.4,
       "audio_tamanho_kb": 838.7
-    },
-    {
-      "timestamp": "2026-10-23T07:26:18.914979",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "o-salario-minimo-de-faz-de-conta",
-      "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
-      "imagem_tamanho_kb": 1273.0,
-      "audio_tamanho_kb": 856.1
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Trump questiona eleição brasileira e Alckmin rebate: “equivocado”",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/trump-questiona-eleicao-brasileira-e-alckmin-rebate-equivocado",
-      "score": 98.3,
-      "data_pub": "Mon, 26 Oct 2026 20:18:00 -0300"
+      "titulo": "Lula enfrentará Congresso à direita, crise no STF e precisará conciliar promessas com economia no 4º mandato",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/26/lula-enfrentara-congresso-a-direita-crise-no-stf-e-precisara-conciliar-promessas-com-economia-no-4o-mandato.ghtml",
+      "score": 174.8,
+      "data_pub": "Mon, 26 Oct 2026 15:27:32 -0000"
     },
     {
-      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
-      "score": 86.6,
-      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
+      "titulo": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
+      "score": 145.2,
+      "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
     },
     {
-      "titulo": "Moraes manda Flávio entregar passaporte e o proíbe de deixar o país",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais",
-      "score": 86.2,
-      "data_pub": "Mon, 26 Oct 2026 17:55:00 -0300"
+      "titulo": "Após eleição de Lula, Centrão recalcula rota e admite compor com o governo",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/26/apos-eleicao-de-lula-centrao-recalcula-rota-e-admite-compor-com-o-governo.ghtml",
+      "score": 139.2,
+      "data_pub": "Mon, 26 Oct 2026 19:44:14 -0000"
     },
     {
-      "titulo": "Posse de Lula será em 5 de janeiro",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/posse-de-lula-sera-em-5-de-janeiro",
-      "score": 62.0,
-      "data_pub": "Mon, 26 Oct 2026 17:54:00 -0300"
+      "titulo": "Da 'ótima química' ao tarifaço: relembre a relação de vaivém entre Trump e Lula",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/26/relembre-a-relacao-entre-trump-e-lula.ghtml",
+      "score": 123.6,
+      "data_pub": "Mon, 26 Oct 2026 20:02:22 -0000"
     },
     {
-      "titulo": "Flávio desiste de pedir anulação da eleição e entrará com ação por abuso de poder contra Lula",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-deve-desistir-de-pedir-anulacao-da-eleicao-e-entrar-com-acao-por-abuso-de-poder-contra-lula.shtml",
-      "score": 60.9,
-      "data_pub": "26 Oct 2026 16:46:00 -0300"
+      "titulo": "Em vídeo em inglês, Eduardo Bolsonaro diz que eleição foi fraudada e pede pressão internacional",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/em-video-em-ingles-eduardo-bolsonaro-diz-que-eleicao-foi-fraudada-e-pede-pressao-internacional.ghtml",
+      "score": 102.8,
+      "data_pub": "Mon, 26 Oct 2026 07:36:56 -0000"
     }
   ]
 }
