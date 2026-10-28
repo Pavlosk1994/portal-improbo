@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T22:06:17.887373",
+  "ultima_atualizacao": "2026-10-28T06:44:36.738234+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T06:44:36.738186+00:00",
+      "horario_brt": "28/10/2026 06:44:36",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 46.3,
+      "slug": "passaporte-cancelado-o-fugidinho-sem-saida",
+      "titulo": "PASSAPORTE CANCELADO: O FUGIDINHO SEM SAÍDA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-27T22:06:17.887459",
       "horario_brt": "27/10/2026 22:06:17",
@@ -219,13 +230,6 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
-      "score": 85.5,
-      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
-    },
-    {
       "titulo": "Polícia Federal cancela passaportes de Flávio Bolsonaro",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/policia-federal-cancela-passaportes-de-flavio-bolsonaro",
@@ -233,25 +237,32 @@
       "data_pub": "Tue, 27 Oct 2026 12:52:00 -0300"
     },
     {
-      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
+      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
-      "score": 79.6,
-      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
+      "score": 78.5,
+      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
     },
     {
       "titulo": "“Ato vergonhoso”, diz Lula sobre fuga de Flávio Bolsonaro",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-vergonhoso-diz-lula-sobre-fuga-de-flavio-bolsonaro",
-      "score": 77.8,
+      "score": 70.8,
       "data_pub": "Tue, 27 Oct 2026 19:50:00 -0300"
     },
     {
       "titulo": "Coordenador de campanha se diz surpreso com fuga de Flávio",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-se-diz-surpreso-com-fuga-de-flavio",
-      "score": 76.7,
+      "score": 69.7,
       "data_pub": "Tue, 27 Oct 2026 20:55:00 -0300"
+    },
+    {
+      "titulo": "Aliado de Trump diz que Flávio Bolsonaro chegou aos EUA",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/aliado-de-trump-diz-que-flavio-bolsonaro-chegou-aos-eua",
+      "score": 65.3,
+      "data_pub": "Tue, 27 Oct 2026 16:26:00 -0300"
     }
   ]
 }
