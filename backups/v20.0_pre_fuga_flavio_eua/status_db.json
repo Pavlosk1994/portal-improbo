@@ -1,0 +1,268 @@
+{
+  "ultima_atualizacao": "2026-10-27T04:44:55.336738+00:00",
+  "status_apis": {
+    "gemini": "online",
+    "feeds": "online",
+    "audio": "online",
+    "vercel": "online"
+  },
+  "historico_execucoes": [
+    {
+      "timestamp": "2026-10-27T04:44:55.336654+00:00",
+      "horario_brt": "27/10/2026 01:44:55",
+      "status": "SUCESSO",
+      "motivo": "Furo de Reportagem: Flávio Bolsonaro entrega passaportes à PF por ordem do STF",
+      "duracao_segundos": 8.2,
+      "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
+      "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
+      "imagem_tamanho_kb": 988.7,
+      "audio_tamanho_kb": 1003.2
+    },
+    {
+      "timestamp": "2026-10-27T03:02:17.695806+00:00",
+      "horario_brt": "27/10/2026 00:02:17",
+      "status": "SUCESSO",
+      "motivo": "Publicação validada com Caricatura Editorial Ouro e Áudio Neural",
+      "duracao_segundos": 12.4,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 1303.3,
+      "audio_tamanho_kb": 952.5
+    },
+    {
+      "timestamp": "2026-10-27T00:17:16.240684+00:00",
+      "horario_brt": "27/10/2026 00:17:16",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 10.8,
+      "slug": "o-ringue-da-cara-de-pau-trump-e-alckmin-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: TRUMP E ALCKMIN NA TV",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-26T17:11:49.810491+00:00",
+      "horario_brt": "26/10/2026 17:11:49",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 31.6,
+      "slug": "o-algoritmo-e-a-urna-lula-culpa-o-wi-fi-de-fora",
+      "titulo": "O ALGORITMO E A URNA: LULA CULPA O WI-FI DE FORA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-26T05:53:14.675859+00:00",
+      "horario_brt": "26/10/2026 05:53:14",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 45.0,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-25T23:06:41.379723+00:00",
+      "horario_brt": "25/10/2026 23:06:41",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 19.7,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T18:48:58.021011+00:00",
+      "horario_brt": "25/10/2026 18:48:58",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 12.9,
+      "slug": "a-eterna-reprise-do-planalto-lula-vai-para-o-quart",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: LULA VAI PARA O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T14:54:23.812529+00:00",
+      "horario_brt": "25/10/2026 14:54:23",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 11.9,
+      "slug": "o-sindicato-da-eternidade-a-4a-rodada",
+      "titulo": "O SINDICATO DA ETERNIDADE: A 4ª RODADA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T05:50:22.519665+00:00",
+      "horario_brt": "25/10/2026 05:50:22",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 44.0,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T23:01:07.593097+00:00",
+      "horario_brt": "24/10/2026 23:01:07",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 14.3,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T18:40:14.942724+00:00",
+      "horario_brt": "24/10/2026 18:40:14",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 16.2,
+      "slug": "kassio-nunes-e-o-novo-circo-eleitoral",
+      "titulo": "KASSIO NUNES E O NOVO CIRCO ELEITORAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-24T14:22:26.332243+00:00",
+      "horario_brt": "24/10/2026 14:22:26",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 13.2,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T02:01:41.691627",
+      "horario_brt": "24 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-23T23:35:22.489962",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-pais-maravilhoso-e-a-maquina-de-mudanca",
+      "titulo": "O PAÍS MARAVILHOSO E A MÁQUINA DE MUDANÇA",
+      "imagem_tamanho_kb": 999.7,
+      "audio_tamanho_kb": 762.8
+    },
+    {
+      "timestamp": "2026-10-23T20:41:44.149369",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "estatal-ou-leilao-escolha-seu-boleto",
+      "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
+      "imagem_tamanho_kb": 1009.2,
+      "audio_tamanho_kb": 967.5
+    },
+    {
+      "timestamp": "2026-10-23T13:22:18.168425",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
+      "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
+      "imagem_tamanho_kb": 1267.4,
+      "audio_tamanho_kb": 886.1
+    },
+    {
+      "timestamp": "2026-10-23T09:35:00.000000",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "marcal-e-ejetado-do-coaching-de-flavio",
+      "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
+      "imagem_tamanho_kb": 1147.7,
+      "audio_tamanho_kb": 1203.3
+    },
+    {
+      "timestamp": "2026-10-23T09:24:56.623079",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
+      "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
+      "imagem_tamanho_kb": 1073.4,
+      "audio_tamanho_kb": 838.7
+    },
+    {
+      "timestamp": "2026-10-23T07:26:18.914979",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-salario-minimo-de-faz-de-conta",
+      "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
+      "imagem_tamanho_kb": 1273.0,
+      "audio_tamanho_kb": 856.1
+    },
+    {
+      "timestamp": "2026-10-22T04:36:24.081688",
+      "horario_brt": "22 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "manual-do-sindico-supremo",
+      "titulo": "MANUAL DO SÍNDICO SUPREMO",
+      "imagem_tamanho_kb": 1280.2,
+      "audio_tamanho_kb": 1015.9
+    }
+  ],
+  "radar_pautas": [
+    {
+      "titulo": "Trump questiona eleição brasileira e Alckmin rebate: “equivocado”",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/trump-questiona-eleicao-brasileira-e-alckmin-rebate-equivocado",
+      "score": 105.3,
+      "data_pub": "Mon, 26 Oct 2026 20:18:00 -0300"
+    },
+    {
+      "titulo": "Moraes manda Flávio entregar passaporte e o proíbe de deixar o país",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais",
+      "score": 93.2,
+      "data_pub": "Mon, 26 Oct 2026 17:55:00 -0300"
+    },
+    {
+      "titulo": "Posse de Lula será em 5 de janeiro",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/posse-de-lula-sera-em-5-de-janeiro",
+      "score": 69.0,
+      "data_pub": "Mon, 26 Oct 2026 17:54:00 -0300"
+    },
+    {
+      "titulo": "Flávio desiste de pedir anulação da eleição e entrará com ação por abuso de poder contra Lula",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-deve-desistir-de-pedir-anulacao-da-eleicao-e-entrar-com-acao-por-abuso-de-poder-contra-lula.shtml",
+      "score": 67.9,
+      "data_pub": "26 Oct 2026 16:46:00 -0300"
+    },
+    {
+      "titulo": "Flávio Bolsonaro tem passaportes cancelados por ordem de Moraes e fica proibido de deixar o país",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-diz-que-pf-apreendeu-seu-passaporte-e-que-esta-proibido-de-deixar-o-pais.shtml",
+      "score": 62.7,
+      "data_pub": "26 Oct 2026 16:56:00 -0300"
+    }
+  ]
+}
