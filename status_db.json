@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T16:17:57.049633+00:00",
+  "ultima_atualizacao": "2026-10-28T00:21:01.977311+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T00:21:01.977263+00:00",
+      "horario_brt": "28/10/2026 00:21:01",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 34.7,
+      "slug": "o-relogio-elastico-e-o-voto-fugidinho",
+      "titulo": "O RELÓGIO ELÁSTICO E O VOTO FUGIDINHO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-27T16:17:57.049579+00:00",
       "horario_brt": "27/10/2026 16:17:57",
@@ -215,54 +226,43 @@
       "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
       "imagem_tamanho_kb": 1147.7,
       "audio_tamanho_kb": 1203.3
-    },
-    {
-      "timestamp": "2026-10-23T09:24:56.623079",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
-      "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
-      "imagem_tamanho_kb": 1073.4,
-      "audio_tamanho_kb": 838.7
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Lula enfrentará Congresso à direita, crise no STF e precisará conciliar promessas com economia no 4º mandato",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/26/lula-enfrentara-congresso-a-direita-crise-no-stf-e-precisara-conciliar-promessas-com-economia-no-4o-mandato.ghtml",
-      "score": 174.8,
-      "data_pub": "Mon, 26 Oct 2026 15:27:32 -0000"
+      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
+      "score": 85.5,
+      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
     },
     {
-      "titulo": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
-      "score": 145.2,
-      "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
+      "titulo": "Polícia Federal cancela passaportes de Flávio Bolsonaro",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/policia-federal-cancela-passaportes-de-flavio-bolsonaro",
+      "score": 81.8,
+      "data_pub": "Tue, 27 Oct 2026 12:52:00 -0300"
     },
     {
-      "titulo": "Após eleição de Lula, Centrão recalcula rota e admite compor com o governo",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/26/apos-eleicao-de-lula-centrao-recalcula-rota-e-admite-compor-com-o-governo.ghtml",
-      "score": 139.2,
-      "data_pub": "Mon, 26 Oct 2026 19:44:14 -0000"
+      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
+      "score": 79.6,
+      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
     },
     {
-      "titulo": "Da 'ótima química' ao tarifaço: relembre a relação de vaivém entre Trump e Lula",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/26/relembre-a-relacao-entre-trump-e-lula.ghtml",
-      "score": 123.6,
-      "data_pub": "Mon, 26 Oct 2026 20:02:22 -0000"
+      "titulo": "“Ato vergonhoso”, diz Lula sobre fuga de Flávio Bolsonaro",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-vergonhoso-diz-lula-sobre-fuga-de-flavio-bolsonaro",
+      "score": 77.8,
+      "data_pub": "Tue, 27 Oct 2026 19:50:00 -0300"
     },
     {
-      "titulo": "Em vídeo em inglês, Eduardo Bolsonaro diz que eleição foi fraudada e pede pressão internacional",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/em-video-em-ingles-eduardo-bolsonaro-diz-que-eleicao-foi-fraudada-e-pede-pressao-internacional.ghtml",
-      "score": 102.8,
-      "data_pub": "Mon, 26 Oct 2026 07:36:56 -0000"
+      "titulo": "Coordenador de campanha se diz surpreso com fuga de Flávio",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-se-diz-surpreso-com-fuga-de-flavio",
+      "score": 76.7,
+      "data_pub": "Tue, 27 Oct 2026 20:55:00 -0300"
     }
   ]
 }
