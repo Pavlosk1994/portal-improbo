@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-28T06:44:36.738234+00:00",
+  "ultima_atualizacao": "2026-10-28T17:03:50.135863+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T17:03:50.135819+00:00",
+      "horario_brt": "28/10/2026 17:03:50",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 27.8,
+      "slug": "corrida-contra-o-relogio-da-realidade",
+      "titulo": "CORRIDA CONTRA O RELÓGIO DA REALIDADE",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-28T06:44:36.738186+00:00",
       "horario_brt": "28/10/2026 06:44:36",
@@ -215,54 +226,43 @@
       "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
       "imagem_tamanho_kb": 1267.4,
       "audio_tamanho_kb": 886.1
-    },
-    {
-      "timestamp": "2026-10-23T09:35:00.000000",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "marcal-e-ejetado-do-coaching-de-flavio",
-      "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
-      "imagem_tamanho_kb": 1147.7,
-      "audio_tamanho_kb": 1203.3
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Polícia Federal cancela passaportes de Flávio Bolsonaro",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/policia-federal-cancela-passaportes-de-flavio-bolsonaro",
-      "score": 81.8,
-      "data_pub": "Tue, 27 Oct 2026 12:52:00 -0300"
+      "titulo": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
+      "score": 135.2,
+      "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
     },
     {
-      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
-      "score": 78.5,
-      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
+      "titulo": "Após eleição de Lula, Centrão recalcula rota e admite compor com o governo",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/26/apos-eleicao-de-lula-centrao-recalcula-rota-e-admite-compor-com-o-governo.ghtml",
+      "score": 129.2,
+      "data_pub": "Mon, 26 Oct 2026 19:44:14 -0000"
     },
     {
-      "titulo": "“Ato vergonhoso”, diz Lula sobre fuga de Flávio Bolsonaro",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-vergonhoso-diz-lula-sobre-fuga-de-flavio-bolsonaro",
-      "score": 70.8,
-      "data_pub": "Tue, 27 Oct 2026 19:50:00 -0300"
+      "titulo": "Da 'ótima química' ao tarifaço: relembre a relação de vaivém entre Trump e Lula",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/26/relembre-a-relacao-entre-trump-e-lula.ghtml",
+      "score": 113.6,
+      "data_pub": "Mon, 26 Oct 2026 20:02:22 -0000"
     },
     {
-      "titulo": "Coordenador de campanha se diz surpreso com fuga de Flávio",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-se-diz-surpreso-com-fuga-de-flavio",
-      "score": 69.7,
-      "data_pub": "Tue, 27 Oct 2026 20:55:00 -0300"
+      "titulo": "Tebet diz que Lula entendeu 'recado das ruas' e prevê governo mais aberto a aliados fora do PT",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/27/tebet-entrevista-estudio-i.ghtml",
+      "score": 106.8,
+      "data_pub": "Tue, 27 Oct 2026 17:38:33 -0000"
     },
     {
-      "titulo": "Aliado de Trump diz que Flávio Bolsonaro chegou aos EUA",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/aliado-de-trump-diz-que-flavio-bolsonaro-chegou-aos-eua",
-      "score": 65.3,
-      "data_pub": "Tue, 27 Oct 2026 16:26:00 -0300"
+      "titulo": "Flávio Bolsonaro chega aos Estados Unidos",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/voo-flavio-bolsonaro-chega-aos-eua.ghtml",
+      "score": 105.4,
+      "data_pub": "Wed, 28 Oct 2026 13:25:21 -0000"
     }
   ]
 }
