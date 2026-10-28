@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T21:26:12.924139",
+  "ultima_atualizacao": "2026-10-28T00:59:20.710433+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T00:59:20.710373+00:00",
+      "horario_brt": "28/10/2026 00:59:20",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 14.5,
+      "slug": "a-clt-da-cabeca-ao-pe-demita-o-eleitor",
+      "titulo": "A CLT DA CABEÇA AO PÉ: DEMITA O ELEITOR",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-27T21:26:12.924158",
       "horario_brt": "27/10/2026 21:26:12",
