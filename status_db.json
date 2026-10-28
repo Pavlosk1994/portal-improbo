@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-28T00:59:20.710433+00:00",
+  "ultima_atualizacao": "2026-10-28T01:02:24.802882+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T01:02:24.802832+00:00",
+      "horario_brt": "28/10/2026 01:02:24",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 11.8,
+      "slug": "a-curadoria-ideologica-do-ponto-de-batida",
+      "titulo": "A CURADORIA IDEOLÓGICA DO PONTO DE BATIDA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-28T00:59:20.710373+00:00",
       "horario_brt": "28/10/2026 00:59:20",
