@@ -204,76 +204,43 @@
       "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
       "imagem_tamanho_kb": 1147.7,
       "audio_tamanho_kb": 1203.3
-    },
-    {
-      "timestamp": "2026-10-23T09:24:56.623079",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
-      "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
-      "imagem_tamanho_kb": 1073.4,
-      "audio_tamanho_kb": 838.7
-    },
-    {
-      "timestamp": "2026-10-23T07:26:18.914979",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "o-salario-minimo-de-faz-de-conta",
-      "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
-      "imagem_tamanho_kb": 1273.0,
-      "audio_tamanho_kb": 856.1
-    },
-    {
-      "timestamp": "2026-10-22T04:36:24.081688",
-      "horario_brt": "22 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "manual-do-sindico-supremo",
-      "titulo": "MANUAL DO SÍNDICO SUPREMO",
-      "imagem_tamanho_kb": 1280.2,
-      "audio_tamanho_kb": 1015.9
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Trump questiona eleição brasileira e Alckmin rebate: “equivocado”",
+      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/trump-questiona-eleicao-brasileira-e-alckmin-rebate-equivocado",
-      "score": 105.3,
-      "data_pub": "Mon, 26 Oct 2026 20:18:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
+      "score": 85.5,
+      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
     },
     {
-      "titulo": "Moraes manda Flávio entregar passaporte e o proíbe de deixar o país",
+      "titulo": "Polícia Federal cancela passaportes de Flávio Bolsonaro",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais",
-      "score": 93.2,
-      "data_pub": "Mon, 26 Oct 2026 17:55:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/policia-federal-cancela-passaportes-de-flavio-bolsonaro",
+      "score": 81.8,
+      "data_pub": "Tue, 27 Oct 2026 12:52:00 -0300"
     },
     {
-      "titulo": "Posse de Lula será em 5 de janeiro",
+      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/posse-de-lula-sera-em-5-de-janeiro",
-      "score": 69.0,
-      "data_pub": "Mon, 26 Oct 2026 17:54:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
+      "score": 79.6,
+      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
     },
     {
-      "titulo": "Flávio desiste de pedir anulação da eleição e entrará com ação por abuso de poder contra Lula",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-deve-desistir-de-pedir-anulacao-da-eleicao-e-entrar-com-acao-por-abuso-de-poder-contra-lula.shtml",
-      "score": 67.9,
-      "data_pub": "26 Oct 2026 16:46:00 -0300"
+      "titulo": "“Ato vergonhoso”, diz Lula sobre fuga de Flávio Bolsonaro",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-vergonhoso-diz-lula-sobre-fuga-de-flavio-bolsonaro",
+      "score": 77.8,
+      "data_pub": "Tue, 27 Oct 2026 19:50:00 -0300"
     },
     {
-      "titulo": "Flávio Bolsonaro tem passaportes cancelados por ordem de Moraes e fica proibido de deixar o país",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-diz-que-pf-apreendeu-seu-passaporte-e-que-esta-proibido-de-deixar-o-pais.shtml",
-      "score": 62.7,
-      "data_pub": "26 Oct 2026 16:56:00 -0300"
+      "titulo": "Coordenador de campanha se diz surpreso com fuga de Flávio",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-se-diz-surpreso-com-fuga-de-flavio",
+      "score": 76.7,
+      "data_pub": "Tue, 27 Oct 2026 20:55:00 -0300"
     }
   ]
 }
