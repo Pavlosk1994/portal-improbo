@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-29T00:10:21.520317",
+  "ultima_atualizacao": "2026-10-29T05:17:10.298665",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,61 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-29T05:17:10.298652",
+      "horario_brt": "29/10/2026 05:17:10",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 5 Temas: O ASILO DA ESTRELA: PT ENTRA EM CRISE EXISTENCIAL APÓS DERROTA NAS URNAS E BUSCA HERDEIRO QUE NÃO SEJA DE 1980",
+      "duracao_segundos": 12.0,
+      "slug": "o-asilo-da-estrela-pt-entra-em-crise-existencial-apos-derrota-nas-urnas-e-busca-herdeiro",
+      "titulo": "O ASILO DA ESTRELA: PT ENTRA EM CRISE EXISTENCIAL APÓS DERROTA NAS URNAS E BUSCA HERDEIRO QUE NÃO SEJA DE 1980",
+      "imagem_tamanho_kb": 1045.4,
+      "audio_tamanho_kb": 1312.2
+    },
+    {
+      "timestamp": "2026-10-29T05:17:10.298613",
+      "horario_brt": "29/10/2026 05:17:10",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 5 Temas: A TEMPESTADE PERFEITA DO REAL: DÓLAR NAS NUVENS, JUROS NA ESTRATOSFERA E O POVO NO SUPERMERCADO EM QUEDA LIVRE",
+      "duracao_segundos": 12.0,
+      "slug": "a-tempestade-perfeita-do-real-dolar-nas-nuvens-juros-na-estratosfera-e-o-carrinho-vazio",
+      "titulo": "A TEMPESTADE PERFEITA DO REAL: DÓLAR NAS NUVENS, JUROS NA ESTRATOSFERA E O POVO NO SUPERMERCADO EM QUEDA LIVRE",
+      "imagem_tamanho_kb": 1127.3,
+      "audio_tamanho_kb": 1207.0
+    },
+    {
+      "timestamp": "2026-10-29T05:17:10.298554",
+      "horario_brt": "29/10/2026 05:17:10",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 5 Temas: O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
+      "duracao_segundos": 12.0,
+      "slug": "o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix",
+      "titulo": "O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
+      "imagem_tamanho_kb": 1204.4,
+      "audio_tamanho_kb": 1283.3
+    },
+    {
+      "timestamp": "2026-10-29T05:17:10.298499",
+      "horario_brt": "29/10/2026 05:17:10",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 5 Temas: O GOVERNO EM BANHO-MARIA: LULA DESPACHA DO ALVORADA COM GELO NA NUCA ENQUANTO O CENTRÃO COBRA A CONTA DO VELÓRIO",
+      "duracao_segundos": 12.0,
+      "slug": "o-governo-em-banho-maria-lula-despacha-do-alvorada-com-gelo-na-nuca-enquanto-o-centrao-cobra-a-conta",
+      "titulo": "O GOVERNO EM BANHO-MARIA: LULA DESPACHA DO ALVORADA COM GELO NA NUCA ENQUANTO O CENTRÃO COBRA A CONTA DO VELÓRIO",
+      "imagem_tamanho_kb": 1229.1,
+      "audio_tamanho_kb": 1311.6
+    },
+    {
+      "timestamp": "2026-10-29T05:17:10.298433",
+      "horario_brt": "29/10/2026 05:17:10",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 5 Temas: O HERDEIRO DO CONDADO: FLÁVIO BOLSONARO TRANSFORMA O SENADO EM BALCÃO DE ANISTIA ENQUANTO ENSAIA A COROA FAMILIAR",
+      "duracao_segundos": 12.0,
+      "slug": "o-herdeiro-do-condado-flavio-bolsonaro-transforma-o-senado-em-balcao-de-anistia",
+      "titulo": "O HERDEIRO DO CONDADO: FLÁVIO BOLSONARO TRANSFORMA O SENADO EM BALCÃO DE ANISTIA ENQUANTO ENSAIA A COROA FAMILIAR",
+      "imagem_tamanho_kb": 1009.1,
+      "audio_tamanho_kb": 1244.7
+    },
     {
       "timestamp": "2026-10-29T00:10:21.520374",
       "horario_brt": "29/10/2026 00:10:21",

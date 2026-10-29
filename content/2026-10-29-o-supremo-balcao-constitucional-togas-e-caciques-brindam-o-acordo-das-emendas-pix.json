@@ -1,0 +1,43 @@
+{
+  "titulo": "O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
+  "subtitulo": "Em jantares discretos regados a vinho fino e risoto de trufas, ministros do STF e líderes do Congresso selam pacto para destravar bilhões do orçamento sem melindrar ninguém.",
+  "categoria": "República da Toga",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O STF e o Congresso fecharam o 'acordo de cavalheiros': as emendas Pix voltam a jorrar bilhões pelo país sob o rótulo de 'transparência negociada', enquanto o cidadão assiste ao banquete de fora.",
+  "legenda_imagem": "Entre um brinde e outro em palacetes de Brasília, ministros e parlamentares mostram que a separação de poderes é apenas uma recomendação poética na hora de partilhar o dinheiro público.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD mostrando ministros togados do STF de capas pretas compridas e perucas clássicas brindando taças de cristal de vinho tinto com Arthur Lira e parlamentares bem vestidos ao redor de uma mesa de mogno com lagostas, enquanto sob a toalha de mesa uma impressora despeja pilhas de maços de dinheiro em malas abertas. Traço expressivo em nanquim, hachuras densas e aquarela sobre pergaminho.",
+  "prompt_caricatura_en": "Brazilian editorial political cartoon caricature in vintage 1970s-1980s MAD Magazine / O Pasquim style. Supreme Court justices in flowing black judicial robes and ornate wigs clinking crystal wine glasses with grinning suited congressional leaders around grand mahogany banquet table laden with lobsters, while beneath the velvet tablecloth a printing press churns bundles of Brazilian real currency into open leather suitcases. Pen and ink cross-hatching, watercolor wash on parchment paper, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "Montesquieu certamente reviraria no túmulo se descobrisse que a lendária teoria da separação tripartite dos Poderes da República atingiu seu ápice de maturação institucional não em tratados filosóficos, mas em salões de jantares a portas fechadas no Lago Sul de Brasília. Em encontros regados a safras nobres de tintos portugueses e risotos de trufas, ministros do Supremo Tribunal Federal e os mandachuvas da Câmara dos Deputados e do Senado Federal bateram o martelo no mais novo 'consenso cívico' nacional: a liberação das bilionárias emendas parlamentares Pix com um verniz reluzente de transparência cosmética.",
+    "A encenação do conflito institucional, acompanhada pelo público nos telejornais com a gravidade de um duelo medieval, durou o tempo suficiente para que cada lado marcasse sua posição de força. O ministro Flávio Dino suspendeu os repasses e exigiu rastreabilidade; o Congresso chiou, ameaçou retaliar aprovando mandatos para ministros e limitando decisões monocráticas; e, no ápice do drama, os cavalheiros se sentaram à mesa para construir aquilo que Brasília carinhosamente chama de 'saída construtiva'. Na prática, a emenda Pix continuará caindo na conta de prefeituras sem plano de trabalho detalhado, mas agora acompanhada de uma declaração solene prometendo que nenhum centavo será desviado para compra de asfalto invisível.",
+    "Para a aristocracia da toga, o arranjo traz a paz necessária para desfrutar o calendário internacional de conferências e simpósios jurídicos em Roma, Lisboa e Nova York, frequentemente patrocinados por conglomerados empresariais que possuem processos milionários pendentes de julgamento na corte. Nada acalma mais os ânimos de um magistrado ativista do que saber que os parlamentares guardaram a gaveta dos pedidos de impeachment em troca do desbloqueio da verba para asfaltar os currais eleitorais no interior.",
+    "No final da comédia jurídica, a Carta Magna de 1988 permanece intacta no pedestal da solenidade, admirada por todos e obedecida apenas naquilo que não atrapalhe a circulação de empenhos orçamentários. O cidadão comum, que precisa provar até a certidão de batismo para conseguir uma consulta médica no SUS, descobre que para movimentar 50 bilhões de reais basta pertencer ao clube dos togados ou ao condomínio dos deputados. A harmonia entre os poderes nunca foi tão doce — e tão cara para quem paga a conta."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia do Salmão Trufado",
+      "texto": "Crises institucionais gravíssimas entre o Judiciário e o Legislativo costumam desaparecer milagrosamente na sobremesa do terceiro jantar secreto."
+    },
+    {
+      "titulo": "O Pix Rastreável (Só que Não)",
+      "texto": "A nova transparência acordada garante que o dinheiro público agora cai na conta do prefeito com selo de garantia de que Deus está olhando."
+    },
+    {
+      "titulo": "Simpósios em Lisboa",
+      "texto": "Nada aprimora tanto a jurisprudência constitucional brasileira quanto cinco dias em hotel cinco estrelas na Europa patrocinado por banqueiros."
+    },
+    {
+      "titulo": "A Paz Armada da Praça",
+      "texto": "O Congresso enterra o impeachment de ministros, o STF libera as torneiras do orçamento e a Constituição finge que não viu nada."
+    }
+  ],
+  "contexto_real": "Ao longo do segundo semestre de 2026, ministros do Supremo Tribunal Federal, sob a relatoria de Flávio Dino, protagonizaram uma tensa negociação institucional com o presidente da Câmara, Arthur Lira, e do Senado, Rodrigo Pacheco, a respeito do desbloqueio e das regras de transparência das chamadas 'emendas Pix' e emendas de comissão. As tratativas em reuniões reservadas resultaram em um acordo para restabelecer os fluxos financeiros mediante novas exigências formais de rastreabilidade, enquanto no Congresso avançam propostas para limitar poderes monocráticos do STF.",
+  "slug": "o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix",
+  "data": "29 de Outubro de 2026",
+  "imagem_capa": "imagens/o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-29T05:02:00.000000",
+  "audio_url": "audio/o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix.mp3"
+}

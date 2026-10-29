@@ -1,0 +1,43 @@
+{
+  "titulo": "A TEMPESTADE PERFEITA DO REAL: DÓLAR NAS NUVENS, JUROS NA ESTRATOSFERA E O POVO NO SUPERMERCADO EM QUEDA LIVRE",
+  "subtitulo": "Enquanto Haddad culpa o mercado e o Banco Central saca a bazuca da Selic, o cidadão descobre que comprar café, carne e azeite exige financiamento imobiliário em 30 anos.",
+  "categoria": "Milagre ao Contrário",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Dólar roçando as alturas, Selic em disparada e o café virando artigo de luxo: a economia brasileira virou um jogo de empurra onde só quem se machuca é quem passa o cartão no mercado.",
+  "legenda_imagem": "Entre os discursos inflamados do governo e os relatórios apocalípticos do mercado, o único indicador de precisão científica é o carrinho vazio no caixa do supermercado.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD mostrando um trabalhador brasileiro magro de regata e chinelo empurrando um carrinho de supermercado contendo apenas um pacote murcho de café e uma nota de real em cima de uma corda bamba sobre um abismo, enquanto no céu um dirigível verde em forma de nota de dólar gigante sobe com asas e um canhão militar do Banco Central dispara bolas de canhão rotuladas com porcentagens de juros altos. Traço expressivo em nanquim, hachuras densas e aquarela sobre papel envelhecido.",
+  "prompt_caricatura_en": "Brazilian editorial political cartoon caricature in vintage 1970s-1980s MAD Magazine / O Pasquim style. Skinny Brazilian working-class man in tank top and flip-flops pushing supermarket cart holding only a single withered coffee bag and lonely coin on tightrope over deep ravine, while in sky a giant green dollar bill balloon ascends majestically and Central Bank cannon fires heavy cannonballs of rising interest rates into the ground. Pen and ink cross-hatching, watercolor wash on vintage paper, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "A economia brasileira atingiu aquele estágio fascinante da meteorologia financeira em que todos os especialistas de terninho sob medida sabem exatamente explicar o desastre, mas nenhum deles se arrisca a fazer a compra do mês sem tomar um ansiolítico antes. Com a moeda norte-americana flertando perigosamente com as máximas históricas e a cotação do dólar disparando contra o real, o Banco Central já colocou a bazuca da taxa Selic em posição de tiro, pronto para elevar os juros a patamares estratosféricos e esfriar a economia na marretada, como manda o manual da ortodoxia bancária.",
+    "No Ministério da Fazenda, o roteiro das explicações segue o clássico teatrinho da terceirização de culpas. Se o dólar sobe, a culpa é da eleição americana, dos ventos solares na Mongólia ou da histeria especulativa dos rentistas da avenida Faria Lima. Do outro lado da trincheira, os operadores de mercado apontam para o descompasso fiscal, a incapacidade do governo de conter a gastança obrigatória e o medo crônico de que a conta das contas públicas acabe sendo paga na base da emissão de dívida e criatividade contábil.",
+    "Enquanto os titãs do dinheiro trocam notas técnicas e farpas elegantes nos jornais econômicos, a realidade na ponta do consumo opera sob leis muito mais brutais. No supermercado da esquina, o pacote de café gourmetizado pela inflação já divide espaço na lista de compras com o financiamento da casa própria; o azeite de oliva virou item guardado em cofre de segurança atrás do balcão; e a lendária picanha do churrasco de campanha foi silenciosamente substituída pelo corte nobre da salsicha a granel.",
+    "O resultado é uma obra-prima da macroeconomia de republiqueta: temos uma das taxas de juros reais mais altas do planeta para conter uma inflação que não cede, um câmbio desvalorizado que encarece até o pãozinho francês e uma população que trabalha cinco meses no ano apenas para pagar tributos que sustentam o aparato burocrático de Brasília. A nau da economia segue navegando firme rumo ao desconhecido — com Haddad no leme, Campos Neto e Galípolo nos pedais e o povo brasileiro remando de barriga vazia."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Café Como Investimento de Risco",
+      "texto": "Pelas cotações atuais do quilo do café torrado, comprar 500 gramas no mercadinho passou a exigir análise prévia de risco e aprovação de crédito bancário."
+    },
+    {
+      "titulo": "A Bazuca dos Juros Altos",
+      "texto": "O Banco Central sobe a taxa Selic para curar a inflação da mesma forma que um médico receita amputação da perna para aliviar topada no dedão."
+    },
+    {
+      "titulo": "A Culpa é de Wall Street",
+      "texto": "Para os porta-vozes do governo, o real só perde valor porque os financistas do planeta inteiro decidiram conspirar contra o almoço do brasileiro."
+    },
+    {
+      "titulo": "O Churrasco Quântico",
+      "texto": "A picanha eleitoral agora existe apenas no plano das probabilidades: está prometida na fala do palanque, mas desaparece no leitor do código de barras."
+    }
+  ],
+  "contexto_real": "No fechamento de outubro de 2026, a economia brasileira enfrenta forte volatilidade cambial com o dólar oscilando em patamares elevados (acima de R$ 5,75), pressionado pela aversão global a risco e por incertezas fiscais domésticas sobre a capacidade do governo de cumprir as metas fiscais. Diante da desancoragem das expectativas de inflação e do aumento de preços de alimentos básicos e energia, o Comitê de Política Monetária (Copom) do Banco Central projeta um ciclo de alta na taxa básica de juros (Selic), gerando atrito direto entre a Fazenda e a autoridade monetária.",
+  "slug": "a-tempestade-perfeita-do-real-dolar-nas-nuvens-juros-na-estratosfera-e-o-carrinho-vazio",
+  "data": "29 de Outubro de 2026",
+  "imagem_capa": "imagens/a-tempestade-perfeita-do-real-dolar-nas-nuvens-juros-na-estratosfera-e-o-carrinho-vazio.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-29T05:03:00.000000",
+  "audio_url": "audio/a-tempestade-perfeita-do-real-dolar-nas-nuvens-juros-na-estratosfera-e-o-carrinho-vazio.mp3"
+}
