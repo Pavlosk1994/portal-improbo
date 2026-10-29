@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-28T17:03:50.135863+00:00",
+  "ultima_atualizacao": "2026-10-29T00:41:39.348290+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-29T00:41:39.348237+00:00",
+      "horario_brt": "29/10/2026 00:41:39",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 46.9,
+      "slug": "o-relogio-de-bronze-da-pressa-republicana",
+      "titulo": "O RELÓGIO DE BRONZE DA PRESSA REPUBLICANA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-28T17:03:50.135819+00:00",
       "horario_brt": "28/10/2026 17:03:50",
@@ -215,17 +226,6 @@
       "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
       "imagem_tamanho_kb": 1009.2,
       "audio_tamanho_kb": 967.5
-    },
-    {
-      "timestamp": "2026-10-23T13:22:18.168425",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
-      "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
-      "imagem_tamanho_kb": 1267.4,
-      "audio_tamanho_kb": 886.1
     }
   ],
   "radar_pautas": [
@@ -237,32 +237,32 @@
       "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
     },
     {
-      "titulo": "Após eleição de Lula, Centrão recalcula rota e admite compor com o governo",
+      "titulo": "'Ridículo', 'ofensa', 'olhar para frente': a reação após Flávio fugir, se dizer 'presidente eleito', apagar e falar que é 'líder do Brasil'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/26/apos-eleicao-de-lula-centrao-recalcula-rota-e-admite-compor-com-o-governo.ghtml",
-      "score": 129.2,
-      "data_pub": "Mon, 26 Oct 2026 19:44:14 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/10/28/ridiculo-ofensa-olhar-para-frente-a-reacao-apos-flavio-fugir-se-dizer-presidente-eleito-apagar-e-falar-que-e-lider-do-brasil.ghtml",
+      "score": 110.2,
+      "data_pub": "Wed, 28 Oct 2026 22:51:25 -0000"
     },
     {
-      "titulo": "Da 'ótima química' ao tarifaço: relembre a relação de vaivém entre Trump e Lula",
+      "titulo": "Flávio Bolsonaro recebeu autorização para ficar 1 ano nos EUA",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/26/relembre-a-relacao-entre-trump-e-lula.ghtml",
-      "score": 113.6,
-      "data_pub": "Mon, 26 Oct 2026 20:02:22 -0000"
-    },
-    {
-      "titulo": "Tebet diz que Lula entendeu 'recado das ruas' e prevê governo mais aberto a aliados fora do PT",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/27/tebet-entrevista-estudio-i.ghtml",
-      "score": 106.8,
-      "data_pub": "Tue, 27 Oct 2026 17:38:33 -0000"
-    },
-    {
-      "titulo": "Flávio Bolsonaro chega aos Estados Unidos",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/voo-flavio-bolsonaro-chega-aos-eua.ghtml",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-recebeu-autorizacao-para-ficar-1-ano-nos-eua.ghtml",
       "score": 105.4,
-      "data_pub": "Wed, 28 Oct 2026 13:25:21 -0000"
+      "data_pub": "Wed, 28 Oct 2026 22:17:30 -0000"
+    },
+    {
+      "titulo": "Em carta golpista, Flávio agradece Milei e Trump por apoio para fuga",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/em-carta-golpista-flavio-agradece-milei-e-trump-por-apoio-para-fuga",
+      "score": 103.1,
+      "data_pub": "Wed, 28 Oct 2026 18:22:00 -0300"
+    },
+    {
+      "titulo": "Flávio Bolsonaro usou passaporte diplomático cancelado para entrar nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-usou-passaporte-diplomatico-cancelado-para-entrar-nos-eua.ghtml",
+      "score": 98.4,
+      "data_pub": "Wed, 28 Oct 2026 18:14:55 -0000"
     }
   ]
 }
