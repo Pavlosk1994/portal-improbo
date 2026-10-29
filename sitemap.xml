@@ -2,15 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://improbo.vercel.app/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-urna-blindada-kassio-nunes-elogia-o-tse-e-joga-agua-fria-no-choro-da-oposicao.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-bolo-do-deboche-lula-comemora-81-anos-e-receita-cha-de-coragem-a-flavio.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-desembarque-do-palanque-tarcisio-avisa-a-eleicao-acabou-e-deixa-o-cla-no-vacuo.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-presidente-de-fort-lauderdale-flavio-autoproclama-lider-e-apaga.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/artigos/mpt-processa-deputada-demissao-eleitores-lula-assedio-eleitoral.html</loc>

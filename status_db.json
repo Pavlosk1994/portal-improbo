@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-27T22:06:17.887373",
+  "ultima_atualizacao": "2026-10-28T23:43:50.490807",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,50 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T23:43:50.490971",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O PRESIDENTE DE FORT LAUDERDALE: FLÁVIO SE AUTOPROCLAMA IMPERADOR NO EXÍLIO E APAGA ANTES DA CONTA DO HOTEL",
+      "duracao_segundos": 12.8,
+      "slug": "o-presidente-de-fort-lauderdale-flavio-autoproclama-lider-e-apaga",
+      "titulo": "O PRESIDENTE DE FORT LAUDERDALE: FLÁVIO SE AUTOPROCLAMA IMPERADOR NO EXÍLIO E APAGA ANTES DA CONTA DO HOTEL",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490937",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O DESEMBARQUE DO PALANQUE: TARCÍSIO AVISA QUE A ELEIÇÃO ACABOU E DEIXA O CLÃ NO VÁCUO",
+      "duracao_segundos": 12.8,
+      "slug": "o-desembarque-do-palanque-tarcisio-avisa-a-eleicao-acabou-e-deixa-o-cla-no-vacuo",
+      "titulo": "O DESEMBARQUE DO PALANQUE: TARCÍSIO AVISA QUE A ELEIÇÃO ACABOU E DEIXA O CLÃ NO VÁCUO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490897",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O BOLO DO DEBOCHE: LULA APAGA 81 VELAS COM O SOPRO DA IRONIA E RECEITA CHÁ DE CORAGEM A FLÁVIO",
+      "duracao_segundos": 12.8,
+      "slug": "o-bolo-do-deboche-lula-comemora-81-anos-e-receita-cha-de-coragem-a-flavio",
+      "titulo": "O BOLO DO DEBOCHE: LULA APAGA 81 VELAS COM O SOPRO DA IRONIA E RECEITA CHÁ DE CORAGEM A FLÁVIO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490834",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: A URNA BLINDADA: KASSIO NUNES DESCOBRE A BELEZA DO SISTEMA E DÁ BANHO DE ÁGUA FRIA NA BANCADA DO CHORO",
+      "duracao_segundos": 12.8,
+      "slug": "a-urna-blindada-kassio-nunes-elogia-o-tse-e-joga-agua-fria-no-choro-da-oposicao",
+      "titulo": "A URNA BLINDADA: KASSIO NUNES DESCOBRE A BELEZA DO SISTEMA E DÁ BANHO DE ÁGUA FRIA NA BANCADA DO CHORO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
     {
       "timestamp": "2026-10-27T22:06:17.887459",
       "horario_brt": "27/10/2026 22:06:17",
