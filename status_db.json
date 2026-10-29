@@ -237,65 +237,43 @@
       "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
       "imagem_tamanho_kb": 1009.2,
       "audio_tamanho_kb": 967.5
-    },
-    {
-      "timestamp": "2026-10-23T13:22:18.168425",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
-      "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
-      "imagem_tamanho_kb": 1267.4,
-      "audio_tamanho_kb": 886.1
-    },
-    {
-      "timestamp": "2026-10-23T09:35:00.000000",
-      "horario_brt": "23 de Outubro de 2026",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 32.4,
-      "slug": "marcal-e-ejetado-do-coaching-de-flavio",
-      "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
-      "imagem_tamanho_kb": 1147.7,
-      "audio_tamanho_kb": 1203.3
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "TSE contabiliza 34,3 mil votos após as 17h no 2º turno das eleições",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-contabiliza-menos-de-35-mil-votos-apos-as-17h-no-2-turno",
-      "score": 85.5,
-      "data_pub": "Tue, 27 Oct 2026 17:13:00 -0300"
+      "titulo": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
+      "score": 135.2,
+      "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
     },
     {
-      "titulo": "Polícia Federal cancela passaportes de Flávio Bolsonaro",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/policia-federal-cancela-passaportes-de-flavio-bolsonaro",
-      "score": 81.8,
-      "data_pub": "Tue, 27 Oct 2026 12:52:00 -0300"
+      "titulo": "'Ridículo', 'ofensa', 'olhar para frente': a reação após Flávio fugir, se dizer 'presidente eleito', apagar e falar que é 'líder do Brasil'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/28/ridiculo-ofensa-olhar-para-frente-a-reacao-apos-flavio-fugir-se-dizer-presidente-eleito-apagar-e-falar-que-e-lider-do-brasil.ghtml",
+      "score": 110.2,
+      "data_pub": "Wed, 28 Oct 2026 22:51:25 -0000"
     },
     {
-      "titulo": "PL, partido de Flávio, reconhece vitória de Lula nas eleições",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/partido-de-flavio-pl-reconhece-vitoria-de-lula-nas-eleicoes",
-      "score": 79.6,
-      "data_pub": "Mon, 26 Oct 2026 21:38:00 -0300"
+      "titulo": "Flávio Bolsonaro recebeu autorização para ficar 1 ano nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-recebeu-autorizacao-para-ficar-1-ano-nos-eua.ghtml",
+      "score": 105.4,
+      "data_pub": "Wed, 28 Oct 2026 22:17:30 -0000"
     },
     {
-      "titulo": "“Ato vergonhoso”, diz Lula sobre fuga de Flávio Bolsonaro",
+      "titulo": "Em carta golpista, Flávio agradece Milei e Trump por apoio para fuga",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-vergonhoso-diz-lula-sobre-fuga-de-flavio-bolsonaro",
-      "score": 77.8,
-      "data_pub": "Tue, 27 Oct 2026 19:50:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/em-carta-golpista-flavio-agradece-milei-e-trump-por-apoio-para-fuga",
+      "score": 103.1,
+      "data_pub": "Wed, 28 Oct 2026 18:22:00 -0300"
     },
     {
-      "titulo": "Coordenador de campanha se diz surpreso com fuga de Flávio",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-se-diz-surpreso-com-fuga-de-flavio",
-      "score": 76.7,
-      "data_pub": "Tue, 27 Oct 2026 20:55:00 -0300"
+      "titulo": "Flávio Bolsonaro usou passaporte diplomático cancelado para entrar nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-usou-passaporte-diplomatico-cancelado-para-entrar-nos-eua.ghtml",
+      "score": 98.4,
+      "data_pub": "Wed, 28 Oct 2026 18:14:55 -0000"
     }
   ]
 }
