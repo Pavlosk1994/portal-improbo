@@ -1,0 +1,279 @@
+{
+  "ultima_atualizacao": "2026-10-28T23:43:50.490807",
+  "status_apis": {
+    "gemini": "online",
+    "feeds": "online",
+    "audio": "online",
+    "vercel": "online"
+  },
+  "historico_execucoes": [
+    {
+      "timestamp": "2026-10-28T23:43:50.490971",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O PRESIDENTE DE FORT LAUDERDALE: FLÁVIO SE AUTOPROCLAMA IMPERADOR NO EXÍLIO E APAGA ANTES DA CONTA DO HOTEL",
+      "duracao_segundos": 12.8,
+      "slug": "o-presidente-de-fort-lauderdale-flavio-autoproclama-lider-e-apaga",
+      "titulo": "O PRESIDENTE DE FORT LAUDERDALE: FLÁVIO SE AUTOPROCLAMA IMPERADOR NO EXÍLIO E APAGA ANTES DA CONTA DO HOTEL",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490937",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O DESEMBARQUE DO PALANQUE: TARCÍSIO AVISA QUE A ELEIÇÃO ACABOU E DEIXA O CLÃ NO VÁCUO",
+      "duracao_segundos": 12.8,
+      "slug": "o-desembarque-do-palanque-tarcisio-avisa-a-eleicao-acabou-e-deixa-o-cla-no-vacuo",
+      "titulo": "O DESEMBARQUE DO PALANQUE: TARCÍSIO AVISA QUE A ELEIÇÃO ACABOU E DEIXA O CLÃ NO VÁCUO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490897",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: O BOLO DO DEBOCHE: LULA APAGA 81 VELAS COM O SOPRO DA IRONIA E RECEITA CHÁ DE CORAGEM A FLÁVIO",
+      "duracao_segundos": 12.8,
+      "slug": "o-bolo-do-deboche-lula-comemora-81-anos-e-receita-cha-de-coragem-a-flavio",
+      "titulo": "O BOLO DO DEBOCHE: LULA APAGA 81 VELAS COM O SOPRO DA IRONIA E RECEITA CHÁ DE CORAGEM A FLÁVIO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-28T23:43:50.490834",
+      "horario_brt": "28/10/2026 23:43:50",
+      "status": "SUCESSO",
+      "motivo": "Edição Extra: A URNA BLINDADA: KASSIO NUNES DESCOBRE A BELEZA DO SISTEMA E DÁ BANHO DE ÁGUA FRIA NA BANCADA DO CHORO",
+      "duracao_segundos": 12.8,
+      "slug": "a-urna-blindada-kassio-nunes-elogia-o-tse-e-joga-agua-fria-no-choro-da-oposicao",
+      "titulo": "A URNA BLINDADA: KASSIO NUNES DESCOBRE A BELEZA DO SISTEMA E DÁ BANHO DE ÁGUA FRIA NA BANCADA DO CHORO",
+      "imagem_tamanho_kb": 1100.0,
+      "audio_tamanho_kb": 1160.0
+    },
+    {
+      "timestamp": "2026-10-27T22:06:17.887459",
+      "horario_brt": "27/10/2026 22:06:17",
+      "status": "SUCESSO",
+      "motivo": "Crônica publicada: MPT processa deputada por sugerir demissão de eleitores de Lula",
+      "duracao_segundos": 12.1,
+      "slug": "mpt-processa-deputada-demissao-eleitores-lula-assedio-eleitoral",
+      "titulo": "O RH DA INQUISIÇÃO: DEPUTADA CRIA O 'TESTE DA FÉ' E TOMA COBRANÇA DE MEIO MILHÃO DO MPT",
+      "imagem_tamanho_kb": 1072.5,
+      "audio_tamanho_kb": 1255.1
+    },
+    {
+      "timestamp": "2026-10-27T21:26:12.924158",
+      "horario_brt": "27/10/2026 21:26:12",
+      "status": "SUCESSO",
+      "motivo": "Furo de Reportagem: Flávio Bolsonaro cruza a fronteira com a Argentina no RG e viaja aos EUA",
+      "duracao_segundos": 14.5,
+      "slug": "a-ponte-da-amizade-flavio-bolsonaro-cruza-fronteira-no-rg-e-pousa-em-miami",
+      "titulo": "A PONTE DA AMIZADE: FLÁVIO DRIBLA O STF NO RG E POUSA EM MIAMI",
+      "imagem_tamanho_kb": 1001.0,
+      "audio_tamanho_kb": 1357.3
+    },
+    {
+      "timestamp": "2026-10-27T04:44:55.336654+00:00",
+      "horario_brt": "27/10/2026 01:44:55",
+      "status": "SUCESSO",
+      "motivo": "Furo de Reportagem: Flávio Bolsonaro entrega passaportes à PF por ordem do STF",
+      "duracao_segundos": 8.2,
+      "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
+      "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
+      "imagem_tamanho_kb": 988.7,
+      "audio_tamanho_kb": 1003.2
+    },
+    {
+      "timestamp": "2026-10-27T03:02:17.695806+00:00",
+      "horario_brt": "27/10/2026 00:02:17",
+      "status": "SUCESSO",
+      "motivo": "Publicação validada com Caricatura Editorial Ouro e Áudio Neural",
+      "duracao_segundos": 12.4,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 1303.3,
+      "audio_tamanho_kb": 952.5
+    },
+    {
+      "timestamp": "2026-10-27T00:17:16.240684+00:00",
+      "horario_brt": "27/10/2026 00:17:16",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 10.8,
+      "slug": "o-ringue-da-cara-de-pau-trump-e-alckmin-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: TRUMP E ALCKMIN NA TV",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-26T17:11:49.810491+00:00",
+      "horario_brt": "26/10/2026 17:11:49",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 31.6,
+      "slug": "o-algoritmo-e-a-urna-lula-culpa-o-wi-fi-de-fora",
+      "titulo": "O ALGORITMO E A URNA: LULA CULPA O WI-FI DE FORA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-26T05:53:14.675859+00:00",
+      "horario_brt": "26/10/2026 05:53:14",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 45.0,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-25T23:06:41.379723+00:00",
+      "horario_brt": "25/10/2026 23:06:41",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 19.7,
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T18:48:58.021011+00:00",
+      "horario_brt": "25/10/2026 18:48:58",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 12.9,
+      "slug": "a-eterna-reprise-do-planalto-lula-vai-para-o-quart",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: LULA VAI PARA O QUARTO MANDATO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T14:54:23.812529+00:00",
+      "horario_brt": "25/10/2026 14:54:23",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 11.9,
+      "slug": "o-sindicato-da-eternidade-a-4a-rodada",
+      "titulo": "O SINDICATO DA ETERNIDADE: A 4ª RODADA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-25T05:50:22.519665+00:00",
+      "horario_brt": "25/10/2026 05:50:22",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 44.0,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T23:01:07.593097+00:00",
+      "horario_brt": "24/10/2026 23:01:07",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 14.3,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T18:40:14.942724+00:00",
+      "horario_brt": "24/10/2026 18:40:14",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 16.2,
+      "slug": "kassio-nunes-e-o-novo-circo-eleitoral",
+      "titulo": "KASSIO NUNES E O NOVO CIRCO ELEITORAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-10-24T14:22:26.332243+00:00",
+      "horario_brt": "24/10/2026 14:22:26",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 13.2,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-24T02:01:41.691627",
+      "horario_brt": "24 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "imagem_tamanho_kb": 1124.0,
+      "audio_tamanho_kb": 982.8
+    },
+    {
+      "timestamp": "2026-10-23T23:35:22.489962",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "o-pais-maravilhoso-e-a-maquina-de-mudanca",
+      "titulo": "O PAÍS MARAVILHOSO E A MÁQUINA DE MUDANÇA",
+      "imagem_tamanho_kb": 999.7,
+      "audio_tamanho_kb": 762.8
+    },
+    {
+      "timestamp": "2026-10-23T20:41:44.149369",
+      "horario_brt": "23 de Outubro de 2026",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.4,
+      "slug": "estatal-ou-leilao-escolha-seu-boleto",
+      "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
+      "imagem_tamanho_kb": 1009.2,
+      "audio_tamanho_kb": 967.5
+    }
+  ],
+  "radar_pautas": [
+    {
+      "titulo": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
+      "score": 135.2,
+      "data_pub": "Tue, 27 Oct 2026 03:04:12 -0000"
+    },
+    {
+      "titulo": "'Ridículo', 'ofensa', 'olhar para frente': a reação após Flávio fugir, se dizer 'presidente eleito', apagar e falar que é 'líder do Brasil'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/28/ridiculo-ofensa-olhar-para-frente-a-reacao-apos-flavio-fugir-se-dizer-presidente-eleito-apagar-e-falar-que-e-lider-do-brasil.ghtml",
+      "score": 110.2,
+      "data_pub": "Wed, 28 Oct 2026 22:51:25 -0000"
+    },
+    {
+      "titulo": "Flávio Bolsonaro recebeu autorização para ficar 1 ano nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-recebeu-autorizacao-para-ficar-1-ano-nos-eua.ghtml",
+      "score": 105.4,
+      "data_pub": "Wed, 28 Oct 2026 22:17:30 -0000"
+    },
+    {
+      "titulo": "Em carta golpista, Flávio agradece Milei e Trump por apoio para fuga",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/em-carta-golpista-flavio-agradece-milei-e-trump-por-apoio-para-fuga",
+      "score": 103.1,
+      "data_pub": "Wed, 28 Oct 2026 18:22:00 -0300"
+    },
+    {
+      "titulo": "Flávio Bolsonaro usou passaporte diplomático cancelado para entrar nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-usou-passaporte-diplomatico-cancelado-para-entrar-nos-eua.ghtml",
+      "score": 98.4,
+      "data_pub": "Wed, 28 Oct 2026 18:14:55 -0000"
+    }
+  ]
+}

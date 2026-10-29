@@ -2,15 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://improbo.vercel.app/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-cirurgia-no-osso-alheio-governo-corta-o-bpc-mas-blinda-pensoes-de-generais-e-supersalarios.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-tesoura-da-picanha-haddad-passa-o-pente-fino-no-bpc-para-acalmar-a-faria-lima.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/artigos/a-urna-blindada-kassio-nunes-elogia-o-tse-e-joga-agua-fria-no-choro-da-oposicao.html</loc>

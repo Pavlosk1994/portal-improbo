@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-28T23:43:50.490807",
+  "ultima_atualizacao": "2026-10-29T00:10:21.520317",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,28 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-29T00:10:21.520374",
+      "horario_brt": "29/10/2026 00:10:21",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Fiscal: A TESOURA DA PICANHA: HADDAD PASSA O PENTE-FINO NO BPC E NO SEGURO-DESEMPREGO PARA ACALMAR A FARIA LIMA",
+      "duracao_segundos": 11.5,
+      "slug": "a-tesoura-da-picanha-haddad-passa-o-pente-fino-no-bpc-para-acalmar-a-faria-lima",
+      "titulo": "A TESOURA DA PICANHA: HADDAD PASSA O PENTE-FINO NO BPC E NO SEGURO-DESEMPREGO PARA ACALMAR A FARIA LIMA",
+      "imagem_tamanho_kb": 1220.0,
+      "audio_tamanho_kb": 1245.0
+    },
+    {
+      "timestamp": "2026-10-29T00:10:21.520336",
+      "horario_brt": "29/10/2026 00:10:21",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Fiscal: A CIRURGIA NO OSSO ALHEIO: GOVERNO CORTA O REMÉDIO DO POSTO MAS BLINDA PENSÕES MILITARES E A LAGOSTA DA TOGA",
+      "duracao_segundos": 11.5,
+      "slug": "a-cirurgia-no-osso-alheio-governo-corta-o-bpc-mas-blinda-pensoes-de-generais-e-supersalarios",
+      "titulo": "A CIRURGIA NO OSSO ALHEIO: GOVERNO CORTA O REMÉDIO DO POSTO MAS BLINDA PENSÕES MILITARES E A LAGOSTA DA TOGA",
+      "imagem_tamanho_kb": 1220.0,
+      "audio_tamanho_kb": 1245.0
+    },
     {
       "timestamp": "2026-10-28T23:43:50.490971",
       "horario_brt": "28/10/2026 23:43:50",
