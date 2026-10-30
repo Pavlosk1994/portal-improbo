@@ -922,9 +922,11 @@ def render_footer(is_article=False):
                 </div>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6 pt-6 text-center text-xs font-mono text-stone-500 flex flex-col md:flex-row justify-between items-center gap-3">
             <span>&copy; 2026 {PORTAL_NAME}. Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica.</span>
-            <div class="flex items-center space-x-3">
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                <span>Tecnologia &amp; Infraestrutura por <a href="https://pavidev.tech/" target="_blank" rel="noopener" class="text-stone-400 hover:text-amber-400 underline font-mono text-xs transition-colors">PaviDev</a></span>
+                <span>&bull;</span>
                 <a href="{sobre_link}" class="hover:text-stone-300 underline">Aviso Legal (Art. 5º CF/88)</a>
                 <span>&bull;</span>
                 <a href="{sitemap_link}" class="hover:text-stone-300 underline">Sitemap</a>
