@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-29T23:51:16.072375",
+  "ultima_atualizacao": "2026-10-30T06:55:43.773209+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-30T06:55:43.773158+00:00",
+      "horario_brt": "30/10/2026 06:55:43",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 46.4,
+      "slug": "o-amor-nao-correspondido-de-flavio-nos-eua",
+      "titulo": "O AMOR NÃO CORRESPONDIDO DE FLÁVIO NOS EUA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-29T23:51:16.072347",
       "horario_brt": "29/10/2026 23:51:16",
@@ -215,91 +226,29 @@
       "titulo": "A PONTE DA AMIZADE: FLÁVIO DRIBLA O STF NO RG E POUSA EM MIAMI",
       "imagem_tamanho_kb": 1001.0,
       "audio_tamanho_kb": 1357.3
-    },
-    {
-      "timestamp": "2026-10-27T04:44:55.336654+00:00",
-      "horario_brt": "27/10/2026 01:44:55",
-      "status": "SUCESSO",
-      "motivo": "Furo de Reportagem: Flávio Bolsonaro entrega passaportes à PF por ordem do STF",
-      "duracao_segundos": 8.2,
-      "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
-      "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
-      "imagem_tamanho_kb": 988.7,
-      "audio_tamanho_kb": 1003.2
-    },
-    {
-      "timestamp": "2026-10-27T03:02:17.695806+00:00",
-      "horario_brt": "27/10/2026 00:02:17",
-      "status": "SUCESSO",
-      "motivo": "Publicação validada com Caricatura Editorial Ouro e Áudio Neural",
-      "duracao_segundos": 12.4,
-      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
-      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
-      "imagem_tamanho_kb": 1303.3,
-      "audio_tamanho_kb": 952.5
-    },
-    {
-      "timestamp": "2026-10-27T00:17:16.240684+00:00",
-      "horario_brt": "27/10/2026 00:17:16",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 10.8,
-      "slug": "o-ringue-da-cara-de-pau-trump-e-alckmin-na-tv",
-      "titulo": "O RINGUE DA CARA DE PAU: TRUMP E ALCKMIN NA TV",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-26T17:11:49.810491+00:00",
-      "horario_brt": "26/10/2026 17:11:49",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 31.6,
-      "slug": "o-algoritmo-e-a-urna-lula-culpa-o-wi-fi-de-fora",
-      "titulo": "O ALGORITMO E A URNA: LULA CULPA O WI-FI DE FORA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-26T05:53:14.675859+00:00",
-      "horario_brt": "26/10/2026 05:53:14",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 45.0,
-      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
-      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
-      "imagem_tamanho_kb": 1124.0,
-      "audio_tamanho_kb": 982.8
     }
   ],
   "radar_pautas": [
     {
+      "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/30/flavio-bolsonaro-nos-eua-relembre-a-relacao-de-afinidade-e-distancia-entre-o-senador-e-trump.ghtml",
+      "score": 115.0,
+      "data_pub": "Fri, 30 Oct 2026 06:00:00 -0000"
+    },
+    {
       "titulo": "Flávio Bolsonaro: veja o que pode acontecer com o mandato de senador após fuga para os EUA",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
-      "score": 118.8,
+      "score": 108.8,
       "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
     },
     {
       "titulo": "É #FAKE que governo federal recuou sobre fim da escala 6x1 após vitória de Lula no segundo turno das eleições 2026",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-federal-recuou-sobre-fim-da-escala-6x1-apos-vitoria-de-lula-no-segundo-turno-das-eleicoes-2026.ghtml",
-      "score": 109.0,
+      "score": 102.0,
       "data_pub": "Thu, 29 Oct 2026 20:02:21 -0000"
-    },
-    {
-      "titulo": "É #FAKE que governo Lula 'bloqueou' Gás do Povo e Bolsa Família após eleições de 2026",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-lula-bloqueou-gas-do-povo-e-bolsa-familia-apos-eleicoes-de-2026.ghtml",
-      "score": 107.8,
-      "data_pub": "Thu, 29 Oct 2026 18:52:54 -0000"
-    },
-    {
-      "titulo": "Rui Costa questiona articulação a favor de Alcolumbre que prevê anistia ou indulto a Jair Bolsonaro",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/29/rui-costa-articulacao-alcolumbre-senado-anistia-indulto-jair-bolsonaro.ghtml",
-      "score": 103.0,
-      "data_pub": "Thu, 29 Oct 2026 21:34:08 -0000"
     },
     {
       "titulo": "Deputado italiano pede investigação sobre processo de cidadania dos irmãos Bolsonaro",
@@ -307,6 +256,13 @@
       "link": "https://g1.globo.com/mundo/noticia/2026/10/29/deputado-italiano-pede-investigacao-sobre-processo-de-cidadania-dos-irmaos-bolsonaro.ghtml",
       "score": 102.0,
       "data_pub": "Thu, 29 Oct 2026 12:41:31 -0000"
+    },
+    {
+      "titulo": "É #FAKE que governo Lula 'bloqueou' Gás do Povo e Bolsa Família após eleições de 2026",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-lula-bloqueou-gas-do-povo-e-bolsa-familia-apos-eleicoes-de-2026.ghtml",
+      "score": 100.8,
+      "data_pub": "Thu, 29 Oct 2026 18:52:54 -0000"
     }
   ]
 }
