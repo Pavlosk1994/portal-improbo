@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-29T23:51:16.072375",
+  "ultima_atualizacao": "2026-10-30T14:16:43.338914",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,72 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-30T14:16:43.338901",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
+      "duracao_segundos": 12.0,
+      "slug": "a-capsula-do-tempo-pt-descobre-que-o-mundo-mudou-e-tenta-rejuvenescer",
+      "titulo": "A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
+      "imagem_tamanho_kb": 1202.5,
+      "audio_tamanho_kb": 1334.5
+    },
+    {
+      "timestamp": "2026-10-30T14:16:43.338861",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
+      "duracao_segundos": 12.0,
+      "slug": "o-termometro-da-feira-banco-central-aperta-selic-e-inflacao-dispara",
+      "titulo": "O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
+      "imagem_tamanho_kb": 1208.0,
+      "audio_tamanho_kb": 1315.4
+    },
+    {
+      "timestamp": "2026-10-30T14:16:43.338819",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
+      "duracao_segundos": 12.0,
+      "slug": "o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado",
+      "titulo": "O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
+      "imagem_tamanho_kb": 953.8,
+      "audio_tamanho_kb": 1271.8
+    },
+    {
+      "timestamp": "2026-10-30T14:16:43.338777",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: O BANQUETE DA SOBREVIVÊNCIA: LULA FATIA A ESPLANADA PARA SACIAR A FOME INSACIÁVEL DO CENTRÃO",
+      "duracao_segundos": 12.0,
+      "slug": "o-banquete-da-sobrevivencia-lula-fatia-a-esplanada-para-o-centrao",
+      "titulo": "O BANQUETE DA SOBREVIVÊNCIA: LULA FATIA A ESPLANADA PARA SACIAR A FOME INSACIÁVEL DO CENTRÃO",
+      "imagem_tamanho_kb": 1136.2,
+      "audio_tamanho_kb": 1198.8
+    },
+    {
+      "timestamp": "2026-10-30T14:16:43.338726",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: O GENERAL DO RETRATO: FLÁVIO COBRA LEALDADE AO NOME DO PAI ENQUANTO ALIADOS ESCONDEM O CRACHÁ NO CONGRESSO",
+      "duracao_segundos": 12.0,
+      "slug": "o-general-do-retrato-flavio-cobra-lealdade-ao-nome-do-pai",
+      "titulo": "O GENERAL DO RETRATO: FLÁVIO COBRA LEALDADE AO NOME DO PAI ENQUANTO ALIADOS ESCONDEM O CRACHÁ NO CONGRESSO",
+      "imagem_tamanho_kb": 954.2,
+      "audio_tamanho_kb": 1251.0
+    },
+    {
+      "timestamp": "2026-10-30T14:16:43.338640",
+      "horario_brt": "30/10/2026 14:16:43",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial Geopolítica & Atualidades: A GUERRA DAS PEDRAS PRECIOSAS: BRASIL FAZ MALABARISMO COM TERRAS RARAS ENTRE O DRAGÃO CHINÊS E A ÁGUIA DO TIO SAM",
+      "duracao_segundos": 12.0,
+      "slug": "a-guerra-das-pedras-preciosas-brasil-malabarismo-terras-raras-eua-china",
+      "titulo": "A GUERRA DAS PEDRAS PRECIOSAS: BRASIL FAZ MALABARISMO COM TERRAS RARAS ENTRE O DRAGÃO CHINÊS E A ÁGUIA DO TIO SAM",
+      "imagem_tamanho_kb": 1156.9,
+      "audio_tamanho_kb": 1292.5
+    },
     {
       "timestamp": "2026-10-29T23:51:16.072347",
       "horario_brt": "29/10/2026 23:51:16",

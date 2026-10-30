@@ -1,0 +1,292 @@
+{
+  "processadas": [
+    {
+      "url": "https://www.bbc.com/portuguese/articles/c4gv995wve5o",
+      "slug": "flavio-bolsonaro-escala-6x1",
+      "titulo": "SURTO DE BONDADE NO 2º TURNO: FLÁVIO BOLSONARO DESCOBRE QUE TRABALHAR SEIS DIAS POR SEMANA DÁ UMA CANSEIRA DESGRAÇADA",
+      "data_processamento": "2026-10-15T17:00:00"
+    },
+    {
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/articulacao-pacheco-stf-segundo-turno.shtml",
+      "slug": "articulacao-no-congresso-e-stf-avanca-para-indicar",
+      "titulo": "O GRANDE TEATRO DO PLANALTO: ARTICULAÇÃO NO CONGRESSO E STF AVANÇA PARA INDICAR RODRIGO PACHECO À VAGA ABERTA NO SUPREMO",
+      "data_processamento": "2026-10-15T18:03:39.857886"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/15/lula-centrao-articulacao-congresso-segundo-turno.ghtml",
+      "slug": "lula-malabarismo-planalto-centrao",
+      "titulo": "SOCIALISMO DE MANHÃ, CENTRÃO DE TARDE",
+      "data_processamento": "2026-10-15T18:25:00"
+    },
+    {
+      "url": "https://www1.folha.uol.com.br/cotidiano/2026/10/enel-apagao-sao-paulo-tarcisio-lula-disputa.shtml",
+      "slug": "sao-paulo-apagao-enel-guerra-da-vela",
+      "titulo": "ENEL PEDE DESCULPAS: 'NÃO SABÍAMOS QUE CHOVIA EM SÃO PAULO'",
+      "data_processamento": "2026-10-15T18:35:00"
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/congresso-promulga-emenda-constitucional-anistia-partidos",
+      "slug": "congresso-anistia-partidos-dividas-fundo-eleitoral",
+      "titulo": "DEPUTADOS SE ANISTIAM: 'ERRAR É HUMANO, PAGAR É PRO OTÁRIO'",
+      "data_processamento": "2026-10-15T18:46:00"
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-bolsonaro-relata-pec-terrenos-marinha-senado",
+      "slug": "flavio-bolsonaro-pec-privatizacao-praias",
+      "titulo": "FLÁVIO E AS PRAIAS: 'A ONDA É GRÁTIS, A AREIA TEM PEDÁGIO'",
+      "data_processamento": "2026-10-15T19:10:00"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/16/bolsa-familia-gastos-apostas-bets-bc.ghtml",
+      "slug": "bolsa-familia-bets-jogo-do-tigrinho",
+      "titulo": "O TIGRINHO DA PÁTRIA: GOVERNO DESCOBRE QUE POBRE PREFERE APOSTAR DO QUE ESPERAR O MILAGRE DO PIB",
+      "data_processamento": "2026-10-16T06:09:00"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/21/de-bolsa-familia-a-maioridade-penal-veja-o-que-flavio-bolsonaro-e-lula-mudaram-em-seus-discursos.ghtml",
+      "slug": "direita-faz-o-l-esquerda-bota-a-algeminha",
+      "titulo": "DIREITA FAZ O L, ESQUERDA BOTA A ALGEMINHA",
+      "data_processamento": "2026-10-21T04:40:13.577127"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/21/mbl-partido-missao-renan-santos-candidatura-presidencia-2026.ghtml",
+      "slug": "renan-santos-partido-missao-livro-amarelo-pix",
+      "titulo": "RENAN SANTOS E A MISSÃO: 'SALVO O PAÍS, MAS MANDA O PIX'",
+      "data_processamento": "2026-10-21T05:55:00.000000"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/18/lula-e-flavio-bolsonaro-fazem-o-primeiro-debate.ghtml",
+      "slug": "lula-e-flavio-bolsonaro-trocam-tapa-na-band",
+      "titulo": "LULA E FLÁVIO BOLSONARO TROCAM TAPA NA BAND",
+      "data_processamento": "2026-10-21T08:08:09.745923"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/19/globonews-debate-coordenadores-das-campanhas-de-lula-e-flavio-bolsonaro-discutem-estrategias.ghtml",
+      "slug": "debate-na-tv-a-gripe-do-bolso-e-o-remedio-de-farin",
+      "titulo": "DEBATE NA TV: A GRIPE DO BOLSO E O REMÉDIO DE FARINHA",
+      "data_processamento": "2026-10-21T13:47:33.947715"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/20/no-maranhao-lula-diz-que-esta-e-sua-ultima-campanha-a-presidencia.ghtml",
+      "slug": "a-ultima-cursicao-do-profeta-do-pe-de-meia",
+      "titulo": "A ÚLTIMA CURSIÇÃO DO PROFETA DO PÉ-DE-MEIA",
+      "data_processamento": "2026-10-21T18:35:03.546729"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/pesquisa-eleitoral/noticia/2026/10/21/quaest-medidas-anunciadas-pelo-governo-lula.ghtml",
+      "slug": "bondade-de-taubate-o-amor-civico-do-boleto",
+      "titulo": "BONDADE DE TAUBATÉ: O AMOR CÍVICO DO BOLETO",
+      "data_processamento": "2026-10-21T23:15:57.130069"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/22/presidente-da-republica-o-que-faz-quanto-ganha-e-quais-sao-os-requisitos-para-ocupar-o-cargo.ghtml",
+      "slug": "manual-do-sindico-supremo",
+      "titulo": "MANUAL DO SÍNDICO SUPREMO",
+      "data_processamento": "2026-10-22T04:36:24.081850"
+    },
+    {
+      "url": "https://g1.globo.com/trabalho-e-carreira/concursos/noticia/2026/10/22/qual-o-futuro-dos-concursos-publicos-veja-o-que-propoem-lula-e-flavio-bolsonaro.ghtml",
+      "slug": "concurseiro-sofre-mais-que-carne-de-segunda-na-pan",
+      "titulo": "CONCURSEIRO SOFRE MAIS QUE CARNE DE SEGUNDA NA PANELA",
+      "data_processamento": "2026-10-22T11:44:18.451753"
+    },
+    {
+      "url": "https://g1.globo.com/mg/minas-gerais/eleicoes/2026/noticia/2026/10/22/pendulo-eleitoral-minas-gerais-espelha-divisao-entre-direita-e-esquerda-na-corrida-para-presidencia-da-republica.ghtml",
+      "slug": "minas-gerais-o-pendulo-que-gira-e-o-trouxa-que-pag",
+      "titulo": "MINAS GERAIS: O PÊNDULO QUE GIRA E O TROUXA QUE PAGA",
+      "data_processamento": "2026-10-22T17:07:06.354178"
+    },
+    {
+      "url": "https://g1.globo.com/sp/sao-carlos-regiao/eleicoes/2026/noticia/2026/10/22/em-sao-carlos-alckmin-diz-que-flavio-bolsonaro-apresentou-exigencias-porque-nao-quer-abrir-sigilo-nenhum.ghtml",
+      "slug": "o-sigilo-e-a-alma-do-negocio",
+      "titulo": "O SIGILO É A ALMA DO NEGÓCIO...",
+      "data_processamento": "2026-10-22T21:31:18.038355"
+    },
+    {
+      "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/22/alcolumbre-pacheco-stf-tcu.ghtml",
+      "slug": "cadeira-vip-pra-quem-perdeu-a-vaga",
+      "titulo": "CADEIRA VIP PRA QUEM PERDEU A VAGA",
+      "data_processamento": "2026-10-23T00:38:05.113428"
+    },
+    {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/23/negociar-com-patrao-mudar-jornadas-e-regular-apps-o-que-lula-e-flavio-propoem-aos-trabalhadores.ghtml",
+      "slug": "o-salario-minimo-de-faz-de-conta",
+      "titulo": "O SALÁRIO MÍNIMO DE FAZ DE CONTA",
+      "data_processamento": "2026-10-23T07:26:18.915169"
+    },
+    {
+      "url": "https://revistaforum.com.br/politica/2026/10/23/marcal-afastado-flavio-bolsonaro-debate",
+      "slug": "marcal-e-ejetado-do-coaching-de-flavio",
+      "titulo": "MARÇAL É EJETADO DO COACHING DE FLÁVIO",
+      "data_processamento": "2026-10-23T06:00:00"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/23/da-motosserra-ao-custo-social-como-o-modelo-economico-de-milei-virou-tema-da-eleicao-brasileira.ghtml",
+      "slug": "a-motosserra-importada-e-o-deficit-de-cortesia",
+      "titulo": "A MOTOSSERRA IMPORTADA E O DEFICIT DE CORTESIA",
+      "data_processamento": "2026-10-23T09:24:56.623354"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/23/bispos-catolicos-carta-segundo-turno-eleicoes-2026.ghtml",
+      "slug": "bispos-cospe-bencaos-e-o-diabo-chora-na-urna",
+      "titulo": "BISPOS COSPE BÊNÇÃOS E O DIABO CHORA NA URNA",
+      "data_processamento": "2026-10-23T13:22:18.168657"
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-propoe-retomada-de-privatizacoes-lula-quer-fortalecer-empresas",
+      "slug": "estatal-ou-leilao-escolha-seu-boleto",
+      "titulo": "ESTATAL OU LEILÃO: ESCOLHA SEU BOLETO",
+      "data_processamento": "2026-10-23T20:41:44.149548"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/23/horario-eleitoral-presidente-23-de-outubro-lula-flavio-bolsonaro.ghtml",
+      "slug": "o-pais-maravilhoso-e-a-maquina-de-mudanca",
+      "titulo": "O PAÍS MARAVILHOSO E A MÁQUINA DE MUDANÇA",
+      "data_processamento": "2026-10-23T23:35:22.490212"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/23/debate-da-globo.ghtml",
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "data_processamento": "2026-10-24T02:01:41.691835"
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/candidatos-trocam-acusacoes-e-defendem-propostas-em-debate-na-globo",
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "data_processamento": "2026-10-24T14:22:26.312021"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/23/ministro-da-fazenda-fala-em-ajuste-das-contas-publicas-sem-dar-cavalo-de-pau-ou-fazer-loucuras-flavio-tem-prometido-tesouraco.ghtml",
+      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
+      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
+      "data_processamento": "2026-10-24T23:01:07.578266"
+    },
+    {
+      "url": "https://noticias.uol.com.br/politica/eleicoes-2026-planalto-articulacao-quarto-mandato",
+      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
+      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
+      "data_processamento": "2026-10-27T00:02:17.697843"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/26/pf-intima-flavio-bolsonaro-entrega-passaportes-stf.ghtml",
+      "slug": "turismo-cancelado-flavio-bolsonaro-entrega-passaportes-a-pf",
+      "titulo": "TURISMO CANCELADO: FLÁVIO PERDE OS PASSAPORTES E DESCOBRE O BRASIL",
+      "data_processamento": "2026-10-27T01:44:55.338604"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/27/flavio-bolsonaro-passaporte-cancelado-pf-viagem-estados-unidos.ghtml",
+      "slug": "a-ponte-da-amizade-flavio-bolsonaro-cruza-fronteira-no-rg-e-pousa-em-miami",
+      "titulo": "A PONTE DA AMIZADE: FLÁVIO DRIBLA O STF NO RG E POUSA EM MIAMI",
+      "data_processamento": "2026-10-27T21:26:12.921824"
+    },
+    {
+      "url": "https://www.cnnbrasil.com.br/eleicoes/mpt-processa-deputada-apos-ela-sugerir-demissao-de-eleitores-de-lula/",
+      "slug": "mpt-processa-deputada-demissao-eleitores-lula-assedio-eleitoral",
+      "titulo": "O RH DA INQUISIÇÃO: DEPUTADA CRIA O 'TESTE DA FÉ' E TOMA COBRANÇA DE MEIO MILHÃO DO MPT",
+      "data_processamento": "2026-10-27T22:06:17.880835"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/flavio-bolsonaro-manifesto-estados-unidos-eleicoes.ghtml",
+      "slug": "o-presidente-de-fort-lauderdale-flavio-autoproclama-lider-e-apaga",
+      "titulo": "O PRESIDENTE DE FORT LAUDERDALE: FLÁVIO SE AUTOPROCLAMA IMPERADOR NO EXÍLIO E APAGA ANTES DA CONTA DO HOTEL",
+      "data_processamento": "2026-10-28T23:43:50.488181"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/tarcisio-eleicao-acabou-aceitar-resultado.ghtml",
+      "slug": "o-desembarque-do-palanque-tarcisio-avisa-a-eleicao-acabou-e-deixa-o-cla-no-vacuo",
+      "titulo": "O DESEMBARQUE DO PALANQUE: TARCÍSIO AVISA QUE A ELEIÇÃO ACABOU E DEIXA O CLÃ NO VÁCUO",
+      "data_processamento": "2026-10-28T23:43:50.488200"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/lula-comemora-aniversario-ironiza-fuga-flavio-bolsonaro.ghtml",
+      "slug": "o-bolo-do-deboche-lula-comemora-81-anos-e-receita-cha-de-coragem-a-flavio",
+      "titulo": "O BOLO DO DEBOCHE: LULA APAGA 81 VELAS COM O SOPRO DA IRONIA E RECEITA CHÁ DE CORAGEM A FLÁVIO",
+      "data_processamento": "2026-10-28T23:43:50.488206"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/28/kassio-nunes-marques-tse-eleicoes-lisura-normalidade.ghtml",
+      "slug": "a-urna-blindada-kassio-nunes-elogia-o-tse-e-joga-agua-fria-no-choro-da-oposicao",
+      "titulo": "A URNA BLINDADA: KASSIO NUNES DESCOBRE A BELEZA DO SISTEMA E DÁ BANHO DE ÁGUA FRIA NA BANCADA DO CHORO",
+      "data_processamento": "2026-10-28T23:43:50.488216"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/haddad-lula-pacote-corte-gastos-bpc-seguro-desemprego.ghtml",
+      "slug": "a-tesoura-da-picanha-haddad-passa-o-pente-fino-no-bpc-para-acalmar-a-faria-lima",
+      "titulo": "A TESOURA DA PICANHA: HADDAD PASSA O PENTE-FINO NO BPC E NO SEGURO-DESEMPREGO PARA ACALMAR A FARIA LIMA",
+      "data_processamento": "2026-10-29T00:10:21.515714"
+    },
+    {
+      "url": "https://www1.folha.uol.com.br/mercado/2026/10/governo-preserva-militares-judiciario-corte-gastos.shtml",
+      "slug": "a-cirurgia-no-osso-alheio-governo-corta-o-bpc-mas-blinda-pensoes-de-generais-e-supersalarios",
+      "titulo": "A CIRURGIA NO OSSO ALHEIO: GOVERNO CORTA O REMÉDIO DO POSTO MAS BLINDA PENSÕES MILITARES E A LAGOSTA DA TOGA",
+      "data_processamento": "2026-10-29T00:10:21.515746"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-senado-anistia-eleicoes.ghtml",
+      "slug": "o-herdeiro-do-condado-flavio-bolsonaro-transforma-o-senado-em-balcao-de-anistia",
+      "titulo": "O HERDEIRO DO CONDADO: FLÁVIO BOLSONARO TRANSFORMA O SENADO EM BALCÃO DE ANISTIA ENQUANTO ENSAIA A COROA FAMILIAR",
+      "data_processamento": "2026-10-29T05:17:10.298373"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/lula-despacha-alvorada-recuperacao-centrao-reforma.ghtml",
+      "slug": "o-governo-em-banho-maria-lula-despacha-do-alvorada-com-gelo-na-nuca-enquanto-o-centrao-cobra-a-conta",
+      "titulo": "O GOVERNO EM BANHO-MARIA: LULA DESPACHA DO ALVORADA COM GELO NA NUCA ENQUANTO O CENTRÃO COBRA A CONTA DO VELÓRIO",
+      "data_processamento": "2026-10-29T05:17:10.298471"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/stf-congresso-acordo-emendas-pix-orcamento.ghtml",
+      "slug": "o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix",
+      "titulo": "O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
+      "data_processamento": "2026-10-29T05:17:10.298531"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/dolar-altas-copom-selic-inflacao-alimentos.ghtml",
+      "slug": "a-tempestade-perfeita-do-real-dolar-nas-nuvens-juros-na-estratosfera-e-o-carrinho-vazio",
+      "titulo": "A TEMPESTADE PERFEITA DO REAL: DÓLAR NAS NUVENS, JUROS NA ESTRATOSFERA E O POVO NO SUPERMERCADO EM QUEDA LIVRE",
+      "data_processamento": "2026-10-29T05:17:10.298570"
+    },
+    {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/29/pt-crise-pos-eleicoes-renovacao-lula.ghtml",
+      "slug": "o-asilo-da-estrela-pt-entra-em-crise-existencial-apos-derrota-nas-urnas-e-busca-herdeiro",
+      "titulo": "O ASILO DA ESTRELA: PT ENTRA EM CRISE EXISTENCIAL APÓS DERROTA NAS URNAS E BUSCA HERDEIRO QUE NÃO SEJA DE 1980",
+      "data_processamento": "2026-10-29T05:17:10.298632"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/valdemar-costa-neto-fundo-partidario-pl-congresso.ghtml",
+      "slug": "o-dono-do-cofre-e-da-bancada-valdemar-conta-notas-do-fundao-e-adestra-o-cla",
+      "titulo": "O DONO DO COFRE E DA BANCADA: VALDEMAR CONTA NOTAS DO FUNDÃO ENQUANTO ENSINA A BANCADA GOLPISTA A REZAR NA CARTILHA DO CENTRÃO",
+      "data_processamento": "2026-10-29T23:51:16.071855"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-cobranca-prefeitos-lealdade-2026.ghtml",
+      "slug": "o-cobrador-de-condado-flavio-bate-na-porta-dos-prefeitos-para-cobrar-o-dizimo",
+      "titulo": "O COBRADOR DE CONDADO: FLÁVIO BATE NA PORTA DOS PREFEITOS ELEITOS PARA EXIGIR O DÍZIMO MORAL DA FAMÍLIA",
+      "data_processamento": "2026-10-29T23:51:16.072014"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/lula-bronca-ministerio-comunicacao-secom-pesquisas.ghtml",
+      "slug": "o-sacristao-das-boas-noticias-lula-da-bronca-no-ministerio-e-culpa-a-secom",
+      "titulo": "O SACRISTÃO DAS BOAS NOTÍCIAS: LULA DÁ BRONCA NO MINISTÉRIO E DESCOBRE QUE POVO NÃO COME DISCURSO DA SECOM",
+      "data_processamento": "2026-10-29T23:51:16.072094"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/stf-senado-mandatos-ministros-reacao.ghtml",
+      "slug": "a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos",
+      "titulo": "A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
+      "data_processamento": "2026-10-29T23:51:16.072165"
+    },
+    {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/haddad-corte-gastos-saude-educacao-bpc-mercado.ghtml",
+      "slug": "o-leilao-da-esperanca-haddad-oferece-a-saude-e-o-bpc-no-altar-da-faria-lima",
+      "titulo": "O LEILÃO DA ESPERANÇA: HADDAD OFERECE A SAÚDE E O BPC NO ALTAR DA FARIA LIMA PARA SALVAR O ARCABOUÇO",
+      "data_processamento": "2026-10-29T23:51:16.072233"
+    },
+    {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/29/pt-disputa-interna-sucessao-gleisi-hoffmann-2025.ghtml",
+      "slug": "a-guerra-das-correntes-petistas-sacam-foices-e-manifestos-para-disputar-o-partido",
+      "titulo": "A GUERRA DAS CORRENTES: PETISTAS SACAM FOICES E MANIFESTOS PARA DISPUTAR A HERANÇA DA ESTRELA",
+      "data_processamento": "2026-10-29T23:51:16.072308"
+    }
+  ]
+}

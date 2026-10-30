@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://improbo.vercel.app/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-capsula-do-tempo-pt-descobre-que-o-mundo-mudou-e-tenta-rejuvenescer.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-termometro-da-feira-banco-central-aperta-selic-e-inflacao-dispara.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-banquete-da-sobrevivencia-lula-fatia-a-esplanada-para-o-centrao.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-general-do-retrato-flavio-cobra-lealdade-ao-nome-do-pai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-guerra-das-pedras-preciosas-brasil-malabarismo-terras-raras-eua-china.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/artigos/a-guerra-das-correntes-petistas-sacam-foices-e-manifestos-para-disputar-o-partido.html</loc>

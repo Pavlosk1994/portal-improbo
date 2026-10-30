@@ -1,0 +1,43 @@
+{
+  "titulo": "O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
+  "subtitulo": "Em meio a ameaças de corte de prerrogativas e pressões por mandatos fixos, ministros do Supremo alternam canetadas duras com jantares conciliatórios para manter a toga intocável.",
+  "categoria": "Equilibrismo Constitucional",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Guerra fria na Praça dos Três Poderes: o Senado quer enquadrar o STF com mandatos e travas, e os ministros respondem com a elegância de quem guarda inquéritos na gaveta certa.",
+  "legenda_imagem": "Entre a solenidade dos votos constitucionais e as articulações de bastidor, o Supremo aprende que em Brasília a melhor defesa da toga é um ataque bem dosado no Diário da Justiça.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD mostrando um ministro do Supremo Tribunal Federal de toga preta e peruca empertigada fazendo passos de balé cômicos sobre uma corda esticada entre a cúpula do Senado e as colunas do STF, segurando uma balança da justiça com maços de processos penais de um lado e emendas parlamentares do outro para manter o equilíbrio, enquanto senadores embaixo puxam tesouras gigantes tentando cortar a corda. Traço expressivo em nanquim, hachuras densas e aquarela sobre pergaminho.",
+  "prompt_caricatura_en": "Brazilian editorial political cartoon caricature in vintage 1970s-1980s MAD Magazine / O Pasquim style. A Supreme Court justice in long black robes and ornate wig performing a delicate tightrope ballet dance on a wire stretched between the dome of Congress and the Supreme Court palace in Brasilia, balancing with a golden scale of justice holding criminal indictments on one side and congressional budget checks on the other, while nervous senators below snap giant scissors trying to snip the high wire. Pen and ink cross-hatching, watercolor wash on aged parchment, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "A Praça dos Três Poderes em Brasília sempre ofereceu aos espectadores mais cínicos um espetáculo de coreografia dramática que rivaliza com os mais célebres palcos de ópera do planeta. No mais recente ato dessa encenação republicana, os ministros do Supremo Tribunal Federal calçaram suas sapatilhas institucionais para executar um número virtuoso de equilibrismo político: conter a ofensiva legislativa do Senado Federal sem perder a pose imperial de guardiões supremos da Carta de 1988.",
+    "A pressão que sopra do plenário vizinho do Congresso tem decibéis de tempestade. Sentindo o cheiro de sangue político após as eleições municipais e impulsionados pela bancada conservadora, senadores colocaram na ordem do dia propostas que fazem arrepiar as toalhas de veludo dos gabinetes judiciais: fixação de mandatos de dez anos para os futuros integrantes da corte, restrições drásticas às liminares monocráticas e até a criação de mecanismos legislativos para derrubar decisões do tribunal. Para quem se acostumou a governar o país com a caneta tinteiro da vitaliciedade, a simples menção de um relógio parlamentar soa como heresia de lesa-majestade.",
+    "A resposta do STF, no entanto, obedece à refinada cartilha do poder barroco. Quando a temperatura sobe demais, os magistrados sacam a força de seus inquéritos em andamento — aqueles procedimentos sem fim que investigam fake news, desvios orçamentários e tramas conspiratórias —, lembrando aos senadores mais exaltados que metade do parlamento possui certidões que dependem da boa vontade da corte. Ao mesmo tempo, abrem-se as portas dos salões do Lago Sul para jantares de pacificação, onde entre um prato fino e uma taça de vinho negocia-se a dosagem exata da transparência das emendas parlamentares.",
+    "No final da coreografia, o cidadão descobre aquilo que Montesquieu esqueceu de detalhar em seus tratados: a harmonia entre os Poderes no Brasil não nasce do respeito mútuo à Constituição, mas do cálculo minucioso de destruição mútua assegurada. O Senado finge que vai limitar os poderes da corte; o STF finge que vai devolver o orçamento ao controle popular; e ambos continuam mandando no país, enquanto o povo brasileiro assiste ao balé da plateia mais distante, pagando o ingresso mais caro do mundo."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Dança das Liminares",
+      "texto": "Uma única canetada individual de um ministro suspende leis, cancela emendas e paralisa o país; o Senado reclama na tribuna e depois pede audiência secreta para pedir desculpas."
+    },
+    {
+      "titulo": "A Gaveta Preventiva",
+      "texto": "Nada acalma o ímpeto de um parlamentar rebelde mais rápido do que a lembrança sutil de que seu inquérito está sobre a mesa do relator pronto para despacho."
+    },
+    {
+      "titulo": "A Liturgia do Salão Secreto",
+      "texto": "Crises institucionais gravíssimas que ameaçam a República duram exatamente até o momento em que a sobremesa é servida no jantar dos presidentes dos Poderes."
+    },
+    {
+      "titulo": "O Equilíbrio Perfeito",
+      "texto": "O Congresso não cassa ministro, o Supremo não prende senador de peso e a Constituição sobrevive como enfeite de estante de biblioteca."
+    }
+  ],
+  "contexto_real": "Ao longo de outubro de 2026, a relação entre o STF e o Congresso Nacional manteve-se em estado de tensão latente com a discussão de PECs que limitam decisões monocráticas de ministros e criam mandatos por tempo determinado na Suprema Corte. Paralelamente, os magistrados conduziram negociações de bastidores para modular a liberação das emendas parlamentares em troca da contenção de investidas legislativas que enfraqueçam as competências do tribunal.",
+  "slug": "o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado",
+  "data": "30 de Outubro de 2026",
+  "imagem_capa": "imagens/o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-30T14:15:00.000000",
+  "audio_url": "audio/o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado.mp3"
+}
