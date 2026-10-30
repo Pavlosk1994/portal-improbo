@@ -1,0 +1,43 @@
+{
+  "titulo": "A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
+  "subtitulo": "Diante do avanço de propostas legislativas para fixar prazo de validade nas cadeiras da Suprema Corte, magistrados reagem em uníssono avisando que a vitaliciedade perpétua é patrimônio imaterial da República.",
+  "categoria": "Olimpo Judiciário",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O Senado quer impor mandatos fixos para os ministros do STF e a reação da corte foi imediata: avisam que limitar o tempo na cadeira sagrada é um atentado contra a democracia e contra o direito de governar o país até os 75 anos.",
+  "legenda_imagem": "No topo do edifício-sede da Praça dos Três Poderes, a cúpula do Judiciário lembra aos mortais do parlamento que a Constituição foi escrita para todos, menos para quem a interpreta.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD mostrando ministros do STF caracterizados como cavaleiros medievais usando armaduras douradas por baixo de capas pretas de magistrado, empunhando martelos de juiz de ferro como armas no topo das colunas do Supremo Tribunal Federal, defendendo com ferocidade um trono com almofadas de veludo contra senadores que tentam carregar uma ampulheta gigante com relógio em contagem regressiva. Traço expressivo em nanquim, hachuras densas e aquarela sobre pergaminho envelhecido.",
+  "prompt_caricatura_en": "Brazilian editorial political cartoon caricature in vintage 1970s-1980s MAD Magazine / O Pasquim style. Supreme Court justices in golden knight armor beneath flowing black judicial robes, wielding giant wooden gavels defensively atop the modernist marble pillars of the Supreme Court building in Brasilia, protecting an opulent golden velvet throne from senators at the bottom trying to push a giant ticking hourglass timer into the palace entrance. Pen and ink cross-hatching, watercolor wash on aged parchment, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "Há certas ousadias parlamentares que tocam o âmago da liturgia imperial de Brasília, e poucas coisas causam tanta comoção nos corredores acarpetados do Supremo Tribunal Federal quanto a insolência do Congresso Nacional em sugerir que uma vaga na mais alta corte do país deva ter data de validade. Diante da tramitação da Proposta de Emenda à Constituição que busca instituir mandatos fixos para os futuros ministros e podar as canetadas monocráticas individuais, a aristocracia togada levantou a ponte levadiça do tribunal e soou os clarins de guerra institucional.",
+    "A retórica corporativa empunhada pelos magistrados é sempre adornada com os mais nobres superlativos do vocabulário constitucional. Na versão oficial dos gabinetes, fixar um mandato de dez ou doze anos para um ministro do STF não é uma medida de alternância republicana adotada pelas mais sólidas democracias do planeta — é, segundo as notas de repúdio veladas, uma tentativa ardilosa da classe política de subjugar a independência judicial e fragilizar a guarda dos direitos fundamentais. A vitaliciedade perpétua até os setenta e cinco anos de idade, pelo visto, virou uma cláusula pétrea da própria alma brasileira.",
+    "O que realmente tira o sono do Olimpo jurídico, contudo, é a perspectiva terrena de ter que descer do pedestal e voltar a conviver com o mundo dos cidadãos comuns antes de três décadas de decisões inapeláveis. A rotina cercada por honras de Estado, seguranças armados, lagostas nos banquetes cerimoniais e convites para palestrar em fóruns de luxo na Europa é uma tentação à qual nenhum mortal togado deseja renunciar por força de um simples cronômetro legislativo aprovado por deputados e senadores.",
+    "Enquanto Rodrigo Pacheco e os líderes partidários usam a pauta dos mandatos como instrumento de barganha para conter o ativismo do tribunal sobre o orçamento e as redes sociais, os ministros deixam claro que não pretendem entregar a rapadura sem luta. Na República dos Três Poderes, deputados podem perder a eleição a cada quatro anos e presidentes podem ser varridos do mapa pelas urnas; mas a toga, quando veste os ombros certos, acredita sinceramente que tem mais direito à eternidade do que as próprias estrelas da bandeira nacional."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Eternidade Constitucional",
+      "texto": "O mandato de presidente dura quatro anos; o de senador, oito; mas a cadeira no STF é concedida com direito adquirido à imortalidade administrativa."
+    },
+    {
+      "titulo": "A Alergia ao Relógio",
+      "texto": "Para um ministro da Suprema Corte, sugerir que ele trabalhe com prazo para ir embora é a maior violência psicológica que a República pode cometer."
+    },
+    {
+      "titulo": "A Defesa da Democracia (e da Cadeira)",
+      "texto": "Qualquer tentativa de limitar os superpoderes dos magistrados é imediatamente classificada pelos próprios como o fim iminente do Estado de Direito."
+    },
+    {
+      "titulo": "O Retorno ao Mundo Real",
+      "texto": "O terror supremo de um togado não é o impeachment no Senado: é a hipótese aterrorizante de voltar a pegar fila de banco sem batedores da polícia."
+    }
+  ],
+  "contexto_real": "Em outubro de 2026, avançaram no Congresso Nacional as discussões em torno de propostas legislativas que visam limitar os poderes do Supremo Tribunal Federal, com destaque para a PEC que fixa mandatos temporários para novos ministros da corte e restringe decisões monocráticas, gerando forte reação de ministros do STF em declarações públicas e articulações de bastidor em defesa das prerrogativas institucionais do Judiciário.",
+  "slug": "a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos",
+  "data": "29 de Outubro de 2026",
+  "imagem_capa": "imagens/a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-29T23:25:00.000000",
+  "audio_url": "audio/a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos.mp3"
+}

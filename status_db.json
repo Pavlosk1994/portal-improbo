@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-29T05:17:10.298665",
+  "ultima_atualizacao": "2026-10-29T23:51:16.072375",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,72 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-29T23:51:16.072347",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: A GUERRA DAS CORRENTES: PETISTAS SACAM FOICES E MANIFESTOS PARA DISPUTAR A HERANÇA DA ESTRELA",
+      "duracao_segundos": 12.0,
+      "slug": "a-guerra-das-correntes-petistas-sacam-foices-e-manifestos-para-disputar-o-partido",
+      "titulo": "A GUERRA DAS CORRENTES: PETISTAS SACAM FOICES E MANIFESTOS PARA DISPUTAR A HERANÇA DA ESTRELA",
+      "imagem_tamanho_kb": 1041.6,
+      "audio_tamanho_kb": 1362.8
+    },
+    {
+      "timestamp": "2026-10-29T23:51:16.072272",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: O LEILÃO DA ESPERANÇA: HADDAD OFERECE A SAÚDE E O BPC NO ALTAR DA FARIA LIMA PARA SALVAR O ARCABOUÇO",
+      "duracao_segundos": 12.0,
+      "slug": "o-leilao-da-esperanca-haddad-oferece-a-saude-e-o-bpc-no-altar-da-faria-lima",
+      "titulo": "O LEILÃO DA ESPERANÇA: HADDAD OFERECE A SAÚDE E O BPC NO ALTAR DA FARIA LIMA PARA SALVAR O ARCABOUÇO",
+      "imagem_tamanho_kb": 1272.0,
+      "audio_tamanho_kb": 1295.7
+    },
+    {
+      "timestamp": "2026-10-29T23:51:16.072204",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
+      "duracao_segundos": 12.0,
+      "slug": "a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos",
+      "titulo": "A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
+      "imagem_tamanho_kb": 1120.8,
+      "audio_tamanho_kb": 1263.7
+    },
+    {
+      "timestamp": "2026-10-29T23:51:16.072134",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: O SACRISTÃO DAS BOAS NOTÍCIAS: LULA DÁ BRONCA NO MINISTÉRIO E DESCOBRE QUE POVO NÃO COME DISCURSO DA SECOM",
+      "duracao_segundos": 12.0,
+      "slug": "o-sacristao-das-boas-noticias-lula-da-bronca-no-ministerio-e-culpa-a-secom",
+      "titulo": "O SACRISTÃO DAS BOAS NOTÍCIAS: LULA DÁ BRONCA NO MINISTÉRIO E DESCOBRE QUE POVO NÃO COME DISCURSO DA SECOM",
+      "imagem_tamanho_kb": 1263.0,
+      "audio_tamanho_kb": 1287.4
+    },
+    {
+      "timestamp": "2026-10-29T23:51:16.072060",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: O COBRADOR DE CONDADO: FLÁVIO BATE NA PORTA DOS PREFEITOS ELEITOS PARA EXIGIR O DÍZIMO MORAL DA FAMÍLIA",
+      "duracao_segundos": 12.0,
+      "slug": "o-cobrador-de-condado-flavio-bate-na-porta-dos-prefeitos-para-cobrar-o-dizimo",
+      "titulo": "O COBRADOR DE CONDADO: FLÁVIO BATE NA PORTA DOS PREFEITOS ELEITOS PARA EXIGIR O DÍZIMO MORAL DA FAMÍLIA",
+      "imagem_tamanho_kb": 1314.5,
+      "audio_tamanho_kb": 1269.7
+    },
+    {
+      "timestamp": "2026-10-29T23:51:16.071945",
+      "horario_brt": "29/10/2026 23:51:16",
+      "status": "SUCESSO",
+      "motivo": "Edição Especial 6 Temas: O DONO DO COFRE E DA BANCADA: VALDEMAR CONTA NOTAS DO FUNDÃO ENQUANTO ENSINA A BANCADA GOLPISTA A REZAR NA CARTILHA DO CENTRÃO",
+      "duracao_segundos": 12.0,
+      "slug": "o-dono-do-cofre-e-da-bancada-valdemar-conta-notas-do-fundao-e-adestra-o-cla",
+      "titulo": "O DONO DO COFRE E DA BANCADA: VALDEMAR CONTA NOTAS DO FUNDÃO ENQUANTO ENSINA A BANCADA GOLPISTA A REZAR NA CARTILHA DO CENTRÃO",
+      "imagem_tamanho_kb": 1140.8,
+      "audio_tamanho_kb": 1351.7
+    },
     {
       "timestamp": "2026-10-29T05:17:10.298652",
       "horario_brt": "29/10/2026 05:17:10",

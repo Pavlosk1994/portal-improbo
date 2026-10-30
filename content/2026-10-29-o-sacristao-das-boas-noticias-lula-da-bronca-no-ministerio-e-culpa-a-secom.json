@@ -1,0 +1,43 @@
+{
+  "titulo": "O SACRISTÃO DAS BOAS NOTÍCIAS: LULA DÁ BRONCA NO MINISTÉRIO E DESCOBRE QUE POVO NÃO COME DISCURSO DA SECOM",
+  "subtitulo": "Irritado com pesquisas mornas e a disparada da inflação dos alimentos, presidente reúne a Esplanada para exigir vídeos bonitos no TikTok e reclamar que o país não reconhece seu próprio paraíso.",
+  "categoria": "Teatro do Planalto",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Lula reuniu os 38 ministros para dar bronca geral: acha que o povo só reclama do preço da comida porque a propaganda do governo não está chegando direito no celular dos eleitores.",
+  "legenda_imagem": "No Palácio do Planalto, a reunião ministerial ensina que se a realidade da feira não bate com o comercial da Secom, a culpa só pode ser da falta de criatividade dos marqueteiros.",
+  "prompt_caricatura": "Caricatura editorial satírica no estilo clássico O Pasquim e Revista MAD mostrando Lula com terno escuro e expressão furiosa gesticulando com um megafone dourado diante de uma mesa gigantesca com dezenas de ministros bocejando, dormindo ou mexendo no celular, enquanto assessores de propaganda tentam projetar gráficos coloridos de contos de fadas numa parede rachada e o cidadão comum olha pela janela para uma sacola de supermercado vazia. Traço expressivo em nanquim, hachuras densas e aquarela sobre papel vintage envelhecido.",
+  "prompt_caricatura_en": "Brazilian editorial political cartoon caricature in vintage 1970s-1980s MAD Magazine / O Pasquim style. President Lula furiously gesturing with a golden bullhorn at the head of a massive oval conference table where dozens of bored ministers in suits are dozing or browsing phones, while publicity aides frantically project cheerful cartoon fairy-tale charts onto a crumbling cracked palace wall, and an ordinary Brazilian outside the window looks down at an empty grocery bag. Pen and ink cross-hatching, watercolor wash on vintage aged paper, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "Há um fenômeno quase místico que costuma acometer os ocupantes do terceiro andar do Palácio do Planalto na metade de qualquer mandato: a convicção inabalável de que o governo está realizando a mais grandiosa obra civilizatória desde a fundação de Roma, mas a população teima em não perceber o milagre porque a Secretaria de Comunicação Social errou a trilha sonora dos vídeos institucionais. O presidente Luiz Inácio Lula da Silva convocou mais uma reunião de emergência com seu batalhão de 38 ministros para distribuir broncas em atacado e cobrar que as 'entregas históricas' do governo finalmente convençam o eleitorado a sorrir nas pesquisas de opinião.",
+    "Na visão presidencial, detalhada com a tradicional veemência operária dos velhos tempos de sindicato, se o cidadão comum na fila do caixa do supermercado suspira de angústia ao pagar trinta reais num pacote de café torrado e cinquenta reais numa lata de azeite, o problema não é a desvalorização cambial nem a taxa de juros do Banco Central — o problema é que o ministro da pasta correspondente não contratou influenciadores digitais suficientes para explicar ao consumidor a beleza poética do Produto Interno Bruto em alta.",
+    "A reunião ministerial, que em Brasília já ganhou o apelido carinhoso de 'missa do desespero marqueteiro', transcorreu naquele clima protocolar onde ministros do Centrão assentem gravemente com a cabeça enquanto respondem mensagens no WhatsApp negociando emendas com suas bancadas. Para a tecnocracia palaciana, a vida real se transformou em uma questão exclusiva de 'narrativa': basta trocar o slogan, mudar a cor do logotipo oficial e produzir reels dinâmicos nas redes sociais para que o trabalhador esqueça que o salário mínimo continua derretendo antes do dia dez do mês.",
+    "Enquanto a Secom queima milhões em campanhas publicitárias tentando vender um país de comercial de margarina onde todos viajam de avião e comem filé mignon no almoço de domingo, a realidade teimosa segue seu curso nas periferias. O brasileiro, que já sobreviveu a todos os planos econômicos e a todas as promessas de campanha da Nova República, sabe muito bem distinguir um prato cheio de comida de um powerpoint bem diagramado. Lula pode até convencer seus ministros de que o Brasil virou uma Suíça tropical de palanque; o difícil vai ser convencer o dono da quitanda a aceitar poesia governamental como forma de pagamento no cartão de crédito."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Gastronomia Publicitária",
+      "texto": "Para o Planalto, quem não consegue comprar carne no açougue precisa apenas assistir a um vídeo de dois minutos no Instagram para se sentir plenamente alimentado."
+    },
+    {
+      "titulo": "O Ministério do Bocejo",
+      "texto": "Trinta e oito pastas ministeriais servem para acomodar o Centrão, mas na hora de prestar contas ninguém sabe exatamente o que a própria secretaria produz."
+    },
+    {
+      "titulo": "O Algoritmo Ingrato",
+      "texto": "Se a popularidade do presidente não decola, a culpa nunca é do rombo fiscal ou da inflação: é do feed das redes que insiste em mostrar o preço da gasolina."
+    },
+    {
+      "titulo": "A Suíça de PowerPoint",
+      "texto": "Nos telões da Secom o Brasil é o país mais próspero e alegre do hemisfério sul; na porta do banco a fila do cheque especial dá a volta no quarteirão."
+    }
+  ],
+  "contexto_real": "Ao final de outubro de 2026, o presidente Lula promoveu reuniões ministeriais de cobrança de resultados para pressionar ministros a acelerarem a execução orçamentária de programas sociais e obras do Novo PAC, manifestando descontentamento com os índices de aprovação estagnados nas pesquisas e com a comunicação do governo perante o aumento dos preços de itens básicos de alimentação e energia.",
+  "slug": "o-sacristao-das-boas-noticias-lula-da-bronca-no-ministerio-e-culpa-a-secom",
+  "data": "29 de Outubro de 2026",
+  "imagem_capa": "imagens/o-sacristao-das-boas-noticias-lula-da-bronca-no-ministerio-e-culpa-a-secom.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-29T23:20:00.000000",
+  "audio_url": "audio/o-sacristao-das-boas-noticias-lula-da-bronca-no-ministerio-e-culpa-a-secom.mp3"
+}
