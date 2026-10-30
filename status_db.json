@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-30T06:55:43.773209+00:00",
+  "ultima_atualizacao": "2026-10-30T16:59:31.368288+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-30T16:59:31.368239+00:00",
+      "horario_brt": "30/10/2026 16:59:31",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 83.0,
+      "slug": "senado-federal-inaugura-puxadinho-em-miami",
+      "titulo": "SENADO FEDERAL INAUGURA PUXADINHO EM MIAMI",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-30T06:55:43.773158+00:00",
       "horario_brt": "30/10/2026 06:55:43",
@@ -215,33 +226,22 @@
       "titulo": "O RH DA INQUISIÇÃO: DEPUTADA CRIA O 'TESTE DA FÉ' E TOMA COBRANÇA DE MEIO MILHÃO DO MPT",
       "imagem_tamanho_kb": 1072.5,
       "audio_tamanho_kb": 1255.1
-    },
-    {
-      "timestamp": "2026-10-27T21:26:12.924158",
-      "horario_brt": "27/10/2026 21:26:12",
-      "status": "SUCESSO",
-      "motivo": "Furo de Reportagem: Flávio Bolsonaro cruza a fronteira com a Argentina no RG e viaja aos EUA",
-      "duracao_segundos": 14.5,
-      "slug": "a-ponte-da-amizade-flavio-bolsonaro-cruza-fronteira-no-rg-e-pousa-em-miami",
-      "titulo": "A PONTE DA AMIZADE: FLÁVIO DRIBLA O STF NO RG E POUSA EM MIAMI",
-      "imagem_tamanho_kb": 1001.0,
-      "audio_tamanho_kb": 1357.3
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/30/flavio-bolsonaro-nos-eua-relembre-a-relacao-de-afinidade-e-distancia-entre-o-senador-e-trump.ghtml",
-      "score": 115.0,
-      "data_pub": "Fri, 30 Oct 2026 06:00:00 -0000"
-    },
     {
       "titulo": "Flávio Bolsonaro: veja o que pode acontecer com o mandato de senador após fuga para os EUA",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
       "score": 108.8,
       "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/30/flavio-bolsonaro-nos-eua-relembre-a-relacao-de-afinidade-e-distancia-entre-o-senador-e-trump.ghtml",
+      "score": 108.0,
+      "data_pub": "Fri, 30 Oct 2026 06:00:00 -0000"
     },
     {
       "titulo": "É #FAKE que governo federal recuou sobre fim da escala 6x1 após vitória de Lula no segundo turno das eleições 2026",
@@ -251,18 +251,18 @@
       "data_pub": "Thu, 29 Oct 2026 20:02:21 -0000"
     },
     {
-      "titulo": "Deputado italiano pede investigação sobre processo de cidadania dos irmãos Bolsonaro",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/29/deputado-italiano-pede-investigacao-sobre-processo-de-cidadania-dos-irmaos-bolsonaro.ghtml",
-      "score": 102.0,
-      "data_pub": "Thu, 29 Oct 2026 12:41:31 -0000"
-    },
-    {
       "titulo": "É #FAKE que governo Lula 'bloqueou' Gás do Povo e Bolsa Família após eleições de 2026",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-lula-bloqueou-gas-do-povo-e-bolsa-familia-apos-eleicoes-de-2026.ghtml",
       "score": 100.8,
       "data_pub": "Thu, 29 Oct 2026 18:52:54 -0000"
+    },
+    {
+      "titulo": "Rui Costa questiona articulação a favor de Alcolumbre que prevê anistia ou indulto a Jair Bolsonaro",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/29/rui-costa-articulacao-alcolumbre-senado-anistia-indulto-jair-bolsonaro.ghtml",
+      "score": 96.0,
+      "data_pub": "Thu, 29 Oct 2026 21:34:08 -0000"
     }
   ]
 }
