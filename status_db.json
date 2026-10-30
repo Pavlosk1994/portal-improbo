@@ -270,72 +270,6 @@
       "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
       "imagem_tamanho_kb": 1124.0,
       "audio_tamanho_kb": 982.8
-    },
-    {
-      "timestamp": "2026-10-25T23:06:41.379723+00:00",
-      "horario_brt": "25/10/2026 23:06:41",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 19.7,
-      "slug": "a-eterna-reprise-do-planalto-o-quarto-mandato",
-      "titulo": "A ETERNA REPRISE DO PLANALTO: O QUARTO MANDATO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-25T18:48:58.021011+00:00",
-      "horario_brt": "25/10/2026 18:48:58",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 12.9,
-      "slug": "a-eterna-reprise-do-planalto-lula-vai-para-o-quart",
-      "titulo": "A ETERNA REPRISE DO PLANALTO: LULA VAI PARA O QUARTO MANDATO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-25T14:54:23.812529+00:00",
-      "horario_brt": "25/10/2026 14:54:23",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 11.9,
-      "slug": "o-sindicato-da-eternidade-a-4a-rodada",
-      "titulo": "O SINDICATO DA ETERNIDADE: A 4ª RODADA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-25T05:50:22.519665+00:00",
-      "horario_brt": "25/10/2026 05:50:22",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 44.0,
-      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
-      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
-      "imagem_tamanho_kb": 1124.0,
-      "audio_tamanho_kb": 982.8
-    },
-    {
-      "timestamp": "2026-10-24T23:01:07.593097+00:00",
-      "horario_brt": "24/10/2026 23:01:07",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 14.3,
-      "slug": "o-ringue-da-cara-de-pau-lula-e-flavio-na-tv",
-      "titulo": "O RINGUE DA CARA DE PAU: LULA E FLÁVIO NA TV",
-      "imagem_tamanho_kb": 1124.0,
-      "audio_tamanho_kb": 982.8
-    },
-    {
-      "timestamp": "2026-10-24T18:40:14.942724+00:00",
-      "horario_brt": "24/10/2026 18:40:14",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 16.2,
-      "slug": "kassio-nunes-e-o-novo-circo-eleitoral",
-      "titulo": "KASSIO NUNES E O NOVO CIRCO ELEITORAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -343,36 +277,36 @@
       "titulo": "Flávio Bolsonaro: veja o que pode acontecer com o mandato de senador após fuga para os EUA",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
-      "score": 125.8,
+      "score": 118.8,
       "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
     },
     {
-      "titulo": "'Ridículo', 'ofensa', 'olhar para frente': a reação após Flávio fugir, se dizer 'presidente eleito', apagar e falar que é 'líder do Brasil'",
+      "titulo": "É #FAKE que governo federal recuou sobre fim da escala 6x1 após vitória de Lula no segundo turno das eleições 2026",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/28/ridiculo-ofensa-olhar-para-frente-a-reacao-apos-flavio-fugir-se-dizer-presidente-eleito-apagar-e-falar-que-e-lider-do-brasil.ghtml",
-      "score": 103.2,
-      "data_pub": "Wed, 28 Oct 2026 22:51:25 -0000"
+      "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-federal-recuou-sobre-fim-da-escala-6x1-apos-vitoria-de-lula-no-segundo-turno-das-eleicoes-2026.ghtml",
+      "score": 109.0,
+      "data_pub": "Thu, 29 Oct 2026 20:02:21 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro recebeu autorização para ficar 1 ano nos EUA",
+      "titulo": "É #FAKE que governo Lula 'bloqueou' Gás do Povo e Bolsa Família após eleições de 2026",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-recebeu-autorizacao-para-ficar-1-ano-nos-eua.ghtml",
-      "score": 98.4,
-      "data_pub": "Wed, 28 Oct 2026 22:17:30 -0000"
+      "link": "https://g1.globo.com/fato-ou-fake/eleicoes/noticia/2026/10/29/e-fake-que-governo-lula-bloqueou-gas-do-povo-e-bolsa-familia-apos-eleicoes-de-2026.ghtml",
+      "score": 107.8,
+      "data_pub": "Thu, 29 Oct 2026 18:52:54 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro usou passaporte diplomático cancelado para entrar nos EUA",
+      "titulo": "Rui Costa questiona articulação a favor de Alcolumbre que prevê anistia ou indulto a Jair Bolsonaro",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/flavio-bolsonaro-usou-passaporte-diplomatico-cancelado-para-entrar-nos-eua.ghtml",
-      "score": 98.4,
-      "data_pub": "Wed, 28 Oct 2026 18:14:55 -0000"
+      "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/29/rui-costa-articulacao-alcolumbre-senado-anistia-indulto-jair-bolsonaro.ghtml",
+      "score": 103.0,
+      "data_pub": "Thu, 29 Oct 2026 21:34:08 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro chega aos Estados Unidos após fugir do Brasil",
+      "titulo": "Deputado italiano pede investigação sobre processo de cidadania dos irmãos Bolsonaro",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/28/voo-flavio-bolsonaro-chega-aos-eua.ghtml",
-      "score": 98.4,
-      "data_pub": "Wed, 28 Oct 2026 13:25:21 -0000"
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/29/deputado-italiano-pede-investigacao-sobre-processo-de-cidadania-dos-irmaos-bolsonaro.ghtml",
+      "score": 102.0,
+      "data_pub": "Thu, 29 Oct 2026 12:41:31 -0000"
     }
   ]
 }
