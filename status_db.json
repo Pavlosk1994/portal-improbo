@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-31T06:49:15.665336+00:00",
+  "ultima_atualizacao": "2026-10-31T16:00:07.797286+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-10-31T16:00:07.797235+00:00",
+      "horario_brt": "31/10/2026 16:00:07",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.2,
+      "slug": "as-seis-ilhas-de-angra-e-o-legislativo-na-praia",
+      "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO NA PRAIA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-31T06:49:15.665286+00:00",
       "horario_brt": "31/10/2026 06:49:15",
@@ -215,20 +226,16 @@
       "titulo": "O HERDEIRO DO CONDADO: FLÁVIO BOLSONARO TRANSFORMA O SENADO EM BALCÃO DE ANISTIA ENQUANTO ENSAIA A COROA FAMILIAR",
       "imagem_tamanho_kb": 1009.1,
       "audio_tamanho_kb": 1244.7
-    },
-    {
-      "timestamp": "2026-10-29T00:10:21.520374",
-      "horario_brt": "29/10/2026 00:10:21",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Fiscal: A TESOURA DA PICANHA: HADDAD PASSA O PENTE-FINO NO BPC E NO SEGURO-DESEMPREGO PARA ACALMAR A FARIA LIMA",
-      "duracao_segundos": 11.5,
-      "slug": "a-tesoura-da-picanha-haddad-passa-o-pente-fino-no-bpc-para-acalmar-a-faria-lima",
-      "titulo": "A TESOURA DA PICANHA: HADDAD PASSA O PENTE-FINO NO BPC E NO SEGURO-DESEMPREGO PARA ACALMAR A FARIA LIMA",
-      "imagem_tamanho_kb": 1220.0,
-      "audio_tamanho_kb": 1245.0
     }
   ],
   "radar_pautas": [
+    {
+      "titulo": "Advogado Willer Tomaz tem outras cinco casas em ilhas de Angra além da disputada com Richarlison",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "score": 109.0,
+      "data_pub": "Sat, 31 Oct 2026 10:33:54 -0000"
+    },
     {
       "titulo": "É #FAKE que Lula anunciou corte de R$ 6 bilhões na Saúde e na Educação após eleição de 2026; vídeo foi exibido no ano retrasado",
       "fonte": "G1 Política",
@@ -249,13 +256,6 @@
       "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
       "score": 100.8,
       "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Novo segue sem reconhecer resultado das eleições; 27 partidos validam vitória de Lula",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml",
-      "score": 98.2,
-      "data_pub": "Sat, 31 Oct 2026 03:00:00 -0000"
     },
     {
       "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
