@@ -598,6 +598,61 @@
 
                 <!-- Reprodutor de Áudio Editorial (Logo abaixo do cabeçalho) -->
                 
+    <!-- Reprodutor de Áudio Editorial (Estilo The New York Times "Listen to this article") -->
+    <div class="my-6 sm:my-8 bg-[#FAF9F5] border border-[#D1CEC7] border-l-4 border-l-[#8B0000] p-4 sm:p-5 rounded-sm shadow-xs reveal-on-scroll" id="article-audio-box">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+            <div class="flex items-center space-x-3.5">
+                <button id="audio-play-btn" type="button" aria-label="Ouvir crônica narrada" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#121212] hover:bg-[#8B0000] text-white flex items-center justify-center shrink-0 shadow-sm transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer">
+                    <!-- Play Icon -->
+                    <svg id="audio-play-icon" class="w-5 h-5 ml-0.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <!-- Pause Icon -->
+                    <svg id="audio-pause-icon" class="w-5 h-5 fill-current hidden" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-mono text-xs uppercase tracking-wider font-bold text-[#8B0000]">OUVIR ESTA CRÔNICA</span>
+                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#EBE7DE] text-stone-700 font-semibold">Voz Neural</span>
+                        <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse hidden" id="audio-live-dot" title="Reproduzindo"></span>
+                    </div>
+                    <div class="font-serif italic text-xs text-stone-600 mt-0.5">
+                        Narração satírica com voz neural brasileira &bull; Redação IMPRÓBO
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3 self-end sm:self-center">
+                <!-- Velocidade -->
+                <button id="audio-speed-btn" type="button" class="font-mono text-xs px-2.5 py-1 bg-white border border-[#D1CEC7] hover:border-[#121212] rounded text-stone-800 font-semibold transition-colors cursor-pointer select-none" title="Velocidade de reprodução">
+                    1.0x
+                </button>
+                <!-- Mute / Unmute -->
+                <button id="audio-mute-btn" type="button" class="text-stone-600 hover:text-[#121212] p-1.5 rounded transition-colors cursor-pointer" title="Silenciar / Ativar som">
+                    <svg id="audio-vol-icon" class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                    <svg id="audio-mute-icon" class="w-4 h-4 fill-current hidden" viewBox="0 0 24 24">
+                        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                    </svg>
+                </button>
+                <!-- Tempo -->
+                <span id="audio-time" class="font-mono text-xs text-stone-600 min-w-[75px] text-right font-medium">00:00 / --:--</span>
+            </div>
+        </div>
+
+        <!-- Barra de Progresso Interativa -->
+        <div class="relative w-full h-2.5 bg-[#EBE7DE] rounded-full cursor-pointer group" id="audio-progress-container" title="Clique ou arraste para navegar">
+            <div id="audio-progress-bar" class="absolute top-0 left-0 h-full bg-[#8B0000] w-0 transition-all duration-75 ease-linear rounded-full pointer-events-none"></div>
+            <div id="audio-scrubber-thumb" class="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#121212] border-2 border-white rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none -ml-1.5" style="left: 0%;"></div>
+        </div>
+
+        <!-- Elemento de Áudio Nativo HTML5 -->
+        <audio id="article-audio-elem" src="../audio/trump-eleicao-fraudada-mas-gosto-do-lula.mp3" preload="metadata"></audio>
+    </div>
+    
 
                 <!-- Imagem Principal / Ancoragem Factual (Logo abaixo de Título e Subtítulo) -->
                 
@@ -989,6 +1044,45 @@
     </div>
 
     
+    <!-- Mini-Player de Áudio Sticky Flutuante (Estilo NYT Listen Bar) -->
+    <div id="sticky-audio-bar" class="fixed bottom-0 left-0 right-0 z-50 bg-[#FAF9F5] border-t-2 border-t-[#8B0000] shadow-2xl transform translate-y-full transition-transform duration-300 ease-in-out">
+        <div class="max-w-4xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3 overflow-hidden">
+                <button id="sticky-play-btn" type="button" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#121212] hover:bg-[#8B0000] text-white flex items-center justify-center shrink-0 transition-colors cursor-pointer" aria-label="Play/Pause">
+                    <svg id="sticky-play-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg id="sticky-pause-icon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current hidden" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                <div class="overflow-hidden">
+                    <div class="flex items-center space-x-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+                        <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-[#8B0000]">OUVINDO NO IMPRÓBO</span>
+                    </div>
+                    <div class="font-serif font-bold text-xs sm:text-sm text-[#121212] truncate max-w-[180px] sm:max-w-md md:max-w-lg">
+                        O GOLPE MAIS AMIGÁVEL DA HISTÓRIA: TRUMP CHAMA ELEIÇÃO BRASILEIRA DE 'FRAUDADA', MAS JURA QUE É 'PARÇA' DE LULA
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3 shrink-0">
+                <!-- Barra de progresso compacta -->
+                <div class="hidden sm:block w-28 md:w-44 h-2 bg-[#EBE7DE] rounded-full overflow-hidden cursor-pointer" id="sticky-progress-container" title="Clique para navegar">
+                    <div id="sticky-progress-bar" class="h-full bg-[#8B0000] w-0 transition-all duration-75"></div>
+                </div>
+                <span id="sticky-time" class="font-mono text-xs text-stone-600 min-w-[45px] text-right font-medium">00:00</span>
+                <!-- Botão Fechar -->
+                <button id="sticky-close-btn" type="button" class="text-stone-500 hover:text-[#121212] p-1 rounded transition-colors cursor-pointer" title="Ocultar mini-player">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
     
     <footer class="bg-[#121212] text-stone-300 border-t-4 border-[#8B0000] mt-16 sm:mt-24 pt-10 sm:pt-14 pb-12">
         <div class="max-w-6xl mx-auto px-[1.2rem] sm:px-6">
@@ -1336,6 +1430,231 @@
         });
     </script>
 
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById('article-audio-elem');
+        if (!audio) return;
+
+        const playBtn = document.getElementById('audio-play-btn');
+        const playIcon = document.getElementById('audio-play-icon');
+        const pauseIcon = document.getElementById('audio-pause-icon');
+        const liveDot = document.getElementById('audio-live-dot');
+        const timeDisplay = document.getElementById('audio-time');
+        const progressBar = document.getElementById('audio-progress-bar');
+        const progressContainer = document.getElementById('audio-progress-container');
+        const thumb = document.getElementById('audio-scrubber-thumb');
+        const speedBtn = document.getElementById('audio-speed-btn');
+        const muteBtn = document.getElementById('audio-mute-btn');
+        const volIcon = document.getElementById('audio-vol-icon');
+        const muteIcon = document.getElementById('audio-mute-icon');
+
+        const speeds = [1.0, 1.25, 1.5, 2.0];
+        let currentSpeedIdx = 0;
+
+        function formatTime(seconds) {
+            if (isNaN(seconds) || seconds < 0) return "--:--";
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        function updateTimeUI() {
+            const cur = formatTime(audio.currentTime);
+            const dur = formatTime(audio.duration);
+            timeDisplay.textContent = `${cur} / ${dur}`;
+            if (audio.duration && !isNaN(audio.duration)) {
+                const pct = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = `${pct}%`;
+                if (thumb) thumb.style.left = `${pct}%`;
+            }
+        }
+
+        audio.addEventListener('loadedmetadata', updateTimeUI);
+        audio.addEventListener('timeupdate', updateTimeUI);
+
+        // Play / Pause Toggle
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                    if (liveDot) liveDot.classList.remove('hidden');
+                }).catch(e => {
+                    console.error("Erro ao reproduzir áudio:", e);
+                });
+            } else {
+                audio.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+                if (liveDot) liveDot.classList.add('hidden');
+            }
+        });
+
+        audio.addEventListener('pause', () => {
+            playIcon.classList.remove('hidden');
+            pauseIcon.classList.add('hidden');
+            if (liveDot) liveDot.classList.add('hidden');
+        });
+
+        audio.addEventListener('play', () => {
+            playIcon.classList.add('hidden');
+            pauseIcon.classList.remove('hidden');
+            if (liveDot) liveDot.classList.remove('hidden');
+        });
+
+        audio.addEventListener('ended', () => {
+            playIcon.classList.remove('hidden');
+            pauseIcon.classList.add('hidden');
+            if (liveDot) liveDot.classList.add('hidden');
+            progressBar.style.width = '0%';
+            if (thumb) thumb.style.left = '0%';
+            audio.currentTime = 0;
+            updateTimeUI();
+        });
+
+        // Scrubbing via Click / Drag
+        function seek(e) {
+            if (!audio.duration || isNaN(audio.duration)) return;
+            const rect = progressContainer.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clickX = clientX - rect.left;
+            const pct = Math.max(0, Math.min(1, clickX / rect.width));
+            audio.currentTime = pct * audio.duration;
+            progressBar.style.width = `${pct * 100}%`;
+            if (thumb) thumb.style.left = `${pct * 100}%`;
+        }
+
+        let isSeeking = false;
+        progressContainer.addEventListener('mousedown', (e) => {
+            isSeeking = true;
+            seek(e);
+        });
+        window.addEventListener('mousemove', (e) => {
+            if (isSeeking) seek(e);
+        });
+        window.addEventListener('mouseup', () => {
+            isSeeking = false;
+        });
+
+        // Touch support for mobile
+        progressContainer.addEventListener('touchstart', (e) => {
+            isSeeking = true;
+            seek(e);
+        }, { passive: true });
+        window.addEventListener('touchmove', (e) => {
+            if (isSeeking) seek(e);
+        }, { passive: true });
+        window.addEventListener('touchend', () => {
+            isSeeking = false;
+        });
+
+        // Speed Toggle
+        speedBtn.addEventListener('click', () => {
+            currentSpeedIdx = (currentSpeedIdx + 1) % speeds.length;
+            const newSpeed = speeds[currentSpeedIdx];
+            audio.playbackRate = newSpeed;
+            speedBtn.textContent = `${newSpeed.toFixed(1)}x`;
+        });
+
+        // Mute Toggle
+        muteBtn.addEventListener('click', () => {
+            audio.muted = !audio.muted;
+            if (audio.muted) {
+                volIcon.classList.add('hidden');
+                muteIcon.classList.remove('hidden');
+            } else {
+                volIcon.classList.remove('hidden');
+                muteIcon.classList.add('hidden');
+            }
+        });
+
+        // Integração do Mini-Player Sticky Flutuante
+        const stickyBar = document.getElementById('sticky-audio-bar');
+        if (stickyBar) {
+            const stickyPlayBtn = document.getElementById('sticky-play-btn');
+            const stickyPlayIcon = document.getElementById('sticky-play-icon');
+            const stickyPauseIcon = document.getElementById('sticky-pause-icon');
+            const stickyTime = document.getElementById('sticky-time');
+            const stickyProgressBar = document.getElementById('sticky-progress-bar');
+            const stickyProgressContainer = document.getElementById('sticky-progress-container');
+            const stickyCloseBtn = document.getElementById('sticky-close-btn');
+
+            let stickyDismissed = false;
+
+            function syncStickyUI() {
+                if (!stickyBar) return;
+                if (audio.paused) {
+                    stickyPlayIcon.classList.remove('hidden');
+                    stickyPauseIcon.classList.add('hidden');
+                } else {
+                    stickyPlayIcon.classList.add('hidden');
+                    stickyPauseIcon.classList.remove('hidden');
+                }
+                if (stickyTime) {
+                    stickyTime.textContent = formatTime(audio.currentTime);
+                }
+                if (stickyProgressBar && audio.duration) {
+                    const pct = (audio.currentTime / audio.duration) * 100;
+                    stickyProgressBar.style.width = `${pct}%`;
+                }
+            }
+
+            audio.addEventListener('timeupdate', syncStickyUI);
+            audio.addEventListener('play', syncStickyUI);
+            audio.addEventListener('pause', syncStickyUI);
+
+            stickyPlayBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(e => console.error(e));
+                } else {
+                    audio.pause();
+                }
+            });
+
+            if (stickyProgressContainer) {
+                stickyProgressContainer.addEventListener('click', (e) => {
+                    if (!audio.duration || isNaN(audio.duration)) return;
+                    const rect = stickyProgressContainer.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    const pct = Math.max(0, Math.min(1, clickX / rect.width));
+                    audio.currentTime = pct * audio.duration;
+                    syncStickyUI();
+                });
+            }
+
+            if (stickyCloseBtn) {
+                stickyCloseBtn.addEventListener('click', () => {
+                    stickyBar.classList.add('translate-y-full');
+                    stickyDismissed = true;
+                });
+            }
+
+            const mainAudioBox = document.getElementById('article-audio-box');
+            if (mainAudioBox && 'IntersectionObserver' in window) {
+                const audioObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (stickyDismissed) return;
+                        if (!entry.isIntersecting && audio.currentTime > 0) {
+                            stickyBar.classList.remove('translate-y-full');
+                        } else if (entry.isIntersecting) {
+                            stickyBar.classList.add('translate-y-full');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                audioObserver.observe(mainAudioBox);
+
+                audio.addEventListener('play', () => {
+                    if (stickyDismissed) return;
+                    const rect = mainAudioBox.getBoundingClientRect();
+                    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                        stickyBar.classList.remove('translate-y-full');
+                    }
+                });
+            }
+        }
+    });
+    </script>
     
 </body>
 </html>

@@ -1,0 +1,43 @@
+{
+  "titulo": "O BAZAR DA ESTRELA: AS CORRENTES DO PT TRAVAM DUELO DE MEGÁFONOS PELA CADEIRA DE GLEISI",
+  "subtitulo": "Cardeais do aparelho partidário, jovens influencers de rede social e veteranos das greves de 79 disputam a herança política da legenda em uma convenção regada a café frio e manifestos de cem páginas.",
+  "categoria": "Aparelho Partidário",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "Guerra das correntes no PT pela sucessão de Gleisi Hoffmann: os companheiros sacaram teses acadêmicas e acusações de desvio ideológico para ver quem fica com a chave do cofre do partido.",
+  "legenda_imagem": "Em ringue montado no auditório partidário, dirigentes históricos trocam socos com luvas de boxe vermelhas sob o olhar irônico de Gleisi com a chave do partido.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de dirigentes petistas berrando em megafones dentro de ringue de boxe com bandeiras vermelhas e estrelas douradas, com Gleisi Hoffmann rindo.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of Workers Party leaders in comical boxing gloves battling with megaphones and manifestos in a red boxing ring with Gleisi Hoffmann smiling with a golden key.",
+  "corpo": [
+    "Dizem os manuais de zoologia política que não há predador mais feroz para um dirigente de esquerda do que outro dirigente de esquerda pertencente a uma corrente fracionária rival. Quem assiste de fora às manifestações públicas de fraternidade do Partido dos Trabalhadores não imagina a selvageria que corre solta nos bastidores das disputas internas pela presidência da sigla. Com a iminente saída de Gleisi Hoffmann do comando nacional do partido, os caciques das diversas tendências sacaram seus manifestos datilografados e deram início à mais emocionante batalha de aparelhos burocráticos desde o racha do Politburo soviético.",
+    "No centro do tatame, a corrente majoritária (Construindo um Novo Brasil - CNB) defende a manutenção do pragmatismo tradicional: alianças com o Centrão, cargos na Esplanada e moderação calculada para não assustar o mercado. Do outro lado da corda, as alas mais radicais exigem que a legenda rompa imediatamente com o neoliberalismo, encampe a estatização das padarias e convoque uma greve geral revolucionária &mdash; de preferência a partir das duas da tarde de uma terça-feira chuvosa, para não atrapalhar o café colonial da bancada.",
+    "O pomo da discórdia é o valioso espólio deixado pela gestão de Gleisi: o controle da máquina partidária, os relatórios de pesquisa qualitativa e, acima de tudo, o acesso privilegiado à caneta do fundo partidário e eleitoral, que distribui centenas de milhões de reais com a generosidade de um Papai Noel com carteirinha do sindicato dos metalúrgicos. Controlar a legenda significa ditar quem será candidato a deputado, quem terá verba de campanha para pagar os marqueteiros e quem será relegado ao ostracismo de discursar para duas cadeiras vazias no plenário da câmara municipal.",
+    "Enquanto os grupos debatem em conferências fechadas se o futuro da legenda deve ser disputado pelo prefeito de Araraquara, por um líder do Nordeste ou por um influencer de podcasts progressistas, os militantes de base assistem ao espetáculo com a perplexidade de costume. A única certeza inabalável é que, vença quem vencer a disputa interna, ao final do congresso todos subirão ao palanque de braços dados, cantarão a Internacional Socialista com a mão no peito e votarão a favor da próxima medida provisória que libera emenda parlamentar para o União Brasil."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Dialética da Cadeirada",
+      "texto": "Disputar a liderança do partido é a única modalidade esportiva em que uma divergência sobre o artigo terceiro da tese do congresso pode justificar um rompimento eterno de amizade."
+    },
+    {
+      "titulo": "O Fundo Partidário Libertador",
+      "texto": "Nada une com tanta força as diferentes correntes da esquerda quanto a chegada da parcela trimestral do fundo eleitoral na conta corrente do diretório."
+    },
+    {
+      "titulo": "A Tese de Quinhentas Páginas",
+      "texto": "O dirigente passa seis meses redigindo um documento estratégico que será lido exclusivamente por ele mesmo e pelo corretor ortográfico do computador."
+    },
+    {
+      "titulo": "O Abraço de Tamanduá",
+      "texto": "Depois de se chamarem de pelegos e traidores do proletariado durante a madrugada, os líderes posam juntos sorrindo para a foto oficial às oito da manhã."
+    }
+  ],
+  "contexto_real": "Com a proximidade do término do mandato da deputada Gleisi Hoffmann à frente do Partido dos Trabalhadores, as diferentes alas internas (como a CNB e correntes de esquerda) deflagraram intensas articulações de bastidores para definir o novo presidente da legenda e o direcionamento político para as eleições de 2026.",
+  "slug": "o-bazar-da-estrela-as-correntes-do-pt-travam-duelo-pela-sucessao",
+  "data": "31 de Outubro de 2026",
+  "imagem_capa": "imagens/o-bazar-da-estrela-as-correntes-do-pt-travam-duelo-pela-sucessao.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-31T08:20:00.000000",
+  "audio_url": "audio/o-bazar-da-estrela-as-correntes-do-pt-travam-duelo-pela-sucessao.mp3"
+}

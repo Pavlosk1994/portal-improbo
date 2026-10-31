@@ -1,0 +1,43 @@
+{
+  "titulo": "O FOGUETE DO DÓLAR E A ÂNCORA DO BOLETO: A ECONOMIA BRASILEIRA EM VOO LIVRE RUMO À ESTRATOSFERA",
+  "subtitulo": "Enquanto o Banco Central aperta o botão de emergência dos juros altos e o ministro Haddad promete um pacote fiscal misterioso, o trabalhador tenta descobrir onde foi parar o poder de compra da picanha.",
+  "categoria": "Câmbio & Picanha",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "O dólar encostou nos seis reais e a carne virou item de joalheria: a Fazenda promete resolver o problema lançando um pacote de corte de gastos em papel timbrado.",
+  "legenda_imagem": "Vestido de cosmonauta da Faria Lima, Fernando Haddad pilota um foguete de notas de dólar enquanto o cidadão na feira livre olha para a carteira vazia com espanto.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Fernando Haddad de astronauta pilotando um foguete com asas de nota de dólar em chamas, e embaixo um brasileiro na feira com carrinho vazio.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of Finance Minister Fernando Haddad in comical astronaut suit riding a winged dollar rocket while a Brazilian market shopper holds an empty basket in dismay.",
+  "corpo": [
+    "Há um fenômeno meteorológico exclusivo do Brasil que a ciência moderna ainda não foi capaz de explicar: toda vez que o governo jura solenemente que a economia vai decolar rumo à prosperidade, a única coisa que atinge velocidade de escape e sobe para o espaço é a cotação da moeda americana e a taxa de juros do cartão de crédito. Nos últimos pregões, a moeda americana resolveu testar a estratosfera, flertando descaradamente com a barreira psicológica dos seis reais, enquanto os títulos públicos pagam juros que fariam agiotas medievais corarem de vergonha.",
+    "No comando da nave cambial, o ministro da Fazenda, Fernando Haddad, atua como um piloto de provas em meio à turbulência. A cada pronunciamento em que ele promete que o plano de corte de gastos 'está maduro e será apresentado na semana que vem', o mercado financeiro reage como um passageiro de avião que vê o comandante saltar de paraquedas: o dólar sobe mais três centavos, a bolsa cai dois por cento e os analistas de terno cáqui da Avenida Faria Lima correm para recalcular a inflação do cafezinho.",
+    "Enquanto isso, na ponta mais dolorosa da cadeia alimentar &mdash; a feira livre de domingo e o caixa do supermercado de bairro &mdash;, o cidadão brasileiro tenta realizar a proeza de comprar um quilo de carne de segunda sem precisar dar o carro financiado como entrada. A famosa picanha da campanha eleitoral de 2022 foi discretamente substituída na dieta popular por carcaça de frango enriquecida com fé e patriotismo, enquanto o preço do tomate e do café solúvel exige autorização prévia da gerência do banco.",
+    "Diante do descompasso entre a retórica do Planalto e o saldo bancário da população, a equipe econômica garante que tudo não passa de uma crise especulativa orquestrada por rentistas sem coração. O remédio proposto pelo Banco Central, como sempre, é aumentar os juros para deprimir ainda mais a atividade produtiva, numa lógica médica digna do século XVIII: para curar a anemia do paciente, aplica-se uma boa sangria com sanguessugas. A economia brasileira segue assim, flutuando no vácuo: o dólar na Lua, a Selic nas estrelas e o bolso do trabalhador enterrado no pré-sal."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Velocidade de Escape do Câmbio",
+      "texto": "O dólar sobe tão rápido que quando o turista brasileiro termina de passar o cartão na padaria, o pão francês já aumentou trinta centavos no extrato."
+    },
+    {
+      "titulo": "A Dieta Metafísica",
+      "texto": "A promessa da picanha foi cumprida em sua dimensão espiritual: o cidadão olha para a foto da carne no açougue e se alimenta da memória olfativa."
+    },
+    {
+      "titulo": "A Tática da Semana Que Vem",
+      "texto": "O pacote fiscal de Haddad virou a versão econômica da cura da calvície: está sempre a sete dias de ser definitivamente revelado ao público."
+    },
+    {
+      "titulo": "A Alquimia da Selic",
+      "texto": "Subir os juros para combater a inflação de alimentos é o método mais engenhoso do mundo para fazer o devedor pagar o dobro do empréstimo sem comer nada."
+    }
+  ],
+  "contexto_real": "Com a escalada do dólar comercial se aproximando de R$ 5,80 a R$ 5,90 e as expectativas de inflação em alta, o Comitê de Política Monetária (Copom) do Banco Central retomou o ciclo de alta da taxa Selic, enquanto o ministro da Fazenda enfrenta cobranças para detalhar um plano crível de contenção de despesas públicas.",
+  "slug": "o-foguete-do-dolar-e-a-ancora-do-boleto-economia-em-voo-livre",
+  "data": "31 de Outubro de 2026",
+  "imagem_capa": "imagens/o-foguete-do-dolar-e-a-ancora-do-boleto-economia-em-voo-livre.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-31T08:15:00.000000",
+  "audio_url": "audio/o-foguete-do-dolar-e-a-ancora-do-boleto-economia-em-voo-livre.mp3"
+}

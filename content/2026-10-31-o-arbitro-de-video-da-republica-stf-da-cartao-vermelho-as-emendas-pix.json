@@ -1,0 +1,43 @@
+{
+  "titulo": "O ÁRBITRO DE VÍDEO DA REPÚBLICA: STF DÁ CARTÃO VERMELHO ÀS EMENDAS PIX E CONGRESSO AMEAÇA TROCAR O JUIZ",
+  "subtitulo": "Munidos de togas com estofamento anatômico e apitos dourados, ministros avisam que emenda sem CPF não passa na catraca, enquanto parlamentares descobrem a dor de prestar contas.",
+  "categoria": "Toga & Plenário",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "O STF travou as emendas Pix exigindo transparência e o Congresso já estuda criar uma CPI para investigar quem teve a audácia de inventar a palavra transparência.",
+  "legenda_imagem": "Vestidos de juízes de futebol com toga preta sobre listras de árbitro, ministros do Supremo usam o VAR constitucional para paralisar a farra do orçamento secreto.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Alexandre de Moraes de toga e camisa de árbitro mostrando cartão vermelho gigante para deputados com malas de dinheiro Pix.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of Supreme Court Justice Alexandre de Moraes in referee stripes brandishing giant red card at fleeing congressmen with bags of cash.",
+  "corpo": [
+    "No campeonato da política brasileira, há uma regra tácita consagrada desde a fundação de Brasília: o Congresso joga, o Executivo apanha e o contribuinte paga o ingresso mais caro do mundo. Nas últimas rodadas, contudo, o Supremo Tribunal Federal decidiu calçar chuteiras de trava alta, vestir togas com listras pretas e brancas de árbitro da FIFA e instalar um sistema de VAR constitucional bem no meio da Esplanada dos Ministérios. O resultado foi um tumulto generalizado no gramado parlamentar.",
+    "A causa da discórdia atende pelo nome carinhoso de 'emendas Pix' &mdash; aquela modalidade revolucionária de transferência bancária em que bilhões de reais do erário caem diretamente nas contas de prefeituras obscuras com a discrição de um sussurro na calada da noite, sem projeto, sem fiscalização e sem o menor indício de quem foi o padrinho da verba. Quando os ministros da Suprema Corte puxaram o freio de mão e exigiram rastreabilidade, CPF do autor e prestação de contas detalhada, o plenário da Câmara reagiu com a indignação de quem teve o bolo de aniversário confiscado antes do parabéns.",
+    "Líderes partidários foram aos microfones acusar o Judiciário de violar o princípio sagrado da harmonia entre os Poderes. Traduzindo do jargão de plenário para a linguagem das calçadas: a harmonia republicana, na visão dos nobres parlamentares, consiste em deixar o Congresso assaltar os cofres públicos em paz, sem que nenhum magistrado atrevido venha perguntar se a ponte orçada em três milhões de reais sobre o córrego seco foi de fato construída.",
+    "Como resposta ao rigor das togas, o Senado e a Câmara já desengavetaram um arsenal de projetos de retaliação: mandatos fixos para ministros do STF, limitações drásticas às decisões individuais e até a criação de um tribunal recursal formado por deputados para cassar sentenças da corte. É a beleza do equilíbrio institucional brasileiro: quando o árbitro flagra a mão na bola na grande área, os jogadores se reúnem na lateral do campo para votar uma emenda à Constituição extinguindo a figura do juiz."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Gravidade da Transparência",
+      "texto": "Exigir recibo e nota fiscal de um deputado federal é uma agressão tão violenta que deveria constar no Código de Processo Penal como tortura psicológica."
+    },
+    {
+      "titulo": "O VAR Constitucional",
+      "texto": "O ministro analisa o lance da emenda por quatro ângulos em câmera lenta e conclui que o asfalto prometido para o município fantasma nunca saiu da concessionária do prefeito."
+    },
+    {
+      "titulo": "A Toga com Apito",
+      "texto": "O STF avisa que ninguém está acima da lei, exceto o próprio Supremo quando decide se autoconceder reajuste de subsídio por deliberação administrativa."
+    },
+    {
+      "titulo": "O Pacto do Empate",
+      "texto": "No final, Legislativo e Judiciário sempre fecham um acordo de cavalheiros: as emendas voltam a correr soltas, desde que o orçamento do tribunal também receba um generoso suplemento."
+    }
+  ],
+  "contexto_real": "Em meio a fortes atritos entre o Congresso Nacional e o STF, o Supremo manteve a suspensão e a exigência de critérios rígidos de transparência e rastreabilidade para as emendas parlamentares (incluindo as emendas Pix), provocando reações dos presidentes da Câmara e do Senado que ameaçaram acelerar propostas de emenda à Constituição para limitar os poderes dos ministros.",
+  "slug": "o-arbitro-de-video-da-republica-stf-da-cartao-vermelho-as-emendas-pix",
+  "data": "31 de Outubro de 2026",
+  "imagem_capa": "imagens/o-arbitro-de-video-da-republica-stf-da-cartao-vermelho-as-emendas-pix.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-31T08:10:00.000000",
+  "audio_url": "audio/o-arbitro-de-video-da-republica-stf-da-cartao-vermelho-as-emendas-pix.mp3"
+}

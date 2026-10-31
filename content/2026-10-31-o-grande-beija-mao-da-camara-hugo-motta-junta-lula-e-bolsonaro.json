@@ -1,0 +1,43 @@
+{
+  "titulo": "O GRANDE BEIJA-MÃO DA CÂMARA: HUGO MOTTA JUNTA LULA E BOLSONARISTAS NO MESMO CIRCO PARLAMENTAR",
+  "subtitulo": "Em manobra que desafia as leis da gravidade e da vergonha alheia, o candidato ungido por Arthur Lira consegue o milagre de ser aplaudido pela esquerda e pela direita em troca de relatorias e emendas.",
+  "categoria": "Teatro de Marionetes",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "Milagre ecumênico em Brasília: Hugo Motta conseguiu reunir petistas e bolsonaristas na mesma fila para beijar o anel da presidência da Câmara em troca de cargos na Mesa Diretora.",
+  "legenda_imagem": "Sentado em trono dourado com vestes renascentistas ao lado de Arthur Lira, Hugo Motta recebe em fila indiana deputados do PT e do PL ávidos por relatorias e verbas.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Hugo Motta e Arthur Lira em trono dourado na Câmara dos Deputados recebendo beija-mão de deputados com gravatas vermelhas e amarelas.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of Hugo Motta on a golden throne in the Chamber of Deputies with Arthur Lira, as leftist and right-wing congressmen queue up to kiss his diamond ring.",
+  "corpo": [
+    "Dizem os teólogos que o milagre da união dos contrários só ocorrerá no final dos tempos, quando o lobo habitará com o cordeiro e o leopardo se deitará com o cabrito. Em Brasília, contudo, o milagre escatológico não precisou de intervenção divina: bastou a promessa da presidência da Comissão de Constituição e Justiça e a chave do cofre da relatoria do Orçamento para que o deputado Hugo Motta (Republicanos-PB) realizasse a proeza de colocar o Partido dos Trabalhadores e o Partido Liberal na mesma fila de beija-mão.",
+    "Ungido pelo atual imperador do plenário, Arthur Lira, o jovem parlamentar paraibano construiu uma daquelas alianças que fariam Maquiavel pedir uma aspirina. Na mesma sala de café do Congresso, deputados petistas que passam o dia chamando a oposição de fascista e parlamentares bolsonaristas que passam a noite chamando o governo de quadrilha se cumprimentam com sorrisos calorosos, piscadelas cúmplices e tapinhas nas costas, unidos pelo nobre ideal de não ficarem de fora da divisão dos cargos da Mesa Diretora.",
+    "A retórica da polarização ideológica, que incendeia os grupos de WhatsApp da família e mobiliza multidões na internet, evapora com a rapidez do álcool em gel quando a conversa chega à distribuição dos gabinetes com vista para o lago e à cota de passagens aéreas internacionais. Para o PT, apoiar Motta é fundamental para não ter um presidente hostil que aceite pedidos de impeachment nas terças-feiras de tédio; para o PL, apoiar Motta é indispensável para garantir a pauta da anistia e o controle das CPIs mais barulhentas.",
+    "No centro do picadeiro, Motta sorri com a serenidade de um monarca absolutista que acabou de receber o tributo de todas as tribos do reino. Ele promete tudo a todos com a convicção de quem sabe que promessa de campanha parlamentar tem a mesma validade jurídica de um bilhete premiado de quermesse. O Brasil pode estar dividido em dois pólos irreconciliáveis, mas na Câmara dos Deputados a reconciliação é total, ecumênica e custa apenas algumas dezenas de milhões em emendas impositivas."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Ecumenismo Orçamentário",
+      "texto": "A ideologia separa os homens na tribuna, mas o relator-geral do Orçamento une os corações no sigilo dos gabinetes acarpetados."
+    },
+    {
+      "titulo": "A Fila do Beija-Mão",
+      "texto": "Ver um deputado do PT e outro do PL disputando quem elogia com mais entusiasmo o mesmo candidato do Centrão é a maior aula de realismo político do planeta."
+    },
+    {
+      "titulo": "A Gravidade Zero do Centrão",
+      "texto": "Arthur Lira conseguiu o prodígio de transferir sua coroa sem precisar sair do trono: governa o passado, o presente e o sucessor por controle remoto."
+    },
+    {
+      "titulo": "O Princípio da Ambição Fraterna",
+      "texto": "Não existe ódio ideológico em Brasília que resista a uma presidência de comissão com direito a quatro assessores de confiança e carro oficial."
+    }
+  ],
+  "contexto_real": "A disputa pela presidência da Câmara dos Deputados em 2025 consolidou a candidatura de Hugo Motta (Republicanos-PB), apoiado pelo atual presidente Arthur Lira, atraindo o endosso simultâneo das duas maiores bancadas antagônicas do Congresso: o PT do governo Lula e o PL da oposição bolsonarista.",
+  "slug": "o-grande-beija-mao-da-camara-hugo-motta-junta-lula-e-bolsonaro",
+  "data": "31 de Outubro de 2026",
+  "imagem_capa": "imagens/o-grande-beija-mao-da-camara-hugo-motta-junta-lula-e-bolsonaro.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-31T08:25:00.000000",
+  "audio_url": "audio/o-grande-beija-mao-da-camara-hugo-motta-junta-lula-e-bolsonaro.mp3"
+}

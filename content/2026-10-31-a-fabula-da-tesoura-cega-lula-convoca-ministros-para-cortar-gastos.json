@@ -1,0 +1,43 @@
+{
+  "titulo": "A FÁBULA DA TESOURA CEGA: LULA CONVOCA MINISTROS PARA CORTAR GASTOS, MAS PROÍBE MEXER NO ORÇAMENTO",
+  "subtitulo": "Em maratona no Alvorada, o presidente exige que a Fazenda economize 50 bilhões de reais sem cortar verba de ministério, sem frear emenda e sem melindrar nenhum aliado do Centrão.",
+  "categoria": "Milagres da Fazenda",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": true,
+  "frase_disparo_zap": "Reunião de emergência no Planalto sobre corte de gastos: Lula reuniu os ministros para avisar que é terminantemente proibido gastar menos do que o dobro.",
+  "legenda_imagem": "Munido de uma tesoura infantil de plástico sem ponta, o presidente procura onde cortar despesas sem tocar em emenda, ministério ou privilégio de aliado.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Lula com faixa presidencial segurando tesourinha infantil de plástico em frente a uma montanha de dinheiro orçamentário, com ministros escondendo sacos de dinheiro atrás das costas.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of Brazilian President Lula holding tiny plastic safety scissors in front of a giant mountain of money with panicked ministers hiding bags of cash.",
+  "corpo": [
+    "Há poucos espetáculos no teatro político do Planalto tão comoventes quanto as reuniões ministeriais de 'disciplina fiscal'. Trata-se de uma cerimônia litúrgica em que o presidente da República reúne sua portentosa esquadra de quase quarenta ministros para anunciar, com ar de severidade espartana, que a gastança desenfreada chegou ao limite. Em seguida, com a mesma solenidade, o chefe do Executivo avisa que Saúde, Educação, Previdência, Transportes, Defesa, Cidades e as emendas parlamentares estão estritamente blindadas contra qualquer tipo de redução.",
+    "O ministro da Fazenda, Fernando Haddad, ouve as diretrizes com aquele olhar de quem tenta calcular a raiz quadrada de uma melancia com uma régua de plástico quebrada. A missão encomendada pela cúpula do governo desafia os postulados elementares da física e da aritmética: a Fazenda precisa apresentar um pacote de corte de despesas de pelo menos cinquenta bilhões de reais para acalmar a Faria Lima e segurar o dólar, mas tem autorização para economizar exclusivamente no café passado dos gabinetes e nos clipes de papel da portaria.",
+    "Do outro lado da mesa, os ministros das pastas sociais e do Centrão observam a cena com a tranquilidade de quem sabe que suas emendas e cargos são sagrados. Cada ministro já chega à reunião com um dossiê pronto provando que o seu ministério específico não apenas não pode sofrer cortes, como precisa de uma suplementação orçamentária urgente para evitar a paralisação do planeta Terra. O titular da Previdência jura que o pente-fino no BPC é desumano, o do Trabalho avisa que o seguro-desemprego é intocável e os líderes partidários avisam que sem emenda Pix o governo não aprova nem voto de pesar na Câmara.",
+    "Ao final de seis horas de café colonial e discursos patrióticos, o presidente encerra o conclave com um tapinha nas costas da equipe econômica e uma declaração para a imprensa garantindo que 'o ajuste fiscal está pronto e será indolor'. Indolor, decerto, para quem está sentado nas cadeiras estofadas da Esplanada dos Ministérios; para quem vai pagar o imposto sobre a carne moída e a alíquota embutida na conta de luz, a tesoura do governo continua afiada como uma lâmina de barbear."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Teorema da Tesoura Sem Fio",
+      "texto": "O governo inventou a primeira dieta de redução de peso do mundo em que o paciente corta apenas a alface e dobra a porção de torresmo."
+    },
+    {
+      "titulo": "A Matemática do Alvorada",
+      "texto": "Cinquenta bilhões de economia menos quarenta bilhões de concessões ao Centrão é igual a um novo imposto de setenta bilhões no lombo do contribuinte."
+    },
+    {
+      "titulo": "A Rebelião dos Companheiros",
+      "texto": "Cada ministro jura fidelidade cega ao teto de gastos, contanto que o teto desabe exclusivamente na cabeça do vizinho de gabinete."
+    },
+    {
+      "titulo": "O Fator Indolor",
+      "texto": "O ajuste fiscal não dói nada no ministro de Estado; o problema é a anestesia que nunca chega ao cidadão que tenta fechar o mês com o salário mínimo."
+    }
+  ],
+  "contexto_real": "Sob forte pressão do mercado financeiro e diante da alta do dólar e das taxas de juros, o presidente Lula convocou reuniões de emergência com a equipe econômica e ministros das áreas sociais para formatar um pacote de corte de gastos obrigatórios, enfrentando resistências internas de pastas como Previdência, Trabalho e Saúde.",
+  "slug": "a-fabula-da-tesoura-cega-lula-convoca-ministros-para-cortar-gastos",
+  "data": "31 de Outubro de 2026",
+  "imagem_capa": "imagens/a-fabula-da-tesoura-cega-lula-convoca-ministros-para-cortar-gastos.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-10-31T08:05:00.000000",
+  "audio_url": "audio/a-fabula-da-tesoura-cega-lula-convoca-ministros-para-cortar-gastos.mp3"
+}
