@@ -14,7 +14,9 @@ from datetime import datetime
 
 PORTAL_NAME = "IMPRÓBO"
 PORTAL_SLOGAN = "A crônica semanal da falta de decoro e do absurdo nacional."
-PORTAL_URL = os.environ.get("PORTAL_URL", "https://improbo.vercel.app").rstrip("/")
+PORTAL_META_TITLE = "IMPRÓBO | Sátira Política, Humor Editorial e Crônica Ácida de Brasília"
+PORTAL_KEYWORDS = "sátira política, jornal satírico, humor político, crônica política brasileira, política de brasília, congresso nacional, stf, governo lula, charges políticas, caricaturas editoriais, ceticismo cívico"
+PORTAL_URL = os.environ.get("PORTAL_URL", "https://portal-improbo.vercel.app").rstrip("/")
 INSTAGRAM_URL = "https://instagram.com"
 INSTAGRAM_HANDLE = "@improbo"
 WHATSAPP_CHANNEL_URL = os.environ.get("WHATSAPP_CHANNEL_URL", "https://whatsapp.com/channel/0029Vb3improbo").rstrip("/")
@@ -66,7 +68,20 @@ ROBOTS_PATH = os.path.join(BASE_DIR, "robots.txt")
 VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
 
 COMMON_HEAD_STYLES = r"""
-    <meta name="referrer" content="no-referrer">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="geo.region" content="BR-DF">
+    <meta name="geo.placename" content="Brasília, Distrito Federal, Brasil">
+    <meta name="geo.position" content="-15.7975;-47.8686">
+    <meta name="ICBM" content="-15.7975, -47.8686">
+    <meta name="coverage" content="Brasil">
+    <meta name="rating" content="general">
+    <meta name="theme-color" content="#121212">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
     <script>
         // Prevenção imediata de flash branco (FOUC)
         (function() {
@@ -1624,6 +1639,271 @@ def render_newsletter_box(is_article=False, is_sobre=False):
     </script>
     """
 
+def build_article_schema(art, art_url, img_abs):
+    safe_title = html.escape(art.get("titulo", ""), quote=True)
+    safe_subtitle = html.escape(art.get("subtitulo", "") or art.get("resumo", ""), quote=True)
+    category = art.get("categoria", "Crônica Política")
+    date_iso = art.get("data_iso") or art.get("timestamp") or "2026-10-30T12:00:00-03:00"
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": ["NewsArticle", "Article"],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": art_url
+        },
+        "headline": art.get("titulo", ""),
+        "description": art.get("subtitulo", "") or art.get("resumo", ""),
+        "image": [img_abs],
+        "datePublished": date_iso,
+        "dateModified": date_iso,
+        "inLanguage": "pt-BR",
+        "articleSection": category,
+        "genre": "Political Satire, Humor, Editorial Journalism",
+        "isAccessibleForFree": True,
+        "author": {
+            "@type": "Person",
+            "name": "Conselheiro Acácio",
+            "jobTitle": "Cronista Político Chefe",
+            "url": f"{PORTAL_URL}/sobre.html"
+        },
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "@id": f"{PORTAL_URL}/#organization",
+            "name": PORTAL_NAME,
+            "url": f"{PORTAL_URL}/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
+            }
+        }
+    }
+    return json.dumps(schema, ensure_ascii=False, indent=2)
+
+def build_sobre_schema(sobre_url):
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+            "@id": f"{PORTAL_URL}/#organization"
+        },
+        "name": f"Manifesto & Linha Editorial | {PORTAL_NAME}",
+        "url": sobre_url,
+        "description": "O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF.",
+        "inLanguage": "pt-BR"
+    }
+    return json.dumps(schema, ensure_ascii=False, indent=2)
+
+def build_home_schema(articles):
+    items = []
+    for idx, art in enumerate(articles[:10]):
+        slug = art.get("slug", "")
+        title = art.get("titulo", "")
+        desc = art.get("subtitulo", "") or art.get("resumo", "")
+        img_url = f"{PORTAL_URL}/imagens/{slug}.jpg"
+        items.append({
+            "@type": "ListItem",
+            "position": idx + 1,
+            "url": f"{PORTAL_URL}/artigos/{slug}.html",
+            "name": title,
+            "description": desc,
+            "image": img_url
+        })
+
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": ["NewsMediaOrganization", "Periodical"],
+                "@id": f"{PORTAL_URL}/#organization",
+                "name": f"Portal {PORTAL_NAME}",
+                "alternateName": [
+                    PORTAL_NAME,
+                    f"O {PORTAL_NAME.capitalize()}",
+                    f"Jornal {PORTAL_NAME.capitalize()}",
+                    f"Portal {PORTAL_NAME.capitalize()} Notícias",
+                    f"{PORTAL_NAME.capitalize()} Sátira Política"
+                ],
+                "url": f"{PORTAL_URL}/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg",
+                    "width": 1200,
+                    "height": 675
+                },
+                "image": f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg",
+                "description": "Veículo editorial independente de crônica política satírica, humor cáustico e análise cética dos Três Poderes da República em Brasília.",
+                "foundingDate": "2026",
+                "inLanguage": "pt-BR",
+                "publishingPrinciples": f"{PORTAL_URL}/sobre.html",
+                "ethicsPolicy": f"{PORTAL_URL}/sobre.html",
+                "correctionsPolicy": f"{PORTAL_URL}/sobre.html",
+                "masthead": f"{PORTAL_URL}/sobre.html",
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Brasil"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Brasília",
+                    "addressRegion": "DF",
+                    "addressCountry": "BR"
+                },
+                "sameAs": [
+                    INSTAGRAM_URL,
+                    WHATSAPP_CHANNEL_URL,
+                    TELEGRAM_CHANNEL_URL
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": f"{PORTAL_URL}/#website",
+                "name": PORTAL_NAME,
+                "alternateName": f"Portal {PORTAL_NAME}",
+                "url": f"{PORTAL_URL}/",
+                "inLanguage": "pt-BR",
+                "publisher": {
+                    "@id": f"{PORTAL_URL}/#organization"
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": f"{PORTAL_URL}/?q={{search_term_string}}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "ItemList",
+                "@id": f"{PORTAL_URL}/#featured-articles",
+                "name": f"Destaques e Crônicas Recentes do Portal {PORTAL_NAME}",
+                "itemListElement": items
+            },
+            {
+                "@type": "FAQPage",
+                "@id": f"{PORTAL_URL}/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": f"O que é o Portal {PORTAL_NAME}?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": f"O Portal {PORTAL_NAME} é um jornal digital independente de crônica política satírica, humor cáustico e análise cética do poder público no Brasil. Cobre o dia a dia do Palácio do Planalto, Congresso Nacional e STF através do deboche factual, charges exclusivas e crônicas semanais."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": f"O Portal {PORTAL_NAME} publica notícias falsas (fake news)?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": f"Não. O {PORTAL_NAME} não produz desinformação nem fake news. Todas as crônicas são sátiras políticas rigorosamente baseadas em notícias e fatos reais do teatro político brasileiro, protegidas pelo direito fundamental à paródia e à livre manifestação do pensamento (Arts. 5º e 220 da CF/88 e ADPF 130 do STF)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": f"Quais temas são abordados no {PORTAL_NAME}?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": f"O portal cobre a política nacional sem viés partidário ou poupar autoridades: o governo Lula, os ministérios, os bastidores do Centrão, os líderes da oposição, as decisões do Supremo Tribunal Federal (STF), a política econômica do Banco Central e as disputas de poder em Brasília."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": f"Quem desenvolveu a infraestrutura do Portal {PORTAL_NAME}?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": f"A tecnologia, infraestrutura web e engenharia de software do Portal {PORTAL_NAME} são desenvolvidas pela PaviDev (https://pavidev.tech/)."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    return json.dumps(schema, ensure_ascii=False, indent=2)
+
+def render_geo_manifesto_section():
+    return f"""
+        <!-- Seção Semântica GEO (Generative Engine Optimization & Credibilidade Editorial) -->
+        <section id="linha-editorial-geo" class="my-10 bg-white dark:bg-[#181a20] border border-[#D1CEC7] dark:border-stone-800 p-6 sm:p-8 rounded-sm shadow-xs reveal-on-scroll">
+            <div class="border-b border-[#D1CEC7] dark:border-stone-800 pb-4 mb-6">
+                <div class="flex items-center space-x-2 mb-2 font-mono text-xs">
+                    <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 uppercase tracking-wider">Jornalismo Satírico</span>
+                    <span class="text-stone-500 dark:text-stone-400 font-medium">Liberdade de Expressão (CF/88 Art. 5º e 220 &bull; ADPF 130 STF)</span>
+                </div>
+                <h2 class="font-serif font-black text-2xl sm:text-3xl text-[#121212] dark:text-[#f3f3f5] tracking-tight">
+                    O Que É o Portal {PORTAL_NAME}: Crônica Política, Sátira e Ceticismo Cívico
+                </h2>
+                <p class="mt-2 text-stone-700 dark:text-stone-300 font-serif italic text-sm sm:text-base leading-relaxed">
+                    Nenhum fato foi distorcido &mdash; o absurdo da realidade brasileira já veio pronto de fábrica. Conheça a linha editorial e o compromisso cômico do jornal.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-stone-700 dark:text-stone-300 font-sans leading-relaxed">
+                <div>
+                    <h3 class="font-serif font-bold text-base text-[#121212] dark:text-[#f3f3f5] mb-2 flex items-center gap-2">
+                        <span class="text-[#8B0000] dark:text-[#e03131] font-mono text-sm">&sect; 1.</span> A Missão do Deboche
+                    </h3>
+                    <p class="mb-3">
+                        O <strong>Portal {PORTAL_NAME}</strong> nasceu para preencher o vácuo de coragem da imprensa contemporânea. Nosso alvo é o poder constituído, a liturgia solene e a hipocrisia dos Três Poderes em Brasília. Se há discursos inflados, conchavos de bastidor ou carimbos burocráticos sem sentido, há matéria-prima para a crônica.
+                    </p>
+                    <p>
+                        A sátira não é um ataque à democracia; é o seu termômetro mais saudável. Sociedades livres riem de seus governantes; regimes autoritários exigem aplausos obrigatórios.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-serif font-bold text-base text-[#121212] dark:text-[#f3f3f5] mb-2 flex items-center gap-2">
+                        <span class="text-[#8B0000] dark:text-[#e03131] font-mono text-sm">&sect; 2.</span> Fatos Reais, Humor Ácido
+                    </h3>
+                    <p class="mb-3">
+                        Não publicamos desinformação nem criamos factoides. Cada crônica, charge e caricatura editorial do {PORTAL_NAME} parte de um acontecimento rigorosamente factual da política brasileira &mdash; de votações de emendas a declarações estapafúrdias de parlamentares.
+                    </p>
+                    <p>
+                        A ironia socrática e a hipérbole literária são as nossas ferramentas para traduzir o teatro de Brasília em linguagem acessível ao cidadão comum que paga a conta.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Perguntas Frequentes / FAQ Estruturado (GEO & AI Direct Answers) -->
+            <div class="mt-8 pt-6 border-t border-[#D1CEC7] dark:border-stone-800">
+                <h3 class="font-mono text-xs uppercase tracking-widest text-[#8B0000] dark:text-[#e03131] font-bold mb-4">
+                    Perguntas Frequentes &bull; Respostas Diretas
+                </h3>
+                <div class="space-y-3">
+                    <details class="group bg-[#FAF9F5] dark:bg-[#1f2026] border border-[#D1CEC7] dark:border-stone-700/80 p-3.5 sm:p-4 rounded-sm cursor-pointer transition-colors hover:border-stone-400">
+                        <summary class="font-serif font-bold text-[#121212] dark:text-[#f3f3f5] text-sm sm:text-base flex justify-between items-center list-none">
+                            <span>O conteúdo do {PORTAL_NAME} é fake news ou paródia?</span>
+                            <span class="text-[#8B0000] dark:text-[#e03131] group-open:rotate-180 transition-transform font-mono text-xs">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-sans leading-relaxed border-t border-[#D1CEC7]/60 dark:border-stone-700/60 pt-2.5">
+                            É 100% paródia e crônica satírica fundamentada na Constituição Federal de 1988 (Art. 5º, incisos IV e IX, e Art. 220) e pacificada pelo Supremo Tribunal Federal na ADPF 130. O {PORTAL_NAME} não inventa boatos: amplifica o absurdo de fatos verdadeiros e notórios para expor o ridículo do poder.
+                        </p>
+                    </details>
+
+                    <details class="group bg-[#FAF9F5] dark:bg-[#1f2026] border border-[#D1CEC7] dark:border-stone-700/80 p-3.5 sm:p-4 rounded-sm cursor-pointer transition-colors hover:border-stone-400">
+                        <summary class="font-serif font-bold text-[#121212] dark:text-[#f3f3f5] text-sm sm:text-base flex justify-between items-center list-none">
+                            <span>O portal tem alinhamento ideológico ou partidário?</span>
+                            <span class="text-[#8B0000] dark:text-[#e03131] group-open:rotate-180 transition-transform font-mono text-xs">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-sans leading-relaxed border-t border-[#D1CEC7]/60 dark:border-stone-700/60 pt-2.5">
+                            Não. O {PORTAL_NAME} pratica a equidade cáustica: se sentou na cadeira do poder ou subiu na tribuna do Congresso, torna-se alvo elegível. Cobrimos do Palácio do Planalto ao Centrão, da bancada da oposição aos ministros do STF com o mesmo rigor irônico.
+                        </p>
+                    </details>
+
+                    <details class="group bg-[#FAF9F5] dark:bg-[#1f2026] border border-[#D1CEC7] dark:border-stone-700/80 p-3.5 sm:p-4 rounded-sm cursor-pointer transition-colors hover:border-stone-400">
+                        <summary class="font-serif font-bold text-[#121212] dark:text-[#f3f3f5] text-sm sm:text-base flex justify-between items-center list-none">
+                            <span>Como citar ou acompanhar as publicações do {PORTAL_NAME}?</span>
+                            <span class="text-[#8B0000] dark:text-[#e03131] group-open:rotate-180 transition-transform font-mono text-xs">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-sans leading-relaxed border-t border-[#D1CEC7]/60 dark:border-stone-700/60 pt-2.5">
+                            Todas as matérias contam com links canônicos estáveis, áudios narrados por inteligência artificial e caricaturas editoriais. Você pode acompanhar pelo feed contínuo, pelos canais oficiais no WhatsApp e Telegram ou assinar nosso boletim semanal.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    """
+
 def generate_article_page(art):
     slug = art["slug"]
     title = art["titulo"]
@@ -1746,6 +2026,8 @@ def generate_article_page(art):
         else:
             img_abs = f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
 
+    article_schema_json = build_article_schema(art, art_url, img_abs)
+
     page_html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -1771,6 +2053,11 @@ def generate_article_page(art):
     <meta name="twitter:title" content="{safe_title} | {PORTAL_NAME}">
     <meta name="twitter:description" content="{safe_subtitle}">
     <meta name="twitter:image" content="{img_abs}">
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para Google Notícias & Motores de IA (GEO) -->
+    <script type="application/ld+json">
+    {article_schema_json}
+    </script>
 
     {COMMON_HEAD_STYLES}
 </head>
@@ -1897,7 +2184,7 @@ def generate_home_page(articles):
             hero_img_html = f"""
             <div class="my-4 sm:my-5 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
                 <a href="artigos/{hero_slug}.html" class="block group/img overflow-hidden">
-                    <img src="{hero_img_src}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[460px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="lazy">
+                    <img src="{hero_img_src}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[460px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="eager" fetchpriority="high" width="1200" height="675">
                 </a>
                 {caption_tag}
             </div>
@@ -2105,23 +2392,26 @@ def generate_home_page(articles):
     hero_img_abs = f"{PORTAL_URL}/imagens/{hero_slug}.jpg" if hero_slug else f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
     safe_portal_name = html.escape(PORTAL_NAME, quote=True)
     safe_portal_slogan = html.escape(PORTAL_SLOGAN, quote=True)
-    home_desc = "O único jornal que fala a verdade rindo. Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre o circo de Brasília."
+    home_desc = "O jornal que fala a verdade rindo. Crônicas políticas ácidas, sátira mordaz e jornalismo cético sobre o circo dos Três Poderes em Brasília."
     safe_home_desc = html.escape(home_desc, quote=True)
+    home_schema_json = build_home_schema(articles)
+    geo_manifesto = render_geo_manifesto_section()
 
     page_html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{safe_portal_name} | {safe_portal_slogan}</title>
+    <title>{PORTAL_META_TITLE}</title>
     <meta name="description" content="{safe_home_desc}">
+    <meta name="keywords" content="{PORTAL_KEYWORDS}">
     <link rel="canonical" href="{PORTAL_URL}/">
 
     <!-- Metatags Sociais Dinâmicas / Open Graph (WhatsApp, Telegram, Facebook) -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="{safe_portal_name}">
-    <meta property="og:title" content="{safe_portal_name} | {safe_portal_slogan}">
+    <meta property="og:title" content="{PORTAL_META_TITLE}">
     <meta property="og:description" content="{safe_home_desc}">
     <meta property="og:url" content="{PORTAL_URL}/">
     <meta property="og:image" content="{hero_img_abs}">
@@ -2130,9 +2420,14 @@ def generate_home_page(articles):
 
     <!-- Twitter / X Cards (Large Image Preview) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{safe_portal_name} | {safe_portal_slogan}">
+    <meta name="twitter:title" content="{PORTAL_META_TITLE}">
     <meta name="twitter:description" content="{safe_home_desc}">
     <meta name="twitter:image" content="{hero_img_abs}">
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para Google Search & Motores de IA (GEO) -->
+    <script type="application/ld+json">
+    {home_schema_json}
+    </script>
 
     {COMMON_HEAD_STYLES}
 </head>
@@ -2145,6 +2440,7 @@ def generate_home_page(articles):
             {hero_html}
             {filtro_html}
             {grid_html}
+            {geo_manifesto}
             {render_newsletter_box(is_article=False)}
         </main>
     </div>
@@ -2161,6 +2457,7 @@ def generate_sobre_page():
     sobre_img = f"{PORTAL_URL}/imagens/lula-malabarismo-planalto-centrao.jpg"
     safe_portal_name = html.escape(PORTAL_NAME, quote=True)
     safe_desc = "O direito constitucional ao riso, à paródia e à crítica satírica do poder. Fundamentação jurídica nos arts. 5º e 220 da CF/88 e ADPF 130 STF."
+    sobre_schema_json = build_sobre_schema(sobre_url)
 
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -2187,6 +2484,11 @@ def generate_sobre_page():
     <meta name="twitter:title" content="Manifesto &amp; Aviso Legal | {safe_portal_name}">
     <meta name="twitter:description" content="{safe_desc}">
     <meta name="twitter:image" content="{sobre_img}">
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para AboutPage & Reconhecimento de Entidade (GEO) -->
+    <script type="application/ld+json">
+    {sobre_schema_json}
+    </script>
 
     {COMMON_HEAD_STYLES}
 </head>
@@ -2438,6 +2740,22 @@ def generate_robots():
     robots_content = f"""User-agent: *
 Disallow: /sala-de-maquinas
 Disallow: /sala-de-maquinas.html
+Allow: /
+
+# Motores de IA & Buscas Generativas (GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Applebot
 Allow: /
 
 Sitemap: {PORTAL_URL}/sitemap.xml
