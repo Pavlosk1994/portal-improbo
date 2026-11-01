@@ -68,6 +68,9 @@ ROBOTS_PATH = os.path.join(BASE_DIR, "robots.txt")
 VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
 
 COMMON_HEAD_STYLES = r"""
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -825,7 +828,7 @@ def render_header(is_article=False):
 
             <!-- Center: O NOME DO JORNAL (Permanece no topo ao rolar a página) -->
             <div class="w-2/4 text-center">
-                <a href="{home_link}" class="inline-block group" title="Ir para a página inicial do Ímprobo">
+                <a href="{home_link}" class="inline-block group" title="Ir para a página inicial do ÍMPROBO">
                     <h1 class="masthead-title font-serif font-black tracking-tight text-[#121212] dark:text-[#f3f3f5] group-hover:text-[#8B0000] transition-colors leading-none inline-block">
                         {PORTAL_NAME}
                     </h1>
@@ -2773,6 +2776,18 @@ def create_vercel_config():
             {
                 "source": "/(.*)",
                 "headers": [
+                    {
+                        "key": "Cache-Control",
+                        "value": "no-cache, no-store, must-revalidate"
+                    },
+                    {
+                        "key": "Pragma",
+                        "value": "no-cache"
+                    },
+                    {
+                        "key": "Expires",
+                        "value": "0"
+                    },
                     {
                         "key": "X-Content-Type-Options",
                         "value": "nosniff"

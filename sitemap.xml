@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://portal-improbo.vercel.app/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-pulpito-da-colera-silas-malafaia-chama-filhos-de-bolsonaro-de-burros.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-cirurgia-no-corpo-alheio-haddad-tenta-cortar-gastos-na-esplanada.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-despacho-do-travesseiro-lula-governa-de-curativo-no-alvorada.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-pacto-do-abraco-de-afogado-pt-se-une-ao-pl-pela-camara.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-herdeiro-do-condado-flavio-bolsonaro-acena-ao-centrao-para-2026.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-relogio-do-fim-do-mundo-stf-espera-relatorio-final-da-pf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/artigos/a-santa-ceia-da-anistia-flavio-bolsonaro-negocia-perdao-no-congresso.html</loc>
