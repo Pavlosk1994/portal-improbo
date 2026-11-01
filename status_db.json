@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-10-31T23:59:39.549902+00:00",
+  "ultima_atualizacao": "2026-11-01T07:14:35.740979+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-01T07:14:35.740926+00:00",
+      "horario_brt": "01/11/2026 07:14:35",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 12.4,
+      "slug": "as-seis-ilhas-de-angra-e-o-legislativo-de-praia",
+      "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO DE PRAIA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-10-31T23:59:39.549843+00:00",
       "horario_brt": "31/10/2026 23:59:39",
@@ -215,17 +226,6 @@
       "titulo": "A TEMPESTADE PERFEITA DO REAL: DÓLAR NAS NUVENS, JUROS NA ESTRATOSFERA E O POVO NO SUPERMERCADO EM QUEDA LIVRE",
       "imagem_tamanho_kb": 1127.3,
       "audio_tamanho_kb": 1207.0
-    },
-    {
-      "timestamp": "2026-10-29T05:17:10.298554",
-      "horario_brt": "29/10/2026 05:17:10",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial 5 Temas: O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
-      "duracao_segundos": 12.0,
-      "slug": "o-supremo-balcao-constitucional-togas-e-caciques-brindam-o-acordo-das-emendas-pix",
-      "titulo": "O SUPREMO BALCÃO CONSTITUCIONAL: TOGAS E CACIQUES BRINDAM O ACORDO DAS EMENDAS PIX EM SALÕES DOURADOS",
-      "imagem_tamanho_kb": 1204.4,
-      "audio_tamanho_kb": 1283.3
     }
   ],
   "radar_pautas": [
@@ -237,18 +237,11 @@
       "data_pub": "Sat, 31 Oct 2026 10:33:54 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro: veja o que pode acontecer com o mandato de senador após fuga para os EUA",
+      "titulo": "Câmara quer mudar a forma de eleição dos deputados; entenda o novo modelo em discussão",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
-      "score": 100.8,
-      "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/30/flavio-bolsonaro-nos-eua-relembre-a-relacao-de-afinidade-e-distancia-entre-o-senador-e-trump.ghtml",
-      "score": 98.0,
-      "data_pub": "Fri, 30 Oct 2026 06:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
+      "score": 100.6,
+      "data_pub": "Sun, 01 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "É #FAKE que Lula anunciou corte de R$ 6 bilhões na Saúde e na Educação após eleição de 2026; vídeo foi exibido no ano retrasado",
@@ -263,6 +256,13 @@
       "link": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
       "score": 94.4,
       "data_pub": "Fri, 30 Oct 2026 21:32:34 -0000"
+    },
+    {
+      "titulo": "Flávio Bolsonaro nos EUA: relembre a relação de afinidade e distância entre o senador e Trump",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/30/flavio-bolsonaro-nos-eua-relembre-a-relacao-de-afinidade-e-distancia-entre-o-senador-e-trump.ghtml",
+      "score": 90.0,
+      "data_pub": "Fri, 30 Oct 2026 06:00:00 -0000"
     }
   ]
 }
