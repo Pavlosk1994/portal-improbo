@@ -1,0 +1,43 @@
+{
+  "titulo": "O PARADOXO DA TOGA: STF AVISA QUE LEI QUE LIMITA O STF SERÁ DECLARADA INCONSTITUCIONAL EM 15 MINUTOS PELO PRÓPRIO STF",
+  "subtitulo": "Diante do avanço da PEC do Congresso que tenta amarrar as decisões individuais dos ministros, a Suprema Corte aciona o dispositivo de auto-preservação reflexa e lembra que em Brasília o juiz também apita o VAR.",
+  "categoria": "Suprema Ordem & VAR",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "STF avisa ao Congresso: qualquer lei aprovada para limitar o poder dos ministros será derrubada por liminar do próprio tribunal antes do cafezinho esfriar.",
+  "legenda_imagem": "Munido de apito no pescoço e marreta de ouro nas mãos, o colegiado do Supremo joga xadrez contra o Legislativo avisando que o xeque-mate já veio redigido na Constituição.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Alexandre de Moraes com apito de árbitro rebatendo projetos de lei do Congresso com martelo gigante de juiz em tribunal clássico.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style of STF justices in purple robes smashing legislative scrolls with a giant golden gavel like tennis rackets in a grand courtroom.",
+  "corpo": [
+    "A geometria do poder na Praça dos Três Poderes sempre desafiou os teoremas de Euclides, mas atingiu seu ápice de elasticidade quântica com a mais recente controvérsia entre o Congresso e a Suprema Corte. Irritados com o hábito de ministros do STF suspenderem leis inteiras por meio de canetadas solitárias às duas da madrugada de uma sexta-feira, deputados e senadores uniram forças para aprovar a 'PEC das Decisões Monocráticas'. A proposta visa, em termos simples, colocar um freio de mão na caneta dos magistrados. A resposta dos togados, contudo, veio em velocidade supersônica: avisaram que qualquer lei que limite o poder do tribunal será sumariamente declarada inconstitucional pelo próprio tribunal antes mesmo da publicação no Diário Oficial.",
+    "Trata-se do clássico e insuperável 'Paradoxo de Brasília': o Parlamento cria a regra, mas quem decide se a regra que limita o juiz vale é o próprio juiz que está sendo limitado. Em conversas reservadas nos corredores acarpetados do tribunal, ministros riem com desdém olímpico da audácia legislativa. 'Eles podem aprovar a PEC por unanimidade, em dois turnos, com salva de palmas e queima de fogos', confidenciou um magistrado enquanto degustava água mineral gasosa importada. 'Basta um partido nanico protocolar uma ADI na manhã seguinte e concedemos uma liminar restabelecendo nossos plenos poderes antes da primeira pausa para o cafezinho'.",
+    "Nos bastidores do Congresso, o sentimento é de quem joga uma partida de futebol onde o árbitro não apenas apita as faltas, mas também cobra os pênaltis, revisa o próprio VAR e ainda tem a prerrogativa estatutária de alterar o placar se achar que o jogo está ficando perigoso para a democracia. Líderes partidários ensaiam discursos inflamados na tribuna, ameaçam abrir CPIs e protocolar pedidos de impeachment, mas sabem que a resposta judicial costuma vir na forma de mandados de busca e apreensão da Polícia Federal executados ao raiar da alvorada.",
+    "Assim, a harmonia entre os Poderes segue sua coreografia habitual: o Legislativo finge que legisla contra a toga, a toga finge que se submete à Constituição, e o cidadão comum descobre que a única coisa verdadeiramente irrevogável na República é a certeza de que a última palavra sempre virá em latim, vestindo capa preta de seda pura e com prazo de 24 horas para cumprimento sob pena de multa diária."
+  ],
+  "milagres": [
+    {
+      "titulo": "O VAR Constitucional",
+      "texto": "Ter a prerrogativa exclusiva de apitar o próprio impedimento e validar o gol contra dos adversários em plenário virtual."
+    },
+    {
+      "titulo": "A Liminar Bumerangue",
+      "texto": "Suspender a lei que proíbe liminares utilizando exatamente uma liminar expedida em caráter de urgência urgentíssima."
+    },
+    {
+      "titulo": "A Hermenêutica Infinita",
+      "texto": "Descobrir que o artigo que garante a independência dos poderes na verdade garante a soberania eterna dos onze integrantes da corte."
+    },
+    {
+      "titulo": "A Velocidade do Despacho",
+      "texto": "Derrubar três meses de debates legislativos e audiências públicas com um parágrafo único digitado no celular durante o embarque para Lisboa."
+    }
+  ],
+  "contexto_real": "A Câmara dos Deputados e a CCJ avançaram na tramitação de propostas de emenda à Constituição (PECs) que limitam as decisões monocráticas dos ministros do STF e abrem caminho para o Congresso suspender decisões da corte. Em resposta de bastidores, ministros do Supremo já indicaram que qualquer alteração que fira cláusulas pétreas da separação dos poderes será prontamente judicializada e derrubada pelo próprio tribunal.",
+  "slug": "o-paradoxo-da-toga-stf-avisa-que-lei-que-limita-o-stf-e-inconstitucional",
+  "data": "01 de Novembro de 2026",
+  "imagem_capa": "imagens/o-paradoxo-da-toga-stf-avisa-que-lei-que-limita-o-stf-e-inconstitucional.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-01T08:00:00.000000",
+  "audio_url": "audio/o-paradoxo-da-toga-stf-avisa-que-lei-que-limita-o-stf-e-inconstitucional.mp3"
+}
