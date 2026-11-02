@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-02T07:30:41.932208+00:00",
+  "ultima_atualizacao": "2026-11-02T20:41:06.125809+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-02T20:41:06.125710+00:00",
+      "horario_brt": "02/11/2026 20:41:06",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.8,
+      "slug": "a-danca-dos-28-lugares-na-mesa-do-senado",
+      "titulo": "A DANÇA DOS 28 LUGARES NA MESA DO SENADO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-02T07:30:41.932156+00:00",
       "horario_brt": "02/11/2026 07:30:41",
@@ -215,17 +226,6 @@
       "titulo": "O SACRISTÃO DAS BOAS NOTÍCIAS: LULA DÁ BRONCA NO MINISTÉRIO E DESCOBRE QUE POVO NÃO COME DISCURSO DA SECOM",
       "imagem_tamanho_kb": 1263.0,
       "audio_tamanho_kb": 1287.4
-    },
-    {
-      "timestamp": "2026-10-29T23:51:16.072060",
-      "horario_brt": "29/10/2026 23:51:16",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial 6 Temas: O COBRADOR DE CONDADO: FLÁVIO BATE NA PORTA DOS PREFEITOS ELEITOS PARA EXIGIR O DÍZIMO MORAL DA FAMÍLIA",
-      "duracao_segundos": 12.0,
-      "slug": "o-cobrador-de-condado-flavio-bate-na-porta-dos-prefeitos-para-cobrar-o-dizimo",
-      "titulo": "O COBRADOR DE CONDADO: FLÁVIO BATE NA PORTA DOS PREFEITOS ELEITOS PARA EXIGIR O DÍZIMO MORAL DA FAMÍLIA",
-      "imagem_tamanho_kb": 1314.5,
-      "audio_tamanho_kb": 1269.7
     }
   ],
   "radar_pautas": [
@@ -233,15 +233,8 @@
       "titulo": "Presidência do Senado: PL deve ter candidato próprio, mesmo com aproximação de Alcolumbre",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/02/presidencia-do-senado-pl-deve-ter-candidato-proprio-mesmo-com-aproximacao-de-alcolumbre.ghtml",
-      "score": 97.0,
+      "score": 90.0,
       "data_pub": "Mon, 02 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Advogado Willer Tomaz tem outras cinco casas em ilhas de Angra além da disputada com Richarlison",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
-      "score": 92.0,
-      "data_pub": "Sat, 31 Oct 2026 10:33:54 -0000"
     },
     {
       "titulo": "É #FAKE que Lula anunciou corte de R$ 6 bilhões na Saúde e na Educação após eleição de 2026; vídeo foi exibido no ano retrasado",
@@ -256,6 +249,13 @@
       "link": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
       "score": 86.4,
       "data_pub": "Fri, 30 Oct 2026 21:32:34 -0000"
+    },
+    {
+      "titulo": "Advogado Willer Tomaz tem outras cinco casas em ilhas de Angra além da disputada com Richarlison",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "score": 84.0,
+      "data_pub": "Sat, 31 Oct 2026 10:33:54 -0000"
     },
     {
       "titulo": "Câmara quer mudar a forma de eleição dos deputados; entenda o novo modelo em discussão",
