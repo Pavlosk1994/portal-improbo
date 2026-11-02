@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://portal-improbo.vercel.app/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-paradoxo-da-toga-pl-quer-moraes-fora-mas-teme-a-vaga-de-lula.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-apostolo-de-orlando-flavio-vai-a-missa-e-comanda-o-zap-da-florida.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-tinder-do-camarada-militancia-cria-app-de-paquera-ideologica-no-zap.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-panico-do-descanso-prefeitos-e-patroes-entram-em-surto-com-o-fim-da-6x1.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-barreira-do-tiktok-camara-quer-mudar-regras-para-frear-super-puxadores.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-balcao-da-coroa-alcolumbre-vende-anistia-e-blindagem-pelo-senado.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/artigos/o-pulpito-da-colera-silas-malafaia-chama-filhos-de-bolsonaro-de-burros.html</loc>
