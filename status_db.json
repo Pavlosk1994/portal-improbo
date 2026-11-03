@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-03T02:49:19.233716+00:00",
+  "ultima_atualizacao": "2026-11-03T18:21:24.631231+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-03T18:21:24.631158+00:00",
+      "horario_brt": "03/11/2026 18:21:24",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 14.2,
+      "slug": "a-nova-vitrine-da-seguranca-mais-um-ministerio",
+      "titulo": "A NOVA VITRINE DA SEGURANÇA: MAIS UM MINISTÉRIO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-03T02:49:19.233657+00:00",
       "horario_brt": "03/11/2026 02:49:19",
@@ -215,54 +226,43 @@
       "titulo": "O LEILÃO DA ESPERANÇA: HADDAD OFERECE A SAÚDE E O BPC NO ALTAR DA FARIA LIMA PARA SALVAR O ARCABOUÇO",
       "imagem_tamanho_kb": 1272.0,
       "audio_tamanho_kb": 1295.7
-    },
-    {
-      "timestamp": "2026-10-29T23:51:16.072204",
-      "horario_brt": "29/10/2026 23:51:16",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial 6 Temas: A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
-      "duracao_segundos": 12.0,
-      "slug": "a-barricada-da-toga-ministros-do-stf-vestem-armaduras-de-veludo-contra-os-mandatos",
-      "titulo": "A BARRICADA DA TOGA: MINISTROS DO STF VESTEM ARMADURAS DE VELUDO CONTRA A OUSADIA DOS MANDATOS NO SENADO",
-      "imagem_tamanho_kb": 1120.8,
-      "audio_tamanho_kb": 1263.7
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Presidência do Senado: PL deve ter candidato próprio, mesmo com aproximação de Alcolumbre",
+      "titulo": "Senado deve votar nesta terça PEC da Segurança Pública",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/02/presidencia-do-senado-pl-deve-ter-candidato-proprio-mesmo-com-aproximacao-de-alcolumbre.ghtml",
-      "score": 90.0,
-      "data_pub": "Mon, 02 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/03/senado-deve-votar-nesta-terca-pec-da-seguranca-publica.ghtml",
+      "score": 109.2,
+      "data_pub": "Tue, 03 Nov 2026 03:00:01 -0000"
     },
     {
-      "titulo": "Advogado Willer Tomaz tem outras cinco casas em ilhas de Angra além da disputada com Richarlison",
+      "titulo": "PEC da Segurança Pública vai ser o primeiro teste de Lula no Congresso após reeleição",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
-      "score": 84.0,
-      "data_pub": "Sat, 31 Oct 2026 10:33:54 -0000"
+      "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/03/pec-da-seguranca-publica-vai-ser-o-primeiro-teste-de-lula-no-congresso-apos-reeleicao.ghtml",
+      "score": 107.8,
+      "data_pub": "Tue, 03 Nov 2026 15:20:10 -0000"
     },
     {
-      "titulo": "Câmara quer mudar a forma de eleição dos deputados; entenda o novo modelo em discussão",
+      "titulo": "Líder da oposição no Senado diz que vai votar a favor da PEC da Segurança, mas insistirá na redução da maioridade penal",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
-      "score": 83.6,
-      "data_pub": "Sun, 01 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/03/lider-da-oposicao-no-senado-diz-que-vai-votar-a-favor-da-pec-da-seguranca-mas-insistira-na-reducao-da-maioridade-penal.ghtml",
+      "score": 106.6,
+      "data_pub": "Tue, 03 Nov 2026 16:23:55 -0000"
     },
     {
-      "titulo": "Novo não reconhece resultado das eleições e Mobiliza não se manifesta sobre vitória de Lula nas urnas",
+      "titulo": "Alcolumbre escolhe aliado para relatoria do Orçamento em meio à articulação pela reeleição no Senado",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml",
-      "score": 73.2,
-      "data_pub": "Sat, 31 Oct 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/03/alcolumbre-escolhe-aliado-para-relatoria-do-orcamento-em-meio-a-articulacao-pela-reeleicao-no-senado.ghtml",
+      "score": 98.2,
+      "data_pub": "Tue, 03 Nov 2026 18:11:46 -0000"
     },
     {
-      "titulo": "Flávio Bolsonaro: veja o que pode acontecer com o mandato de senador após fuga para os EUA",
+      "titulo": "Gilmar Mendes diz que comando do TSE deve agir como 'árbitro equidistante'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/10/29/flavio-bolsonaro-veja-o-que-pode-acontecer-com-o-mandato-de-senador-apos-fuga-para-os-eua.ghtml",
-      "score": 70.8,
-      "data_pub": "Thu, 29 Oct 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/03/gilmar-mendes-diz-que-comando-do-tse-deve-agir-como-arbitro-equidistante.ghtml",
+      "score": 85.2,
+      "data_pub": "Tue, 03 Nov 2026 11:28:11 -0000"
     }
   ]
 }
