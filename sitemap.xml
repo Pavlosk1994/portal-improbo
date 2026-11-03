@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://portal-improbo.vercel.app/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-guerra-dos-xerifes-tarcisio-e-caiado-se-rebelam-contra-a-pec-de-lewandowski.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-espada-de-veludo-haddad-tenta-cortar-gastos-e-bate-na-pensao-dos-generais.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-leilao-do-niobio-lula-faz-malabarismo-com-biden-e-xi-jinping-no-g20.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-carimbo-do-invisivel-congresso-aprova-lei-de-transparencia-para-emendas-pix.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-casamento-do-seculo-pt-e-pl-sobem-ao-altar-por-hugo-motta-na-camara.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-foguete-do-cambio-dolar-roca-os-seis-reais-e-faria-lima-cobra-a-conta-do-cafe.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/artigos/o-paradoxo-da-toga-pl-quer-moraes-fora-mas-teme-a-vaga-de-lula.html</loc>

@@ -1,0 +1,43 @@
+{
+  "titulo": "O FOGUETE DO CÂMBIO: DÓLAR ROÇA OS SEIS REAIS E FARIA LIMA EM SURTO",
+  "subtitulo": "Com a moeda americana batendo recordes e o Banco Central elevando os juros da Selic, o mercado financeiro entra em histeria e o cidadão paga o pato no supermercado.",
+  "categoria": "💸 O Bolso Furado",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Conselheiro Acácio",
+  "destaque": false,
+  "frase_disparo_zap": "Dólar encosta em R$ 6,00 e o Banco Central prepara nova alta da Selic: na montanha-russa da economia brasileira, a Faria Lima chora em jatinho e o povo paga caro até no pãozinho.",
+  "legenda_imagem": "O touro dourado da Faria Lima em pânico correndo de uma nota de dólar com asas de foguete, enquanto o cidadão olha assustado para o visor da caixa registradora do mercado.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de uma nota gigante de dólar transformada em foguete verde disparando para a estratosfera rindo com dentes de ouro, enquanto operadores da Faria Lima de colete preto e gravata choram berrando ao telefone e uma dona de casa segura um carrinho de supermercado quase vazio.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style showing a giant green US dollar bill with rocket thrusters soaring into outer space, while distressed Faria Lima financial brokers in fleece vests weep hysterically and a Brazilian shopper holds an empty grocery cart.",
+  "corpo": [
+    "A montanha-russa da macroeconomia brasileira atingiu sua velocidade máxima de parafuso com a cotação do dólar comercial roçando a barreira psicológica e astronômica dos seis reais. Diante das telas piscando em vermelho sangue nas mesas de operações da Avenida Faria Lima, analistas de mercado, operadores de fundos e influenciadores de finanças entraram em estado de comoção coletiva, disparando relatórios catastróficos que exigem do Ministério da Fazenda uma sangria orçamentária imediata sob pena de desintegração atômica das contas públicas.",
+    "Para conter a fuga desabalada do capital estrangeiro e tentar colocar rédeas na inflação que ameaça os preços dos alimentos básicos nas prateleiras, o Comitê de Política Monetária do Banco Central prepara-se para apertar ainda mais o parafuso da taxa Selic. A liturgia das taxas de juros nas alturas é vendida ao público com a habitual sobriedade técnica: trata-se de um 'remédio amargo, porém indispensável' para drenar a liquidez da economia, assegurando que o empresário não invista, o consumidor não compre e o rentista continue lucrando fortunas sem precisar tirar o paletó.",
+    "No balcão da padaria e no caixa do supermercado, a elegância dos gráficos de projeção cambial traduz-se em pura indignação cotidiana. O café moído, o óleo de soja e a carne bovina tornaram-se artigos de luxo comparáveis a joias da realeza britânica. Enquanto economistas engravatados debatem se o déficit primário será de meio por cento ou de zero vírgula quatro, o cidadão comum calcula aflito se o salário do mês sobreviverá à compra de uma cartela de ovos e um botijão de gás.",
+    "O grande espetáculo do câmbio tropical revela, assim, a perfeita sincronia entre a ansiedade dos financistas e o conformismo da elite política. O governo culpa os especuladores e a conjuntura eleitoral externa; o mercado culpa o assistencialismo social e a falta de coragem fiscal; e o Banco Central atua como bombeiro que apaga o fogo jogando gasolina de juros compostos. No meio desse tiroteio de teorias, a única certeza inabalável é de que, suba o dólar ou caia o real, a conta da comédia continuará sendo debitada religiosamente no mesmo bolso furado de sempre."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Estratosfera da Nota Verde",
+      "texto": "Ver a moeda americana voar mais alto que satélite meteorológico toda vez que um ministro gagueja sobre corte de despesas."
+    },
+    {
+      "titulo": "A Terapia do Juro Alto",
+      "texto": "Combater a alta dos preços encarecendo o crédito a ponto de ninguém mais conseguir comprar nada parcelado na praça."
+    },
+    {
+      "titulo": "O Café com Cotação de Ouro",
+      "texto": "Transformar o cafezinho preto da manhã em investimento financeiro de alto risco regulado pelo mercado futuro de Chicago."
+    },
+    {
+      "titulo": "O Pranto do Faria Limer",
+      "texto": "Assistir a operadores de fundos chorando de desespero cívico diante das câmeras, enquanto recolhem lucros recordes na renda fixa."
+    }
+  ],
+  "contexto_real": "A alta expressiva do dólar frente ao real, aproximando-se da marca de R$ 6,00, em conjunto com as incertezas fiscais sobre o pacote de corte de gastos do governo e as expectativas de novas altas na taxa Selic pelo Banco Central, pressionou a inflação de alimentos e gerou instabilidade nos mercados financeiros no final de 2024.",
+  "slug": "o-foguete-do-cambio-dolar-roca-os-seis-reais-e-faria-lima-cobra-a-conta-do-cafe",
+  "data": "03 de Novembro de 2026",
+  "imagem_capa": "imagens/o-foguete-do-cambio-dolar-roca-os-seis-reais-e-faria-lima-cobra-a-conta-do-cafe.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-03T10:20:00.000000",
+  "audio_url": "audio/o-foguete-do-cambio-dolar-roca-os-seis-reais-e-faria-lima-cobra-a-conta-do-cafe.mp3"
+}

@@ -1,0 +1,43 @@
+{
+  "titulo": "A ESPADA DE VELUDO: HADDAD TENTA CORTAR GASTOS E BATE NA PENSÃO MILITAR",
+  "subtitulo": "Ministro da Fazenda tenta estancar o déficit passando a tesoura na Esplanada, mas bate de frente com o quartel e descobre que a austeridade é só para civis.",
+  "categoria": "💸 O Bolso Furado",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Serafim da Silva",
+  "destaque": false,
+  "frase_disparo_zap": "Haddad tenta colocar a previdência dos militares no pacote de corte de gastos e descobre a regra de ouro de Brasília: general de pijama não aceita sacrifício fiscal.",
+  "legenda_imagem": "Haddad com um avental de cirurgião e uma tesoura de papel sem ponta, tentando timidamente cortar as dragonas douradas e medalhas de generais condecorados.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Fernando Haddad vestido de alfaiate magro com uma pequena tesoura escolar, tremendo de medo diante de um general obeso de quatro estrelas coberto de medalhas brilhantes e quepe gigante, protegendo com um escudo blindado um cofre escrito pensão militar.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine style showing Fernando Haddad dressed as a nervous tailor holding tiny blunt plastic scissors, tiptoeing toward a rotund Brazilian Army general covered in medals and giant epaulets who shields a golden safe labeled Military Pension.",
+  "corpo": [
+    "A peregrinação de Fernando Haddad pelas ante-salas dos ministérios em busca de bilhões de reais para saciar a fúria do mercado financeiro e salvar o arcabouço fiscal produziu sua mais sublime obra de realismo fantástico. Após passar a lâmina afiada sobre o BPC, congelar verbas da saúde e apertar o cerco sobre os cadastros de beneficiários de programas sociais, a equipe econômica achou por bem cruzar a rua da Esplanada e bater à porta do Ministério da Defesa com uma proposta audaciosa: revisar os privilégios previdenciários e as pensões vitalícias que sustentam dinastias inteiras de herdeiros fardados.",
+    "A recepção dos generais à tentativa de auditar o soldo foi de uma frieza polar digna da Sibéria. Bastou o ministro José Múcio Monteiro repassar a sugestão de mexer na aposentadoria da caserna para que o Alto Comando sacasse o manual de etiqueta patriótica. Para as Forças Armadas, cortar o auxílio do trabalhador que ganha um salário mínimo é uma necessidade macroeconômica imperiosa; mexer na pensão das filhas de coronéis e nos soldos integrais da reserva é um atentado hediondo à soberania nacional e à honra das três armas.",
+    "O constrangimento do Ministério da Fazenda expõe a assimetria comovente da austeridade tropical. Enquanto ministros civis das pastas de Educação e Trabalho são convocados ao Planalto aos berros e obrigados a sangrar orçamentos diante de câmeras de TV, as negociações com a Defesa transcorrem em tom de chá das cinco com biscoitos de nata e veludo nos ouvidos. Ninguém ousa elevar o tom de voz diante de uma farda condecorada, sob a justificativa de que 'a tropa precisa de estabilidade psicológica' para continuar pintando meios-fios e gerando notas protocolares de desagravo.",
+    "No encerramento dessa valsa orçamentária, a fórmula tradicional do pacto de Brasília prevalece intacta. Haddad sairá do palácio anunciando um corte histórico de dezenas de bilhões de reais para acalmar a Faria Lima, composto quase integralmente por sacrifícios exigidos do andar de baixo da pirâmide civil. Para os militares, restará a glória imutável da folha de pagamento integral, provando que na República do pau-brasil a espada pode ser cega para o combate, mas continua afiadíssima para fatiar o orçamento da União."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Teorema do Soldo Intocável",
+      "texto": "Comprovar que a inflação e o déficit das contas públicas são causados exclusivamente pelos civis que dependem do salário mínimo."
+    },
+    {
+      "titulo": "A Blindagem da Dragona",
+      "texto": "Classificar qualquer tentativa de auditoria de benefícios da caserna como uma ameaça à integridade territorial do continente."
+    },
+    {
+      "titulo": "A Tesoura de Papelão",
+      "texto": "Ver o ministro da Fazenda cortar como um leão nas pastas sociais e negociar como um gatinho ronronando na porta do quartel."
+    },
+    {
+      "titulo": "O Sacrifício dos Outros",
+      "texto": "Publicar portarias inflamadas exigindo austeridade do cidadão enquanto a reserva comemora reajustes automáticos com champanhe no clube militar."
+    }
+  ],
+  "contexto_real": "A inclusão das Forças Armadas e da previdência dos militares nas negociações do pacote de corte de gastos conduzido por Fernando Haddad gerou forte resistência do ministro da Defesa, José Múcio, e dos comandantes militares, que rejeitaram alterações profundas em pensões e benefícios em meio à pressão fiscal do governo.",
+  "slug": "a-espada-de-veludo-haddad-tenta-cortar-gastos-e-bate-na-pensao-dos-generais",
+  "data": "03 de Novembro de 2026",
+  "imagem_capa": "imagens/a-espada-de-veludo-haddad-tenta-cortar-gastos-e-bate-na-pensao-dos-generais.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-03T10:40:00.000000",
+  "audio_url": "audio/a-espada-de-veludo-haddad-tenta-cortar-gastos-e-bate-na-pensao-dos-generais.mp3"
+}
