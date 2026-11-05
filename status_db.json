@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-04T18:31:55.132848+00:00",
+  "ultima_atualizacao": "2026-11-05T01:23:25.150858+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-05T01:23:25.150811+00:00",
+      "horario_brt": "05/11/2026 01:23:25",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 39.5,
+      "slug": "fugir-e-um-dever-civico-diz-senador-dos-eua",
+      "titulo": "FUGIR É UM DEVER CÍVICO, DIZ SENADOR DOS EUA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-04T18:31:55.132800+00:00",
       "horario_brt": "04/11/2026 18:31:55",
@@ -215,40 +226,22 @@
       "titulo": "O GENERAL DO RETRATO: FLÁVIO COBRA LEALDADE AO NOME DO PAI ENQUANTO ALIADOS ESCONDEM O CRACHÁ NO CONGRESSO",
       "imagem_tamanho_kb": 954.2,
       "audio_tamanho_kb": 1251.0
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338640",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: A GUERRA DAS PEDRAS PRECIOSAS: BRASIL FAZ MALABARISMO COM TERRAS RARAS ENTRE O DRAGÃO CHINÊS E A ÁGUIA DO TIO SAM",
-      "duracao_segundos": 12.0,
-      "slug": "a-guerra-das-pedras-preciosas-brasil-malabarismo-terras-raras-eua-china",
-      "titulo": "A GUERRA DAS PEDRAS PRECIOSAS: BRASIL FAZ MALABARISMO COM TERRAS RARAS ENTRE O DRAGÃO CHINÊS E A ÁGUIA DO TIO SAM",
-      "imagem_tamanho_kb": 1156.9,
-      "audio_tamanho_kb": 1292.5
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Rogério Marinho, do PL, lança candidatura à presidência do Senado",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/04/rogerio-marinho-do-pl-lanca-candidatura-a-presidencia-do-senado.ghtml",
-      "score": 103.0,
-      "data_pub": "Wed, 04 Nov 2026 16:18:42 -0000"
-    },
-    {
-      "titulo": "Nos EUA, Flávio Bolsonaro registra presença em sessão do Senado que discute a PEC da Segurança Pública",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/03/nos-eua-flavio-bolsonaro-registra-presenca-em-sessao-do-senado.ghtml",
-      "score": 100.8,
-      "data_pub": "Tue, 03 Nov 2026 21:00:36 -0000"
-    },
-    {
-      "titulo": "Governabilidade de Lula exigirá negociação e acordos além da Esplanada",
+      "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/governabilidade-de-lula-exigira-negociacao-e-acordos-alem-da-esplanada",
-      "score": 100.5,
-      "data_pub": "Tue, 03 Nov 2026 19:05:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
+      "score": 105.3,
+      "data_pub": "Wed, 04 Nov 2026 17:29:00 -0300"
+    },
+    {
+      "titulo": "Após críticas de líder do PL, Alcolumbre diz que lamenta eleição de quem se promove 'ofendendo e agredindo'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/04/apos-criticas-de-lider-do-pl-alcolumbre-diz-que-lamenta-eleicao-de-quem-se-promove-ofendendo-e-agredindo.ghtml",
+      "score": 103.0,
+      "data_pub": "Wed, 04 Nov 2026 22:09:11 -0000"
     },
     {
       "titulo": "Senado deve votar nesta terça PEC da Segurança Pública",
@@ -258,11 +251,18 @@
       "data_pub": "Tue, 03 Nov 2026 03:00:01 -0000"
     },
     {
-      "titulo": "Entenda a diferença entre o voto proporcional e o voto distrital misto",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/entenda-diferenca-entre-o-voto-proporcional-e-o-voto-distrital-misto",
-      "score": 93.9,
-      "data_pub": "Wed, 04 Nov 2026 07:50:00 -0300"
+      "titulo": "Rogério Marinho, do PL, lança candidatura à presidência do Senado",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/04/rogerio-marinho-do-pl-lanca-candidatura-a-presidencia-do-senado.ghtml",
+      "score": 96.0,
+      "data_pub": "Wed, 04 Nov 2026 16:18:42 -0000"
+    },
+    {
+      "titulo": "Alcolumbre decide aguardar Câmara votar redução da maioridade penal para pautar tema no Senado",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/04/alcolumbre-decide-aguardar-camara-votar-reducao-da-maioridade-penal-para-pautar-tema-no-senado.ghtml",
+      "score": 94.6,
+      "data_pub": "Wed, 04 Nov 2026 20:15:34 -0000"
     }
   ]
 }
