@@ -19,4 +19,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://improbo.vercel.app/sitemap.xml
+Sitemap: https://portal-improbo.vercel.app/sitemap.xml
