@@ -1,0 +1,43 @@
+{
+  "titulo": "O MILAGRE DA FOLGA: QUEM TRABALHA TRÊS DIAS CONDENA O DESCANSO",
+  "subtitulo": "Parlamentares que desfrutam de feriadões perpétuos em Brasília alertam que a economia entrará em colapso se o cidadão comum tiver dois dias de folga.",
+  "categoria": "💸 O Ralo do Orçamento",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Comendador Silva",
+  "destaque": false,
+  "frase_disparo_zap": "Deputado que bate ponto de terça a quinta em Brasília jura solenemente que o Brasil vai falir se o balconista da farmácia descansar no sábado e no domingo.",
+  "legenda_imagem": "Parlamentares confortavelmente acomodados em Brasília alertam sobre os graves perigos econômicos de conceder dois dias de folga aos trabalhadores comuns.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de parlamentares rechonchudos e engravatados relaxando em redes de descanso e poltronas reclináveis de veludo no plenário da Câmara dos Deputados com coquetéis tropicais, enquanto olham com desdém e horror para um calendário de trabalho onde o sábado está marcado como dia de folga para os trabalhadores.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine and Pasquim style showing plump Brazilian congressmen lounging luxuriously on velvet hammocks and recliners in the marble congress hall sipping tropical drinks, pointing accusing fingers in horror at a wall calendar where Saturday and Sunday are marked as rest days for workers, dynamic cross-hatching, gouache textures, absolutely no text, no words, no speech bubbles.",
+  "corpo": [
+    "Não há espetáculo mais comovente em Brasília do que testemunhar uma autoridade pública discursando, com a fronte ungida pela gravidade cívica, sobre a sagrada virtude do trabalho exaustivo alheio. Bastou a proposta de emenda constitucional pelo fim da escala 6x1 ganhar as redes e as esquinas do país para que os corredores do Congresso Nacional fossem tomados por um sobressalto moral. Da tribuna do plenário, parlamentares indignados alertaram que conceder dois dias de descanso semanal ao cidadão comum causará a ruína imediata do Produto Interno Bruto e a derrocada da civilização ocidental.",
+    "A lição de disciplina laboral ganha contornos de pura alta-comédia quando se observa a rotina dos próprios oradores. Notórios praticantes da lendária escala parlamentar 3x4 — na qual desembarcam na capital federal na terça-feira à tarde e decolam de volta aos seus estados na quinta-feira ao meio-dia —, os legisladores não veem qualquer contradição entre seus feriadões perpétuos e a exigência de que o balconista da farmácia cumpra jornadas ininterruptas de seis dias por um salário de sobrevivência. Para as elites políticas, a preguiça só é um vício moral quando praticada por quem anda de transporte público.",
+    "Nas confederações empresariais e nos grupos de investidores, a reação beirou o delírio apocalíptico. Porta-vozes de ternos caríssimos desfilaram em emissoras de televisão profetizando que padarias fecharão as portas, o comércio entrará em colapso e o país será invadido pelo caos se o trabalhador tiver tempo livre para passear em uma praça no sábado. A tese econômica predominante nas altas rodas é de que a produtividade nacional não depende de tecnologia, infraestrutura ou educação de qualidade, mas sim da capacidade de manter o cidadão permanentemente exausto e sem fôlego para reclamar.",
+    "Do outro lado do plenário, a esquerda parlamentar surfa na onda digital da indignação, posando com abaixo-assinados gigantescos enquanto calcula os ganhos em seguidores e votos para as próximas eleições proporcionais. Entre o pânico patronal que antecipa o juízo final e a marquetagem progressista que promete uma utopia de fins de semana infinitos, o povo brasileiro segue cumprindo seu expediente sagrado. Afinal, em uma república onde o descanso dos governantes é bancado pelo erário, a única garantia constitucional infalível é a de que alguém sempre terá que trabalhar para pagar a conta da corte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Escala 3x4 Parlamentar",
+      "texto": "Bater ponto no Congresso de terça à quinta e considerar-se o modelo supremo de esforço laboral que toda a nação deve seguir."
+    },
+    {
+      "titulo": "O Apocalipse do Domingo",
+      "texto": "Sustentar que a economia nacional deixará de funcionar caso o atendente de supermercado consiga almoçar com os filhos no fim de semana."
+    },
+    {
+      "titulo": "A Solidariedade de Gabinete",
+      "texto": "Gravar vídeos indignados exigindo mais tempo livre para o trabalhador enquanto mantém trinta assessores comissionados trabalhando no feriado."
+    },
+    {
+      "titulo": "A Ética da Conveniência",
+      "texto": "Achar que dois dias de descanso para quem ganha salário mínimo é luxo prejudicial, enquanto dois meses de recesso legislativo é prerrogativa republicana."
+    }
+  ],
+  "contexto_real": "A mobilização popular e parlamentar em torno da Proposta de Emenda à Constituição (PEC) que propõe o fim da escala de trabalho 6x1 no Brasil, reduzindo a jornada semanal limite para quatro dias. O tema gerou intenso debate entre movimentos trabalhistas e setores empresariais que apontaram riscos de perda de competitividade e custos operacionais, suscitando comparações irônicas com a rotina de trabalho concentrada de deputados e senadores no Congresso Nacional.",
+  "slug": "o-milagre-da-folga-deputados-que-trabalham-tres-dias-barram-a-6x1",
+  "data": "06 de Novembro de 2026",
+  "imagem_capa": "imagens/o-milagre-da-folga-deputados-que-trabalham-tres-dias-barram-a-6x1.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-06T06:10:00.000000",
+  "audio_url": "audio/o-milagre-da-folga-deputados-que-trabalham-tres-dias-barram-a-6x1.mp3"
+}

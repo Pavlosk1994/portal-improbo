@@ -1,0 +1,43 @@
+{
+  "titulo": "O SEGREDO DO TÚMULO: FLÁVIO PASSA VERGONHA NO NEW YORK TIMES",
+  "subtitulo": "Senador concede entrevista em Miami para posar de mártir, diz que levará rota de fuga para a cova e tem suas teses desmontadas pelo jornal americano.",
+  "categoria": "🎪 O Grande Teatro",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Serafim da Silva",
+  "destaque": true,
+  "frase_disparo_zap": "Flávio Bolsonaro no NYT: posou de herói perseguido, jurou que leva a fuga para o túmulo, mas o jornal americano desmontou tudo e mostrou o tamanho do vexame.",
+  "legenda_imagem": "Flávio Bolsonaro suando frio em suíte de Miami diante de microfones da imprensa internacional, segurando uma lápide de bolso com seus segredos enquanto jornalistas analisam os fatos.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim de Flávio Bolsonaro em uma suíte de hotel em Miami com palmeiras na janela, vestindo terno amarrotado e suando profusamente, segurando uma pequena lápide fúnebre de pedra contra o peito com expressão conspiratória, enquanto repórteres e editores com óculos e gravadores desmontam papéis com teses estapafúrdias sobre o Brasil.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine and Pasquim style showing Brazilian politician Flávio Bolsonaro sweating profusely in a Miami luxury hotel suite, clutching a miniature stone tombstone against his chest like a pirate guarding a secret map, while sharp American journalists with magnifying glasses analyze shredded documents, palm trees outside the window, dynamic cross-hatching, gouache textures, absolutely no text, no words, no speech bubbles.",
+  "corpo": [
+    "A diplomacia do vitimismo bolsonarista tentou alcançar a glória cinematográfica internacional, mas acabou estacionada no constrangimento bilíngue de uma suíte executiva na Flórida. Disposto a convencer o planeta de que lidera uma intrépida dissidência clandestina contra as forças ocultas do Planalto e as togas de Brasília, o senador Flávio Bolsonaro recebeu a reportagem do The New York Times para uma sabatina de 75 minutos. Esperava sair retratado como o Nelson Mandela de Miami Beach; saiu catalogado como um turista de luxo que tropeça nas próprias desculpas.",
+    "O clímax da encenação dramática ocorreu no momento em que os repórteres americanos questionaram a logística exata de sua partida do território nacional. Em vez de admitir a prosaica travessia de fronteiras com escala conveniente e passaporte em punho, o parlamentar vestiu a capa do agente secreto tropical e disparou uma frase de efeito digna de folhetim radiofônico: 'Como cheguei até aqui, levarei isso para o túmulo comigo'. A redação do maior jornal do mundo não conteve a perplexidade diante de tanta pompa para ocultar uma rota aérea comercial.",
+    "Para desespero da assessoria parlamentar que sonhava com um perfil laudatório nas páginas nobres de Manhattan, o correspondente internacional aplicou o método rude da checagem documental. Parágrafo por parágrafo, a matéria desmontou as alegações de perseguição política implacável, expôs a ausência cabal de provas sobre urnas eletrônicas enfeitiçadas e apontou as contradições flagrantes sobre o suporte logístico recebido de burocratas estrangeiros. O martírio autoproclamado desmanchou-se sob a luz impiedosa das apurações factuais.",
+    "O episódio consagra uma tradição imorredoura da política brasileira: a certeza inabalável de que a retórica triunfante dos grupos de mensagens instantâneas funciona com a mesma eficácia diante da imprensa internacional. Ao prometer levar para o descanso eterno o segredo de uma viagem que qualquer agente de alfândega consegue rastrear em três cliques, o senador apenas comprovou que a verdadeira ameaça à sua carreira nunca foi o STF ou a Polícia Federal, mas uma simples pergunta com ponto de interrogação no final."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Juramento da Cova",
+      "texto": "Tratar a compra de uma passagem aérea para os Estados Unidos como se fosse o plano de fuga de Alcatraz protegido pela máfia siciliana."
+    },
+    {
+      "titulo": "O Exílio Cinco Estrelas",
+      "texto": "Denunciar a opressão tirânica do Estado brasileiro direto de um resort ensolarado à beira da piscina em Miami."
+    },
+    {
+      "titulo": "A Checagem Sem Piedade",
+      "texto": "Descobrir estarrecido que jornalistas internacionais costumam exigir fatos e documentos em vez de encaminhamentos de correntes no aplicativo."
+    },
+    {
+      "titulo": "O Mártir de Papel",
+      "texto": "Tentar vender uma biografia épica de perseguido político e ser reduzido a um personagem cômico nas páginas do periódico nov-iorquino."
+    }
+  ],
+  "contexto_real": "A repercussão internacional da primeira entrevista concedida por Flávio Bolsonaro após deixar o Brasil rumo aos Estados Unidos, publicada pelo The New York Times em novembro de 2026. Na conversa de 75 minutos realizada em Miami, o senador recusou-se a detalhar como viajou para a Flórida declarando que 'levaria para o túmulo', enquanto a reportagem desmontou suas acusações sem provas sobre fraudes nas urnas e apontou indícios de auxílio externo em sua rota.",
+  "slug": "o-segredo-do-tumulo-flavio-bolsonaro-passa-vergonha-no-new-york-times",
+  "data": "06 de Novembro de 2026",
+  "imagem_capa": "imagens/o-segredo-do-tumulo-flavio-bolsonaro-passa-vergonha-no-new-york-times.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-06T06:35:00.000000",
+  "audio_url": "audio/o-segredo-do-tumulo-flavio-bolsonaro-passa-vergonha-no-new-york-times.mp3"
+}

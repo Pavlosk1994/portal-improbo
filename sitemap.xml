@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://portal-improbo.vercel.app/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-segredo-do-tumulo-flavio-bolsonaro-passa-vergonha-no-new-york-times.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-fezinha-no-supremo-lula-aposta-todas-as-fichas-no-stf-contra-as-bets.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-xerife-de-papel-passado-lula-tenta-enquadrar-tarcisio-e-caiado.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-parto-da-tesoura-haddad-faz-retiro-no-planalto-para-achar-cortes.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/a-ceia-do-beija-mao-pt-e-pl-fatiam-a-camara-com-hugo-motta.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portal-improbo.vercel.app/artigos/o-milagre-da-folga-deputados-que-trabalham-tres-dias-barram-a-6x1.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portal-improbo.vercel.app/artigos/a-guerra-dos-xerifes-tarcisio-e-caiado-se-rebelam-contra-a-pec-de-lewandowski.html</loc>

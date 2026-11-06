@@ -1,0 +1,43 @@
+{
+  "titulo": "O XERIFE DE PAPEL: LULA QUER ENQUADRAR TARCÍSIO E CAIADO NA PEC",
+  "subtitulo": "Planalto propõe unificar comandos policiais federais e governadores de oposição acusam Brasília de querer estatizar até o coturno dos soldados.",
+  "categoria": "⚖️ A Gazeta das Togas",
+  "tempo_leitura": "4 min de leitura",
+  "autor": "Coronel Teófilo",
+  "destaque": false,
+  "frase_disparo_zap": "PEC da Segurança: Lula quer ensinar os governadores a combater o crime por decreto e Tarcísio com Caiado respondem que Brasília mal cuida da própria calçada.",
+  "legenda_imagem": "Lula com distintivo de xerife tentando impor diretrizes federais a governadores rebeldes que se recusam a obedecer às instruções de Brasília.",
+  "prompt_caricatura": "Caricatura editorial ultra-colorida no estilo MAD e Pasquim do presidente Lula vestindo uma estrela dourada de xerife sobre um terno listrado, segurando um megafone e um manual de instruções burocráticas gigante, enquanto o governador Tarcísio de Freitas com capacete de obras e o governador Ronaldo Caiado com chapéu de vaqueiro cruzam os braços e dão risada atrás de um muro de viaturas policiais coloridas.",
+  "prompt_caricatura_en": "Ultra-vibrant colorful satirical caricature in MAD Magazine and Pasquim style showing President Lula wearing an oversized gold sheriff badge and holding a giant bureaucratic instruction manual, while conservative Governors Tarcísio de Freitas in a construction hard hat and Ronaldo Caiado in a cattle rancher hat cross their arms defiantly behind barricades of colorful police cruisers, dynamic cross-hatching, gouache textures, absolutely no text, no words, no speech bubbles.",
+  "corpo": [
+    "O Palácio do Planalto descobriu a fórmula mágica definitiva para derrotar o crime organizado: basta redigir uma emenda constitucional em papel timbrado, criar mais três conselhos consultivos em Brasília e mandar os governadores estaduais baterem continência para um coordenador federal. Foi com essa convicção pedagógica que o presidente Lula reuniu a corte ministerial para anunciar a PEC da Segurança Pública, jurando que o submundo do tráfico e das milícias tremerá de pavor diante de um banco de dados integrado.",
+    "A recepção nos estados, entretanto, teve a delicadeza de uma batida policial às cinco da manhã. Os governadores de oposição, que construíram suas carreiras e seus vídeos de redes sociais em cima do barulho de sirenes e do discurso de tolerância zero, reagiram como se o governo federal estivesse confiscando a soberania dos seus próprios palácios. Liderados por Tarcísio de Freitas em São Paulo e Ronaldo Caiado em Goiás, os caciques regionais avisaram que Brasília não tem autoridade moral para apitar na blitz de trânsito alheia.",
+    "O argumento dos rebeldes federativos é tão cínico quanto implacável. Para os estados, o governo federal que não consegue patrulhar as próprias fronteiras secas e assiste a fuzis entrarem pelos aeroportos internacionais quer agora ditar a cor do colete dos policiais militares e a quantidade de formulários que um delegado deve preencher antes de lavrar um flagrante. Em contrapartida, o Ministério da Justiça acusa os barões estaduais de transformarem a segurança pública em feudos eleitorais intocáveis, onde a falta de integração é a desculpa perfeita para o fracasso crônico.",
+    "No meio do tiroteio verbal entre o Planalto e os palácios estaduais, a segurança pública consolida-se como o palco mais previsível da campanha de 2026. De um lado, a esquerda promete solucionar homicídios com protocolos de transparência e oficinas de conciliação; do outro, a direita promete paz social multiplicando viaturas e discursos indignados no microfone. Enquanto as autoridades disputam quem tem o distintivo mais reluzente na lapela, o cidadão comum segue torcendo apenas para que sua carteira sobreviva até o ponto de ônibus mais próximo."
+  ],
+  "milagres": [
+    {
+      "titulo": "O Manual do Desarmamento Burocrático",
+      "texto": "Acreditar que o crime interestadual vai cessar imediatamente suas operações assim que a portaria federal for homologada no Diário Oficial da União."
+    },
+    {
+      "titulo": "O Federalismo Seletivo",
+      "texto": "Implorar por verbas da União toda segunda-feira e denunciar a ingerência tirânica de Brasília na terça-feira pela manhã."
+    },
+    {
+      "titulo": "O Protocolo da Esplanada",
+      "texto": "Montar uma comissão de doutores engravatados na capital federal para ensinar policiais da ponta da linha como subir morro com empatia institucional."
+    },
+    {
+      "titulo": "O Palanque das Sirenes",
+      "texto": "Usar viaturas policiais com giroflex ligado como iluminação cênica obrigatória para os discursos dos presidenciáveis da oposição."
+    }
+  ],
+  "contexto_real": "O debate nacional em torno da PEC da Segurança Pública elaborada pelo Ministério da Justiça do governo federal, que visa unificar diretrizes de policiamento, conferir status constitucional ao Sistema Único de Segurança Pública (SUSP) e ampliar as competências da Polícia Federal e da Polícia Rodoviária Federal. A proposta gerou fortes críticas e resistência de governadores de oposição, notadamente Tarcísio de Freitas (SP) e Ronaldo Caiado (GO), que apontaram violação da autonomia dos estados e centralização excessiva de poder no Executivo federal.",
+  "slug": "o-xerife-de-papel-passado-lula-tenta-enquadrar-tarcisio-e-caiado",
+  "data": "06 de Novembro de 2026",
+  "imagem_capa": "imagens/o-xerife-de-papel-passado-lula-tenta-enquadrar-tarcisio-e-caiado.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-06T06:25:00.000000",
+  "audio_url": "audio/o-xerife-de-papel-passado-lula-tenta-enquadrar-tarcisio-e-caiado.mp3"
+}
