@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-06T01:26:25.790248+00:00",
+  "ultima_atualizacao": "2026-11-06T17:52:50.813019+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-06T17:52:50.812933+00:00",
+      "horario_brt": "06/11/2026 17:52:50",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 16.2,
+      "slug": "andre-lara-resende-e-a-profecia-sem-dono",
+      "titulo": "ANDRÉ LARA RESENDE E A PROFECIA SEM DONO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-06T01:26:25.790214+00:00",
       "horario_brt": "06/11/2026 01:26:25",
@@ -215,47 +226,36 @@
       "titulo": "O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
       "imagem_tamanho_kb": 1208.0,
       "audio_tamanho_kb": 1315.4
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338819",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
-      "duracao_segundos": 12.0,
-      "slug": "o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado",
-      "titulo": "O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
-      "imagem_tamanho_kb": 953.8,
-      "audio_tamanho_kb": 1271.8
     }
   ],
   "radar_pautas": [
     {
+      "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Rezende",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/06/nao-falei-com-lula-nem-tenho-nada-marcado-isso-foi-plantado-para-queimar-alguem-que-defendeu-a-proposta-diz-economista-andre-lara-rezende.ghtml",
+      "score": 98.4,
+      "data_pub": "Fri, 06 Nov 2026 05:00:00 -0000"
+    },
+    {
       "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
-      "score": 101.8,
+      "score": 94.8,
       "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
     },
     {
       "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
-      "score": 99.4,
+      "score": 92.4,
       "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
     },
     {
-      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
+      "titulo": "Pressionado a cortar gastos, Lula diz que Brasil tem 'seriedade fiscal' e que 'pobre não pagará a conta'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
-      "score": 93.6,
-      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
-    },
-    {
-      "titulo": "Senado deve votar nesta terça PEC da Segurança Pública",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/03/senado-deve-votar-nesta-terca-pec-da-seguranca-publica.ghtml",
-      "score": 91.2,
-      "data_pub": "Tue, 03 Nov 2026 03:00:01 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/06/pressionado-a-cortar-gastos-lula-diz-que-brasil-tem-responsabilidade-e-seriedade-fiscal-e-que-pobre-nao-vai-pagar-a-conta.ghtml",
+      "score": 91.0,
+      "data_pub": "Fri, 06 Nov 2026 16:05:07 -0000"
     },
     {
       "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
