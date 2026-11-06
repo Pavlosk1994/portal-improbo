@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-05T18:36:21.749603+00:00",
+  "ultima_atualizacao": "2026-11-06T01:26:25.790248+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-06T01:26:25.790214+00:00",
+      "horario_brt": "06/11/2026 01:26:25",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 22.4,
+      "slug": "o-culto-ao-chefe-a-bencao-na-cadeia",
+      "titulo": "O CULTO AO CHEFE: A BENÇÃO NA CADEIA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-05T18:36:21.749555+00:00",
       "horario_brt": "05/11/2026 18:36:21",
@@ -215,40 +226,29 @@
       "titulo": "O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
       "imagem_tamanho_kb": 953.8,
       "audio_tamanho_kb": 1271.8
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338777",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: O BANQUETE DA SOBREVIVÊNCIA: LULA FATIA A ESPLANADA PARA SACIAR A FOME INSACIÁVEL DO CENTRÃO",
-      "duracao_segundos": 12.0,
-      "slug": "o-banquete-da-sobrevivencia-lula-fatia-a-esplanada-para-o-centrao",
-      "titulo": "O BANQUETE DA SOBREVIVÊNCIA: LULA FATIA A ESPLANADA PARA SACIAR A FOME INSACIÁVEL DO CENTRÃO",
-      "imagem_tamanho_kb": 1136.2,
-      "audio_tamanho_kb": 1198.8
     }
   ],
   "radar_pautas": [
     {
+      "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
+      "score": 101.8,
+      "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
+    },
+    {
+      "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
+      "score": 99.4,
+      "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
+    },
+    {
       "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
-      "score": 100.6,
+      "score": 93.6,
       "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
-    },
-    {
-      "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
-      "score": 98.3,
-      "data_pub": "Wed, 04 Nov 2026 17:29:00 -0300"
-    },
-    {
-      "titulo": "Após críticas de líder do PL, Alcolumbre diz que lamenta eleição de quem se promove 'ofendendo e agredindo'",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/04/apos-criticas-de-lider-do-pl-alcolumbre-diz-que-lamenta-eleicao-de-quem-se-promove-ofendendo-e-agredindo.ghtml",
-      "score": 96.0,
-      "data_pub": "Wed, 04 Nov 2026 22:09:11 -0000"
     },
     {
       "titulo": "Senado deve votar nesta terça PEC da Segurança Pública",
@@ -258,11 +258,11 @@
       "data_pub": "Tue, 03 Nov 2026 03:00:01 -0000"
     },
     {
-      "titulo": "Nos EUA, Flávio Bolsonaro registra presença em sessão do Senado que discute a PEC da Segurança Pública",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/03/nos-eua-flavio-bolsonaro-registra-presenca-em-sessao-do-senado.ghtml",
-      "score": 90.8,
-      "data_pub": "Tue, 03 Nov 2026 21:00:36 -0000"
+      "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
+      "score": 88.3,
+      "data_pub": "Wed, 04 Nov 2026 17:29:00 -0300"
     }
   ]
 }
