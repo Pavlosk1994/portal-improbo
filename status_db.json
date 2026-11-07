@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-06T17:52:50.813019+00:00",
+  "ultima_atualizacao": "2026-11-07T00:46:05.988573+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-07T00:46:05.988525+00:00",
+      "horario_brt": "07/11/2026 00:46:05",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 63.1,
+      "slug": "senado-testa-o-parlamentarismo-quantico-de-flavio",
+      "titulo": "SENADO TESTA O PARLAMENTARISMO QUÂNTICO DE FLÁVIO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-06T17:52:50.812933+00:00",
       "horario_brt": "06/11/2026 17:52:50",
@@ -215,22 +226,18 @@
       "titulo": "A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
       "imagem_tamanho_kb": 1202.5,
       "audio_tamanho_kb": 1334.5
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338861",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
-      "duracao_segundos": 12.0,
-      "slug": "o-termometro-da-feira-banco-central-aperta-selic-e-inflacao-dispara",
-      "titulo": "O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
-      "imagem_tamanho_kb": 1208.0,
-      "audio_tamanho_kb": 1315.4
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Rezende",
+      "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
+      "score": 121.8,
+      "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
+    },
+    {
+      "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Resende",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/06/nao-falei-com-lula-nem-tenho-nada-marcado-isso-foi-plantado-para-queimar-alguem-que-defendeu-a-proposta-diz-economista-andre-lara-rezende.ghtml",
       "score": 98.4,
@@ -240,29 +247,22 @@
       "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
-      "score": 94.8,
+      "score": 84.8,
       "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
-    },
-    {
-      "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
-      "score": 92.4,
-      "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
     },
     {
       "titulo": "Pressionado a cortar gastos, Lula diz que Brasil tem 'seriedade fiscal' e que 'pobre não pagará a conta'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/06/pressionado-a-cortar-gastos-lula-diz-que-brasil-tem-responsabilidade-e-seriedade-fiscal-e-que-pobre-nao-vai-pagar-a-conta.ghtml",
-      "score": 91.0,
+      "score": 84.0,
       "data_pub": "Fri, 06 Nov 2026 16:05:07 -0000"
     },
     {
-      "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
-      "score": 88.3,
-      "data_pub": "Wed, 04 Nov 2026 17:29:00 -0300"
+      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
+      "score": 83.6,
+      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
     }
   ]
 }
