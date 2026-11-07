@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-07T06:55:37.565344+00:00",
+  "ultima_atualizacao": "2026-11-07T16:47:23.341367+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-07T16:47:23.341310+00:00",
+      "horario_brt": "07/11/2026 16:47:23",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 57.5,
+      "slug": "o-senado-e-a-fisica-quantica-de-flavio-bolsonaro",
+      "titulo": "O SENADO E A FÍSICA QUÂNTICA DE FLÁVIO BOLSONARO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-07T06:55:37.565291+00:00",
       "horario_brt": "07/11/2026 06:55:37",
@@ -215,17 +226,6 @@
       "titulo": "APOCALIPSE REQUENTADO: O CORTE QUE O ZAP ADIANTOU",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T00:35:24.379091+00:00",
-      "horario_brt": "31/10/2026 00:35:24",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 34.1,
-      "slug": "o-corte-futuro-que-ja-aconteceu-no-passado",
-      "titulo": "O CORTE FUTURO QUE JÁ ACONTECEU NO PASSADO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -240,7 +240,7 @@
       "titulo": "Alíquotas de até 12% para tributo federal sobre consumo e 'imposto do pecado'; compare propostas das gestões Lula e Bolsonaro",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/07/aliquotas-de-ate-12percent-para-tributo-federal-sobre-consumo-e-imposto-do-pecado-compare-propostas-das-gestoes-lula-e-bolsonaro.ghtml",
-      "score": 99.4,
+      "score": 92.4,
       "data_pub": "Sat, 07 Nov 2026 03:00:00 -0000"
     },
     {
@@ -258,11 +258,11 @@
       "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
     },
     {
-      "titulo": "Pressionado a cortar gastos, Lula diz que Brasil tem 'seriedade fiscal' e que 'pobre não pagará a conta'",
+      "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/06/pressionado-a-cortar-gastos-lula-diz-que-brasil-tem-responsabilidade-e-seriedade-fiscal-e-que-pobre-nao-vai-pagar-a-conta.ghtml",
-      "score": 84.0,
-      "data_pub": "Fri, 06 Nov 2026 16:05:07 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
+      "score": 82.4,
+      "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
     }
   ]
 }
