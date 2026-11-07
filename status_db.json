@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-07T00:46:05.988573+00:00",
+  "ultima_atualizacao": "2026-11-07T06:55:37.565344+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-07T06:55:37.565291+00:00",
+      "horario_brt": "07/11/2026 06:55:37",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 59.1,
+      "slug": "o-senador-invisivel-senado-em-silencio-sobre-flavi",
+      "titulo": "O SENADOR INVISÍVEL: SENADO EM SILÊNCIO SOBRE FLÁVIO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-07T00:46:05.988525+00:00",
       "horario_brt": "07/11/2026 00:46:05",
@@ -215,17 +226,6 @@
       "titulo": "O CORTE FUTURO QUE JÁ ACONTECEU NO PASSADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338901",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
-      "duracao_segundos": 12.0,
-      "slug": "a-capsula-do-tempo-pt-descobre-que-o-mundo-mudou-e-tenta-rejuvenescer",
-      "titulo": "A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
-      "imagem_tamanho_kb": 1202.5,
-      "audio_tamanho_kb": 1334.5
     }
   ],
   "radar_pautas": [
@@ -233,14 +233,21 @@
       "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
-      "score": 121.8,
+      "score": 114.8,
       "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
+    },
+    {
+      "titulo": "Alíquotas de até 12% para tributo federal sobre consumo e 'imposto do pecado'; compare propostas das gestões Lula e Bolsonaro",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/07/aliquotas-de-ate-12percent-para-tributo-federal-sobre-consumo-e-imposto-do-pecado-compare-propostas-das-gestoes-lula-e-bolsonaro.ghtml",
+      "score": 99.4,
+      "data_pub": "Sat, 07 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Resende",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/06/nao-falei-com-lula-nem-tenho-nada-marcado-isso-foi-plantado-para-queimar-alguem-que-defendeu-a-proposta-diz-economista-andre-lara-rezende.ghtml",
-      "score": 98.4,
+      "score": 88.4,
       "data_pub": "Fri, 06 Nov 2026 05:00:00 -0000"
     },
     {
@@ -256,13 +263,6 @@
       "link": "https://g1.globo.com/politica/noticia/2026/11/06/pressionado-a-cortar-gastos-lula-diz-que-brasil-tem-responsabilidade-e-seriedade-fiscal-e-que-pobre-nao-vai-pagar-a-conta.ghtml",
       "score": 84.0,
       "data_pub": "Fri, 06 Nov 2026 16:05:07 -0000"
-    },
-    {
-      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
-      "score": 83.6,
-      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
     }
   ]
 }
