@@ -230,39 +230,39 @@
   ],
   "radar_pautas": [
     {
-      "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
+      "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
-      "score": 101.8,
-      "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
+      "score": 120.0,
+      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
-      "score": 99.4,
-      "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
-    },
-    {
-      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
-      "score": 93.6,
-      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
-    },
-    {
-      "titulo": "Senado deve votar nesta terça PEC da Segurança Pública",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/03/senado-deve-votar-nesta-terca-pec-da-seguranca-publica.ghtml",
-      "score": 91.2,
-      "data_pub": "Tue, 03 Nov 2026 03:00:01 -0000"
-    },
-    {
-      "titulo": "Nos EUA, Flávio Bolsonaro vota remotamente a favor da PEC da Segurança",
+      "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
-      "score": 88.3,
-      "data_pub": "Wed, 04 Nov 2026 17:29:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
+      "score": 104.8,
+      "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
+    },
+    {
+      "titulo": "Quaest: 62% reprovam ida de Flávio Bolsonaro para os EUA, e 56% acham que ele está fugindo da Justiça",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-56percent-acham-que-flavio-bolsonaro-deixou-o-brasil-apos-as-eleicoes-para-fugir-da-justica.ghtml",
+      "score": 103.2,
+      "data_pub": "Sun, 08 Nov 2026 10:42:31 -0000"
+    },
+    {
+      "titulo": "'Meu medo é o governo Lula buscar atalhos e brigar com o mercado': por que professor em Cambridge defende ajuste fiscal 'suave'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/08/meu-medo-e-o-governo-lula-buscar-atalhos-e-brigar-com-o-mercado-por-que-professor-em-cambridge-defende-ajuste-fiscal-suave.ghtml",
+      "score": 97.2,
+      "data_pub": "Sun, 08 Nov 2026 08:00:00 -0000"
+    },
+    {
+      "titulo": "Quaest: 48% aprovam e 44% desaprovam governo Lula na primeira pesquisa após a eleição",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-48percent-aprovam-e-44percent-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao.ghtml",
+      "score": 93.4,
+      "data_pub": "Sun, 08 Nov 2026 12:38:32 -0000"
     }
   ]
 }
