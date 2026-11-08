@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-08T07:02:40.988628+00:00",
+  "ultima_atualizacao": "2026-11-08T16:57:54.642952+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-08T16:57:54.642893+00:00",
+      "horario_brt": "08/11/2026 16:57:54",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 44.8,
+      "slug": "lula-anuncia-o-fim-da-matematica",
+      "titulo": "LULA ANUNCIA O FIM DA MATEMÁTICA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-08T07:02:40.988581+00:00",
       "horario_brt": "08/11/2026 07:02:40",
@@ -215,17 +226,6 @@
       "titulo": "AS SEIS ILHAS DA SOLIDARIEDADE JURÍDICA EM ANGRA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T19:55:33.571386+00:00",
-      "horario_brt": "31/10/2026 19:55:33",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 67.0,
-      "slug": "o-corte-de-schrodinger-6-bilhoes-que-ja-foram-e-ja",
-      "titulo": "O CORTE DE SCHRÖDINGER: 6 BILHÕES QUE JÁ FORAM E JÁ VOLTARAM",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,7 +233,7 @@
       "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
-      "score": 127.0,
+      "score": 120.0,
       "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
     },
     {
@@ -244,25 +244,25 @@
       "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
     },
     {
-      "titulo": "Maioridade penal: especialistas apontam falhas no ECA e defendem mudanças no sistema socioeducativo",
+      "titulo": "Quaest: 62% reprovam ida de Flávio Bolsonaro para os EUA, e 56% acham que ele está fugindo da Justiça",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/08/maioridade-penal-especialistas-apontam-falhas-no-eca-e-defendem-mudancas-no-sistema-socioeducativo.ghtml",
-      "score": 86.2,
-      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-56percent-acham-que-flavio-bolsonaro-deixou-o-brasil-apos-as-eleicoes-para-fugir-da-justica.ghtml",
+      "score": 103.2,
+      "data_pub": "Sun, 08 Nov 2026 10:42:31 -0000"
     },
     {
-      "titulo": "Alíquotas de até 12% para tributo federal sobre consumo e 'imposto do pecado'; compare propostas das gestões Lula e Bolsonaro",
+      "titulo": "'Meu medo é o governo Lula buscar atalhos e brigar com o mercado': por que professor em Cambridge defende ajuste fiscal 'suave'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/07/aliquotas-de-ate-12percent-para-tributo-federal-sobre-consumo-e-imposto-do-pecado-compare-propostas-das-gestoes-lula-e-bolsonaro.ghtml",
-      "score": 82.4,
-      "data_pub": "Sat, 07 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/08/meu-medo-e-o-governo-lula-buscar-atalhos-e-brigar-com-o-mercado-por-que-professor-em-cambridge-defende-ajuste-fiscal-suave.ghtml",
+      "score": 97.2,
+      "data_pub": "Sun, 08 Nov 2026 08:00:00 -0000"
     },
     {
-      "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Resende",
+      "titulo": "Quaest: 48% aprovam e 44% desaprovam governo Lula na primeira pesquisa após a eleição",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/06/nao-falei-com-lula-nem-tenho-nada-marcado-isso-foi-plantado-para-queimar-alguem-que-defendeu-a-proposta-diz-economista-andre-lara-rezende.ghtml",
-      "score": 80.4,
-      "data_pub": "Fri, 06 Nov 2026 05:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-48percent-aprovam-e-44percent-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao.ghtml",
+      "score": 93.4,
+      "data_pub": "Sun, 08 Nov 2026 12:38:32 -0000"
     }
   ]
 }
