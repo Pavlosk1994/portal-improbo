@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-08T00:18:21.925209+00:00",
+  "ultima_atualizacao": "2026-11-08T07:02:40.988628+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-08T07:02:40.988581+00:00",
+      "horario_brt": "08/11/2026 07:02:40",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 30.4,
+      "slug": "o-radar-do-planalto-onde-o-ajuste-fiscal-nao-pousa",
+      "titulo": "O RADAR DO PLANALTO: ONDE O AJUSTE FISCAL NÃO POUSA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-08T00:18:21.925160+00:00",
       "horario_brt": "08/11/2026 00:18:21",
@@ -215,20 +226,16 @@
       "titulo": "O CORTE DE SCHRÖDINGER: 6 BILHÕES QUE JÁ FORAM E JÁ VOLTARAM",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T16:00:07.797235+00:00",
-      "horario_brt": "31/10/2026 16:00:07",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.2,
-      "slug": "as-seis-ilhas-de-angra-e-o-legislativo-na-praia",
-      "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO NA PRAIA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
+    {
+      "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
+      "score": 127.0,
+      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
+    },
     {
       "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
       "fonte": "Agência Brasil - Política",
@@ -237,32 +244,25 @@
       "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
     },
     {
+      "titulo": "Maioridade penal: especialistas apontam falhas no ECA e defendem mudanças no sistema socioeducativo",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/maioridade-penal-especialistas-apontam-falhas-no-eca-e-defendem-mudancas-no-sistema-socioeducativo.ghtml",
+      "score": 86.2,
+      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
+    },
+    {
       "titulo": "Alíquotas de até 12% para tributo federal sobre consumo e 'imposto do pecado'; compare propostas das gestões Lula e Bolsonaro",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/07/aliquotas-de-ate-12percent-para-tributo-federal-sobre-consumo-e-imposto-do-pecado-compare-propostas-das-gestoes-lula-e-bolsonaro.ghtml",
-      "score": 92.4,
+      "score": 82.4,
       "data_pub": "Sat, 07 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "'Não falei com Lula nem tenho nada marcado. Isso foi plantado para queimar alguém que defendeu a proposta', diz economista André Lara Resende",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/06/nao-falei-com-lula-nem-tenho-nada-marcado-isso-foi-plantado-para-queimar-alguem-que-defendeu-a-proposta-diz-economista-andre-lara-rezende.ghtml",
-      "score": 88.4,
+      "score": 80.4,
       "data_pub": "Fri, 06 Nov 2026 05:00:00 -0000"
-    },
-    {
-      "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
-      "score": 76.8,
-      "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
-    },
-    {
-      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
-      "score": 75.6,
-      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
     }
   ]
 }
