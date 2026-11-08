@@ -10,7 +10,11 @@ Este repositório contém o código, scrapers, motor de áudio e aplicação web
 
 ## ⚡ Protocolo Definitivo de Criação Autônoma (Zero Interrupções)
 
-Sempre que o usuário solicitar uma nova postagem, matéria ou crônica (ex: *"crie uma matéria"*, *"poste sobre X"*, *"rode uma nova notícia"*), a IA DEVE executar o ciclo completo de ponta a ponta **de forma 100% autônoma, sem parar em momento algum para pedir confirmações, autorizações intermediárias ou "posso prosseguir?"**:
+Sempre que o usuário solicitar uma nova postagem, matéria ou crônica (ex: *"crie uma matéria"*, *"poste sobre X"*, *"rode uma nova notícia"*), a IA DEVE executar o ciclo completo de ponta a ponta **de forma 100% autônoma, sem parar em momento algum para pedir confirmações, autorizações intermediárias ou "posso prosseguir?"**.
+
+> **Comando Canônico de Execução:** Para evitar múltiplos submits e aprovações de terminal, a IA deve disparar o orquestrador unificado:
+> `python3 publicar.py` (para pauta quente RSS) ou `python3 publicar.py --tema "..."` (para tema específico).
+> Esse script único cuida do `git pull`, geração, áudio, caricatura, build e `git push` em um único processo.
 
 1. **Definição da Pauta**:
    - Se o usuário forneceu um tema, fato ou link: utilize-o imediatamente.
