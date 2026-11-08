@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-06T01:26:25.790248+00:00",
+  "ultima_atualizacao": "2026-11-08T19:49:38.320779+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-08T19:49:38.320664+00:00",
+      "horario_brt": "08/11/2026 16:49:38",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 15.0,
+      "slug": "o-golpe-da-fintech-paraguai-cassa-e-prende-santiago-pena",
+      "titulo": "O GOLPE DA FINTECH: PARAGUAI CASSA E PRENDE SANTIAGO PEÑA",
+      "imagem_tamanho_kb": 648.1,
+      "audio_tamanho_kb": 1555.2
+    },
     {
       "timestamp": "2026-11-06T01:26:25.790214+00:00",
       "horario_brt": "06/11/2026 01:26:25",
@@ -215,17 +226,6 @@
       "titulo": "O TERMÔMETRO DA FEIRA: BANCO CENTRAL APERTA O FREIO DA SELIC ENQUANTO O BRASILEIRO COMPRA BIFE NA MOEDA ESTRANGEIRA",
       "imagem_tamanho_kb": 1208.0,
       "audio_tamanho_kb": 1315.4
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338819",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
-      "duracao_segundos": 12.0,
-      "slug": "o-bale-dos-poderes-stf-danca-no-fio-da-navalha-contra-o-senado",
-      "titulo": "O BALÉ DOS PODERES: STF DANÇA NO FIO DA NAVALHA ENTRE O MARTELO DA LEI E AS TRAMAS DO SENADO",
-      "imagem_tamanho_kb": 953.8,
-      "audio_tamanho_kb": 1271.8
     }
   ],
   "radar_pautas": [
