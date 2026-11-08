@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-07T16:47:23.341367+00:00",
+  "ultima_atualizacao": "2026-11-08T00:18:21.925209+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-08T00:18:21.925160+00:00",
+      "horario_brt": "08/11/2026 00:18:21",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 22.1,
+      "slug": "o-senado-fugiu-do-grupo-do-zap",
+      "titulo": "O SENADO FUGIU DO GRUPO DO ZAP",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-07T16:47:23.341310+00:00",
       "horario_brt": "07/11/2026 16:47:23",
@@ -215,17 +226,6 @@
       "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO NA PRAIA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T06:49:15.665286+00:00",
-      "horario_brt": "31/10/2026 06:49:15",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 36.3,
-      "slug": "apocalipse-requentado-o-corte-que-o-zap-adiantou",
-      "titulo": "APOCALIPSE REQUENTADO: O CORTE QUE O ZAP ADIANTOU",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,7 +233,7 @@
       "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
-      "score": 114.8,
+      "score": 104.8,
       "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
     },
     {
@@ -254,15 +254,15 @@
       "titulo": "Tereza Cristina diz que pretende discutir disputa pela presidência do Senado com Jair Bolsonaro: 'explicar o que está acontecendo'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/05/tereza-cristina-disputa-presidencia-senado-jair-bolsonaro.ghtml",
-      "score": 84.8,
+      "score": 76.8,
       "data_pub": "Thu, 05 Nov 2026 23:41:15 -0000"
     },
     {
-      "titulo": "'Vitória para o mundo', diz Lula sobre resultados nas eleições no Brasil, em Israel e nos EUA",
+      "titulo": "Homicídio, estupro e tortura: crimes que motivam debate sobre maioridade penal são minoria entre atos de adolescentes internados",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/05/vitoria-para-o-mundo-diz-lula-sobre-resultados-nas-eleicoes-no-brasil-em-israel-e-nos-eua.ghtml",
-      "score": 82.4,
-      "data_pub": "Thu, 05 Nov 2026 23:04:06 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/05/maioridade-penal-crimes.ghtml",
+      "score": 75.6,
+      "data_pub": "Thu, 05 Nov 2026 12:58:47 -0000"
     }
   ]
 }
