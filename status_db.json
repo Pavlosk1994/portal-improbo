@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-09T07:46:57.180963+00:00",
+  "ultima_atualizacao": "2026-11-09T21:22:17.417065+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-09T21:22:17.417012+00:00",
+      "horario_brt": "09/11/2026 21:22:17",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 15.8,
+      "slug": "lula-declara-amor-platonico-a-fiscal",
+      "titulo": "LULA DECLARA AMOR PLATÔNICO À FISCAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-09T07:46:57.180899+00:00",
       "horario_brt": "09/11/2026 07:46:57",
@@ -215,17 +226,6 @@
       "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO NA PRAIA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T06:49:15.665286+00:00",
-      "horario_brt": "31/10/2026 06:49:15",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 36.3,
-      "slug": "apocalipse-requentado-o-corte-que-o-zap-adiantou",
-      "titulo": "APOCALIPSE REQUENTADO: O CORTE QUE O ZAP ADIANTOU",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -237,13 +237,6 @@
       "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
     },
     {
-      "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
-      "score": 111.4,
-      "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
-    },
-    {
       "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
@@ -251,18 +244,25 @@
       "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
     },
     {
+      "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
+      "score": 104.4,
+      "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "COP31: Lula embarca com Janones e ministros para Turquia; Motta e Alcolumbre não integram comitiva",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/09/cop31-lula-embarca-com-janones-e-ministros-para-turquia-motta-e-alcolumbre-nao-integram-comitiva.ghtml",
+      "score": 102.0,
+      "data_pub": "Mon, 09 Nov 2026 13:21:41 -0000"
+    },
+    {
       "titulo": "O novo Congresso e o futuro do presidencialismo - O Assunto #1841",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/11/09/o-novo-congresso-e-o-futuro-do-presidencialismo-o-assunto-1841.ghtml",
-      "score": 106.6,
+      "score": 99.6,
       "data_pub": "Mon, 09 Nov 2026 03:30:00 -0000"
-    },
-    {
-      "titulo": "Ajuste fiscal: o diagnóstico de organismos internacionais e o desafio de Lula 4",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/09/ajuste-fiscal-o-diagnostico-de-organismos-internacionais-e-o-desafio-de-lula-4.ghtml",
-      "score": 105.4,
-      "data_pub": "Mon, 09 Nov 2026 03:00:01 -0000"
     }
   ]
 }
