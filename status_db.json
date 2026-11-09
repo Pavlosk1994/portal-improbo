@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-08T20:02:34.311115+00:00",
+  "ultima_atualizacao": "2026-11-09T00:39:45.641519+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-09T00:39:45.641458+00:00",
+      "horario_brt": "09/11/2026 00:39:45",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 13.9,
+      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
+      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-08T20:02:34.310504+00:00",
       "horario_brt": "08/11/2026 17:02:34",
@@ -215,33 +226,22 @@
       "titulo": "O CORTE FUTURO QUE JÁ ACONTECEU NO PASSADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-30T14:16:43.338901",
-      "horario_brt": "30/10/2026 14:16:43",
-      "status": "SUCESSO",
-      "motivo": "Edição Especial Geopolítica & Atualidades: A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
-      "duracao_segundos": 12.0,
-      "slug": "a-capsula-do-tempo-pt-descobre-que-o-mundo-mudou-e-tenta-rejuvenescer",
-      "titulo": "A CÁPSULA DO TEMPO: O PT DESCOBRE QUE O MUNDO MUDOU E TENTA CONVENCER O MOTORISTA DE APP COM DISCURSO DE 1980",
-      "imagem_tamanho_kb": 1202.5,
-      "audio_tamanho_kb": 1334.5
     }
   ],
   "radar_pautas": [
+    {
+      "titulo": "Lula diz que se preocupa com dívida pública e juros e reafirma responsabilidade fiscal",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/lula-fala-em-pronunciamento-em-rede-nacional-de-radio-e-tv.ghtml",
+      "score": 128.2,
+      "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
+    },
     {
       "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
       "score": 120.0,
       "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
-      "score": 104.8,
-      "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
     },
     {
       "titulo": "Quaest: 62% reprovam ida de Flávio Bolsonaro para os EUA, e 56% acham que ele está fugindo da Justiça",
@@ -258,11 +258,11 @@
       "data_pub": "Sun, 08 Nov 2026 08:00:00 -0000"
     },
     {
-      "titulo": "Quaest: 48% aprovam e 44% desaprovam governo Lula na primeira pesquisa após a eleição",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-48percent-aprovam-e-44percent-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao.ghtml",
-      "score": 93.4,
-      "data_pub": "Sun, 08 Nov 2026 12:38:32 -0000"
+      "titulo": "Sem posição do Senado, regras sobre Flávio seguem indefinidas",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/sem-posicao-do-senado-regras-sobre-flavio-seguem-indefinidas",
+      "score": 96.8,
+      "data_pub": "Fri, 06 Nov 2026 17:51:00 -0300"
     }
   ]
 }
