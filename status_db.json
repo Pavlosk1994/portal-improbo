@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-09T21:22:17.417065+00:00",
+  "ultima_atualizacao": "2026-11-10T08:07:20.747954+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-10T08:07:20.747906+00:00",
+      "horario_brt": "10/11/2026 08:07:20",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 11.4,
+      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
+      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-09T21:22:17.417012+00:00",
       "horario_brt": "09/11/2026 21:22:17",
@@ -215,17 +226,6 @@
       "titulo": "O CORTE DE SCHRÖDINGER: 6 BILHÕES QUE JÁ FORAM E JÁ VOLTARAM",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T16:00:07.797235+00:00",
-      "horario_brt": "31/10/2026 16:00:07",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.2,
-      "slug": "as-seis-ilhas-de-angra-e-o-legislativo-na-praia",
-      "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO NA PRAIA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,22 +233,8 @@
       "titulo": "Lula diz que se preocupa com dívida pública e juros e reafirma responsabilidade fiscal",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/08/lula-fala-em-pronunciamento-em-rede-nacional-de-radio-e-tv.ghtml",
-      "score": 121.2,
+      "score": 111.2,
       "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
-    },
-    {
-      "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
-      "score": 110.0,
-      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
-      "score": 104.4,
-      "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "COP31: Lula embarca com Janones e ministros para Turquia; Motta e Alcolumbre não integram comitiva",
@@ -258,11 +244,25 @@
       "data_pub": "Mon, 09 Nov 2026 13:21:41 -0000"
     },
     {
-      "titulo": "O novo Congresso e o futuro do presidencialismo - O Assunto #1841",
+      "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/11/09/o-novo-congresso-e-o-futuro-do-presidencialismo-o-assunto-1841.ghtml",
-      "score": 99.6,
-      "data_pub": "Mon, 09 Nov 2026 03:30:00 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
+      "score": 102.0,
+      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
+      "score": 94.4,
+      "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Quaest: 62% reprovam ida de Flávio Bolsonaro para os EUA, e 56% acham que ele está fugindo da Justiça",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-56percent-acham-que-flavio-bolsonaro-deixou-o-brasil-apos-as-eleicoes-para-fugir-da-justica.ghtml",
+      "score": 93.2,
+      "data_pub": "Sun, 08 Nov 2026 10:42:31 -0000"
     }
   ]
 }
