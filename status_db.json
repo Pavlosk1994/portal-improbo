@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-10T18:32:22.004814+00:00",
+  "ultima_atualizacao": "2026-11-11T01:07:55.696029+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-11T01:07:55.695976+00:00",
+      "horario_brt": "11/11/2026 01:07:55",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 52.2,
+      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
+      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-10T18:32:22.004761+00:00",
       "horario_brt": "10/11/2026 18:32:22",
@@ -215,17 +226,6 @@
       "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO DE PRAIA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-10-31T23:59:39.549843+00:00",
-      "horario_brt": "31/10/2026 23:59:39",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 49.6,
-      "slug": "as-seis-ilhas-da-solidariedade-juridica-em-angra",
-      "titulo": "AS SEIS ILHAS DA SOLIDARIEDADE JURÍDICA EM ANGRA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,7 +233,7 @@
       "titulo": "Lula diz que se preocupa com dívida pública e juros e reafirma responsabilidade fiscal",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/08/lula-fala-em-pronunciamento-em-rede-nacional-de-radio-e-tv.ghtml",
-      "score": 111.2,
+      "score": 103.2,
       "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
     },
     {
@@ -244,25 +244,25 @@
       "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
     },
     {
+      "titulo": "Relator defende redução da maioridade penal com prisões separadas",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/relator-defende-reducao-da-maioridade-penal-com-prisoes-separadas",
+      "score": 98.7,
+      "data_pub": "Tue, 10 Nov 2026 20:46:00 -0300"
+    },
+    {
+      "titulo": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/10/escala-6x1-dino-sinaliza-que-decisao-em-acao-que-questiona-transicao-da-nova-jornada-de-trabalho-sai-ate-sexta.ghtml",
+      "score": 94.6,
+      "data_pub": "Tue, 10 Nov 2026 23:21:39 -0000"
+    },
+    {
       "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
       "score": 94.4,
       "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "COP31: Lula embarca com Janones e ministros para Turquia; Motta e Alcolumbre não integram comitiva",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/09/cop31-lula-embarca-com-janones-e-ministros-para-turquia-motta-e-alcolumbre-nao-integram-comitiva.ghtml",
-      "score": 92.0,
-      "data_pub": "Mon, 09 Nov 2026 13:21:41 -0000"
-    },
-    {
-      "titulo": "O novo Congresso e o futuro do presidencialismo - O Assunto #1841",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/11/09/o-novo-congresso-e-o-futuro-do-presidencialismo-o-assunto-1841.ghtml",
-      "score": 89.6,
-      "data_pub": "Mon, 09 Nov 2026 03:30:00 -0000"
     }
   ]
 }
