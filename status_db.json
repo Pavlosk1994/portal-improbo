@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-11T01:07:55.696029+00:00",
+  "ultima_atualizacao": "2026-11-11T18:29:21.478643+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-11T18:29:21.478604+00:00",
+      "horario_brt": "11/11/2026 18:29:21",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 13.6,
+      "slug": "lula-anuncia-amor-platonico-pela-fiscal",
+      "titulo": "LULA ANUNCIA AMOR PLATÔNICO PELA FISCAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-11T01:07:55.695976+00:00",
       "horario_brt": "11/11/2026 01:07:55",
@@ -215,17 +226,6 @@
       "titulo": "O DELÍRIO DO AMANHÃ: LULA E FLÁVIO EM 2026",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-01T07:14:35.740926+00:00",
-      "horario_brt": "01/11/2026 07:14:35",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 12.4,
-      "slug": "as-seis-ilhas-de-angra-e-o-legislativo-de-praia",
-      "titulo": "AS SEIS ILHAS DE ANGRA E O LEGISLATIVO DE PRAIA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -237,32 +237,32 @@
       "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
     },
     {
-      "titulo": "Ajuste nas contas públicas: o que está na mesa de Lula e o que está fora do radar do presidente",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/08/ajuste-nas-contas-publicas-o-que-esta-na-mesa-de-lula-e-o-que-esta-fora-do-radar-do-presidente.ghtml",
-      "score": 102.0,
-      "data_pub": "Sun, 08 Nov 2026 03:00:00 -0000"
-    },
-    {
       "titulo": "Relator defende redução da maioridade penal com prisões separadas",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/relator-defende-reducao-da-maioridade-penal-com-prisoes-separadas",
-      "score": 98.7,
+      "score": 91.7,
       "data_pub": "Tue, 10 Nov 2026 20:46:00 -0300"
     },
     {
       "titulo": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/10/escala-6x1-dino-sinaliza-que-decisao-em-acao-que-questiona-transicao-da-nova-jornada-de-trabalho-sai-ate-sexta.ghtml",
-      "score": 94.6,
+      "score": 87.6,
       "data_pub": "Tue, 10 Nov 2026 23:21:39 -0000"
     },
     {
       "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
-      "score": 94.4,
+      "score": 86.4,
       "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Senado aprova convites para ouvir diretor da PF e ministro da Justiça sobre troca de delegados",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/11/senado-aprova-convites-para-ouvir-diretor-da-pf-e-ministro-da-justica-sobre-troca-de-delegados.ghtml",
+      "score": 86.2,
+      "data_pub": "Wed, 11 Nov 2026 14:46:29 -0000"
     }
   ]
 }
