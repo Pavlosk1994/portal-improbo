@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-11T18:29:21.478643+00:00",
+  "ultima_atualizacao": "2026-11-12T02:10:35.133325+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-12T02:10:35.133265+00:00",
+      "horario_brt": "12/11/2026 02:10:35",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 21.6,
+      "slug": "alcolumbre-o-sindico-perpetuorio-do-senado-federal",
+      "titulo": "ALCOLUMBRE: O SÍNDICO PERPETUÓRIO DO SENADO FEDERAL",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-11T18:29:21.478604+00:00",
       "horario_brt": "11/11/2026 18:29:21",
@@ -215,41 +226,9 @@
       "titulo": "SALVANDO O CENTRÃO: A MATEMÁTICA DO DESESPERO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-01T17:04:30.425524+00:00",
-      "horario_brt": "01/11/2026 17:04:30",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 93.5,
-      "slug": "o-delirio-do-amanha-lula-e-flavio-em-2026",
-      "titulo": "O DELÍRIO DO AMANHÃ: LULA E FLÁVIO EM 2026",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Lula diz que se preocupa com dívida pública e juros e reafirma responsabilidade fiscal",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/08/lula-fala-em-pronunciamento-em-rede-nacional-de-radio-e-tv.ghtml",
-      "score": 103.2,
-      "data_pub": "Sun, 08 Nov 2026 23:30:43 -0000"
-    },
-    {
-      "titulo": "Relator defende redução da maioridade penal com prisões separadas",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/relator-defende-reducao-da-maioridade-penal-com-prisoes-separadas",
-      "score": 91.7,
-      "data_pub": "Tue, 10 Nov 2026 20:46:00 -0300"
-    },
-    {
-      "titulo": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/10/escala-6x1-dino-sinaliza-que-decisao-em-acao-que-questiona-transicao-da-nova-jornada-de-trabalho-sai-ate-sexta.ghtml",
-      "score": 87.6,
-      "data_pub": "Tue, 10 Nov 2026 23:21:39 -0000"
-    },
     {
       "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
       "fonte": "G1 Política",
@@ -258,11 +237,32 @@
       "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Senado aprova convites para ouvir diretor da PF e ministro da Justiça sobre troca de delegados",
+      "titulo": "COP31: Lula embarca com Janones e ministros para Turquia; Motta e Alcolumbre não integram comitiva",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/11/senado-aprova-convites-para-ouvir-diretor-da-pf-e-ministro-da-justica-sobre-troca-de-delegados.ghtml",
-      "score": 86.2,
-      "data_pub": "Wed, 11 Nov 2026 14:46:29 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/09/cop31-lula-embarca-com-janones-e-ministros-para-turquia-motta-e-alcolumbre-nao-integram-comitiva.ghtml",
+      "score": 84.0,
+      "data_pub": "Mon, 09 Nov 2026 13:21:41 -0000"
+    },
+    {
+      "titulo": "Limite de supersalários, mudanças no piso da saúde; veja as medidas do governo para ajuste fiscal de até R$ 60 bilhões",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/11/limite-de-supersalarios-mudancas-no-piso-da-saude-veja-as-medidas-do-governo-para-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
+      "score": 83.8,
+      "data_pub": "Wed, 11 Nov 2026 22:03:09 -0000"
+    },
+    {
+      "titulo": "Governo articula medida de ajuste nas contas que muda cálculo dos pisos da saúde e da educação; entenda",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/11/governo-articula-medida-de-ajuste-nas-contas-que-muda-calculo-dos-pisos-da-saude-e-da-educacao-entenda.ghtml",
+      "score": 82.8,
+      "data_pub": "Wed, 11 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Relator defende redução da maioridade penal com prisões separadas",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/relator-defende-reducao-da-maioridade-penal-com-prisoes-separadas",
+      "score": 81.7,
+      "data_pub": "Tue, 10 Nov 2026 20:46:00 -0300"
     }
   ]
 }
