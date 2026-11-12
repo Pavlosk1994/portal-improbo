@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-12T02:10:35.133325+00:00",
+  "ultima_atualizacao": "2026-11-12T18:45:47.904013+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-12T18:45:47.903964+00:00",
+      "horario_brt": "12/11/2026 18:45:47",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.6,
+      "slug": "a-metamorfose-do-bolso-lula-e-os-r-60-bi-da-fe",
+      "titulo": "A METAMORFOSE DO BOLSO: LULA E OS R$ 60 BI DA FÉ",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-12T02:10:35.133265+00:00",
       "horario_brt": "12/11/2026 02:10:35",
@@ -215,54 +226,43 @@
       "titulo": "A DANÇA DA CADEIRA ANTES DA HORA NO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-02T00:27:16.327441+00:00",
-      "horario_brt": "02/11/2026 00:27:16",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 52.5,
-      "slug": "salvando-o-centrao-a-matematica-do-desespero",
-      "titulo": "SALVANDO O CENTRÃO: A MATEMÁTICA DO DESESPERO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Divisão da direita pode fortalecer Alcolumbre na disputa pelo comando do Senado, avaliam aliados",
+      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/09/divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-aliados.ghtml",
-      "score": 86.4,
-      "data_pub": "Mon, 09 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
+      "score": 127.0,
+      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
     },
     {
-      "titulo": "COP31: Lula embarca com Janones e ministros para Turquia; Motta e Alcolumbre não integram comitiva",
+      "titulo": "Dino mantém início da escala 5x2 para 16 de dezembro e ajusta transição para permitir 42 horas semanais em 5 dias de trabalho",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/09/cop31-lula-embarca-com-janones-e-ministros-para-turquia-motta-e-alcolumbre-nao-integram-comitiva.ghtml",
-      "score": 84.0,
-      "data_pub": "Mon, 09 Nov 2026 13:21:41 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/fim-da-escala-6x1-dino-autoriza-distribuicao-de-42-horas-semanais-em-5-dias-de-trabalho.ghtml",
+      "score": 99.4,
+      "data_pub": "Thu, 12 Nov 2026 17:32:20 -0000"
     },
     {
-      "titulo": "Limite de supersalários, mudanças no piso da saúde; veja as medidas do governo para ajuste fiscal de até R$ 60 bilhões",
+      "titulo": "Senado deve votar pacote de medidas fiscais nesta quinta; governo fala em um impacto de até R$ 60 bi",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/11/limite-de-supersalarios-mudancas-no-piso-da-saude-veja-as-medidas-do-governo-para-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
-      "score": 83.8,
-      "data_pub": "Wed, 11 Nov 2026 22:03:09 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/senado-deve-votar-pacote-de-medidas-fiscais-nesta-quinta-governo-fala-em-um-impacto-de-ate-r-60-bi.ghtml",
+      "score": 96.0,
+      "data_pub": "Thu, 12 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Governo articula medida de ajuste nas contas que muda cálculo dos pisos da saúde e da educação; entenda",
+      "titulo": "Condenada pelo TSE a pagar R$ 7,5 milhões, Meta recebeu R$ 520 milhões de campanhas; 70 vezes o valor da multa",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/11/governo-articula-medida-de-ajuste-nas-contas-que-muda-calculo-dos-pisos-da-saude-e-da-educacao-entenda.ghtml",
-      "score": 82.8,
-      "data_pub": "Wed, 11 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/condenada-pelo-tse-a-pagar-r-75-milhoes-meta-recebeu-de-r-520-milhoes-de-campanhas-70-vezes-o-valor-da-multa.ghtml",
+      "score": 91.2,
+      "data_pub": "Thu, 12 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Relator defende redução da maioridade penal com prisões separadas",
+      "titulo": "Alcolumbre reafirma que decisão sobre CPMI do Banco Master cabe a ele",
       "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/relator-defende-reducao-da-maioridade-penal-com-prisoes-separadas",
-      "score": 81.7,
-      "data_pub": "Tue, 10 Nov 2026 20:46:00 -0300"
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-reafirma-que-decisao-sobre-cpmi-do-banco-master-cabe-ele",
+      "score": 81.1,
+      "data_pub": "Thu, 12 Nov 2026 12:46:00 -0300"
     }
   ]
 }
