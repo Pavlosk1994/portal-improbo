@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-12T18:45:47.904013+00:00",
+  "ultima_atualizacao": "2026-11-13T01:44:21.628447+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-13T01:44:21.628397+00:00",
+      "horario_brt": "13/11/2026 01:44:21",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.6,
+      "slug": "o-milagre-do-corte-sessenta-bilhoes-de-amor",
+      "titulo": "O MILAGRE DO CORTE: SESSENTA BILHÕES DE AMOR",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-12T18:45:47.903964+00:00",
       "horario_brt": "12/11/2026 18:45:47",
@@ -215,17 +226,6 @@
       "titulo": "A DANÇA DOS 28 LUGARES NA MESA DO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-02T07:30:41.932156+00:00",
-      "horario_brt": "02/11/2026 07:30:41",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.8,
-      "slug": "a-danca-da-cadeira-antes-da-hora-no-senado",
-      "titulo": "A DANÇA DA CADEIRA ANTES DA HORA NO SENADO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,15 +233,15 @@
       "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
-      "score": 127.0,
+      "score": 120.0,
       "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
     },
     {
-      "titulo": "Dino mantém início da escala 5x2 para 16 de dezembro e ajusta transição para permitir 42 horas semanais em 5 dias de trabalho",
+      "titulo": "Senado Federal aprova texto-base de projeto que prevê ajuste fiscal de até R$ 60 bilhões",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/12/fim-da-escala-6x1-dino-autoriza-distribuicao-de-42-horas-semanais-em-5-dias-de-trabalho.ghtml",
-      "score": 99.4,
-      "data_pub": "Thu, 12 Nov 2026 17:32:20 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/senado-federal-aprova-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
+      "score": 104.2,
+      "data_pub": "Fri, 13 Nov 2026 00:05:04 -0000"
     },
     {
       "titulo": "Senado deve votar pacote de medidas fiscais nesta quinta; governo fala em um impacto de até R$ 60 bi",
@@ -251,18 +251,18 @@
       "data_pub": "Thu, 12 Nov 2026 03:00:00 -0000"
     },
     {
+      "titulo": "Dino mantém início da escala 5x2 para 16 de dezembro e ajusta transição para permitir 42 horas semanais em 5 dias de trabalho",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/fim-da-escala-6x1-dino-autoriza-distribuicao-de-42-horas-semanais-em-5-dias-de-trabalho.ghtml",
+      "score": 92.4,
+      "data_pub": "Thu, 12 Nov 2026 17:32:20 -0000"
+    },
+    {
       "titulo": "Condenada pelo TSE a pagar R$ 7,5 milhões, Meta recebeu R$ 520 milhões de campanhas; 70 vezes o valor da multa",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/12/condenada-pelo-tse-a-pagar-r-75-milhoes-meta-recebeu-de-r-520-milhoes-de-campanhas-70-vezes-o-valor-da-multa.ghtml",
       "score": 91.2,
       "data_pub": "Thu, 12 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Alcolumbre reafirma que decisão sobre CPMI do Banco Master cabe a ele",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-reafirma-que-decisao-sobre-cpmi-do-banco-master-cabe-ele",
-      "score": 81.1,
-      "data_pub": "Thu, 12 Nov 2026 12:46:00 -0300"
     }
   ]
 }
