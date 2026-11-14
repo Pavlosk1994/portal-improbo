@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-14T01:21:20.341826+00:00",
+  "ultima_atualizacao": "2026-11-14T16:54:40.679116+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-14T16:54:40.679061+00:00",
+      "horario_brt": "14/11/2026 16:54:40",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 19.8,
+      "slug": "o-milagre-da-contencao-de-gastos-de-60-bilhoes",
+      "titulo": "O MILAGRE DA CONTENÇÃO DE GASTOS DE 60 BILHÕES",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-14T01:21:20.341770+00:00",
       "horario_brt": "14/11/2026 01:21:20",
@@ -215,17 +226,6 @@
       "titulo": "O NOVO SUS DO CRIME: A PEC DA SEGURANÇA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-03T18:21:24.631158+00:00",
-      "horario_brt": "03/11/2026 18:21:24",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 14.2,
-      "slug": "a-nova-vitrine-da-seguranca-mais-um-ministerio",
-      "titulo": "A NOVA VITRINE DA SEGURANÇA: MAIS UM MINISTÉRIO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -233,36 +233,36 @@
       "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
-      "score": 110.0,
+      "score": 102.0,
       "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
+    },
+    {
+      "titulo": "Após eleição de Lula, bancada do agro prioriza acesso ao crédito para produtores",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/14/apos-eleicao-de-lula-bancada-do-agro-prioriza-acesso-ao-credito-para-produtores.ghtml",
+      "score": 100.8,
+      "data_pub": "Sat, 14 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Futuro ministro da Fazenda: veja quem são os cotados e o que está em jogo na escolha de Lula",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/13/futuro-ministro-da-fazenda-veja-quem-sao-os-cotados-e-o-que-esta-em-jogo-na-escolha-de-lula.ghtml",
-      "score": 108.0,
+      "score": 98.0,
       "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
+    },
+    {
+      "titulo": "Senado Federal aprova texto-base de projeto que prevê ajuste fiscal de até R$ 60 bilhões",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/senado-federal-aprova-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
+      "score": 93.2,
+      "data_pub": "Fri, 13 Nov 2026 00:05:04 -0000"
     },
     {
       "titulo": "Trava extra para gastos, mudanças no piso da saúde e corte em benefícios tributários: entenda ajuste fiscal aprovado pelo Senado",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/13/trava-extra-para-gastos-mudancas-no-piso-da-saude-e-corte-em-beneficios-tributarios-entenda-ajuste-fiscal-aprovado-pelo-senado.ghtml",
-      "score": 97.2,
+      "score": 87.2,
       "data_pub": "Fri, 13 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Câmara pede que STF derrube parte das regras fixadas por Dino para escala 5x2",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/camara-pede-que-stf-derrube-parte-das-regras-fixadas-por-dino-para-escala-5x2.ghtml",
-      "score": 96.0,
-      "data_pub": "Fri, 13 Nov 2026 16:42:59 -0000"
-    },
-    {
-      "titulo": "Meta bate recorde e recebe meio bilhão de reais nas eleições; PL gasta quase o dobro do PT com a empresa",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/meta-bate-recorde-e-recebe-meio-bilhao-de-reais-nas-eleicoes-pl-gasta-quase-o-dobro-do-pt-com-a-empresa.ghtml",
-      "score": 93.6,
-      "data_pub": "Fri, 13 Nov 2026 03:00:01 -0000"
     }
   ]
 }
