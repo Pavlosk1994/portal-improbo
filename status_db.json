@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-15T02:39:25.866595+00:00",
+  "ultima_atualizacao": "2026-11-15T07:41:31.121696+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-15T07:41:31.121662+00:00",
+      "horario_brt": "15/11/2026 07:41:31",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 57.1,
+      "slug": "balcao-de-negocios-73-vagas-nas-agencias",
+      "titulo": "BALCÃO DE NEGÓCIOS: 73 VAGAS NAS AGÊNCIAS",
+      "imagem_tamanho_kb": 99.8,
+      "audio_tamanho_kb": 798.8
+    },
     {
       "timestamp": "2026-11-15T02:39:25.866561+00:00",
       "horario_brt": "15/11/2026 02:39:25",
@@ -215,54 +226,43 @@
       "titulo": "A GINÁSTICA DA CADEIRA: O PL JÁ OLHA 2027",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-02T20:41:06.125710+00:00",
-      "horario_brt": "02/11/2026 20:41:06",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.8,
-      "slug": "a-danca-dos-28-lugares-na-mesa-do-senado",
-      "titulo": "A DANÇA DOS 28 LUGARES NA MESA DO SENADO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-aprova-texto-base-de-pacote-que-preve-economia-de-ate-r-60-bi",
-      "score": 61.6,
-      "data_pub": "Thu, 12 Nov 2026 21:54:00 -0300"
+      "titulo": "Lula terá 73 indicações para agências reguladoras e BC e ganha espaço para negociar com Centrão",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/15/lula-tera-73-indicacoes-para-agencias-reguladoras-e-bc-e-ganha-espaco-para-negociar-com-centrao.ghtml",
+      "score": 116.2,
+      "data_pub": "Sun, 15 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Alcolumbre reafirma que decisão sobre CPMI do Banco Master cabe a ele",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-reafirma-que-decisao-sobre-cpmi-do-banco-master-cabe-ele",
-      "score": 56.1,
-      "data_pub": "Thu, 12 Nov 2026 12:46:00 -0300"
+      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
+      "score": 102.0,
+      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
     },
     {
-      "titulo": "Senado deve votar ajuste fiscal com previsão de economia de R$ 60 bi",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-deve-votar-ajuste-fiscal-com-previsao-de-economia-de-r-60-bi",
-      "score": 56.1,
-      "data_pub": "Thu, 12 Nov 2026 09:54:00 -0300"
+      "titulo": "Após eleição de Lula, bancada do agro prioriza acesso ao crédito para produtores",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/14/apos-eleicao-de-lula-bancada-do-agro-prioriza-acesso-ao-credito-para-produtores.ghtml",
+      "score": 90.8,
+      "data_pub": "Sat, 14 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "PGR reforça ao STF pedido de crédito extra de R$ 324 milhões para pagar penduricalhos",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pgr-reforca-ao-stf-pedido-de-credito-extra-de-r-324-milhoes-para-pagar-penduricalhos.shtml",
-      "score": 53.6,
-      "data_pub": "14 Nov 2026 22:01:00 -0300"
+      "titulo": "Futuro ministro da Fazenda: veja quem são os cotados e o que está em jogo na escolha de Lula",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/13/futuro-ministro-da-fazenda-veja-quem-sao-os-cotados-e-o-que-esta-em-jogo-na-escolha-de-lula.ghtml",
+      "score": 90.0,
+      "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
     },
     {
-      "titulo": "Um ano após prisão de Vorcaro, escândalo do Master extrapola política e põe STF sob suspeita inédita",
-      "fonte": "Folha de S.Paulo - Poder",
-      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/um-ano-apos-prisao-de-vorcaro-escandalo-do-master-extrapola-politica-e-poe-stf-sob-suspeita-inedita.shtml",
-      "score": 49.7,
-      "data_pub": "14 Nov 2026 23:00:00 -0300"
+      "titulo": "Câmara pede que STF derrube parte das regras fixadas por Dino para escala 5x2",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/13/camara-pede-que-stf-derrube-parte-das-regras-fixadas-por-dino-para-escala-5x2.ghtml",
+      "score": 86.0,
+      "data_pub": "Fri, 13 Nov 2026 16:42:59 -0000"
     }
   ]
 }

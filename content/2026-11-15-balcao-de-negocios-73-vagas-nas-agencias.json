@@ -1,0 +1,43 @@
+{
+  "titulo": "BALCÃO DE NEGÓCIOS: 73 VAGAS NAS AGÊNCIAS",
+  "subtitulo": "Governo descobre que a melhor forma de regular o mercado é dar a cadeira de presente para quem o Centrão escolher",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo anuncia 73 vagas em agências reguladoras para o Centrão organizar o currículo na base da boquinha.",
+  "legenda_imagem": "Caricatura retratando a República transformada em um balcão de feira onde ministros e deputados negociam cadeiras douradas com carimbo oficial.",
+  "prompt_caricatura": "Caricatura política estilo O Pasquim e Henfil, traço de nanquim expressivo e aquarela guache, retratando líderes políticos vestidos de mascates oferecendo diretorias de agências reguladoras e do Banco Central em uma banca de feira em Brasília, sem nenhum texto ou legenda.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians dressed as street vendors selling regulatory agency and Central Bank seats at a Brasília flea market, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, sempre atenta à modernidade gerencial e à eficiência republicana, resolveu dar o passo definitivo rumo à harmonia entre os Poderes: abrir 73 vagas de direção em agências reguladoras e no Banco Central para servir de moeda de troca institucional com o Centrão.",
+    "Com a precisão cirúrgica de quem gerencia um bazar de alfaiataria fina, o Planalto percebeu que a melhor forma de garantir a estabilidade macroeconômica e a autonomia técnica das instituições é garantir que o operador do setor elétrico, da aviação civil ou da política monetária tenha sido devidamente chancelado por um deputado em troca de emenda parlamentar.",
+    "Afinal, a meritocracia tecnocrática é um conceito antiquado que apenas atrasa o trâmite legislativo. Nada substitui a sabedoria de um dirigente indicado às pressas para resolver a pauta de votações da próxima quarta-feira, garantindo que o mercado e o consumidor durmam absolutamente tranquilos sabendo que a regulação foi decidida no plenário.",
+    "E para que o cidadão não pense que há desperdício, o estoque de cargos garante a paz universal até o fim da década. O contribuinche, claro, continua arcando com a fatura do consórcio, mas ganha em troca o espetáculo comovente de ver a harmonia institucional funcionar à base de carimbo burocrático e rateio partidário."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Indicação técnica é aquela que vem com o timbre do partido e o aval do relator."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Autonomia do Banco Central garantida até a próxima exigência da base aliada."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Trocar diretoria de agência por voto favorável é a verdadeira política monetária."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "Quem paga a conta das agências é o cidadão, quem senta na cadeira é o padrinho político."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva poderá fazer até 73 indicações para cargos de direção em agências reguladoras federais e no Banco Central ao longo dos próximos anos, incluindo 62 vagas em órgãos como Aneel, Anatel, ANP e Anac, além de 11 indicações na autoridade monetária, oferecendo ao governo amplo espaço para negociações políticas com o Centrão.",
+  "slug": "balcao-de-negocios-73-vagas-nas-agencias",
+  "data": "15 de Novembro de 2026",
+  "imagem_capa": "imagens/balcao-de-negocios-73-vagas-nas-agencias.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/balcao-de-negocios-73-vagas-nas-agencias.mp3",
+  "timestamp": "2026-11-15T07:41:31.051112"
+}
