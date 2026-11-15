@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-14T16:54:40.679116+00:00",
+  "ultima_atualizacao": "2026-11-15T00:54:31.966706+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-15T00:54:31.966657+00:00",
+      "horario_brt": "15/11/2026 00:54:31",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.4,
+      "slug": "o-milagre-da-conta-sincera-60-bilhoes-de-amor",
+      "titulo": "O MILAGRE DA CONTA SINCERA: 60 BILHÕES DE AMOR",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
     {
       "timestamp": "2026-11-14T16:54:40.679061+00:00",
       "horario_brt": "14/11/2026 16:54:40",
@@ -215,17 +226,6 @@
       "titulo": "MARINHO LANÇA O GRITO DOS 81 NO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-04T01:08:45.245218+00:00",
-      "horario_brt": "04/11/2026 01:08:45",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 23.6,
-      "slug": "o-novo-sus-do-crime-a-pec-da-seguranca",
-      "titulo": "O NOVO SUS DO CRIME: A PEC DA SEGURANÇA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
@@ -251,18 +251,18 @@
       "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
     },
     {
-      "titulo": "Senado Federal aprova texto-base de projeto que prevê ajuste fiscal de até R$ 60 bilhões",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/12/senado-federal-aprova-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
-      "score": 93.2,
-      "data_pub": "Fri, 13 Nov 2026 00:05:04 -0000"
-    },
-    {
       "titulo": "Trava extra para gastos, mudanças no piso da saúde e corte em benefícios tributários: entenda ajuste fiscal aprovado pelo Senado",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/13/trava-extra-para-gastos-mudancas-no-piso-da-saude-e-corte-em-beneficios-tributarios-entenda-ajuste-fiscal-aprovado-pelo-senado.ghtml",
       "score": 87.2,
       "data_pub": "Fri, 13 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
+      "score": 86.2,
+      "data_pub": "Sat, 14 Nov 2026 19:55:35 -0000"
     }
   ]
 }
