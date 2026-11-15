@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-15T07:41:31.121696+00:00",
+  "ultima_atualizacao": "2026-11-15T17:39:09.657954+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-15T17:39:09.657918+00:00",
+      "horario_brt": "15/11/2026 17:39:09",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 90.8,
+      "slug": "o-romance-forcado-do-agro-com-a-esquerda",
+      "titulo": "O ROMANCE FORÇADO DO AGRO COM A ESQUERDA",
+      "imagem_tamanho_kb": 100.5,
+      "audio_tamanho_kb": 836.4
+    },
     {
       "timestamp": "2026-11-15T07:41:31.121662+00:00",
       "horario_brt": "15/11/2026 07:41:31",
@@ -215,34 +226,9 @@
       "titulo": "A NOVA VITRINE DA SEGURANÇA: MAIS UM MINISTÉRIO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-03T02:49:19.233657+00:00",
-      "horario_brt": "03/11/2026 02:49:19",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 14.8,
-      "slug": "a-ginastica-da-cadeira-o-pl-ja-olha-2027",
-      "titulo": "A GINÁSTICA DA CADEIRA: O PL JÁ OLHA 2027",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Lula terá 73 indicações para agências reguladoras e BC e ganha espaço para negociar com Centrão",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/15/lula-tera-73-indicacoes-para-agencias-reguladoras-e-bc-e-ganha-espaco-para-negociar-com-centrao.ghtml",
-      "score": 116.2,
-      "data_pub": "Sun, 15 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
-      "score": 102.0,
-      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
-    },
     {
       "titulo": "Após eleição de Lula, bancada do agro prioriza acesso ao crédito para produtores",
       "fonte": "G1 Política",
@@ -258,11 +244,25 @@
       "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
     },
     {
-      "titulo": "Câmara pede que STF derrube parte das regras fixadas por Dino para escala 5x2",
+      "titulo": "Senado Federal aprova texto-base de projeto que prevê ajuste fiscal de até R$ 60 bilhões",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/camara-pede-que-stf-derrube-parte-das-regras-fixadas-por-dino-para-escala-5x2.ghtml",
-      "score": 86.0,
-      "data_pub": "Fri, 13 Nov 2026 16:42:59 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/senado-federal-aprova-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
+      "score": 85.2,
+      "data_pub": "Fri, 13 Nov 2026 00:05:04 -0000"
+    },
+    {
+      "titulo": "Ajuste fiscal: Alckmin afirma que projeto do governo 'vai na direção correta' e diz esperar votação na Câmara nesta semana",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/15/ajuste-fiscal-alckmin-afirma-que-projeto-do-governo-vai-na-direcao-correta-e-diz-esperar-votacao-na-camara-nesta-semana.ghtml",
+      "score": 81.4,
+      "data_pub": "Sun, 15 Nov 2026 15:23:09 -0000"
+    },
+    {
+      "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
+      "score": 79.2,
+      "data_pub": "Sat, 14 Nov 2026 19:55:35 -0000"
     }
   ]
 }

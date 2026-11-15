@@ -1,0 +1,43 @@
+{
+  "titulo": "O ROMANCE FORÇADO DO AGRO COM A ESQUERDA",
+  "subtitulo": "Depois de jurar amor eterno a Flávio Bolsonaro, bancada ruralista redescobre a beleza interior dos juros subsidiados de Lula.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O agro chorou na foto de Flávio Bolsonaro, mas já está pedindo o pix e a chave do cofre para o governo Lula.",
+  "legenda_imagem": "Líderes do agro trocam a faixa de miss do Bolsonaro pelo crachá de visitante VIP na antessala do Planalto.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 70 retratando deputados da bancada ruralista de chapéu Stetson tentando abraçar sorridentes e constrangidos o vice-presidente Geraldo Alckmin e o presidente Lula, traço em nanquim e aquarela guache em tom sépia, sem textos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian ruralist politicians in cowboy hats awkwardly trying to embrace Vice President Geraldo Alckmin and President Luiz Inacio Lula da Silva in political farce, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A geopolítica nacional é uma arte dramática que inveja qualquer novela das nove. Quem assistiu aos discursos inflamados e juras de sangue da Frente Parlamentar da Agropecuária em prol da cruzada eleitoral de Flávio Bolsonaro agora assiste, com a mesma naturalidade de quem troca de camisa em dia de calor, ao gracioso balé da realpolitik.",
+    "Afinal, o patriotismo com faturamento garantido fala mais alto que qualquer ideologia de palanque. Com a vitória sacramentada de Luiz Inácio Lula da Silva, a bancada do campo precisou adaptar rapidamente o vocabulário: o que antes era 'oposição intransigente' virou 'pragmatismo republicano na busca por captação de custeio subsidiado'.",
+    "Nos corredores de Brasília, a grande preocupação não é mais o rumo da nação ou a pureza doutrinária, mas sim quem será o felizardo do Centrão a sentar na cadeira do Ministério da Agricultura. Afinal, as colheitadeiras não querem saber quem assinou o decreto; elas exigem apenas que a linha de crédito venha com carência generosa e juros camaradas.",
+    "Enquanto Lula viaja para mais uma cúpula internacional sem definir o ministério, os barões do campo ensaiam um sorriso amarelo para Geraldo Alckmin e fazem contas. No fim das contas, a cartilha do pragmatismo rural prova que todo bom conservador de carteirinha tem um lado socialista na hora de negociar a taxa básica de juros."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "O palanque de ontem vira a mesa de negociação de hoje com a elegância de um contorcionista."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O discurso de oposição feroz derrete na primeira consulta ao saldo do BNDES."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Subsidiar a safra com dinheiro público é a verdadeira pauta patriótica da temporada."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "O Centrão aguarda apenas a sanção do cardápio de cargos para abençoar a união."
+    }
+  ],
+  "contexto_real": "Após o apoio a Flávio Bolsonaro na disputa presidencial, a Frente Parlamentar da Agropecuária (FPA) reavalia sua atuação legislativa para os próximos quatro anos sob o governo de Luiz Inácio Lula da Silva. Os ruralistas monitoram a definição do Ministério da Agricultura e cobiçam a manutenção e expansão de linhas de crédito e recursos para o setor, de olho em nomes ventilados como o de Geraldo Alckmin e na articulação com partidos do Centrão.",
+  "slug": "o-romance-forcado-do-agro-com-a-esquerda",
+  "data": "15 de Novembro de 2026",
+  "imagem_capa": "imagens/o-romance-forcado-do-agro-com-a-esquerda.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-romance-forcado-do-agro-com-a-esquerda.mp3",
+  "timestamp": "2026-11-15T17:39:09.586061"
+}
