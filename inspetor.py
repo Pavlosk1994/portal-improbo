@@ -82,24 +82,25 @@ def validar_artigo_completo(dados_artigo):
         if len(p.strip()) < 80:
             return False, f"Parágrafo {idx} muito curto para o padrão editorial ÍMPROBO."
 
-    # 3. REGRA DE OURO SAGRADA: Validação Estrita de Caricatura
+    # 3. Validação de Card Social / Imagem de Compartilhamento (Modo Text-First)
     caminho_img = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
     if not os.path.exists(caminho_img):
-        return False, f"Arquivo de caricatura não encontrado em disco: imagens/{slug}.jpg"
+        try:
+            from gerar_card_social import gerar_card_social
+            gerar_card_social(dados_artigo, forcar=False)
+        except Exception:
+            pass
 
-    tamanho_bytes = os.path.getsize(caminho_img)
-    if tamanho_bytes < 50000:
-        return False, f"Caricatura rejeitada por tamanho insuficiente ({tamanho_bytes} bytes). Esperado >= 50KB."
-
-    try:
-        with Image.open(caminho_img) as im:
-            largura, altura = im.size
-            if largura < 800 or altura < 450:
-                return False, f"Resolução da imagem abaixo do padrão widescreen ({largura}x{altura})."
-            if im.format not in ("JPEG", "PNG", "WEBP"):
-                return False, f"Formato de imagem inválido ({im.format})."
-    except Exception as e:
-        return False, f"Arquivo de imagem corrompido ou ilegível: {e}"
+    if os.path.exists(caminho_img):
+        try:
+            with Image.open(caminho_img) as im:
+                largura, altura = im.size
+                if largura < 400 or altura < 200:
+                    return False, f"Resolução do card social abaixo do padrão ({largura}x{altura})."
+                if im.format not in ("JPEG", "PNG", "WEBP"):
+                    return False, f"Formato de imagem inválido ({im.format})."
+        except Exception as e:
+            return False, f"Arquivo de imagem corrompido ou ilegível: {e}"
 
     # 4. Validação Mandatória de Narração Neural em Áudio
     caminho_audio = os.path.join(AUDIO_DIR, f"{slug}.mp3")

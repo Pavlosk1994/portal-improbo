@@ -219,6 +219,39 @@
             box-shadow: 0 0 10px rgba(224, 49, 49, 0.8);
         }
 
+        /* Carimbo Burocrático Satírico */
+        .carimbo-satiro {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.2rem 0.55rem;
+            border: 1.5px dashed currentColor;
+            border-radius: 2px;
+            transform: rotate(-2.5deg);
+            user-select: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            line-height: 1.2;
+            transition: transform 0.2s ease;
+        }
+        .carimbo-satiro:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+        html.dark .carimbo-satiro {
+            filter: drop-shadow(0 0 1px rgba(255,255,255,0.1));
+        }
+
+        /* Soundbite / Munição Viral */
+        .soundbite-card {
+            border-left: 4px solid var(--editorial-red);
+            background-color: var(--audio-box-bg);
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
         /* Efeitos de Transição de Rolagem Suaves (Fade-in Sem Tranco de Layout) */
         .reveal-on-scroll {
             opacity: 0;
@@ -488,7 +521,7 @@
             <span class="text-[#D1CEC7] dark:text-stone-600">&bull;</span>
             <span class="hidden sm:inline text-stone-600 dark:text-stone-400">Previsão: 100% de umidade na cara de pau</span>
             <span class="hidden sm:inline text-[#D1CEC7] dark:text-stone-600">&bull;</span>
-            <span id="live-header-date" class="text-stone-600 dark:text-stone-400">Domingo, 15 de Novembro de 2026</span>
+            <span id="live-header-date" class="text-stone-600 dark:text-stone-400">Sábado, 14 de Novembro de 2026</span>
         </div>
         <div class="text-xs font-mono uppercase text-stone-500 dark:text-stone-400 hidden sm:block">
             Jornalismo Satírico Sem Decoro

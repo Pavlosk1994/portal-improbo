@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-15T00:54:31.966706+00:00",
+  "ultima_atualizacao": "2026-11-15T02:18:43.388566+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -8,156 +8,101 @@
   },
   "historico_execucoes": [
     {
-      "timestamp": "2026-11-15T00:54:31.966657+00:00",
-      "horario_brt": "15/11/2026 00:54:31",
+      "timestamp": "2026-11-15T02:18:43.388493+00:00",
+      "horario_brt": "14/11/2026 23:18:43",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 28.7,
+      "slug": "senado-aprova-texto-base-de-pacote-que-preve-econo",
+      "titulo": "CIRCO DE BRASÍLIA: SENADO APROVA TEXTO-BASE DE PACOTE QUE ...",
+      "imagem_tamanho_kb": 100.8,
+      "audio_tamanho_kb": 969.2
+    },
+    {
+      "timestamp": "2026-11-15T02:12:52.723226+00:00",
+      "horario_brt": "14/11/2026 23:12:52",
       "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.4,
-      "slug": "o-milagre-da-conta-sincera-60-bilhoes-de-amor",
-      "titulo": "O MILAGRE DA CONTA SINCERA: 60 BILHÕES DE AMOR",
-      "imagem_tamanho_kb": 0,
+      "motivo": "Arquivo de áudio neural não encontrado em disco: audio/governo-lula-finaliza-pacote-de-corte-de-gastos-ob.mp3",
+      "duracao_segundos": 0.2,
+      "slug": "governo-lula-finaliza-pacote-de-corte-de-gastos-ob",
+      "titulo": "A FARRA DO CARIMBO: GOVERNO LULA FINALIZA PACOTE DE CORTE ...",
+      "imagem_tamanho_kb": 99.7,
       "audio_tamanho_kb": 0
     },
     {
-      "timestamp": "2026-11-14T16:54:40.679061+00:00",
-      "horario_brt": "14/11/2026 16:54:40",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 19.8,
-      "slug": "o-milagre-da-contencao-de-gastos-de-60-bilhoes",
-      "titulo": "O MILAGRE DA CONTENÇÃO DE GASTOS DE 60 BILHÕES",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.664118+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "o-leilao-do-condonvem-triplex-da-oas-volta-com-juros-e-correcao",
+      "titulo": "O LEILÃO DO CONDONVÉM: TRIPLEX DA OAS VOLTA COM JUROS",
+      "imagem_tamanho_kb": 1049.1,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-14T01:21:20.341770+00:00",
-      "horario_brt": "14/11/2026 01:21:20",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 51.4,
-      "slug": "o-milagre-da-razao-fiscal",
-      "titulo": "O MILAGRE DA RAZÃO FISCAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.661365+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "o-concilio-da-preguica-stf-medeia-o-fim-da-6x1-entre-quem-trabalha-3x4",
+      "titulo": "O CONCÍLIO DA FOLGA: STF REGULA 6X1 COM JORNADA 3X4",
+      "imagem_tamanho_kb": 1013.1,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-13T18:27:11.592958+00:00",
-      "horario_brt": "13/11/2026 18:27:11",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 20.7,
-      "slug": "o-milagre-da-pagina-2-lula-descobre-o-cortador",
-      "titulo": "O MILAGRE DA PÁGINA 2: LULA DESCOBRE O CORTADOR",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.659519+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "o-carimbo-do-invisivel-flavio-dino-e-o-rastreador-de-emendas-pix",
+      "titulo": "O CARIMBO DO INVISÍVEL: DINO E O RASTREADOR DE EMENDAS PIX",
+      "imagem_tamanho_kb": 920.1,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-13T01:44:21.628397+00:00",
-      "horario_brt": "13/11/2026 01:44:21",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.6,
-      "slug": "o-milagre-do-corte-sessenta-bilhoes-de-amor",
-      "titulo": "O MILAGRE DO CORTE: SESSENTA BILHÕES DE AMOR",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.657542+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "o-beija-mao-da-toga-alcolumbre-ameaca-devolver-messias-a-lula",
+      "titulo": "O BEIJA-MÃO DA TOGA: ALCOLUMBRE DEVOLVE MESSIAS A LULA",
+      "imagem_tamanho_kb": 1140.2,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-12T18:45:47.903964+00:00",
-      "horario_brt": "12/11/2026 18:45:47",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.6,
-      "slug": "a-metamorfose-do-bolso-lula-e-os-r-60-bi-da-fe",
-      "titulo": "A METAMORFOSE DO BOLSO: LULA E OS R$ 60 BI DA FÉ",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.654403+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "o-apagao-da-tesoura-haddad-corta-o-vento-e-poupa-os-coroneis",
+      "titulo": "O APAGÃO DA TESOURA: HADDAD CORTA O VENTO E POUPA CORONÉIS",
+      "imagem_tamanho_kb": 1037.5,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-12T02:10:35.133265+00:00",
-      "horario_brt": "12/11/2026 02:10:35",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 21.6,
-      "slug": "alcolumbre-o-sindico-perpetuorio-do-senado-federal",
-      "titulo": "ALCOLUMBRE: O SÍNDICO PERPETUÓRIO DO SENADO FEDERAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
+      "timestamp": "2026-11-13T06:23:27.648623+00:00",
+      "horario_brt": "13/11/2026 03:23:27",
+      "status": "SUCESSO",
+      "motivo": "Aprovado pelo Inspetor de Qualidade",
+      "duracao_segundos": 14.2,
+      "slug": "a-cpi-do-compadre-alcolumbre-senta-em-cima-do-master",
+      "titulo": "A CPI DO COMPADRE: ALCOLUMBRE SENTA EM CIMA DO MASTER",
+      "imagem_tamanho_kb": 1165.8,
+      "audio_tamanho_kb": 1608.0
     },
     {
-      "timestamp": "2026-11-11T18:29:21.478604+00:00",
-      "horario_brt": "11/11/2026 18:29:21",
+      "timestamp": "2026-11-13T06:09:48.258269+00:00",
+      "horario_brt": "13/11/2026 03:09:48",
       "status": "RETIDO",
       "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 13.6,
-      "slug": "lula-anuncia-amor-platonico-pela-fiscal",
-      "titulo": "LULA ANUNCIA AMOR PLATÔNICO PELA FISCAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-11T01:07:55.695976+00:00",
-      "horario_brt": "11/11/2026 01:07:55",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 52.2,
-      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
-      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-10T18:32:22.004761+00:00",
-      "horario_brt": "10/11/2026 18:32:22",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 58.1,
-      "slug": "lula-lanca-o-orcamento-por-oracao-em-rede-nacional",
-      "titulo": "LULA LANÇA O 'ORÇAMENTO POR ORAÇÃO' EM REDE NACIONAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-10T08:07:20.747906+00:00",
-      "horario_brt": "10/11/2026 08:07:20",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 11.4,
-      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
-      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-09T21:22:17.417012+00:00",
-      "horario_brt": "09/11/2026 21:22:17",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 15.8,
-      "slug": "lula-declara-amor-platonico-a-fiscal",
-      "titulo": "LULA DECLARA AMOR PLATÔNICO À FISCAL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-09T07:46:57.180899+00:00",
-      "horario_brt": "09/11/2026 07:46:57",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 56.6,
-      "slug": "o-milagre-da-responsabilidade-fiscal-por-osmose",
-      "titulo": "O MILAGRE DA RESPONSABILIDADE FISCAL POR OSMOSE",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-09T00:39:45.641458+00:00",
-      "horario_brt": "09/11/2026 00:39:45",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 13.9,
-      "slug": "lula-declara-amor-platonico-a-responsabilidade-fis",
-      "titulo": "LULA DECLARA AMOR PLATÔNICO À RESPONSABILIDADE FISCAL",
+      "duracao_segundos": 0.1,
+      "slug": "governo-lula-finaliza-pacote-de-corte-de-gastos-ob",
+      "titulo": "O MILAGRE DA CARA DE PAU: GOVERNO LULA FINALIZA PACOTE DE ...",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
     },
@@ -226,43 +171,98 @@
       "titulo": "MARINHO LANÇA O GRITO DOS 81 NO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-11-04T01:08:45.245218+00:00",
+      "horario_brt": "04/11/2026 01:08:45",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 23.6,
+      "slug": "o-novo-sus-do-crime-a-pec-da-seguranca",
+      "titulo": "O NOVO SUS DO CRIME: A PEC DA SEGURANÇA",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-11-03T18:21:24.631158+00:00",
+      "horario_brt": "03/11/2026 18:21:24",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 14.2,
+      "slug": "a-nova-vitrine-da-seguranca-mais-um-ministerio",
+      "titulo": "A NOVA VITRINE DA SEGURANÇA: MAIS UM MINISTÉRIO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-11-03T02:49:19.233657+00:00",
+      "horario_brt": "03/11/2026 02:49:19",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 14.8,
+      "slug": "a-ginastica-da-cadeira-o-pl-ja-olha-2027",
+      "titulo": "A GINÁSTICA DA CADEIRA: O PL JÁ OLHA 2027",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-11-02T20:41:06.125710+00:00",
+      "horario_brt": "02/11/2026 20:41:06",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.8,
+      "slug": "a-danca-dos-28-lugares-na-mesa-do-senado",
+      "titulo": "A DANÇA DOS 28 LUGARES NA MESA DO SENADO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
+    },
+    {
+      "timestamp": "2026-11-02T07:30:41.932156+00:00",
+      "horario_brt": "02/11/2026 07:30:41",
+      "status": "RETIDO",
+      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
+      "duracao_segundos": 47.8,
+      "slug": "a-danca-da-cadeira-antes-da-hora-no-senado",
+      "titulo": "A DANÇA DA CADEIRA ANTES DA HORA NO SENADO",
+      "imagem_tamanho_kb": 0,
+      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
-      "score": 102.0,
-      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
+      "titulo": "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-aprova-texto-base-de-pacote-que-preve-economia-de-ate-r-60-bi",
+      "score": 61.6,
+      "data_pub": "Thu, 12 Nov 2026 21:54:00 -0300"
     },
     {
-      "titulo": "Após eleição de Lula, bancada do agro prioriza acesso ao crédito para produtores",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/14/apos-eleicao-de-lula-bancada-do-agro-prioriza-acesso-ao-credito-para-produtores.ghtml",
-      "score": 100.8,
-      "data_pub": "Sat, 14 Nov 2026 03:00:00 -0000"
+      "titulo": "Alcolumbre reafirma que decisão sobre CPMI do Banco Master cabe a ele",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-reafirma-que-decisao-sobre-cpmi-do-banco-master-cabe-ele",
+      "score": 56.1,
+      "data_pub": "Thu, 12 Nov 2026 12:46:00 -0300"
     },
     {
-      "titulo": "Futuro ministro da Fazenda: veja quem são os cotados e o que está em jogo na escolha de Lula",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/13/futuro-ministro-da-fazenda-veja-quem-sao-os-cotados-e-o-que-esta-em-jogo-na-escolha-de-lula.ghtml",
-      "score": 98.0,
-      "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
+      "titulo": "Senado deve votar ajuste fiscal com previsão de economia de R$ 60 bi",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-deve-votar-ajuste-fiscal-com-previsao-de-economia-de-r-60-bi",
+      "score": 56.1,
+      "data_pub": "Thu, 12 Nov 2026 09:54:00 -0300"
     },
     {
-      "titulo": "Trava extra para gastos, mudanças no piso da saúde e corte em benefícios tributários: entenda ajuste fiscal aprovado pelo Senado",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/trava-extra-para-gastos-mudancas-no-piso-da-saude-e-corte-em-beneficios-tributarios-entenda-ajuste-fiscal-aprovado-pelo-senado.ghtml",
-      "score": 87.2,
-      "data_pub": "Fri, 13 Nov 2026 03:00:00 -0000"
+      "titulo": "PGR reforça ao STF pedido de crédito extra de R$ 324 milhões para pagar penduricalhos",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pgr-reforca-ao-stf-pedido-de-credito-extra-de-r-324-milhoes-para-pagar-penduricalhos.shtml",
+      "score": 53.6,
+      "data_pub": "14 Nov 2026 22:01:00 -0300"
     },
     {
-      "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
-      "score": 86.2,
-      "data_pub": "Sat, 14 Nov 2026 19:55:35 -0000"
+      "titulo": "Um ano após prisão de Vorcaro, escândalo do Master extrapola política e põe STF sob suspeita inédita",
+      "fonte": "Folha de S.Paulo - Poder",
+      "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/um-ano-apos-prisao-de-vorcaro-escandalo-do-master-extrapola-politica-e-poe-stf-sob-suspeita-inedita.shtml",
+      "score": 49.7,
+      "data_pub": "14 Nov 2026 23:00:00 -0300"
     }
   ]
 }

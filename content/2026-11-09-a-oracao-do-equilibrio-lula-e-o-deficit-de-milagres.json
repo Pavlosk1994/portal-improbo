@@ -1,0 +1,43 @@
+{
+  "titulo": "A ORAÇÃO DO EQUILÍBRIO: LULA E O DEFICIT DE MILAGRES",
+  "subtitulo": "Em cadeia nacional, o presidente descobre a gravidade da dívida pública, jura amor eterno à responsabilidade fiscal e terceiriza o milagre do corte de despesas para as orações de Brasília.",
+  "categoria": "💸 O Ralo do Orçamento",
+  "tempo_leitura": "3 min de leitura",
+  "autor": "Coronel Teófilo",
+  "destaque": true,
+  "frase_disparo_zap": "Lula foi à TV jurar que se preocupa com a dívida e com a inflação: o problema é que quando o governo jura amor ao equilíbrio fiscal, quem tem que pagar a conta do restaurante é sempre o cidadão comum.",
+  "legenda_imagem": "Lula e Haddad operando calculadoras solenes e cofres públicos furados na liturgia fiscal do Planalto.",
+  "prompt_caricatura": "Caricatura editorial no estilo clássico da Revista MAD e O Pasquim com nanquim, hachuras e aquarela retratando o presidente Lula de terno com faixa presidencial ligeiramente torta segurando calculadora gigante fumegante e planilhas orçamentárias que viram pombas voando, ao lado de Fernando Haddad tentando tampar um cofre furado de onde jorra dinheiro com carimbos oficiais.",
+  "prompt_caricatura_en": "Classic 1970s satirical editorial political cartoon in the style of MAD Magazine by Mort Drucker, detailed cross-hatching pen and ink with vibrant watercolor wash. Depicting Brazilian President Lula in a slightly crooked presidential sash holding a giant smoking calculator and flying budget sheets turning into doves, beside nervous Finance Minister Fernando Haddad trying to plug a leaking treasury vault spurting currency notes with official stamps, absolutely no words, no text, no logos.",
+  "corpo": [
+    "A liturgia do Palácio do Planalto atingiu o seu ápice teológico no último domingo: o presidente Luiz Inácio Lula da Silva convocou a nação pelo rádio e pela televisão para anunciar que descobriu, comovido, a existência da dívida pública e das taxas de juros. Não se tratava, asseguraram os assessores de imagem com o habitual sorriso engomado, de um recuo constrangido diante do mercado financeiro, mas de uma elevação espiritual do projeto desenvolvimentista. O governo agora ama o equilíbrio fiscal com a mesma intensidade com que ama a criação de secretarias extraordinárias, desde que a tesoura orçamentária passe bem longe dos privilégios palacianos e caia suavemente sobre os benefícios de quem já não tem onde apertar o cinto.",
+    "Nos bastidores da Esplanada, a operação para demonstrar austeridade foi batizada de 'milagre da multiplicação dos pareceres'. Fernando Haddad passou os últimos dias trancado com planilhas monumentais, tentando convencer a ala política de que gastar mais do que se arrecada não é uma conspiração da Faria Lima, mas uma inconveniência aritmética descoberta pelos matemáticos no século passado. A resposta dos ministros palacianos foi uma aula magistral de dialética burocrática: todos concordam solenemente com o corte de despesas, contanto que o sacrifício cívico seja executado com vigor patriótico no ministério vizinho.",
+    "Do lado da oposição congressual, a reação seguiu o figurino do farisaísmo orçamentário. Líderes partidários que aprovaram fundos eleitorais bilionários e emendas parlamentares sem carimbo correram às redes sociais vestidos de vestais da moralidade contábil, exigindo sangue frio do Executivo enquanto garantiam suas próprias verbas de pavimentação fantasma. O espetáculo é de uma coerência irretocável: enquanto Brasília simula um duelo homérico entre gastadores compulsivos e monges austeros, a plateia nacional assiste ao teatro sabendo exatamente quem lavará a louça do banquete no encerramento da sessão.",
+    "Ao final do pronunciamento, a grande mensagem pedagógica do Estado brasileiro ficou cristalina: o déficit primário não é uma falha de gestão, mas um excesso de generosidade cívica que exige a compreensão tolerante dos contribuintes. Entre orações televisionadas e promessas de aperto que dependem da benevolência de caciques partidários, o Planalto reafirmou a sua fé inabalável nas soluções que não contrariam ninguém com foro privilegiado. A responsabilidade fiscal é sagrada, inegociável e urgente — a ser rigorosamente implementada a partir do próximo mandato."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Conversão de Domingo à Noite",
+      "texto": "Descobrir a gravidade da dívida pública em rede nacional com a solenidade teatral de quem acabou de inventar a contabilidade."
+    },
+    {
+      "titulo": "A Tesoura do Vizinho",
+      "texto": "Defender cortes drásticos no orçamento federal desde que a lâmina atinja unicamente o gabinete de outra legenda."
+    },
+    {
+      "titulo": "A Austeridade com Fundo Partidário",
+      "texto": "Parlamentares cobrando contenção de gastos públicos enquanto reservam bilhões de dinheiro público para o marketing de campanha."
+    },
+    {
+      "titulo": "O Equilíbrio Perpétuo para Amanhã",
+      "texto": "Prometer responsabilidade fiscal absoluta e inadiável, com início agendado para o ano seguinte à próxima eleição."
+    }
+  ],
+  "contexto_real": "Em pronunciamento transmitido em cadeia nacional de rádio e televisão, o presidente Luiz Inácio Lula da Silva afirmou que seu governo tem compromisso com a responsabilidade fiscal, o controle da dívida pública e a redução das taxas de juros, em meio a discussões acaloradas na Esplanada sobre um pacote de corte de gastos obrigatórios elaborado pela Fazenda e pelo Planejamento. As medidas enfrentam resistências públicas e de bastidores de ministros da área social e do Trabalho, enquanto o Congresso cobra rapidez nas propostas sem abrir mão de emendas parlamentares.",
+  "slug": "a-oracao-do-equilibrio-lula-e-o-deficit-de-milagres",
+  "data": "09 de Novembro de 2026",
+  "imagem_capa": "imagens/a-oracao-do-equilibrio-lula-e-o-deficit-de-milagres.jpg",
+  "credito_imagem": "Arte: Caricatura Editorial IA / Ilustração Satírica",
+  "timestamp": "2026-11-09T13:00:00.000000",
+  "audio_url": "audio/a-oracao-do-equilibrio-lula-e-o-deficit-de-milagres.mp3"
+}

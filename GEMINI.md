@@ -22,7 +22,7 @@ Sempre que o usuário solicitar uma nova postagem, matéria ou crônica (ex: *"c
 
 2. **Pipeline de Execução Contínua**:
    - **Redação**: Redigir a crônica satírica seguindo estritamente as regras de `PROMPT_MESTRE.md` (inversão da premissa institucional, padrão New York Times, blacklist de clichês e campo `frase_disparo_zap`).
-   - **Ilustração**: Gerar/salvar a caricatura editorial 16:9 no traço clássico Mort Drucker / MAD em `imagens/[slug].jpg`.
+   - **Identidade Visual & Card Social**: O portal opera no padrão **Text-First & Broadside Clássico** (sem dependência de geração de imagens por IA). Gera instantaneamente o Card Social Tipográfico em `imagens/[slug].jpg` (padrão Open Graph / WhatsApp 1200x675) via Pillow, com carimbos burocráticos satíricos em CSS e reprodutor de áudio neural em destaque hero.
    - **Áudio Neural**: Gerar a locução neural via Edge-TTS em `audio/[slug].mp3`.
    - **Auditoria de Qualidade**: Rodar `inspetor.py` para validar conformidade e telemetria no `status_db.json`.
    - **Compilação**: Rodar `build.py` para gerar as páginas HTML estáticas, RSS e sitemaps.

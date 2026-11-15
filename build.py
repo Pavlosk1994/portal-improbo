@@ -247,6 +247,39 @@ COMMON_HEAD_STYLES = r"""
             box-shadow: 0 0 10px rgba(224, 49, 49, 0.8);
         }
 
+        /* Carimbo Burocrático Satírico */
+        .carimbo-satiro {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.2rem 0.55rem;
+            border: 1.5px dashed currentColor;
+            border-radius: 2px;
+            transform: rotate(-2.5deg);
+            user-select: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            line-height: 1.2;
+            transition: transform 0.2s ease;
+        }
+        .carimbo-satiro:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+        html.dark .carimbo-satiro {
+            filter: drop-shadow(0 0 1px rgba(255,255,255,0.1));
+        }
+
+        /* Soundbite / Munição Viral */
+        .soundbite-card {
+            border-left: 4px solid var(--editorial-red);
+            background-color: var(--audio-box-bg);
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
         /* Efeitos de Transição de Rolagem Suaves (Fade-in Sem Tranco de Layout) */
         .reveal-on-scroll {
             opacity: 0;
@@ -1300,6 +1333,19 @@ def get_article_target(slug, title=""):
         return "ringue-eleitoral", "O Ringue Eleitoral", "🥊"
     return "comedia-costumes", "Comédia de Costumes", "🎪"
 
+def get_carimbo_burocratico(slug, title=""):
+    slug_lower = (slug + " " + title).lower()
+    t_id, _, _ = get_article_target(slug, title)
+    if t_id == "gazeta-togas":
+        return "DECISÃO MONOCRÁTICA", "text-[#8B0000] border-[#8B0000] bg-rose-50/40 dark:bg-rose-950/20"
+    elif t_id == "ringue-eleitoral":
+        return "URGÊNCIA ELEITORAL", "text-[#8B0000] border-[#8B0000] bg-rose-50/40 dark:bg-rose-950/20"
+    elif t_id == "republica-lobistas":
+        return "BALCÃO REGULATÓRIO", "text-[#121212] border-[#121212] dark:text-zinc-300 dark:border-zinc-400 bg-stone-100/50 dark:bg-zinc-800/30"
+    elif t_id == "ralo-orcamento":
+        return "EMENDA PIX LIQUIDADA", "text-[#8B0000] border-[#8B0000] bg-rose-50/40 dark:bg-rose-950/20"
+    return "CARA DE PAU HOMOLOGADA", "text-[#8B0000] border-[#8B0000] bg-rose-50/40 dark:bg-rose-950/20"
+
 def render_sticky_audio_bar(title):
     safe_title = title.replace('"', '&quot;')
     return f"""
@@ -1934,30 +1980,26 @@ def generate_article_page(art):
     # Termômetro da Cara de Pau (Enquete Interativa)
     termometro_widget_html = render_termometro_widget(slug)
 
-    # Caricatura Editorial IA no Estilo Revista MAD Brasil
-    img_src, img_legenda, img_credito = resolver_imagem_artigo(art, is_article=True)
-    image_html = ""
-    if img_src:
-        caption_html = ""
-        if img_legenda or img_credito:
-            legenda_part = f"<span>{img_legenda}</span>" if img_legenda else ""
-            credito_part = f"<span class=\"font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0\">{img_credito}</span>" if img_credito else ""
-            caption_html = f"""
-            <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
-                {legenda_part}
-                {credito_part}
-            </figcaption>
-            """
-        image_html = f"""
-        <!-- Caricatura Editorial IA / Ilustração Satírica -->
-        <figure class="my-6 sm:my-8 reveal-on-scroll">
-            <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                <img src="{img_src}" alt="{img_legenda or title}" class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
+    # Carimbo Burocrático Satírico
+    carimbo_texto, carimbo_cor = get_carimbo_burocratico(slug, title)
+
+    # Soundbite / Frase de Impacto da Matéria (Munição Viral no Topo)
+    frase_zap = art.get("frase_disparo_zap", "").strip()
+    soundbite_html = ""
+    if frase_zap:
+        soundbite_html = f"""
+        <!-- Soundbite / Olho de Texto Editorial (Munição Viral) -->
+        <div class="my-6 sm:my-8 soundbite-card p-4 sm:p-5 rounded-r-sm shadow-2xs reveal-on-scroll relative">
+            <div class="font-mono text-[11px] text-[#8B0000] font-bold uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-[#8B0000] animate-pulse"></span>
+                <span>MUNIÇÃO VIRAL &bull; O SOUNDBITE DA CRÔNICA</span>
             </div>
-            {caption_html}
-        </figure>
+            <blockquote class="font-serif italic text-base sm:text-xl text-[#121212] leading-relaxed">
+                &ldquo;{frase_zap}&rdquo;
+            </blockquote>
+        </div>
         """
-    
+
     # Body paragraphs with fluid responsive drop-cap and reveal animations
     body_html = ""
     for idx, p in enumerate(art.get("corpo", [])):
@@ -2019,9 +2061,16 @@ def generate_article_page(art):
     safe_subtitle = html.escape(subtitle, quote=True)
     art_url = f"{PORTAL_URL}/artigos/{slug}.html"
     
-    # Resolve absolute image for OG / Twitter Card
-    img_abs = f"{PORTAL_URL}/imagens/{slug}.jpg"
+    # Resolve absolute image for OG / Twitter Card (Modo Text-First: Gera card social se não existir)
     local_img_path = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
+    if not os.path.exists(local_img_path):
+        try:
+            from gerar_card_social import gerar_card_social
+            gerar_card_social(art, forcar=False)
+        except Exception:
+            pass
+
+    img_abs = f"{PORTAL_URL}/imagens/{slug}.jpg"
     if not os.path.exists(local_img_path):
         capa = art.get("imagem_capa")
         if capa and (capa.startswith("http://") or capa.startswith("https://")):
@@ -2073,11 +2122,18 @@ def generate_article_page(art):
             <div class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-10 md:p-14">
                 <!-- Article Header -->
                 <div class="mb-6 sm:mb-8 border-b border-[#D1CEC7] pb-5 sm:pb-6 reveal-on-scroll">
-                    <div class="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 font-mono text-xs">
-                        <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">{category}</span>
-                        <span class="text-stone-600">{date_str}</span>
-                        <span class="text-[#D1CEC7]">&bull;</span>
-                        <span class="text-stone-600">{read_time}</span>
+                    <div class="flex flex-wrap items-center justify-between gap-2.5 mb-3 sm:mb-4 font-mono text-xs">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">{category}</span>
+                            <span class="text-stone-600">{date_str}</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">{read_time}</span>
+                        </div>
+                        <div class="carimbo-satiro {carimbo_cor}">
+                            <span>★</span>
+                            <span>{carimbo_texto}</span>
+                            <span>★</span>
+                        </div>
                     </div>
 
                     <h1 class="article-title font-black text-[#121212] font-serif mb-4">
@@ -2098,13 +2154,13 @@ def generate_article_page(art):
                     </div>
                 </div>
 
-                <!-- Reprodutor de Áudio Editorial (Logo abaixo do cabeçalho) -->
+                <!-- Reprodutor de Áudio Editorial (Com destaque Hero Play-First) -->
                 {audio_player_html}
 
-                <!-- Imagem Principal / Ancoragem Factual (Logo abaixo de Título e Subtítulo) -->
-                {image_html}
+                <!-- Soundbite de Impacto / Munição Viral (Olho de Texto) -->
+                {soundbite_html}
 
-                <!-- Body -->
+                <!-- Body (Layout Text-First Límpido e Fluido) -->
                 <article class="prose max-w-none">
                     {body_html}
                     {guia_html}
@@ -2155,8 +2211,9 @@ def generate_home_page(articles):
         hero_subtitle = hero["subtitulo"]
         hero_date = hero.get("data", "Outubro de 2026")
         hero_snippet = hero.get("corpo", [""])[0] if hero.get("corpo") else ""
-        hero_img_src, hero_legenda, hero_credito = resolver_imagem_artigo(hero, is_article=False)
         hero_target_id, hero_target_name, hero_icon = get_article_target(hero_slug, hero_title)
+        hero_carimbo_texto, hero_carimbo_cor = get_carimbo_burocratico(hero_slug, hero_title)
+        hero_zap = hero.get("frase_disparo_zap", "").strip()
         proverbio_dia = PROVERBIOS_BOTEQUIM[(datetime.now().day - 1) % len(PROVERBIOS_BOTEQUIM)]
 
         hero_audio_file = os.path.join(AUDIO_DIR, f"{hero_slug}.mp3")
@@ -2172,40 +2229,40 @@ def generate_home_page(articles):
             </a>
             """
 
-        hero_img_html = ""
-        if hero_img_src:
-            caption_tag = ""
-            if hero_legenda or hero_credito:
-                leg_p = f"<span>{hero_legenda}</span>" if hero_legenda else ""
-                cred_p = f"<span class=\"font-sans text-[10px] text-stone-500 uppercase font-medium shrink-0\">{hero_credito}</span>" if hero_credito else ""
-                caption_tag = f"""
-                <div class="px-3 py-1.5 text-xs text-stone-600 font-serif italic border-t border-[#D1CEC7]/70 flex flex-col sm:flex-row justify-between gap-1">
-                    {leg_p}
-                    {cred_p}
+        hero_soundbite_html = ""
+        if hero_zap:
+            hero_soundbite_html = f"""
+            <div class="my-4 p-3.5 sm:p-4 bg-[#FAF9F5] border-l-4 border-[#8B0000] rounded-r-sm font-serif">
+                <div class="font-mono text-[10px] uppercase text-[#8B0000] font-bold tracking-wider mb-1 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#8B0000]"></span>
+                    <span>MUNIÇÃO DE BOTEQUIM &bull; SOUNDBITE VIRAL</span>
                 </div>
-                """
-            hero_img_html = f"""
-            <div class="my-4 sm:my-5 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                <a href="artigos/{hero_slug}.html" class="block group/img overflow-hidden">
-                    <img src="{hero_img_src}" alt="{hero_legenda or hero_title}" class="w-full h-auto max-h-[460px] object-cover group-hover/img:scale-[1.01] transition-transform duration-300 block" loading="eager" fetchpriority="high" width="1200" height="675">
-                </a>
-                {caption_tag}
+                <blockquote class="italic text-stone-800 text-sm sm:text-base leading-relaxed">
+                    &ldquo;{hero_zap}&rdquo;
+                </blockquote>
             </div>
             """
 
         hero_html = f"""
-        <!-- Hero: Manchete Principal NYT Style White Container -->
+        <!-- Hero: Manchete Principal NYT Style White Container (Text-First Broadside) -->
         <section id="hero-article-section" data-alvo="{hero_target_id}" class="article-item bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-8 md:p-10 mb-8 sm:mb-10 reveal-on-scroll">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                 <div class="lg:col-span-8">
-                    <div class="flex flex-wrap items-center gap-2 mb-3">
-                        <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
-                        <span class="text-xs font-mono text-stone-600">{hero_date}</span>
-                        <span class="inline-flex items-center space-x-1 text-xs font-mono bg-[#EBE7DE] text-stone-700 px-2 py-0.5 rounded font-medium">
-                            <span>{hero_icon}</span>
-                            <span>{hero_target_name}</span>
-                        </span>
-                        {hero_audio_badge}
+                    <div class="flex flex-wrap items-center justify-between gap-2.5 mb-3">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="bg-[#8B0000] text-white text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5">MANCHETE PRINCIPAL</span>
+                            <span class="text-xs font-mono text-stone-600">{hero_date}</span>
+                            <span class="inline-flex items-center space-x-1 text-xs font-mono bg-[#EBE7DE] text-stone-700 px-2 py-0.5 rounded font-medium">
+                                <span>{hero_icon}</span>
+                                <span>{hero_target_name}</span>
+                            </span>
+                            {hero_audio_badge}
+                        </div>
+                        <div class="carimbo-satiro {hero_carimbo_cor}">
+                            <span>★</span>
+                            <span>{hero_carimbo_texto}</span>
+                            <span>★</span>
+                        </div>
                     </div>
                     <a href="artigos/{hero_slug}.html" class="group block">
                         <h2 class="hero-title font-black font-serif text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 mb-3 sm:mb-4">
@@ -2215,14 +2272,24 @@ def generate_home_page(articles):
                     <p class="article-subtitle font-serif italic text-stone-700 mb-4 sm:mb-5">
                         {hero_subtitle}
                     </p>
-                    {hero_img_html}
-                    <p class="text-[#121212]/85 font-serif text-base leading-relaxed line-clamp-3 mb-5 sm:mb-6">
-                        {hero_snippet}
-                    </p>
-                    <a href="artigos/{hero_slug}.html" class="neo-link inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">
-                        <span>Ler crônica completa</span>
-                        <span>&rarr;</span>
-                    </a>
+                    {hero_soundbite_html}
+                    <div class="text-[#121212]/85 font-serif text-base leading-relaxed mb-5 sm:mb-6">
+                        <p class="drop-cap-fluid line-clamp-3">
+                            {hero_snippet}
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="artigos/{hero_slug}.html" class="neo-link inline-flex items-center space-x-2 font-mono text-xs uppercase tracking-widest font-bold text-[#8B0000]">
+                            <span>Ler crônica completa</span>
+                            <span>&rarr;</span>
+                        </a>
+                        <a href="artigos/{hero_slug}.html#article-audio-box" class="inline-flex items-center space-x-1.5 text-xs font-mono text-white bg-[#121212] hover:bg-[#8B0000] px-3 py-1 rounded transition-colors font-bold shadow-2xs">
+                            <svg class="w-3.5 h-3.5 fill-current text-white" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                            <span>Ouvir Crônica (Voz Neural)</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Editorial Aside Card (#EBE7DE com borda clássica e Gerador de Desculpas) -->
@@ -2322,8 +2389,9 @@ def generate_home_page(articles):
             a_sub = art.get("subtitulo", "")
             a_date = art.get("data", "")
             a_cat = art.get("categoria", "Crônica")
-            card_img_src, card_legenda, card_credito = resolver_imagem_artigo(art, is_article=False)
             c_target_id, c_target_name, c_icon = get_article_target(a_slug, a_title)
+            c_carimbo_texto, c_carimbo_cor = get_carimbo_burocratico(a_slug, a_title)
+            a_zap = art.get("frase_disparo_zap", "").strip()
             
             card_audio_file = os.path.join(AUDIO_DIR, f"{a_slug}.mp3")
             card_has_audio = os.path.exists(card_audio_file) or bool(art.get("audio_url"))
@@ -2339,38 +2407,52 @@ def generate_home_page(articles):
                 </a>
                 """
 
-            img_card_html = ""
-            if card_img_src:
-                img_card_html = f"""
-                <div class="mb-3 overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                    <img src="{card_img_src}" alt="{a_title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 block" loading="lazy">
+            card_soundbite_box = ""
+            if a_zap:
+                card_soundbite_box = f"""
+                <div class="my-2.5 p-2.5 bg-[#FAF9F5] border-l-2 border-[#8B0000] rounded-r-xs">
+                    <p class="font-serif italic text-xs text-stone-800 line-clamp-2">
+                        &ldquo;{a_zap}&rdquo;
+                    </p>
                 </div>
                 """
+
             cards += f"""
-            <article data-alvo="{c_target_id}" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm">
+            <article data-alvo="{c_target_id}" class="article-item article-card-item reveal-on-scroll border border-[#D1CEC7] p-5 bg-white hover:shadow-md transition-all duration-300 flex flex-col justify-between rounded-sm relative">
                 <div>
-                    {img_card_html}
-                    <div class="flex flex-wrap items-center gap-2 text-xs font-mono mb-2">
-                        <span class="text-[#8B0000] font-bold uppercase">{a_cat}</span>
-                        <span class="text-[#D1CEC7]">&bull;</span>
-                        <span class="text-stone-600">{a_date}</span>
-                        <span class="text-[#D1CEC7]">&bull;</span>
-                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-1.5 py-0.5 rounded font-medium">{c_icon} {c_target_name}</span>
-                        {card_audio_badge}
+                    <div class="flex items-center justify-between gap-1.5 mb-2.5">
+                        <span class="inline-flex items-center space-x-1 text-[11px] font-mono bg-[#EBE7DE] text-stone-700 px-2 py-0.5 rounded font-medium">
+                            <span>{c_icon}</span>
+                            <span>{c_target_name}</span>
+                        </span>
+                        <div class="carimbo-satiro text-[10px] py-0.5 px-1.5 {c_carimbo_cor}">
+                            <span>{c_carimbo_texto}</span>
+                        </div>
                     </div>
-                    <a href="artigos/{a_slug}.html" class="block group">
-                        <h3 class="font-serif font-bold text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug mb-2">
+
+                    <a href="artigos/{a_slug}.html" class="block group mb-1.5">
+                        <h3 class="font-serif font-black text-lg sm:text-xl text-[#121212] group-hover:text-[#8B0000] transition-colors duration-300 leading-snug">
                             {a_title}
                         </h3>
                     </a>
-                    <p class="font-serif italic text-sm text-stone-600 line-clamp-3 mb-4">
+
+                    <p class="font-serif italic text-xs sm:text-sm text-stone-600 mb-2 line-clamp-2">
                         {a_sub}
                     </p>
+
+                    {card_soundbite_box}
                 </div>
-                <a href="artigos/{a_slug}.html" class="neo-link font-mono text-xs uppercase font-bold text-[#8B0000] inline-flex items-center space-x-1">
-                    <span>Ler mais</span>
-                    <span>&rarr;</span>
-                </a>
+
+                <div class="pt-3 border-t border-[#D1CEC7]/70 flex items-center justify-between font-mono text-xs text-stone-500 mt-2">
+                    <div class="flex items-center space-x-1.5">
+                        <span>{a_date}</span>
+                        {card_audio_badge}
+                    </div>
+                    <a href="artigos/{a_slug}.html" class="neo-link font-bold text-[#8B0000] uppercase text-[11px] tracking-wider inline-flex items-center space-x-1">
+                        <span>Ler</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
             </article>
             """
         grid_html = f"""
@@ -2813,6 +2895,17 @@ def build_all():
     os.makedirs(IMAGENS_DIR, exist_ok=True)
     articles = load_articles()
     print(f"Encontrados {len(articles)} artigos em {CONTENT_DIR}")
+
+    # Garante que os cards sociais tipográficos existem para redes sociais / OG
+    try:
+        from gerar_card_social import gerar_card_social
+        for art in articles:
+            slug = art.get("slug")
+            caminho_img = os.path.join(IMAGENS_DIR, f"{slug}.jpg")
+            if not os.path.exists(caminho_img):
+                gerar_card_social(art, forcar=False)
+    except Exception as e:
+        print(f"[!] Aviso na checagem de cards sociais: {e}")
 
     # Generate individual article HTMLs
     for art in articles:

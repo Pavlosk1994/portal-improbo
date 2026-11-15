@@ -246,6 +246,39 @@
             box-shadow: 0 0 10px rgba(224, 49, 49, 0.8);
         }
 
+        /* Carimbo Burocrático Satírico */
+        .carimbo-satiro {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.2rem 0.55rem;
+            border: 1.5px dashed currentColor;
+            border-radius: 2px;
+            transform: rotate(-2.5deg);
+            user-select: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            line-height: 1.2;
+            transition: transform 0.2s ease;
+        }
+        .carimbo-satiro:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+        html.dark .carimbo-satiro {
+            filter: drop-shadow(0 0 1px rgba(255,255,255,0.1));
+        }
+
+        /* Soundbite / Munição Viral */
+        .soundbite-card {
+            border-left: 4px solid var(--editorial-red);
+            background-color: var(--audio-box-bg);
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
         /* Efeitos de Transição de Rolagem Suaves (Fade-in Sem Tranco de Layout) */
         .reveal-on-scroll {
             opacity: 0;
@@ -515,7 +548,7 @@
             <span class="text-[#D1CEC7] dark:text-stone-600">&bull;</span>
             <span class="hidden sm:inline text-stone-600 dark:text-stone-400">Previsão: 100% de umidade na cara de pau</span>
             <span class="hidden sm:inline text-[#D1CEC7] dark:text-stone-600">&bull;</span>
-            <span id="live-header-date" class="text-stone-600 dark:text-stone-400">Domingo, 15 de Novembro de 2026</span>
+            <span id="live-header-date" class="text-stone-600 dark:text-stone-400">Sábado, 14 de Novembro de 2026</span>
         </div>
         <div class="text-xs font-mono uppercase text-stone-500 dark:text-stone-400 hidden sm:block">
             Jornalismo Satírico Sem Decoro
@@ -574,11 +607,18 @@
             <div class="bg-white border border-[#D1CEC7] shadow-sm rounded-sm p-6 sm:p-10 md:p-14">
                 <!-- Article Header -->
                 <div class="mb-6 sm:mb-8 border-b border-[#D1CEC7] pb-5 sm:pb-6 reveal-on-scroll">
-                    <div class="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 font-mono text-xs">
-                        <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">Crônica Internacional</span>
-                        <span class="text-stone-600">27 de Outubro de 2026</span>
-                        <span class="text-[#D1CEC7]">&bull;</span>
-                        <span class="text-stone-600">3 min de leitura</span>
+                    <div class="flex flex-wrap items-center justify-between gap-2.5 mb-3 sm:mb-4 font-mono text-xs">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="bg-[#8B0000] text-white font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 tracking-wider uppercase">Crônica Internacional</span>
+                            <span class="text-stone-600">27 de Outubro de 2026</span>
+                            <span class="text-[#D1CEC7]">&bull;</span>
+                            <span class="text-stone-600">3 min de leitura</span>
+                        </div>
+                        <div class="carimbo-satiro text-[#8B0000] border-[#8B0000] bg-rose-50/40 dark:bg-rose-950/20">
+                            <span>★</span>
+                            <span>URGÊNCIA ELEITORAL</span>
+                            <span>★</span>
+                        </div>
                     </div>
 
                     <h1 class="article-title font-black text-[#121212] font-serif mb-4">
@@ -599,7 +639,7 @@
                     </div>
                 </div>
 
-                <!-- Reprodutor de Áudio Editorial (Logo abaixo do cabeçalho) -->
+                <!-- Reprodutor de Áudio Editorial (Com destaque Hero Play-First) -->
                 
     <!-- Reprodutor de Áudio Editorial (Estilo The New York Times "Listen to this article") -->
     <div class="my-6 sm:my-8 bg-[#FAF9F5] border border-[#D1CEC7] border-l-4 border-l-[#8B0000] p-4 sm:p-5 rounded-sm shadow-xs reveal-on-scroll" id="article-audio-box">
@@ -657,23 +697,21 @@
     </div>
     
 
-                <!-- Imagem Principal / Ancoragem Factual (Logo abaixo de Título e Subtítulo) -->
+                <!-- Soundbite de Impacto / Munição Viral (Olho de Texto) -->
                 
-        <!-- Caricatura Editorial IA / Ilustração Satírica -->
-        <figure class="my-6 sm:my-8 reveal-on-scroll">
-            <div class="overflow-hidden rounded-sm border border-[#D1CEC7] bg-[#EBE7DE]">
-                <img src="../imagens/trump-eleicao-fraudada-mas-gosto-do-lula.jpg" alt="Entre acusações de urnas malandras e abraços calorosos, a nova ordem geopolítica ensina que a fraude é apenas um detalhe estético quando o santo bate." class="w-full h-auto max-h-[560px] object-cover block" loading="lazy">
+        <!-- Soundbite / Olho de Texto Editorial (Munição Viral) -->
+        <div class="my-6 sm:my-8 soundbite-card p-4 sm:p-5 rounded-r-sm shadow-2xs reveal-on-scroll relative">
+            <div class="font-mono text-[11px] text-[#8B0000] font-bold uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-[#8B0000] animate-pulse"></span>
+                <span>MUNIÇÃO VIRAL &bull; O SOUNDBITE DA CRÔNICA</span>
             </div>
-            
-            <figcaption class="mt-2.5 text-xs sm:text-sm text-stone-600 font-serif italic flex flex-col sm:flex-row justify-between gap-1.5 border-b border-[#D1CEC7]/70 pb-2">
-                <span>Entre acusações de urnas malandras e abraços calorosos, a nova ordem geopolítica ensina que a fraude é apenas um detalhe estético quando o santo bate.</span>
-                <span class="font-sans font-medium text-stone-500 text-[11px] uppercase tracking-wider shrink-0">Arte: Caricatura Editorial IA / Ilustração Satírica</span>
-            </figcaption>
-            
-        </figure>
+            <blockquote class="font-serif italic text-base sm:text-xl text-[#121212] leading-relaxed">
+                &ldquo;Trump inaugurou a diplomacia do churrasco: chamou a eleição de Lula de 'fraude grotesca', mas avisou que se dá muito bem com ele e que a picanha tá liberada.&rdquo;
+            </blockquote>
+        </div>
         
 
-                <!-- Body -->
+                <!-- Body (Layout Text-First Límpido e Fluido) -->
                 <article class="prose max-w-none">
                     
             <p class="drop-cap-fluid text-lg sm:text-xl text-[#121212] leading-relaxed mb-6 font-serif reveal-on-scroll">
