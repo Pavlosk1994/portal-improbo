@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-15T02:18:43.388566+00:00",
+  "ultima_atualizacao": "2026-11-15T02:39:25.866595+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-15T02:39:25.866561+00:00",
+      "horario_brt": "15/11/2026 02:39:25",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 57.4,
+      "slug": "a-imobiliaria-da-otan-ceder-a-casa-para-ganhar-o-w",
+      "titulo": "A IMOBILIÁRIA DA OTAN: CEDER A CASA PARA GANHAR O WI-FI",
+      "imagem_tamanho_kb": 95.8,
+      "audio_tamanho_kb": 682.5
+    },
     {
       "timestamp": "2026-11-15T02:18:43.388493+00:00",
       "horario_brt": "14/11/2026 23:18:43",
@@ -213,17 +224,6 @@
       "duracao_segundos": 47.8,
       "slug": "a-danca-dos-28-lugares-na-mesa-do-senado",
       "titulo": "A DANÇA DOS 28 LUGARES NA MESA DO SENADO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-02T07:30:41.932156+00:00",
-      "horario_brt": "02/11/2026 07:30:41",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 47.8,
-      "slug": "a-danca-da-cadeira-antes-da-hora-no-senado",
-      "titulo": "A DANÇA DA CADEIRA ANTES DA HORA NO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
     }
