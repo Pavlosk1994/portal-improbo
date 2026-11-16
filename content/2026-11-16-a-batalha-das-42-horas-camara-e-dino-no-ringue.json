@@ -1,0 +1,43 @@
+{
+  "titulo": "A BATALHA DAS 42 HORAS: CÂMARA E DINO NO RINGUE",
+  "subtitulo": "Em petição ao STF, o Legislativo decide que brigar por jornada de trabalho é o melhor pretexto para ignorar o próprio regimento.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Quando o Congresso e o STF brigam para ver quem protege mais o relógio, o cidadão descobre que a hora extra é o único imposto que rende.",
+  "legenda_imagem": "Caricatura retratando magistrados e parlamentares medindo o tempo em relógios de areia feitos de papel timbrado da República.",
+  "prompt_caricatura": "Estilo de charge clássica do jornal O Pasquim e Henfil, tinta nanquim e aquarela gouache sobre papel creme. Caricatura de deputados em terno e toga de ministro do STF medindo o tempo com ampulhetas gigantes recheadas de moedas, expressão cínica e teatral, traço expressivo, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian Supreme Court ministers and congressmen arguing over giant hourglasses filled with golden coins, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil alcançou mais um patamar sublime da engenharia institucional: o momento em que os Três Poderes decidem que a melhor forma de organizar o expediente do cidadão é transformar o Diário Oficial em uma mesa de pôquer regulatória.",
+    "Movida por um senso inabalável de urgência republicana, a Advocacia da Câmara dos Deputados protocolou no Supremo Tribunal Federal um pedido para ajustar os ponteiros do ministro Flávio Dino sobre a transição da escala de trabalho. Afinal, se há algo que o parlamento faz com esmero cirúrgico, é zelar para que o rito burocrático pareça uma obra de ficção científica.",
+    "O litígio de alta costura jurídica gira em torno de detalhes cruciais, como a flexibilização de jornadas diárias e os limites de compensação. Enquanto o magistrado tenta impor a sua métrica divina sobre as horas úteis, a Casa do Povo argumenta que o monopólio da canetada legislativa não pode ser usurpado por despacho monocrático, sob o risco de a burocracia perder o seu charme interpretativo.",
+    "No fim das contas, enquanto o relógio avança rumo ao calendário de dezembro, o contribuirmite assiste a esse duelo de titãs da oratória com a serena certeza de que, independentemente da escala de folga aprovada, a fatura dos honorários e das comissões especiais continuará operando em regime de plantão permanente, 24 horas por dia, sete dias por semana."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Quando o regimento interno vira arma de arremesso interinstitucional."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O calendário de transição que promete paz social e entrega portaria."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte de contar as horas semanais sem gastar nenhum segundo de coerência."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A única certeza matemática na República é a taxa de expediente."
+    }
+  ],
+  "contexto_real": "A Câmara dos Deputados enviou manifestação ao STF pedindo a derrubada de pontos da decisão liminar do ministro Flávio Dino sobre a transição da escala 6x1 para a 5x2. A Casa contesta a possibilidade de jornadas de até 8h24min sem acordo coletivo e a flexibilização de compensações, mas concorda em manter o calendário que prevê 42 horas semanais a partir de 16 de dezembro.",
+  "slug": "a-batalha-das-42-horas-camara-e-dino-no-ringue",
+  "data": "16 de Novembro de 2026",
+  "imagem_capa": "imagens/a-batalha-das-42-horas-camara-e-dino-no-ringue.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/a-batalha-das-42-horas-camara-e-dino-no-ringue.mp3",
+  "timestamp": "2026-11-16T07:47:33.840107"
+}

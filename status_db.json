@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-16T00:53:43.162608+00:00",
+  "ultima_atualizacao": "2026-11-16T07:47:33.923221+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-16T07:47:33.923179+00:00",
+      "horario_brt": "16/11/2026 07:47:33",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 73.5,
+      "slug": "a-batalha-das-42-horas-camara-e-dino-no-ringue",
+      "titulo": "A BATALHA DAS 42 HORAS: CÂMARA E DINO NO RINGUE",
+      "imagem_tamanho_kb": 95.2,
+      "audio_tamanho_kb": 815.5
+    },
     {
       "timestamp": "2026-11-16T00:53:43.162566+00:00",
       "horario_brt": "16/11/2026 00:53:43",
@@ -215,34 +226,9 @@
       "titulo": "MARINHO LANÇA O GRITO DOS 81 NO SENADO",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-04T01:08:45.245218+00:00",
-      "horario_brt": "04/11/2026 01:08:45",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 23.6,
-      "slug": "o-novo-sus-do-crime-a-pec-da-seguranca",
-      "titulo": "O NOVO SUS DO CRIME: A PEC DA SEGURANÇA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Futuro ministro da Fazenda: veja quem são os cotados e o que está em jogo na escolha de Lula",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/13/futuro-ministro-da-fazenda-veja-quem-sao-os-cotados-e-o-que-esta-em-jogo-na-escolha-de-lula.ghtml",
-      "score": 90.0,
-      "data_pub": "Fri, 13 Nov 2026 05:00:00 -0000"
-    },
-    {
-      "titulo": "Trava extra para gastos, mudanças no piso da saúde e corte em benefícios tributários: entenda ajuste fiscal aprovado pelo Senado",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/trava-extra-para-gastos-mudancas-no-piso-da-saude-e-corte-em-beneficios-tributarios-entenda-ajuste-fiscal-aprovado-pelo-senado.ghtml",
-      "score": 79.2,
-      "data_pub": "Fri, 13 Nov 2026 03:00:00 -0000"
-    },
     {
       "titulo": "Câmara pede que STF derrube parte das regras fixadas por Dino para escala 5x2",
       "fonte": "G1 Política",
@@ -251,18 +237,32 @@
       "data_pub": "Fri, 13 Nov 2026 16:42:59 -0000"
     },
     {
+      "titulo": "Ajuste fiscal: Alckmin afirma que projeto do governo 'vai na direção correta' e diz esperar votação na Câmara nesta semana",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/15/ajuste-fiscal-alckmin-afirma-que-projeto-do-governo-vai-na-direcao-correta-e-diz-esperar-votacao-na-camara-nesta-semana.ghtml",
+      "score": 74.4,
+      "data_pub": "Sun, 15 Nov 2026 15:23:09 -0000"
+    },
+    {
+      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
+      "score": 72.0,
+      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
+    },
+    {
+      "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
+      "score": 69.2,
+      "data_pub": "Sat, 14 Nov 2026 19:55:35 -0000"
+    },
+    {
       "titulo": "Quem são as mulheres que vão compor a maior bancada feminina da história do Congresso",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/15/bancada-feminina-congresso-perfil.ghtml",
-      "score": 76.8,
+      "score": 66.8,
       "data_pub": "Sun, 15 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Meta bate recorde e recebe meio bilhão de reais nas eleições; PL gasta quase o dobro do PT com a empresa",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/meta-bate-recorde-e-recebe-meio-bilhao-de-reais-nas-eleicoes-pl-gasta-quase-o-dobro-do-pt-com-a-empresa.ghtml",
-      "score": 75.6,
-      "data_pub": "Fri, 13 Nov 2026 03:00:01 -0000"
     }
   ]
 }
