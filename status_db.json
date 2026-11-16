@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-16T07:47:33.923221+00:00",
+  "ultima_atualizacao": "2026-11-16T20:53:17.608820+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-16T20:53:17.608779+00:00",
+      "horario_brt": "16/11/2026 20:53:17",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 91.7,
+      "slug": "o-jet-lag-da-realidade-lula-desembarca-na-farofa",
+      "titulo": "O JET LAG DA REALIDADE: LULA DESEMBARCA NA FAROFA",
+      "imagem_tamanho_kb": 95.7,
+      "audio_tamanho_kb": 859.6
+    },
     {
       "timestamp": "2026-11-16T07:47:33.923179+00:00",
       "horario_brt": "16/11/2026 07:47:33",
@@ -215,33 +226,29 @@
       "titulo": "FUGIR É UM DEVER CÍVICO, DIZ SENADOR DOS EUA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-04T18:31:55.132800+00:00",
-      "horario_brt": "04/11/2026 18:31:55",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 60.3,
-      "slug": "marinho-lanca-o-grito-dos-81-no-senado",
-      "titulo": "MARINHO LANÇA O GRITO DOS 81 NO SENADO",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Câmara pede que STF derrube parte das regras fixadas por Dino para escala 5x2",
+      "titulo": "Corte de gastos, regulação da 6x1 e equipe do novo governo: o que espera Lula na volta de giro internacional",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/13/camara-pede-que-stf-derrube-parte-das-regras-fixadas-por-dino-para-escala-5x2.ghtml",
-      "score": 78.0,
-      "data_pub": "Fri, 13 Nov 2026 16:42:59 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/16/corte-de-gastos-regulacao-da-6x1-e-equipe-do-novo-governo-o-que-espera-lula-na-volta-de-giro-internacional.ghtml",
+      "score": 146.4,
+      "data_pub": "Mon, 16 Nov 2026 13:58:25 -0000"
     },
     {
-      "titulo": "Ajuste fiscal: Alckmin afirma que projeto do governo 'vai na direção correta' e diz esperar votação na Câmara nesta semana",
+      "titulo": "Moraes nega pedido de Bolsonaro para receber Valdemar e os pré-candidatos à presidência do Senado Marinho e Tereza",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/15/ajuste-fiscal-alckmin-afirma-que-projeto-do-governo-vai-na-direcao-correta-e-diz-esperar-votacao-na-camara-nesta-semana.ghtml",
-      "score": 74.4,
-      "data_pub": "Sun, 15 Nov 2026 15:23:09 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/16/moraes-nega-pedido-de-bolsonaro-para-receber-valdemar-e-os-pre-candidatos-a-presidencia-do-senado-marinho-e-tereza.ghtml",
+      "score": 79.2,
+      "data_pub": "Mon, 16 Nov 2026 12:43:31 -0000"
+    },
+    {
+      "titulo": "Depois do ajuste fiscal, equipe econômica vai propor medidas para reduzir o crescimento das despesas obrigatórias",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/16/depois-do-ajuste-fiscal-equipe-economica-vai-propor-medidas-para-reduzir-o-crescimento-das-despesas-obrigatorias.ghtml",
+      "score": 72.0,
+      "data_pub": "Mon, 16 Nov 2026 12:57:38 -0000"
     },
     {
       "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
@@ -251,18 +258,11 @@
       "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
     },
     {
-      "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
+      "titulo": "Sánchez e Lula conversam sobre a ameaça da extrema direita antes das eleições na Espanha",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
-      "score": 69.2,
-      "data_pub": "Sat, 14 Nov 2026 19:55:35 -0000"
-    },
-    {
-      "titulo": "Quem são as mulheres que vão compor a maior bancada feminina da história do Congresso",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/15/bancada-feminina-congresso-perfil.ghtml",
-      "score": 66.8,
-      "data_pub": "Sun, 15 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/mundo/noticia/2026/11/16/sanchez-e-lula-conversam-sobre-a-ameaca-da-extrema-direita-antes-das-eleicoes-na-espanha.ghtml",
+      "score": 70.6,
+      "data_pub": "Mon, 16 Nov 2026 17:48:12 -0000"
     }
   ]
 }

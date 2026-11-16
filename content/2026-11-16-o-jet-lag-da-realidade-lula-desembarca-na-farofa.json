@@ -1,0 +1,43 @@
+{
+  "titulo": "O JET LAG DA REALIDADE: LULA DESEMBARCA NA FAROFA",
+  "subtitulo": "Entre o corte de gastos que não corta e o ministério novo que promete apagar incêndios na base da canetada, o presidente volta ao Brasil para o eterno milagre natalino do Congresso.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O presidente voltou de viagem internacional só para descobrir que o Brasil continua sendo administrado no improviso e na base do jabuti legislativo.",
+  "legenda_imagem": "Caricatura de Lula aterrissando no tapete vermelho do Planalto carregando malas cheias de promessas de campanha e um extintor de incêndio para a Polícia Federal.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim e nanquim de Luiz Inacio Lula da Silva desembarcando de um avião presidencial com passaporte diplomático em uma mão e um extintor de incêndio com fumaça na outra, traço expressivo com guache sobre papel creme, sem textos ou marcas",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian president Luiz Inacio Lula da Silva descending airplane stairs with a diplomatic passport in one hand and a smoking fire extinguisher in the other, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "Depois de rodar o planeta colhendo apertos de mão solenes e banquetes diplomáticos onde o salmão com certeza era de primeira qualidade, o presidente Luiz Inácio Lula da Silva aterrissou de volta ao solo pátrio para encarar a única atração turística verdadeiramente aterrorizante: a reta final do ano legislativo em Brasília.",
+    "Com o cronograma apertado e o recesso batendo à porta, a Esplanada dos Ministérios vive aquele surto produtivo típico de quem deixou o trabalho de orelha da faculdade para a última hora da madrugada. Entre cortes de gastos que exigem contabilidade criativa de alto gabarito e a missão quase mística de regular a escala 6x1 sem desagradar nem o empresariado amigo nem a base sindical, o governo tenta empurrar a pauta econômica com a barriga e muita conversa de gabinete.",
+    "Para coroar o retorno triunfal, o Planalto ainda se movimenta para tirar do papel o aguardado Ministério da Segurança Pública, promessa requentada que agora ganha contornos de urgência dramática graças à crise institucional na Polícia Federal. É a engenharia política em seu estado bruto: criar uma nova pasta ministerial para fingir que a porteira trancada impede o avanço da boiada.",
+    "Enquanto isso, a fatura dessa imensa gincana burocrática segue firme para o contribuinte, que assiste da arquibancada ao espetáculo de ministros engravatados e parlamentares em clima de festa de fim de ano negociando emendas, cargos e tapetes vermelhinhos antes que o relógio marque meia-noite e vire abóbora."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A arte milenar de negociar com o Centrão antes do cafezinho matinal."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O ministério novo que promete resolver a segurança pública na base do carimbo."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Cortar gastos fingindo que a fatura do cartão corporativo não vai chegar."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A conta exata de manter a coalizão unida até o recesso parlamentar."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva retorna ao Brasil nesta segunda-feira (16) após um giro internacional, encontrando um Congresso na reta final de 2026 com pautas urgentes como a regulação da jornada 6x1, corte de gastos, negociações para o próximo mandato e a possível criação do Ministério da Segurança Pública em meio a crises na Polícia Federal.",
+  "slug": "o-jet-lag-da-realidade-lula-desembarca-na-farofa",
+  "data": "16 de Novembro de 2026",
+  "imagem_capa": "imagens/o-jet-lag-da-realidade-lula-desembarca-na-farofa.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-jet-lag-da-realidade-lula-desembarca-na-farofa.mp3",
+  "timestamp": "2026-11-16T20:53:17.525277"
+}
