@@ -1,0 +1,43 @@
+{
+  "titulo": "O LEILÃO DA FAZENDA: QUEM VAI SEGURAR O TETO?",
+  "subtitulo": "Bolsa de apostas em Brasília busca o milagre estatístico de gastar o que não tem sem irritar o investidor",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo procura um ministro da Fazenda disposto a fazer milagre aritmético sem assustar o mercado financeiro.",
+  "legenda_imagem": "Candidatos ao Ministério da Fazenda disputam a corrida de obstáculos fiscal sob o olhar atento da Faria Lima.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos principais cotados para o Ministério da Fazenda equilibrando calculadoras gigantes sobre cordas bambas, traço de nanquim e guache, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians and economists balancing giant calculators on tightropes, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A Esplanada dos Ministérios inaugurou sua mais nova modalidade esportiva de alto rendimento: o pentatlo fiscal, onde o principal desafio é prometer rigor absoluto nas contas públicas enquanto se assina empenho para atender a todas as bancadas do Centrão.",
+    "Nos salões palacianos, a bolsa de apostas para o comando da Fazenda movimenta os gabinetes com a mesma seriedade de uma partida de roleta russa institucional. Entre planilhas de Excel e promessas de campanha, o futuro titular da pasta precisará desenvolver a habilidade sobrenatural de fazer superávit primário com tinta invisível.",
+    "Enquanto isso, os operadores do mercado financeiro aguardam ansiosos por qualquer sinal de ortodoxia econômica, prontos para reagir com quedas dramáticas de Ibovespa ao menor indício de que a caneta do Tesouro será usada para fins recreativos.",
+    "No fim das contas, a escolha do novo xerife do cofre público importa menos do que a criatividade retórica necessária para explicar por que o déficit zero é uma realidade espiritual que ainda não cabe no extrato bancário do contribuinte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A arte de cortar verbas sociais sem perder o apoio do eleitorado progressista."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Metas fiscais desenhadas a giz na calçada em dia de chuva forte."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Conciliar a sanha arrecadatória com o discurso de justiça distributiva."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura que nunca prescreve e sempre sobra para a mesma praça."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva avalia nomes para o comando do Ministério da Fazenda para o seu quarto mandato, com cotados como Geraldo Alckmin, Dario Durigan, Rafael Fonteles e Bruno Moretti, enquanto busca equilibrar compromissos fiscais e demandas políticas.",
+  "slug": "o-leilao-da-fazenda-quem-vai-segurar-o-teto",
+  "data": "16 de Novembro de 2026",
+  "imagem_capa": "imagens/o-leilao-da-fazenda-quem-vai-segurar-o-teto.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-leilao-da-fazenda-quem-vai-segurar-o-teto.mp3",
+  "timestamp": "2026-11-16T00:53:43.084069"
+}
