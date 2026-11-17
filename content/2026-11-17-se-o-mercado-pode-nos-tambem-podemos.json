@@ -1,0 +1,43 @@
+{
+  "titulo": "SE O MERCADO PODE, NÓS TAMBÉM PODEMOS!",
+  "subtitulo": "Lindbergh avisa que a bancada quer sentar na mesma mesa onde os juros mandam e desmandam na planilha",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Se o governo negocia com o mercado financeiro, a esquerda exige o direito de negociar as próprias benesses no mesmo balcão.",
+  "legenda_imagem": "Deputados governistas disputam a senha da fila preferencial com banqueiros na porta do Tesouro Nacional.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim de deputados governistas e banqueiros de terno apertado disputando o balcão de um guichê do Tesouro Nacional, traço em nanquim com lavagem em guache sobre papel creme, sem textos",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians like Lindbergh Farias and bankers in tight suits fighting for a spot at the National Treasury counter, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República chegou ao ápice da contabilidade criativa institucional: agora, a bancada governista quer cobrar do próprio Executivo a mesma taxa de câmbio de afeto que o Ministério da Fazenda costuma reservar aos investidores da Faria Lima.",
+    "Em um lance de soberana altivez burocrática, o parlamentar avisou que, se o Planalto tem tanta facilidade para dialogar com os baluartes do capital e ceder às exigências das planilhas de juros, deveria abrir um crediário idêntico para os aliados que preferem gastar sem ver o extrato bancário.",
+    "Afinal, argumentam os defensores da gastança com carinho social, o orçamento público não pode ser monopólio de rentista engravatado. A turma do contraforte ideológico também merece o direito de propor alternativas mirabolantes para equilibrar as contas públicas sem precisar, vejam que absurdo, cortar um único centavo de emenda parlamentar.",
+    "Resta agora saber se a Secretaria de Tesouro Nacional aceitará receber o pacote de bondades ideológicas parcelado no carnê ou se o ajuste fiscal continuará sendo um exercício solitário de fazer milagre com a assinatura alheia."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Negociar com o mercado é pragmatismo; negociar com a base é alta traição orçamentária."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Ajuste fiscal garantido, desde que o buraco no orçamento seja coberto por votos fiéis."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Planilhas do Tesouro adaptadas para aceitar carinho político como garantia de solvência."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura do déficit mandada diretamente para o próximo milênio com juros camaradas."
+    }
+  ],
+  "contexto_real": "Lideranças de partidos da base aliada, como PT, PCdoB e PSOL, articulam alternativas ao projeto de ajuste fiscal enviado pelo governo para equilibrar as contas públicas. O deputado Lindbergh Farias declarou que o Executivo deve negociar com os parlamentares da mesma forma que dialoga com o mercado financeiro.",
+  "slug": "se-o-mercado-pode-nos-tambem-podemos",
+  "data": "17 de Novembro de 2026",
+  "imagem_capa": "imagens/se-o-mercado-pode-nos-tambem-podemos.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/se-o-mercado-pode-nos-tambem-podemos.mp3",
+  "timestamp": "2026-11-17T03:32:46.316054"
+}

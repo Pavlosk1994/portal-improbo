@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-16T20:53:17.608820+00:00",
+  "ultima_atualizacao": "2026-11-17T03:32:46.367760+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-17T03:32:46.367729+00:00",
+      "horario_brt": "17/11/2026 03:32:46",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 30.8,
+      "slug": "se-o-mercado-pode-nos-tambem-podemos",
+      "titulo": "SE O MERCADO PODE, NÓS TAMBÉM PODEMOS!",
+      "imagem_tamanho_kb": 96.9,
+      "audio_tamanho_kb": 733.8
+    },
     {
       "timestamp": "2026-11-16T20:53:17.608779+00:00",
       "horario_brt": "16/11/2026 20:53:17",
@@ -215,26 +226,29 @@
       "titulo": "O FRACASSO DA MALDADE JUVENIL NO BRASIL",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-05T01:23:25.150811+00:00",
-      "horario_brt": "05/11/2026 01:23:25",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 39.5,
-      "slug": "fugir-e-um-dever-civico-diz-senador-dos-eua",
-      "titulo": "FUGIR É UM DEVER CÍVICO, DIZ SENADOR DOS EUA",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Corte de gastos, regulação da 6x1 e equipe do novo governo: o que espera Lula na volta de giro internacional",
+      "titulo": "Integrantes de partidos devem apresentar alternativas a ajuste fiscal que divide esquerda: 'Se podem negociar com o mercado, podem negociar com a gente', diz Lindbergh",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/16/corte-de-gastos-regulacao-da-6x1-e-equipe-do-novo-governo-o-que-espera-lula-na-volta-de-giro-internacional.ghtml",
-      "score": 146.4,
-      "data_pub": "Mon, 16 Nov 2026 13:58:25 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/16/partidos-alternativas-criticas-ajuste-fiscal.ghtml",
+      "score": 112.6,
+      "data_pub": "Mon, 16 Nov 2026 22:35:04 -0000"
+    },
+    {
+      "titulo": "Alckmin diz que não há razão para mercado ter oscilações após pacote fiscal: 'Brasil tem segurança jurídica e está trabalhando'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/16/alckmin-diz-que-nao-ha-razao-para-mercado-ter-oscilacoes-apos-pacote-fiscal-brasil-tem-seguranca-juridica-e-esta-trabalhando.ghtml",
+      "score": 88.6,
+      "data_pub": "Mon, 16 Nov 2026 21:53:07 -0000"
+    },
+    {
+      "titulo": "Ajuste fiscal: Senado vota destaques ao projeto do governo nesta terça; veja o que pode mudar no texto",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/17/ajuste-fiscal-senado-vota-destaques-ao-projeto-do-governo-nesta-terca-veja-o-que-pode-mudar-no-texto.ghtml",
+      "score": 82.6,
+      "data_pub": "Tue, 17 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Moraes nega pedido de Bolsonaro para receber Valdemar e os pré-candidatos à presidência do Senado Marinho e Tereza",
@@ -249,20 +263,6 @@
       "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/16/depois-do-ajuste-fiscal-equipe-economica-vai-propor-medidas-para-reduzir-o-crescimento-das-despesas-obrigatorias.ghtml",
       "score": 72.0,
       "data_pub": "Mon, 16 Nov 2026 12:57:38 -0000"
-    },
-    {
-      "titulo": "Veja o que Lula disse sobre contas públicas antes de proposta de ajuste fiscal de R$ 60 bilhões",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/12/lula-falas-ajuste-fiscal.ghtml",
-      "score": 72.0,
-      "data_pub": "Thu, 12 Nov 2026 14:58:48 -0000"
-    },
-    {
-      "titulo": "Sánchez e Lula conversam sobre a ameaça da extrema direita antes das eleições na Espanha",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/mundo/noticia/2026/11/16/sanchez-e-lula-conversam-sobre-a-ameaca-da-extrema-direita-antes-das-eleicoes-na-espanha.ghtml",
-      "score": 70.6,
-      "data_pub": "Mon, 16 Nov 2026 17:48:12 -0000"
     }
   ]
 }
