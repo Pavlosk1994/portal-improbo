@@ -1,0 +1,43 @@
+{
+  "titulo": "O MILAGRE EXPRESSO DO AJUSTE FISCAL EM 15 MINUTOS",
+  "subtitulo": "Governo e Congresso descobrem a velocidade da luz legislativa quando a conta do dólar bate na porta do gabinete",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O Congresso é capaz de aprovar até a abolição da gravidade se o dólar subir mais cinquenta centavos antes do almoço.",
+  "legenda_imagem": "Parlamentares correndo desesperados com carimbos supersônicos enquanto o dólar gargalha ao fundo.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim e nanquim de ministros e deputados correndo em fila indiana atrás de um dólar gigante com asas, segurando carimbos gigantescos de 'aprovado em regime de urgência', traço expressivo com lavagem em guache.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians running in single file chasing a giant flying dollar bill, holding massive urgent approval stamps, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil viveu nesta terça-feira um raro momento de epifania física e espiritual: descobriu-se que, com a devida dose de pânico cambial, as leis da física legislativa podem ser revogadas e um projeto de ajuste fiscal completo consegue tramitar, ser debatido, emendado e aprovado no mesmo intervalo necessário para pedir um delivery de feijoada.",
+    "Do alto de sua inabalável preocupação com a alta do dólar — aquela mesma flutuação que costuma surpreender economistas e marajás com a mesma regularidade de um eclipse solar —, o comando da Câmara e a articulação governista selaram um pacto de celibato burocrático para votar o mérito e os destaques antes mesmo que o café da tarde esfrie nas comissões.",
+    "Enquanto senadores e deputados se digladiam em discursos inflamados sobre a responsabilidade fiscal, o verdadeiro motor das deliberações parece ser o ponteiro do câmbio piscando em vermelho nos monitores dos gabinetes. Afinal, nada une a base e a oposição com tanta eficácia quanto o risco iminente de o contribuinte perceber quem realmente está pagando a fatura da festa.",
+    "Resta agora saber se a velocidade supersonic do trâmite relâmpago conseguirá convencer o mercado financeiro ou se o pacote de bondades e cortes será apenas mais um monumento à criatividade contábil, devidamente carimbado, protocolado e esquecido na gaveta da próxima crise de humor da bolsa."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Quando a urgência aperta, o regimento interno vira confete de Carnaval."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O rigor fiscal que só aparece no extrato bancário do mês que vem."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Cortar na própria carne dos outros é a especialidade da casa legislativa."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura chega sempre com juros de mora e selo de garantia institucional."
+    }
+  ],
+  "contexto_real": "O ministro das Relações Institucionais, José Guimarães, afirmou nesta terça-feira (17) que o governo tem um acordo com o presidente da Câmara, Hugo Motta (Republicanos-PB), para pautar e votar o projeto de ajuste fiscal no mesmo dia. A votação ocorre após a aprovação do texto-base no Senado e a necessidade de liquidar destaques antes do recesso.",
+  "slug": "o-milagre-expresso-do-ajuste-fiscal-em-15-minutos",
+  "data": "17 de Novembro de 2026",
+  "imagem_capa": "imagens/o-milagre-expresso-do-ajuste-fiscal-em-15-minutos.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-milagre-expresso-do-ajuste-fiscal-em-15-minutos.mp3",
+  "timestamp": "2026-11-17T19:42:33.055590"
+}

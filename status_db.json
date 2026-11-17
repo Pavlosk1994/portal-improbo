@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-17T03:32:46.367760+00:00",
+  "ultima_atualizacao": "2026-11-17T19:42:33.133143+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-17T19:42:33.133102+00:00",
+      "horario_brt": "17/11/2026 19:42:33",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 70.6,
+      "slug": "o-milagre-expresso-do-ajuste-fiscal-em-15-minutos",
+      "titulo": "O MILAGRE EXPRESSO DO AJUSTE FISCAL EM 15 MINUTOS",
+      "imagem_tamanho_kb": 95.1,
+      "audio_tamanho_kb": 812.8
+    },
     {
       "timestamp": "2026-11-17T03:32:46.367729+00:00",
       "horario_brt": "17/11/2026 03:32:46",
@@ -215,54 +226,43 @@
       "titulo": "O CULTO AO CHEFE: A BENÇÃO NA CADEIA",
       "imagem_tamanho_kb": 0,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-05T18:36:21.749555+00:00",
-      "horario_brt": "05/11/2026 18:36:21",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 35.4,
-      "slug": "o-fracasso-da-maldade-juvenil-no-brasil",
-      "titulo": "O FRACASSO DA MALDADE JUVENIL NO BRASIL",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Integrantes de partidos devem apresentar alternativas a ajuste fiscal que divide esquerda: 'Se podem negociar com o mercado, podem negociar com a gente', diz Lindbergh",
+      "titulo": "Ajuste fiscal: governo quer concluir análise de projeto no Congresso nesta terça; Motta diz que Câmara está disposta a votar",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/16/partidos-alternativas-criticas-ajuste-fiscal.ghtml",
-      "score": 112.6,
-      "data_pub": "Mon, 16 Nov 2026 22:35:04 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/17/governo-quer-aprovar-ajuste-fiscal-no-senado-e-na-camara-ainda-nesta-terca-diz-ministro.ghtml",
+      "score": 104.2,
+      "data_pub": "Tue, 17 Nov 2026 13:42:30 -0000"
     },
     {
-      "titulo": "Alckmin diz que não há razão para mercado ter oscilações após pacote fiscal: 'Brasil tem segurança jurídica e está trabalhando'",
+      "titulo": "Durigan diz que pacote fiscal é só o 'primeiro passo' e defende ajuste gradual e 'sem negacionismo' para baixar juros",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/16/alckmin-diz-que-nao-ha-razao-para-mercado-ter-oscilacoes-apos-pacote-fiscal-brasil-tem-seguranca-juridica-e-esta-trabalhando.ghtml",
-      "score": 88.6,
-      "data_pub": "Mon, 16 Nov 2026 21:53:07 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/17/ministro-da-fazenda-que-pacote-e-so-o-primeiro-passo-e-prega-ajuste-gradual-sem-negacionismo-para-baixar-juro.ghtml",
+      "score": 103.0,
+      "data_pub": "Tue, 17 Nov 2026 17:10:51 -0000"
     },
     {
-      "titulo": "Ajuste fiscal: Senado vota destaques ao projeto do governo nesta terça; veja o que pode mudar no texto",
+      "titulo": "Alcolumbre e Motta cobram de Moraes que libere julgamento da lei da dosimetria no plenário do STF",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/17/ajuste-fiscal-senado-vota-destaques-ao-projeto-do-governo-nesta-terca-veja-o-que-pode-mudar-no-texto.ghtml",
-      "score": 82.6,
-      "data_pub": "Tue, 17 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/17/alcolumbre-e-motta-cobram-de-moraes-julgamento-da-lei-da-dosimetria.ghtml",
+      "score": 101.8,
+      "data_pub": "Tue, 17 Nov 2026 17:29:01 -0000"
     },
     {
-      "titulo": "Moraes nega pedido de Bolsonaro para receber Valdemar e os pré-candidatos à presidência do Senado Marinho e Tereza",
+      "titulo": "Lula se reúne com ministro do Trabalho para últimos ajustes no decreto que regulamentará fim da escala 6x1",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/16/moraes-nega-pedido-de-bolsonaro-para-receber-valdemar-e-os-pre-candidatos-a-presidencia-do-senado-marinho-e-tereza.ghtml",
-      "score": 79.2,
-      "data_pub": "Mon, 16 Nov 2026 12:43:31 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/17/lula-se-reune-com-ministro-do-trabalho-para-ajustes-no-decreto-que-regulamentara-fim-da-escala-6x1.ghtml",
+      "score": 95.8,
+      "data_pub": "Tue, 17 Nov 2026 18:32:06 -0000"
     },
     {
-      "titulo": "Depois do ajuste fiscal, equipe econômica vai propor medidas para reduzir o crescimento das despesas obrigatórias",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/16/depois-do-ajuste-fiscal-equipe-economica-vai-propor-medidas-para-reduzir-o-crescimento-das-despesas-obrigatorias.ghtml",
-      "score": 72.0,
-      "data_pub": "Mon, 16 Nov 2026 12:57:38 -0000"
+      "titulo": "Congresso pede que STF julgue lei que beneficia condenados pelo 8/1",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/congresso-pede-que-stf-julgue-lei-que-beneficia-condenados-pelo-81",
+      "score": 95.4,
+      "data_pub": "Tue, 17 Nov 2026 16:26:00 -0300"
     }
   ]
 }
