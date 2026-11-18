@@ -1,0 +1,43 @@
+{
+  "titulo": "FAZENDA CRIA O 'CORTA MAIS, GASTA IGUAL'",
+  "subtitulo": "Governo apresenta ajuste fiscal invisível que agrada tanto a Faria Lima quanto a gastança pública",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O governo conseguiu criar um ajuste fiscal que economiza tanto que ninguém achou o dinheiro.",
+  "legenda_imagem": "Técnicos do Ministério da Fazenda tentam equilibrar um orçamento inflado usando apenas decretos e muita fé.",
+  "prompt_caricatura": "Caricatura em estilo nanquim e guache estilo O Pasquim retratando economistas engravatados medindo o vento com trenas douradas sobre uma mesa cheia de gráficos em zigue-zague, traço expressivo, tons pastéis.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian finance ministry economists measuring thin air with golden tape measures over a desk full of zig-zag charts, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil deu mais uma aula magna de contabilidade quântica ao apresentar sua nova obra-prima: o ajuste fiscal que não ajusta, mas promete emoções fortes até o próximo pregão da bolsa. Enquanto o presidente viajava para explicar ao planeta as complexidades da nossa inflação metafórica, a equipe econômica desembarcou um cardápio de medidas tão audaciosas que conseguiram desagradar simultaneamente quem quer economizar até o último centavo e quem deseja gastar até a próxima encarnação.",
+    "Para os doutores dos fundos de investimento, a proposta tem a solidez de um castelo de areia na maré alta. Acostumados a planilhas onde o número vermelho é pecado capital, os analistas decretaram que o remédio receitado pela Fazenda é homeopatia pura: serve para acalmar o paciente no curto prazo, mas deixa a dívida pública correndo maratona sem fôlego. Afinal, propor contenção de despesas sem mexer em privilégios corporativos é o equivalente a fazer regime apenas mudando a cor do guardanapo.",
+    "Do outro lado do balcão, a ala desenvolvimentista do governo reagiu ao pacote com o pânico protocolar de quem descobre que a festa de aniversário da repartição pública terá que cortar o bolo de três andares. Para os defensores da gastança com carimbo oficial, qualquer conversa sobre reequilíbrio de contas é um atentado à alegria nacional, uma traição imperdoável contra os nobres solutes que habitam os gabinetes de Brasília.",
+    "No fim das contas, a engenharia financeira do Planalto segue firme na sua missão histórica: agradar a gregos, troianos e ao comitê de auditoria com promessas de austeridade em modo rascunho. O saldo líquido é uma obra literária de ficção orçamentária onde o déficit vira superávit moral e a fatura final continua sendo entregue, com carinho e juros compostos, ao domicílio do contribuinte."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Reduzir o orçamento da merenda para manter o cafezinho com petit-four da superintendência."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "A meta fiscal que promete superávit físico e entrega déficit espiritual."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte de chamar aumento de despesa de investimento estratégico em aeromoças."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura do ajuste que sempre vence na sexta-feira à tarde sem saldo em caixa."
+    }
+  ],
+  "contexto_real": "A equipe econômica do governo apresentou na última semana uma nova proposta de ajuste fiscal com o objetivo de conter o crescimento das despesas públicas e estabilizar a dívida. As medidas, contudo, geraram ceticismo entre analistas do mercado financeiro, que consideraram as ações insuficientes para garantir o equilíbrio estrutural das contas públicas a médio e longo prazo.",
+  "slug": "fazenda-cria-o-corta-mais-gasta-igual",
+  "data": "18 de Novembro de 2026",
+  "imagem_capa": "imagens/fazenda-cria-o-corta-mais-gasta-igual.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/fazenda-cria-o-corta-mais-gasta-igual.mp3",
+  "timestamp": "2026-11-18T02:49:14.514476"
+}
