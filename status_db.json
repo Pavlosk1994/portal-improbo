@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-18T02:49:14.607860+00:00",
+  "ultima_atualizacao": "2026-11-18T19:18:02.384166+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-18T19:18:02.384134+00:00",
+      "horario_brt": "18/11/2026 19:18:02",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 57.9,
+      "slug": "o-decreto-da-hora-extra-e-da-paz-na-terra",
+      "titulo": "O DECRETO DA HORA EXTRA E DA PAZ NA TERRA",
+      "imagem_tamanho_kb": 97.5,
+      "audio_tamanho_kb": 943.3
+    },
     {
       "timestamp": "2026-11-18T02:49:14.607820+00:00",
       "horario_brt": "18/11/2026 02:49:14",
@@ -215,53 +226,42 @@
       "titulo": "O GERENTE DA TOGA: MORAES E AS 316 MENSAGENS DO MASTER",
       "imagem_tamanho_kb": 655.3,
       "audio_tamanho_kb": 1605.2
-    },
-    {
-      "timestamp": "2026-11-08T19:49:38.320664+00:00",
-      "horario_brt": "08/11/2026 16:49:38",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 15.0,
-      "slug": "o-golpe-da-fintech-paraguai-cassa-e-prende-santiago-pena",
-      "titulo": "O GOLPE DA FINTECH: PARAGUAI CASSA E PRENDE SANTIAGO PEÑA",
-      "imagem_tamanho_kb": 648.1,
-      "audio_tamanho_kb": 1555.2
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "O que é o ajuste fiscal que o mercado cobra de Lula? Entenda por que ele desagrada muita gente e divide economistas",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/17/o-que-e-o-ajuste-fiscal-que-o-mercado-cobra-de-lula-entenda-por-que-ele-desagrada-muita-gente-e-divide-economistas.ghtml",
-      "score": 123.6,
-      "data_pub": "Tue, 17 Nov 2026 20:28:31 -0000"
-    },
-    {
       "titulo": "Decreto que regulamenta escala 5x2 será assinado na quinta-feira",
       "fonte": "Agência Brasil - Política",
       "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/decreto-que-regulamenta-escala-5x2-sera-assinado-quinta-feira",
-      "score": 102.0,
+      "score": 95.0,
       "data_pub": "Tue, 17 Nov 2026 18:54:00 -0300"
+    },
+    {
+      "titulo": "Análise: Por que Alcolumbre pressiona Moraes pelo julgamento da Lei da Dosimetria?",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/11/18/analise-alcolumbre-moraes-dosimetria.ghtml",
+      "score": 94.8,
+      "data_pub": "Wed, 18 Nov 2026 10:38:51 -0000"
     },
     {
       "titulo": "Alcolumbre e Motta cobram de Moraes que libere julgamento da lei da dosimetria no plenário do STF",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/17/alcolumbre-e-motta-cobram-de-moraes-julgamento-da-lei-da-dosimetria.ghtml",
-      "score": 100.8,
+      "score": 90.8,
       "data_pub": "Tue, 17 Nov 2026 17:29:01 -0000"
     },
     {
-      "titulo": "Com medidas do governo, projeções apontam que Saúde pode deixar de receber até R$ 9 bi em 2027; Planejamento nega",
+      "titulo": "Um ano depois, fraude do Banco Master deixou prejuízo de R$ 76 bilhões",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/17/com-medidas-do-governo-saude-pode-deixar-de-receber-r-9-bilhoes-em-2027-e-ter-alta-limitada-ate-2030-organizacoes-sociais-reagem.ghtml",
-      "score": 97.2,
-      "data_pub": "Tue, 17 Nov 2026 15:25:28 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/18/um-ano-depois-fraude-do-banco-master-deixou-prejuizo-de-r-76-bilhoes.ghtml",
+      "score": 90.0,
+      "data_pub": "Wed, 18 Nov 2026 12:42:37 -0000"
     },
     {
       "titulo": "Fachin diz que STF julgará ainda neste ano lei que pode reduzir penas de Bolsonaro e aliados se Moraes liberar ações",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/17/fachin-diz-que-stf-pode-julgar-ainda-neste-ano-acoes-contra-lei-da-dosimetria-se-moraes-liberar-caso.ghtml",
-      "score": 97.0,
+      "score": 90.0,
       "data_pub": "Tue, 17 Nov 2026 22:27:08 -0000"
     }
   ]

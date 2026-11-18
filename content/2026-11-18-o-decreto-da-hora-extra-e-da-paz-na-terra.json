@@ -1,0 +1,43 @@
+{
+  "titulo": "O DECRETO DA HORA EXTRA E DA PAZ NA TERRA",
+  "subtitulo": "Governo sela a paz definitiva entre o relógio de ponto e a contemplação zen do sagrado sábado.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O governo descobriu que a melhor forma de gerar emprego é decretar matematicamente que a semana tem sete dias, mas só dois contam para a folha de pagamento.",
+  "legenda_imagem": "Ministério do Trabalho afere o comprimento do relógio de ponto com uma trena diplomática.",
+  "prompt_caricatura": "Caricatura em nanquim e guache estilo O Pasquim retratando o ministro do Trabalho e o presidente ajustando engrenagens de um relógio de ponto gigante que marca apenas dois dias úteis enquanto o sol e a lua discutem.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians involved, specifically Minister of Labor Luiz Marinho and President Luiz Inacio Lula da Silva adjusting a gigantic time clock that only shows two working days, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, sempre na vanguarda da engenharia temporal, encontrou enfim a fórmula mágica para conciliar a ânsia produtiva do capital com o repouso metafísico do proletariado. Em cerimônia planejada com o rigor de um lançamento espacial no Palácio do Planalto, o Executivo prepara a assinatura do decreto que consagra a venerável escala 5x2. A medida chega para pacificar o conflito milenar entre a segunda-feira de manhã e o descanso dominical, convertendo o calendário gregoriano em uma planilha de Excel rigorosamente auditada.",
+    "Segundo os gabinetes ministeriais, a genialidade da norma reside no esforço pedagógico de evitar 'interpretações distorcidas'. Afinal, deixar que o empregado e o empregador conversem diretamente sobre horários é uma heresia que a burocracia estatal não pode tolerar. Com o novo decreto, o governo assume a nobre missão de explicar solenemente que trabalhar cinco dias e descansar dois é uma conquista civilizatória comparável à invenção da roda ou à declaração universal dos direitos humanos.",
+    "Nos bastidores da Esplanada, a comemoração é generalizada entre os estrategistas de plantão, que já vislumbram o impacto positivo da medida na taxa de felicidade bruta da nação. Enquanto o Supremo Tribunal Federal aguarda o momento oportuno para carimbar a constitucionalidade do ponteiro do relógio, o Ministério da Fazenda calcula em silêncio o reflexo da nova métrica temporal sobre o índice de inflação dos finais de semana prolongados.",
+    "No fim das contas, a fatura dessa harmonia intergaláctica entre o crachá e o travesseiro será entregue com a pontualidade suíça de sempre. O cidadão poderá dormir em paz sabendo que o Estado não apenas vigia seus passos, mas agora também cronometra oficialmente o exato segundo em que sua produtividade se transforma em saudade do fim de semana."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia do Ponche",
+      "texto": "Ajuste fino entre o café da manhã e o apito da sirene."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O calendário de parede homologado por portaria interministerial."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Transformar o relógio de ponto em instrumento de política monetária."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A taxa de expediente cobrada para validar o descanso remunerado."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva assinará na próxima quinta-feira (19), às 9h, o decreto que regulamenta a escala de trabalho 5x2, com início de cumprimento previsto para 16 de dezembro. A informação foi divulgada pelo ministro do Trabalho, Luiz Marinho, após ajustes sugeridos pelo próprio presidente para evitar ruídos de interpretação entre empregados e empregadores.",
+  "slug": "o-decreto-da-hora-extra-e-da-paz-na-terra",
+  "data": "18 de Novembro de 2026",
+  "imagem_capa": "imagens/o-decreto-da-hora-extra-e-da-paz-na-terra.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-decreto-da-hora-extra-e-da-paz-na-terra.mp3",
+  "timestamp": "2026-11-18T19:18:02.331831"
+}
