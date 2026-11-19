@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-19T02:25:22.542327+00:00",
+  "ultima_atualizacao": "2026-11-19T19:26:52.729311+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-19T19:26:52.729271+00:00",
+      "horario_brt": "19/11/2026 19:26:52",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 103.2,
+      "slug": "o-feriado-estatal-lula-decreta-a-semana-com-dois-d",
+      "titulo": "O FERIADO ESTATAL: LULA DECRETA A SEMANA COM DOIS DOMINGOS",
+      "imagem_tamanho_kb": 100.5,
+      "audio_tamanho_kb": 1033.7
+    },
     {
       "timestamp": "2026-11-19T02:25:22.542282+00:00",
       "horario_brt": "19/11/2026 02:25:22",
@@ -215,54 +226,43 @@
       "titulo": "A CPI DO COMPADRE: ALCOLUMBRE SENTA EM CIMA DO MASTER",
       "imagem_tamanho_kb": 1165.8,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:09:48.258269+00:00",
-      "horario_brt": "13/11/2026 03:09:48",
-      "status": "RETIDO",
-      "motivo": "Caricatura editorial ausente ou inferior a 50KB",
-      "duracao_segundos": 0.1,
-      "slug": "governo-lula-finaliza-pacote-de-corte-de-gastos-ob",
-      "titulo": "O MILAGRE DA CARA DE PAU: GOVERNO LULA FINALIZA PACOTE DE ...",
-      "imagem_tamanho_kb": 0,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Análise: Por que Alcolumbre pressiona Moraes pelo julgamento da Lei da Dosimetria?",
+      "titulo": "Lula assina regulamentação da escala 5x2; medida está prevista para começar a valer em dezembro",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/11/18/analise-alcolumbre-moraes-dosimetria.ghtml",
-      "score": 94.8,
-      "data_pub": "Wed, 18 Nov 2026 10:38:51 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/19/lula-assina-regulamentacao-da-escala-5x2-medida-esta-prevista-para-comecar-a-valer-em-dezembro.ghtml",
+      "score": 148.6,
+      "data_pub": "Thu, 19 Nov 2026 13:33:23 -0000"
     },
     {
-      "titulo": "Eleição para presidente da Câmara causa divisão no PL, e Nikolas ameaça deixar partido",
+      "titulo": "IFI alerta que 'bondades' de Lula na eleição apertam máquina pública e pede ajuste 'profundo'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/18/eleicao-para-presidente-da-camara-causa-divisao-no-pl-e-nikolas-ameaca-deixar-partido.ghtml",
-      "score": 94.6,
-      "data_pub": "Wed, 18 Nov 2026 20:44:21 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/19/orgao-do-senado-alerta-que-bondades-de-lula-nas-eleicoes-apertam-maquina-publica-e-pede-ajuste-fiscal-profundo.ghtml",
+      "score": 123.4,
+      "data_pub": "Thu, 19 Nov 2026 16:37:06 -0000"
     },
     {
-      "titulo": "Alcolumbre e Motta cobram de Moraes que libere julgamento da lei da dosimetria no plenário do STF",
+      "titulo": "Pressionado a apresentar nomes da equipe econômica, Lula diz que vai indicar ministros 'quando quiser'",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/17/alcolumbre-e-motta-cobram-de-moraes-julgamento-da-lei-da-dosimetria.ghtml",
-      "score": 90.8,
-      "data_pub": "Tue, 17 Nov 2026 17:29:01 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/19/pressionado-a-apresentar-nomes-da-equipe-economica-lula-diz-que-vai-indicar-ministerios-quando-quiser.ghtml",
+      "score": 100.6,
+      "data_pub": "Thu, 19 Nov 2026 14:29:39 -0000"
     },
     {
-      "titulo": "Um ano depois, fraude do Banco Master deixou prejuízo de R$ 76 bilhões",
+      "titulo": "100 maiores doadores das eleições de 2026 destinaram R$ 163,4 milhões a campanhas e partidos; veja quem são",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/18/um-ano-depois-fraude-do-banco-master-deixou-prejuizo-de-r-76-bilhoes.ghtml",
-      "score": 90.0,
-      "data_pub": "Wed, 18 Nov 2026 12:42:37 -0000"
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/11/19/maiores-doadores-eleicoes-2026.ghtml",
+      "score": 92.4,
+      "data_pub": "Thu, 19 Nov 2026 12:27:58 -0000"
     },
     {
-      "titulo": "Com medidas do governo, projeções apontam que Saúde pode deixar de receber até R$ 9 bi em 2027; Planejamento nega",
+      "titulo": "Governo regulamenta jornada 5x2 nesta quinta-feira; Lula assina decreto com novas regras",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/17/com-medidas-do-governo-saude-pode-deixar-de-receber-r-9-bilhoes-em-2027-e-ter-alta-limitada-ate-2030-organizacoes-sociais-reagem.ghtml",
-      "score": 87.2,
-      "data_pub": "Tue, 17 Nov 2026 15:25:28 -0000"
+      "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/11/19/governo-regulamenta-da-jornada-5x2-nesta-quinta-feira-lula-assina-decreto-com-novas-regras.ghtml",
+      "score": 88.8,
+      "data_pub": "Thu, 19 Nov 2026 03:00:00 -0000"
     }
   ]
 }
