@@ -1,0 +1,43 @@
+{
+  "titulo": "O BALCÃO DE NEGÓCIOS DA DOSIMETRIA",
+  "subtitulo": "Quando a matemática penal vira moeda de troca para o consórcio legislativo.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Alcolumbre e Motta descobrirem que a dosimetria da pena é o melhor brinde corporativo para ganhar voto de oposicionista.",
+  "legenda_imagem": "Caricatura de Davi Alcolumbre, Hugo Motta e Alexandre de Moraes negociando regras penais em uma feira livre de Brasília.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim e Henfil dos políticos brasileiros Davi Alcolumbre, Hugo Motta e o ministro Alexandre de Moraes em uma mesa de negociação lotada de códigos penais e balanças de precisão tortas, nanquim e guache sobre papel creme, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians Davi Alcolumbre, Hugo Motta and Supreme Court Justice Alexandre de Moraes negotiating penal codes with a crooked precision scale, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A alta chancelaria do Congresso Nacional encontrou finalmente a fórmula definitiva para harmonizar o rigor da toga com as urgências aritméticas das urnas. Em uma demonstração sublime de pragmatismo republicano, os chefes das mesas diretoras decidiram que o cálculo de penas não passa de um detalhe técnico negociável no balcão de acordos da reeleição.",
+    "Com a elegância típica dos grandes estrategistas de corredores acarpetados, os parlamentares cruzaram a Praça dos Três Poderes rumo ao gabinete do relator supremo para discutir os encantos da Lei da Dosimetria. Afinal, nada une a base governista e a oposição com tanta eficácia quanto a promessa de uma boa flexibilização jurisprudencial servida em horário nobre.",
+    "Enquanto os ministros analisam a inconstitucionalidade dos parágrafos, os candidatos à presidência das casas legislativas explicam aos colegas de bancada que a justiça dos homens é maleável como massinha de modelar, bastando para isso alguns votos bem direcionados na cédula secreta.",
+    "Ao fim da jornada, o contribuinte assiste embevecido ao espetáculo da engenharia jurídica, onde o Código Penal funciona como um catálogo de varejo natalino, com descontos progressivos para quem garantir a estabilidade da governabilidade dos tubarões da República."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Onde o regimento interno é reescrito a cada café tomado no cafezinho."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Emendas e acordos costurados com cuspe e promessas de campanha."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Reduzindo anos de reclusão a meses de trâmites burocráticos."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura institucional paga religiosamente pelo contribuinte desavisado."
+    }
+  ],
+  "contexto_real": "Os presidentes do Senado, Davi Alcolumbre (União-AP), e da Câmara, Hugo Motta (Republicanos-PB), estiveram reunidos com o ministro do STF Alexandre de Moraes para tratar da Lei da Dosimetria. A articulação é vista como um aceno estratégico à oposição para consolidar apoios de olho nas eleições internas das mesas diretoras do Congresso.",
+  "slug": "o-balcao-de-negocios-da-dosimetria",
+  "data": "19 de Novembro de 2026",
+  "imagem_capa": "imagens/o-balcao-de-negocios-da-dosimetria.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-balcao-de-negocios-da-dosimetria.mp3",
+  "timestamp": "2026-11-19T02:25:22.454555"
+}
