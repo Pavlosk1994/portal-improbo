@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://improbo.vercel.app/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-milagre-da-caridade-com-o-cartao-dos-outros.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/artigos/o-feriado-estatal-lula-decreta-a-semana-com-dois-d.html</loc>
@@ -295,13 +301,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/a-cirurgia-no-corpo-alheio-haddad-tenta-cortar-gastos-na-esplanada.html</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://improbo.vercel.app/artigos/o-relogio-do-fim-do-mundo-stf-espera-relatorio-final-da-pf.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-despacho-do-travesseiro-lula-governa-de-curativo-no-alvorada.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -313,31 +313,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-despacho-do-travesseiro-lula-governa-de-curativo-no-alvorada.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-relogio-do-fim-do-mundo-stf-espera-relatorio-final-da-pf.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-paradoxo-da-toga-stf-avisa-que-lei-que-limita-o-stf-e-inconstitucional.html</loc>
+    <loc>https://improbo.vercel.app/artigos/a-cirurgia-no-corpo-alheio-haddad-tenta-cortar-gastos-na-esplanada.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/a-diplomacia-da-porta-na-cara-lula-barra-maduro-no-brics.html</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://improbo.vercel.app/artigos/a-santa-ceia-da-anistia-flavio-bolsonaro-negocia-perdao-no-congresso.html</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://improbo.vercel.app/artigos/o-senhor-do-mapa-gilberto-kassab-vence-as-eleicoes-em-silencio.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-cassino-da-patria-amada-economia-brasileira-descobre-o-tigrinho.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -349,7 +337,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-cassino-da-patria-amada-economia-brasileira-descobre-o-tigrinho.html</loc>
+    <loc>https://improbo.vercel.app/artigos/a-diplomacia-da-porta-na-cara-lula-barra-maduro-no-brics.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-paradoxo-da-toga-stf-avisa-que-lei-que-limita-o-stf-e-inconstitucional.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/o-senhor-do-mapa-gilberto-kassab-vence-as-eleicoes-em-silencio.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-santa-ceia-da-anistia-flavio-bolsonaro-negocia-perdao-no-congresso.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-19T19:26:52.729311+00:00",
+  "ultima_atualizacao": "2026-11-20T02:09:46.988397+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-20T02:09:46.988348+00:00",
+      "horario_brt": "20/11/2026 02:09:46",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 80.1,
+      "slug": "o-milagre-da-caridade-com-o-cartao-dos-outros",
+      "titulo": "O MILAGRE DA CARIDADE COM O CARTÃO DOS OUTROS",
+      "imagem_tamanho_kb": 94.8,
+      "audio_tamanho_kb": 974.1
+    },
     {
       "timestamp": "2026-11-19T19:26:52.729271+00:00",
       "horario_brt": "19/11/2026 19:26:52",
@@ -215,39 +226,28 @@
       "titulo": "O APAGÃO DA TESOURA: HADDAD CORTA O VENTO E POUPA CORONÉIS",
       "imagem_tamanho_kb": 1037.5,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.648623+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "a-cpi-do-compadre-alcolumbre-senta-em-cima-do-master",
-      "titulo": "A CPI DO COMPADRE: ALCOLUMBRE SENTA EM CIMA DO MASTER",
-      "imagem_tamanho_kb": 1165.8,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Lula assina regulamentação da escala 5x2; medida está prevista para começar a valer em dezembro",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/19/lula-assina-regulamentacao-da-escala-5x2-medida-esta-prevista-para-comecar-a-valer-em-dezembro.ghtml",
-      "score": 148.6,
-      "data_pub": "Thu, 19 Nov 2026 13:33:23 -0000"
-    },
-    {
       "titulo": "IFI alerta que 'bondades' de Lula na eleição apertam máquina pública e pede ajuste 'profundo'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/19/orgao-do-senado-alerta-que-bondades-de-lula-nas-eleicoes-apertam-maquina-publica-e-pede-ajuste-fiscal-profundo.ghtml",
-      "score": 123.4,
+      "score": 116.4,
       "data_pub": "Thu, 19 Nov 2026 16:37:06 -0000"
+    },
+    {
+      "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
+      "score": 101.8,
+      "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
     },
     {
       "titulo": "Pressionado a apresentar nomes da equipe econômica, Lula diz que vai indicar ministros 'quando quiser'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/19/pressionado-a-apresentar-nomes-da-equipe-economica-lula-diz-que-vai-indicar-ministerios-quando-quiser.ghtml",
-      "score": 100.6,
+      "score": 93.6,
       "data_pub": "Thu, 19 Nov 2026 14:29:39 -0000"
     },
     {
