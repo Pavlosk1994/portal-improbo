@@ -1,0 +1,43 @@
+{
+  "titulo": "LULA: O MINISTRO SOU EU E O DIA É QUANDO EU QUISER",
+  "subtitulo": "Presidente eleva o suspense fiscal ao status de política de Estado e deixa a Faria Lima em estado de meditação transcendental forçada.",
+  "categoria": "Política de Suspense",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Lula descobriu que o melhor ajuste fiscal é não ter ministro: se não tem ninguém no cargo, ninguém pode gastar!",
+  "legenda_imagem": "O Oráculo do Planalto consultando o calendário de 'São Nunca' para definir o destino do PIB.",
+  "prompt_caricatura": "Charge satírica em nanquim e guache: Lula sentado em um trono feito de calendários em branco, segurando um relógio derretido como o de Dalí, enquanto um banqueiro nanico de terno e gravata chora abraçado a uma calculadora. Estilo clássico de O Pasquim, traços expressivos de Henfil, papel creme envelhecido.",
+  "prompt_caricatura_en": "Satirical political cartoon in ink and gouache: Luiz Inácio Lula da Silva sitting on a throne made of blank calendars, holding a melting clock like Dalí's, while a tiny banker in a suit and tie cries hugging a calculator. Classic O Pasquim style, expressive Henfil-like strokes, aged cream paper background, strictly no text.",
+  "corpo": [
+    "O quarto mandato de Luiz Inácio começou com a solenidade de um conclave papal, mas sem a fumaça branca — e sem a pressa de quem precisa pagar o condomínio. Enquanto o mercado financeiro mói unhas e planilhas em busca de um nome para a Fazenda, o Presidente da República decidiu adotar a 'Metafísica do Calendário' como diretriz econômica. Ao decretar o fim da escala 6x1, Lula sinalizou que o descanso é sagrado para o povo, mas o mistério é o privilégio do soberano.",
+    "A declaração de que anunciará seus ministros 'na hora e no dia que quiser' não é apenas uma frase de efeito; é a elevação do 'porque sim' ao patamar de emenda constitucional. A liturgia do poder em Brasília agora opera sob o fuso horário da conveniência palaciana, onde o tempo geológico de uma indicação ministerial serve para amaciar o lombo dos agentes financeiros, que já começam a confundir indicadores de inflação com batimentos cardíacos de ansiedade.",
+    "Do outro lado da Praça dos Três Poderes, a oposição e o Centrão observam o vácuo de poder na economia com o apetite de quem espera a sobra de um banquete que sequer foi servido. A cada dia de silêncio, o valor do apoio parlamentar sobe mais que o dólar, provando que, na ausência de um Ministro da Fazenda, a verdadeira moeda corrente em Brasília continua sendo a expectativa de um cargo com chave de cofre e direito a carimbo oficial.",
+    "No fim das contas, a estratégia de governar por epifania transforma o Orçamento Geral da União em um roteiro de suspense da Netflix. O mercado, esse eterno impaciente, terá que aprender a lição fundamental da nova era: em um governo que regulamenta o descanso, a pressa dos juros futuros é apenas um detalhe burocrático diante da majestosa e imperturbável agenda de quem descobriu que o melhor ajuste fiscal é o silêncio."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Manter a Faria Lima em jejum de nomes até que o PIB aprenda a rezar em latim."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Indicar um ministro que seja, simultaneamente, desenvolvimentista para o partido e austero para o gráfico."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Equilibrar as contas públicas usando apenas a força do pensamento e o carisma presidencial."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A certeza de que, independentemente da hora ou do dia, o contribuinte é o único pontual."
+    }
+  ],
+  "contexto_real": "Após sua reeleição para o quarto mandato (contexto projetado), o presidente Lula afirmou em 19 de novembro de 2026 que não tem pressa para anunciar sua equipe ministerial, especificamente o comando da Fazenda. A fala ocorreu durante a regulamentação do fim da escala 6x1 e gerou instabilidade no mercado financeiro devido à incerteza sobre a política econômica e o ajuste fiscal.",
+  "slug": "lula-o-ministro-sou-eu-e-o-dia-e-quando-eu-quiser",
+  "data": "20 de Novembro de 2026",
+  "imagem_capa": "imagens/lula-o-ministro-sou-eu-e-o-dia-e-quando-eu-quiser.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/lula-o-ministro-sou-eu-e-o-dia-e-quando-eu-quiser.mp3",
+  "timestamp": "2026-11-20T19:01:28.170382"
+}

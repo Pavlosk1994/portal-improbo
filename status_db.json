@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-20T02:09:46.988397+00:00",
+  "ultima_atualizacao": "2026-11-20T19:01:28.254316+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-20T19:01:28.254274+00:00",
+      "horario_brt": "20/11/2026 19:01:28",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 71.7,
+      "slug": "lula-o-ministro-sou-eu-e-o-dia-e-quando-eu-quiser",
+      "titulo": "LULA: O MINISTRO SOU EU E O DIA É QUANDO EU QUISER",
+      "imagem_tamanho_kb": 94.5,
+      "audio_tamanho_kb": 991.1
+    },
     {
       "timestamp": "2026-11-20T02:09:46.988348+00:00",
       "horario_brt": "20/11/2026 02:09:46",
@@ -215,54 +226,43 @@
       "titulo": "O BEIJA-MÃO DA TOGA: ALCOLUMBRE DEVOLVE MESSIAS A LULA",
       "imagem_tamanho_kb": 1140.2,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.654403+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "o-apagao-da-tesoura-haddad-corta-o-vento-e-poupa-os-coroneis",
-      "titulo": "O APAGÃO DA TESOURA: HADDAD CORTA O VENTO E POUPA CORONÉIS",
-      "imagem_tamanho_kb": 1037.5,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "IFI alerta que 'bondades' de Lula na eleição apertam máquina pública e pede ajuste 'profundo'",
+      "titulo": "Ministérios, ajuste fiscal e articulações políticas: veja o que se sabe sobre o novo governo Lula",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/19/orgao-do-senado-alerta-que-bondades-de-lula-nas-eleicoes-apertam-maquina-publica-e-pede-ajuste-fiscal-profundo.ghtml",
-      "score": 116.4,
-      "data_pub": "Thu, 19 Nov 2026 16:37:06 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/lula-4-ministros-o-que-se-sabe.ghtml",
+      "score": 159.6,
+      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Briga na esquerda menos de um mês após eleição expõe divergências sobre rumos do governo Lula 4",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/briga-na-esquerda-e-governo-lula-4.ghtml",
+      "score": 124.8,
+      "data_pub": "Fri, 20 Nov 2026 03:00:01 -0000"
+    },
+    {
+      "titulo": "Marina Silva, Fachin e Erika Hilton ampliam pressão sobre Lula por ministra negra no STF: 'Abismo social e estrutural'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/marina-silva-fachin-e-erika-hilton-lula-ministra-negra-no-stf.ghtml",
+      "score": 109.2,
+      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Trama golpista: STF julgará aplicação da Lei da Dosimetria em dezembro; veja quem pode ter pena reduzida",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/trama-golpista-stf-julgara-aplicacao-da-lei-da-dosimetria-em-dezembro-veja-quem-pode-ter-pena-reduzida.ghtml",
+      "score": 94.8,
+      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
-      "score": 101.8,
+      "score": 94.8,
       "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
-    },
-    {
-      "titulo": "Pressionado a apresentar nomes da equipe econômica, Lula diz que vai indicar ministros 'quando quiser'",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/19/pressionado-a-apresentar-nomes-da-equipe-economica-lula-diz-que-vai-indicar-ministerios-quando-quiser.ghtml",
-      "score": 93.6,
-      "data_pub": "Thu, 19 Nov 2026 14:29:39 -0000"
-    },
-    {
-      "titulo": "100 maiores doadores das eleições de 2026 destinaram R$ 163,4 milhões a campanhas e partidos; veja quem são",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/11/19/maiores-doadores-eleicoes-2026.ghtml",
-      "score": 92.4,
-      "data_pub": "Thu, 19 Nov 2026 12:27:58 -0000"
-    },
-    {
-      "titulo": "Governo regulamenta jornada 5x2 nesta quinta-feira; Lula assina decreto com novas regras",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/11/19/governo-regulamenta-da-jornada-5x2-nesta-quinta-feira-lula-assina-decreto-com-novas-regras.ghtml",
-      "score": 88.8,
-      "data_pub": "Thu, 19 Nov 2026 03:00:00 -0000"
     }
   ]
 }
