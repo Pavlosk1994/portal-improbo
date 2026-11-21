@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-21T02:02:38.114255+00:00",
+  "ultima_atualizacao": "2026-11-21T17:56:23.869399+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-21T17:56:23.869357+00:00",
+      "horario_brt": "21/11/2026 17:56:23",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 86.4,
+      "slug": "lula-dispensa-gps-e-pilota-o-brasil-no-sentimento",
+      "titulo": "LULA DISPENSA GPS E PILOTA O BRASIL NO SENTIMENTO",
+      "imagem_tamanho_kb": 94.7,
+      "audio_tamanho_kb": 1109.1
+    },
     {
       "timestamp": "2026-11-21T02:02:38.114188+00:00",
       "horario_brt": "21/11/2026 02:02:38",
@@ -215,47 +226,36 @@
       "titulo": "O CONCÍLIO DA FOLGA: STF REGULA 6X1 COM JORNADA 3X4",
       "imagem_tamanho_kb": 1013.1,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.659519+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "o-carimbo-do-invisivel-flavio-dino-e-o-rastreador-de-emendas-pix",
-      "titulo": "O CARIMBO DO INVISÍVEL: DINO E O RASTREADOR DE EMENDAS PIX",
-      "imagem_tamanho_kb": 920.1,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Briga na esquerda menos de um mês após eleição expõe divergências sobre rumos do governo Lula 4",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/briga-na-esquerda-e-governo-lula-4.ghtml",
-      "score": 124.8,
-      "data_pub": "Fri, 20 Nov 2026 03:00:01 -0000"
+      "titulo": "\"O sistema financeiro não vai me ensinar a dirigir o Brasil\", diz Lula",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/o-sistema-financeiro-nao-vai-me-ensinar-dirigir-o-brasil-diz-lula",
+      "score": 105.3,
+      "data_pub": "Sat, 21 Nov 2026 14:12:00 -0300"
     },
     {
       "titulo": "Marina Silva, Fachin e Erika Hilton ampliam pressão sobre Lula por ministra negra no STF: 'Abismo social e estrutural'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/20/marina-silva-fachin-e-erika-hilton-lula-ministra-negra-no-stf.ghtml",
-      "score": 109.2,
+      "score": 99.2,
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
+      "score": 91.0,
+      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
     },
     {
       "titulo": "Trama golpista: STF julgará aplicação da Lei da Dosimetria em dezembro; veja quem pode ter pena reduzida",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/20/trama-golpista-stf-julgara-aplicacao-da-lei-da-dosimetria-em-dezembro-veja-quem-pode-ter-pena-reduzida.ghtml",
-      "score": 94.8,
+      "score": 84.8,
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Dino e Moraes votam para tornar Van Hattem réu por calúnia e injúria contra delegado da PF; Zanin leva caso ao plenário físico do STF",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/dino-vota-para-tornar-van-hattem-reu-por-calunia-e-injuria-contra-delegado-da-policia-federal.ghtml",
-      "score": 85.2,
-      "data_pub": "Fri, 20 Nov 2026 14:21:48 -0000"
     },
     {
       "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
