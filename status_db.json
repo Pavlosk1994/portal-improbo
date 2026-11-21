@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-20T19:01:28.254316+00:00",
+  "ultima_atualizacao": "2026-11-21T02:02:38.114255+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-21T02:02:38.114188+00:00",
+      "horario_brt": "21/11/2026 02:02:38",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 32.1,
+      "slug": "lula-4-a-esquerda-ja-briga-pelo-premio",
+      "titulo": "LULA 4: A ESQUERDA JÁ BRIGA PELO PRÊMIO",
+      "imagem_tamanho_kb": 95.1,
+      "audio_tamanho_kb": 952.3
+    },
     {
       "timestamp": "2026-11-20T19:01:28.254274+00:00",
       "horario_brt": "20/11/2026 19:01:28",
@@ -215,27 +226,9 @@
       "titulo": "O CARIMBO DO INVISÍVEL: DINO E O RASTREADOR DE EMENDAS PIX",
       "imagem_tamanho_kb": 920.1,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.657542+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "o-beija-mao-da-toga-alcolumbre-ameaca-devolver-messias-a-lula",
-      "titulo": "O BEIJA-MÃO DA TOGA: ALCOLUMBRE DEVOLVE MESSIAS A LULA",
-      "imagem_tamanho_kb": 1140.2,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Ministérios, ajuste fiscal e articulações políticas: veja o que se sabe sobre o novo governo Lula",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/lula-4-ministros-o-que-se-sabe.ghtml",
-      "score": 159.6,
-      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
-    },
     {
       "titulo": "Briga na esquerda menos de um mês após eleição expõe divergências sobre rumos do governo Lula 4",
       "fonte": "G1 Política",
@@ -258,10 +251,17 @@
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
     },
     {
+      "titulo": "Dino e Moraes votam para tornar Van Hattem réu por calúnia e injúria contra delegado da PF; Zanin leva caso ao plenário físico do STF",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/dino-vota-para-tornar-van-hattem-reu-por-calunia-e-injuria-contra-delegado-da-policia-federal.ghtml",
+      "score": 85.2,
+      "data_pub": "Fri, 20 Nov 2026 14:21:48 -0000"
+    },
+    {
       "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
-      "score": 94.8,
+      "score": 84.8,
       "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
     }
   ]

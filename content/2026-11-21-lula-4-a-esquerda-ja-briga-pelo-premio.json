@@ -1,0 +1,43 @@
+{
+  "titulo": "LULA 4: A ESQUERDA JÁ BRIGA PELO PRÊMIO",
+  "subtitulo": "Menos de um mês após a urna fechar, o governo descobre que a maior oposição ao lulismo é o próprio palanque que o elegeu.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo eleito comemorando a vitória e já brigando para ver quem vai explicar o corte de gastos na mesa do boteco.",
+  "legenda_imagem": "Caricatura retratando o ringue armado entre a turma do bloco progressista e os burocratas do ajuste fiscal na Esplanada.",
+  "prompt_caricatura": "Charge satírica em estilo nanquim e guache, traço inspirado no Pasquim, retratando políticos de esquerda em cima de um ringue engravatados e trocando tapas amigáveis com planilhas de ajuste fiscal voando, sem textos ou logotipos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians of the left wing in a boxing ring throwing bureaucratic spreadsheets at each other, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, em sua infinita vocação para o teatro kabuki, conseguiu superar a si mesma antes mesmo do Papai Noel descer pela chaminé. Menos de trinta dias após a apuração das urnas que consagraram a vitória do presidente Lula sobre Flávio Bolsonaro, a base governista já inaugurou o tradicional esporte nacional do fogo amigo com requintes de crueldade ideológica.",
+    "O estopim da discórdia foi o recém-nascido projeto de ajuste fiscal, documento oficial que traduz em decretos frios a dura arte de explicar ao eleitor progressista que o socialismo de palanque é ótimo, mas o superávit primário é que paga a conta do café no Planalto. Aprovado a toque de caixa pelo Senado, o pacote reduziu o teto de gastos e instaurou o pânico nos corredores do Ministério da Fazenda, onde assessores tentam conciliar a cartilha marxista com as planilhas do FMI.",
+    "Enquanto os tecnocratas defendem a tesourada com a empáfia de quem nunca precisou pegar ônibus lotado em segunda-feira chuvosa, os parlamentares do PSOL e os movimentos sociais decidiram que a melhor forma de apoiar o governo é jogando o microfone na cabeça do ministro da Economia. É a belíssima coreografia da base aliada que vota contra o próprio chefe para garantir o crachá de resistência histórica nos anais dos diretórios acadêmicos.",
+    "No fim das contas, o quarto mandato do petista começa com aquela harmonia comovente de uma briga de foice no escuro dentro de um elevador social. Enquanto os discursos oficiais celebram a união democrática contra o bolsonarismo, o contribuinte assiste da plateia ao espetáculo inesquecível de ver a esquerda governista descobrindo que governar, infelizmente, exige tirar dinheiro de alguém."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Onde o companheiro de chapa descobre o valor de uma facada nas costas antes mesmo da posse."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Discursos inflamados na campanha substituídos por portarias de bloqueio orçamentário na calada da noite."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "A arte milenar de cortar direitos sociais chamando o ato de 'avanço estrutural democrático'."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura do ajuste que une a situação e a oposição no mais belo silêncio administrativo."
+    }
+  ],
+  "contexto_real": "Menos de um mês após a vitória de Lula (PT) sobre Flávio Bolsonaro (PL) no segundo turno, aliados do governo iniciaram uma disputa pública sobre os rumos do quarto mandato do petista, que começa em janeiro de 2027. O estopim foi o projeto de ajuste fiscal apresentado pelo governo — que permite bloquear despesas e reduzir o limite de gastos —, aprovado pelo Senado na quarta-feira (18), gerando críticas internas do PT, do PSOL e de movimentos sociais.",
+  "slug": "lula-4-a-esquerda-ja-briga-pelo-premio",
+  "data": "21 de Novembro de 2026",
+  "imagem_capa": "imagens/lula-4-a-esquerda-ja-briga-pelo-premio.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/lula-4-a-esquerda-ja-briga-pelo-premio.mp3",
+  "timestamp": "2026-11-21T02:02:37.954960"
+}
