@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-22T01:04:32.249452+00:00",
+  "ultima_atualizacao": "2026-11-22T18:23:03.412201+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-22T18:23:03.412161+00:00",
+      "horario_brt": "22/11/2026 18:23:03",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 99.8,
+      "slug": "milagre-em-brasilia-deputados-trabalham-na-segunda",
+      "titulo": "MILAGRE EM BRASÍLIA: DEPUTADOS TRABALHAM NA SEGUNDA",
+      "imagem_tamanho_kb": 98.2,
+      "audio_tamanho_kb": 1130.3
+    },
     {
       "timestamp": "2026-11-22T01:04:32.249406+00:00",
       "horario_brt": "22/11/2026 01:04:32",
@@ -215,40 +226,29 @@
       "titulo": "A FARRA DO CARIMBO: GOVERNO LULA FINALIZA PACOTE DE CORTE ...",
       "imagem_tamanho_kb": 99.7,
       "audio_tamanho_kb": 0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.664118+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "o-leilao-do-condonvem-triplex-da-oas-volta-com-juros-e-correcao",
-      "titulo": "O LEILÃO DO CONDONVÉM: TRIPLEX DA OAS VOLTA COM JUROS",
-      "imagem_tamanho_kb": 1049.1,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Marina Silva, Fachin e Erika Hilton ampliam pressão sobre Lula por ministra negra no STF: 'Abismo social e estrutural'",
+      "titulo": "Câmara deve votar projeto de ajuste fiscal nesta segunda",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/marina-silva-fachin-e-erika-hilton-lula-ministra-negra-no-stf.ghtml",
-      "score": 99.2,
-      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/22/camara-deve-votar-projeto-de-ajuste-fiscal-nesta-segunda.ghtml",
+      "score": 85.2,
+      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "PEC da Segurança: como uma guarda civil municipal pode virar polícia e o que muda para a população",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/22/pec-da-seguranca-como-uma-guarda-civil-municipal-pode-virar-policia.ghtml",
+      "score": 76.8,
+      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Trama golpista: STF julgará aplicação da Lei da Dosimetria em dezembro; veja quem pode ter pena reduzida",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/20/trama-golpista-stf-julgara-aplicacao-da-lei-da-dosimetria-em-dezembro-veja-quem-pode-ter-pena-reduzida.ghtml",
-      "score": 84.8,
+      "score": 76.8,
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
-      "score": 84.0,
-      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
     },
     {
       "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
@@ -258,11 +258,11 @@
       "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
     },
     {
-      "titulo": "Pressionado a apresentar nomes da equipe econômica, Lula diz que vai indicar ministros 'quando quiser'",
+      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/19/pressionado-a-apresentar-nomes-da-equipe-economica-lula-diz-que-vai-indicar-ministerios-quando-quiser.ghtml",
-      "score": 75.6,
-      "data_pub": "Thu, 19 Nov 2026 14:29:39 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
+      "score": 74.0,
+      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
     }
   ]
 }

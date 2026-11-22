@@ -1,0 +1,43 @@
+{
+  "titulo": "MILAGRE EM BRASÍLIA: DEPUTADOS TRABALHAM NA SEGUNDA",
+  "subtitulo": "Câmara sacrifica o sagrado repouso remunerado para encenar a liturgia do ajuste e acalmar os nervos de vidro do Deus Mercado",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O ajuste fiscal no Brasil é igual dieta de segunda: começa com pressa, mas o banquete do Centrão já está reservado pro jantar.",
+  "legenda_imagem": "O Sumo Sacerdote da Câmara conduzindo a procissão do Superávit Imaginário sob o olhar atento do Touro de Ouro da Faria Lima.",
+  "prompt_caricatura": "Charge política em nanquim e guache sobre papel creme. No centro, Hugo Motta e Mauro Benevides vestidos como monges beneditinos, carregando solenemente um enorme carimbo oficial de ouro sobre um altar. Ao fundo, o prédio do Congresso Nacional transformado em uma catedral gótica. Políticos ao redor fingem orar enquanto escondem pacotes de emendas sob as batinas. Estilo clássico de O Pasquim, traços de Henfil, sem textos ou logotipos.",
+  "prompt_caricatura_en": "Political caricature in ink and gouache on cream paper. In the center, Hugo Motta and Mauro Benevides dressed as Benedictine monks, solemnly carrying a huge golden official stamp on an altar. In the background, the National Congress building transformed into a Gothic cathedral. Politicians around them pretend to pray while hiding amendment packages under their robes. Classic O Pasquim style, Henfil-like strokes, strictly no text or logos.",
+  "corpo": [
+    "O Brasil testemunha nesta segunda-feira um fenômeno metafísico que desafia as leis da burocracia e da física quântica: o funcionamento pleno da Câmara dos Deputados em pleno dia de 'articulação de base' — vulgo, o prolongamento do final de semana. Movidos por uma súbita epifania republicana, ou talvez pelo pavor de ver o dólar atingir a estratosfera antes do cafezinho, os parlamentares decidiram que o ajuste fiscal é urgente demais para esperar a tradicional e produtiva terça-feira à tarde.",
+    "O presidente Hugo Motta, operando em rotação máxima de relações públicas, decretou que a celeridade é a alma do negócio. A ordem é clara: aprovar o texto do Senado sem mexer em uma vírgula, para não correr o risco de alguém ler o projeto e descobrir que a austeridade, como sempre, é uma entidade que só visita os orçamentos alheios. O relator Mauro Benevides, com a gravidade de quem anuncia o fim do mundo, assegura que a rapidez é um 'sinal pedagógico' para o mercado, provando que Brasília sabe ser austera quando o gráfico da Bloomberg começa a parecer um eletrocardiograma de maratonista.",
+    "Do outro lado da Praça, o governo Lula assiste à encenação com o alívio de quem entregou a chave do cofre para o vigia e agora reza para ele não trocar o segredo. O objetivo oficial é conter despesas e aumentar a arrecadação — uma equação que, na prática de Brasília, costuma resultar em mais taxas para quem produz e mais carimbos para quem gasta. O Centrão, sempre pragmático, aceita o sacrifício do trabalho na segunda-feira desde que o 'ajuste' não interfira na sagrada distribuição de cargos e no fluxo contínuo de emendas que lubrifica as engrenagens da democracia.",
+    "No final do dia, a 'boa sinalização' prometida ao mercado será celebrada com a pompa de uma coroação real. Os deputados retornarão aos seus estados com a consciência tranquila de quem salvou a economia nacional em menos de doze horas, deixando para o cidadão comum o privilégio de descobrir, nos próximos meses, que no dicionário político o sinônimo de 'ajuste fiscal' continua sendo 'aguarde o próximo boleto com entusiasmo'."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Pressa",
+      "texto": "Aprovar projetos sem discussão é o método mais eficiente de garantir que ninguém se sinta culpado pelo que não leu."
+    },
+    {
+      "titulo": "O Signo do Mercado",
+      "texto": "Investidores agora exigem que o Congresso trabalhe às segundas como prova de castidade fiscal e sacrifício humano."
+    },
+    {
+      "titulo": "Austeridade Seletiva",
+      "texto": "O governo corta na carne, desde que a carne seja o serviço público e nunca o banquete das lideranças partidárias."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A sinalização para o mercado é positiva, mas o sinal para o contribuinte continua sendo o vermelho do cheque especial."
+    }
+  ],
+  "contexto_real": "A Câmara dos Deputados agendou para esta segunda-feira (23) a votação do projeto de ajuste fiscal do governo Lula. O relator, deputado Mauro Benevides (União-CE), optou por manter o texto vindo do Senado para acelerar a tramitação e enviar um sinal de compromisso fiscal ao mercado financeiro. O movimento é atípico, já que a Câmara raramente realiza votações deliberativas às segundas-feiras, dia geralmente reservado para viagens e articulações políticas nos estados de origem dos parlamentares.",
+  "slug": "milagre-em-brasilia-deputados-trabalham-na-segunda",
+  "data": "22 de Novembro de 2026",
+  "imagem_capa": "imagens/milagre-em-brasilia-deputados-trabalham-na-segunda.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/milagre-em-brasilia-deputados-trabalham-na-segunda.mp3",
+  "timestamp": "2026-11-22T18:23:03.256843"
+}
