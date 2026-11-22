@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://improbo.vercel.app/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/sobre.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/as-vagas-no-stf-e-o-curriculo-de-carteirinha.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://improbo.vercel.app/artigos/lula-dispensa-gps-e-pilota-o-brasil-no-sentimento.html</loc>
@@ -313,7 +319,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-pacto-do-abraco-de-afogado-pt-se-une-ao-pl-pela-camara.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-relogio-do-fim-do-mundo-stf-espera-relatorio-final-da-pf.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -325,13 +331,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-relogio-do-fim-do-mundo-stf-espera-relatorio-final-da-pf.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-herdeiro-do-condado-flavio-bolsonaro-acena-ao-centrao-para-2026.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/o-herdeiro-do-condado-flavio-bolsonaro-acena-ao-centrao-para-2026.html</loc>
+    <loc>https://improbo.vercel.app/artigos/o-pacto-do-abraco-de-afogado-pt-se-une-ao-pl-pela-camara.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -349,19 +355,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://improbo.vercel.app/artigos/a-diplomacia-da-porta-na-cara-lula-barra-maduro-no-brics.html</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://improbo.vercel.app/artigos/a-santa-ceia-da-anistia-flavio-bolsonaro-negocia-perdao-no-congresso.html</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://improbo.vercel.app/artigos/o-senhor-do-mapa-gilberto-kassab-vence-as-eleicoes-em-silencio.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -373,7 +367,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://improbo.vercel.app/artigos/o-senhor-do-mapa-gilberto-kassab-vence-as-eleicoes-em-silencio.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://improbo.vercel.app/artigos/o-cassino-da-patria-amada-economia-brasileira-descobre-o-tigrinho.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://improbo.vercel.app/artigos/a-diplomacia-da-porta-na-cara-lula-barra-maduro-no-brics.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

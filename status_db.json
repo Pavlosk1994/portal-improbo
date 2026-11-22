@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-21T17:56:23.869399+00:00",
+  "ultima_atualizacao": "2026-11-22T01:04:32.249452+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-22T01:04:32.249406+00:00",
+      "horario_brt": "22/11/2026 01:04:32",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 33.5,
+      "slug": "as-vagas-no-stf-e-o-curriculo-de-carteirinha",
+      "titulo": "AS VAGAS NO STF E O CURRÍCULO DE CARTEIRINHA",
+      "imagem_tamanho_kb": 98.7,
+      "audio_tamanho_kb": 1007.3
+    },
     {
       "timestamp": "2026-11-21T17:56:23.869357+00:00",
       "horario_brt": "21/11/2026 17:56:23",
@@ -215,40 +226,15 @@
       "titulo": "O LEILÃO DO CONDONVÉM: TRIPLEX DA OAS VOLTA COM JUROS",
       "imagem_tamanho_kb": 1049.1,
       "audio_tamanho_kb": 1608.0
-    },
-    {
-      "timestamp": "2026-11-13T06:23:27.661365+00:00",
-      "horario_brt": "13/11/2026 03:23:27",
-      "status": "SUCESSO",
-      "motivo": "Aprovado pelo Inspetor de Qualidade",
-      "duracao_segundos": 14.2,
-      "slug": "o-concilio-da-preguica-stf-medeia-o-fim-da-6x1-entre-quem-trabalha-3x4",
-      "titulo": "O CONCÍLIO DA FOLGA: STF REGULA 6X1 COM JORNADA 3X4",
-      "imagem_tamanho_kb": 1013.1,
-      "audio_tamanho_kb": 1608.0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "\"O sistema financeiro não vai me ensinar a dirigir o Brasil\", diz Lula",
-      "fonte": "Agência Brasil - Política",
-      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/o-sistema-financeiro-nao-vai-me-ensinar-dirigir-o-brasil-diz-lula",
-      "score": 105.3,
-      "data_pub": "Sat, 21 Nov 2026 14:12:00 -0300"
-    },
     {
       "titulo": "Marina Silva, Fachin e Erika Hilton ampliam pressão sobre Lula por ministra negra no STF: 'Abismo social e estrutural'",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/20/marina-silva-fachin-e-erika-hilton-lula-ministra-negra-no-stf.ghtml",
       "score": 99.2,
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
-    },
-    {
-      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
-      "score": 91.0,
-      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
     },
     {
       "titulo": "Trama golpista: STF julgará aplicação da Lei da Dosimetria em dezembro; veja quem pode ter pena reduzida",
@@ -258,11 +244,25 @@
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
     },
     {
+      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
+      "score": 84.0,
+      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
+    },
+    {
       "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
-      "score": 84.8,
+      "score": 76.8,
       "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
+    },
+    {
+      "titulo": "Pressionado a apresentar nomes da equipe econômica, Lula diz que vai indicar ministros 'quando quiser'",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/19/pressionado-a-apresentar-nomes-da-equipe-economica-lula-diz-que-vai-indicar-ministerios-quando-quiser.ghtml",
+      "score": 75.6,
+      "data_pub": "Thu, 19 Nov 2026 14:29:39 -0000"
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "titulo": "AS VAGAS NO STF E O CURRÍCULO DE CARTEIRINHA",
+  "subtitulo": "Campanha exige magistrada negra na Suprema Corte com a mesma urgência burocrática com que o Senado aprova aumento de auxílio-paletó.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo agora terceiriza a escolha do STF para o comitê de diversidade enquanto o Centrão frita a pauta na manteiga da emenda parlamentar.",
+  "legenda_imagem": "Toga com caprichada estampa de marketing institucional.",
+  "prompt_caricatura": "Caricatura em nanquim e guache no estilo O Pasquim retratando políticos e autoridades discutindo cotas para o STF enquanto assinam decretos com uma pena de ouro. Traço expressivo e irônico, sem textos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians and magistrates debating Supreme Court nominations while signing decrees with golden quill pens, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, sempre atenta à vanguarda da cenografia institucional, descobriu que a fila do Supremo Tribunal Federal precisa urgentemente de crachá de diversidade cromática antes da próxima distribuição de togas de linho egípcio. Ministros de tribunais superiores, parlamentares de cartilha e ativistas de palanque uniram forças para explicar ao Planalto que a toga preta clássica combina muito mais com a modernidade se vier acompanhada de um certificado de representatividade emitido pelo comitê de marquetagem da Esplanada.",
+    "A exigência de preencher a próxima cadeira da Corte com uma jurista negra virou o novo esporte oficial de Brasília, disputado ponto a ponto entre quem quer emplacar o padrinho jurídico de plantão e quem apenas deseja garantir um parágrafo edificante na próxima biografia autorizada. Nos corredores revestidos de mármore superfaturado, assessores juram de pés juntos que a eficácia de uma liminar suspensiva de inconstitucionalidade aumenta em pelo menos 40% quando o despacho é assinado sob a luz de holofotes voltados para a inclusão social.",
+    "Enquanto isso, o Palácio do Planalto avalia o cronograma das próximas indicações até 2030 como quem gerencia a caderneta de poupança de um parente rico: com muita cautela, cálculo de ritos regimentais e o tradicional cuidado para não melindrar nenhuma bancada do Centrão que exija relatorias em troca de apoio moral à causa progressista. Afinal, na aritmética fina do poder republicano, cada vaga no Olimpo jurídico vale tanto quanto três ministérios de segunda linha e meia dúzia de emendas PIX liberadas na calada da noite.",
+    "No fim das contas, a fatura moral da desigualdade histórica segue sendo rigorosamente cobrada do cidadão comum, enquanto a cúpula dos Três Poderes transforma o debate sobre direitos civis em mais uma rodada de negociação de cargos, festas de gala com bufê importado e discursos emocionados gravados em alta definição para o feed das redes sociais."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A toga brilha mais quando vem acompanhada de tapete vermelho e holofote."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Diversidade no papel, mas a indicação passa pelo crivo do balcão de negócios."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Orçamento secreto e vaga no Supremo: o verdadeiro pacto federativo."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A conta da pompa institucional é sempre debitada no saldo do contribuinte."
+    }
+  ],
+  "contexto_real": "Marina Silva, a deputada Erika Hilton e o presidente do STF, Edson Fachin, uniram-se a campanhas para pressionar o presidente Lula a indicar uma mulher negra para uma das vagas do Supremo Tribunal Federal. O debate ganha força com a perspectiva de novas indicações para a Corte até 2030 e dados históricos sobre a baixa representatividade feminina e racial no tribunal.",
+  "slug": "as-vagas-no-stf-e-o-curriculo-de-carteirinha",
+  "data": "22 de Novembro de 2026",
+  "imagem_capa": "imagens/as-vagas-no-stf-e-o-curriculo-de-carteirinha.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/as-vagas-no-stf-e-o-curriculo-de-carteirinha.mp3",
+  "timestamp": "2026-11-22T01:04:32.185492"
+}
