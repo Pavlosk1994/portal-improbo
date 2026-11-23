@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-23T01:29:32.429539+00:00",
+  "ultima_atualizacao": "2026-11-23T22:31:13.966471+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-23T22:31:13.966424+00:00",
+      "horario_brt": "23/11/2026 22:31:13",
+      "status": "RETIDO",
+      "motivo": "Título inválido ou muito curto: ''.",
+      "duracao_segundos": 104.9,
+      "slug": "lula-se-reune-com-cupula-do-congresso-e-ministros-",
+      "titulo": null,
+      "imagem_tamanho_kb": 62.2,
+      "audio_tamanho_kb": 74.1
+    },
     {
       "timestamp": "2026-11-23T01:29:32.429503+00:00",
       "horario_brt": "23/11/2026 01:29:32",
@@ -215,54 +226,43 @@
       "titulo": "A IMOBILIÁRIA DA OTAN: CEDER A CASA PARA GANHAR O WI-FI",
       "imagem_tamanho_kb": 95.8,
       "audio_tamanho_kb": 682.5
-    },
-    {
-      "timestamp": "2026-11-15T02:18:43.388493+00:00",
-      "horario_brt": "14/11/2026 23:18:43",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 28.7,
-      "slug": "senado-aprova-texto-base-de-pacote-que-preve-econo",
-      "titulo": "CIRCO DE BRASÍLIA: SENADO APROVA TEXTO-BASE DE PACOTE QUE ...",
-      "imagem_tamanho_kb": 100.8,
-      "audio_tamanho_kb": 969.2
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "PEC da Segurança: como uma guarda civil municipal pode virar polícia e o que muda para a população",
+      "titulo": "Lula se reúne com cúpula do Congresso e ministros do STF para definir substituto de Barroso",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/22/pec-da-seguranca-como-uma-guarda-civil-municipal-pode-virar-policia.ghtml",
-      "score": 76.8,
-      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/23/lula-se-reune-com-cupula-do-congresso-e-ministros-do-stf-para-definir-substituto-de-barroso.ghtml",
+      "score": 115.2,
+      "data_pub": "Mon, 23 Nov 2026 15:07:33 -0000"
     },
     {
-      "titulo": "Trama golpista: STF julgará aplicação da Lei da Dosimetria em dezembro; veja quem pode ter pena reduzida",
+      "titulo": "Em reunião com Lula, ministros do STF defendem diretor da PF e dizem que André Mendonça queria prendê-lo",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/trama-golpista-stf-julgara-aplicacao-da-lei-da-dosimetria-em-dezembro-veja-quem-pode-ter-pena-reduzida.ghtml",
-      "score": 76.8,
-      "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/23/lula-andrei-rodrigues-andre-mendonca.ghtml",
+      "score": 112.6,
+      "data_pub": "Mon, 23 Nov 2026 19:58:57 -0000"
     },
     {
-      "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
+      "titulo": "Ministério do Trabalho publica portaria que regulamenta descansos da escala 5x2; entenda",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
-      "score": 74.0,
-      "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/23/ministerio-do-trabalho-portaria-escala-5x2.ghtml",
+      "score": 110.2,
+      "data_pub": "Mon, 23 Nov 2026 18:42:53 -0000"
     },
     {
-      "titulo": "Dino e Moraes votam para tornar Van Hattem réu por calúnia e injúria contra delegado da PF; Zanin leva caso ao plenário físico do STF",
+      "titulo": "Lula exonera ministro para votação do projeto de ajuste na Câmara; medida é temporária",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/20/dino-vota-para-tornar-van-hattem-reu-por-calunia-e-injuria-contra-delegado-da-policia-federal.ghtml",
-      "score": 67.2,
-      "data_pub": "Fri, 20 Nov 2026 14:21:48 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/23/lula-exonera-ministro-da-articulacao-para-votacao-do-projeto-de-ajuste-na-camara-medida-e-temporaria.ghtml",
+      "score": 91.2,
+      "data_pub": "Mon, 23 Nov 2026 11:12:40 -0000"
     },
     {
-      "titulo": "Maioria das cidades terá dificuldade para criar polícia municipal, diz deputado",
+      "titulo": "Câmara vota projeto de ajuste fiscal nesta segunda; projeção de economia é de R$ 50 bilhões em 2027",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/22/exigencias-policia-municipal-prefeituras.ghtml",
-      "score": 58.8,
-      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/23/camara-vota-projeto-de-ajuste-fiscal-nesta-segunda-projecao-de-economia-e-de-r-50-bilhoes-em-2027.ghtml",
+      "score": 85.2,
+      "data_pub": "Mon, 23 Nov 2026 03:00:01 -0000"
     }
   ]
 }
