@@ -1,0 +1,43 @@
+{
+  "titulo": "PREFEITO AGORA É GENERAL DE ESQUINA",
+  "subtitulo": "Com a PEC da Segurança, guarda municipal vira polícia e garante que o buraco na sua rua agora venha com fuzil",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Parabéns, prefeito: agora a Guarda Municipal vai multar o buraco da rua com uma sirene de 500 decibéis e colete à prova de balas.",
+  "legenda_imagem": "Prefeito municipal testando novo fuzil de assalto ao lado da viatura da guarda com retrovisor quebrado",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 70 mostrando um prefeito brasileiro de faixa andando de tanque de guerra em uma rua esburacada de bairro, com guardas municipais usando capacetes táticos gigantes e óculos escuros, nanquim e guache sobre papel creme, sem textos",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of a Brazilian mayor in sash driving a mini military tank on a potholed suburban street, surrounded by municipal guards wearing oversized tactical helmets and dark sunglasses, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "O Congresso nacional, em seu infindável compromisso com a criatividade burocrática, decidiu que faltava apenas um detalhe para completar a festa institucional: transformar o modesto guarda municipal que fiscaliza a praça em um combatente de elite pronto para o teatro de operações urbanas. Com a PEC da Segurança, o prefeito ganha o direito de ostentar o seu próprio mini-exército particular, elevando o patamar da gestão municipal de 'pintador de meio-fio' para 'xerife intergaláctico'.",
+    "A mudança, anunciada com toda a pompa técnica pelos gabinetes de Brasília, exige apenas pequenos detalhes irrelevantes, como cumprir exigências constitucionais, reorganizar carreiras e fingir que o orçamento municipal comporta fuzis e coletes balísticos enquanto a merenda escolar ainda discute a viabilidade da carne de soja. Mas quem se importa com o déficit público quando a Guarda Civil de Maceió agora pode sonhar em desmantelar cartéis internacionais antes do almoço?",
+    "A brilhante engenharia institucional garante que a transformação não seja automática, exigindo aquela camada espessa de carimbos ministeriais e pareceres jurídicos que dão emprego a mais três gerações de procuradores. Enquanto isso, o cidadão comum, que só queria a lâmpada do poste trocada, ganha a garantia de ser abordado por uma força tática municipal com jurisdição para exigir o IPTU a tiro de advertência.",
+    "No fim das contas, o contribuinte pode dormir tranquilo sabendo que a fatura dessa epopeia federalista virá devidamente embutida no próximo carnê de impostos, agora com selo de garantia de alta periculosidade urbana. Afinal, nada diz 'eficiência administrativa' como um guarda municipal utilizando visão noturna para localizar o buraco na calçada."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Promover o guarda da praça a xerife sem gastar um centavo do tesouro."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Rebatizar o apito de trânsito como armamento de dissuasão em massa."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Orçamento de prefeitura pequena arcando com blindado da OTAN."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A taxa de segurança municipal cobrada direto na fatura da água."
+    }
+  ],
+  "contexto_real": "A PEC da Segurança Pública, aprovada pelo Congresso em novembro, permite que municípios transformem suas guardas civis municipais em polícias municipais, exigindo o cumprimento de requisitos legais específicos e alterações legislativas locais antes de qualquer efetivação.",
+  "slug": "prefeito-agora-e-general-de-esquina",
+  "data": "23 de Novembro de 2026",
+  "imagem_capa": "imagens/prefeito-agora-e-general-de-esquina.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/prefeito-agora-e-general-de-esquina.mp3",
+  "timestamp": "2026-11-23T01:29:32.371821"
+}

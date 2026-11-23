@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-22T18:23:03.412201+00:00",
+  "ultima_atualizacao": "2026-11-23T01:29:32.429539+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-23T01:29:32.429503+00:00",
+      "horario_brt": "23/11/2026 01:29:32",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 66.4,
+      "slug": "prefeito-agora-e-general-de-esquina",
+      "titulo": "PREFEITO AGORA É GENERAL DE ESQUINA",
+      "imagem_tamanho_kb": 95.0,
+      "audio_tamanho_kb": 908.4
+    },
     {
       "timestamp": "2026-11-22T18:23:03.412161+00:00",
       "horario_brt": "22/11/2026 18:23:03",
@@ -215,27 +226,9 @@
       "titulo": "CIRCO DE BRASÍLIA: SENADO APROVA TEXTO-BASE DE PACOTE QUE ...",
       "imagem_tamanho_kb": 100.8,
       "audio_tamanho_kb": 969.2
-    },
-    {
-      "timestamp": "2026-11-15T02:12:52.723226+00:00",
-      "horario_brt": "14/11/2026 23:12:52",
-      "status": "RETIDO",
-      "motivo": "Arquivo de áudio neural não encontrado em disco: audio/governo-lula-finaliza-pacote-de-corte-de-gastos-ob.mp3",
-      "duracao_segundos": 0.2,
-      "slug": "governo-lula-finaliza-pacote-de-corte-de-gastos-ob",
-      "titulo": "A FARRA DO CARIMBO: GOVERNO LULA FINALIZA PACOTE DE CORTE ...",
-      "imagem_tamanho_kb": 99.7,
-      "audio_tamanho_kb": 0
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Câmara deve votar projeto de ajuste fiscal nesta segunda",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/22/camara-deve-votar-projeto-de-ajuste-fiscal-nesta-segunda.ghtml",
-      "score": 85.2,
-      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
-    },
     {
       "titulo": "PEC da Segurança: como uma guarda civil municipal pode virar polícia e o que muda para a população",
       "fonte": "G1 Política",
@@ -251,18 +244,25 @@
       "data_pub": "Fri, 20 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
-      "score": 76.8,
-      "data_pub": "Thu, 19 Nov 2026 21:20:39 -0000"
-    },
-    {
       "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/21/lula-diz-que-projeto-aprovado-no-senado-nao-e-reforma-fiscal-mas-ajuste-para-orcamento-de-2027-e-critica-faria-lima.ghtml",
       "score": 74.0,
       "data_pub": "Sat, 21 Nov 2026 14:27:51 -0000"
+    },
+    {
+      "titulo": "Dino e Moraes votam para tornar Van Hattem réu por calúnia e injúria contra delegado da PF; Zanin leva caso ao plenário físico do STF",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/20/dino-vota-para-tornar-van-hattem-reu-por-calunia-e-injuria-contra-delegado-da-policia-federal.ghtml",
+      "score": 67.2,
+      "data_pub": "Fri, 20 Nov 2026 14:21:48 -0000"
+    },
+    {
+      "titulo": "Maioria das cidades terá dificuldade para criar polícia municipal, diz deputado",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/22/exigencias-policia-municipal-prefeituras.ghtml",
+      "score": 58.8,
+      "data_pub": "Sun, 22 Nov 2026 03:00:00 -0000"
     }
   ]
 }
