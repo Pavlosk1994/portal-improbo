@@ -1,0 +1,43 @@
+{
+  "titulo": "O MILAGRE DA TESOURA DE PLÁSTICO NA CÂMARA",
+  "subtitulo": "Deputados aprovam economia bilionária com o mesmo entusiasmo de quem assina promissória em nome de terceiros",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Brasília aprovou um corte de R$ 56 bilhões onde a única coisa que não será cortada é o ar-condicionado do gabinete.",
+  "legenda_imagem": "Lula e a cúpula do Congresso inauguram o Monumento ao Ajuste: uma calculadora que só subtrai do lado de fora da Praça dos Três Poderes.",
+  "prompt_caricatura": "Caricatura de Luiz Inácio Lula da Silva e Arthur Lira operando uma guilhotina gigante feita de papelão, onde tentam 'cortar' uma nuvem flutuante rotulada como 'Orçamento 2027', enquanto por trás das costas escondem sacos de dinheiro rotulados como 'Emendas'. Estilo nanquim e guache, traço de Henfil, papel envelhecido, tons de cinza e sépia.",
+  "prompt_caricatura_en": "Detailed English visual prompt: Political caricature of Luiz Inácio Lula da Silva and a powerful Brazilian congressman operating a giant cardboard guillotine, attempting to 'cut' a floating cloud labeled '2027 Budget', while hiding money bags labeled 'Parliamentary Amendments' behind their backs. Vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "Brasília viveu nesta segunda-feira um momento de santidade contábil raramente visto desde a invenção do ábaco. A Câmara dos Deputados, em um surto de austeridade que faria um monge beneditino parecer um herdeiro em Ibiza, aprovou o ajuste fiscal do Governo Lula. São R$ 56 bilhões que o governo jura que não vai gastar, num pacto de abstinência financeira que tem a mesma validade jurídica de uma promessa de dieta feita diante de um rodízio de carnes.",
+    "O projeto, uma peça de ficção administrativa primorosa, foi aprovado com 353 votos, provando que o Centrão só acredita em austeridade quando ela vem acompanhada do aroma de novos limites de emendas. O texto-base passou como um trator sobre qualquer tentativa de alteração, afinal, mexer em ajuste fiscal é como tentar consertar o motor de um avião em pleno voo usando apenas um clipe de papel e muita esperança institucional.",
+    "A oposição ensaiou um protesto de cartilha, mas a verdade é que o teatro da Esplanada é coreografado: o governo finge que corta, o Congresso finge que fiscaliza e a realidade finge que acredita. Os 'destaques' foram rejeitados com a precisão cirúrgica de quem afasta um boleto vencido para debaixo do tapete da sala, garantindo que o ajuste fiscal seja, acima de tudo, um triunfo da marquetagem sobre a aritmética básica.",
+    "Ao final, a fatura do civismo foi devidamente carimbada e enviada para a sanção presidencial. Enquanto o Palácio do Planalto celebra o 'equilíbrio', o cidadão comum observa a mágica: o governo economiza bilhões no papel para poder continuar gastando o que não tem na prática. É a consagração da contabilidade criativa, onde o déficit é apenas um estado de espírito e o ajuste é uma ferramenta pedagógica para manter o mercado financeiro entretido."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Aprovar cortes bilionários em benefícios alheios com a solenidade de quem entrega uma medalha de honra ao mérito."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Garantir a meta de 2027 confiando que, até lá, a física quântica terá resolvido o problema do sumiço do dinheiro público."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Transformar a rejeição de todos os destaques em um exemplo de 'unidade nacional', em vez de simples falta de paciência com a oposição."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A arte de anunciar uma economia de R$ 56 bilhões sem que nenhum deputado precise abrir mão do cafezinho gourmet ou da verba de gabinete."
+    }
+  ],
+  "contexto_real": "A Câmara dos Deputados aprovou em 23 de novembro de 2026 o texto-base do projeto de lei de ajuste fiscal do governo Lula, visando uma economia de R$ 56 bilhões para cumprir metas orçamentárias até 2027. O projeto inclui cortes em incentivos e benefícios tributários e agora segue para sanção presidencial, após a rejeição de todas as sugestões de alteração (destaques) pela maioria governista e aliados do Centrão.",
+  "slug": "o-milagre-da-tesoura-de-plastico-na-camara",
+  "data": "24 de Novembro de 2026",
+  "imagem_capa": "imagens/o-milagre-da-tesoura-de-plastico-na-camara.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-milagre-da-tesoura-de-plastico-na-camara.mp3",
+  "timestamp": "2026-11-24T21:03:35.935001"
+}

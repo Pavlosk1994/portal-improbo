@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-24T10:46:13.386768+00:00",
+  "ultima_atualizacao": "2026-11-24T21:03:36.022980+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-24T21:03:36.022936+00:00",
+      "horario_brt": "24/11/2026 21:03:36",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 87.2,
+      "slug": "o-milagre-da-tesoura-de-plastico-na-camara",
+      "titulo": "O MILAGRE DA TESOURA DE PLÁSTICO NA CÂMARA",
+      "imagem_tamanho_kb": 98.8,
+      "audio_tamanho_kb": 1035.4
+    },
     {
       "timestamp": "2026-11-24T10:46:13.386727+00:00",
       "horario_brt": "24/11/2026 10:46:13",
@@ -215,27 +226,9 @@
       "titulo": "O ROMANCE FORÇADO DO AGRO COM A ESQUERDA",
       "imagem_tamanho_kb": 100.5,
       "audio_tamanho_kb": 836.4
-    },
-    {
-      "timestamp": "2026-11-15T07:41:31.121662+00:00",
-      "horario_brt": "15/11/2026 07:41:31",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 57.1,
-      "slug": "balcao-de-negocios-73-vagas-nas-agencias",
-      "titulo": "BALCÃO DE NEGÓCIOS: 73 VAGAS NAS AGÊNCIAS",
-      "imagem_tamanho_kb": 99.8,
-      "audio_tamanho_kb": 798.8
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Entenda projeto de ajuste fiscal de até R$ 56 bilhões para governo Lula aprovado pela Câmara",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/24/entenda-projeto-de-ajuste-fiscal-de-ate-r-56-bilhoes-para-governo-lula-aprovado-pela-camara.ghtml",
-      "score": 118.8,
-      "data_pub": "Tue, 24 Nov 2026 03:35:06 -0000"
-    },
     {
       "titulo": "Câmara aprova projeto de ajuste fiscal que prevê economia de até R$ 56 bilhões para governo Lula; proposta segue para sanção",
       "fonte": "G1 Política",
@@ -247,22 +240,29 @@
       "titulo": "Lula se reúne com cúpula do Congresso e ministros do STF para definir substituto de Barroso",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/23/lula-se-reune-com-cupula-do-congresso-e-ministros-do-stf-para-definir-substituto-de-barroso.ghtml",
-      "score": 115.2,
+      "score": 105.2,
       "data_pub": "Mon, 23 Nov 2026 15:07:33 -0000"
     },
     {
-      "titulo": "Em reunião com Lula, ministros do STF defendem diretor da PF e dizem que André Mendonça queria prendê-lo",
+      "titulo": "Entenda o plano Moretti, o ajuste fiscal aprovado pela Câmara",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/23/lula-andrei-rodrigues-andre-mendonca.ghtml",
-      "score": 105.6,
-      "data_pub": "Mon, 23 Nov 2026 19:58:57 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/24/entenda-o-plano-moretti-o-ajuste-fiscal-aprovado-pela-camara.ghtml",
+      "score": 102.0,
+      "data_pub": "Tue, 24 Nov 2026 11:21:42 -0000"
     },
     {
-      "titulo": "Ministério do Trabalho publica portaria que regulamenta descansos da escala 5x2; entenda",
+      "titulo": "Ajuste fiscal: horas depois de aprovação na Câmara, Lula sanciona lei que pode gerar economia de até R$ 56 bilhões",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/23/ministerio-do-trabalho-portaria-escala-5x2.ghtml",
-      "score": 103.2,
-      "data_pub": "Mon, 23 Nov 2026 18:42:53 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/24/ajuste-fiscal-horas-depois-de-aprovacao-na-camara-lula-sanciona-lei-que-preve-economia-de-ate-ate-r-56-bilhoes.ghtml",
+      "score": 100.6,
+      "data_pub": "Tue, 24 Nov 2026 18:30:42 -0000"
+    },
+    {
+      "titulo": "Conservadores cristãos e classe D e E somam quase metade do eleitorado brasileiro, diz Quaest",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/24/segmentos-identitarios-quaest-2026.ghtml",
+      "score": 98.2,
+      "data_pub": "Tue, 24 Nov 2026 15:10:44 -0000"
     }
   ]
 }
