@@ -1,0 +1,43 @@
+{
+  "titulo": "O MILAGRE DA TESOURA ELASTICIZADA",
+  "subtitulo": "Congresso aprova rito relâmpago para cortar R$ 56 bilhões e demonstrar ao mercado que austeridade combina com velocidade e camaradagem.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo e Congresso descobrem que cortar R$ 56 bilhões é tão rápido quanto aprovar emenda de relator numa segunda-feira chuvosa.",
+  "legenda_imagem": "Deputados com calculadoras de ouro em punho celebram o ajuste fiscal relâmpago na calada da segunda-feira.",
+  "prompt_caricatura": "Caricatura em nanquim e guache estilo O Pasquim retratando líderes partidários e ministros jogando confete sobre planilhas de corte orçamentário gigantescas, traço expressivo e irônico, sem textos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians in a vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, politicians celebrating a massive budget cut document, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "Há momentos na liturgia republicana em que a burocracia se veste de atleta olímpico. Numa segunda-feira atípica, espécie de domingo que deu errado no calendário legislativo, a Câmara dos Deputados decidiu que o patriotismo fiscal não pode esperar o fim de semana acabar. Em tempo recorde e com a eficiência de um pit stop de Fórmula 1, o pacote de ajuste fiscal de até R$ 56 bilhões foi empurrado rumo à sanção presidencial com o entusiasmo de quem descobre um bilhete premiado na calça lavada.",
+    "A proeza técnica exigiu malabarismos de alta costura regimental. Sob a batuta de Hugo Motta, convocou-se o plenário em dia de deserto político para aplaudir de pé a generosidade de limitar despesas alheias. O Executivo, sempre zeloso com a contabilidade criativa, enviou a fatura ao Parlamento com a candura de quem encomenda um bolo de aniversário e pede para o vizinho pagar a conta do buffet.",
+    "Do lado de cá do balcão, os parlamentares demonstraram uma maturidade fiscal comovente. Preocupados com a alta do dólar e as agruras do termômetro monetário, decidiram que a melhor forma de proteger o erário público é aprovar medidas severas que, por absoluta coincidência jurídica, jamais afetam os supersalários ou as emendas de bancada. É a generosidade institucional em seu grau mais puro: tirar com uma mão o que se redistribui politicamente com a outra.",
+    "Ao fim da sessão relâmpago, restou ao cidadão comum apenas a contemplação estética do superávit bem-comportado. Enquanto os tecnocratas ajustam as planilhas para cumprir metas futuras em universos paralelos, o contribuinte recolhe o seu carnê de otimismo com a certeza reconfortante de que a pátria caminha a passos largos para o equilíbrio contábil — desde que ninguém pergunte quem vai pagar o pato."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Sessão convocada em segunda-feira atípica para provar que a pressa é amiga da austeridade."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Metas de 2027 garantidas por decretos que cabem inteiros na capa de uma caneta tinteiro."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Corte de R$ 56 bilhões calculado com precisão cirúrgica e muita imaginação contábil."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A conta do equilíbrio republicano despachada diretamente para o rodapé da história."
+    }
+  ],
+  "contexto_real": "A Câmara dos Deputados aprovou em 24 de novembro de 2026 o texto-base de um projeto de ajuste fiscal de até R$ 56 bilhões enviado pelo governo federal para cumprir metas do orçamento de 2027. O presidente da Casa, Hugo Motta, convocou a votação em plena segunda-feira para acalmar o mercado diante da alta do dólar e dos juros.",
+  "slug": "o-milagre-da-tesoura-elasticizada",
+  "data": "24 de Novembro de 2026",
+  "imagem_capa": "imagens/o-milagre-da-tesoura-elasticizada.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-milagre-da-tesoura-elasticizada.mp3",
+  "timestamp": "2026-11-24T10:46:13.301438"
+}

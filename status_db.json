@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-23T22:31:13.966471+00:00",
+  "ultima_atualizacao": "2026-11-24T10:46:13.386768+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-24T10:46:13.386727+00:00",
+      "horario_brt": "24/11/2026 10:46:13",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 61.2,
+      "slug": "o-milagre-da-tesoura-elasticizada",
+      "titulo": "O MILAGRE DA TESOURA ELASTICIZADA",
+      "imagem_tamanho_kb": 94.3,
+      "audio_tamanho_kb": 987.0
+    },
     {
       "timestamp": "2026-11-23T22:31:13.966424+00:00",
       "horario_brt": "23/11/2026 22:31:13",
@@ -215,20 +226,23 @@
       "titulo": "BALCÃO DE NEGÓCIOS: 73 VAGAS NAS AGÊNCIAS",
       "imagem_tamanho_kb": 99.8,
       "audio_tamanho_kb": 798.8
-    },
-    {
-      "timestamp": "2026-11-15T02:39:25.866561+00:00",
-      "horario_brt": "15/11/2026 02:39:25",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 57.4,
-      "slug": "a-imobiliaria-da-otan-ceder-a-casa-para-ganhar-o-w",
-      "titulo": "A IMOBILIÁRIA DA OTAN: CEDER A CASA PARA GANHAR O WI-FI",
-      "imagem_tamanho_kb": 95.8,
-      "audio_tamanho_kb": 682.5
     }
   ],
   "radar_pautas": [
+    {
+      "titulo": "Entenda projeto de ajuste fiscal de até R$ 56 bilhões para governo Lula aprovado pela Câmara",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/24/entenda-projeto-de-ajuste-fiscal-de-ate-r-56-bilhoes-para-governo-lula-aprovado-pela-camara.ghtml",
+      "score": 118.8,
+      "data_pub": "Tue, 24 Nov 2026 03:35:06 -0000"
+    },
+    {
+      "titulo": "Câmara aprova projeto de ajuste fiscal que prevê economia de até R$ 56 bilhões para governo Lula; proposta segue para sanção",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/23/camara-aprova-projeto-de-ajuste-fiscal.ghtml",
+      "score": 118.8,
+      "data_pub": "Tue, 24 Nov 2026 01:33:27 -0000"
+    },
     {
       "titulo": "Lula se reúne com cúpula do Congresso e ministros do STF para definir substituto de Barroso",
       "fonte": "G1 Política",
@@ -240,29 +254,15 @@
       "titulo": "Em reunião com Lula, ministros do STF defendem diretor da PF e dizem que André Mendonça queria prendê-lo",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/23/lula-andrei-rodrigues-andre-mendonca.ghtml",
-      "score": 112.6,
+      "score": 105.6,
       "data_pub": "Mon, 23 Nov 2026 19:58:57 -0000"
     },
     {
       "titulo": "Ministério do Trabalho publica portaria que regulamenta descansos da escala 5x2; entenda",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/economia/noticia/2026/11/23/ministerio-do-trabalho-portaria-escala-5x2.ghtml",
-      "score": 110.2,
+      "score": 103.2,
       "data_pub": "Mon, 23 Nov 2026 18:42:53 -0000"
-    },
-    {
-      "titulo": "Lula exonera ministro para votação do projeto de ajuste na Câmara; medida é temporária",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/23/lula-exonera-ministro-da-articulacao-para-votacao-do-projeto-de-ajuste-na-camara-medida-e-temporaria.ghtml",
-      "score": 91.2,
-      "data_pub": "Mon, 23 Nov 2026 11:12:40 -0000"
-    },
-    {
-      "titulo": "Câmara vota projeto de ajuste fiscal nesta segunda; projeção de economia é de R$ 50 bilhões em 2027",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/23/camara-vota-projeto-de-ajuste-fiscal-nesta-segunda-projecao-de-economia-e-de-r-50-bilhoes-em-2027.ghtml",
-      "score": 85.2,
-      "data_pub": "Mon, 23 Nov 2026 03:00:01 -0000"
     }
   ]
 }
