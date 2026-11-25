@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-24T21:03:36.022980+00:00",
+  "ultima_atualizacao": "2026-11-25T09:42:03.729033+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-25T09:42:03.728990+00:00",
+      "horario_brt": "25/11/2026 09:42:03",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 68.8,
+      "slug": "corrida-de-obstaculos-fiscais-ate-o-natal",
+      "titulo": "CORRIDA DE OBSTÁCULOS FISCAIS ATÉ O NATAL",
+      "imagem_tamanho_kb": 97.8,
+      "audio_tamanho_kb": 1000.4
+    },
     {
       "timestamp": "2026-11-24T21:03:36.022936+00:00",
       "horario_brt": "24/11/2026 21:03:36",
@@ -215,26 +226,15 @@
       "titulo": "O LEILÃO DA FAZENDA: QUEM VAI SEGURAR O TETO?",
       "imagem_tamanho_kb": 93.4,
       "audio_tamanho_kb": 697.2
-    },
-    {
-      "timestamp": "2026-11-15T17:39:09.657918+00:00",
-      "horario_brt": "15/11/2026 17:39:09",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 90.8,
-      "slug": "o-romance-forcado-do-agro-com-a-esquerda",
-      "titulo": "O ROMANCE FORÇADO DO AGRO COM A ESQUERDA",
-      "imagem_tamanho_kb": 100.5,
-      "audio_tamanho_kb": 836.4
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Câmara aprova projeto de ajuste fiscal que prevê economia de até R$ 56 bilhões para governo Lula; proposta segue para sanção",
+      "titulo": "Governo Lula tem ao menos oito projetos econômicos para aprovar no Congresso até o fim de 2026",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/23/camara-aprova-projeto-de-ajuste-fiscal.ghtml",
-      "score": 118.8,
-      "data_pub": "Tue, 24 Nov 2026 01:33:27 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/25/governo-lula-tem-ao-menos-oito-projetos-economicos-para-aprovar-no-congresso-ate-o-fim-de-2026.ghtml",
+      "score": 109.2,
+      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Lula se reúne com cúpula do Congresso e ministros do STF para definir substituto de Barroso",
@@ -251,17 +251,17 @@
       "data_pub": "Tue, 24 Nov 2026 11:21:42 -0000"
     },
     {
-      "titulo": "Ajuste fiscal: horas depois de aprovação na Câmara, Lula sanciona lei que pode gerar economia de até R$ 56 bilhões",
+      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/24/ajuste-fiscal-horas-depois-de-aprovacao-na-camara-lula-sanciona-lei-que-preve-economia-de-ate-ate-r-56-bilhoes.ghtml",
-      "score": 100.6,
-      "data_pub": "Tue, 24 Nov 2026 18:30:42 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
+      "score": 98.4,
+      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
     },
     {
       "titulo": "Conservadores cristãos e classe D e E somam quase metade do eleitorado brasileiro, diz Quaest",
       "fonte": "G1 Política",
       "link": "https://g1.globo.com/politica/noticia/2026/11/24/segmentos-identitarios-quaest-2026.ghtml",
-      "score": 98.2,
+      "score": 97.2,
       "data_pub": "Tue, 24 Nov 2026 15:10:44 -0000"
     }
   ]

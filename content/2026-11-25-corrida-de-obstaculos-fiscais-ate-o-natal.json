@@ -1,0 +1,43 @@
+{
+  "titulo": "CORRIDA DE OBSTÁCULOS FISCAIS ATÉ O NATAL",
+  "subtitulo": "Em regime de urgência altíssima, Executivo descobre que o ano acaba em dezembro e tenta aprovar oito séculos de reformas em duas semanas",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O governo descobriu que o ano tem dezembro e agora quer aprovar oito reformas fiscais antes do panetone esfriar.",
+  "legenda_imagem": "Parlamentares e ministros disputam uma corrida de revezamento usando maletas com emendas e carimbos de urgência.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 1970 retratando ministros de terno correndo desesperados com relógios gigantes nas mãos e pilhas de medidas provisórias equilibradas na cabeça, traço de nanquim expressivo e aquarela gouache em tom sépia, sem textos ou marcas.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian government officials in formal suits running frantically against giant melting clocks, balancing towering stacks of provisional measures on their heads, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, conhecida historicamente por sua lentidão geológica em qualquer assunto que não envolva reajuste de próprio salário, foi acometida por um surto inédito de eficiência cronometrada. Em menos de um mês útil antes do tradicional recolhimento parlamentar para as praias e retiros espirituais, a equipe econômica do Palácio do Planalto percebeu um detalhe cabalístico: o calendário insiste em terminar no dia 31 de dezembro.",
+    "Para compensar o tempo em que as excelências estiveram ocupadas inaugurando placas de inauguração de placas, o governo decidiu empacotar nada menos do que oito pacotes econômicos estruturantes, medidas provisórias e emendas constitucionais para votação relâmpago. É o triunfo supremo da tecnocracia criativa, onde a complexidade de um imposto seletivo e o destino orçamentário da nação são resolvidos no intervalo para o cafezinho, com a mesma precisão cirúrgica de quem compra bilhete de loteria na boca do caixa.",
+    "Do outro lado do balcão, o Congresso Nacional observa a pressa governista com a serenidade de quem sabe que cada nova portaria interministerial é uma excelente oportunidade para negociar relatorias, emendas de comissão e cargos estratégicos nas estatais. A harmonia entre os Poderes nunca esteve tão vibrante, embalada pelo som rítmico dos carimbos de urgência constitucional e pelo tic-tac implacável do recesso de fim de ano.",
+    "Enquanto isso, o cidadão contribuinte assiste ao desfile de siglas, PECs e LDOs com a certeza reconfortante de que, chova ou faça sol, com ou sem ajuste fiscal de dezenas de bilhões, a única certeza imutável na contabilidade da República é que a fatura final da festa sempre chega com juros, correção monetária e carimbo oficial."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Aprovar oito projetos complexos em quinze dias é apenas um teste de fé na capacidade de leitura dinâmica dos parlamentares."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O ajuste fiscal relâmpago prova que a criatividade contábil não descansa nem no mês de festas natalinas."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Equilibrar bets, IPI e diretrizes orçamentárias no mesmo picadeiro exige mais artistas de circo do que economistas."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "No cardápio legislativo de fim de ano, o prato principal é sempre a pressa empurrada para o contribuinte."
+    }
+  ],
+  "contexto_real": "O governo do presidente Luiz Inácio Lula da Silva corre contra o tempo para aprovar ao menos oito projetos econômicos no Congresso até o recesso parlamentar, marcado para 23 de dezembro. Após a aprovação de um ajuste fiscal de R$ 56 bilhões, a equipe econômica estuda nova PEC de ajuste e tenta destravar a MP das bets, a MP do imposto seletivo, a PEC do IPI e a Lei de Diretrizes Orçamentárias (LDO).",
+  "slug": "corrida-de-obstaculos-fiscais-ate-o-natal",
+  "data": "25 de Novembro de 2026",
+  "imagem_capa": "imagens/corrida-de-obstaculos-fiscais-ate-o-natal.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/corrida-de-obstaculos-fiscais-ate-o-natal.mp3",
+  "timestamp": "2026-11-25T09:42:03.588264"
+}
