@@ -1,0 +1,43 @@
+{
+  "titulo": "O TRIBUNAL DA DOSE CERTA",
+  "subtitulo": "Em nome da harmonia entre os Poderes, balcões de negócios e togas combinam a dosagem exata da indulgência republicana.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Quando o Supremo vira balcão de negociação de pena, até o réu comemora a bula personalizada.",
+  "legenda_imagem": "O deputado e o magistrado medindo a dosagem exata da benevolência jurídica em balança de farmácia.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim dos anos 1970 retratando um deputado federal de terno ajustado com cartilha embaixo do braço e um ministro do Supremo com toga imensa ajustando uma balança de farmácia onde pesam penas coloridas. Traço de nanquim expressivo e aquarela gouache em tom sépia, sem textos ou letras.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politician Paulinho da Força in a sharp suit and a Supreme Court minister in a giant black robe adjusting a pharmacy scale weighing colorful feathers, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, em seu eterno esforço para conciliar o código penal com o balé coreográfico do Centrão, encontrou enfim a sua fórmula farmacêutica: a lei da dosimetria caseira. Segundo o intrépido deputado Paulinho da Força, a alquimia legislativa que visa atenuar os excessos cometidos na fatídica tarde de janeiro já conta com a simpatia quase terapêutica dos deuses do Supremo Tribunal Federal.",
+    "Em declarações que revelam a intimidade profícua entre o andar de cima da política e o andar blindado da Justiça, o parlamentar garantiu que após reuniões de cúpula com o ministro Alexandre de Moraes — daquelas em que o café é servido com pitadas de realismo político —, a unanimidade da Corte já estaria devidamente encomendada e protocolada no balcão da indulgência institucional.",
+    "Afinal, nada demonstra melhor a maturidade democrática de uma nação do que a capacidade de reescrever o tamanho das algemas conforme a conveniência dos calendários eleitorais e das emendas parlamentares. Onde antes reinava o rigor implacável da estrita legalidade, agora floresce a delicada arte da massagem penal, ajustada milimetricamente para não ofender sensibilidades partidárias.",
+    "Resta agora ao contribuinte, espectador pagante desse consórcio entre a toga e o plenário, aprender a calcular o próprio imposto com a mesma elasticidade com que os estadistas recalculam suas penas, garantindo que o equílibrio entre crime e impunidade permaneça rigorosamente simétrico."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A harmonia entre os Poderes medida em miligramas de conveniência."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O aval antecipado de quem ainda nem leu o relatório, mas já aprovou o clima."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Reduzir penas ao som de aplausos corporativos e acordo de líderes."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura do acordo republicano enviada diretamente ao lombo do contribuinte distraído."
+    }
+  ],
+  "contexto_real": "O deputado Paulinho da Força (Solidariedade-SP) declarou em entrevista ao Estúdio i, em novembro de 2026, que se reuniu diversas vezes com o ministro Alexandre de Moraes após o segundo turno e avaliou que o STF votará por unanimidade a favor da chamada Lei da Dosimetria, projeto que propõe a redução de penas para os condenados pelos atos de 8 de janeiro.",
+  "slug": "o-tribunal-da-dose-certa",
+  "data": "25 de Novembro de 2026",
+  "imagem_capa": "imagens/o-tribunal-da-dose-certa.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-tribunal-da-dose-certa.mp3",
+  "timestamp": "2026-11-25T20:25:52.232961"
+}
