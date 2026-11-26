@@ -1,0 +1,43 @@
+{
+  "titulo": "O TRIBUNAL DE BALCÃO: A ESCOLHA DA TOGA NO COFFEE BREAK",
+  "subtitulo": "Executivo, Legislativo e STF reúnem-se em cúpula republicana para decidir quem ganha a vaga vitalícia no Supremo sem passar pelo constrangimento de saber ler jurisprudência.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Nada mais republicano do que escolher ministro do Supremo na mesa de bar com o Centrão.",
+  "legenda_imagem": "Caricatura retratando a cúpula dos Três Poderes negociando cartelas de figurinhas com togas pretas sobre a mesa de feltro verde.",
+  "prompt_caricatura": "Caricatura em estilo nanquim e guache estilo O Pasquim retratando políticos engravatados e ministros de túnica preta trocando figurinhas de juízes em uma mesa de bar, traço expressivo, hachuras em tinta preta, lavagem em aquarela cor creme, sem textos ou marcas",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian politicians and supreme court justices trading judge trading cards around a bar table, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil alcançou mais um patamar sublime de harmonia e separação estrita entre os Poderes, demonstrada na arte sutil de escolher o próximo guardião da Constituição entre canapés de carpaccio e um bom cafezinho com o Centrão.",
+    "Em reunião de cúpula realizada no sábado, o Executivo sentou-se à mesa com o Legislativo e o STF em regime de mutirão democrático para preencher a vaga no Supremo. Afinal, nada expressa melhor a independência do Poder Judiciário do que o relator da sua próxima denúncia ser aprovado por maioria simples em acordo de lideranças partidárias.",
+    "Durante o conclave palaciano, o Palácio do Planalto apresentou seu cardápio de preferências jurídicas, mas colocou a ficha de sugestões à disposição dos baluartes parlamentares. Se o candidato técnico não passar pelo crivo do toma-lá-dá-cá, sempre é possível recorrer a um nome que agrade simultaneamente aos gabinetes da Praça dos Três Poderes e às bancadas temáticas.",
+    "Enquanto isso, a Constituição Federal assiste a tudo do alto de sua prateleira empoeirada, torcendo para que o escolhido pelo consórcio político saiba pelo menos escrever a própria sentença sem precisar de assessoria parlamentar."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Harmonia de Balcão",
+      "texto": "Separar os Poderes para quê, se é muito mais rápido resolver tudo na base da fatia de bolo?"
+    },
+    {
+      "titulo": "O Critério Notável",
+      "texto": "Notável saber jurídico comprovado por quantos votos o candidato consegue arrancar na base aliada."
+    },
+    {
+      "titulo": "A Arguição Prévvia",
+      "texto": "Sabatina no Senado? Para quê, se a cartela de empregos já foi distribuída antes do café."
+    },
+    {
+      "titulo": "A Toga Consensual",
+      "texto": "O manto sagrado da justiça agora vem com selo de garantia dos líderes partidários."
+    }
+  ],
+  "contexto_real": "O presidente Luiz Inácio Lula da Silva reuniu-se no sábado (21) com os presidentes do Senado, Davi Alcolumbre, e da Câmara, Hugo Motta, além de ministros do STF, para discutir a indicação do substituto de Luís Roberto Barroso na Corte, avaliando nomes e viabilidade política junto ao Congresso.",
+  "slug": "o-tribunal-de-balcao-a-escolha-da-toga-no-coffee-b",
+  "data": "26 de Novembro de 2026",
+  "imagem_capa": "imagens/o-tribunal-de-balcao-a-escolha-da-toga-no-coffee-b.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-tribunal-de-balcao-a-escolha-da-toga-no-coffee-b.mp3",
+  "timestamp": "2026-11-26T03:26:16.642566"
+}

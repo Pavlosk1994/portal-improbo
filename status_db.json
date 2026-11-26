@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-25T20:25:52.337759+00:00",
+  "ultima_atualizacao": "2026-11-26T03:26:16.744854+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-26T03:26:16.744820+00:00",
+      "horario_brt": "26/11/2026 03:26:16",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 36.3,
+      "slug": "o-tribunal-de-balcao-a-escolha-da-toga-no-coffee-b",
+      "titulo": "O TRIBUNAL DE BALCÃO: A ESCOLHA DA TOGA NO COFFEE BREAK",
+      "imagem_tamanho_kb": 96.6,
+      "audio_tamanho_kb": 804.9
+    },
     {
       "timestamp": "2026-11-25T20:25:52.337722+00:00",
       "horario_brt": "25/11/2026 20:25:52",
@@ -215,34 +226,9 @@
       "titulo": "O JET LAG DA REALIDADE: LULA DESEMBARCA NA FAROFA",
       "imagem_tamanho_kb": 95.7,
       "audio_tamanho_kb": 859.6
-    },
-    {
-      "timestamp": "2026-11-16T07:47:33.923179+00:00",
-      "horario_brt": "16/11/2026 07:47:33",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 73.5,
-      "slug": "a-batalha-das-42-horas-camara-e-dino-no-ringue",
-      "titulo": "A BATALHA DAS 42 HORAS: CÂMARA E DINO NO RINGUE",
-      "imagem_tamanho_kb": 95.2,
-      "audio_tamanho_kb": 815.5
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Paulinho da Força diz que se reuniu com Moraes e que espera apoio unânime do STF a lei que reduz penas do 8 de janeiro",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/25/paulinho-da-forca-dosimetria-moraes.ghtml",
-      "score": 103.0,
-      "data_pub": "Wed, 25 Nov 2026 17:09:28 -0000"
-    },
-    {
-      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
-      "score": 98.4,
-      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
-    },
     {
       "titulo": "Lula se reúne com cúpula do Congresso e ministros do STF para definir substituto de Barroso",
       "fonte": "G1 Política",
@@ -263,6 +249,20 @@
       "link": "https://g1.globo.com/economia/noticia/2026/11/24/entenda-o-plano-moretti-o-ajuste-fiscal-aprovado-pela-camara.ghtml",
       "score": 92.0,
       "data_pub": "Tue, 24 Nov 2026 11:21:42 -0000"
+    },
+    {
+      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
+      "score": 88.4,
+      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
+    },
+    {
+      "titulo": "Em reunião com Lula, ministros do STF defendem diretor da PF e dizem que André Mendonça queria prendê-lo",
+      "fonte": "G1 Política",
+      "link": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/23/lula-andrei-rodrigues-andre-mendonca.ghtml",
+      "score": 87.6,
+      "data_pub": "Mon, 23 Nov 2026 19:58:57 -0000"
     }
   ]
 }
