@@ -1,0 +1,43 @@
+{
+  "titulo": "O MAPA DO TESOURO PARA 2027",
+  "subtitulo": "Ministério da Fazenda descobre a genial inovação gerencial de cortar gastos no papel para gastar na prática.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "O governo anunciou que vai cortar supersalários e privilégios em 2027, logo depois de garantir todos eles até 2026.",
+  "legenda_imagem": "O tecnocrata exibe orgulhoso uma planilha em branco com a promessa de austeridade para daqui a alguns carnavais.",
+  "prompt_caricatura": "Caricatura em estilo nanquim e guache estilo O Pasquim retratando um tecnocrata engravatado segurando uma bússola apontada para o ano de 2027, cercado por planilhas voadoras e gráficos que sobem em direção ao teto, traço expressivo e irônico, sem textos.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of a sleek Brazilian Ministry of Finance technocrat holding a compass pointing toward the year 2027, surrounded by flying spreadsheets and upward-soaring charts, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil, sempre na vanguarda da ficção científica contábil, encontrou a solução definitiva para o buraco nas contas públicas: prometer o equilíbrio fiscal para o futuro distante, bem a tempo de a fatura caducar na mão do próximo síndico da nação.",
+    "Durante simpósio com o mercado financeiro, a alta cúpula da Fazenda explicou que o segredo de uma boa gestão de despesas obrigatórias é tratá-las com o devido carinho retórico, garantindo que nenhum privilégio se sinta ofendido antes de ser prudentemente preservado por mais alguns exercícios financeiros.",
+    "A ideia é desenhar um horizonte tão nítido para 2027 que o cidadão, hipnotizado pela clareza das projeções macroeconômicas, quase se esquecerá de conferir o estrato bancário do mês corrente.",
+    "No fim das contas, a engenharia financeira segue inabalável: o planejamento estratégico é rigoroso, a intenção é magnânima e a conta, como manda a boa tradição burocrática, será despachada com carimbo prioritário para a posteridade."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A arte sutil de cortar na carne alheia enquanto se preserva o próprio gabinete."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Projeções fiscais desenhadas a lápis para facilitar a borracha no dia seguinte."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Equilíbrio orçamentário baseado exclusivamente em convicções metafísicas."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A fatura que viaja no tempo e aterrissa sempre no bolso do contribuinte."
+    }
+  ],
+  "contexto_real": "O secretário-executivo do Ministério da Fazenda, Dario Durigan, afirmou durante evento da XP que o governo discute novas medidas para conter o crescimento das despesas públicas e melhorar as contas do país. Ele mencionou a necessidade de apresentar ao presidente Lula um plano para o controle de gastos obrigatórios e revisão de privilégios com vistas a dar previsibilidade fiscal a partir de 2027.",
+  "slug": "o-mapa-do-tesouro-para-2027",
+  "data": "26 de Novembro de 2026",
+  "imagem_capa": "imagens/o-mapa-do-tesouro-para-2027.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-mapa-do-tesouro-para-2027.mp3",
+  "timestamp": "2026-11-26T20:03:03.697839"
+}
