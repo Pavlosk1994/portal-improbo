@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-26T20:03:03.782996+00:00",
+  "ultima_atualizacao": "2026-11-27T03:35:01.114219+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-27T03:35:01.114170+00:00",
+      "horario_brt": "27/11/2026 03:35:01",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 109.9,
+      "slug": "o-arquiteto-do-corte-de-luxo-no-planejamento",
+      "titulo": "O ARQUITETO DO CORTE DE LUXO NO PLANEJAMENTO",
+      "imagem_tamanho_kb": 98.9,
+      "audio_tamanho_kb": 937.3
+    },
     {
       "timestamp": "2026-11-26T20:03:03.782959+00:00",
       "horario_brt": "26/11/2026 20:03:03",
@@ -215,33 +226,22 @@
       "titulo": "O MILAGRE EXPRESSO DO AJUSTE FISCAL EM 15 MINUTOS",
       "imagem_tamanho_kb": 95.1,
       "audio_tamanho_kb": 812.8
-    },
-    {
-      "timestamp": "2026-11-17T03:32:46.367729+00:00",
-      "horario_brt": "17/11/2026 03:32:46",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 30.8,
-      "slug": "se-o-mercado-pode-nos-tambem-podemos",
-      "titulo": "SE O MERCADO PODE, NÓS TAMBÉM PODEMOS!",
-      "imagem_tamanho_kb": 96.9,
-      "audio_tamanho_kb": 733.8
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Durigan diz que discutirá novas medidas fiscais com Lula: 'Mostrar claramente o caminho para 2027'",
+      "titulo": "Quem é Bruno Moretti, ministro de confiança de Lula que ajudou a formular o ajuste fiscal e é cotado para seguir no Planejamento",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/26/durigan-diz-que-discutira-novas-medidas-fiscais-com-lula-mostrar-claramente-o-caminho-para-2027.ghtml",
+      "link": "https://g1.globo.com/politica/noticia/2026/11/27/quem-e-bruno-moretti.ghtml",
       "score": 105.4,
-      "data_pub": "Thu, 26 Nov 2026 19:08:44 -0000"
+      "data_pub": "Fri, 27 Nov 2026 03:00:00 -0000"
     },
     {
-      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
+      "titulo": "Relatório do Senado retira redução de prazo para dirigentes de partidos assumirem estatais",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
-      "score": 88.4,
-      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/27/relatorio-do-senado-retira-reducao-de-prazo-para-dirigentes-de-partidos-assumirem-estatais.ghtml",
+      "score": 85.0,
+      "data_pub": "Fri, 27 Nov 2026 03:00:02 -0000"
     },
     {
       "titulo": "Entenda o plano Moretti, o ajuste fiscal aprovado pela Câmara",
@@ -258,11 +258,11 @@
       "data_pub": "Wed, 25 Nov 2026 13:33:16 -0000"
     },
     {
-      "titulo": "Conservadores cristãos e classe D e E somam quase metade do eleitorado brasileiro, diz Quaest",
+      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/24/segmentos-identitarios-quaest-2026.ghtml",
-      "score": 79.2,
-      "data_pub": "Tue, 24 Nov 2026 15:10:44 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
+      "score": 80.4,
+      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
     }
   ]
 }
