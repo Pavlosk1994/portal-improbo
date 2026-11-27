@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-27T03:35:01.114219+00:00",
+  "ultima_atualizacao": "2026-11-27T19:51:26.483654+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-27T19:51:26.483599+00:00",
+      "horario_brt": "27/11/2026 19:51:26",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 51.3,
+      "slug": "o-banco-da-republica",
+      "titulo": "O BANCO DA REPÚBLICA",
+      "imagem_tamanho_kb": 82.9,
+      "audio_tamanho_kb": 890.4
+    },
     {
       "timestamp": "2026-11-27T03:35:01.114170+00:00",
       "horario_brt": "27/11/2026 03:35:01",
@@ -215,54 +226,43 @@
       "titulo": "FAZENDA CRIA O 'CORTA MAIS, GASTA IGUAL'",
       "imagem_tamanho_kb": 94.1,
       "audio_tamanho_kb": 970.7
-    },
-    {
-      "timestamp": "2026-11-17T19:42:33.133102+00:00",
-      "horario_brt": "17/11/2026 19:42:33",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 70.6,
-      "slug": "o-milagre-expresso-do-ajuste-fiscal-em-15-minutos",
-      "titulo": "O MILAGRE EXPRESSO DO AJUSTE FISCAL EM 15 MINUTOS",
-      "imagem_tamanho_kb": 95.1,
-      "audio_tamanho_kb": 812.8
     }
   ],
   "radar_pautas": [
     {
-      "titulo": "Quem é Bruno Moretti, ministro de confiança de Lula que ajudou a formular o ajuste fiscal e é cotado para seguir no Planejamento",
+      "titulo": "Trabuco na Fazenda: veja outros banqueiros que estiveram à frente do Ministério da Fazenda",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/27/quem-e-bruno-moretti.ghtml",
-      "score": 105.4,
-      "data_pub": "Fri, 27 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-na-fazenda-veja-outros-banqueiros-que-estiveram-a-frente-do-ministerio-da-fazenda.ghtml",
+      "score": 129.4,
+      "data_pub": "Fri, 27 Nov 2026 14:48:59 -0000"
     },
     {
-      "titulo": "Relatório do Senado retira redução de prazo para dirigentes de partidos assumirem estatais",
+      "titulo": "Nova reforma da Previdência e ajuste fiscal 'cívico': conheça as posições de Luiz Carlos Trabuco, futuro ministro da Fazenda",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/27/relatorio-do-senado-retira-reducao-de-prazo-para-dirigentes-de-partidos-assumirem-estatais.ghtml",
-      "score": 85.0,
-      "data_pub": "Fri, 27 Nov 2026 03:00:02 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/27/nova-reforma-da-previdencia-e-ajuste-fiscal-civico-conheca-as-posicoes-de-luiz-carlos-trabuco-futuro-ministro-da-fazenda.ghtml",
+      "score": 118.8,
+      "data_pub": "Fri, 27 Nov 2026 11:52:31 -0000"
     },
     {
-      "titulo": "Entenda o plano Moretti, o ajuste fiscal aprovado pela Câmara",
+      "titulo": "De fim dos supersalários a previdência de militares: o que Durigan pensou para 2027 e agora deixa para Trabuco",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/24/entenda-o-plano-moretti-o-ajuste-fiscal-aprovado-pela-camara.ghtml",
-      "score": 84.0,
-      "data_pub": "Tue, 24 Nov 2026 11:21:42 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/27/durigan-deixa-agenda-fiscal-para-2027.ghtml",
+      "score": 107.8,
+      "data_pub": "Fri, 27 Nov 2026 18:50:34 -0000"
     },
     {
-      "titulo": "Equipe de Lula não descarta convocação do Congresso em janeiro, no recesso, para aprovar PEC da 2ª etapa do ajuste fiscal",
+      "titulo": "Paulo Guedes, Haddad e Durigan: quem foram os últimos ministros da Fazenda do Brasil antes da escolha de Trabuco",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/25/equipe-de-lula-nao-descarta-convocacao-do-congresso-em-janeiro-no-recesso-para-aprovar-pec-da-2a-etapa-do-ajuste-fiscal.ghtml",
-      "score": 82.4,
-      "data_pub": "Wed, 25 Nov 2026 13:33:16 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/27/paulo-guedes-haddad-e-durigan-quem-foram-os-ultimos-ministros-da-fazenda-do-brasil-antes-da-escolha-de-trabuco.ghtml",
+      "score": 104.4,
+      "data_pub": "Fri, 27 Nov 2026 07:00:02 -0000"
     },
     {
-      "titulo": "Reforma tributária e fim da escala 6x1 podem pressionar inflação em 2027; BC e equipe econômica monitoram impactos",
+      "titulo": "Trabuco no Ministério da Fazenda: como reagiram parlamentares da esquerda e da direita",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/25/reforma-tributaria-e-fim-da-escala-6x1-podem-pressionar-inflacao-em-2027-bc-e-equipe-economica-monitoram-impactos.ghtml",
-      "score": 80.4,
-      "data_pub": "Wed, 25 Nov 2026 03:00:00 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/27/trabuco-no-ministerio-da-fazenda-repercussao-parlamentares.ghtml",
+      "score": 100.6,
+      "data_pub": "Fri, 27 Nov 2026 14:25:41 -0000"
     }
   ]
 }

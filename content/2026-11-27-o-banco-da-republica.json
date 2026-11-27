@@ -1,0 +1,43 @@
+{
+  "titulo": "O BANCO DA REPÚBLICA",
+  "subtitulo": "Em um arranjo de moderação e previdência, o governo terceiriza o cofre público para quem já cobra taxa de juros no balcão",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Governo decide cortar intermediários e coloca o próprio banqueiro para assinar o carnê do imposto.",
+  "legenda_imagem": "O ministro recém-empossado ajusta a taxa de juros do país diretamente no extrato bancário do cidadão.",
+  "prompt_caricatura": "Caricatura em estilo O Pasquim retratando executivo engravatado de terno risca-de-giz sentado na cadeira presidencial do Ministério da Fazenda, usando uma viseira verde de contador e carimbando boletos gigantes com juros compostos, traço de nanquim e guache em tom sépia, sem textos ou letras.",
+  "prompt_caricatura_en": "Vintage 1970s Brazilian satirical press style caricature of a banking executive in a pinstripe suit sitting at the Ministry of Finance desk wearing a green accountant visor and stamping giant payment slips with compound interest, expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark.",
+  "corpo": [
+    "A República Federativa do Brasil deu mais um passo definitivo rumo à eficiência corporativa ao anunciar que, a partir de 2027, o Ministério da Fazenda funcionará oficialmente sob a competente supervisão de Luiz Carlos Trabuco. Afinal, por que insistir na incômoda burocracia da política econômica quando se pode entregar a chave do cofre diretamente a quem já sabe emitir um boleto com dez dias de antecedência?",
+    "A decisão coroa a longa tradição nacional de eliminar intermediários na relação entre o contribuinte e o spread bancário. Críticos mal-intencionados apontam a ousadia de colocar o setor financeiro administrando as contas da Esplanada, mas os tecnocratas argumentam que se trata de uma medida de extrema transparência: agora, o cidadão não precisará mais adivinhar para onde vai o seu dinheiro, pois o extrato virá com o logotipo oficial do conglomerado.",
+    "A escolha reforça o ecumenismo pragmático da Esplanada dos Ministérios, provando que a liturgia do cargo combina perfeitamente com a sobriedade de uma mesa de diretoria. O Palácio do Planalto demonstrou admirável desprendimento ao reconhecer que a melhor forma de combater a inflação é tratá-la como uma tarifa de manutenção de conta corrente, cobrada discretamente no final do mês sem que ninguém perceba.",
+    "Resta agora saber se o Ministério adotará o programa de milhagens para o pagamento de tributos federais ou se o imposto sobre o consumo continuará gerando pontos apenas para o caixa dos grandes conglomerados. De qualquer forma, a transição promete ser suave, desde que o cidadão lembre de manter saldo positivo antes de emitir qualquer opinião sobre a política fiscal."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "A taxa de juros agora é questão de fé cívica e cadastro positivo."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "O superávit primário será debitado automaticamente em doze vezes."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Balanço contábil auditado diretamente pelo gerente da sua agência."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "A pátria educadora deu lugar à pátria cobradora com taxa de abertura de crédito."
+    }
+  ],
+  "contexto_real": "O governo anunciou que Luiz Carlos Trabuco, presidente do conselho de administração do Bradesco, assumirá o Ministério da Fazenda em 2027. Aos 75 anos, o executivo é apontado como um dos nomes do mercado financeiro mais próximos do presidente Luiz Inácio Lula da Silva, repetindo o histórico de gestores com passagem pelo setor bancário à frente da pasta desde a redemocratização.",
+  "slug": "o-banco-da-republica",
+  "data": "27 de Novembro de 2026",
+  "imagem_capa": "imagens/o-banco-da-republica.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/o-banco-da-republica.mp3",
+  "timestamp": "2026-11-27T19:51:26.419820"
+}
