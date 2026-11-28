@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-27T19:51:26.483654+00:00",
+  "ultima_atualizacao": "2026-11-28T03:11:20.354202+00:00",
   "status_apis": {
     "gemini": "online",
     "feeds": "online",
@@ -7,6 +7,17 @@
     "vercel": "online"
   },
   "historico_execucoes": [
+    {
+      "timestamp": "2026-11-28T03:11:20.354171+00:00",
+      "horario_brt": "28/11/2026 03:11:20",
+      "status": "SUCESSO",
+      "motivo": "Publicação normal validada",
+      "duracao_segundos": 65.6,
+      "slug": "do-banco-do-brasil-ao-bairrismo-da-fazenda",
+      "titulo": "DO BANCO DO BRASIL AO BAIRRISMO DA FAZENDA",
+      "imagem_tamanho_kb": 99.0,
+      "audio_tamanho_kb": 890.0
+    },
     {
       "timestamp": "2026-11-27T19:51:26.483599+00:00",
       "horario_brt": "27/11/2026 19:51:26",
@@ -215,27 +226,9 @@
       "titulo": "O DECRETO DA HORA EXTRA E DA PAZ NA TERRA",
       "imagem_tamanho_kb": 97.5,
       "audio_tamanho_kb": 943.3
-    },
-    {
-      "timestamp": "2026-11-18T02:49:14.607820+00:00",
-      "horario_brt": "18/11/2026 02:49:14",
-      "status": "SUCESSO",
-      "motivo": "Publicação normal validada",
-      "duracao_segundos": 58.8,
-      "slug": "fazenda-cria-o-corta-mais-gasta-igual",
-      "titulo": "FAZENDA CRIA O 'CORTA MAIS, GASTA IGUAL'",
-      "imagem_tamanho_kb": 94.1,
-      "audio_tamanho_kb": 970.7
     }
   ],
   "radar_pautas": [
-    {
-      "titulo": "Trabuco na Fazenda: veja outros banqueiros que estiveram à frente do Ministério da Fazenda",
-      "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-na-fazenda-veja-outros-banqueiros-que-estiveram-a-frente-do-ministerio-da-fazenda.ghtml",
-      "score": 129.4,
-      "data_pub": "Fri, 27 Nov 2026 14:48:59 -0000"
-    },
     {
       "titulo": "Nova reforma da Previdência e ajuste fiscal 'cívico': conheça as posições de Luiz Carlos Trabuco, futuro ministro da Fazenda",
       "fonte": "G1 Política",
@@ -244,11 +237,11 @@
       "data_pub": "Fri, 27 Nov 2026 11:52:31 -0000"
     },
     {
-      "titulo": "De fim dos supersalários a previdência de militares: o que Durigan pensou para 2027 e agora deixa para Trabuco",
+      "titulo": "Dino suspende tramitação de emendas de Flávio Bolsonaro para 2027 e pede ao Senado explicações sobre atuação do senador",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/economia/noticia/2026/11/27/durigan-deixa-agenda-fiscal-para-2027.ghtml",
-      "score": 107.8,
-      "data_pub": "Fri, 27 Nov 2026 18:50:34 -0000"
+      "link": "https://g1.globo.com/politica/noticia/2026/11/27/dino-suspende-tramitacao-de-emendas-de-flavio-bolsonaro-para-2027-ministro-pediu-que-senado-explique-atuacao-do-senador-de-fora-do-pais.ghtml",
+      "score": 111.6,
+      "data_pub": "Fri, 27 Nov 2026 19:27:37 -0000"
     },
     {
       "titulo": "Paulo Guedes, Haddad e Durigan: quem foram os últimos ministros da Fazenda do Brasil antes da escolha de Trabuco",
@@ -258,11 +251,18 @@
       "data_pub": "Fri, 27 Nov 2026 07:00:02 -0000"
     },
     {
-      "titulo": "Trabuco no Ministério da Fazenda: como reagiram parlamentares da esquerda e da direita",
+      "titulo": "Do fim dos supersalários à previdência de militares: o que Durigan pensou para 2027 e agora deixa para Trabuco",
       "fonte": "G1 Política",
-      "link": "https://g1.globo.com/politica/noticia/2026/11/27/trabuco-no-ministerio-da-fazenda-repercussao-parlamentares.ghtml",
-      "score": 100.6,
-      "data_pub": "Fri, 27 Nov 2026 14:25:41 -0000"
+      "link": "https://g1.globo.com/economia/noticia/2026/11/27/durigan-deixa-agenda-fiscal-para-2027.ghtml",
+      "score": 100.8,
+      "data_pub": "Fri, 27 Nov 2026 18:50:34 -0000"
+    },
+    {
+      "titulo": "STF: Dino suspende emendas parlamentares de Flávio Bolsonaro",
+      "fonte": "Agência Brasil - Política",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/stf-dino-suspende-emendas-parlamentares-de-flavio-bolsonaro",
+      "score": 100.5,
+      "data_pub": "Fri, 27 Nov 2026 17:41:00 -0300"
     }
   ]
 }

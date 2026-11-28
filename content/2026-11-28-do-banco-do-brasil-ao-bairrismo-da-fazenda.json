@@ -1,0 +1,43 @@
+{
+  "titulo": "DO BANCO DO BRASIL AO BAIRRISMO DA FAZENDA",
+  "subtitulo": "Trabuco assume a Fazenda e promete planilhas de juros com alma social e tarifa de TED por misericórdia.",
+  "categoria": "Comédia de Costumes",
+  "tempo_leitura": "2 min de leitura",
+  "autor": "Redação Ácida",
+  "destaque": true,
+  "frase_disparo_zap": "Trabuco na Fazenda é a prova de que o capital e o cofre público agora dividem a mesma senha do internet banking.",
+  "legenda_imagem": "O novo ministro ajustando o terno com linguiça de agência bancária e carimbo de tarifa zero.",
+  "prompt_caricatura": "Caricatura em nanquim e guache estilo O Pasquim retratando Luiz Carlos Trabuco com terno impecável, gravata de cifrão e carimbo de cheque especial na mão, sorrindo de orelha a orelha para uma urna eletrônica em formato de cofre de banco.",
+  "prompt_caricatura_en": "Detailed English visual prompt of the satirical political cartoon scene: caricature of Brazilian banker and incoming minister Luiz Carlos Trabuco wearing an immaculate tailored suit with dollar-sign tie, holding a massive bank stamp, smiling broadly next to a ballot box shaped like a giant bank vault, vintage 1970s Brazilian satirical press style (O Pasquim/Henfil), expressive ink cross-hatching, gouache watercolor wash on cream paper, strictly NO text, NO logos, NO watermark",
+  "corpo": [
+    "A República Federativa do Brasil resolveu finalmente terceirizar o apocalipse fiscal para quem entende de juros compostos com carinho e taxa de abertura de crédito. Com o anúncio de Luiz Carlos Trabuco no comando da Fazenda para o quarto mandato, o Planalto descobre que a melhor forma de negociar com o mercado é nomear diretamente o homem que controla o carnê do fiador da pátria.",
+    "A reação dos operadores da bolsa foi imediata e comovente: o dólar despencou como quem lembra que esqueceu o boleto do condomínio vencido na sexta-feira passada. Analistas financeiros, que antes choravam em mesas de bar com planilha de inflação, agora disputam quem consegue mandar mais emojis de aplauso para o gabinete do novo ministro, cuja principal promessa de campanha é unificar o superávit primário com o programa de milhagens do cartão de crédito corporativo.",
+    "Do lado petista, o desconforto inicial foi rapidamente contornado com a elegante pirueta ideológica de que o capital produtivo e o capital especulativo, quando sentados na mesma poltrona de couro importado, manifestam uma profunda solidariedade proletária com o spread bancário. Afinal, nada mais democrático do que cobrar juros iguais para todos, independentemente da classe social ou da cor da bandeira partidária.",
+    "Resta agora saber se as metas de inflação serão divulgadas via SMS automático ou se o cidadão comum precisará baixar um aplicativo exclusivo para renegociar o próprio IPCA em até 48 vezes fixas. O ajuste fiscal cívico chegou para mostrar que o buraco no orçamento pode ser resolvido com uma simples taxa de manutenção de conta corrente."
+  ],
+  "milagres": [
+    {
+      "titulo": "A Liturgia da Rasteira",
+      "texto": "Cortar gastos públicos aplicando taxa de inatividade no Tesouro Nacional."
+    },
+    {
+      "titulo": "A Promessa de Papelão",
+      "texto": "Prometer juro zero para quem pagar a dívida externa em até duas parcelas."
+    },
+    {
+      "titulo": "O Malabarismo Fiscal",
+      "texto": "Transformar buraco fiscal em tarifa de emissão de boleto bancário."
+    },
+    {
+      "titulo": "O Boleto Soberano",
+      "texto": "O PIB agora vem com código de barras e protesto em cartório se atrasar."
+    }
+  ],
+  "contexto_real": "Luiz Carlos Trabuco, presidente do Conselho de Administração do Bradesco, foi anunciado como o próximo ministro da Fazenda do governo Lula para seu quarto mandato, surpreendendo o mercado e gerando forte queda do dólar, que recuou para a faixa de R$ 5,57, acompanhado de alta do Ibovespa.",
+  "slug": "do-banco-do-brasil-ao-bairrismo-da-fazenda",
+  "data": "28 de Novembro de 2026",
+  "imagem_capa": "imagens/do-banco-do-brasil-ao-bairrismo-da-fazenda.jpg",
+  "credito_imagem": "Arte: Card Tipográfico Editorial / ÍMPROBO",
+  "audio_url": "audio/do-banco-do-brasil-ao-bairrismo-da-fazenda.mp3",
+  "timestamp": "2026-11-28T03:11:20.243491"
+}
